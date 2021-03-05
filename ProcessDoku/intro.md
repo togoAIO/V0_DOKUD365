@@ -1,4 +1,4 @@
-# Welcome Page WIKA Procss Doku
+# Welcome Page WIKA Process Doku
 
 ## First Words
 
