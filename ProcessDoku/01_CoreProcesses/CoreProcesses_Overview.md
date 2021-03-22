@@ -1,6 +1,6 @@
+# Core Processes Overview
 
-# CoreProcesses Overview Test
-![Prozessübersicht](./../media/Process_Map.png "Prozessübersicht")
+![Prozessübersicht](./../media/Process_Overview_CoreProcesses.png "Prozessübersicht")
 
 ## [Header1.1](href)
 # Header2
