@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Quotations | WIKA Documentation </title>
+    <title>Quotations overview | WIKA Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Quotations | WIKA Documentation ">
+    <meta name="title" content="Quotations overview | WIKA Documentation ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../microsoft-dynamics-crm-365-icon.ico">
@@ -76,10 +76,106 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="quotations">Quotations</h1>
+            <article class="content wrap" id="_content" data-uid="Quotation">
+<h1 id="quotations-overview">Quotations overview</h1>
 
-<p><img src="./../media/Prozess%C3%BCbersicht.png" alt="Prozessübersicht" title="Example Picture"></p>
+<p>You create sales quotations to present customers an offer of the goods or services that you will be providing. A customer might request a quotation, or you might create a quotation in response to a request from a potential or existing customer. When the customer approves the sales quotation, you can convert it to a sales order.</p>
+<h1 id="create-and-edit-sales-quotations">Create and edit sales quotations</h1>
+<p>This procedure demonstrates how to create and update a sales quotation. You can run this procedure on your own data or in demo data company USMF.</p>
+<h2 id="create-a-sales-quotation">Create a sales quotation</h2>
+<ol>
+<li><p>Go to <strong>Navigation pane &gt; Modules &gt; Sales and marketing &gt; Sales quotations &gt; All quotations</strong>.</p>
+</li>
+<li><p>In the opened form click <strong>New</strong>.</p>
+</li>
+<li><p>In the <strong>Account type</strong> field, select 'Prospect' or 'Customer'.</p>
+</li>
+<li><p>In the <strong>Prospect</strong> or <strong>Customer account</strong> field, enter or select a value.
+<img src="../../media/Quotations/NewQuotation.png" alt="New Quotation" title="New Quotation"></p>
+</li>
+<li><p>Expand the <strong>General</strong> section. Because you chose to create a quotation from the Sales and Marketing area, the type is automatically set to 'Sales quotation'. To create a quotation for a project you must access it from the <strong>Project management and accounting</strong> module.
+<img src="../../media/Quotations/NewQuotation_1.png" alt="New Quotation" title="New Quotation_1"></p>
+<ul>
+<li>In <strong>Customer requisition</strong> fill in the quotation number from customer</li>
+<li>In <strong>Customer reference</strong> fill in the additional references from customer</li>
+<li>Fill in the required <strong>Date fields</strong></li>
+</ul>
+</li>
+<li><p>Click <strong>OK</strong>.</p>
+</li>
+</ol>
+<p>The fields and actions on the quotation lines are very similar to the ones on the sales order lines.
+Like sales orders, quotations can be created for a specific item or, when item number is not known or does not exist at the time of quotation creation, quotations can be created for a sales category.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Most of the header data will be automatically populated from the customer master or the prospect data of the selected customer.
+When creating a new quotation it is possible to see if the selected customer is stopped (marked in the stopped column with a red cross).</p>
+</div>
+<ol start="7">
+<li><p>In the <strong>Item</strong> field, enter or select a value or Click on Modelcoding Button.
+<img src="../../media/Quotations/NewQuotation_2.png" alt="New Quotation" title="New Quotation_2"></p>
+</li>
+<li><p>In the <strong>Quantity</strong> field, enter a number. If there are valid <a class="xref" href="../01_03_Sales/Guideline.html">Guideline</a> for the item selected on the line, the applicable price and discounts will be automatically copied to the quotation line. Make sure that the Unit price field contains a value and you can also enter discount values if you want to.</p>
+</li>
+<li><p>Click <strong>Save</strong>.</p>
+</li>
+<li><p>On the <strong>Action Pane</strong>, click <strong>Quotation</strong>.</p>
+</li>
+<li><p>In Section <strong>Generate</strong> click <strong>Quotation scheduling</strong>.</p>
+</li>
+<li><p>Click on <strong>Quotation Scheduling</strong>.
+<img src="../../media/Quotations/Quotation_Scheduling.png" alt="Quotation Scheduling" title="Quotation Scheduling"></p>
+</li>
+<li><p>On the <strong>Action Pane</strong>, click <strong>Quotation</strong>.</p>
+</li>
+<li><p>In Section <strong>Generate</strong> click <strong>Send quotation</strong>.</p>
+</li>
+<li><p>Select 'Yes' in the <strong>Print quotation</strong> field.</p>
+</li>
+<li><p>Click <strong>OK</strong>. The report may take a minute to generate. Don't close the page until it does so.</p>
+</li>
+<li><p>The <strong>Activity</strong> opens to schedule the follow up for this Quotation. It is recommended to use the standard set up and Click <strong>OK</strong>.</p>
+</li>
+</ol>
+<h2 id="update-a-sales-quotation">Update a sales quotation</h2>
+<ol>
+<li>Go to <strong>Navigation pane &gt; Modules &gt; Sales and marketing &gt; Sales quotations &gt; All quotations</strong>.</li>
+<li>On the <strong>Action Pane</strong>, click <strong>Follow up</strong>.</li>
+<li>Click <strong>Convert to customer</strong>.</li>
+<li>In the <strong>Customer account</strong> field, type a value.</li>
+<li>Click <strong>Check</strong>. Make sure you see a message that the account number you typed in is free to use.</li>
+<li>Click <strong>OK</strong>. The system has now created a new customer account for the prospect on the quotation.</li>
+<li>Close the page.</li>
+<li>On the <strong>Action Pane</strong>, click <strong>Follow up</strong>.</li>
+<li>Click <strong>Confirm</strong>,<strong>Cancel</strong> or  <strong>Lost Quotation</strong>.
+<ul>
+<li>When the quotation is confirmed, a sales order will automatically be generated. The sales order number is referenced in the sales order column on the quotation header. The quotation status is changed from Sent to Confirmed. To navigate directly to the sales order from the quotation form, right click on the sales order number and go to the main table form.
+The information from the quotation will be transferred to the sales order. After the sales order information has been reviewed, the sales order can be processed as usual.</li>
+</ul>
+</li>
+<li>In the <strong>Reason</strong> field, enter or select a value.</li>
+<li>Click <strong>OK</strong>.</li>
+<li>Now the system generates a Sales order and if it is generated, it will be displayed. This takes a while.</li>
+</ol>
+<h1 id="functions-in-sales-quotations">Functions in Sales Quotations</h1>
+<h2 id="tag-numbers">Tag Numbers</h2>
+<p>This function allows for the entry of tag numbers and the selection of the type of tag to be used.</p>
+<ol>
+<li>Expand <strong>Line Details</strong> and go to Tab <strong>Tag numbers</strong>.</li>
+<li>Click on <strong>Edit</strong>.</li>
+<li>In the new Form Click on <strong>New</strong> (Write down the Number in the Line) or <strong>Import</strong> (Use Copy/Paste from Excel file).</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To import a list of tag numbers from an Excel spreadsheet, type the tag numbers into an excel sheet, copy the tag numbers and and parte these in the open window of <strong>Import</strong>.</p>
+</div>
+<h2 id="generate-letter">Generate letter</h2>
+<p>Automatically generates a decline or clarification letter for this quotation. The language depends on the language settings in the customer data.</p>
+<ol start="2">
+<li>On the <strong>Action Pane</strong>, click <strong>Quotation</strong>.</li>
+<li>Click <strong>Generate letter</strong>.</li>
+<li>Choose the value you want in the drop down.</li>
+</ol>
 </article>
           </div>
           

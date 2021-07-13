@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sales agreements overview | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Sales agreements overview | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SalesAgreement">
+<h1 id="sales-agreements-overview">Sales agreements overview</h1>
+
+<p>This topic provides information about sales agreements. A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices and discounts.</p>
+<p>A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices, special discounts, and other special terms, such as payment and delivery terms. The prices and discounts of the sales agreement override the prices and discounts that are stated in any trade agreements that exist.</p>
+<p>The validity period of a sales agreement is defined by the <strong>Effective date</strong> and <strong>Expiration date</strong> fields on the agreement. A customer's sales order qualifies for the agreement terms if the requested ship date of the order is within the validity period. All sales order lines that are linked to a sales agreement contribute to fulfillment of that sales agreement.</p>
+<p>You can create a sales order directly from a sales agreement by using the <strong>Release order</strong> action. Alternatively, you can select an effective sales agreement when you're taking orders (see the &quot;Applying sales agreements in the ordering process&quot; section of this article).</p>
+<blockquote>
+<p>[Note!]
+In earlier versions (AX2009/AX20012), sales agreements were referred to as blanket sales orders.</p>
+</blockquote>
+<h2 id="commitment-types">Commitment types</h2>
+<p>Each line in a sales agreement expresses a commitment to sell something. In general, there are two categories of commitment:</p>
+<ul>
+<li><strong>Value commitment</strong> – ( Not Used for s WIKA) The customer agrees to buy products for a specific amount.</li>
+<li><strong>Quantity commitment</strong> – The customer agrees to buy a specific quantity of products.</li>
+</ul>
+<p>In addition, a contract can commit the customer to buy a specific product or products in a product category. By combining these two factors (value versus quantity, and specific products versus product categories), we get four types of commitment:</p>
+<ul>
+<li><strong>Product quantity commitment</strong> – The customer agrees to buy a specific quantity of products. Lines that use this commitment type are defined by an item number, and by the quantity and unit that were agreed on. The <strong>Amount</strong> field isn't available.</li>
+<li><strong>Product value commitment</strong> – The customer agrees to buy specific products for a specific amount. Lines that use this commitment type are defined by an item number and the amount that was agreed on. The <strong>Quantity</strong> and <strong>Unit</strong> fields aren't available.</li>
+<li><strong>Product category value commitment</strong> – The customer agrees to buy products from a specific sales category for a specific amount. Lines that use this commitment type are defined by a sales category in the hierarchy of sales categories and an amount. The <strong>Quantity</strong> and <strong>Unit</strong> fields aren't available.</li>
+<li><strong>Value commitment</strong> – The customer agrees to buy any product or products in any procurement category for a specific amount. The <strong>Quantity</strong> and <strong>Unit</strong> fields aren't available.</li>
+</ul>
+<p>Lines in the same sales agreement can have different types of commitments.</p>
+<h2 id="pricing-terms-for-sales-agreements">Pricing terms for sales agreements</h2>
+<p>Pricing terms can vary, depending on the type of commitment. On a sales order that is linked to a sales agreement, the pricing terms from that sales agreement override any other pricing terms that apply based on trade agreements. The following table describes the price-related fields that are affected by each commitment type. &quot;Yes&quot; indicates that the field can be updated on an order line.</p>
+<table>
+<thead>
+<tr>
+<th>Commitment type</th>
+<th>Unit price</th>
+<th>Price unit</th>
+<th>Discount percent</th>
+<th>Cash discount amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product quantity commitment</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Product value commitment</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>Product category value commitment</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>Value commitment</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="policies-for-sales-agreements">Policies for sales agreements</h2>
+<p>The following policies affect the way that the link between a sales agreement commitment and the corresponding sales order lines works:</p>
+<ul>
+<li><strong>Max is enforced</strong> – The total quantity or amount for all order lines can't exceed the quantity or amount that is specified on the related commitment.</li>
+<li><strong>Price and discount is fixed</strong> – The price on an order line and the price on the related commitment can't differ. If the price is changed on the order line, the link to the commitment is broken. If the link is broken, the order line doesn't contribute to fulfillment of the commitment.</li>
+<li><strong>Minimum release amount</strong> and <strong>Maximum release amount</strong> – If an amount is specified, a message is displayed if you make any change to an order line that causes the order line to differ from the related commitment.</li>
+</ul>
+<h2 id="fulfillment-calculations-for-sales-agreements">Fulfillment calculations for sales agreements</h2>
+<p>The <strong>Fulfillment</strong> tab on the <strong>Line details</strong> FastTab on the <strong>Sales agreements</strong> page shows fulfillment quantities and amounts.</p>
+<p>In the <strong>Fulfillment</strong> area, you can view the total quantities and amounts for all order lines that are linked to the specified sales agreement. You can also view the remaining amount or quantity that is required to fulfill the commitment.</p>
+<p>In the <strong>Agreement</strong> area, you can view the quantities and amounts from the specified sales agreement. These quantities and amounts are the total quantities and amounts that were committed.</p>
+<h2 id="confirmations-and-version-history-for-sales-agreements">Confirmations and version history for sales agreements</h2>
+<p>When you confirm a sales agreement, the current version of the sales agreement is stored in a history table. If you change the sales agreement, you can confirm it again to store another version of the sales agreement in the history.</p>
+<p>If you don't confirm a sales agreement, you can still use it to create sales orders. However, history information for the sales agreement isn't stored.</p>
+<p>You can preview or print all revisions of the confirmations. You can then share the revisions with your customer to obtain approval.</p>
+<h2 id="applying-sales-agreements-during-the-ordering-process">Applying sales agreements during the ordering process</h2>
+<p>If you don't release sales orders directly for a sales agreement, you can still link a sales agreement to an order during the order entry process. When you're creating a new sales order and select a sales agreement, the terms of that agreement, such as the payment terms, delivery terms, and delivery address, are applied to the order header, and the link between the agreement and the order is created. Then, on the order lines, when you can select products and categories that are specified in the sales agreement, the prices and discounts are copied from that agreement. The same sales order can include both lines that aren't related to a sales agreement and lines that have a commitment for a sales agreement.</p>
+<h2 id="modifying-sales-orders-that-are-linked-to-sales-agreements">Modifying sales orders that are linked to sales agreements</h2>
+<p>If you've created (released) a sales order against a sales agreement, some fields on that sales order lines can be modified only if you remove the link to the associated sales agreement lines. The following table lists some of these fields.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requested ship date</td>
+<td>If you change the requested ship date to a date that is earlier than the <strong>Effective date</strong> value on the sales agreement line, you must remove the link to the sales agreement line before you can save the changed ship date. If you change the requested ship date to a date that is later than the <strong>Expiration date</strong> value on the sales agreement line, you must remove the link to the sales agreement line before you can save the changed ship date.</td>
+</tr>
+<tr>
+<td>CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet amount</td>
+<td>If you change the value in any of these fields, and if the <strong>Price and discount is fixed</strong> check box is selected on an associated sales agreement line, a message box prompts you to save the change. Click <strong>Yes</strong> to remove the link to the sales agreement line and recalculate the price. Click <strong>No</strong> to remove the link to the sales agreement line without recalculating the price.</td>
+</tr>
+<tr>
+<td>Net amount</td>
+<td>If you specify an amount that exceeds the amount that is specified on a sales agreement line where the <strong>Max is enforced</strong> check box is selected, a message box prompts you to save the changed amount. Click <strong>Yes</strong> to remove the link to the sales agreement line and recalculate the price. Click <strong>No</strong> to remove the link to the sales agreement line without recalculating the price.</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>If you specify a quantity that exceeds the quantity that is specified on a sales agreement line where the <strong>Max is enforced</strong> check box is selected, a message box prompts you to save the changed quantity. Click <strong>Yes</strong> to remove the link to the sales agreement line and recalculate the price. Click <strong>No</strong> to remove the link to the sales agreement line without recalculating the price.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="returning-an-item-that-was-ordered-from-a-sales-agreement">Returning an item that was ordered from a sales agreement</h2>
+<p>When a customer returns a product that was ordered from a sales agreement, Supply Chain Management can find and automatically update the related sales agreement commitment to reflect the change in quantity or amount. By creating a return order that is based on the original sales order that is linked to a sales agreement, you establish a relation between the sales agreement commitment, the sales order line, and the return order invoice.</p>
+<p>If you don't want to deduct the returned item quantity from the sales agreement commitment, you can use the <strong>Remove link</strong> control on the <strong>Return order</strong> page to remove the link between the return order and the sales agreement commitment. If you must reestablish the link later, click <strong>Create link</strong>.</p>
+<p><strong>Note:</strong> A return order can be linked to only one sales agreement. If a customer returns multiple products that were ordered from multiple sales agreements, you must create a new return order for each product and create a link to the corresponding sales agreement.</p>
+<h2 id="automatic-search-for-sales-agreements">Automatic search for sales agreements</h2>
+<p>In some situations where sales orders are created indirectly, such as when you create a credit note or intercompany sales orders, you can control whether the system automatically searches for applicable sales agreements.</p>
+<h2 id="financial-dimensions-on-sales-agreements">Financial dimensions on sales agreements</h2>
+<p>You can copy financial dimensions to either document headers or individual lines of a sales agreement. You can change the dimensions on an agreement header or agreement line at any time. In this case, the dimensions are automatically copied to the release header or release line of release orders.</p>
+<h1 id="enter-sales-agreements">Enter sales agreements</h1>
+<p>This topic explains how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. You can run this procedure in demo data company USMF or on your own data.</p>
+<h2 id="set-up-sales-agreement-header">Set up sales agreement header</h2>
+<ol>
+<li>In the navigation pane, go to <strong>Modules &gt; Sales and marketing &gt; Sales agreements &gt; Sales agreements</strong>.</li>
+<li>Select <strong>New</strong>.</li>
+<li>In the <strong>Customer account</strong> field, select the desired record from the drop-down menu.</li>
+<li>In the <strong>Sales agreement classification</strong> field, select the desired record from the drop-down menu.</li>
+<li>Expand the <strong>General</strong> section.</li>
+<li>In the <strong>Default commitment</strong> field, select <strong>Product value commitment</strong>. A commitment type is a mandatory criterion that you must assign to the agreement to define how the agreement contract will be fulfilled. The four predefined types let you set up the customer's commitment target, expressed as a quantity or a value. The quantity commitment type can only be applied to a specific product, but the value-based types are applicable to sales of both specific and non-specific products.</li>
+<li>In the <strong>Expiration date</strong> field, set the date to a future date when you want the agreement to expire.</li>
+<li>Select <strong>OK</strong>.</li>
+</ol>
+<h2 id="set-up-product-value-commitment-lines">Set up product value commitment lines</h2>
+<ol>
+<li>Select <strong>Add line</strong>.</li>
+<li>In the <strong>Item number</strong> field, select the desired record from the drop-down menu. The type of commitment that you have chosen for the agreement affects the kind of information you can enter for the agreement lines. For example, for a value-based agreement you must specify the total net amount (in the agreed currency) for which the customer commits to buys goods from you. In this example the <strong>Quantity</strong> and <strong>Unit</strong> fields on the line are unavailable because you're creating an agreement for the customer to buy a specific value of a product.</li>
+<li>In the <strong>Net amount</strong> field, enter the monetary amount that the customer has committed to buying.</li>
+<li>In the <strong>Discount percent</strong> field, enter a percentage value that will apply to the customer's sales order lines that are linked to this agreement.</li>
+<li>Expand the <strong>Line details</strong> section.</li>
+<li>Select <strong>Yes</strong> in the <strong>Max is enforced</strong> field.
+<ul>
+<li>Selecting <strong>Max is enforced</strong> means that the total amount of all the sales order lines that use the commitment's special prices, discounts and/or payment terms must not exceed the amount specified on the commitment.</li>
+<li>The minimum and maximum release amounts specify a range of values that must be sold on each sales order that uses the selected agreement.</li>
+</ul>
+</li>
+<li>Expand the <strong>Sales agreement header</strong> section. Unless the status of the agreement is set to <strong>Effective</strong>, sales orders cannot be associated with the agreement and can therefore not contribute to the fulfilment of that agreement. You can change the status manually at this stage. However, the status would normally be changed when you confirm the agreement for the customer.</li>
+<li>On the Action Pane, select <strong>Sales agreement</strong>.</li>
+<li>Select <strong>Confirmation</strong>. Make sure that the <strong>Mark agreement as effective</strong> option is set to <strong>Yes</strong>.</li>
+<li>Select <strong>Yes</strong> in the <strong>Print report</strong> field.</li>
+<li>Select <strong>OK</strong>.</li>
+<li>Close the page. The agreement is now effective. You can start linking the customer's orders to the agreement to offset against the committed target.</li>
+</ol>
+<h1 id="fulfill-sales-agreements">Fulfill sales agreements</h1>
+<p>This procedure shows you how to fulfill a sales agreement by associating sales orders with it. You can run this procedure in the Test Application on company USMF or on your own data. Before starting this guide, make sure you have an effective sales agreement of type &quot;Product value commitment&quot;. Alternatively, you can run the task guide called &quot;Create sales agreements&quot;.</p>
+<h2 id="release-a-sales-order-from-the-agreement">Release a sales order from the agreement</h2>
+<ol>
+<li>Go to Sales and marketing &gt; Sales agreements &gt; Sales agreements.</li>
+<li>In the list, open the agreement against which you want to release the order.</li>
+<li>On the Action Pane, click Sales agreement.</li>
+<li>Click Release order.
+<ul>
+<li>As the text on top of the  Create release order page points out, the details required for the sales order lines will differ depending on whether the agreement is quantity- or value-based.</li>
+<li>The agreement in this guide is of type &quot;Product value commitment&quot;. This is why the Lines section of this page is blank. If the commitment was based on quantity, the line information would be copied from the agreement.</li>
+</ul>
+</li>
+<li>Click Create.
+<ul>
+<li>The message informs you that a sales order has been created. Since the order does not contain any lines, you must add order line details to complete the release process.</li>
+</ul>
+</li>
+<li>Close the page.</li>
+<li>Close the page.</li>
+<li>Go to Sales and marketing &gt; Sales orders &gt; All sales orders.</li>
+<li>In the list, find and open the order that was created as the result of the order release in the previous task.</li>
+<li>Click Add line.</li>
+<li>In the Item number field, click the drop-down button to open the lookup.</li>
+<li>In the Item number field, type or select the item that is specified on the associated sales agreement.</li>
+<li>In the Quantity field, enter a number.
+<ul>
+<li>Make sure that you enter a quantity that brings the Net amount under the value of the associated sales agreement.</li>
+<li>Notice that because the sales order is linked to the agreement, the negotiated discount percent is applied to the order line.</li>
+</ul>
+</li>
+<li>Click Update line.</li>
+<li>Click Attached.
+<ul>
+<li>The Attached agreement page shows the ID and terms of the agreement from which the line is released.</li>
+</ul>
+</li>
+<li>Close the page.</li>
+<li>On the Action Pane, click General.</li>
+<li>Click Attached sales agreement.</li>
+<li>Expand the Line details section.</li>
+<li>Click the Fulfillment tab.
+<ul>
+<li>The Fulfillment tab shows a summary of all the sales order lines that are associated with this commitment, and their fulfillment state, as well as the amount or quantity that has not yet been released.</li>
+</ul>
+</li>
+<li>Close the page.</li>
+<li>Close the page.</li>
+<li>Close the page.</li>
+</ol>
+<h2 id="apply-sales-agreement-in-the-order-process">Apply sales agreement in the order process</h2>
+<ol>
+<li>Go to Sales and marketing &gt; Sales orders &gt; All sales orders.</li>
+<li>Click New.</li>
+<li>In the Customer account field, click the drop-down button to open the lookup.</li>
+<li>In the list, find and select the customer specified on the sales agreement.</li>
+<li>In the list, click the link in the selected row.</li>
+<li>Expand the General section.</li>
+<li>In the Sales agreement ID field, click the drop-down button to open the lookup.</li>
+<li>In the list, click the link in the selected row.</li>
+<li>Click Yes.</li>
+<li>Click OK.</li>
+<li>In the list, mark the selected row.</li>
+<li>In the Item number field, click the drop-down button to open the lookup.</li>
+<li>In the Item number field, type or select the item that is specified on the associated sales agreement.</li>
+<li>In the list, click the link in the selected row.</li>
+<li>Click Save.</li>
+<li>On the Action Pane, click Pick and pack.</li>
+<li>Click Post packing slip.</li>
+<li>Expand the Parameters section.</li>
+<li>Select Yes in the Posting field.</li>
+<li>Click OK.</li>
+<li>Click OK.</li>
+<li>On the Action Pane, click General.</li>
+<li>Click Attached sales agreement.</li>
+<li>Click the Fulfillment tab.</li>
+</ol>
+<h1 id="generate-and-process-customer-rebates">Generate and process customer rebates</h1>
+<p>This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable. It walks you through a specific example to explain how the various conditions on the rebate lines affect the final amounts that will be credited to the customer. You need to use the USMF demo data company, and carry out the following tasks before you start the guide: (1) Go to the Accounts receivable parameters page, and expand the Prices tab and then the Price details tab, and check that the Enable price details option is set to Yes. (2) Go to the Rebate agreements page and select the customer rebate agreement: USMF-000001. If the Workflow approval status field is not set to Approved, you need click Validation on the Action Pane to approve it.</p>
+<h2 id="review-a-customer-rebate-agreement">Review a customer rebate agreement</h2>
+<ol>
+<li>Go to <strong>Navigation pane &gt; Modules &gt; Sales and marketing &gt; Customer rebates &gt; Rebate agreements</strong>.
+<ul>
+<li>The next few steps look at the conditions of agreement USMF-000001. This makes it easier to understand how the customer credit values are calculated later in the procedure.</li>
+<li>The agreement is for an individual customer, in this example customer US-009.</li>
+<li>Rebates are given to the customer when they purchase a specific product. In this case, the product has item number T0020.</li>
+<li>The customer's sales performance, against which the rebate amounts are estimated, is to be accumulated on a weekly basis.</li>
+<li>The setting for &quot;Price taken from&quot; is Gross, which means that line's sales amount on which basis the claim is estimated is not reduced by the line discount.</li>
+<li>The Rebate line break type field shows the method for calculating rebates. In this case, the sales target against which the rebates are to be estimated is set to Quantity.</li>
+<li>The agreement's lines specify the rebate amount type, the actual rebate value, and the thresholds. In this example, the customer will qualify for a rebate of 20 USD per unit sold, if their weekly purchases of the product fall within 1 to 50 units; and a rebate of 40 USD per unit sold, if they purchase above 50 units.</li>
+</ul>
+</li>
+<li>Close the page.</li>
+</ol>
+<h2 id="generate-rebate-claims">Generate rebate claims</h2>
+<ol>
+<li>Go to <strong>Navigation pane &gt; Modules &gt; Sales and marketing &gt; Sales orders &gt; All sales orders</strong>.</li>
+<li>Click <strong>New</strong>. To mimic the way in which rebate claims would be generated, the next task is to create a sales order, where the product and quantity will qualify the customer in question for a rebate.</li>
+<li>In the <strong>Customer account</strong> field, enter or select a value.</li>
+<li>Click <strong>OK</strong>.</li>
+<li>In the <strong>Item number</strong> field, enter or select a value.</li>
+<li>Set <strong>Quantity</strong> to '40'.</li>
+<li>Under the <strong>Sales order lines</strong> section, click <strong>Sales order line</strong>.</li>
+<li>Click <strong>Price details</strong>. If you don't see this option, it's because you didn't set the <strong>Enable price details option</strong> to 'Yes' before you started the guide.</li>
+<li>Expand the <strong>Rebates</strong> section. The <strong>Rebates</strong> tab lists all the rebate agreements that are applicable to the current order line and shows the estimated rebate amount. Note that the displayed amounts are only indications of what future rebate claims may be. The actual rebate amounts may be different depending on: the total sales volume achieved by the customer under a periodic rebate agreement; whether the customer had returned all or partial quantities; and whether the applicable sales order was invoiced.</li>
+<li>Close the page.</li>
+<li>Click <strong>Add line</strong>.</li>
+<li>In the <strong>Item number</strong> field, enter or select a value.</li>
+<li>Set <strong>Quantity</strong> to '60'.</li>
+<li>Click <strong>Save</strong>.</li>
+<li>On the <strong>Action Pane</strong>, click <strong>Invoice</strong>.</li>
+<li>Click <strong>Invoice</strong>.</li>
+<li>Expand the <strong>Parameters</strong> section.</li>
+<li>In the <strong>Quantity</strong> field, select 'All'.</li>
+<li>Click <strong>OK</strong>.</li>
+<li>Click <strong>OK</strong>.</li>
+</ol>
+<h2 id="process-rebate-claims">Process rebate claims</h2>
+<ol>
+<li>Go to <strong>Navigation pane &gt; Modules &gt; Sales and marketing &gt; Customer rebates &gt; Rebates</strong>.
+<ul>
+<li>The Rebates page acts a workbench in which you can review, approve, and process rebate claims. You'll now process the claims that were created as a result of invoicing a sales order for customer US-009, who is the subject of the rebate agreement USMF-000001.</li>
+<li>The first line represents a rebate claim for 800 USD, which is based on the sales of 40 units of product T0020, calculated at 20 USD per unit. This matches the conditions of the first quantity break in the rebate agreement.</li>
+<li>The second claim is for 2,400 USD, which is based on the sales of 60 units of product T0020, calculated at 40 USD per unit, as per the second quantity break in the agreement.</li>
+<li>Both claims are in the &quot;To be calculated&quot; state. This means that they are associated with an agreement that tracks the customer's sales performance on periodic basis and that they have to be re-calculated to account for the total sales volume within the respective period.</li>
+</ul>
+</li>
+<li>Click <strong>Cumulate</strong>.</li>
+<li>In the <strong>Customer</strong> field, enter or select a value.</li>
+<li>In the <strong>Start date</strong> field, select today's date.</li>
+<li>Click <strong>OK</strong>. As a result of running the <strong>Cumulate</strong> function, the estimated claim amount has now been adjusted to account for the fact that the customer's total sales volume in the relevant period is higher than when the first rebate was generated. More specifically, because the total purchased quantity has reached 100 units, the customer now qualifies for 40 USD per unit (as per the agreement's second quantity break), or 400 USD of total rebate amount. The difference is recorded as a new claim &quot;adjustment&quot; for the additional 800 USD. The status of the rebate claims that were included in the Cumulate update are now set to Calculated.</li>
+<li>In the list, mark all rows.</li>
+<li>Click <strong>Approve</strong>.</li>
+<li>Click <strong>Process</strong>.</li>
+<li>In the <strong>Customer</strong> field, enter or select a value.</li>
+<li>Click <strong>OK</strong>. A message shows that the rebate was processed successfully, and the status of the claims has been changed to Mark. This means that as a result of a Rebate accrual journal being posted:
+<ul>
+<li>The claims have now been transferred to the temporary customer balance as deductions.</li>
+<li>The Rebate accrual account has been credited to represent the future liability towards the customer.</li>
+<li>The Rebate expense account has been debited, in recognition of the cost incurred in connection with the sales.</li>
+</ul>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/01_CoreProcesses/01_03_Sales/Sales_Agreements.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

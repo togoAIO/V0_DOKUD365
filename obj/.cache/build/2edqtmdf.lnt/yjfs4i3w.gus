@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Customer | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Customer | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Customer">
+<h1 id="customer" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="5">Customer</h1>
+
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="7">In addition to the business relation details the customer details has all the financial, logistic and all further set ups for the sales process.
+The base to create a new customer is to convert a business relation.</p>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="10">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="11">The Customers can be found in Module Sales an Marketing &gt;&gt; Customers.</p>
+</div>
+<h2 id="functions-for-customer" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="13">Functions for Customer</h2>
+<h3 id="external-item-description" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="15">External item description</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="16">Referenz from own item number to external item number from customer. It is possible to enter the external item number from customer into the sales order with this set up</p>
+<h3 id="numbersequence-references" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="17">Numbersequence references</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="18">Own numbersequence for serial numbers for gauges. Will be created with the <a href="xref:WorkOrder" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="18">Work order</a>.</p>
+<h3 id="exclusive-item" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="19">Exclusive item</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="20">Defines relation from item numbers to customer. If this item is related to the customer no other customer can order this item. It is not possible to create a sales order line with this item for an other customer.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="22"><img src=".%5Cmedia%5CSales%5C01_03_Sales_Customer_ExclusiveItem.png" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="22" alt="Exclusice Item" title="Exclusice Item"></p>
+<table sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="24">
+<thead>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="24">
+<th style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="24">Field</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="24">Description</th>
+</tr>
+</thead>
+</table>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="27">|Contract number: | Information text field |
+|Valid until: | Defines valid date, not mandatory |
+|Min. stock: | Information text field |
+|Max. stock: | Information text field |
+|Box size: | Information text field |</p>
+<h1 id="create-a-new-customer" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="38">Create a new Customer</h1>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="40"><img src="..%5Cimages%5CProzess%C3%BCbersicht.png" sourcefile="ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md" sourcestartlinenumber="40" alt="Prozessübersicht" title="Example Picture"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/01_CoreProcesses/01_03_Sales/Customer.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

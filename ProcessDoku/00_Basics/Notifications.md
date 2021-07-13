@@ -94,7 +94,7 @@ The inbox is structured similarly to Outlook. However, these functionalities are
 
 1. The functions in the upper menu ribbon can be used to open the Notification List window, in which the messages are displayed, answered and context information is called up. When one of these functions is selected, an AX window with the notification list opens automatically. In this window the notifications can be edited.
 
-2. List overview of all open alerts. These alerts can be notifications, tasks, appointments, events or activi-ties.
+2. List overview of all open alerts. These alerts can be notifications, tasks, appointments, events or activities.
 
 In the notification list, notifications can now be read, context information can be accessed and messages can be replied to, just like in the Outlook inbox.
  

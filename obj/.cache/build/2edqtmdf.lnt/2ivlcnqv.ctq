@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PRODUCTION PLANNING | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PRODUCTION PLANNING | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="production-planning" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="1">PRODUCTION PLANNING</h1>
+
+<div class="TIP" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="3">
+<h5>Tip</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="4">In this section you`re going to find the basics how the production Planning works in Dynamics 365.</p>
+</div>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="6">Process FLow:
+<img src=".%5Cmedia%5CProdPlanningProcess_Overview.png" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="7" alt="Process flow of production planning process"></p>
+<h2 id="technical-clarification-of-work-order" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="9">TECHNICAL CLARIFICATION OF WORK ORDER</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="10">The Work orders can be created from several sources: Sales Order line, Master Planning, Reference Work Order or Manually.
+Technical Work Order Clarification means evaluate not solved items in the Work Orders dataset. Usually this operation is done by skilled employees which has technical knowledge about the work order item and its BOM and Routes.
+To technical clarify work orders item, open “Work Order Cockpit” or “Work Order Details” forms and filter the dataset with “not solved” items:</p>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="14">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="15">To know how to use and make filters in “Work Order Cockpit” and “Work Order Details” forms, please read:</p>
+<ol sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="16">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="16">Handbook V5 007 / 03 – Production Basic Work Order Cockpit</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="17">Handbook V5 007 / 02 – Production Basic Work Order Details</li>
+</ol>
+</div>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="19">Check the Work Order description first in order to properly create the BOM &amp; Route.</p>
+<h3 id="bom" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="21">BOM</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="23">Open the Work Orders BOM form and manually insert the BOM components for the Work Order.</p>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="25">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="26">User could use the function &lt; Copy &gt; to assist creating BOM based on a different Item number, BOM or Work Order.</p>
+</div>
+<h4 id="invalid-items-at-bom-line" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="28">Invalid Items at BOM line</h4>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="29">If there is any BOM invalid component, AX will not be able to proceed the Operation Scheduling process.
+Open the BOM form and check for invalid components marked as red lines.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="32">Depend of each situation, the item could be deleted and replaced by a current component or the item could be set as valid again.</p>
+<h3 id="route" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="34">ROUTE</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="36">Open the Work Orders Route form and manually insert the operations for the Work Order.</p>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="38">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="39">User could use the function &lt; Copy Route &gt; to assist creating ROUTE based on a different Route number.
+On the Copy form, select the desired route number and hit &lt; OK &gt;</p>
+</div>
+<h3 id="inactive-sub-operations" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="42">Inactive sub-operations</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="43">If there is any inactivated sub-operation in Route, AX will not be able to proceed the Operation Scheduling process.
+Open the Route form and check for inactive operations and sub-operations marked as red lines.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="48">Additional resources</h2>
+<hr sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="49">
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="51"><a href="production-feedback.md" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="51">Production feedback</a></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="53"><a href="../pim/product-configuration-models.md" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="53">Product configuration models overview</a></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="55"><a href="lean-manufacturing-overview.md" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md" sourcestartlinenumber="55">Lean manufacturing overview</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/01_CoreProcesses/01_04_Production/ProdPlanning_Overview.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
