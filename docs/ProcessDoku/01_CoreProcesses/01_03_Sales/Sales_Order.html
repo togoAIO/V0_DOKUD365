@@ -8,7 +8,7 @@
     <title>Sales order | WIKA Documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Sales order | WIKA Documentation ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../microsoft-dynamics-crm-365-icon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -207,16 +207,55 @@ Open Sales scheduling from <strong>Action Pane &gt; Tab Sell &gt; Section Calcul
 <p><img src="../../media/Sales/SalesOrderScheduling.png" alt="Sales Order Scheduling" title="Sales Order Scheduling"></p>
 <h2 id="order-type-sales-order">ORDER TYPE SALES ORDER</h2>
 <p><img src="../../media/Sales/SalesOrderScheduling_ReleaseOrder.png" alt="Sales Order Scheduling" title="Sales Order Scheduling"></p>
-</article>
+<h1 id="direct-delivery">DIRECT DELIVERY</h1>
+<h2 id="direct-delivery-customers">DIRECT DELIVERY CUSTOMERS</h2>
+<p>In the vendor master it is possible to define direct delivery customers for a vendor.
+The Setup can be don on the Customer on Setup-&gt; Direct delivery customers</p>
+<p>If direct delivery is not allowed, the direct delivery flag will be removed automatically.</p>
+<p>Scenario 1: DD should always be allowed for this vendor
+-&gt; leave the customer account column empty and select ALL in the first line
+Scenario 2: DD should never be allowed for this vendor
+-&gt; leave the customer account column empty and select NOT in the first line
+Scenario 3: DD should never be allowed for this vendor, except for one or more
+customers
+-&gt; create a line [empty/NOT] and [Customer123/Table]</p>
+<h2 id="combination-direct-delivery-and-complete-with-two-different-vendor-duns">COMBINATION DIRECT DELIVERY AND COMPLETE WITH TWO DIFFERENT VENDOR DUNS</h2>
+<p>The combination of direct delivery and setting all lines to complete in a sales order with two different vendor DUNS numbers is impossible.
+If the flag “switch all lines to complete” is set an infolog message pops up.</p>
+<ol start="6">
+<li>IMPLEMENTATION OF PROJECT ORDERS IN EXCEL
+6.1.	TEMPLATE GENERATION</li>
+</ol>
+<p>Access: Sales order details-&gt; on Sales order line-&gt; Functions-&gt; Import sales lines from excel</p>
+<p>The following form is opened.</p>
+<p>Click at template generation</p>
+<p>Specify a data name and select a destination folder. Then start coding by clicking on Configure code.</p>
+<p>When the configurator is opened, code your type as known. After finishing press the button Apply.</p>
+<p>Then the following form is opened.</p>
+<p>Click on <next>.
+Now it is possible to define the variable parameters by setting a flag for this Criterion.<p>
+<p>Then press the button <next><p>
+<p>Now an excel file is created with these information.</p>
+<p>Now all free cells can be filed with the shoer information of the type code.
+For example not “10 bar” but “BG410”</p>
+<p>The cells Tag number, Price and Tag design have always to be filled.</p>
+<pre><code>ATTENTION
+•	Parameters will be implemented according to Typecode
+</code></pre>
+<p>•	„new items“ must be introduced for each changing parameter
+•	items must be separated with one free line</p>
+<p>6.2.	EXCEL IMPORT INTO AX</p>
+<p>Create a sales order, and delete the first item. Now use the function import saleslines from excel.</p>
+<p>Now select the created excel file by clicking on the file symbol and press OK.</p>
+<p>Then the automatical import starts. The data will be imported in the background of AX. During the import it is possible to proceed working.</p>
+<p>After the import the lines were shown in the sales order.</p>
+</next></next></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/01_CoreProcesses/01_03_Sales/Sales_Order.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

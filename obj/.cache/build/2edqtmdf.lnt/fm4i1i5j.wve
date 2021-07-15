@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="1">#Modelcode Basic PVG</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="3">##Introduction</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="5"><img src="./../media/Basics_Overview.png" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="5" alt="Prozessübersicht" title="Prozessübersicht"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="7">For trainees new to the Modelcode &amp; PVG-Code, this introduction is intended to provide a brief overview of these tools and how they can be used. &gt;[Understanding these fundamental points is required in order to understand the remaining details in this document.- Understanding thes fundamental points is required in order to use the Modelcode &amp; PVG-Code correctly.]
+The Modelcode is a product configurator (user selections generate a code-string to represent a specific product). It creates a universal language that can be understood and used by the entire WIKA world and all of its customers. &gt;[Some subsidiaries have access the Modelcode directly from Axapta while other subsidiaries, and even some customers, can access it through the Customer Portal. - Subsidiaries can access the Modelcode directly from Axapta and some customers can access it through the Customer Portal]</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="10">With the Modelcode, a product can be configured by first selecting a product model from a list of available models and then selecting the desired options from a list of available options. Each option is assigned an alpha-numerical code so that when a product is configured, a code-string is generated which serves as a representation of the requested product.
+The Modelcode can also be used to guide customers to the selection of specific products. For many models, a wide variety of production options may exist but it is not always desirable to present these options to customers. Also, different subsidiaries may offer the same product with different options but only the standard options (defined by the product CoE) are used in the Modelcode. If additional product options are available, a free-text field can be added to the Modelcode which allows the manual entry of customer requirements by sales. When this option is used, another tool may be used for own produced products to complete the coding for the free-text. This is when the PVG (Product Variant Generator) is used. The PVG Code is not used by sales but only by work preparation department.
+The PVG is similar to the Modelcode but it includes subsidiary-specific options that are missing from the Modelcode. The PVG is used, when needed, to generate a PVG-Code to complete a product configuration for a customer requirement. It also contains the structure required to link selections from the Modelcode and PVG-Code with BOM components and sub-operations in order to build the required BOM´s and Routes. All PVG details will be provided in this document.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="13">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="14">The PVG code cannot generate item texts or prices shown to the customer. The PVG is only used to have the possibility for automatic BOM and ROUTE Generation for own produced products. PVG has no use for purchased products.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
