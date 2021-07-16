@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Konfigurieren von bedingten Entscheidungen in einem Workflow | WIKA Documentation </title>
+    <title>Configure conditional decisions in a workflow | WIKA Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Konfigurieren von bedingten Entscheidungen in einem Workflow | WIKA Documentation ">
+    <meta name="title" content="Configure conditional decisions in a workflow | WIKA Documentation ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
@@ -77,41 +77,96 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="configure-conditional-decisions-in-a-workflow">Konfigurieren von bedingten Entscheidungen in einem Workflow</h1>
+<h1 id="configure-conditional-decisions-in-a-workflow">Configure conditional decisions in a workflow</h1>
 
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com"></a> Dokumentations Team schreiben.</p>
+<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
 </div>
 
-<p>Verwenden Sie die folgenden Verfahren, um die Eigenschaften der bedingten Entscheidung zu konfigurieren.</p>
-<p>Eine bedingte Entscheidung ist ein Punkt, an dem ein Workflow sich in zwei Verzweigungen gabelt. Klicken Sie zum Konfigurieren einer bedingten Entscheidung im Workflow-Editor mit der rechten Maustaste auf die bedingte Entscheidung, und klicken Sie dann auf <strong>Eigenschaften</strong>, um das Formular <strong>Eigenschaften</strong> zu öffnen.</p>
-<h2 id="name-a-decision">Name einer Entscheidung</h2>
-<p>Gehen Sie folgendermaßen vor, um einen Namen für die bedingte Entscheidung einzugeben.</p>
+<p>Use the following procedure to configure the properties of a conditional decision.</p>
+<p>A conditional decision is a point at which a workflow divides into two branches. To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click <strong>Properties</strong> to open the <strong>Properties</strong> form.</p>
+<h2 id="name-a-decision">Name a decision</h2>
+<p>Follow these steps to enter a name for a conditional decision.</p>
 <ol>
-<li>Klicken Sie im linken Bereich auf <strong>Grundeinstellungen</strong>.</li>
-<li>Geben Sie im Feld <strong>Name</strong> einen eindeutigen Namen für die bedingte Entscheidung ein.</li>
+<li>In the left pane, click <strong>Basic Settings</strong>.</li>
+<li>In the <strong>Name</strong> field, enter a unique name for the conditional decision.</li>
 </ol>
-<h2 id="set-conditions">Festlegen von Bedingungen</h2>
-<p>Das System bestimmt durch Überprüfen, ob das übermittelte Dokument bestimmten Bedingungen entspricht, welche Verzweigung verwendet wird.</p>
+<h2 id="set-conditions">Set conditions</h2>
+<p>The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</p>
 <ol>
-<li><p>Klicken Sie im linken Bereich auf <strong>Grundeinstellungen</strong>.</p>
+<li><p>In the left pane, click <strong>Basic Settings</strong>.</p>
 </li>
-<li><p>Klicken Sie auf <strong>Bedingung hinzufügen</strong>.</p>
+<li><p>Click <strong>Add condition</strong>.</p>
 </li>
-<li><p>Geben Sie eine Bedingung ein.</p>
+<li><p>Enter a condition.</p>
 </li>
-<li><p>Geben Sie ggf. zusätzliche Bedingungen ein.</p>
+<li><p>Enter additional conditions, if they are required.</p>
 </li>
-<li><p>Führen Sie folgende Schritte aus, um die korrekte Konfiguration der eingegebenen Bedingungen zu überprüfen:</p>
+<li><p>To verify that the conditions that you entered are configured correctly, complete the following steps:</p>
 <ol>
-<li>Klicken Sie auf <strong>Test</strong>, um das Formular <strong>Workflow-Bedingungen testen</strong> zu öffnen.</li>
-<li>Wählen Sie im Bereich <strong>Bedingung überprüfen</strong> des Formulars einen Datensatz aus.</li>
-<li>Klicken Sie auf <strong>Test</strong>. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht.</li>
-<li>Klicken Sie auf <strong>OK</strong> oder <strong>Abbrechen</strong>, um zum Formular <strong>Eigenschaften</strong> zurückzukehren.</li>
+<li>Click <strong>Test</strong> to open the <strong>Test workflow condition</strong> form.</li>
+<li>Select a record in the <strong>Validate condition</strong> area of the form.</li>
+<li>Click <strong>Test</strong>. The system evaluates the record to determine whether it meets the conditions that you defined.</li>
+<li>Click <strong>OK</strong> or <strong>Cancel</strong> to return to the <strong>Properties</strong> form.</li>
 </ol>
 </li>
 </ol>
+<!---
+title: Konfigurieren von bedingten Entscheidungen in einem Workflow
+description: Verwenden Sie die folgenden Verfahren, um die Eigenschaften der bedingten Entscheidung zu konfigurieren.
+author: ChrisGarty
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, IT Pro
+ms.reviewer: sericks
+ms.custom: 195703
+ms.assetid: cd5554a4-210c-4c20-a7d3-4b1563c2b5df
+ms.search.region: Global
+ms.author: cgarty
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 957246ac9a758de9f420b9c672520dcb07c43a69
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693953"
+---
+# <a name="configure-conditional-decisions-in-a-workflow"></a>Konfigurieren von bedingten Entscheidungen in einem Workflow
+
+[!include [banner](../includes/banner.md)]
+
+Verwenden Sie die folgenden Verfahren, um die Eigenschaften der bedingten Entscheidung zu konfigurieren.
+
+Eine bedingte Entscheidung ist ein Punkt, an dem ein Workflow sich in zwei Verzweigungen gabelt. Klicken Sie zum Konfigurieren einer bedingten Entscheidung im Workflow-Editor mit der rechten Maustaste auf die bedingte Entscheidung, und klicken Sie dann auf **Eigenschaften**, um das Formular **Eigenschaften** zu öffnen.
+
+## <a name="name-a-decision"></a>Name einer Entscheidung
+
+Gehen Sie folgendermaßen vor, um einen Namen für die bedingte Entscheidung einzugeben.
+
+1. Klicken Sie im linken Bereich auf **Grundeinstellungen**.
+2. Geben Sie im Feld **Name** einen eindeutigen Namen für die bedingte Entscheidung ein.
+
+## <a name="set-conditions"></a>Festlegen von Bedingungen
+
+Das System bestimmt durch Überprüfen, ob das übermittelte Dokument bestimmten Bedingungen entspricht, welche Verzweigung verwendet wird.
+
+1. Klicken Sie im linken Bereich auf **Grundeinstellungen**.
+2. Klicken Sie auf **Bedingung hinzufügen**.
+3. Geben Sie eine Bedingung ein.
+4. Geben Sie ggf. zusätzliche Bedingungen ein.
+5. Führen Sie folgende Schritte aus, um die korrekte Konfiguration der eingegebenen Bedingungen zu überprüfen:
+
+    1. Klicken Sie auf **Test**, um das Formular **Workflow-Bedingungen testen** zu öffnen.
+    2. Wählen Sie im Bereich **Bedingung überprüfen** des Formulars einen Datensatz aus.
+    3. Klicken Sie auf **Test**. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht.
+    4. Klicken Sie auf **OK** oder **Abbrechen**, um zum Formular **Eigenschaften** zurückzukehren.
+--->
 </article>
           </div>
           

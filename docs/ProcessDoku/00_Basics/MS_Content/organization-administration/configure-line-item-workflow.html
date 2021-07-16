@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Positionsworkflows konfigurieren | WIKA Documentation </title>
+    <title>Configure line-item workflows | WIKA Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Positionsworkflows konfigurieren | WIKA Documentation ">
+    <meta name="title" content="Configure line-item workflows | WIKA Documentation ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
@@ -77,40 +77,97 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="configure-line-item-workflows">Positionsworkflows konfigurieren</h1>
+<h1 id="configure-line-item-workflows">Configure line-item workflows</h1>
 
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com"></a> Dokumentations Team schreiben.</p>
+<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
 </div>
 
-<p>In diesem Thema wird erläutert, wie das Positionsworkflowelement konfiguriert wird.</p>
-<p>Klicken Sie zum Konfigurieren eines Positionsworkflowelements im Workflow-Editor mit der rechten Maustaste auf das Element, und klicken Sie dann auf <strong>Eigenschaften</strong>, um die Seite <strong>Eigenschaften</strong> zu öffnen. Verwenden Sie die folgenden Verfahren, um die Eigenschaften des Positionsworkflowelements zu konfigurieren.</p>
-<h2 id="name-the-line-item-workflow-element">Benennen des Positionsworkflowelements</h2>
-<p>Gehen Sie folgendermaßen vor, um einen Namen für das Positionsworkflowelement einzugeben.</p>
+<p>This topic explains how to configure a line-item workflow element.</p>
+<p>To configure a line-item workflow element, in the workflow editor, right-click the element, and then click <strong>Properties</strong> to open the <strong>Properties</strong> page. Then use the following procedures to configure the properties of the line-item workflow element.</p>
+<h2 id="name-the-line-item-workflow-element">Name the line-item workflow element</h2>
+<p>Follow these steps to enter a name for the line-item workflow element.</p>
 <ol>
-<li>Klicken Sie im linken Bereich auf <strong>Grundeinstellungen</strong>.</li>
-<li>Geben Sie im Feld <strong>Name</strong> einen eindeutigen Namen für das Positionsworkflowelement ein.</li>
+<li>In the left pane, click <strong>Basic Settings</strong>.</li>
+<li>In the <strong>Name</strong> field, enter a unique name for the line-item workflow element.</li>
 </ol>
-<h2 id="specify-whether-the-same-workflow-is-used-to-process-all-line-items">Angeben, ob derselbe Workflow zum Verarbeiten aller Positionen verwendet wird</h2>
-<p>Gehen Sie folgendermaßen vor, um anzugeben, ob derselbe Workflow zum Verarbeiten aller Positionen in einem Dokument verwendet wird.</p>
+<h2 id="specify-whether-the-same-workflow-is-used-to-process-all-line-items">Specify whether the same workflow is used to process all line items</h2>
+<p>Follow these steps to specify whether the same workflow is used to process all the line items on a document.</p>
 <ol>
-<li><p>Klicken Sie im linken Bereich auf <strong>Grundeinstellungen</strong>.</p>
+<li><p>In the left pane, click <strong>Basic Settings</strong>.</p>
 </li>
-<li><p>Wird derselbe Workflow zum Verarbeiten aller Positionen in einem Dokument verwendet, klicken Sie <strong>Einzelnen Workflow für alle Positionen aufrufen</strong> auf. Wählen Sie anschließend den Workflow zum Verarbeiten der Positionen aus.</p>
+<li><p>If the same workflow should process all the line items on a document, click <strong>Invoke a single workflow for all line-items</strong>. Then select the workflow to use to process the line items.</p>
 </li>
-<li><p>Wenn ein bestimmter Workflow Positionen verarbeiten sollte, die einen bestimmten Satz von Bedingungen erfüllen, klicken Sie auf <strong>Einen Workflow für jede Position aufrufen</strong>. Folgen Sie diesen Schritten, um die Bedingungen festzulegen:</p>
+<li><p>If a specific workflow should process line items that meet a specific set of conditions, click <strong>Invoke a workflow for each line-item</strong>. Then follow these steps to define the set of conditions:</p>
 <ol>
-<li>Klicken Sie auf <strong>Hinzufügen</strong>.</li>
-<li>Wählen Sie die Bedingung in der Tabelle aus.</li>
-<li>Geben Sie auf der Registerkarte <strong>Bedingungsname</strong> einen Namen für die festzulegenden Bedingungen ein.</li>
-<li>Klicken Sie auf <strong>Bedingung hinzufügen</strong>, um die Bedingung einzugeben.</li>
-<li>Geben Sie alle notwendigen zusätzlichen Bedingungen ein.</li>
-<li>Klicken Sie auf <strong>Test</strong>, um zu überprüfen, ob die eingegebenen Bedingungen korrekt konfiguriert sind. Auf der Seite <strong>Workflowbedingung testen</strong> im Bereich <strong>Bedingung überprüfen</strong> wählen Sie einen Datensatz aus und klicken auf <strong>Test</strong>. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht. Klicken Sie auf <strong>OK</strong> oder <strong>Abbrechen</strong>, um zur Seite <strong>Eigenschaften</strong> zurückzukehren.</li>
+<li>Click <strong>Add</strong>.</li>
+<li>Select the condition in the table.</li>
+<li>On the <strong>Condition name</strong> tab, enter a name for the set of conditions that you're defining.</li>
+<li>Click <strong>Add condition</strong> to enter a condition.</li>
+<li>Enter any additional conditions that are required.</li>
+<li>To verify that the set of conditions that you entered is configured correctly, click <strong>Test</strong>. On the <strong>Test workflow condition</strong> page, in the <strong>Validate condition</strong> area, select a record, and then click <strong>Test</strong>. The system evaluates the record to determine whether it meets the conditions that you defined. Click <strong>OK</strong> or <strong>Cancel</strong> to return to the <strong>Properties</strong> page.</li>
 </ol>
-<p>Wählen Sie auf der Registerkarte <strong>Workflow</strong> den Workflow aus, der verwendet werden soll zum Verarbeiten von Positionen, die die definierten Bedingungen erfüllen.</p>
+<p>On the <strong>Workflow</strong> tab, select the workflow select the workflow to use to process line items that meet the set of conditions that you defined.</p>
 </li>
 </ol>
+<!---
+title: Positionsworkflows konfigurieren
+description: In diesem Thema wird erläutert, wie das Positionsworkflowelement konfiguriert wird.
+author: ChrisGarty
+manager: AnnBe
+ms.date: 11/03/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, IT Pro
+ms.reviewer: sericks
+ms.custom: 195833
+ms.assetid: 3237347e-71d5-4569-bc9a-0d0fc9410b78
+ms.search.region: Global
+ms.author: cgarty
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a72719c9fd03f73b69b558fc0f08eed91ea94ee1
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694358"
+---
+# <a name="configure-line-item-workflows"></a>Positionsworkflows konfigurieren
+
+[!include [banner](../includes/banner.md)]
+
+In diesem Thema wird erläutert, wie das Positionsworkflowelement konfiguriert wird.
+
+Klicken Sie zum Konfigurieren eines Positionsworkflowelements im Workflow-Editor mit der rechten Maustaste auf das Element, und klicken Sie dann auf **Eigenschaften**, um die Seite **Eigenschaften** zu öffnen. Verwenden Sie die folgenden Verfahren, um die Eigenschaften des Positionsworkflowelements zu konfigurieren.
+
+## <a name="name-the-line-item-workflow-element"></a>Benennen des Positionsworkflowelements
+
+Gehen Sie folgendermaßen vor, um einen Namen für das Positionsworkflowelement einzugeben.
+
+1. Klicken Sie im linken Bereich auf **Grundeinstellungen**.
+2. Geben Sie im Feld **Name** einen eindeutigen Namen für das Positionsworkflowelement ein.
+
+## <a name="specify-whether-the-same-workflow-is-used-to-process-all-line-items"></a>Angeben, ob derselbe Workflow zum Verarbeiten aller Positionen verwendet wird
+
+Gehen Sie folgendermaßen vor, um anzugeben, ob derselbe Workflow zum Verarbeiten aller Positionen in einem Dokument verwendet wird.
+
+1. Klicken Sie im linken Bereich auf **Grundeinstellungen**.
+2. Wird derselbe Workflow zum Verarbeiten aller Positionen in einem Dokument verwendet, klicken Sie **Einzelnen Workflow für alle Positionen aufrufen** auf. Wählen Sie anschließend den Workflow zum Verarbeiten der Positionen aus.
+3. Wenn ein bestimmter Workflow Positionen verarbeiten sollte, die einen bestimmten Satz von Bedingungen erfüllen, klicken Sie auf **Einen Workflow für jede Position aufrufen**. Folgen Sie diesen Schritten, um die Bedingungen festzulegen:
+
+    1. Klicken Sie auf **Hinzufügen**.
+    2. Wählen Sie die Bedingung in der Tabelle aus.
+    3. Geben Sie auf der Registerkarte **Bedingungsname** einen Namen für die festzulegenden Bedingungen ein.
+    4. Klicken Sie auf **Bedingung hinzufügen**, um die Bedingung einzugeben.
+    5. Geben Sie alle notwendigen zusätzlichen Bedingungen ein.
+    6. Klicken Sie auf **Test**, um zu überprüfen, ob die eingegebenen Bedingungen korrekt konfiguriert sind. Auf der Seite **Workflowbedingung testen** im Bereich **Bedingung überprüfen** wählen Sie einen Datensatz aus und klicken auf **Test**. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht. Klicken Sie auf **OK** oder **Abbrechen**, um zur Seite **Eigenschaften** zurückzukehren.
+
+    Wählen Sie auf der Registerkarte **Workflow** den Workflow aus, der verwendet werden soll zum Verarbeiten von Positionen, die die definierten Bedingungen erfüllen.
+--->
 </article>
           </div>
           

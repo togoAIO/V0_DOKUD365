@@ -6,7 +6,7 @@
 &nbsp;
 
 For trainees new to the Modelcode & PVG-Code, this introduction is intended to provide a brief overview of these tools and how they can be used. Understanding thes fundamental points is required in order to use the Modelcode & PVG-Code correctly.
-The Modelcode is a product configurator (user selections generate a code-string to represent a specific product). It creates a universal language that can be understood and used by the entire WIKA world and all of its customers. Subsidiaries can access the Modelcode directly from Axapta and some customers can access it through the Customer Portal.
+The Modelcode is a product configurator (user selections generate a code-string to represent a specific product). It creates a universal language that can be understood and used by the entire WIKA world and all of its customers. Subsidiaries can access the Modelcode directly from Dynamics and some customers can access it through the Customer Portal.
 
 With the Modelcode, a product can be configured by first selecting a product model from a list of available models and then selecting the desired options from a list of available options. Each option is assigned an alpha-numerical code so that when a product is configured, a code-string is generated which serves as a representation of the requested product. 
 The Modelcode can also be used to guide customers to the selection of specific products. For many models, a wide variety of production options may exist but it is not always desirable to present these options to customers. Also, different subsidiaries may offer the same product with different options but only the standard options (defined by the product CoE) are used in the Modelcode. If additional product options are available, a free-text field can be added to the Modelcode which allows the manual entry of customer requirements by sales. When this option is used, another tool may be used for own produced products to complete the coding for the free-text. This is when the PVG (Product Variant Generator) is used. The PVG Code is not used by sales but only by work preparation department.
@@ -75,7 +75,7 @@ In the case of the same or similar PVG-Structures, it is important to ensure tha
 >[!Important]
 >Criteria which are created only for the PVG will always begin with “AV-“ and will therefore be differentiated from the criteria for the Modelcode
 >
->New criteria / options and attributes / attribute values are only allowed to be created in Klingenberg DAX and not in any local system.
+>New criteria / options and attributes / attribute values are only allowed to be created in Klingenberg D365 and not in any local system.
 
 >[!Important]
 >Requests for new options, which will only be used in the Modelcode, must first be coordinated with the Modelcode representative in the CoE.

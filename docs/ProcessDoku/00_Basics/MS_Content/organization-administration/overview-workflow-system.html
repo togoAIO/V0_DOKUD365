@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Workflowsystem &#8211; &#220;bersicht | WIKA Documentation </title>
+    <title>Workflow system overview | WIKA Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Workflowsystem &#8211; &#220;bersicht | WIKA Documentation ">
+    <meta name="title" content="Workflow system overview | WIKA Documentation ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
@@ -77,47 +77,121 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="workflow-system-overview">Workflowsystem – Übersicht</h1>
+<h1 id="workflow-system-overview">Workflow system overview</h1>
 
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com"></a> Dokumentations Team schreiben.</p>
+<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
 </div>
 
-<p>In diesem Thema wird das Workflowsystem beschrieben.</p>
-<h2 id="what-is-workflow">Was ist ein Arbeitsplan?</h2>
-<p>Der Begriff <em>Workflow</em> kann auf zwei Arten definiert werden: als System und als Geschäftsprozess.</p>
-<h3 id="workflow-is-a-system">Workflow als System</h3>
-<p>Der Workflow ist ein System, das auf dem Anwendungsobjektserver (AOS) ausgeführt wird. Das Workflowsystem verfügt über Funktionen, die zum Erstellen einzelner Workflows oder Geschäftsprozesse verwendet werden können.</p>
-<h3 id="workflow-is-a-business-process">Workflow als Geschäftsprozess</h3>
-<p>Ein Workflow stellt einen Geschäftsprozess dar. Ein Workflow definiert, wie ein Dokument das System durchläuft, indem angezeigt wird, wer eine Aufgabe abschließen, eine Entscheidung treffen oder ein Dokument genehmigen muss. Die folgende Abbildung zeigt z. B. einen Workflow für Spesenabrechnungen.</p>
-<p><img src="media/workflow_user.gif" alt="Workflow mit Elementen, die Benutzern zugewiesen sind"></p>
-<p>Beispiel zum besseren Verständnis dieses Workflows: Steffen reicht eine Spesenabrechnung in Höhe von 7.000 Euro ein. In diesem Szenario muss Joachim die Belege prüfen, die Steffen an ihn weiterleitet. Anschließend muss die Spesenabrechnung von Frank und Saskia genehmigt werden. Nehmen wir nun an, Steffen reicht eine Spesenabrechnung in Höhe von 11.000 Euro ein. In diesem Szenario muss Joachim die Belege prüfen, und Frank, Saskia und Anne müssen die Spesenabrechnung genehmigen.</p>
-<h2 id="benefits-of-using-the-workflow-system">Vorteile des Workflowsystems</h2>
-<p>Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vorteile:</p>
+<p>This topic describes the workflow system.</p>
+<h2 id="what-is-workflow">What is workflow?</h2>
+<p>The term <em>workflow</em> can be defined in two ways: as a system and as a business process.</p>
+<h3 id="workflow-is-a-system">Workflow is a system</h3>
+<p>Workflow is a system that runs on the Application Object Server (AOS). The workflow system provides functionality that you can use to create individual workflows, or business processes.</p>
+<h3 id="workflow-is-a-business-process">Workflow is a business process</h3>
+<p>A workflow represents a business process. It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document. For example, the following illustration shows a workflow for expense reports.</p>
+<p><img src="media/workflow_user.gif" alt="Workflow with elements that are assigned to users."></p>
+<p>To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts that Sam routes to him. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.</p>
+<h2 id="benefits-of-using-the-workflow-system">Benefits of using the workflow system</h2>
+<p>There are several benefits of using the workflow system in your organization:</p>
 <ul>
-<li><strong>Konsistente Prozesse</strong> – Sie können die Verarbeitung bestimmter Dokumente definieren, z. B. von Bestellanforderungen und Spesenabrechnungen. Das Workflowsystem gewährleistet, dass Dokumente konsistent und effizient verarbeitet und genehmigt werden.</li>
-<li><strong>Prozesssichtbarkeit</strong> – Sie können den Status, die Historie und die Leistungskennzahlen von Workflowinstanzen nachverfolgen. So können Sie besser feststellen, ob zur Effizienzsteigerung Änderungen am Workflow vorgenommen werden sollten.</li>
-<li><strong>Zentralisierte Arbeitsliste</strong> – Benutzer können eine zentralisierte Arbeitsliste öffnen, um die ihnen zugeordneten Workflowaufgaben und -genehmigungen anzuzeigen.</li>
+<li><strong>Consistent processes</strong> – You can define how specific documents, such as purchase requisitions and expense reports, are processed. By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</li>
+<li><strong>Process visibility</strong> – You can track the status, history, and performance metrics of workflow instances. This helps you determine whether changes should be made to the workflow to improve efficiency.</li>
+<li><strong>Centralized work list</strong> – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</li>
 </ul>
-<h2 id="workflow-content">Workflowinhalt</h2>
+<h2 id="workflow-content">Workflow content</h2>
 <ul>
-<li><a href="https://docs.microsoft.com/de-de/dynamics365/supply-chain/fin-ops-core/fin-ops/organization-administration/workflow-system-architecture">Workflow-Systemarchitektur (This is an external link)</a></li>
-<li><a href="workflow-elements.html">Workflow-Elemente</a></li>
-<li><a href="workflow-actions.html">Aktivitäten in Workflow-Genehmigungsprozessen</a></li>
-<li><a href="create-workflow.html">Erstellen von Workflows – Übersicht</a></li>
-<li><a href="configure-workflow-properties.html">Konfigurieren von Workflow-Eigenschaften</a></li>
-<li><a href="configure-manual-task-workflow.html">Manuelle Aufgaben in einem Workflow konfigurieren</a></li>
-<li><a href="configure-automated-task-workflow.html">Konfigurieren von automatisierten Aufgaben in einem Workflow</a></li>
-<li><a href="configure-approval-process-workflow.html">Genehmigungsprozesse in einem Workflow konfigurieren</a></li>
-<li><a href="configure-approval-step-workflow.html">Genehmigungsschritte in einem Workflow konfigurieren</a></li>
-<li><a href="configure-manual-decision-workflow.html">Manuellen Entscheidungen in einem Workflow konfigurieren</a></li>
-<li><a href="configure-conditional-decision-workflow.html">Konfigurieren von bedingten Entscheidungen in einem Workflow</a></li>
-<li><a href="configure-parallel-activity-workflow.html">Konfigurieren paralleler Aktivitäten in einem Workflow</a></li>
-<li><a href="configure-parallel-branch-workflow.html">Konfigurieren paralleler Verzweigungen in einem Workflow</a></li>
-<li><a href="configure-line-item-workflow.html">Konfigurieren von Positionsworkflows</a></li>
-<li><a href="workflow-FAQ.html">Workflow-FAQs</a></li>
+<li><a href="workflow-system-architecture.md">Workflow system architecture</a></li>
+<li><a href="workflow-elements.html">Workflow elements</a></li>
+<li><a href="workflow-actions.html">Actions in workflow approval processes</a></li>
+<li><a href="create-workflow.html">Create workflows overview</a></li>
+<li><a href="configure-workflow-properties.html">Configure workflow properties</a></li>
+<li><a href="configure-manual-task-workflow.html">Configure manual tasks in a workflow</a></li>
+<li><a href="configure-automated-task-workflow.html">Configure automated tasks in a workflow</a></li>
+<li><a href="configure-approval-process-workflow.html">Configure approval processes in a workflow</a></li>
+<li><a href="configure-approval-step-workflow.html">Configure approval steps in a workflow</a></li>
+<li><a href="configure-manual-decision-workflow.html">Configure manual decisions in a workflow</a></li>
+<li><a href="configure-conditional-decision-workflow.html">Configure conditional decisions in a workflow</a></li>
+<li><a href="configure-parallel-activity-workflow.html">Configure parallel activities in a workflow</a></li>
+<li><a href="configure-parallel-branch-workflow.html">Configure parallel branches in a workflow</a></li>
+<li><a href="configure-line-item-workflow.html">Configure line-item workflows</a></li>
+<li><a href="workflow-FAQ.html">Workflow FAQ</a></li>
 </ul>
+<!---
+title: Workflowsystem – Übersicht
+description: In diesem Thema wird das Workflowsystem beschrieben.
+author: ChrisGarty
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, IT Pro
+ms.reviewer: sericks
+ms.custom: 56381
+ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
+ms.search.region: Global
+ms.author: cgarty
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: feb4ef0233b99420ebdd8781aae0191c9fa379f8
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4692841"
+---
+# <a name="workflow-system-overview"></a>Workflowsystem – Übersicht
+
+[!include [banner](../includes/banner.md)]
+
+In diesem Thema wird das Workflowsystem beschrieben.
+
+## <a name="what-is-workflow"></a>Was ist ein Arbeitsplan?
+
+Der Begriff *Workflow* kann auf zwei Arten definiert werden: als System und als Geschäftsprozess.
+
+### <a name="workflow-is-a-system"></a>Workflow als System
+
+Der Workflow ist ein System, das auf dem Anwendungsobjektserver (AOS) ausgeführt wird. Das Workflowsystem verfügt über Funktionen, die zum Erstellen einzelner Workflows oder Geschäftsprozesse verwendet werden können.
+
+### <a name="workflow-is-a-business-process"></a>Workflow als Geschäftsprozess
+
+Ein Workflow stellt einen Geschäftsprozess dar. Ein Workflow definiert, wie ein Dokument das System durchläuft, indem angezeigt wird, wer eine Aufgabe abschließen, eine Entscheidung treffen oder ein Dokument genehmigen muss. Die folgende Abbildung zeigt z. B. einen Workflow für Spesenabrechnungen.
+
+![Workflow mit Elementen, die Benutzern zugewiesen sind](./media/workflow_user.gif)
+
+Beispiel zum besseren Verständnis dieses Workflows: Steffen reicht eine Spesenabrechnung in Höhe von 7.000 Euro ein. In diesem Szenario muss Joachim die Belege prüfen, die Steffen an ihn weiterleitet. Anschließend muss die Spesenabrechnung von Frank und Saskia genehmigt werden. Nehmen wir nun an, Steffen reicht eine Spesenabrechnung in Höhe von 11.000 Euro ein. In diesem Szenario muss Joachim die Belege prüfen, und Frank, Saskia und Anne müssen die Spesenabrechnung genehmigen.
+
+## <a name="benefits-of-using-the-workflow-system"></a>Vorteile des Workflowsystems
+
+Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vorteile:
+
+- **Konsistente Prozesse** – Sie können die Verarbeitung bestimmter Dokumente definieren, z. B. von Bestellanforderungen und Spesenabrechnungen. Das Workflowsystem gewährleistet, dass Dokumente konsistent und effizient verarbeitet und genehmigt werden.
+- **Prozesssichtbarkeit** – Sie können den Status, die Historie und die Leistungskennzahlen von Workflowinstanzen nachverfolgen. So können Sie besser feststellen, ob zur Effizienzsteigerung Änderungen am Workflow vorgenommen werden sollten.
+- **Zentralisierte Arbeitsliste** – Benutzer können eine zentralisierte Arbeitsliste öffnen, um die ihnen zugeordneten Workflowaufgaben und -genehmigungen anzuzeigen.
+
+
+## <a name="workflow-content"></a>Workflowinhalt
+
++ [Workflow-Systemarchitektur (This is an external link)](https://docs.microsoft.com/de-de/dynamics365/supply-chain/fin-ops-core/fin-ops/organization-administration/workflow-system-architecture)
++ [Workflow-Elemente](workflow-elements.md)
++ [Aktivitäten in Workflow-Genehmigungsprozessen](workflow-actions.md)
++ [Erstellen von Workflows – Übersicht](create-workflow.md)
++ [Konfigurieren von Workflow-Eigenschaften](configure-workflow-properties.md)
++ [Manuelle Aufgaben in einem Workflow konfigurieren](configure-manual-task-workflow.md)
++ [Konfigurieren von automatisierten Aufgaben in einem Workflow](configure-automated-task-workflow.md)
++ [Genehmigungsprozesse in einem Workflow konfigurieren](configure-approval-process-workflow.md)
++ [Genehmigungsschritte in einem Workflow konfigurieren](configure-approval-step-workflow.md)
++ [Manuellen Entscheidungen in einem Workflow konfigurieren](configure-manual-decision-workflow.md)
++ [Konfigurieren von bedingten Entscheidungen in einem Workflow](configure-conditional-decision-workflow.md)
++ [Konfigurieren paralleler Aktivitäten in einem Workflow](configure-parallel-activity-workflow.md)
++ [Konfigurieren paralleler Verzweigungen in einem Workflow](configure-parallel-branch-workflow.md)
++ [Konfigurieren von Positionsworkflows](configure-line-item-workflow.md)
++ [Workflow-FAQs](workflow-FAQ.md)
+-->
 </article>
           </div>
           

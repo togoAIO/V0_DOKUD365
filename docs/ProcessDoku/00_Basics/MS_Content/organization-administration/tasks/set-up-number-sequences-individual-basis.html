@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Nummernkreise einzeln einrichten | WIKA Documentation </title>
+    <title>Set up number sequences on an individual basis | WIKA Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Nummernkreise einzeln einrichten | WIKA Documentation ">
+    <meta name="title" content="Set up number sequences on an individual basis | WIKA Documentation ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../../../microsoft-dynamics-crm-365-icon.ico">
@@ -77,30 +77,73 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="set-up-number-sequences-on-an-individual-basis">Nummernkreise einzeln einrichten</h1>
+<h1 id="set-up-number-sequences-on-an-individual-basis">Set up number sequences on an individual basis</h1>
 
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com"></a> Dokumentations Team schreiben.</p>
+<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
 </div>
 
-<p>In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten. Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Kennungen für Masterdaten- und Buchungsdatensätze, die diese benötigen. Ein Masterdaten- oder Buchungsdatensatz, der eine Kennung erfordert, wird als Referenz bezeichnet. Bevor neue Datensätze für eine Referenz erstellt werden können, muss ein Nummernkreis eingerichtet und der Referenz zugeordnet werden. Mit dem Assistenten <strong>Nummernkreise einrichten</strong> können alle erforderlichen Nummernkreise gleichzeitig eingerichtet werden. Mit der Seite <strong>Nummernkreise</strong> können Sie einzelne Nummernkreise einrichten.</p>
+<p>This topic explains how to set up number sequences on an individual basis. Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them. A master data or transaction record that requires an identifier is referred to as a reference. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference. You can set up all required number sequences at the same time by using the <strong>Set up number sequences</strong> wizard, or you can create or modify individual number sequences by using the <strong>Number sequences</strong> page.</p>
 <ol>
-<li>Wechseln Sie zu <strong>Navigationsbereich &gt; Module &gt; Organisationsverwaltung &gt; Nummernkreise &gt; Nummernkreise</strong>.</li>
-<li>Wählen Sie <strong>Nummernkreis</strong> aus.</li>
-<li>Geben Sie im Feld <strong>Nummernkreiscode</strong> einen Wert ein.</li>
-<li>Geben Sie im Feld <strong>Name</strong> einen Wert ein.</li>
-<li>Wählen Sie auf dem Inforegister <strong>Bereichsparameter</strong> einen Bereich für den Nummernkreis aus, und wählen Sie Bereichswerte in der Dropdownliste aus. Mit dem Bereich wird definiert, welche Organisationen den Nummernkreis verwenden. Nummernkreise mit einem anderen Bereich als <strong>Freigegeben</strong> können Segmente enthalten, die ihrem Bereich entsprechen. Ein Nummernkreis mit dem Bereich <strong>Juristische Person</strong> kann beispielsweise ein Segment für juristische Personen enthalten. Weitere Informationen zu Bereichen finden Sie unter <a href="https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview">Überblick über Nummernkreise</a>.</li>
-<li>Erweitern Sie den Abschnitt <strong>Segmente</strong>.
+<li>Go to <strong>Navigation pane &gt; Modules &gt; Organization administration &gt; Number sequences &gt; Number sequences</strong>.</li>
+<li>Select <strong>Number sequence</strong>.</li>
+<li>In the <strong>Number sequence code</strong> field, type a value.</li>
+<li>In the <strong>Name</strong> field, type a value.</li>
+<li>On the <strong>Scope parameters</strong> FastTab, select a scope for the number sequence and select scope values from the drop-down list. The scope defines which organizations use the number sequence. In addition, number sequences that have a scope other than <strong>Shared</strong> can have segments that correspond to their scope. For example, a number sequence with a scope of <strong>Legal entity</strong> can have a legal entity segment. For more information about scopes, see <a href="../number-sequence-overview.html">Number sequence overview</a>.</li>
+<li>Expand the <strong>Segments</strong> section.
 <ul>
-<li>Definieren Sie das Format für den Nummernkreis, indem Sie Segmente hinzufügen, entfernen und neu anordnen.</li>
-<li>Nummernkreise aller Bereiche können <em>konstante Segmente</em> und <em>alphanumerische Segmente</em> enthalten. Konstante Segmente enthalten einen Satz alphanumerischer Zeichen, die sich nicht ändern. Fügen Sie mithilfe dieses Segmenttyps einen Bindestrich oder andere Trennzeichen zwischen Nummernkreissegmenten hinzu. Alphanumerische Segmente enthalten eine Kombination aus Nummernzeichen (#) und kaufmännischen Und-Zeichen (&amp;). Diese Zeichen stellen Buchstaben und Zahlen dar, die jedes Mal schrittweise erhöht werden, wenn eine Nummer aus dem Nummernkreis verwendet wird. Verwenden Sie ein Nummernzeichen (#) zur Angabe inkrementeller Nummern und ein kaufmännisches Und-Zeichen zur Angabe inkrementeller Buchstaben. Mit dem Format <code>#####_2014</code> wird beispielsweise der Nummernkreis <code>00001_2014</code>, <code>00002_2014</code> usw. erstellt. Mindestens ein alphanumerisches Segment muss vorhanden sein. Bereichssegmente, z. B. ein Unternehmen oder eine juristische Person, sind nicht erforderlich. Doch wenn Sie keine Bereichssegmente in das Format einschließen, werden Nummern für die ausgewählte Referenz dennoch pro Bereich generiert.</li>
+<li>Define the format for the number sequence by adding, removing, and rearranging segments.</li>
+<li>Number sequences of all scopes can contain <em>Constant segments</em> and <em>Alphanumeric segments</em>. Constant segments contain a set of alphanumeric characters that do not change. Use this segment type to add a hyphen or other separators between number sequence segments. Alphanumeric segments contain a combination of number signs (#) and ampersands (&amp;). These characters represent letters and numbers that increment every time that a number from the sequence is used. Use a number sign (#) to indicate incrementing numbers and an ampersand (&amp;) to indicate incrementing letters. For example, the format <code>#####_2014</code> creates the sequence <code>00001_2014</code>, <code>00002_2014</code>, and so on. At least one alphanumeric segment must be present. Scope segments, such as company or legal entity, are not required. However, if you do not include scope segments in the format, numbers for the selected reference are still generated per scope.</li>
 </ul>
 </li>
-<li>Erweitern Sie den Abschnitt <strong>Referenzen</strong>. Wählen Sie den Dokumenttyp oder Datensatz aus, dem dieser Nummernkreis zugeordnet werden soll. Dieser Schritt ist für Nummernkreise, die für spezielle Anwendungsverwendungsmuster definiert werden, optional. In diesen Szenarien wird eine neue Nummer generiert, indem der Wert eines Nummernkreiscodes oder einer Nummernkreiskennung, aber keine Referenz verwendet wird. Ein Beispiel für ein spezielles Anwendungsverwendungsmuster sind Belegnummern, die für bestimmte Journale verwendet werden. Es wird jedoch nicht empfohlen, solche Muster zu verwenden.</li>
-<li>Erweitern Sie den Abschnitt <strong>Allgemein</strong>. Geben Sie auf dem Inforegister &quot;Allgemein&quot; an, ob der Nummernkreis manuell und fortlaufend bzw. nicht fortlaufend ist. Geben Sie zudem die niedrigste und die höchste Nummer ein, die in einem Nummernkreis verwendet werden kann. Es wird nicht empfohlen, einen nicht fortlaufenden Nummernkreis zu einem fortlaufenden Nummernkreis zu ändern. Der Nummernkreis wird nicht tatsächlich fortlaufend sein. Diese Änderung führt möglicherweise auch zu Doppelschlüssel-Verstößen in der Datenbank. Zudem besitzen fortlaufende Nummernkreise eine größere Auswirkungen auf die Leistung.</li>
-<li>Klicken Sie auf <strong>Speichern</strong>.</li>
+<li>Expand the <strong>References</strong> section. Select the document type or record to assign this number sequence to. This step is optional for sequences that are defined for special application usage patterns. In these scenarios, a new number is generated by using the value of a number sequence code or ID, without using a reference. An example of a special application usage pattern is a voucher series that is used for specific journal names. However, we do not recommend that you use such patterns.</li>
+<li>Expand the <strong>General</strong> section. On the General FastTab, specify whether the number sequence is manual, and continuous or non-continuous. In addition, enter the lowest and highest numbers that can be used in the number sequence. We do not recommend changing a non-continuous number sequence to a continuous number sequence. The number sequence will not be truly continuous. This change may also cause duplicate key violations in the database. In addition, continuous number sequences have a larger effect on performance.</li>
+<li>Click <strong>Save</strong>.</li>
 </ol>
+<!---
+title: Nummernkreise einzeln einrichten
+description: In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten.
+author: sericks007
+manager: AnnBe
+ms.date: 08/16/2019
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
+audience: Application User
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: cf06046c772cd128f5600ed319cc3d0d4457b07f
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694714"
+---
+# <a name="set-up-number-sequences-on-an-individual-basis"></a>Nummernkreise einzeln einrichten
+
+[!include [banner](../../includes/banner.md)]
+
+In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten. Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Kennungen für Masterdaten- und Buchungsdatensätze, die diese benötigen. Ein Masterdaten- oder Buchungsdatensatz, der eine Kennung erfordert, wird als Referenz bezeichnet. Bevor neue Datensätze für eine Referenz erstellt werden können, muss ein Nummernkreis eingerichtet und der Referenz zugeordnet werden. Mit dem Assistenten **Nummernkreise einrichten** können alle erforderlichen Nummernkreise gleichzeitig eingerichtet werden. Mit der Seite **Nummernkreise** können Sie einzelne Nummernkreise einrichten.
+
+1. Wechseln Sie zu **Navigationsbereich > Module > Organisationsverwaltung > Nummernkreise > Nummernkreise**.
+2. Wählen Sie **Nummernkreis** aus.
+3. Geben Sie im Feld **Nummernkreiscode** einen Wert ein.
+4. Geben Sie im Feld **Name** einen Wert ein.
+5. Wählen Sie auf dem Inforegister **Bereichsparameter** einen Bereich für den Nummernkreis aus, und wählen Sie Bereichswerte in der Dropdownliste aus. Mit dem Bereich wird definiert, welche Organisationen den Nummernkreis verwenden. Nummernkreise mit einem anderen Bereich als **Freigegeben** können Segmente enthalten, die ihrem Bereich entsprechen. Ein Nummernkreis mit dem Bereich **Juristische Person** kann beispielsweise ein Segment für juristische Personen enthalten. Weitere Informationen zu Bereichen finden Sie unter [Überblick über Nummernkreise](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
+6. Erweitern Sie den Abschnitt **Segmente**.
+    - Definieren Sie das Format für den Nummernkreis, indem Sie Segmente hinzufügen, entfernen und neu anordnen.  
+    - Nummernkreise aller Bereiche können *konstante Segmente* und *alphanumerische Segmente* enthalten. Konstante Segmente enthalten einen Satz alphanumerischer Zeichen, die sich nicht ändern. Fügen Sie mithilfe dieses Segmenttyps einen Bindestrich oder andere Trennzeichen zwischen Nummernkreissegmenten hinzu. Alphanumerische Segmente enthalten eine Kombination aus Nummernzeichen (#) und kaufmännischen Und-Zeichen (&). Diese Zeichen stellen Buchstaben und Zahlen dar, die jedes Mal schrittweise erhöht werden, wenn eine Nummer aus dem Nummernkreis verwendet wird. Verwenden Sie ein Nummernzeichen (#) zur Angabe inkrementeller Nummern und ein kaufmännisches Und-Zeichen zur Angabe inkrementeller Buchstaben. Mit dem Format `#####_2014` wird beispielsweise der Nummernkreis `00001_2014`, `00002_2014` usw. erstellt. Mindestens ein alphanumerisches Segment muss vorhanden sein. Bereichssegmente, z. B. ein Unternehmen oder eine juristische Person, sind nicht erforderlich. Doch wenn Sie keine Bereichssegmente in das Format einschließen, werden Nummern für die ausgewählte Referenz dennoch pro Bereich generiert.  
+7. Erweitern Sie den Abschnitt **Referenzen**. Wählen Sie den Dokumenttyp oder Datensatz aus, dem dieser Nummernkreis zugeordnet werden soll. Dieser Schritt ist für Nummernkreise, die für spezielle Anwendungsverwendungsmuster definiert werden, optional. In diesen Szenarien wird eine neue Nummer generiert, indem der Wert eines Nummernkreiscodes oder einer Nummernkreiskennung, aber keine Referenz verwendet wird. Ein Beispiel für ein spezielles Anwendungsverwendungsmuster sind Belegnummern, die für bestimmte Journale verwendet werden. Es wird jedoch nicht empfohlen, solche Muster zu verwenden.  
+8. Erweitern Sie den Abschnitt **Allgemein**. Geben Sie auf dem Inforegister "Allgemein" an, ob der Nummernkreis manuell und fortlaufend bzw. nicht fortlaufend ist. Geben Sie zudem die niedrigste und die höchste Nummer ein, die in einem Nummernkreis verwendet werden kann. Es wird nicht empfohlen, einen nicht fortlaufenden Nummernkreis zu einem fortlaufenden Nummernkreis zu ändern. Der Nummernkreis wird nicht tatsächlich fortlaufend sein. Diese Änderung führt möglicherweise auch zu Doppelschlüssel-Verstößen in der Datenbank. Zudem besitzen fortlaufende Nummernkreise eine größere Auswirkungen auf die Leistung.   
+9. Klicken Sie auf **Speichern**.
+
+-->
 </article>
           </div>
           

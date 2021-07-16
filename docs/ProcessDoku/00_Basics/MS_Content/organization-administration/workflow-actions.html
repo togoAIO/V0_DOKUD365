@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Aktivit&#228;ten in Workflow-Genehmigungsprozessen | WIKA Documentation </title>
+    <title>Actions in workflow approval processes | WIKA Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Aktivit&#228;ten in Workflow-Genehmigungsprozessen | WIKA Documentation ">
+    <meta name="title" content="Actions in workflow approval processes | WIKA Documentation ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
@@ -77,73 +77,217 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="actions-in-workflow-approval-processes">Aktivitäten in Workflow-Genehmigungsprozessen</h1>
+<h1 id="actions-in-workflow-approval-processes">Actions in workflow approval processes</h1>
 
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com"></a> Dokumentations Team schreiben.</p>
+<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
 </div>
 
-<p>Dieser Artikel beschreibt die Aktivitäten, die jeder Teilnehmer an einen Workflowgenehmigungsprozess ausführen kann.</p>
-<p>Ein Workflow kann mehrere Personengruppen umfassen: den Ersteller, Beauftragte für Aufgaben, Entscheidungsträger und genehmigende Personen. Im folgenden Workflow für Spesenabrechnungen ist z. B. Steffen der Ersteller, die Mitglieder der Warteschlange sind Beauftragte für Aufgaben, Jens ein Entscheidungsträger, während Frank, Saskia und Anne genehmigende Personen sind.</p>
-<p><a href="media/workflow_withmanualdecision.gif"><img src="media/workflow_withmanualdecision.gif" alt="Workflow_WithManualDecision"></a></p>
-<p>In den folgenden Abschnitten werden die Workflowaktivitäten erläutert, die von jeder Gruppe ausgeführt werden können.</p>
-<h2 id="actions-that-an-originator-can-perform">Mögliche Aktivitäten eines Erstellers</h2>
-<p>Der Ersteller startet eine Arbeitsplaninstanz, indem er ein Dokument zur Bearbeitung übermittelt. Zum Übermitteln seiner Spesenabrechnung muss Steffen z. B. auf der Seite <strong>Spesenabrechnung</strong> auf die Schaltfläche <strong>Absenden</strong> klicken.</p>
-<h2 id="actions-that-a-task-assignee-can-perform">Mögliche Aktivitäten eines Beauftragten für eine Aufgabe</h2>
-<p>Eine Aufgabe kann mehreren Personen oder einer von mehreren Personen überwachten Warteschlange für Arbeitsaufgaben zugewiesen werden. Allerdings kann die Aufgabe nur von einer Person ausgeführt werden. Beispielsweise hat Steffen eine Spesenabrechnung übermittelt und die Belege zur Überprüfung an die für Spesenabrechnungen zuständige Abteilung seiner Organisation weitergeleitet.</p>
-<p>Die Mitglieder der für Spesenabrechnungen zuständigen Abteilung von Adventure Works überwachen die Warteschlange. Julia, ein Mitglied dieser Abteilung, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Sie kann eine der folgenden Aktivitäten nun ausführen: abschließen, ablehnen, delegieren, Änderungen anfordern, neu zuweisen oder freigeben.</p>
+<p>This article explains the actions that each participant in a workflow approval process can take.</p>
+<p>A workflow can involve several groups of people: the originator, task assignees, decision makers, and approvers. For example, in the following expense report workflow, Sam is the originator, the members of the queue are task assignees, John is a decision maker, and Frank, Sue, and Ann are approvers.</p>
+<p><a href="media/workflow_withmanualdecision.gif"><img src="media/workflow_withmanualdecision.gif" alt="Workflow_WithManualDecision."></a></p>
+<p>The following sections explain the workflow actions that each group can perform.</p>
+<h2 id="actions-that-an-originator-can-perform">Actions that an originator can perform</h2>
+<p>The originator starts a workflow instance by submitting a document for processing. For example, Sam must click the <strong>Submit</strong> button on the <strong>Expense report</strong> page to submit his expense report.</p>
+<h2 id="actions-that-a-task-assignee-can-perform">Actions that a task assignee can perform</h2>
+<p>A task can be assigned to multiple people or to a work item queue that is monitored by several people. However, only one person can complete a task. For example, Sam has submitted an expense report and has routed his receipts to his organization's Expense Reports department for review.</p>
+<p>The members of the Adventure Works Expense Reports department monitor the queue. Julie, a member of that department, has accepted the task of reviewing Sam's expense report and receipts. She can now perform one of the following actions: complete, reject, delegate, request change, reassign, or release.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Die verfügbaren Aktivitäten unterscheiden sich abhängig davon, wie die Aufgabe vom Softwareentwickler entworfen wurde.</p>
+<p>The actions that are available vary, depending on how the software developer designed the task.</p>
 </div>
-<h3 id="complete">Abschließen</h3>
-<p>Wenn ein Benutzer eine Aufgabe abschließt, wird das Dokument, das zur Bearbeitung übermittelt wurde, dem nächsten Benutzer im Arbeitsplan zugewiesen, sofern es einen nächsten Benutzer gibt. Wenn keine weitere Verarbeitung erforderlich ist, wird der Workflowprozess beendet.</p>
-<p>Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Nachdem Julia ihre Überprüfung abgeschlossen hat, wird das Dokument Jens zugewiesen.</p>
-<h3 id="reject">Ablehnen</h3>
-<p>Lehnt ein Benutzer ein Dokument ab, endet der Workflowprozess.</p>
-<p>Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Wenn Julia die Spesenabrechnung ablehnt, endet der Workflowprozess.</p>
-<p>Steffen kann die Spesenabrechnung erneut übermitteln. Er kann Änderungen zuerst vornehmen, oder er kann die Originalversion erneut übermitteln. Übermittelt Steffen die Spesenabrechnung erneut, beginnt der Workflowprozess mit der manuellen Überprüfungsaufgabe.</p>
-<h3 id="delegate">Delegat</h3>
-<p>Wenn ein Benutzer eine Aufgabe delegiert, wird diese einem anderen Benutzer zugewiesen.</p>
-<p>Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Julia delegiert diese Aufgabe an Thomas, ihren Assistenten.</p>
-<p>Thomas handelt daraufhin im Auftrag von Julia. Schließt Thomas seine Überprüfung ab, wird die Spesenabrechnung daher Jens zugewiesen – so, als ob die Aufgabe von Julia abgeschlossen worden wäre.</p>
-<h3 id="request-change">Änderung anfordern</h3>
-<p>Wenn ein Benutzer eine Änderung an einem übermittelten Dokument anfordert, wird das Dokument zurück an den Ersteller gesendet.</p>
-<p>Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Julia stellt in der Spesenabrechnung einige Fehler fest und fordert Änderungen an. Die Spesenabrechnung wird an Steffen zurückgesendet.</p>
-<p>Steffen kann die Spesenabrechnung erneut übermitteln. Er kann die angeforderten Änderungen zuerst vornehmen, oder er kann die Originalversion erneut übermitteln. Übermittelt Steffen die Spesenabrechnung erneut, muss ein Mitglied der Warteschlange für Arbeitsaufgaben die Abrechnung und die Belege erneut überprüfen.</p>
-<h3 id="reassign">Neu zuordnen</h3>
-<p>Die Mitglieder einer Warteschlange für Arbeitsaufgaben können Dokumente in dieser Warteschlange einer anderen Warteschlange neu zuweisen.</p>
-<p>Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, überwacht die Warteschlange. Zur besseren Arbeitsauslastung kann sie die Spesenabrechnung und die beigelegten Belege einer anderen Warteschlange neu zuweisen.</p>
-<h3 id="release">Freigabe</h3>
-<p>Gelegentlich kann ein Mitglied einer Warteschlange für Arbeitsaufgaben eine Aufgabe annehmen, aber sich dann entscheiden, dass er oder sie die Aufgabe nicht abschließen kann. In diesem Fall kann die Person, die die Aufgabe angenommen hat, das Dokument zurück an die Warteschlange für Arbeitsaufgaben geben.</p>
-<p>Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Falls Julia entscheidet, dass sie die Aufgabe nicht abschließen kann, kann sie das Dokument freigeben. Die Spesenabrechnung wird an die Warteschlange zurückgegeben, sodass andere Mitglieder der für Spesenabrechnungen zuständigen Abteilung von Adventure Works die Aufgabe abschließen können.</p>
-<h2 id="actions-that-a-decision-maker-can-perform">Mögliche Aktivitäten eines Entscheidungsträgers</h2>
-<p>Wird ein Dokument einem Entscheidungsträger zugewiesen, dann in der Regel deshalb, weil eine Frage vom Entscheidungsträger beantwortet werden muss. Die Antwort auf die Frage ist normalerweise <strong>Ja</strong> oder <strong>Nein</strong> oder <strong>Wahr</strong> oder <strong>Falsch</strong>. Falls der Entscheidungsträger keine dieser Möglichkeiten auswählt, kann er oder sie die Entscheidung delegieren.</p>
-<h3 id="choice-1-or-choice-2">[Auswahl 1] oder [Auswahl 2]</h3>
-<p>Ein Entscheidungsträger muss eine Frage zum Dokument beantworten. Die Antwort auf die Frage ist normalerweise <strong>Ja</strong> oder <strong>Nein</strong> oder <strong>Wahr</strong> oder <strong>Falsch</strong>. Durch die vom Entscheidungsträger ausgewählte Antwort wird bestimmt, welche Workflowverzweigung zum Verarbeiten des Dokuments verwendet wird.</p>
-<p>Steffens Spesenabrechnung wird beispielsweise Jens zugewiesen. Jens muss entscheiden, ob die Informationen im Dokument einen Anruf beim Vorgesetzten von Steffen erfordern. Wenn Jens entscheidet, dass ein Anruf erforderlich ist, wird die Spesenabrechnung Steffi zugewiesen, die dann den Vorgesetzten von Steffen anrufen muss. Wenn Jens entscheidet, dass kein Anruf erforderlich ist, wird die Spesenabrechnung Frank zur Genehmigung zugewiesen.</p>
-<h3 id="delegate">Delegieren</h3>
-<p>Wird ein Entscheidungsträger eine Entscheidung delegiert, wird das Dokument einem anderen Benutzer zugewiesen, der die Entscheidung treffen muss.</p>
-<p>Steffens Spesenabrechnung wird beispielsweise Jens zugewiesen. Jens delegiert die Entscheidung an Maria, seine Assistentin.</p>
-<p>Maria handelt daraufhin im Auftrag von Jens. Wenn Maria entscheidet, dass ein Anruf bei Steffens Vorgesetztem erforderlich ist, wird die Spesenabrechnung Steffi zugewiesen, die dann Steffens Vorgesetzten anrufen muss. Wenn Maria entscheidet, dass kein Anruf erforderlich ist, wird die Spesenabrechnung Frank zur Genehmigung zugewiesen.</p>
-<h2 id="actions-that-an-approver-can-perform">Mögliche Aktivitäten einer genehmigenden Person</h2>
-<p>Wird ein Dokument einer genehmigenden Person zugewiesen, kann diese Person eine der folgenden Aktivitäten ausführen: genehmigen, ablehnen, delegieren oder Änderung anfordern.</p>
-<h3 id="approve">Genehmigen</h3>
-<p>Wenn eine genehmigende Person ein Dokument genehmigt, wird das Dokument dem nächsten Benutzer im Workflow zugewiesen, sofern vorhanden. Wenn keine weitere Verarbeitung erforderlich ist, wird der Workflowprozess beendet.</p>
-<p>Beispielsweise hat Steffen eine Spesenabrechnung in Höhe von 6.000 Euro übermittelt, und dieses Dokument ist Frank zugewiesen. Wenn Frank das Dokument genehmigt, wird es Saskia zur Genehmigung zugewiesen. Wenn Saskia die Spesenabrechnung genehmigt hat, endet der Workflowprozess.</p>
-<h3 id="reject">Ablehnen</h3>
-<p>Wenn eine genehmigende Person ein Dokument ablehnt, wird der Arbeitsplanprozess beendet.</p>
-<p>Beispielsweise hat Steffen eine Spesenabrechnung in Höhe von 12.000 Euro übermittelt, und dieses Dokument ist Saskia zugewiesen. Wenn Saskia die Spesenabrechnung ablehnt, endet der Workflowprozess.</p>
-<p>Steffen kann die Spesenabrechnung erneut übermitteln. Er kann zuerst Änderungen vornehmen, oder er kann die Originalversion der Abrechnung erneut übermitteln. Übermittelt Steffen die Spesenabrechnung erneut, beginnt der Workflowprozess mit dem Genehmigungsprozess.</p>
-<h3 id="delegate">Delegieren</h3>
-<p>Wenn eine genehmigende Person ein Dokument delegiert, wird das Dokument zur Genehmigung einem anderen Benutzer zugewiesen.</p>
-<p>Beispielsweise hat Steffen eine Spesenabrechnung in Höhe von 12.000 Euro übermittelt, und dieses Dokument ist Frank zugewiesen. Frank delegiert die Spesenabrechnung an Anne.</p>
-<p>Anne handelt daraufhin im Auftrag von Frank. Wenn Anne das Dokument genehmigt, wird es daher Saskia zur Genehmigung zugewiesen – so, als wäre es von Frank genehmigt worden. Nachdem Saskia das Dokument genehmigt hat, wird es zur Genehmigung an Anne gesendet.</p>
-<h3 id="request-change">Änderung anfordern</h3>
-<p>Fordert eine genehmigende Person Änderungen an einem Dokument an, wird es an den Ersteller zurückgesendet.</p>
-<p>Beispielsweise hat Steffen eine Spesenabrechnung in Höhe von 12.000 Euro übermittelt, und dieses Dokument ist Saskia zugewiesen. Wenn Saskia eine Änderung anfordert, wird die Spesenabrechnung an Steffen zurückgesendet.</p>
-<p>Steffen kann die Spesenabrechnung erneut übermitteln. Er kann zuerst die angeforderten Änderungen vornehmen, oder er kann die Originalversion der Abrechnung erneut übermitteln. Übermittelt Steffen die Spesenabrechnung erneut, wird sie zur Genehmigung an Frank gesendet, da Frank die erste genehmigende Person im Genehmigungsprozess ist.</p>
+<h3 id="complete">Complete</h3>
+<p>When a user completes a task, the document that was submitted for processing is assigned to the next user in the workflow, if there is a next user. If no additional processing is required, the workflow process ends.</p>
+<p>For example, Julie, a member of the Adventure Works Expense Reports department, has accepted the task of reviewing Sam's expense report and receipts. After Julie completes her review, the document is assigned to John.</p>
+<h3 id="reject">Reject</h3>
+<p>When a user rejects a document, the workflow process ends.</p>
+<p>For example, Julie, a member of the Adventure Works Expense Reports department, has accepted the task of reviewing Sam's expense report and receipts. If Julie rejects the expense report, the workflow process ends.</p>
+<p>Sam can then resubmit the expense report. He can make changes first, or he can resubmit the original version. If Sam resubmits the expense report, the workflow process starts at the manual review task.</p>
+<h3 id="delegate">Delegate</h3>
+<p>When a user delegates a task, the task is assigned to another user.</p>
+<p>For example, Julie, a member of the Adventure Works Expense Reports department, has accepted the task of reviewing Sam's expense report and receipts. Julie delegates this task to Tim, who is her assistant.</p>
+<p>Tim then acts on behalf of Julie. Therefore, when Tim completes his review, the expense report is assigned to John, just as if Julie had completed the task.</p>
+<h3 id="request-change">Request change</h3>
+<p>When a user requests a change to a document that was submitted, the document is sent back to the originator.</p>
+<p>For example, Julie, a member of the Adventure Works Expense Reports department, has accepted the task of reviewing Sam's expense report and receipts. Julie notices some errors on the expense report and requests changes. The expense report is sent back to Sam.</p>
+<p>Sam can resubmit the expense report. He can make the requested changes first, or he can resubmit the original version. If Sam resubmits the expense report, a member of the work item queue must review the expense report and the receipts again.</p>
+<h3 id="reassign">Reassign</h3>
+<p>The members of a work item queue can reassign documents that are in that queue to another queue.</p>
+<p>For example, Julie, a member of the Adventure Works Expense Reports department, is monitoring the queue. To help balance the workload, she can reassign the expense report, and the receipts that are included with it, to another queue.</p>
+<h3 id="release">Release</h3>
+<p>Occasionally, a member of a work item queue might accept a task, but then decide that he or she can't complete the task. In this case, the person who accepted the task can release the document back to the work item queue.</p>
+<p>For example, Julie, a member of the Adventure Works Expense Reports department, has accepted the task of reviewing Sam's expense report and receipts. If Julie decides that she can't complete the task, she can release the document. The expense report is returned to the queue, so that other members of the Adventure Works Expense Reports department can complete the task.</p>
+<h2 id="actions-that-a-decision-maker-can-perform">Actions that a decision maker can perform</h2>
+<p>Typically, a document is assigned to a decision maker, because there is a question that the decision maker must answer. The answer to the question is typically <strong>Yes</strong> or <strong>No</strong>, or <strong>True</strong> or <strong>False</strong>. If the decision maker doesn't select one of those choices, he or she can delegate the decision.</p>
+<h3 id="choice-1-or-choice-2">[Choice 1] or [Choice 2]</h3>
+<p>A decision maker must answer a question that is related to the document. The answer to the question is typically <strong>Yes</strong> or <strong>No</strong>, or <strong>True</strong> or <strong>False</strong>. The answer that the decision maker selects determines the workflow branch that is used to process the document.</p>
+<p>For example, Sam's expense report is assigned to John. John must decide whether the information in the document requires a call to Sam's manager. If John decides that a call is required, the expense report is assigned to Aretha, who must then call Sam's manager. If John decides that a call isn't required, the expense report is assigned to Frank for approval.</p>
+<h3 id="delegate-1">Delegate</h3>
+<p>When a decision maker delegates a decision, the document is assigned to another user who must make the decision.</p>
+<p>For example, Sam's expense report is assigned to John. John delegates the decision to Maria, who is his assistant.</p>
+<p>Maria then acts on behalf of John. If Maria decides that a call to Sam's manager is required, the expense report is assigned to Aretha, who must then call Sam's manager. If Maria decides that a call isn't required, the expense report is assigned to Frank for approval.</p>
+<h2 id="actions-that-an-approver-can-perform">Actions that an approver can perform</h2>
+<p>When a document is assigned to an approver, the approver can perform one of the following actions: approve, reject, delegate, or request change.</p>
+<h3 id="approve">Approve</h3>
+<p>When an approver approves a document, the document is assigned to the next user in the workflow, if there is a next user. If no additional processing is required, the workflow process ends.</p>
+<p>For example, Sam has submitted an expense report for USD 6,000, and this document is assigned to Frank. When Frank approves the document, it's assigned to Sue for approval. When Sue approves the expense report, the workflow process ends.</p>
+<h3 id="reject-1">Reject</h3>
+<p>When an approver rejects a document, the workflow process ends.</p>
+<p>For example, Sam has submitted an expense report for USD 12,000, and this document is assigned to Sue. If Sue rejects the expense report, the workflow process ends.</p>
+<p>Sam can resubmit the expense report. He can make changes first, or he can resubmit the original version of the expense report. If Sam resubmits the expense report, the workflow process starts at the approval process.</p>
+<h3 id="delegate-2">Delegate</h3>
+<p>When an approver delegates a document, the document is assigned to another user for approval.</p>
+<p>For example, Sam has submitted an expense report for USD 12,000, and this document is assigned to Frank. Frank delegates the expense report to Ann.</p>
+<p>Ann then acts on behalf of Frank. Therefore, when Ann approves the document, it's assigned to Sue for approval, just as if Frank had approved it. After Sue approves the document, it's sent to Ann for approval.</p>
+<h3 id="request-change-1">Request change</h3>
+<p>When an approver requests a change to a document, the document is sent back to the originator.</p>
+<p>For example, Sam has submitted an expense report for USD 12,000, and this document is assigned to Sue. If Sue requests a change, the expense report is sent back to Sam.</p>
+<p>Sam can resubmit the expense report. He can make the requested changes first, or he can resubmit the original version of the expense report. If Sam resubmits the expense report, it's sent to Frank for approval, because Frank is the first approver in the approval process.</p>
+<!---
+title: Aktivitäten in Workflow-Genehmigungsprozessen
+description: Dieser Artikel beschreibt die Aktivitäten, die jeder Teilnehmer an einen Workflowgenehmigungsprozess ausführen kann.
+author: ChrisGarty
+manager: AnnBe
+ms.date: 08/23/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, IT Pro
+ms.reviewer: sericks
+ms.custom: 56411
+ms.assetid: 65fb711c-6474-42d1-81ed-ca657c29bf1f
+ms.search.region: Global
+ms.author: cgarty
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2973454e585f8ee45c0b6ee95c8b41e93bc2d962
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694286"
+---
+# <a name="actions-in-workflow-approval-processes"></a>Aktivitäten in Workflow-Genehmigungsprozessen
+
+[!include [banner](../includes/banner.md)]
+
+Dieser Artikel beschreibt die Aktivitäten, die jeder Teilnehmer an einen Workflowgenehmigungsprozess ausführen kann.
+
+Ein Workflow kann mehrere Personengruppen umfassen: den Ersteller, Beauftragte für Aufgaben, Entscheidungsträger und genehmigende Personen. Im folgenden Workflow für Spesenabrechnungen ist z. B. Steffen der Ersteller, die Mitglieder der Warteschlange sind Beauftragte für Aufgaben, Jens ein Entscheidungsträger, während Frank, Saskia und Anne genehmigende Personen sind.
+
+[![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+
+In den folgenden Abschnitten werden die Workflowaktivitäten erläutert, die von jeder Gruppe ausgeführt werden können.
+
+## <a name="actions-that-an-originator-can-perform"></a>Mögliche Aktivitäten eines Erstellers
+
+Der Ersteller startet eine Arbeitsplaninstanz, indem er ein Dokument zur Bearbeitung übermittelt. Zum Übermitteln seiner Spesenabrechnung muss Steffen z. B. auf der Seite **Spesenabrechnung** auf die Schaltfläche **Absenden** klicken.
+
+## <a name="actions-that-a-task-assignee-can-perform"></a>Mögliche Aktivitäten eines Beauftragten für eine Aufgabe
+
+Eine Aufgabe kann mehreren Personen oder einer von mehreren Personen überwachten Warteschlange für Arbeitsaufgaben zugewiesen werden. Allerdings kann die Aufgabe nur von einer Person ausgeführt werden. Beispielsweise hat Steffen eine Spesenabrechnung übermittelt und die Belege zur Überprüfung an die für Spesenabrechnungen zuständige Abteilung seiner Organisation weitergeleitet.
+
+Die Mitglieder der für Spesenabrechnungen zuständigen Abteilung von Adventure Works überwachen die Warteschlange. Julia, ein Mitglied dieser Abteilung, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Sie kann eine der folgenden Aktivitäten nun ausführen: abschließen, ablehnen, delegieren, Änderungen anfordern, neu zuweisen oder freigeben.
+
+> [!NOTE]
+> Die verfügbaren Aktivitäten unterscheiden sich abhängig davon, wie die Aufgabe vom Softwareentwickler entworfen wurde.
+
+### <a name="complete"></a>Abschließen
+
+Wenn ein Benutzer eine Aufgabe abschließt, wird das Dokument, das zur Bearbeitung übermittelt wurde, dem nächsten Benutzer im Arbeitsplan zugewiesen, sofern es einen nächsten Benutzer gibt. Wenn keine weitere Verarbeitung erforderlich ist, wird der Workflowprozess beendet.
+
+Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Nachdem Julia ihre Überprüfung abgeschlossen hat, wird das Dokument Jens zugewiesen.
+
+### <a name="reject"></a>Ablehnen
+
+Lehnt ein Benutzer ein Dokument ab, endet der Workflowprozess.
+
+Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Wenn Julia die Spesenabrechnung ablehnt, endet der Workflowprozess.
+
+Steffen kann die Spesenabrechnung erneut übermitteln. Er kann Änderungen zuerst vornehmen, oder er kann die Originalversion erneut übermitteln. Übermittelt Steffen die Spesenabrechnung erneut, beginnt der Workflowprozess mit der manuellen Überprüfungsaufgabe.
+
+### <a name="delegate"></a>Delegat
+
+Wenn ein Benutzer eine Aufgabe delegiert, wird diese einem anderen Benutzer zugewiesen.
+
+Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Julia delegiert diese Aufgabe an Thomas, ihren Assistenten.
+
+Thomas handelt daraufhin im Auftrag von Julia. Schließt Thomas seine Überprüfung ab, wird die Spesenabrechnung daher Jens zugewiesen – so, als ob die Aufgabe von Julia abgeschlossen worden wäre.
+
+### <a name="request-change"></a>Änderung anfordern
+
+Wenn ein Benutzer eine Änderung an einem übermittelten Dokument anfordert, wird das Dokument zurück an den Ersteller gesendet.
+
+Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Julia stellt in der Spesenabrechnung einige Fehler fest und fordert Änderungen an. Die Spesenabrechnung wird an Steffen zurückgesendet.
+
+Steffen kann die Spesenabrechnung erneut übermitteln. Er kann die angeforderten Änderungen zuerst vornehmen, oder er kann die Originalversion erneut übermitteln. Übermittelt Steffen die Spesenabrechnung erneut, muss ein Mitglied der Warteschlange für Arbeitsaufgaben die Abrechnung und die Belege erneut überprüfen.
+
+### <a name="reassign"></a>Neu zuordnen
+
+Die Mitglieder einer Warteschlange für Arbeitsaufgaben können Dokumente in dieser Warteschlange einer anderen Warteschlange neu zuweisen.
+
+Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, überwacht die Warteschlange. Zur besseren Arbeitsauslastung kann sie die Spesenabrechnung und die beigelegten Belege einer anderen Warteschlange neu zuweisen.
+
+### <a name="release"></a>Freigabe
+
+Gelegentlich kann ein Mitglied einer Warteschlange für Arbeitsaufgaben eine Aufgabe annehmen, aber sich dann entscheiden, dass er oder sie die Aufgabe nicht abschließen kann. In diesem Fall kann die Person, die die Aufgabe angenommen hat, das Dokument zurück an die Warteschlange für Arbeitsaufgaben geben.
+
+Julia, ein Mitglied der für Spesenabrechnungen zuständigen Abteilung von Adventure Works, hat die Aufgabe zur Überprüfung der Spesenabrechung und der Belege von Steffen akzeptiert. Falls Julia entscheidet, dass sie die Aufgabe nicht abschließen kann, kann sie das Dokument freigeben. Die Spesenabrechnung wird an die Warteschlange zurückgegeben, sodass andere Mitglieder der für Spesenabrechnungen zuständigen Abteilung von Adventure Works die Aufgabe abschließen können.
+
+## <a name="actions-that-a-decision-maker-can-perform"></a>Mögliche Aktivitäten eines Entscheidungsträgers
+
+Wird ein Dokument einem Entscheidungsträger zugewiesen, dann in der Regel deshalb, weil eine Frage vom Entscheidungsträger beantwortet werden muss. Die Antwort auf die Frage ist normalerweise **Ja** oder **Nein** oder **Wahr** oder **Falsch**. Falls der Entscheidungsträger keine dieser Möglichkeiten auswählt, kann er oder sie die Entscheidung delegieren.
+
+### <a name="choice-1-or-choice-2"></a>\[Auswahl 1\] oder \[Auswahl 2\]
+
+Ein Entscheidungsträger muss eine Frage zum Dokument beantworten. Die Antwort auf die Frage ist normalerweise **Ja** oder **Nein** oder **Wahr** oder **Falsch**. Durch die vom Entscheidungsträger ausgewählte Antwort wird bestimmt, welche Workflowverzweigung zum Verarbeiten des Dokuments verwendet wird.
+
+Steffens Spesenabrechnung wird beispielsweise Jens zugewiesen. Jens muss entscheiden, ob die Informationen im Dokument einen Anruf beim Vorgesetzten von Steffen erfordern. Wenn Jens entscheidet, dass ein Anruf erforderlich ist, wird die Spesenabrechnung Steffi zugewiesen, die dann den Vorgesetzten von Steffen anrufen muss. Wenn Jens entscheidet, dass kein Anruf erforderlich ist, wird die Spesenabrechnung Frank zur Genehmigung zugewiesen.
+
+### <a name="delegate"></a>Delegieren
+
+Wird ein Entscheidungsträger eine Entscheidung delegiert, wird das Dokument einem anderen Benutzer zugewiesen, der die Entscheidung treffen muss.
+
+Steffens Spesenabrechnung wird beispielsweise Jens zugewiesen. Jens delegiert die Entscheidung an Maria, seine Assistentin.
+
+Maria handelt daraufhin im Auftrag von Jens. Wenn Maria entscheidet, dass ein Anruf bei Steffens Vorgesetztem erforderlich ist, wird die Spesenabrechnung Steffi zugewiesen, die dann Steffens Vorgesetzten anrufen muss. Wenn Maria entscheidet, dass kein Anruf erforderlich ist, wird die Spesenabrechnung Frank zur Genehmigung zugewiesen.
+
+## <a name="actions-that-an-approver-can-perform"></a>Mögliche Aktivitäten einer genehmigenden Person
+
+Wird ein Dokument einer genehmigenden Person zugewiesen, kann diese Person eine der folgenden Aktivitäten ausführen: genehmigen, ablehnen, delegieren oder Änderung anfordern.
+
+### <a name="approve"></a>Genehmigen
+
+Wenn eine genehmigende Person ein Dokument genehmigt, wird das Dokument dem nächsten Benutzer im Workflow zugewiesen, sofern vorhanden. Wenn keine weitere Verarbeitung erforderlich ist, wird der Workflowprozess beendet.
+
+Beispielsweise hat Steffen eine Spesenabrechnung in Höhe von 6.000 Euro übermittelt, und dieses Dokument ist Frank zugewiesen. Wenn Frank das Dokument genehmigt, wird es Saskia zur Genehmigung zugewiesen. Wenn Saskia die Spesenabrechnung genehmigt hat, endet der Workflowprozess.
+
+### <a name="reject"></a>Ablehnen
+
+Wenn eine genehmigende Person ein Dokument ablehnt, wird der Arbeitsplanprozess beendet.
+
+Beispielsweise hat Steffen eine Spesenabrechnung in Höhe von 12.000 Euro übermittelt, und dieses Dokument ist Saskia zugewiesen. Wenn Saskia die Spesenabrechnung ablehnt, endet der Workflowprozess.
+
+Steffen kann die Spesenabrechnung erneut übermitteln. Er kann zuerst Änderungen vornehmen, oder er kann die Originalversion der Abrechnung erneut übermitteln. Übermittelt Steffen die Spesenabrechnung erneut, beginnt der Workflowprozess mit dem Genehmigungsprozess.
+
+### <a name="delegate"></a>Delegieren
+
+Wenn eine genehmigende Person ein Dokument delegiert, wird das Dokument zur Genehmigung einem anderen Benutzer zugewiesen.
+
+Beispielsweise hat Steffen eine Spesenabrechnung in Höhe von 12.000 Euro übermittelt, und dieses Dokument ist Frank zugewiesen. Frank delegiert die Spesenabrechnung an Anne.
+
+Anne handelt daraufhin im Auftrag von Frank. Wenn Anne das Dokument genehmigt, wird es daher Saskia zur Genehmigung zugewiesen – so, als wäre es von Frank genehmigt worden. Nachdem Saskia das Dokument genehmigt hat, wird es zur Genehmigung an Anne gesendet.
+
+### <a name="request-change"></a>Änderung anfordern
+
+Fordert eine genehmigende Person Änderungen an einem Dokument an, wird es an den Ersteller zurückgesendet.
+
+Beispielsweise hat Steffen eine Spesenabrechnung in Höhe von 12.000 Euro übermittelt, und dieses Dokument ist Saskia zugewiesen. Wenn Saskia eine Änderung anfordert, wird die Spesenabrechnung an Steffen zurückgesendet.
+
+Steffen kann die Spesenabrechnung erneut übermitteln. Er kann zuerst die angeforderten Änderungen vornehmen, oder er kann die Originalversion der Abrechnung erneut übermitteln. Übermittelt Steffen die Spesenabrechnung erneut, wird sie zur Genehmigung an Frank gesendet, da Frank die erste genehmigende Person im Genehmigungsprozess ist.
+--->
 </article>
           </div>
           

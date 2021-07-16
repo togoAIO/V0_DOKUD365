@@ -1,205 +1,204 @@
 ---
-title: Überblick über die Funktionsverwaltung
-description: In diesem Thema werden die Funktionsverwaltungsfunktion und deren Verwendung beschrieben.
+# required metadata
+title: Feature management overview
+description: This topic describes the Feature management feature and how you can use it.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: FeatureManagementWorkspace
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  FeatureManagementWorkspace
 audience: IT Pro, Application user
+# ms.devlang: 
 ms.reviewer: sericks
-ms.search.region: Global
+# ms.tgt_pltfrm: 
+ms.custom: "intro-internal"
+ms.search.region: Global 
+# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: cgarty
-ms.search.validFrom:
-- month/year of release that feature was introduced in
-- in format yyyy-mm-dd
+ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
-ms.translationtype: HT
-ms.contentlocale: 
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692965"
 ---
-# <a name="feature-management-overview"></a>Funktionsverwaltung – Übersicht
+
+# Feature management overview
 
 [!include [banner](../../includes/banner.md)]
 
-Funktionen werden in jeder Version hinzugefügt und aktualisiert. Die Funktionsverwaltungserfahrung bietet einen Arbeitsbereich, in dem Sie eine Liste mit Funktionen anzeigen können, die in jede Version geliefert wurden. Standardmäßig sind neue Funktionen ausgeschaltet. Sie können den Arbeitsbereich verwenden, um sie zu aktivieren und die Dokumentation für sie anzuzeigen.
+Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
-## <a name="the-feature-management-workspace"></a>Der Arbeitsbereich für die Funktionsverwaltung
+## The Feature management workspace
 
-Sie können den Arbeitsbereich **Funktionsverwaltung** öffnen, indem Sie die entsprechende Kachel im Dashboard auswählen. Sie sehen eine Seite, die eine Liste mit Funktionen für alle Versionen anzeigt, die von der Funktionsverwaltungserfahrung unterstützt werden. Im Laufe der Zeit wird Microsoft die Funktionsverwaltungserfahrung verbessern, so dass sie zusätzliche Funktionen enthält, um Ihnen dabei zu helfen, Funktionen zu verwalten.
+You can open the **Feature management** workspace by selecting the appropriate tile on the dashboard. You will see a page that shows a list of features for all releases that are supported by the Feature management experience. Over time, Microsoft will enhance the Feature management experience so that it includes more functionality to help you manage features.
 
-Die Funktionsliste für Positionsdetails enthält die folgenden Informationen:
+The feature list includes the following information:
 
-- **Funktionsname** – Eine Beschreibung der Funktion, die hinzugefügt wurde.
-- **Aktivierter Status** – Ein Symbol gibt an, ob eine Funktion aktiviert wurde (Häkchen), nicht aktiviert ist (leer), zur Aktivierung geplant ist (Uhr), obligatorisch aktiviert ist (Schloss), Aufmerksamkeit erfordert, bevor Sie sie aktivieren (Warnung), oder nicht aktiviert werden kann (X). Die Einstellung, die angezeigt wird, wird für alle juristischen Personen verwendet. Beachten Sie, dass auch bei Aktivierung einer Funktion diese nach wie vor über die Sicherheit gesteuert wird. Daher ist die Funktion nur für Benutzer verfügbar, die auf der Grundlage ihrer Sicherheitsrolle Zugriff darauf haben. Sie ist ebenfalls nur in juristischen Personen verfügbar, auf die der Benutzer Zugriff hat.
-- **Aktivieren des Datums** – Das Datum, an dem die Funktion aktiviert wurde für das die Aktivierung geplant ist.
-- **Funktion hinzugefügt** – Das Datum, an dem die Funktion für Ihre Umgebung hinzugefügt wurde. Dieses Datum wird automatisch eingegeben, wenn Sie Ihre Umgebung beim monatlichen Versionszyklus aktualisieren.
-- **Modul** – Das Modul, das von der neuen Funktion betroffen ist.
+- **Feature name** – A description of the feature that was added.
+- **Enabled status** – A symbol indicates whether a feature has been turned on (check mark), hasn't been turned on (blank), is scheduled to be turned on (clock), is mandatorily turned on (lock), requires attention before you turn it on (warning), or can't be enabled (X). The setting that is shown is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it, based on their security role. It will also be available only in legal entities that the user has access to.
+- **Enable date** – The date when the feature was turned on or is scheduled to be turned on.
+- **Feature added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
+- **Module** – The module that is affected by the new feature.
 
-Wenn Sie eine Funktion auswählen, werden zusätzliche Informationen im Detailbereich rechts neben der Funktionsliste angezeigt. Oben im Bereich finden Sie den Funktionsnamen, das Datum, an dem die Funktion hinzugefügt wurde, das Modul, das von der Funktion betroffen ist, und einen **Mehr erfahren**-Link. Wählen Sie diesen Link aus, um die Dokumentation für die Funktion anzuzeigen. Wenn keine Dokumentation verfügbar ist, gelangen Sie zu einer temporären Seite. Der Detailbereich beinhaltet auch ein **Kommentare**-Feld, in dem Sie Ihre eigenen Kommentare zur Funktion hinzufügen können.
+When you select a feature, more information appears in the details pane to the right of the feature list. At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you're taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
 
-Der Arbeitsbereich **Funktionsverwaltung** enthält auch einige Registerkarten, die jede die Funktionen auflistet.
+The **Feature management** workspace also has several tabs, each of which shows a list of features.
 
-- **Neu** - Diese Registerkarte zeigt alle Funktionen, die seit der letzten monatlichen Aktualisierung hinzugefügt wurden. Wenn Sie einen Monatsaktualisierungen übersprungen haben, werden auf der Registerkarte alle neuen Funktionen aufgezeigt, die seit Ihrer letzten Aktualisierung hinzugefügt wurden. Die neuesten Funktionen werden ganz oben in der Liste angezeigt. Die Gesamtanzahl der neuen Funktionen wird auf einer Kachel am oberen Seitenrand angezeigt.
-- **Nicht aktiviert** – Auf dieser Registerkarte werden alle Funktionen angezeigt, die noch nicht aktiviert wurden. Die neuesten Funktionen werden ganz oben in der Liste angezeigt. Die Gesamtanzahl der neuen Funktionen, die noch nicht aktiviert wurden, werden auch auf einer Kachel am oberen Seitenrand angezeigt.
-- **Geplant** - Diese Registerkarte zeigt alle Funktionen an, die zur Aktivierung geplant sind. Die Funktionen mit dem frühesten geplanten Datum werden oben in der Liste angezeigt. Die Gesamtanzahl der geplanten neuen Funktionen wird auf einer Kachel am oberen Seitenrand angezeigt.
-- **Alle** – Auf dieser Registerkarte werden alle Funktionen angezeigt. Die neuesten Funktionen werden ganz oben in der Liste angezeigt.
+- **New** – This tab shows all features that have been added since the last monthly update. If you've skipped any monthly updates, the tab shows all the new features that have been added since the last time that you updated. The newest features appear at the top of the list. The total number of new features is also shown on a tile at the top of the page.
+- **Not enabled** – This tab shows all features that haven't been turned on. The newest features appear at the top of the list. The total number of new features that haven't been turned on is also shown on a tile at the top of the page.
+- **Scheduled** – This tab shows all features that have been scheduled to be turned on in the future. The features that have the earliest scheduled date appear at the top of the list. The total number of schedule new features is also shown on a tile at the top of the page.
+- **All** – This tab shows all features. The newest features appear at the top of the list.
 
-## <a name="turn-on-a-feature"></a>Eine Funktion aktivieren
+## Turn on a feature
 
-Wenn eine Funktion nicht aktiviert wurde, wird eine **Jetzt Aktivieren**-Schaltfläche im Detailbereich angezeigt. Sie können diese Schaltfläche verwenden, um die Funktion zu aktivieren.
+If a feature hasn't been turned on, an **Enable Now** button appears in the details pane. You can use this button to turn on the feature.
 
-- Wählen Sie die Funktion aus, die Sie aktivieren möchten, und wählen Sie dann im Detailbereich **Jetzt Aktivieren** aus. Die Funktion ist aktiviert.
+- Select the feature to turn on, and then, in the details pane, select **Enable Now**. The feature is turned on.
 
-Einige Funktionen können nicht deaktiviert werden, nachdem Sie diese aktiviert haben. Wenn die Funktion, die Sie zu aktivieren versuchen, nicht deaktiviert werden kann, erhalten Sie eine Warnung. An diesem Punkt können Sie **Abbrechen** auswählen, um den Vorgang abzubrechen und die Funktion deaktiviert lassen. Wenn Sie allerdings **Aktivieren** auswählen und die Funktion aktivieren, können Sie sie später nicht mehr deaktivieren.
+Some features can't be turned off after you turn them on. If the feature that you're trying to turn on can't be turned off, you receive a warning. At that point, you can select **Cancel** to cancel the operation and leave the feature turned off. However, if you select **Enable** to turn on the feature, you won't be able to turn it off later.
 
-Bei einigen Funktionen wird eine Meldung angezeigt, die weitere Informationen bereitstellt, bevor Sie die Funktion aktivieren. Diese Funktionen sind mit einem gelben Warnsymbol gekennzeichnet. Sie sollten die zusätzlichen Information sorgfältig lesen, um besser zu verstehen, was geschieht, wenn die Funktion aktiviert ist. Allerdings können Sie immer noch **Aktivieren** auswählen, um die Funktion zu aktivieren.
+Some features will display a message that provides additional information before you turn them on. These features are indicated by a yellow warning symbol. You should read the additional information carefully to better understand what will happen when the feature is enabled. However, you can still select **Enable** to turn on the feature.
 
-Bei einigen Funktionen wird eine Meldung angezeigt, dass die Funktion erst aktiviert werden kann, wenn eine Aktion unternommen wird. Diese Funktionen sind mit einem roten X-Symbol gekennzeichnet. Sie müssen erst die in der Beschreibung erläuterten Aktionen ausführen, bevor die Funktion aktiviert werden kann. Wenn Sie zum Beispiel eine Funktion erst verwenden können, wenn ein Konfigurationsschlüssel deaktiviert wurde, müssen Sie zuerst den Konfigurationsschlüssel deaktivieren und dann zur Funktionsverwaltung zurückkehren, um die Funktion zu aktivieren.
+Some features will display a message that the feature can't be enabled until an action is taken. These features are indicated by a red X symbol. You must take the actions described in the description before the feature is enabled. For example, if you can't use a feature until a configuration key is disabled, then you must disable the configuration key first and then return to Feature management to enable the feature.
 
-Nach der Aktivierung einer Funktion wird eine Meldung unterhalb des Links **Mehr erfahren** im Detailbereich angezeigt. Diese Nachricht gibt entweder an, dass die Funktion aktiviert ist oder gibt das Datum an, wann die Funktion zur Aktivierung geplant ist. Sie wird jedes Mal angezeigt, wenn Sie die Funktion in der Funktionsliste auswählen.
+After a feature is turned on, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or it indicates that the future date when the feature is scheduled to be turned on. It appears every time that you select the feature in the feature list.
 
-Funktionen, die zur Aktivierung geplant sind, werden auf der Registerkarte **Eingeplant** angezeigt. Ein Stapelverarbeitungsvorgang schaltet sie am angegebenen Datum um Mitternacht basierend auf derZeitzone, die auf dem Systemdatum dargestellt wird, ein.
+Features that are scheduled to be turned on in the future appear on the **Scheduled** tab. A batch process will turn them on at midnight on the specified date, based on the time zone that is represented by the system date.
 
-## <a name="reschedule-a-feature"></a>Neuplanen einer Funktion
+## Reschedule a feature
 
-Wenn eine Funktion zur Aktivierung in der Zukunft geplant ist, wird eine Schaltfläche **Zeitplan** im Detailbereich angezeigt. Sie können diese Schaltfläche verwenden, um den Wert **Aktivierungsdatum** auf ein anderes Datum zu ändern.
+If a feature has been scheduled to be turned on in the future, a **Schedule** button appears in the details pane. You can use this button to change the **Enable date** value to a different date.
 
-1. Wählen Sie die geplante Funktion aus, die Sie neu planen möchten, und wählen Sie dann im Detailbereich **Zeitplan** aus.
-2. Im Dialogfeld, das im Feld **Aktivierungsdatum** angezeigt wird, geben Sie das neue Datum ein, an dem die Funktion aktiviert werden soll.
-3. Wählen Sie **Aktivieren** aus, um die Funktion neu zu planen oder **Deaktivieren**, um die Planung abzubrechen.
+1. Select the scheduled feature to reschedule, and then, in the details pane, select **Schedule**.
+2. In the dialog box that appears, in the **Enable date** field, specify the new date when the feature should be turned on.
+3. Select **Enable** to reschedule the feature or **Disable** to cancel the schedule.
 
-## <a name="turn-off-a-feature"></a>Eine Funktion deaktivieren
+## Turn off a feature
 
-Wenn eine Funktion bereits aktiviert ist, wird eine **Deaktivieren**-Schaltfläche im Detailbereich angezeigt. Sie können diese Schaltfläche verwenden, um die Funktion zu deaktivieren. Die Schaltfläche **Deaktivieren** ist nicht verfügbar, wenn die Funktion nicht mehr deaktiviert werden kann, nachdem sie aktiviert wurde.
+If a feature has already been turned on, a **Disable** button appears in the details pane. You can use this button to turn off the feature. The **Disable** button isn't available if the feature can't be turned off after it's turned on.
 
-- Wählen Sie die Funktion aus, die Sie deaktivieren möchten, und wählen Sie dann im Detailbereich **Deaktivieren** aus. Die Funktion wird deaktiviert, und das Feld **Aktivierungsdatum** wird deaktiviert.
+- Select the feature to turn off, and then, in the details pane, select **Disable**. The feature is turned off, and the **Enable date** field is cleared.
 
-Nach der Deaktivierung einer Funktion wird eine Meldung unterhalb des Links **Mehr erfahren** im Detailbereich angezeigt. Diese Nachricht zeigt an, dass die Funktion noch nicht aktiviert wurde. Sie wird jedes Mal angezeigt, wenn Sie die Funktion in der Funktionsliste auswählen. Funktionenen, die noch nicht aktiviert wurden, weren auf der Registerkarte als **Nicht aktiviert** angezeigt.
+After a feature is turned off, a message appears below the **Learn more** link in the details pane. This message states that the feature hasn't yet been turned on. It appears every time that you select the feature in the feature list. Features that haven't been turned on appear on the **Not enabled** tab.
 
-## <a name="features-that-must-be-turned-on"></a>Funktionen, die aktiviert werden müssen
+## Features that must be turned on
 
-Manchmal wird eine wichtige Funktion bereitgestellt, die automatisch aktiviert werden muss, wenn Sie eine Aktualisierung ausführen. Diese Funktionalität wird automatisch am Datum aktiviert, das im Feld **Aktivierungsdatum** angegeben ist. Für diese Funktionen wird eine Meldung unterhalb des Links **Mehr erfahren** im Detailbereich angezeigt. Diese Nachricht gibt entweder an, dass die Funktion aktiviert ist oder gibt das Datum an, wann die Funktion aktiviert wird. Sie wird jedes Mal angezeigt, wenn Sie die Funktion in der Funktionsliste auswählen.
+Sometimes, a critical feature is delivered that must be turned on automatically when you do an update. These features will be turned on automatically on the date that is specified in the **Enable date** field. For these features, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or indicates the future date when the feature will be turned on. It appears every time that you select the feature in the feature list.
 
-## <a name="enable-all-features"></a>Alle Funktionen aktivieren
+## Enable all features
 
-Standardmäßig sind alle Funktionen, die Ihrer Umgebung hinzugefügt werden deaktiviert. Sie können alle Funktionen aktivieren, indem Sie die Schaltfläche **Alle aktivieren** auswählen. 
+By default, all features that are added to your environment are turned off. You can enable all features by selecting the **Enable all** button. 
 
-Wenn Sie **Alle aktivieren** auswählen, wird eine Option angezeigt, bei der Sie die folgenden Informationen angeben müssen:
-- Eine Liste aller Funktionen, die eine Bestätigung erfordern, bevor sie aktiviert werden können. Wenn Sie die Funktionen in der Liste aktivieren möchten, wählen Sie **Ja** für die Schaltfläche **Funktionen aktivieren, die eine Bestätigung erfordern** aus.
-- Eine Liste aller Funktionen wird angezeigt, die nicht aktiviert werden können. Diese Funktionen werden nicht aktiviert.
+When you select **Enable all**, an option will appear where you need provide the following information:
+- A list of all features that require confirmation before they can be enabled. If you want to enable the features in the list, select **Yes** for the **Enable features requiring confirmation** button.
+- A list of all features that can't be enabled will be shown. Those features will not be enabled.
 
-Alle Funktionen, die aktiviert werden können, werden aktiviert. Wenn bereits geplant ist, dass eine Funktion in der Zukunft aktiviert wird, ändert sich der Zeitplan nicht. 
+All features that can be enabled will be enabled. If a feature is already scheduled to be enabled in the future, the schedule will not change. 
 
-## <a name="turn-on-all-features-automatically"></a>Alle Funktionen automatisch aktivieren
+## Turn on all features automatically
 
-Standardmäßig sind alle Funktionen, die Ihrer Umgebung hinzugefügt werden deaktiviert, es sei denn, es handelt sich um erforderliche Funktionen. Wenn Sie jedoch automatisch alle neuen Funktionen aktivieren möchten, können Sie die Dropdownliste unter dem Arbeitsbereichtitel verwenden, um zu ändern, was geschieht, wenn neue Fähigkeiten hinzugefügt werden.
+By default, all features that are added to your environment are turned off, unless they are mandatory features. However, if you want to automatically turn on all new features, you can use the drop-down list under the workspace title to change what occurs when new features are added.
 
-- Wählen Sie **Neue Funktionen automatisch aktivieren** aus, um automatisch alle neuen Funktionen zu aktivieren, die Ihrer Umgebung hinzugefügt werden.
-- Wählen Sie **Neue Funktionen nicht automatisch aktivieren** aus, um standardmäßig alle neuen Funktionen zu deaktivieren, die Ihrer Umgebung hinzugefügt werden.
+- Select `Enable new features automatically` to automatically turn on all new features when they are added to your environment.
+- Select `Do not enable new features automatically` to default all new features to off when they are added to your environment.
 
 
-Wenn Sie alle Funktionen automatisch aktivieren, werden dadurch alle Features aktiviert, die aktiviert würden, wenn Sie auf die Schaltfläche **Alle aktivieren** klicken. Die Funktionen, die eine Bestätigung erfordern, oder die Features, die erst nach einer Aktion aktiviert werden können, werden nicht aktiviert.
+When you enable all feature automatically, it will enable all of the features that would be enabled when you click the **Enable all** button. It will not enable the features that require confirmation or the features that can't be enabled until an action is taken.
 
-## <a name="check-for-updates"></a>Nach Updates suchen
+## Check for updates
 
-Funktionen werden nach jeder Aktualisierung zu Ihrer Umgebung hinzugefügt. Sie können jedoch auch manuell auf Updates prüfen, indem Sie auf die Schaltfläche **Nach Updates suchen** klicken. Alle Funktionen, die dem System nach dem Update hinzugefügt wurden, werden der Liste mit Funktionen hinzugefügt. Wenn beispielsweise eine Flight-Funktion nach einer Veröffentlichung aktiviert wird, können Sie nach Updates suchen, und die Funktion wird dann Ihrer Liste hinzugefügt.
+Features are added to your environment after each update. However, you can manually check for updates by clicking on the **Check for updates** button. Any feature that was added to the system after the update will be added to the list of features. For example, if a flighted feature is enabled after a release, then you can check for updates and the feature will be added to your list.
 
-## <a name="assigning-roles"></a>Zuweisen von Rollen
+## Assigning roles
 
-Der Arbeitsbereich **Funktionsverwaltung** kann von Systemadministratoren und auch von Benutzern geöffnet werden, die den Funktionsmanager- oder Funktions-Viewer-Rollen zugewiesen werden, die zur Unterstützung der Funktionsverwaltungserfahrung erstellt wurden. Diese beiden Rollen wurden erstellt, um die Funktionsverwaltungserfahrung zu unterstützen. Benutzer in der Funktionsmanagerrolle können jede Funktion aktivieren oder deaktivieren. Sie können auch das Feld **Kommentar** für die Funktion aktualisieren. Benutzer in der Funktions-Viewer-Rolle können nur den Arbeitsbereich **Funktionsverwaltung** anzeigen. Sie können keine Funktionen aktivieren oder deaktivieren.
+The **Feature management** workspace can be opened by system admins, and also by users who are assigned to the Feature manager role or the Feature viewer role. These two roles were created to support the Feature management experience. Users in the Feature manager role can turn any feature on or off. They can also update the **Comments** field for the feature. Users in the Feature viewer role can only view the **Feature management** workspace. They can't turn features on or off.
 
-Die Funktionsmanagerrolle und die Funktions-Viewer-Rolle setzen die vorhandene Sicherheit eines Benutzers nicht außer Kraft. Sie steuern lediglich, ob Benutzer derzeit Funktionen anzeigen und deaktivieren können. Sie stellen keinen Zugriff auf die Funktionen selbst zur Verfügung.
+The Feature manager role and Feature viewer role don't override the existing security that a user has. They just control whether the user can turn features on and off. They don't provide access to the features themselves.
 
-## <a name="features-that-use-configuration-keys"></a>Funktionen, die Konfigurationsschlüssel verwenden
+## Features that use configuration keys
 
-Wenn eine Funktion einen Konfigurationsschlüssel verwendet, aber der Konfigurationsschlüssel nicht aktiviert ist, wird im Arbeitsbereich **Funktionsverwaltung** die Funktion nicht in der Liste der verfügbaren Funktionen angezeigt. Nachdem Sie die Konfigurationsschlüssel aktiviert haben, müssen Sie die Funktionsliste aktualiseren, indem Sie das Menüelement **Auf Aktualisierung prüfen** verwenden. Die Funktion wird dann in der Funktionsliste angezeigt.
+If a feature uses a configuration key, but the configuration key isn't turned on, the **Feature management** workspace doesn't show the feature in the list of available features. After you turn on the configuration key, you must update the feature list by using the **Check for update** menu item. The feature then appears in the feature list.
 
-Wenn Sie den Konfigurationsschlüssel deaktivieren, wird die Funktion nicht aus der Funktionsliste entfernt.
+If you turn off the configuration key, the feature isn't removed from the feature list.
 
-## <a name="data-entities"></a>Datenentitäten
+## Data entities
 
-Eine Datenentität mit der Bezeichnung **Funktionsverwaltung** ermöglicht es,  die Funktionsverwaltungseinstellungen einer Umgebung zu exportieren und in einer anderen Umgebung dann zu importieren. Diese Entität aktualisiert nur vorhandene Funktionen. Die zugehörige Geschäftslogik in der Entität stellt außerdem sicher, dass dieselben Regeln, die im Arbeitsbereich **Funktionsverwaltung** verwendet werden, übernommen werden, wenn der Import ausgeführt wird. So können Sie beispielsweise eine erforderliche Funktionseinstellung nicht überschreiben, indem Sie das Datum für den Import entfernen.
+A data entity that is named **Feature management** lets you export the Feature management settings from one environment and then import them into another environment. This entity updates only existing features. The business logic in the entity also helps guarantee that the same rules that are used on the **Feature management** workspace will be applied when the import is done. For example, you can't override a mandatory feature setting by removing the date during import.
 
-Das folgende Beispiel beschreibt, was geschieht, wenn Sie die Entität **Funktionsverwaltung** verwenden, um Daten zu importieren.
+The following examples describe what occurs when you use the **Feature management** entity to import data.
 
-- Wenn Sie den Wert des Felds **Aktiviert** auf **Ja** ändern, wird die Funktion aktiviert, und das Feld **Datum aktivieren**  wird auf das aktuelle Datum festgelegt.
-- Wenn Sie den Wert des Felds **Aktiviert** auf **Nein** ändern oder es leer lassen, wird die Funktion **Datum aktivieren** deaktiviert, und das Feld **Datum aktivieren** wird gelöscht. Sie können eine erforderliche Funktion oder eine Funktion, die nicht deaktiviert werden kann nicht deaktivieren, nachdem sie aktiviert wurde.
-- Wird der Wert des Felds **Datum aktivieren** zu einem künftigen Zeitpunkt geändert, wird die Funktion für dieses Datum geplant.
-- Wenn Sie den Wert des Felds **Aktiviert** auf **Ja** ändern und den Wert des Felds **Datum aktivieren**  auf ein künftiges Datum ändern, wird die Funktion für dieses Datum geplant. 
-- Wenn Sie den Wert des Felds **Aktiviert** auf **Nein** ändern und den Wert des Felds **Datum aktivieren**  auf ein künftiges Datum ändern, wird die Funktion für dieses Datum geplant.
-- Wenn eine Funktion aktiviert ist und Sie das Feld **Datum aktivieren** hinzufügen, das auf ein zukünftiges Datum festgelegt ist, bleibt die Funktion aktiviert. Um die Funktiont neu zu planen, müssen Sie das Feld **Aktiviert** auf **Nein** ändern.
+- If you change the value of the **Enabled** field to **Yes**, the feature is turned on, and the **Enable date** field is set to the current date.
+- If you change the value of the **Enabled** field to **No** or leave the **EnableDate** field blank, the feature is turned off, and the **Enable date** field is cleared. You can't turn off a mandatory feature or a feature that can't be turned off after it's turned on.
+- If you change the value of the **EnableDate** field to a future date, the feature is scheduled for that date.
+- If you change the value of the **Enabled** field to **Yes** and change the value of the **EnableDate** field to a future date, the feature is scheduled for that date. 
+- If you change the value of the **Enabled** field to **No**, but you also change the value of the **EnableDate** field to a future date, the feature is scheduled for that date.
+- If a feature is turned on, and you add an **EnableDate** field that is set to a future date, the feature remains turned on. To reschedule the feature, you must change the **Enabled** field to **No**.
 
-## <a name="feature-management-and-flighting"></a>Funktionsverwaltung und Flight
+## Feature management and flighting
 
-Mit der Funktionsverwaltung können Sie die Funktionen steuern, die in jeder Version geliefert werden. Flight ermöglicht es den Microsoft Teams Funktionen für eine begrenzte Anzahl von Kunden zu veröffentlichen, sodass diese Funktionen getestet und überprüft werden können, ohne sich auf alle Kunden auszuwirken. Die Funktionsverwaltung kontrolliert nicht das Flight der Funktionen.
+Feature management lets you control the features that are delivered in each release. Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers. Feature management doesn't control the flighting of any features.
 
-## <a name="new-features-are-optional-for-12-months"></a>Neue Funktionen sind für 12 Monate optional
+## New features are optional for 12 months
 
-Wenn eine neue, nicht kritische Funktion installiert wird, ist sie für einen Zeitraum von 12 Monaten optional. Auf diese Weise können Sie und Ihr Unternehmen im Voraus planen, wann eine Funktion in Anspruch genommen und anhand Ihrer täglichen Abläufe getestet werden soll. Weitere Informationen finden Sie in den [FAQ zu Dienstupdates für eine Version](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
+When a new non-critical feature is installed, it will be optional for a 12-month period. This allows you and your organization time to plan ahead for when to uptake a feature and have it tested against your daily operations. For more information, see [One Version service updates FAQ](../one-version.md#what-about-new-features).
 
-## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Verwenden der Funktionsverwaltung zum Aktivieren von ISV-Funktionen oder benutzerdefinierten Funktionen
+## Using Feature management to turn on ISV features or custom features
 
-Funktionsverwaltung ist derzeit für Funktionen von unabhängigen Softwareherstellern (ISVs) und benutzerdefinierten Funktionen nicht verfügbar. Microsoft fügt aber mehr Funktionen hinzu, um die Funktionsverwaltung zu verbessern. Nachdem diese Erweiterungen abgeschlossen sind, ist die Microsoft Funktionsverwaltung für alle Funktionen verfügbar und stellt Anweisungen zum Aktualisieren Ihrer Funktionen zur Verwendung bereit.
+Feature management is currently unavailable for features from independent software vendors (ISVs) and custom features. However, Microsoft is adding more functionality to enhance Feature management. After those enhancements are completed, Microsoft will make Feature management available to all features and provide instructions for updating your features to use it.
 
-## <a name="frequently-asked-questions-faq"></a>Häufig gestellte Fragen (FAQ)
+## Frequently asked questions (FAQ)
 
-### <a name="when-are-features-added-removed-or-changed"></a>Wann werden Funktionen hinzugefügt, gelöscht oder geändert? 
-Funktionen werden durch Codeänderungen hinzugefügt, entfernt und geändert. Umgebungen müssen aktualisiert werden, um diese Änderungen zu erhalten.
+### When are features added, removed, or changed? 
+Features are added, removed, and changed through code changes. Environments need to be updated to receive those changes.
 
-### <a name="does-a-feature-become-mandatory-automatically"></a>Wird eine Funktion automatisch obligatorisch? 
-Nein, eine Funktion, die obligatorisch wird, ist keine automatische Aktion. Die Produktteams müssen eine Codeänderung vornehmen.
+### Does a feature become mandatory automatically? 
+No, a feature becoming mandatory is not an automatic action. The product teams need to make a code change.
 
-### <a name="when-do-features-become-mandatory"></a>Wann werden Funktionen obligatorisch? 
-Die Richtlinie lautet, dass alle neuen Funktionen für einen Zeitraum von 12 Monaten aktiviert werden und keine Änderungsverwaltung erforderlich ist, bis Sie die Funktion aktivieren. Die Produktteams können wählen, ob eine Funktion nach Ablauf dieses Zeitraums obligatorisch sein soll. 
+### When do features become mandatory? 
+The policy is that all new features will be opt-in for a 12-month period and will not require any change management until you enable the feature. The product teams can choose whether to make a feature mandatory after that period has ended. 
 
-### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Warum gibt es kein bestimmtes obligatorisches Aktivierungsdatum? 
-Das Aktualisierungs-Release-Timing ist variabel, das Umgebungs-Update-Timing ist variabel und Kunden können einige Updates überspringen. Infolgedessen sind bestimmte Daten schwer zu bestimmen. 
+### Why isn't there a specific 'mandatory-enabled date'? 
+Update release timing is variable, environment update timing is variable, and customers can opt to skip some updates. As a result, specific dates are difficult to determine. 
 
-### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Wo ist die Dokumentation für Funktionen, die obligatorisch gemacht werden? 
-Diese Dokumentation stammt von den Anwendungsteams. Oft werden diese in [Entfernte oder veraltete Funktionen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features) erwähnt. 
+### Where's the documentation for features that are mandatory? 
+This documentation comes from each Dynamics 365 application team. Often, these features will be mentioned in [Updates to client feature states](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) or [Removed or deprecated features](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
-### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Gibt es eine produktinterne Benachrichtigung oder ein Signal, dass eine Funktion obligatorisch aktiviert werden muss? 
-Ein Benachrichtigungsmechanismus, der sich darauf bezieht, dass eine Funktion obligatorisch ist, gibt es heute nicht.
+### Is there an in-product notification or signal that a feature is going to be mandatory-enabled? 
+A notification mechanism related to making a feature mandatory does not exist today.
 
-### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Werden Funktionen jemals aktiviert, ohne dass der Kunde davon erfährt? 
-Ja, wenn Funktionen keine funktionalen Auswirkungen haben, können sie standardmäßig aktiviert werden.
+### Do features ever get enabled without the customer knowing about it? 
+Yes, if features don't have a functional impact then they can be enabled by default.
 
-### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Was ist Funktionen-Flighting und in welcher Beziehung steht es zur Funktlionsverwaltung? 
-Funktionen-Flights sind Echtzeit-Ein/Aus-Schalter, die Microsoft steuert. Sie sind von der Kundenkontrolle durch die Funktionsverwaltung getrennt. 
-- Private Vorschau-Funktionen werden erst dann in der Funktionsverwaltung aufgeführt, wenn sie weitergeleitet werden. In der Produktion muss der Kunde zustimmen, Teil eines speziellen Programms zu sein, damit dies geschieht.
-- Öffentliche Vorschau und freigegebene (allgemein verfügbare) Funktionen werden in der Funktionsverwaltung aufgeführt, sofern sie nicht abgeschaltet werden. Das Ausschalten einer Funktion wird als letzte Möglichkeit für Produktteams angesehen, wenn ein kritisches Problem festgestellt wird, und ist normalerweise eine Operation pro Kunde.
+### What is feature flighting and how does it relate to feature management? 
+Feature flights are real-time on/off switches that Microsoft controls. They are separate from the customer control provided by Feature Management. 
+- Private Preview features will not be listed in Feature Management until they are flighted on. In production, the customer needs to agree to be part of a special program for that to occur.
+- Public Preview and Released (generally available) features will be listed in Feature Management unless they are flighted off. Flighting a feature off is considered a last resort option for product teams if a critical issue is found and would usually be a per-customer operation.
 
-### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Werden Funktionen jemals ausgeschaltet, ohne dass der Kunde davon erfährt? 
-Ja, wenn eine Funktion die Funktionsweise einer Umgebung beeinträchtigt, die keine funktionalen Auswirkungen hat, können sie standardmäßig aktiviert werden.
+### Do features ever get flighted off without the customer knowing about it? 
+Yes, if a feature is impacting the functioning of an environment that doesn't have a functional impact then they can be enabled by default.
 
-### <a name="how-can-feature-enablement-be-checked-in-code"></a>Wie kann die Funktionsaktivierung im Code überprüft werden?
-Verwenden Sie die **isFeatureEnabled**-Methode auf der **FeatureStateProvider**-Klasse, wobei eine Instanz der Funktionsklasse übergeben wird. Beispiel: 
+### How can feature enablement be checked in code?
+Use the **isFeatureEnabled** method on the **FeatureStateProvider** class, passing it an instance of the feature class. Example:
 
 ```xpp
 if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
 ```
 
-### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Wie kann die Funktionsaktivierung in Metadaten überprüft werden?
-Mit der Eigenschaft **FeatureClass** kann angegeben werden, dass einige Metadaten einer Funktion zugeordnet sind. Der für die Funktion verwendete Klassenname sollte verwendet werden, z.B. **BatchContentionPreventionFeature**. Diese Metadaten sind nur in dieser Funktion sichtbar. Die Eigenschaft **FeatureClass** ist für Menüs, Menüelemente, Aufzählungswerte und Tabellen-/Ansichtsfelder verfügbar.
+### How can feature enablement be checked in metadata?
+The **FeatureClass** property can be used to indicate that some metadata is associated with a feature. The class name used for the feature should be used, such as **BatchContentionPreventionFeature**. This metadata is visible only in that feature. The **FeatureClass** property is available on menus, menu items, enum values, and table/view fields.
 
-### <a name="what-is-a-feature-class"></a>Was ist eine Funktionsklasse (Feature Class)?
-Funktionen in der Funktionsverwaltung sind definiert als *Funktionsklassen*. Eine Funktionsklasse **implementiert IFeatureMetadata** und verwendet das Funktionsklassenattribut, um sich im Funktionsverwaltung-Arbeitsbereich zu identifizieren. Es gibt zahlreiche Beispiele für Funktionsklassen, die im Code mit der API **FeatureStateProvider** und in den Metadaten mit der Eigenschaft **FeatureClass** auf Aktivierung überprüft werden können. Beispiel: 
+### What is a feature class?
+Features in Feature Management are defined as *feature classes*. A feature class **implements IFeatureMetadata** and uses the feature class attribute to identify itself to the Feature Management workspace. There are numerous examples of feature classes available that can be checked for enablement in code using the **FeatureStateProvider** API and in metadata using the **FeatureClass** property. Example:
 
 ```xpp
 [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
 internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
 ```
 
-### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Was ist der IFeatureLifecycle, der von einigen Funktionsklassen implementiert wird?
-IFeatureLifecycle ist ein Microsoft-interner Mechanismus zur Angabe der Funktions-Lebenszyklusphase. Funktionen können sein:
-- Private Vorschau – Benötigt einen Flug, um sichtbar zu sein.
-- Öffentliche Vorschau – Wird standardmäßig angezeigt, jedoch mit einer Warnung, dass sich die Funktion in der Vorschau befindet.
-- Freigegeben – Vollständig freigegeben.
-
+### What is the IFeatureLifecycle implemented by some feature classes?
+IFeatureLifecycle is a Microsoft-internal mechanism for indicating the feature lifecycle stage. 
+Features can be:
+- `PrivatePreview` - Needs a flight to be visible.
+- `PublicPreview` - Shown by default but with a warning that the feature is in preview.
+- `Released` - Fully released.

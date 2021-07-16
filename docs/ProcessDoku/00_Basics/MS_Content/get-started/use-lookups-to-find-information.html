@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Informationen per Suchen finden | WIKA Documentation </title>
+    <title>Find information by using lookups | WIKA Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Informationen per Suchen finden | WIKA Documentation ">
+    <meta name="title" content="Find information by using lookups | WIKA Documentation ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
@@ -77,48 +77,134 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="find-information-by-using-lookups">Informationen per Suchen finden</h1>
+<h1 id="find-information-by-using-lookups">Find information by using lookups</h1>
 
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com"></a> Dokumentations Team schreiben.</p>
+<p>Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
 </div>
 
-<p>Viele Felder verfügen über Suchen, mit denen Sie schnell den richtigen oder gewünschten Wert finden. Den Suchen wurden viele Erweiterungen hinzugefügt, die diese einfacher und produktiver in der Anwendung machen. In diesem Thema erfahren Sie mehr über die neuen Suchfunktionen und erhalten wertvolle Tipps für deren optimale Nutzung.</p>
-<h2 id="responsive-lookups">Responsive Suchen</h2>
-<p>In älteren Versionen musste der Benutzer explizit eine Aktion durchführen, um das Dropdownmenü zu öffnen. So musste beispielsweise ein Sternchen (*) im Steuerelement eingegeben werden, um die Suche basierend auf dem aktuellen Wert des Steuerelements zu filtern. Oder der Benutzer musste auf die Dropdownschaltfläche klicken oder eine Tastenkombination aus <strong>ALT</strong>+<strong>NACH-UNTEN</strong> verwenden. Suchsteuerelemente wurden wie folgt modifiziert, um den aktuellen Webmethoden besser gerecht zu werden:</p>
+<p>Many fields have lookups that can help you easily find the correct or desired value. Several enhancements have been added to lookups that make these controls more usable and make users more productive. In this topic, you will learn about these new lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.</p>
+<h2 id="responsive-lookups">Responsive lookups</h2>
+<p>In previous versions, when interacting with a lookup control, a user would have to take an explicit action to open the drop-down menu. This may have been by typing an asterisk (*) in the control to filter the lookup based on the current value of the control, clicking the drop-down button, or by using the <strong>Alt</strong>+<strong>Down arrow</strong> keyboard shortcut. Lookup controls have been modified in the following ways to better align with current web practices:</p>
 <ul>
-<li><p>Dropdownmenüs für Suchen öffnen sich nun automatisch, sobald die Dateneingabe pausiert. Dabei werden die Inhalte des Dropdownmenüs basierend auf dem Wert des Suchsteuerelements gefiltert.</p>
-<p>Beachten Sie, dass das alte Verhalten, bei dem das Dropdownmenü automatisch geöffnet wurde, wenn der Benutzer ein Sternchen (*) eingegeben hat, nicht mehr unterstützt wird.</p>
+<li><p>Lookup drop-down menus will now open automatically after a slight pause in typing, with the drop-down menu contents filtered based on the lookup control's value.</p>
+<p>Note that the old behavior of automatic opening of the dropdown after typing an asterisk (*) has been deprecated.</p>
 </li>
-<li><p>Nach dem Öffnen des Suchendropdownmenüs geschieht Folgendes:</p>
+<li><p>After the lookup drop-down menu has opened, the following will occur:</p>
 <ul>
-<li>Der Cursor bleibt im Suchsteuerelement (kein Fokus auf einen Wechsel zum Dropdownmenü), sodass Sie weiterhin Änderungen am Wert des Steuerelements vornehmen können. Allerdings kann der Benutzer noch die <strong>NACH-OBEN-TASTE</strong> und die <strong>NACH-UNTEN-TASTE</strong> verwenden, um Zeilen im Dropdownmenü zu ändern und die aktuelle Zeile im Dropdownmenü auszuwählen.</li>
-<li>Der Inhalt des Dropdownmenüs wird angepasst, nachdem die Änderungen am Wert des Suchsteuerelements vorgenommen wurden.</li>
+<li>The cursor will stay in the lookup control (instead of focus moving into the drop-down menu) so you can continue to make modifications to the control's value. However, the user can still use the <strong>Up arrow</strong> and <strong>Down arrow</strong> to change rows in the drop-down menu, and enter to select the current row in the drop-down menu.</li>
+<li>The contents of the drop-down menu will adjust after any modifications are made to the lookup control's value.</li>
 </ul>
 </li>
 </ul>
-<p>Angenommen Sie haben ein Suchfeld namens <strong>Stadt</strong>.</p>
-<p>Ist der Fokus auf dem Feld <strong>Stadt</strong>, können Sie nach der gewünschten Stadt suchen, indem Sie einige Buchstaben, beispielsweise &quot;tan&quot;, eingeben. Nachdem Sie die Texteingabe beendet haben, öffnet sich die Suche automatisch, und es werden alle Städte angezeigt, die mit &quot;tan&quot; beginnen.</p>
-<p><a href="media/typeaheadlookupexample.png"><img src="media/typeaheadlookupexample.png" alt="typeaheadLookupExample"></a></p>
-<p>Zu diesem Zeitpunkt ist der Cursor noch im Suchfeld. Wenn Sie die Eingabe fortsetzen und diese sich zu &quot;Tanne&quot; ändert, passt sich der Inhalt der Suche automatisch an und gibt den letzten Wert des Steuerelements wieder.</p>
-<p><img src="media/updatefilterlookupexample.png" alt="updateFilterLookupExample"></p>
-<p>Obwohl der Fokus noch auf das Suchsteuerelement gesetzt ist, können Sie die <strong>NACH-OBEN-TASTE</strong> oder die <strong>NACH-UNTEN-TASTE</strong> nutzen, um die Zeile zu markieren, die Sie auswählen möchten. Wenn Sie die <strong>Eingabe-Taste</strong> drücken, wird die markierte Zeile von der Suche ausgewählt und der Wert des Steuerelements aktualisiert.</p>
-<p><img src="media/changingselectionlookup.png" alt="changingSelectionLookup"></p>
-<h2 id="typing-in-more-than-ids">Mehr als nur IDs eingeben</h2>
-<p>Bei der Eingabe von Daten versuchen Benutzer in der Regel, eine Entität, beispielsweise einen Debitor oder Kreditor, anhand des Namens zu identifizieren und nicht anhand des Bezeichners, der die Entität wiedergibt. Viele (jedoch nicht alle) Suchen lassen jetzt kontextabhängige Dateneingabe zu. Diese leistungsstarke Funktion ermöglicht dem Benutzer, die ID oder den entsprechenden Namen in das Suchsteuerelement einzugeben.</p>
-<p>Beachten Sie dazu beispielsweise das Feld <strong>Debitorenkonto</strong> beim Anlegen eines Auftrags. Dieses Feld zeigt die <strong>Kontokennung</strong> des Debitors, allerdings würde ein Benutzer eher einen <strong>Kontonamen</strong> statt einer <strong>Kontokennung</strong> für das Feld eingeben, wenn er einen Auftrag anlegt, beispielsweise &quot;Forest Wholesales&quot; anstelle von &quot;US-003.&quot;</p>
-<p>Beginnt der Benutzer mit der Eingabe einer <strong>Kontokennung</strong> in das Suchsteuerelement, öffnet sich das Dropdownmenü automatisch so wie im vorherigen Abschnitt beschrieben und der Benutzer sieht die Suche wie unten gezeigt.</p>
-<p><a href="media/howtocontextuallookups-1.png"><img src="media/howtocontextuallookups-1.png" alt="Kontextbezogene Suche bei Eingabe einer Debitorenkontokennung"></a></p>
-<p>Allerdings kann der Benutzer jetzt auch den Anfang eines <strong>Kontonamens</strong> eingeben. Wird dies erkannt, wird dem Benutzer die folgende Suche angezeigt. Beachten Sie, wie die Spalte <strong>Name</strong> zur ersten Spalte in der Suche wird und wie die Suche basierend auf der Spalte <strong>Name</strong> sortiert und gefiltert wird.</p>
-<p><a href="media/howtocontextuallookups-2.png"><img src="media/howtocontextuallookups-2.png" alt="Kontextbezogene Suche bei Eingabe eines Debitorennamens"></a></p>
-<h2 id="using-grid-column-headers-for-more-advanced-filtering-and-sorting">Verwenden der Rasterspaltenüberschriften für eine erweiterte Filterung und Sortierung</h2>
-<p>Die Sucherweiterungen, die in den beiden vorherigen Abschnitten vorgestellt wurden, haben die Navigationsmöglichkeiten eines Benutzers in Zeilen einer Suche basierend auf einer &quot;Beginnt mit&quot;-Suche für die Felder <strong>Kennung</strong> oder <strong>Name</strong> in der Suche stark verbessert. Allerdings gibt es Situationen, in denen eine erweiterte Filterung oder Sortierung erforderlich ist, um die richtige Zeile zu finden. In solchen Fällen muss der Benutzer die Filter- und Sortieroptionen in den Rasterspaltenüberschriften innerhalb der Suche verwenden. Angenommen, ein Mitarbeiter gibt eine Auftragsposition ein, bei der das richtige &quot;Kabel&quot; als Produkt gefunden werden muss. &quot;Kabel&quot; in das Steuerelement <strong>Artikelnummer</strong> einzugeben ist nicht hilfreich, da kein Produktname mit &quot;Kabel&quot; beginnt.</p>
-<p><img src="media/emptyitemlookup.png" alt="emptyitemlookup"></p>
-<p>Stattdessen muss der Benutzer den Wert des Suchsteuerelements löschen, das Suchdropdownmenü öffnen und das Dropdownmenü mittels der Rasterspaltenüberschrift wie unten gezeigt filtern. Ein Maus- oder Touch-Benutzer kann einfach auf eine beliebige Spaltenüberschrift klicken bzw. tippen, um auf die Filter- und Sortieroptionen für diese Spalte zuzugreifen. Ein Tastaturbenutzer muss die Kombination <strong>ALT</strong>+<strong>NACH-UNTEN</strong> <strong>Pfeil</strong> ein weiteres Mal drücken, um den Fokus auf das Dropdownmenü zu legen. Danach kann der Benutzer in die richtige Spalte wechseln und <strong>STRG</strong>+<strong>G</strong> drücken, um das Dropdownmenü für die Rasterspaltenüberschrift zu öffnen.</p>
-<p><a href="media/gridfilteritemlookup.png"><img src="media/gridfilteritemlookup.png" alt="gridfilteritemlookup"></a></p>
-<p>Nachdem der Filter angewendet wurde (siehe Bild unten), kann der Benutzer die Zeile wie gewohnt suchen und auswählen.</p>
-<p><img src="media/filtereditemlookup.png" alt="filtereditemlookup"></p>
+<p>For example, consider a lookup field called <strong>City</strong>.</p>
+<p>When focus is in the <strong>City</strong> field, you can start looking for the city that you want by typing a few letters, like &quot;col.&quot; After you stop typing, the lookup will open automatically, filtered to those cities that begin with &quot;col&quot;.</p>
+<p><a href="media/typeaheadlookupexample.png"><img src="media/typeaheadlookupexample.png" alt="typeaheadLookupExample."></a></p>
+<p>At this point, the cursor is still in the lookup field. If you continue typing so the value is &quot;colum,&quot; the lookup contents adjust automatically to reflect the latest value in the control.</p>
+<p><img src="media/updatefilterlookupexample.png" alt="updateFilterLookupExample."></p>
+<p>Even though focus is still in the lookup control, you can also use the <strong>Up arrow</strong> or <strong>Down arrow</strong> keys to highlight the row that you want to select. If you press <strong>Enter</strong> the highlighted row will be selected from the lookup and the control's value will be updated.</p>
+<p><img src="media/changingselectionlookup.png" alt="changingSelectionLookup."></p>
+<h2 id="typing-in-more-than-ids">Typing in more than IDs</h2>
+<p>When entering data, it's natural for users to attempt to identify an entity, such as a customer or vendor, in terms of the name rather than an identifier representing the entity. Many (but not all) lookups now allow contextual data entry. This powerful feature allows the user to type the ID or the corresponding name into the lookup control.</p>
+<p>For example, consider the <strong>Customer account</strong> field when creating a sales order. This field shows the <strong>Account ID</strong> for the customer, but a user would typically prefer to enter an <strong>Account name</strong> instead of an <strong>Account ID</strong> for this field when creating a sales order, such as &quot;Forest Wholesales&quot; instead of &quot;US-003.&quot;</p>
+<p>If the user started to enter an <strong>Account ID</strong> into the lookup control, the drop-down menu would automatically open as described in the previous section and the user would see the lookup as shown below.</p>
+<p><a href="media/howtocontextuallookups-1.png"><img src="media/howtocontextuallookups-1.png" alt="Contextual lookup when a customer account ID is entered."></a></p>
+<p>However, the user can also now enter the beginning of an <strong>Account name</strong> as well. If this is detected, then the user will see the following lookup. Notice how the <strong>Name</strong> column is moved to be the first column in the lookup, and how the lookup is sorted and filtered based on the <strong>Name</strong> column.</p>
+<p><a href="media/howtocontextuallookups-2.png"><img src="media/howtocontextuallookups-2.png" alt="Contextual lookup when a customer name is entered."></a></p>
+<h2 id="using-grid-column-headers-for-more-advanced-filtering-and-sorting">Using grid column headers for more advanced filtering and sorting</h2>
+<p>The lookup enhancements discussed in the previous two sections greatly improve a user's ability to navigate the rows in a lookup based on a &quot;begins with&quot; search of the <strong>ID</strong> or <strong>Name</strong> field in the lookup. However, there are situations in which more advanced filtering (or sorting) is needed to find the correct row. In these situations, the user needs to use the filtering and sorting options in the grid column headers inside the lookup. For example, consider an employee entering a sales order line who needs to locate the right &quot;cable&quot; as the product. Typing &quot;cable&quot; into the <strong>Item number</strong> control isn't helpful, as there are no product names that begin with &quot;cable.&quot;</p>
+<p><img src="media/emptyitemlookup.png" alt="emptyitemlookup."></p>
+<p>Instead, the user needs to clear the value of the lookup control, open the lookup drop-down menu, and filter the drop-down menu using the grid column header, as shown below. A mouse (or touch) user can simply click (or touch) any column header to access the filtering and sorting options for that column. For a keyboard user, the user simply needs to press <strong>Alt</strong>+<strong>Down</strong> <strong>arrow</strong> a second time to move focus into the drop-down menu, after which the user can tab to the correct column, and then press <strong>Ctrl</strong>+<strong>G</strong> to open the grid column header drop-down menu.</p>
+<p><a href="media/gridfilteritemlookup.png"><img src="media/gridfilteritemlookup.png" alt="gridfilteritemlookup."></a></p>
+<p>After the filter has been applied (see the image below), the user can find and select the row as usual.</p>
+<p><img src="media/filtereditemlookup.png" alt="filtereditemlookup."></p>
+<!---
+title: Informationen per Suchen finden
+description: Viele Felder verfügen über Suchen, mit denen Sie schnell den richtigen oder gewünschten Wert finden. Den Suchen wurden viele Erweiterungen hinzugefügt, die diese einfacher und produktiver in der Anwendung machen. In diesem Thema erfahren Sie mehr über die neuen Suchfunktionen und erhalten wertvolle Tipps für deren optimale Nutzung.
+author: jasongre
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: sericks
+ms.custom: 269934
+ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
+ms.search.region: Global
+ms.author: jasongre
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a555db8ced5981abf1f3f58f16b77e1c263dcfa2
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693640"
+---
+# <a name="find-information-by-using-lookups"></a>Informationen per Suchen finden
+
+[!include [banner](../includes/banner.md)]
+
+Viele Felder verfügen über Suchen, mit denen Sie schnell den richtigen oder gewünschten Wert finden. Den Suchen wurden viele Erweiterungen hinzugefügt, die diese einfacher und produktiver in der Anwendung machen. In diesem Thema erfahren Sie mehr über die neuen Suchfunktionen und erhalten wertvolle Tipps für deren optimale Nutzung.
+
+## <a name="responsive-lookups"></a>Responsive Suchen
+
+In älteren Versionen musste der Benutzer explizit eine Aktion durchführen, um das Dropdownmenü zu öffnen. So musste beispielsweise ein Sternchen (\*) im Steuerelement eingegeben werden, um die Suche basierend auf dem aktuellen Wert des Steuerelements zu filtern. Oder der Benutzer musste auf die Dropdownschaltfläche klicken oder eine Tastenkombination aus **ALT**+**NACH-UNTEN** verwenden. Suchsteuerelemente wurden wie folgt modifiziert, um den aktuellen Webmethoden besser gerecht zu werden:
+
+- Dropdownmenüs für Suchen öffnen sich nun automatisch, sobald die Dateneingabe pausiert. Dabei werden die Inhalte des Dropdownmenüs basierend auf dem Wert des Suchsteuerelements gefiltert.
+
+    Beachten Sie, dass das alte Verhalten, bei dem das Dropdownmenü automatisch geöffnet wurde, wenn der Benutzer ein Sternchen (\*) eingegeben hat, nicht mehr unterstützt wird.
+
+- Nach dem Öffnen des Suchendropdownmenüs geschieht Folgendes:
+
+    - Der Cursor bleibt im Suchsteuerelement (kein Fokus auf einen Wechsel zum Dropdownmenü), sodass Sie weiterhin Änderungen am Wert des Steuerelements vornehmen können. Allerdings kann der Benutzer noch die **NACH-OBEN-TASTE** und die **NACH-UNTEN-TASTE** verwenden, um Zeilen im Dropdownmenü zu ändern und die aktuelle Zeile im Dropdownmenü auszuwählen.
+    - Der Inhalt des Dropdownmenüs wird angepasst, nachdem die Änderungen am Wert des Suchsteuerelements vorgenommen wurden.
+
+Angenommen Sie haben ein Suchfeld namens **Stadt**.
+
+Ist der Fokus auf dem Feld **Stadt**, können Sie nach der gewünschten Stadt suchen, indem Sie einige Buchstaben, beispielsweise "tan", eingeben. Nachdem Sie die Texteingabe beendet haben, öffnet sich die Suche automatisch, und es werden alle Städte angezeigt, die mit "tan" beginnen.
+
+[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+
+Zu diesem Zeitpunkt ist der Cursor noch im Suchfeld. Wenn Sie die Eingabe fortsetzen und diese sich zu "Tanne" ändert, passt sich der Inhalt der Suche automatisch an und gibt den letzten Wert des Steuerelements wieder.
+
+![updateFilterLookupExample](./media/updatefilterlookupexample.png)
+
+Obwohl der Fokus noch auf das Suchsteuerelement gesetzt ist, können Sie die **NACH-OBEN-TASTE** oder die **NACH-UNTEN-TASTE** nutzen, um die Zeile zu markieren, die Sie auswählen möchten. Wenn Sie die **Eingabe-Taste** drücken, wird die markierte Zeile von der Suche ausgewählt und der Wert des Steuerelements aktualisiert.
+
+![changingSelectionLookup](./media/changingselectionlookup.png)
+
+## <a name="typing-in-more-than-ids"></a>Mehr als nur IDs eingeben
+
+Bei der Eingabe von Daten versuchen Benutzer in der Regel, eine Entität, beispielsweise einen Debitor oder Kreditor, anhand des Namens zu identifizieren und nicht anhand des Bezeichners, der die Entität wiedergibt. Viele (jedoch nicht alle) Suchen lassen jetzt kontextabhängige Dateneingabe zu. Diese leistungsstarke Funktion ermöglicht dem Benutzer, die ID oder den entsprechenden Namen in das Suchsteuerelement einzugeben.
+
+Beachten Sie dazu beispielsweise das Feld **Debitorenkonto** beim Anlegen eines Auftrags. Dieses Feld zeigt die **Kontokennung** des Debitors, allerdings würde ein Benutzer eher einen **Kontonamen** statt einer **Kontokennung** für das Feld eingeben, wenn er einen Auftrag anlegt, beispielsweise "Forest Wholesales" anstelle von "US-003."
+
+Beginnt der Benutzer mit der Eingabe einer **Kontokennung** in das Suchsteuerelement, öffnet sich das Dropdownmenü automatisch so wie im vorherigen Abschnitt beschrieben und der Benutzer sieht die Suche wie unten gezeigt.
+
+[![Kontextbezogene Suche bei Eingabe einer Debitorenkontokennung](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+
+Allerdings kann der Benutzer jetzt auch den Anfang eines **Kontonamens** eingeben. Wird dies erkannt, wird dem Benutzer die folgende Suche angezeigt. Beachten Sie, wie die Spalte **Name** zur ersten Spalte in der Suche wird und wie die Suche basierend auf der Spalte **Name** sortiert und gefiltert wird.
+
+[![Kontextbezogene Suche bei Eingabe eines Debitorennamens](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+
+## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Verwenden der Rasterspaltenüberschriften für eine erweiterte Filterung und Sortierung
+
+Die Sucherweiterungen, die in den beiden vorherigen Abschnitten vorgestellt wurden, haben die Navigationsmöglichkeiten eines Benutzers in Zeilen einer Suche basierend auf einer "Beginnt mit"-Suche für die Felder **Kennung** oder **Name** in der Suche stark verbessert. Allerdings gibt es Situationen, in denen eine erweiterte Filterung oder Sortierung erforderlich ist, um die richtige Zeile zu finden. In solchen Fällen muss der Benutzer die Filter- und Sortieroptionen in den Rasterspaltenüberschriften innerhalb der Suche verwenden. Angenommen, ein Mitarbeiter gibt eine Auftragsposition ein, bei der das richtige "Kabel" als Produkt gefunden werden muss. "Kabel" in das Steuerelement **Artikelnummer** einzugeben ist nicht hilfreich, da kein Produktname mit "Kabel" beginnt.
+
+![emptyitemlookup](./media/emptyitemlookup.png)
+
+Stattdessen muss der Benutzer den Wert des Suchsteuerelements löschen, das Suchdropdownmenü öffnen und das Dropdownmenü mittels der Rasterspaltenüberschrift wie unten gezeigt filtern. Ein Maus- oder Touch-Benutzer kann einfach auf eine beliebige Spaltenüberschrift klicken bzw. tippen, um auf die Filter- und Sortieroptionen für diese Spalte zuzugreifen. Ein Tastaturbenutzer muss die Kombination **ALT**+**NACH-UNTEN** **Pfeil** ein weiteres Mal drücken, um den Fokus auf das Dropdownmenü zu legen. Danach kann der Benutzer in die richtige Spalte wechseln und **STRG**+**G** drücken, um das Dropdownmenü für die Rasterspaltenüberschrift zu öffnen.
+
+[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+
+Nachdem der Filter angewendet wurde (siehe Bild unten), kann der Benutzer die Zeile wie gewohnt suchen und auswählen.
+
+![filtereditemlookup](./media/filtereditemlookup.png)
+--->
 </article>
           </div>
           
