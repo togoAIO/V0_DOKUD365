@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Text Functionality | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Text Functionality | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="text-functionality" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="1">Text Functionality</h1>
+
+<h2 id="baseline-processes-overview" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="2">Baseline Processes Overview</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="4"><img src="../../media/Basics/Text_Functionality/Baseline_Processes_Overview.PNG" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="4" alt="Baseline Processes Overview" title="Baseline Processes Overview"></p>
+<h2 id="explanation-of-single-fields" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="6">Explanation of single fields</h2>
+<h3 id="text-code-definition" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="8">Text code definition</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="9">The Text code definition form is used to create and manage the text types that are available from various forms in D365
+Basic ► Setup ► Text management ► Text code definition</p>
+<h4 id="tab-overview" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="12">Tab &quot;Overview&quot;</h4>
+<h5 id="text-code" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="14">Text code</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="15">Character used to represent the text type. Used later in setup forms.</p>
+<h5 id="description" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="16">Description</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="17">Description of the text type.</p>
+<h5 id="shorttext-format" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="18">Shorttext format</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="19">Used only:
+Internal 	– 	For internal texts
+Standard 	–	Set the flag standard on the “Text Entry Form”</p>
+<h5 id="control-station" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="22">Control station</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="23">Only for Klingenberg, high rack inventory</p>
+<h5 id="export-office" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="24">Export Office</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="25">Only for Klingenberg, high rack inventory</p>
+<h5 id="packing-place" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="26">Packing place</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="27">Packing Cockpit</p>
+<h5 id="infotext" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="28">Infotext</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="29">Only for internal information</p>
+<h5 id="quotation" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="30">Quotation</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="31">Flag text types to output on the quotation form</p>
+<h5 id="order-confirmation" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="32">Order confirmation</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="33">Flag text types to output on the sales order confirmation</p>
+<h5 id="delivery-note" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="34">Delivery note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="35">Flag text types to output on the sales order delivery note</p>
+<h5 id="invoice" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="36">Invoice</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="37">Flag text types to output on the sales order invoice</p>
+<h5 id="prod-paper" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="38">Prod-Paper</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="39">Flag text types to output on the production papers</p>
+<h5 id="purchase-order" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="40">Purchase order</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="41">Flag text types to output on the purchase order printout</p>
+<h5 id="summary" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="42">Summary</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="43">Not used at the moment</p>
+<h5 id="picking-list" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="44">Picking list</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="45">Flag text types to output on the picking list printout</p>
+<h4 id="tab-general" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="47">Tab “General”</h4>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="48">Displays a single-record view of the data shown on the overview tab.</p>
+<h4 id="tab-language-texts" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="50">Tab “Language Texts”</h4>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="51">On the Language texts tab, define the text values to be used as labels for the text types in different languages. These languages will be used when the corresponding system language is in use.</p>
+<h3 id="usage-of-text-codes" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="53">USAGE OF TEXT CODES</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="54">The “Usage of text codes“ form is used to manage the usage of the text codes defined on the “Text code defi-nition” form. This controls which checkboxes will be listed on each text form. It does NOT control where the text is output.
+Basic ► Setup ► Text management ► Usage of text codes</p>
+<h4 id="tab-overview-1" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="57">Tab “Overview”</h4>
+<h5 id="range" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="58">Range</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="59">Defines the form on which the text code will be available as an input option.  List of forms is pre-defined in the system and includes:
+•	Quotation header
+•	Quotation line
+•	Sales header
+•	Sales order line
+•	Works order
+•	Purchase header
+•	Purchase line
+•	Client
+•	Vendor
+•	Item Inventory
+•	Contract header
+•	Contract line
+•	Internal request</p>
+<h5 id="text-code-order" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="73">Text code order</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="74">Defines the sequence in which the various text types will be displayed on the forms.</p>
+<h5 id="text-code-1" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="75">Text code</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="76">Defines the text code of the text type to be included on the form.</p>
+<h5 id="standard" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="77">Standard</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="78">Flagged text codes will be flagged by default on the text forms on which they are used. Generally, only the “S“ (General) text type is flagged.</p>
+<h5 id="text-position" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="79">Text position</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="80">Selection is only available on the following forms: Customer text, vendor text, quotation header text, sales order header text, purchase order header text, purchase contract text and sales contract text.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="82">Options are:
+•	--
+•	Head
+•	Footer</p>
+<h4 id="tab-general-1" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="87">Tab “General”</h4>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="88">Displays a single-record view of the data shown on the overview tab.</p>
+<h3 id="text-criteria" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="90">TEXT CRITERIA</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="91">Text criteria are pre-defined text blocks which are used frequently. They are defined here so they don’t need to be manually keyed each time they are needed.</p>
+<h4 id="area-overview" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="92">Area “Overview”</h4>
+<h5 id="key" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="93">Key</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="94">Code that represents the text block</p>
+<h5 id="short-description" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="95">Short description</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="96">Description of the text block</p>
+<h4 id="area-texts" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="98">Area “Texts”</h4>
+<h5 id="national-language" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="99">National language</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="100">Local language (system language)</p>
+<h5 id="other-language" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="101">Other language</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="102">Optional secondary languages. Selectable via drop-down list of languages.</p>
+<h4 id="functional-buttons" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="104">Functional Buttons</h4>
+<h5 id="button--application-" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="105">Button &lt; Application &gt;</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="106">Opens the Appliance of texts form</p>
+<h5 id="button--copy-and-close-" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="108">Button &lt; Copy and close &gt;</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="109">Copies the text from the selected text block and closes the texts form. The text can then be copied into a text field by clicking in the field and pressing “Ctrl+V”</p>
+<!--
+ Kapitel 3 weggelassen
+ -->
+<h2 id="text-output-locations" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="115">TEXT OUTPUT LOCATIONS</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="116">The text entered on the various input forms is output to different locations, based on the definition of the text code on the “Textcode definition” form.
+This list indicates all of the output locations for text:
+-Quotation
+-Order confirmation
+-Delivery note
+-Invoice
+-Prod-Paper
+-Purchase order
+-Summary
+-Picking list</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="127">As general rule, the following image represents the text “flow” between the different D365 forms</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="129"><img src="../../media/Basics/Text_Functionality/Text_Flow.PNG" sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="129" alt="Text in D365" title="Text in D365"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="131">The left picture represents the texts “layers” inside D365. It has a core area and overlaid areas from which texts are flowing through.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_00_Basics/Text_Functionality.md" sourcestartlinenumber="133">The right picture outlines the text flow from core and from overlaid areas. That means, the text “flows” from internal core to the outside layers. Also, it is possible to exchange texts between forms in same layer level.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

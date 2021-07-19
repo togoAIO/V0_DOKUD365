@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Text Functionality | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Text Functionality | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="text-functionality">Text Functionality</h1>
+
+<h2 id="baseline-processes-overview">Baseline Processes Overview</h2>
+<p><img src="../../media/Basics/Text_Functionality/Baseline_Processes_Overview.PNG" alt="Baseline Processes Overview" title="Baseline Processes Overview"></p>
+<h2 id="explanation-of-single-fields">Explanation of single fields</h2>
+<h3 id="text-code-definition">Text code definition</h3>
+<p>The Text code definition form is used to create and manage the text types that are available from various forms in D365</p>
+<p>Basic ► Setup ► Text management ► Text code definition</p>
+<h4 id="tab-overview">Tab &quot;Overview&quot;</h4>
+<p><strong>Text code</strong>
+Character used to represent the text type. Used later in setup forms.</p>
+<p><strong>Description</strong>
+Description of the text type.</p>
+<p><strong>Shorttext format</strong>
+Used only:
+Internal 	– 	For internal texts
+Standard 	–	Set the flag standard on the “Text Entry Form”</p>
+<p><strong>Control station</strong>
+Only for Klingenberg, high rack inventory</p>
+<p><strong>Export Office</strong>
+Only for Klingenberg, high rack inventory</p>
+<p><strong>Packing place</strong>
+Packing Cockpit</p>
+<p><strong>Infotext</strong>
+Only for internal information</p>
+<p><strong>Quotation</strong>
+Flag text types to output on the quotation form</p>
+<p><strong>Order confirmation</strong>
+Flag text types to output on the sales order confirmation</p>
+<p><strong>Delivery note</strong>
+Flag text types to output on the sales order delivery note</p>
+<p><strong>Invoice</strong>
+Flag text types to output on the sales order invoice</p>
+<p><strong>Prod-Paper</strong>
+Flag text types to output on the production papers</p>
+<p><strong>Purchase order</strong>
+Flag text types to output on the purchase order printout</p>
+<p><strong>Summary</strong>
+Not used at the moment</p>
+<p><strong>Picking list</strong>
+Flag text types to output on the picking list printout</p>
+<h4 id="tab-general">Tab “General”</h4>
+<p>Displays a single-record view of the data shown on the overview tab.</p>
+<h4 id="tab-language-texts">Tab “Language Texts”</h4>
+<p>On the Language texts tab, define the text values to be used as labels for the text types in different languages. These languages will be used when the corresponding system language is in use.</p>
+<h3 id="usage-of-text-codes">Usage of text codes</h3>
+<p>The “Usage of text codes“ form is used to manage the usage of the text codes defined on the “Text code defi-nition” form. This controls which checkboxes will be listed on each text form. It does NOT control where the text is output.</p>
+<p>Basic ► Setup ► Text management ► Usage of text codes</p>
+<h4 id="tab-overview-1">Tab “Overview”</h4>
+<p><strong>Range</strong>
+Defines the form on which the text code will be available as an input option.
+List of forms is pre-defined in the system and includes:</p>
+<ul>
+<li>Quotation header</li>
+<li>Quotation line</li>
+<li>Sales header</li>
+<li>Sales order line</li>
+<li>Works order</li>
+<li>Purchase header</li>
+<li>Purchase line</li>
+<li>Client</li>
+<li>Vendor</li>
+<li>Item Inventory</li>
+<li>Contract header</li>
+<li>Contract line</li>
+<li>Internal request</li>
+</ul>
+<p><strong>Text code order</strong>	
+Defines the sequence in which the various text types will be displayed on the forms.</p>
+<p><strong>Text code</strong>
+Defines the text code of the text type to be included on the form.</p>
+<p><strong>Standard</strong>
+Flagged text codes will be flagged by default on the text forms on which they are used. Generally, only the “S“ (General) text type is flagged.</p>
+<p><strong>Text position</strong>
+Selection is only available on the following forms: Customer text, vendor text, quotation header text, sales order header text, purchase order header text, purchase contract text and sales contract text.</p>
+<p>Options are:</p>
+<ul>
+<li>--</li>
+<li>Head</li>
+<li>Footer</li>
+</ul>
+<h4 id="tab-general-1">Tab “General”</h4>
+<p>Displays a single-record view of the data shown on the overview tab.</p>
+<h3 id="text-criteria">Text criteria</h3>
+<p>Text criteria are pre-defined text blocks which are used frequently. They are defined here so they don’t need to be manually keyed each time they are needed.</p>
+<h4 id="area-overview">Area “Overview”</h4>
+<p><strong>Key</strong>
+Code that represents the text block</p>
+<p><strong>Short description</strong>
+Description of the text block</p>
+<h4 id="area-texts">Area “Texts”</h4>
+<p><strong>National language</strong>
+Local language (system language)</p>
+<p><strong>Other language</strong>	
+Optional secondary languages. Selectable via drop-down list of languages.</p>
+<h4 id="functional-buttons">Functional Buttons</h4>
+<p><strong>Button &lt; Application &gt;</strong>
+Opens the Appliance of texts form</p>
+<p><strong>Button &lt; Copy and close &gt;</strong>
+Copies the text from the selected text block and closes the texts form. The text can then be copied into a text field by clicking in the field and pressing “Ctrl+V”</p>
+<!--
+ Kapitel 3 weggelassen
+ -->
+<h2 id="text-output-locations">Text output locations</h2>
+<p>The text entered on the various input forms is output to different locations, based on the definition of the text code on the “Textcode definition” form.
+This list indicates all of the output locations for text:</p>
+<ul>
+<li>Quotation</li>
+<li>Order confirmation</li>
+<li>Delivery note</li>
+<li>Invoice</li>
+<li>Prod-Paper</li>
+<li>Purchase order</li>
+<li>Summary</li>
+<li>Picking list</li>
+</ul>
+<p>As general rule, the following image represents the text “flow” between the different D365 forms</p>
+<p><img src="../../media/Basics/Text_Functionality/Text_Flow.PNG" alt="Text in D365" title="Text in D365"></p>
+<p>The left picture represents the texts “layers” inside D365. It has a core area and overlaid areas from which texts are flowing through.</p>
+<p>The right picture outlines the text flow from core and from overlaid areas. That means, the text “flows” from internal core to the outside layers. Also, it is possible to exchange texts between forms in same layer level.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For texts in Quotation, Sales Order or Purchase Order, user should select the correct text position (Header or Footer) to get the text displayed</p>
+</div>
+<ol>
+<li>order list</li>
+<li>starts with numbers</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
