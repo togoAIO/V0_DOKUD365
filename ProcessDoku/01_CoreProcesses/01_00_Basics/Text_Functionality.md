@@ -160,6 +160,3 @@ The right picture outlines the text flow from core and from overlaid areas. That
 
 >[!Note]
 >For texts in Quotation, Sales Order or Purchase Order, user should select the correct text position (Header or Footer) to get the text displayed
-
-1. order list
-1. starts with numbers
