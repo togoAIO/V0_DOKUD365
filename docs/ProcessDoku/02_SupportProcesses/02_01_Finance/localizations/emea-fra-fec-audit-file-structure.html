@@ -1,0 +1,1094 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Structure of Dynamics 365 Finance data sources for the FEC | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Structure of Dynamics 365 Finance data sources for the FEC | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="structure-of-dynamics-365-finance-data-sources-for-the-fec">Structure of Dynamics 365 Finance data sources for the FEC</h1>
+
+<p>In Microsoft Dynamics 365 Finance, you can generate the Fichier des écritures comptables (FEC) main file or the following annexes:</p>
+<ul>
+<li>Customers fiscal year opening balances annex</li>
+<li>Vendors fiscal year opening balances annex</li>
+<li>Customers transactions annex for a specified period</li>
+<li>Vendors transactions annex for a specified period</li>
+</ul>
+<p>An FEC that includes customer and vendor fiscal year opening balances can also be generated. Use this option for companies that have only a few records during the reporting period. The reporting period must include the beginning of the fiscal year.</p>
+<p>The following sections list the data sources that are used in the FEC main file and annexes.</p>
+<h2 id="main-fec-file-for-the-period-specified">Main FEC file for the period specified</h2>
+<p>The following table shows the <strong>Main FEC file for the period specified</strong> data structure definitions ($GeneralJournalView_FR).</p>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description (FR)</th>
+<th>Description (EN)</th>
+<th>Electronic reporting (ER) data source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>JournalCode</td>
+<td>Alphanumérique</td>
+<td>Le code journal de l'écriture comptable</td>
+<td>The journal code of the accounting entry.</td>
+<td>$GeneralJournalView_FR/$JournalCodeText</td>
+</tr>
+<tr>
+<td>2</td>
+<td>JournalLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé journal de l'écriture comptable</td>
+<td>The journal caption of the accounting entry.</td>
+<td>$GeneralJournalView_FR/getGeneralJournalEntry()/deJournalLib_FR()</td>
+</tr>
+<tr>
+<td>3</td>
+<td>EcritureNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro sur une séquence continue de l'écriture comptable</td>
+<td>The number in a continuous sequence for the accounting entry.</td>
+<td>$GeneralJournalView_FR/GeneralJournalEntrySubledgerVoucher</td>
+</tr>
+<tr>
+<td>4</td>
+<td>EcritureDate</td>
+<td>Date</td>
+<td>La date de comptabilisation de l'écriture comptable</td>
+<td>The posting date of the accounting entry.</td>
+<td>$GeneralJournalView_FR/GeneralJournalEntryAccountingDate</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CompteNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td>The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. Information on multiple customers or vendors transactions can be found in respective annexes.</td>
+<td>$GeneralJournalView_FR/$MainAccountId</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CompteLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td>The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td>$GeneralJournalView_FR/getGeneralJournalAccountEntry()/getMainAccountName()</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CompAuxNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account number. This field is blank if it isn't used.</td>
+<td>$GeneralJournalView_FR/getGeneralJournalAccountEntry()/deCompteAuxNum_FR()</td>
+</tr>
+<tr>
+<td>8</td>
+<td>CompAuxLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account description. This field is blank if it isn't used.</td>
+<td>$GeneralJournalView_FR/getGeneralJournalAccountEntry()/deCompteAuxLib_FR()</td>
+</tr>
+<tr>
+<td>9</td>
+<td>PieceRef</td>
+<td>Alphanumérique</td>
+<td>La référence de la pièce justificative</td>
+<td>The reference of the supporting document. If reference of the supporting document can't be found, this field is populated with EcritureNum.</td>
+<td>$GeneralJournalView_FR/getGeneralJournalEntry()/dePieceNum_FR()</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PieceDate</td>
+<td>Date</td>
+<td>La date de la pièce justificative</td>
+<td>The date of the supporting document.</td>
+<td>$GeneralJournalView_FR/getGeneralJournalEntry()/dePieceDate_FR()</td>
+</tr>
+<tr>
+<td>11</td>
+<td>EcritureLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de l'écriture comptable</td>
+<td>The wording of the accounting entry.</td>
+<td>$GeneralJournalView_FR/$ReplaceIntoDeEcritureLib_FR</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Montant</td>
+<td>Numérique</td>
+<td>Le montant au débit/ au crédit</td>
+<td>The debit/credit amount.</td>
+<td>$GeneralJournalView_FR/$AbsAmount</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Sens</td>
+<td>Numérique</td>
+<td>Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td>The direction: <strong>D</strong> = debit, <strong>C</strong> = credit</td>
+<td>$GeneralJournalView_FR/$Direction</td>
+</tr>
+<tr>
+<td>14</td>
+<td>EcritureLet</td>
+<td>Alphanumérique</td>
+<td>Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td>The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td>$GeneralJournalView_FR/$deEcritureLet</td>
+</tr>
+<tr>
+<td>15</td>
+<td>DateLet</td>
+<td>Date</td>
+<td>La date de lettrage (à blanc si non utilisé)</td>
+<td>The lettering date. This field is blank if it isn't used.</td>
+<td>$GeneralJournalView_FR/$deDateLet</td>
+</tr>
+<tr>
+<td>16</td>
+<td>ValidDate</td>
+<td>Date</td>
+<td>La date de validation de l'écriture comptable</td>
+<td>The validation date of the accounting entry.</td>
+<td>$GeneralJournalView_FR/GeneralJournalEntryAccountingDate</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Montantdevise</td>
+<td>Numérique</td>
+<td>Le montant en devise (à blanc si non utilisé)</td>
+<td>The amount in currency. This field is blank if it isn't used.</td>
+<td>$GeneralJournalView_FR/GeneralJournalAccountEntryTransactionCurrencyAmount</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Idevise</td>
+<td>Alphanumérique</td>
+<td>L'identifiant de la devise (à blanc si non utilisé)</td>
+<td>The currency identifier. This field is blank if it isn't used.</td>
+<td>$GeneralJournalView_FR/GeneralJournalAccountEntryTransactionCurrencyCode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="customers-fiscal-year-opening-balances-annex">Customers fiscal year opening balances annex</h2>
+<p>Customers fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by customers, the <strong>Customers fiscal year opening balances annex</strong> is implemented. This annex collects the amounts of opening balances by customers at the beginning of the fiscal year and provides this information together with the opening transaction voucher from the general ledger.</p>
+<p>The following table shows the <strong>Customers fiscal year opening balances annex</strong> data structure definitions ($CustLedgerBalance).</p>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description (FR)</th>
+<th>Description (EN)</th>
+<th>ER data source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>JournalCode</td>
+<td>Alphanumérique</td>
+<td>Le code journal de l'écriture comptable</td>
+<td>The journal code of the accounting entry.</td>
+<td>CustTransGroupedByLedgerAccount/$JournalCodeText</td>
+</tr>
+<tr>
+<td>2</td>
+<td>JournalLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé journal de l'écriture comptable</td>
+<td>The journal caption of the accounting entry.</td>
+<td>CustTransGroupedByLedgerAccount/$JournalLibText</td>
+</tr>
+<tr>
+<td>3</td>
+<td>EcritureNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro sur une séquence continue de l'écriture comptable</td>
+<td>The number in a continuous sequence for the accounting entry.</td>
+<td>CustTransGroupedByLedgerAccount/$Voucher</td>
+</tr>
+<tr>
+<td>4</td>
+<td>EcritureDate</td>
+<td>Date</td>
+<td>La date de comptabilisation de l'écriture comptable</td>
+<td>The posting date of the accounting entry.</td>
+<td>CustTransGroupedByLedgerAccount/$Date</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CompteNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td>The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts.</td>
+<td>CustTransGroupedByLedgerAccount/grouped/$LedgerAccount</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CompteLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td>The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td>CustTransGroupedByLedgerAccount/$LedgerAccountName</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CompAuxNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account number. This field is blank if it isn't used.</td>
+<td>CustTransGroupedByLedgerAccount/grouped/AccountNum</td>
+</tr>
+<tr>
+<td>8</td>
+<td>CompAuxLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account description. This field is blank if it isn't used.</td>
+<td>CustTransGroupedByLedgerAccount/$PartyName</td>
+</tr>
+<tr>
+<td>9</td>
+<td>PieceRef</td>
+<td>Alphanumérique</td>
+<td>La référence de la pièce justificative</td>
+<td>The reference of the supporting document.</td>
+<td>CustTransGroupedByLedgerAccount/$PieceNum</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PieceDate</td>
+<td>Date</td>
+<td>La date de la pièce justificative</td>
+<td>The date of the supporting document.</td>
+<td>CustTransGroupedByLedgerAccount/$PieceDate</td>
+</tr>
+<tr>
+<td>11</td>
+<td>EcritureLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de l'écriture comptable</td>
+<td>The wording of the accounting entry.</td>
+<td>CustTransGroupedByLedgerAccount/$EcritureLib</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Montant</td>
+<td>Numérique</td>
+<td>Le montant au débit/ au crédit</td>
+<td>The debit/credit amount.</td>
+<td>CustTransGroupedByLedgerAccount/$AbsAmount</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Sens</td>
+<td>Numérique</td>
+<td>Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td>The direction: <strong>D</strong> = debit, <strong>C</strong> = credit</td>
+<td>CustTransGroupedByLedgerAccount/$Direction</td>
+</tr>
+<tr>
+<td>14</td>
+<td>EcritureLet</td>
+<td>Alphanumérique</td>
+<td>Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td>The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td>$deEmpty</td>
+</tr>
+<tr>
+<td>15</td>
+<td>DateLet</td>
+<td>Date</td>
+<td>La date de lettrage (à blanc si non utilisé)</td>
+<td>The lettering date. This field is blank if it isn't used.</td>
+<td>$deDateNull</td>
+</tr>
+<tr>
+<td>16</td>
+<td>ValidDate</td>
+<td>Date</td>
+<td>La date de validation de l'écriture comptable</td>
+<td>The validation date of the accounting entry.</td>
+<td>CustTransGroupedByLedgerAccount/$ValidDate</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Montantdevise</td>
+<td>Numérique</td>
+<td>Le montant en devise (à blanc si non utilisé)</td>
+<td>The amount in currency. This field is blank if it isn't used.</td>
+<td>CustTransGroupedByLedgerAccount/aggregated/AmountCur</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Idevise</td>
+<td>Alphanumérique</td>
+<td>L'identifiant de la devise (à blanc si non utilisé)</td>
+<td>The currency identifier. This field is blank if it isn't used.</td>
+<td>CustTransGroupedByLedgerAccount/grouped/CurrencyCode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vendors-fiscal-year-opening-balances-annex">Vendors fiscal year opening balances annex</h2>
+<p>Vendors fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by vendors, the <strong>Vendors fiscal year opening balances annex</strong> is implemented. This annex collects amounts of opening balances by vendors on the beginning of the fiscal year and represents this information in combination with opening transaction voucher from general ledger.</p>
+<p>The following table shows the <strong>Vendors fiscal year opening balances annex</strong> data structure definitions.</p>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description (FR)</th>
+<th>Description (EN)</th>
+<th>ER data source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>JournalCode</td>
+<td>Alphanumérique</td>
+<td>Le code journal de l'écriture comptable</td>
+<td>The journal code of the accounting entry.</td>
+<td>Not included</td>
+</tr>
+<tr>
+<td>2</td>
+<td>JournalLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé journal de l'écriture comptable</td>
+<td>The journal caption of the accounting entry.</td>
+<td>VendTransGroupedByLedgerAccount/$JournalLibText</td>
+</tr>
+<tr>
+<td>3</td>
+<td>EcritureNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro sur une séquence continue de l'écriture comptable</td>
+<td>The number in a continuous sequence for the accounting entry.</td>
+<td>VendTransGroupedByLedgerAccount/$Voucher</td>
+</tr>
+<tr>
+<td>4</td>
+<td>EcritureDate</td>
+<td>Date</td>
+<td>La date de comptabilisation de l'écriture comptable</td>
+<td>The posting date of the accounting entry.</td>
+<td>VendTransGroupedByLedgerAccount/$Date</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CompteNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td>The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts.</td>
+<td>VendTransGroupedByLedgerAccount/grouped/$LedgerAccount</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CompteLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td>The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td>VendTransGroupedByLedgerAccount/$LedgerAccountName</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CompAuxNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account number. This field is blank if it isn't used.</td>
+<td>VendTransGroupedByLedgerAccount/grouped/AccountNum</td>
+</tr>
+<tr>
+<td>8</td>
+<td>CompAuxLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account description. This field is blank if it isn't used.</td>
+<td>VendTransGroupedByLedgerAccount/$PartyName</td>
+</tr>
+<tr>
+<td>9</td>
+<td>PieceRef</td>
+<td>Alphanumérique</td>
+<td>La référence de la pièce justificative</td>
+<td>The reference of the supporting document.</td>
+<td>VendTransGroupedByLedgerAccount/$PieceNum</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PieceDate</td>
+<td>Date</td>
+<td>La date de la pièce justificative</td>
+<td>The date of the supporting document.</td>
+<td>VendTransGroupedByLedgerAccount/$PieceDate</td>
+</tr>
+<tr>
+<td>11</td>
+<td>EcritureLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de l'écriture comptable</td>
+<td>The wording of the accounting entry.</td>
+<td>VendTransGroupedByLedgerAccount/$EcritureLib</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Montant</td>
+<td>Numérique</td>
+<td>Le montant au débit/ au crédit</td>
+<td>The debit/credit amount.</td>
+<td>VendTransGroupedByLedgerAccount/$AbsAmount</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Sens</td>
+<td>Numérique</td>
+<td>Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td>The direction: <strong>D</strong> = debit, <strong>C</strong> = credit</td>
+<td>VendTransGroupedByLedgerAccount/$Direction</td>
+</tr>
+<tr>
+<td>14</td>
+<td>EcritureLet</td>
+<td>Alphanumérique</td>
+<td>Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td>The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td>$deEmpty</td>
+</tr>
+<tr>
+<td>15</td>
+<td>DateLet</td>
+<td>Date</td>
+<td>La date de lettrage (à blanc si non utilisé)</td>
+<td>The lettering date. This field is blank if it isn't used.</td>
+<td>$deDateNull</td>
+</tr>
+<tr>
+<td>16</td>
+<td>ValidDate</td>
+<td>Date</td>
+<td>La date de validation de l'écriture comptable</td>
+<td>The validation date of the accounting entry.</td>
+<td>VendTransGroupedByLedgerAccount/$ValidDate</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Montantdevise</td>
+<td>Numérique</td>
+<td>Le montant en devise (à blanc si non utilisé)</td>
+<td>The amount in currency. This field is blank if it isn't used.</td>
+<td>VendTransGroupedByLedgerAccount/aggregated/AmountCur</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Idevise</td>
+<td>Alphanumérique</td>
+<td>L'identifiant de la devise (à blanc si non utilisé)</td>
+<td>The currency identifier. This field is blank if it isn't used.</td>
+<td>VendTransGroupedByLedgerAccount/grouped/CurrencyCode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="customers-transactions-annex-for-the-period-specified">Customers transactions annex for the period specified</h2>
+<p><strong>Customers transactions annex for the period specified</strong> annex can be requested to provide additional details on customers transactions. For example, in case a company uses <a href="../../finance/general-ledger/one-voucher.md">Allow multiple transactions within one voucher</a> parameter on the <strong>General</strong> tab of the <strong>General ledger parameters</strong> page, one voucher can be assigned to multiple customers transactions. To provide detailed infomration by customers accounts for such scenario, <strong>Customers transactions annex for the period specified</strong> annex is implemented.</p>
+<p>The following table shows the <strong>Customers transactions annex for the period specified</strong> data structure definitions.</p>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description (FR)</th>
+<th>Description (EN)</th>
+<th>ER data source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>JournalCode</td>
+<td>Alphanumérique</td>
+<td>Le code journal de l'écriture comptable</td>
+<td>The journal code of the accounting entry.</td>
+<td>$CustTrans/$JournalCodeText</td>
+</tr>
+<tr>
+<td>2</td>
+<td>JournalLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé journal de l'écriture comptable</td>
+<td>The journal caption of the accounting entry.</td>
+<td>$CustTrans/$JournalLibText</td>
+</tr>
+<tr>
+<td>3</td>
+<td>EcritureNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro sur une séquence continue de l'écriture comptable</td>
+<td>The number in a continuous sequence for the accounting entry.</td>
+<td>$CustTrans/Voucher</td>
+</tr>
+<tr>
+<td>4</td>
+<td>EcritureDate</td>
+<td>Date</td>
+<td>La date de comptabilisation de l'écriture comptable</td>
+<td>The posting date of the accounting entry.</td>
+<td>$CustTrans/TransDate</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CompteNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td>The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts.</td>
+<td>$CustTrans/deLedgerAccount_FR()</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CompteLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td>The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td>$CustTrans/deLedgerAccountName_FR()</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CompAuxNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account number. This field is blank if it isn't used.</td>
+<td>$CustTrans/AccountNum</td>
+</tr>
+<tr>
+<td>8</td>
+<td>CompAuxLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account description. This field is blank if it isn't used.</td>
+<td>$CustTrans/custTableName()</td>
+</tr>
+<tr>
+<td>9</td>
+<td>PieceRef</td>
+<td>Alphanumérique</td>
+<td>La référence de la pièce justificative</td>
+<td>The reference of the supporting document.</td>
+<td>$CustTrans/$PieceNum</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PieceDate</td>
+<td>Date</td>
+<td>La date de la pièce justificative</td>
+<td>The date of the supporting document.</td>
+<td>$CustTrans/$PieceDate</td>
+</tr>
+<tr>
+<td>11</td>
+<td>EcritureLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de l'écriture comptable</td>
+<td>The wording of the accounting entry.</td>
+<td>$CustTrans/deEcritureLib_FR()</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Montant</td>
+<td>Numérique</td>
+<td>Le montant au débit/ au crédit</td>
+<td>The debit/credit amount.</td>
+<td>$CustTrans/$AbsAmount</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Sens</td>
+<td>Numérique</td>
+<td>Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td>The direction: <strong>D</strong> = debit, <strong>C</strong> = credit</td>
+<td>$CustTrans/$Direction</td>
+</tr>
+<tr>
+<td>14</td>
+<td>EcritureLet</td>
+<td>Alphanumérique</td>
+<td>Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td>The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td>$CustTrans/LastSettleVoucher</td>
+</tr>
+<tr>
+<td>15</td>
+<td>DateLet</td>
+<td>Date</td>
+<td>La date de lettrage (à blanc si non utilisé)</td>
+<td>The lettering date. This field is blank if it isn't used.</td>
+<td>$CustTrans/LastSettleDate</td>
+</tr>
+<tr>
+<td>16</td>
+<td>ValidDate</td>
+<td>Date</td>
+<td>La date de validation de l'écriture comptable</td>
+<td>The validation date of the accounting entry.</td>
+<td>$CustTrans/createdDateTime</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Montantdevise</td>
+<td>Numérique</td>
+<td>Le montant en devise (à blanc si non utilisé)</td>
+<td>The amount in currency. This field is blank if it isn't used.</td>
+<td>$CustTrans/AmountCur</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Idevise</td>
+<td>Alphanumérique</td>
+<td>L'identifiant de la devise (à blanc si non utilisé)</td>
+<td>The currency identifier. This field is blank if it isn't used.</td>
+<td>$CustTrans/CurrencyCode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vendors-transactions-annex-for-the-period-specified">Vendors transactions annex for the period specified</h2>
+<p><strong>Vendors transactions annex for the period specified</strong> annex can be requested to provide additional details on vendors transactions. For example, in case a company uses <a href="../../finance/general-ledger/one-voucher.md">Allow multiple transactions within one voucher</a> parameter on the <strong>General</strong> tab of the <strong>General ledger parameters</strong> page, one voucher can be assigned to multiple vendors transactions. To provide detailed infomration by vendors accounts for such scenario, <strong>Vendors transactions annex for the period specified</strong> annex is implemented.</p>
+<p>The following table shows the <strong>Vendors transactions annex for the period specified</strong> data structure definitions.</p>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description (FR)</th>
+<th>Description (EN)</th>
+<th>ER data source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>JournalCode</td>
+<td>Alphanumérique</td>
+<td>Le code journal de l'écriture comptable</td>
+<td>The journal code of the accounting entry.</td>
+<td>$VendTrans/$JournalCodeText</td>
+</tr>
+<tr>
+<td>2</td>
+<td>JournalLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé journal de l'écriture comptable</td>
+<td>The journal caption of the accounting entry.</td>
+<td>$VendTrans/$JournalLibText</td>
+</tr>
+<tr>
+<td>3</td>
+<td>EcritureNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro sur une séquence continue de l'écriture comptable</td>
+<td>The number in a continuous sequence for the accounting entry.</td>
+<td>$VendTrans/Voucher</td>
+</tr>
+<tr>
+<td>4</td>
+<td>EcritureDate</td>
+<td>Date</td>
+<td>La date de comptabilisation de l'écriture comptable</td>
+<td>The posting date of the accounting entry.</td>
+<td>$VendTrans/TransDate</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CompteNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td>The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts.</td>
+<td>$VendTrans/deLedgerAccount_FR()</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CompteLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td>The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td>$VendTrans/deLedgerAccountName_FR()</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CompAuxNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account number. This field is blank if it isn't used.</td>
+<td>$VendTrans/AccountNum</td>
+</tr>
+<tr>
+<td>8</td>
+<td>CompAuxLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account description. This field is blank if it isn't used.</td>
+<td>$VendTrans/custTableName()</td>
+</tr>
+<tr>
+<td>9</td>
+<td>PieceRef</td>
+<td>Alphanumérique</td>
+<td>La référence de la pièce justificative</td>
+<td>The reference of the supporting document.</td>
+<td>$VendTrans/$PieceNum</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PieceDate</td>
+<td>Date</td>
+<td>La date de la pièce justificative</td>
+<td>The date of the supporting document.</td>
+<td>$VendTrans/$PieceDate</td>
+</tr>
+<tr>
+<td>11</td>
+<td>EcritureLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de l'écriture comptable</td>
+<td>The wording of the accounting entry.</td>
+<td>$VendTrans/deEcritureLib_FR()</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Montant</td>
+<td>Numérique</td>
+<td>Le montant au débit/ au crédit</td>
+<td>The debit/credit amount.</td>
+<td>$VendTrans/$AbsAmount</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Sens</td>
+<td>Numérique</td>
+<td>Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td>The direction: <strong>D</strong> = debit, <strong>C</strong> = credit</td>
+<td>$VendTrans/$Direction</td>
+</tr>
+<tr>
+<td>14</td>
+<td>EcritureLet</td>
+<td>Alphanumérique</td>
+<td>Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td>The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td>$VendTrans/LastSettleVoucher</td>
+</tr>
+<tr>
+<td>15</td>
+<td>DateLet</td>
+<td>Date</td>
+<td>La date de lettrage (à blanc si non utilisé)</td>
+<td>The lettering date. This field is blank if it isn't used.</td>
+<td>$VendTrans/LastSettleDate</td>
+</tr>
+<tr>
+<td>16</td>
+<td>ValidDate</td>
+<td>Date</td>
+<td>La date de validation de l'écriture comptable</td>
+<td>The validation date of the accounting entry.</td>
+<td>$VendTrans/createdDateTime</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Montantdevise</td>
+<td>Numérique</td>
+<td>Le montant en devise (à blanc si non utilisé)</td>
+<td>The amount in currency. This field is blank if it isn't used.</td>
+<td>$VendTrans/AmountCur</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Idevise</td>
+<td>Alphanumérique</td>
+<td>L'identifiant de la devise (à blanc si non utilisé)</td>
+<td>The currency identifier. This field is blank if it isn't used.</td>
+<td>$VendTrans/CurrencyCode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fec-main-file-including-fiscal-year-opening-balances-details-for-customers-and-vendors">FEC main file including fiscal year opening balances details for customers and vendors</h2>
+<p>The following table shows the <strong>FEC main file including fiscal year opening balances details for customers and vendors</strong> data structure definitions.</p>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description (FR)</th>
+<th>Description (EN)</th>
+<th>ER data source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>JournalCode</td>
+<td>Alphanumérique</td>
+<td>Le code journal de l'écriture comptable</td>
+<td>The journal code of the accounting entry.</td>
+<td>$FECExtendedAggregation/$JournalCodeText</td>
+</tr>
+<tr>
+<td>2</td>
+<td>JournalLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé journal de l'écriture comptable</td>
+<td>The journal caption of the accounting entry.</td>
+<td>$FECExtendedAggregation/$JournalLibText</td>
+</tr>
+<tr>
+<td>3</td>
+<td>EcritureNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro sur une séquence continue de l'écriture comptable</td>
+<td>The number in a continuous sequence for the accounting entry.</td>
+<td>$FECExtendedAggregation/$Voucher</td>
+</tr>
+<tr>
+<td>4</td>
+<td>EcritureDate</td>
+<td>Date</td>
+<td>La date de comptabilisation de l'écriture comptable</td>
+<td>The posting date of the accounting entry.</td>
+<td>$FECExtendedAggregation/$Date</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CompteNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td>The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. Information on multiple customers or vendors transactions can be found in respective annexes.</td>
+<td>$FECExtendedAggregation/$LedgerAccount</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CompteLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td>The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td>$FECExtendedAggregation/$LedgerAccountName</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CompAuxNum</td>
+<td>Alphanumérique</td>
+<td>Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account number. This field is blank if it isn't used.</td>
+<td>$FECExtendedAggregation/$AccountNum</td>
+</tr>
+<tr>
+<td>8</td>
+<td>CompAuxLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td>The auxiliary account description. This field is blank if it isn't used.</td>
+<td>$FECExtendedAggregation/$PartyName</td>
+</tr>
+<tr>
+<td>9</td>
+<td>PieceRef</td>
+<td>Alphanumérique</td>
+<td>La référence de la pièce justificative</td>
+<td>The reference of the supporting document. If reference of the supporting document cannot be found, this field is populated with EcritureNum.</td>
+<td>$FECExtendedAggregation/$PieceNum</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PieceDate</td>
+<td>Date</td>
+<td>La date de la pièce justificative</td>
+<td>The date of the supporting document.</td>
+<td>$FECExtendedAggregation/$PieceDate</td>
+</tr>
+<tr>
+<td>11</td>
+<td>EcritureLib</td>
+<td>Alphanumérique</td>
+<td>Le libellé de l'écriture comptable</td>
+<td>The wording of the accounting entry.</td>
+<td>$FECExtendedAggregation/$EcritureLib</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Montant</td>
+<td>Numérique</td>
+<td>Le montant au débit/ au crédit</td>
+<td>The debit/credit amount.</td>
+<td>$FECExtendedAggregation/$AbsAmount</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Sens</td>
+<td>Numérique</td>
+<td>Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td>The direction: <strong>D</strong> = debit, <strong>C</strong> = credit</td>
+<td>$FECExtendedAggregation/$Direction</td>
+</tr>
+<tr>
+<td>14</td>
+<td>EcritureLet</td>
+<td>Alphanumérique</td>
+<td>Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td>The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td>$FECExtendedAggregation/$LastSettleVoucher</td>
+</tr>
+<tr>
+<td>15</td>
+<td>DateLet</td>
+<td>Date</td>
+<td>La date de lettrage (à blanc si non utilisé)</td>
+<td>The lettering date. This field is blank if it isn't used.</td>
+<td>$FECExtendedAggregation/$LastSettleDate</td>
+</tr>
+<tr>
+<td>16</td>
+<td>ValidDate</td>
+<td>Date</td>
+<td>La date de validation de l'écriture comptable</td>
+<td>The validation date of the accounting entry.</td>
+<td>$FECExtendedAggregation/$ValidDate</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Montantdevise</td>
+<td>Numérique</td>
+<td>Le montant en devise (à blanc si non utilisé)</td>
+<td>The amount in currency. This field is blank if it isn't used.</td>
+<td>$FECExtendedAggregation/$AmountCur</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Idevise</td>
+<td>Alphanumérique</td>
+<td>L'identifiant de la devise (à blanc si non utilisé)</td>
+<td>The currency identifier. This field is blank if it isn't used.</td>
+<td>$FECExtendedAggregation/$CurrencyCode</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

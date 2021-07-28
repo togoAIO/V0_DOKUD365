@@ -1,0 +1,713 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Average VAT for purchase transactions | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Average VAT for purchase transactions | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="average-vat-for-purchase-transactions">Average VAT for purchase transactions</h1>
+
+
+<p>An individual or legal entity might purchase goods or services that are
+used by both value-added tax (VAT) businesses and non-VAT businesses. In
+these cases, if there is no clear division of the proportion of the
+purchase VAT amount between the different businesses, the purchase VAT
+must be divided based on the actual usage of the purchased goods or
+services in each business. The average VAT is the percentage of VAT that
+is divided between the VAT businesses and the non-VAT businesses of a
+legal entity. Average VAT is applied only to purchase transactions.</p>
+<p>You can use multiple tax rates to manage the proportion of VAT between
+the VAT businesses and the non-VAT businesses of a legal entity. You can
+manage average VAT for a sales tax code by using the <strong>Sales tax code
+values</strong> page.</p>
+<h2 id="set-up-average-vat">Set up average VAT</h2>
+<ol>
+<li><p>Go to <strong>Tax &gt; Setup &gt; Parameters &gt; General ledger
+parameters &gt; Sales tax</strong>, and enable <strong>Manage realized and
+unrealized VAT</strong>.</p>
+</li>
+<li><p>In the <strong>Calculation method</strong> field, select <strong>Total</strong>.</p>
+</li>
+<li><p>Go to <strong>Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax
+codes</strong>, and set up sales tax codes for average realized VAT.</p>
+<ol>
+<li><p>In the <strong>Tax type</strong> field, select <strong>Average realized</strong>.</p>
+</li>
+<li><p>In the <strong>Ledger posting group</strong> field, select the ledger posting
+group for realized VAT.</p>
+</li>
+<li><p>On the Action Pane, on the <strong>Sales tax code</strong> tab, in the
+<strong>Sales tax code</strong> group, select <strong>Values</strong>.</p>
+</li>
+<li><p>On the <strong>Sales tax code values</strong> page, in the <strong>Nondeductible
+%</strong> field, enter the percentage of VAT for the non-VAT
+businesses.</p>
+</li>
+<li><p>In the <strong>From date</strong> and <strong>To date</strong> fields, define the date
+interval for the proportion.</p>
+</li>
+</ol>
+</li>
+<li><p>Go to <strong>Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax
+codes</strong>, and set up sales tax codes for average unrealized VAT.</p>
+<ol>
+<li><p>In the <strong>Tax type</strong> field, select <strong>Average unrealized</strong>.</p>
+</li>
+<li><p>In the <strong>Ledger posting group</strong> field, select the ledger posting
+group for unrealized VAT.</p>
+</li>
+<li><p>In the <strong>Payment sales tax code</strong> field, select the code for
+average realized VAT.</p>
+</li>
+<li><p>On the Action Pane, on the <strong>Sales tax code</strong> tab, in the
+<strong>Sales tax code</strong> group, select <strong>Values</strong>.</p>
+</li>
+<li><p>On the <strong>Sales tax code values</strong> page, in the <strong>Nondeductible
+%</strong> field, enter the percentage of VAT for the non-VAT
+businesses.</p>
+</li>
+<li><p>In the <strong>From date</strong> and <strong>To date</strong> fields, define the date
+interval for the proportion.</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>For more information, see <a href="apac-tha-unrealized-vat.html">Thailand unrealized and realized VAT</a>
+and <a href="../general-ledger/tasks/set-up-sales-tax-codes.html">Set up sales tax codes</a>.</p>
+<ol start="5">
+<li><p>Go to <strong>Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax
+groups</strong>, and set up sales tax groups for average unrealized VAT and
+average realized VAT. For example, for average realized VAT, create
+an item sales tax group that is named <strong>AVAT</strong>. For average
+unrealized VAT, create an item sales tax group that is named
+<strong>AUVAT</strong>.</p>
+</li>
+<li><p>Go to <strong>Tax &gt; Indirect taxes &gt; Sales tax &gt; Item sales tax
+groups</strong>, and set up item sales tax groups for average unrealized
+VAT and average realized VAT. For example, for average realized VAT,
+create an item sales tax group that is named <strong>AItem</strong>. For average
+unrealized VAT, create an item sales tax group that is named
+<strong>AServ</strong>.</p>
+</li>
+</ol>
+<h2 id="work-with-average-vat">Work with average VAT</h2>
+<p>You can create the following transactions that have average unrealized
+and realized VAT:</p>
+<ul>
+<li><p>Purchase order for goods</p>
+</li>
+<li><p>Purchase order for services</p>
+</li>
+<li><p>Vendor invoice journal</p>
+</li>
+</ul>
+<p>The amount of VAT for the VAT businesses and the non-VAT businesses is
+calculated based on the specified VAT ratio. When you post a purchase
+order, the VAT for the VAT businesses is posted to either the unrealized
+purchase VAT account or the realized purchase VAT account. The VAT for
+the non-VAT businesses is posted either to the inventory account for an
+item as part of the inventory amount or to the expense account for a
+service as part of the expense.</p>
+<p>For more information about unrealized and realized VAT, see <a href="apac-tha-tax-invoices.html">Tax invoice
+for Thailand</a>.</p>
+<h3 id="post-a-vendor-payment-transaction-when-the-vat-ratio-is-updated-after-the-invoice-is-posted">Post a vendor payment transaction when the VAT ratio is updated after the invoice is posted</h3>
+<p>You must manually calculate the VAT ratio every year. When the VAT ratio
+is changed, you must update the VAT ratio and the date range. To update
+the VAT ratio and date range for a sales tax code after the invoice that
+the sales tax code applies to is posted, use the <strong>Sales tax code</strong>
+page.</p>
+<p>If realized purchase VAT was posted when you posted the invoice, you can
+use the updated VAT ratio to make a payment for the vendor transaction
+on the <strong>Journal voucher</strong> page. The VAT adjustment is automatically
+posted for the realized purchase VAT, based on the updated VAT ratio.</p>
+<p>If unrealized VAT was posted when you posted the invoice, when you
+receive the tax invoice from the vendor, you can reverse the unrealized
+VAT and post the realized VAT by using the <strong>Reversal journal</strong> page.</p>
+<p>For more information, see <a href="apac-tha-unrealized-vat.html#reverse-the-unrealized-purchase-vat">Reverse the posted unrealized purchase
+VAT</a>.</p>
+<p>If the VAT ratio is updated for an advance payment transaction after you
+post the invoice, you can manage the average VAT adjustment for the
+transaction. When you receive the tax invoice from the vendor, determine
+whether the VAT ratio is updated, reverse the advanced payment, and then
+make a payment in the current year. The realized or unrealized VAT will
+automatically be adjusted for the original transaction.</p>
+<h4 id="example">Example</h4>
+<p>A 7-percent VAT sales tax code is applicable to a purchase transaction
+of 100.00 Thai baht (THB 100.00). When the invoice is posted, the VAT
+ratio between the VAT businesses and the non-VAT businesses is 45
+percent to 55 percent. However, in the new year, the VAT ratio between
+the VAT businesses and the non-VAT businesses is updated to 50 percent
+to 50 percent. Therefore, when the invoice is settled, the VAT ratio
+between the VAT businesses and the non-VAT businesses is 50 percent to
+50 percent.</p>
+<p>The VAT is calculated and posted to different accounts, as shown in the
+following table.</p>
+<table style="width: 100.058%;">
+<tbody>
+<tr>
+<td style="width: 49.2322%;">
+<p><strong>VAT calculated and posted when the invoice is posted</strong></p>
+</td>
+<td style="width: 49.3858%;">
+<p><strong>VAT calculated and adjusted when the invoice is settled with updated VAT ratio</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 49.2322%;">
+<p>The invoice amount is THB 100.00.</p>
+<p>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.</p>
+<ul>
+<li><strong>VAT calculated for the VAT businesses:</strong> 45 percent of the 7-percent VAT = THB 3.15</li>
+<li><strong>VAT calculated for the non-VAT businesses:</strong> 55 percent of the 7-percent VAT = THB 3.85</li>
+</ul>
+<p>The following table shows the amounts that are posted to different accounts.</p>
+<table>
+<tbody>
+<tr>
+<td width="99">
+<p><strong>Account</strong></p>
+</td>
+<td width="99">
+<p><strong>Debit (THB)</strong></p>
+</td>
+<td width="99">
+<p><strong>Credit (THB)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Inventory</p>
+</td>
+<td width="99">
+<p>103.85</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Purchase VAT</p>
+</td>
+<td width="99">
+<p>3.15</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Accounts payable</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+<td width="99">
+<p>107.00</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 49.3858%;">
+<p>A payment of THB 100.00 is made to settle the invoice.</p>
+<p>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.</p>
+<ul>
+<li><strong>VAT calculated for the VAT businesses:</strong> 50 percent of the 7-percent VAT = THB 3.50</li>
+<li><strong>VAT calculated for the non-VAT businesses:</strong> 50 percent of the 7-percent VAT = THB 3.50</li>
+</ul>
+<p>The following table shows the amounts that are adjusted in different accounts.</p>
+<table>
+<tbody>
+<tr>
+<td width="99">
+<p><strong>Account</strong></p>
+</td>
+<td width="99">
+<p><strong>Debit (THB)</strong></p>
+</td>
+<td width="99">
+<p><strong>Credit (THB)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Inventory</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+<td width="99">
+<p>0.35</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Purchase VAT</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+<td width="99">
+<p>3.15</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Purchase VAT</p>
+</td>
+<td width="99">
+<p>3.50</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Accounts payable</p>
+</td>
+<td width="99">
+<p>107.00</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Bank</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+<td width="99">
+<p>107.00</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="generate-the-average-vat-report">Generate the Average VAT report</h2>
+<p>The <strong>Average VAT</strong> report includes the details of transactions that
+have average VAT. You must submit the <strong>Average VAT</strong> report to the
+Revenue Department of Thailand every month.</p>
+<ol>
+<li><p>Go to <strong>Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
+Average VAT</strong>.</p>
+</li>
+<li><p>In the <strong>Tax month</strong> field, select the month to generate the report
+for.</p>
+</li>
+<li><p>In the <strong>Tax invoice number</strong> field, enter the tax invoice number of
+the invoice that was received from the vendor, if you want the
+report to include the transactions.</p>
+</li>
+<li><p>In the <strong>Tax invoice date</strong> field, enter the date when the tax
+invoice was generated by the vendor.</p>
+</li>
+<li><p>In the <strong>Tax invoice receipt date</strong> field, enter the date when you
+received the tax invoice from the vendor.</p>
+</li>
+<li><p>In the <strong>Sales tax code</strong> field, select the average VAT sales tax
+code that you want the report to include transactions for.</p>
+</li>
+<li><p>In the <strong>Tax branch</strong> field, select the tax branch of the legal
+entity to generate the report for.</p>
+</li>
+<li><p>In the <strong>Detail level</strong> field, select the level of detail that you
+want the report to include:</p>
+<ul>
+<li><p><strong>Details</strong> – Generate a detailed <strong>Average VAT</strong> report. In
+this case, each transaction is shown on separate line.</p>
+</li>
+<li><p><strong>Summary</strong> – Generate a summarized <strong>Average VAT</strong> report. In
+this case, vendor invoices that have the same tax invoice number
+are summarized and shown as one line.</p>
+</li>
+</ul>
+</li>
+<li><p>Select <strong>OK</strong>, and review report results.</p>
+</li>
+</ol>
+<p>The following illustration shows an example of a detailed <strong>Average
+VAT</strong> report.</p>
+<p><img src="media/apac-tha-detailed-average-vat-report.png" alt="detailed Average VAT report."></p>
+<p>The following illustration shows an example of a summarized <strong>Average
+VAT</strong> report.</p>
+<p><img src="media/apac-tha-summarized-average-vat-report.png" alt="summarized Average VAT report."></p>
+<p>The following table explains the information that is shown on the
+<strong>Average VAT</strong> report.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tax invoice date</td>
+<td>The date when the tax invoice was received.</td>
+</tr>
+<tr>
+<td>Tax invoice number</td>
+<td>The tax invoice number of the invoice that was received from the vendor.</td>
+</tr>
+<tr>
+<td>Vendor name/Actual vendor name</td>
+<td>The name of the vendor account.</td>
+</tr>
+<tr>
+<td>Tax registration number</td>
+<td>The number of the vendor account.</td>
+</tr>
+<tr>
+<td>Branch number</td>
+<td>The number of the tax branch that was used during the transaction.</td>
+</tr>
+<tr>
+<td>Goods and services base amount</td>
+<td>The base amount of the transaction.</td>
+</tr>
+<tr>
+<td>Sales tax amount</td>
+<td>The calculated tax amount.</td>
+</tr>
+<tr>
+<td>% proportion of VAT business</td>
+<td>The percentage of VAT that is divided between the VAT businesses and the non-VAT businesses of a legal entity.</td>
+</tr>
+<tr>
+<td>Voucher</td>
+<td>The voucher number in the ledger.</td>
+</tr>
+<tr>
+<td>Total base refund amount</td>
+<td>The base amount for refund.</td>
+</tr>
+<tr>
+<td>Total VAT refund amount</td>
+<td>The calculated VAT amount for refund.</td>
+</tr>
+<tr>
+<td>New % proportion of VAT business</td>
+<td>The percentage of VAT that you've recalculated for the VAT businesses and the non-VAT businesses of a legal entity.</td>
+</tr>
+<tr>
+<td>New base refund amount</td>
+<td>The base amount for refund after you've recalculated the proportion for the VAT businesses and the non-VAT businesses of a legal entity.</td>
+</tr>
+<tr>
+<td>New VAT refund amount</td>
+<td>The calculated VAT amount for refund after you've recalculated the proportion for the VAT businesses and the non-VAT businesses of a legal entity.</td>
+</tr>
+<tr>
+<td>Difference</td>
+<td>The difference between the <strong>Total base refund amount</strong> value and the <strong>New base refund amount</strong> value.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-1">Example</h2>
+<p>This example shows how to post a purchase order when there is unrealized
+VAT at the end of the year, but the payment will be held in the new year
+and will use the new proportion.</p>
+<ol>
+<li><p>Go to <strong>Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax
+codes</strong>, and set up sales tax codes for average realized VAT.</p>
+<ol>
+<li><p>In the <strong>Sales tax code</strong> field, enter <strong>AVAT</strong>.</p>
+</li>
+<li><p>In the <strong>Name</strong> field, enter <strong>Average realized VAT</strong>.</p>
+</li>
+<li><p>Set the <strong>Percentage/Amount</strong> field to <strong>7</strong>.</p>
+</li>
+<li><p>In the <strong>Tax type</strong> field, select <strong>Average realized</strong>.</p>
+</li>
+<li><p>In the <strong>Ledger posting group</strong> field, select the ledger posting
+group for realized VAT.</p>
+</li>
+<li><p>On the Action Pane, on the <strong>Sales tax code</strong> tab, in the
+<strong>Sales tax code</strong> group, select <strong>Values</strong>.</p>
+</li>
+<li><p>On the <strong>Sales tax code values</strong> page, enter the following
+information.</p>
+</li>
+</ol>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Sales tax code</th>
+<th>From date</th>
+<th>To date</th>
+<th>Minimum limit</th>
+<th>Maximum limit</th>
+<th>Value</th>
+<th>Nondeductible %</th>
+<th>VAT ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AVAT</td>
+<td>1/1/2020</td>
+<td>12/31/2020</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>7.00</td>
+<td>60.00</td>
+<td>40.00</td>
+</tr>
+<tr>
+<td>AVAT</td>
+<td>1/1/2021</td>
+<td>12/31/2021</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>7.00</td>
+<td>45.00</td>
+<td>55.00</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li><p>Set up sales tax codes for average unrealized VAT.</p>
+<ol>
+<li><p>In the <strong>Sales tax code</strong> field, enter <strong>AUVAT</strong>.</p>
+</li>
+<li><p>In the <strong>Name</strong> field, enter <strong>Average unrealized VAT</strong>.</p>
+</li>
+<li><p>Set the <strong>Percentage/Amount</strong> field to <strong>7</strong>.</p>
+</li>
+<li><p>In the <strong>Tax type</strong> field, select <strong>Average unrealized</strong>.</p>
+</li>
+<li><p>In the <strong>Ledger posting group</strong> field, select the ledger posting
+group for realized VAT.</p>
+</li>
+<li><p>In the <strong>Payment sales tax code</strong> field, select <strong>AVAT</strong>.</p>
+</li>
+<li><p>On the Action Pane, on the <strong>Sales tax code</strong> tab, in the
+<strong>Sales tax code</strong> group, select <strong>Values</strong>.</p>
+</li>
+<li><p>On the <strong>Sales tax code values</strong> page, enter the following
+information.</p>
+</li>
+</ol>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Sales tax code</th>
+<th>From date</th>
+<th>To date</th>
+<th>Minimum limit</th>
+<th>Maximum limit</th>
+<th>Value</th>
+<th>Nondeductible %</th>
+<th>VAT ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AUVAT</td>
+<td>1/1/2020</td>
+<td>12/31/2020</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>7.00</td>
+<td>60.00</td>
+<td>40.00</td>
+</tr>
+<tr>
+<td>AUVAT</td>
+<td>1/1/2021</td>
+<td>12/31/2021</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>7.00</td>
+<td>45.00</td>
+<td>55.00</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li><p>Create a purchase order for THB 1,000.00.</p>
+</li>
+<li><p>In the <strong>Sales tax group</strong> field, select the sales tax group for
+average unrealized VAT.</p>
+</li>
+<li><p>In the <strong>Item sales tax group</strong> field, select the item sales tax
+group for average unrealized VAT.</p>
+</li>
+<li><p>Post an invoice. Enter the following information:</p>
+</li>
+</ol>
+<ul>
+<li><p><strong>Invoice number:</strong> INV01</p>
+</li>
+<li><p><strong>Invoice date:</strong> 12/9/2020</p>
+</li>
+<li><p><strong>Invoice receipt date:</strong> 12/9/2020</p>
+</li>
+</ul>
+<p>The following transactions are created for the voucher:</p>
+<ul>
+<li><p><strong>Base VAT amount:</strong> THB 1,000 × 7 percent = THB 70</p>
+</li>
+<li><p><strong>Nondeductible VAT:</strong> THB 70 × 60 percent = THB 42</p>
+</li>
+<li><p><strong>Deductible VAT:</strong> THB 70 × 50 percent = THB 28</p>
+<p><img src="media/apac-tha-voucher-transactions.png" alt="Voucher transactions."></p>
+</li>
+</ul>
+<ol start="7">
+<li><p>Go to <strong>Accounts payable &gt; Payments &gt; Vendor payment
+journal</strong>, and settle the transaction.</p>
+</li>
+<li><p>Go to <strong>Accounts payable &gt; Payments &gt; Reversal journal</strong>, and
+reverse the unrealized VAT. Enter the following information:</p>
+</li>
+</ol>
+<ul>
+<li><p><strong>Tax invoice number:</strong> TXINV_01</p>
+</li>
+<li><p><strong>Tax invoice date:</strong> 3/4/2021</p>
+</li>
+<li><p><strong>Tax invoice receipt date:</strong> 3/4/2021</p>
+</li>
+</ul>
+<p>For more information about reversal journals, see <a href="apac-tha-unrealized-vat.html">Thailand unrealized
+and realized VAT</a>.</p>
+<ol start="9">
+<li><p>Go to <strong>Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
+Average VAT</strong>.</p>
+</li>
+<li><p>In the <strong>Tax month</strong> field, select <strong>March 2021</strong>, and review the
+report results:</p>
+</li>
+</ol>
+<ul>
+<li><strong>Deductible VAT:</strong> THB 70 × 55 percent = THB 38.50</li>
+</ul>
+<p>The difference between the old nondeductible VAT and the new
+nondeductible VAT amount is THB 10.50.</p>
+<p><img src="media/apac-tha-average-vat-report.png" alt="Average VAT report."></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-average-vat-for-purchase-transactions.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

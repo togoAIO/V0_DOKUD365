@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Credit or debit note against an export order | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Credit or debit note against an export order | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="credit-or-debit-note-against-an-export-order">Credit or debit note against an export order</h1>
+
+
+<p>Currently, credit notes and debit notes can't be posted against an export invoice that has been posted. However, this feature lets you post credit notes against an export order, similarly to the way that you post a sales order.</p>
+<p>Per the proposed new Goods and Services Tax Return (GSTR), ANX-1 inserts information that is related to credit and debit notes that are issued against an export order.</p>
+<p>When a credit note or a debit note is posted against an export order that already has a posted shipping bill, it shows the following information:</p>
+<ul>
+<li>Shipping bill number</li>
+<li>Shipping bill date</li>
+</ul>
+<p>When the credit or debit note is posted, these fields will automatically be set, based on the posted export order.</p>
+<p>Export orders can be posted in the following ways:</p>
+<ul>
+<li>Export that includes payment of tax</li>
+<li>Export that excludes payment of tax</li>
+</ul>
+<p>If the credit or debit note is posted against an export invoice, the same options are available:</p>
+<ul>
+<li>If the export order is posted with payment of tax, the <strong>With the payment of Tax</strong> field for the credit note is set to <strong>Yes</strong> by default.</li>
+<li>If the export order is posted without payment of tax, the <strong>With the payment of Tax</strong> field for the credit note is set to <strong>No</strong> by default.</li>
+</ul>
+<p>If the credit or debit note is posted against an export order that is posted with payment of tax, the <strong>Would you claim refund?</strong> field is also available, and can be set to <strong>Yes</strong> or <strong>No</strong>.</p>
+<p>When a credit note is created against a posted export order, the same field is available in the credit note.</p>
+<p>You can use the following three transaction types to post a credit or debit note against an export order:</p>
+<ul>
+<li>Export order invoice</li>
+<li>Free text invoice with a negative value</li>
+<li>General journal</li>
+</ul>
+<h2 id="set-up-a-credit-or-debit-note-against-an-export-invoice">Set up a credit or debit note against an export invoice</h2>
+<h3 id="turn-on-the-feature-in-feature-management">Turn on the feature in Feature management</h3>
+<ol>
+<li>Go to <strong>Workspaces &gt; Feature management</strong>.</li>
+<li>In the list, find and select the feature that is named <strong>(India) Enable Credit/Debit note against an export invoice</strong>, and then select <strong>Enable</strong>.</li>
+</ol>
+<p><img src="media/Credit-Debit-note-EO-001.PNG" alt="Feature management workspace."></p>
+<h3 id="set-up-a-number-sequence-in-the-gst-reference-number-sequence-group">Set up a number sequence in the GST reference number sequence group</h3>
+<p>To maintain a Goods and Services Tax (GST) transaction ID for credit notes against an export invoice, you can set up a number sequence in the GST reference number sequence group.</p>
+<ul>
+<li>Go to <strong>Tax &gt; Setup &gt; GST reference number sequence group</strong>.</li>
+</ul>
+<p><img src="media/Credit-Debit-note-EO-002.PNG" alt="GST reference number sequence group page."></p>
+<h2 id="post-transactions">Post transactions</h2>
+<p>This section shows how to post a credit note that has a GST payment by using an export sales order.</p>
+<p>When a credit note is posted against a posted export invoice, the value of the <strong>With payment of tax</strong> field in the export invoice defaults to the <strong>Tax information</strong> page. If the <strong>With the payment of tax</strong> option is set to <strong>Yes</strong>, the <strong>Would you claim refund?</strong> field is shown.</p>
+<p>By default, if the <strong>Would you claim refund?</strong> field in the posted export invoice is set to <strong>Yes</strong>, the <strong>Would you claim refund?</strong> field in the credit note will be set to <strong>Yes</strong>. Otherwise, the field in the credit note will be set to <strong>No</strong>.</p>
+<p>For example, you create a credit note for five items that has the following information:</p>
+<ul>
+<li><p>Export order line</p>
+</li>
+<li><p>In the originally posted export order, the following values are set:</p>
+<ul>
+<li><strong>With payment of tax</strong> = <strong>Yes</strong></li>
+<li><strong>Would you claim refund?</strong> = <strong>Yes</strong></li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Qty</th>
+<th>Unit</th>
+<th>Net amt.</th>
+<th>Tax group</th>
+<th>IGST</th>
+<th>Tax rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>5</td>
+<td>1,000</td>
+<td>5,000</td>
+<td>Cust1</td>
+<td>IGST @10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>The cost of the item is 4,000.</p>
+<p>The following tables show how the export invoice will be posted.</p>
+<p><strong>IGST calculation</strong></p>
+<table>
+<thead>
+<tr>
+<th>Sales value</th>
+<th>GST @10%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5,000</td>
+<td>500</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Voucher transaction</strong></p>
+<table>
+<thead>
+<tr>
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Customer1</td>
+<td>5,000</td>
+<td></td>
+</tr>
+<tr>
+<td>IGST Payable</td>
+<td></td>
+<td>500</td>
+</tr>
+<tr>
+<td>Export order revenue</td>
+<td></td>
+<td>5,000</td>
+</tr>
+<tr>
+<td>Refundable account</td>
+<td>500</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Result when the credit note is posted against the posted export invoice</strong></p>
+<table>
+<thead>
+<tr>
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Export order revenue</td>
+<td>5,000</td>
+<td></td>
+</tr>
+<tr>
+<td>Customer `</td>
+<td></td>
+<td>5,000</td>
+</tr>
+<tr>
+<td>IGST Payable</td>
+<td>500</td>
+<td></td>
+</tr>
+<tr>
+<td>Refundable account</td>
+<td></td>
+<td>500</td>
+</tr>
+<tr>
+<td>Export Inventory issue (cost of item)</td>
+<td></td>
+<td>4,000</td>
+</tr>
+<tr>
+<td>Sale of goods (cost of item)</td>
+<td>4,000</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>When the export order is posted, the following values are set:</p>
+<ul>
+<li><strong>With payment of tax</strong> = <strong>Yes</strong></li>
+<li><strong>Would you claim refund?</strong> = <strong>Yes</strong></li>
+</ul>
+<p>The following tables show how the export invoice will be posted.</p>
+<p><strong>Voucher transaction</strong></p>
+<table>
+<thead>
+<tr>
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Customer1</td>
+<td>5,000</td>
+<td></td>
+</tr>
+<tr>
+<td>IGST Payable</td>
+<td></td>
+<td>500</td>
+</tr>
+<tr>
+<td>Export order revenue</td>
+<td></td>
+<td>5,000</td>
+</tr>
+<tr>
+<td>Export Expenses</td>
+<td>500</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Result when the credit note is posted against the posted export invoice</strong></p>
+<table>
+<thead>
+<tr>
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Export order revenue</td>
+<td>5,000</td>
+<td></td>
+</tr>
+<tr>
+<td>Customer `</td>
+<td></td>
+<td>5,000</td>
+</tr>
+<tr>
+<td>IGST Payable</td>
+<td>500</td>
+<td></td>
+</tr>
+<tr>
+<td>Export Expenses</td>
+<td></td>
+<td>500</td>
+</tr>
+<tr>
+<td>Export Inventory issue (cost of item)</td>
+<td></td>
+<td>4,000</td>
+</tr>
+<tr>
+<td>Sale of goods (cost of item)</td>
+<td>4,000</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>If you review the header information on the <strong>Tax document</strong> page for the credit note, you will see the original export invoice ID, and the shipping bill number and shipping bill date.</p>
+<p><img src="media/Credit-Debit-note-EO-003.PNG" alt="Tax document page."></p>
+<p>After you post the credit note against the export invoice, you can run the monthly ANX-1 offline tool to view the credit note transaction. Go to <strong>Tax &gt; Inquiries and reports &gt; Tax reports &gt; ANX-1 report</strong>. The following illustration shows an example of an ANX-1 report where a credit/debit note was posted against an export invoice.</p>
+<p><img src="media/Credit-Debit-note-EO-005.PNG" alt="ANX-1 report."></p>
+<p>A credit/debit note that is issued against an export order can also be viewed in the new GSTR-1 report. The following illustration shows an example of a GSTR-1 report where a credit/debit note was posted against an export invoice.</p>
+<p><img src="media/Credit-Debit-note-EO-004.PNG" alt="New GSTR-1 report."></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

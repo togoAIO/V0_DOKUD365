@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SPED-Reinf (Brazil) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SPED-Reinf (Brazil) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sped-reinf-brazil">SPED-Reinf (Brazil)</h1>
+
+
+<p>The SPED-Reinf is a tax statement report that gathers information about withholding tax and other tax information from the Brazilian Internal Revenue Service (RFB) and Social Security. In Brazilian Portuguese, the abbreviation <em>Reinf</em> stands for &quot;retenções e outras informações fiscais,&quot; or &quot;withholdings and other tax information.&quot; The SPED-Reinf was created to assess federal taxes that are withheld for the purpose of Social Security and income taxes, and for activities that aren't related to labor. Examples of these activities include fiscal documents and payments.</p>
+<p>The statement consists of a set of events. These events must be delivered in specific layouts through the public digital bookkeeping system (SPED), and a valid digital certificate must be used to deliver them. This certificate must be issued by an entity that has been accredited by the Brazilian Public Key Infrastructure (ICP-Brasil).</p>
+<p>The statement is considered valid after receipt is confirmed and the contents of the files are validated.</p>
+<p>Microsoft Dynamics 365 Finance supports the generation of SPED-Reinf events through the <strong>Fiscal books</strong> module and the Immediate Provision of Information (SII) reporting register framework. You can exchange XML messages for every event that the tax authority requires.</p>
+<h2 id="support-scope">Support scope</h2>
+<ul>
+<li><strong>Supported SPED-Reinf versions:</strong> 1.4 and 1.5.1.</li>
+<li><strong>Supported product versions:</strong> Microsoft Dynamics AX 2012 R3 and Dynamics 365 Finance.</li>
+<li>Electronic power of attorney (procuração eletronica) isn't supported.</li>
+</ul>
+<h2 id="table-of-events">Table of events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Event type</th>
+<th>Supported</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-1000</td>
+<td>Taxpayer information</td>
+<td>Initial</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>R-1070</td>
+<td>Administrative and Judicial process</td>
+<td>When a process is in place</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>R-2010</td>
+<td>Acquired services</td>
+<td>Periodic event</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>R-2020</td>
+<td>Provided services</td>
+<td>Periodic event</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>R-2030</td>
+<td>Amounts received by sport associations</td>
+<td>Periodic event</td>
+<td>No</td>
+</tr>
+<tr>
+<td>R-2040</td>
+<td>Amounts paid to sport associations</td>
+<td>Periodic event</td>
+<td>No</td>
+</tr>
+<tr>
+<td>R-2050</td>
+<td>Trade of rural production by rural legal entities or agribusiness</td>
+<td>Periodic event</td>
+<td>No</td>
+</tr>
+<tr>
+<td>R-2055</td>
+<td>Acquisition from agriculture vendor</td>
+<td>Periodic event</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>R-2060</td>
+<td>INSS-CPRB assessment</td>
+<td>Periodic event</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>R-2098</td>
+<td>Reopening of periodic</td>
+<td>Periodic event</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>R-2099</td>
+<td>Closing</td>
+<td>Periodic event</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>R-3010</td>
+<td>Sport shows revenue</td>
+<td>Non-periodic event</td>
+<td>No</td>
+</tr>
+<tr>
+<td>R-5001</td>
+<td>Consolidated tax calculation basis by taxpayer</td>
+<td>Non-periodic event</td>
+<td>No</td>
+</tr>
+<tr>
+<td>R-5011</td>
+<td>Consolidated base and tax amount</td>
+<td>Non-periodic event</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>R-9000</td>
+<td>Deletion</td>
+<td>Non-periodic event</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Events R-2010 and R-2020 are supported for National Registry of Legal Entities (CNPJ) third parties. Event R-5011 is used to inquire about the status of closing event R-2099.</p>
+</div>
+<p>Only taxpayers that comply with SPED-ECD are supported.</p>
+<ul>
+<li>Taxpayers as public departments aren't supported.</li>
+<li>Services that are provided on civil constructions projects aren't supported.</li>
+<li>Service takers on civil constructions projects aren't supported.</li>
+<li>Manual bookkeeping is required for the payment for settlement of the Social Security contribution on gross revenue (CPRB) amount that is due.</li>
+<li>Payment of the CPRB amount that is due is out of scope.</li>
+</ul>
+<p>To generate and submit the related events to the tax authority, follow these steps.</p>
+<ol>
+<li><a href="latam-bra-sped-reinf-electronic-messages.html">Set up electronic message functionality</a>.</li>
+<li><a href="latam-bra-sped-reinf-setup-fiscal-books.html">Set up fiscal books</a>.</li>
+<li><a href="latam-bra-sped-reinf.html">Process and submit the events</a>.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/latam-bra-sped-reinf-overview.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

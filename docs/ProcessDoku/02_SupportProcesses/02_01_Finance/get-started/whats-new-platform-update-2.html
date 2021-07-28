@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>What's new or changed in Dynamics AX platform update 2 (August 2016) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="What's new or changed in Dynamics AX platform update 2 (August 2016) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="whats-new-or-changed-in-dynamics-ax-platform-update-2-august-2016">What's new or changed in Dynamics AX platform update 2 (August 2016)</h1>
+
+
+<p>This topic describes features that are either new or changed in Microsoft Dynamics AX platform update 2. This version was released in August 2016 and has a build number of 7.0.4230.16130.</p>
+<h2 id="deployment">Deployment</h2>
+<table>
+<thead>
+<tr>
+<th>What can you do?</th>
+<th>Why is this important?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enable Azure Resource Manager (ARM) deployments of Dynamics AX.</td>
+<td>This feature is now in public preview. With ARM deployments, you can now take advantage of the latest features of Azure. For more information, see <a href="../../dev-itpro/deployment/arm-onboarding.md">Complete the Azure Resource Manager (ARM) onboarding process</a>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="development-and-customization">Development and customization</h2>
+<table>
+<thead>
+<tr>
+<th>What can you do?</th>
+<th>Why is this important?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Upgrade the Microsoft Dynamics AX platform to a new release without upgrading your application.</td>
+<td>The Microsoft Dynamics AX platform is now compatible with previous versions of the Dynamics AX application, starting with the Microsoft Dynamics AX 7.0 (February 2016) version. Therefore, you can stay up to date with the latest improvements to the platform without having to upgrade your whole application. This feature is in preview mode and is available to those who don't overlay the platform models.</td>
+</tr>
+<tr>
+<td>Extend your code and metadata (additional support).</td>
+<td>Additional extensibility features let you do less customization (over-layering) of the standard Microsoft models.
+<ul>
+<li>Extend a view.</li>
+<li>Add a new mapping to a table extension.</li>
+<li>Enable code-behind extension forms. For example, define a run-time class that is associated with an extension form where you write event handlers, write methods, and store a global state for your form extension.</li>
+<li>Provide an extension alternative to overrides of the <strong>Lookup</strong>, <strong>LookupReference</strong>, <strong>ResolveReference</strong>, and <strong>jumpRef</strong> methods.</li>
+</ul>
+Extensibility features are key features of the Dynamics AX platform because the <strong>Application Platform</strong> and <strong>Test Essentials</strong> models <em>cannot be customized</em> (over-layered) in the August 2016 release. Also, if you customize elements in the <strong>Application Foundation</strong> model, you will get warnings as this model is scheduled to be locked from customizations in the next Dynamics AX platform update.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cloud-operations">Cloud operations</h2>
+<table>
+<thead>
+<tr>
+<th>What can you do?</th>
+<th>Why is this important?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create replicas of production environment databases for testing.</td>
+<td>You can submit a request to Microsoft to update your Tier-2 sandbox environment by using a copy of your database from your production environment.</td>
+</tr>
+<tr>
+<td>Monitor the execution of Microsoft Azure SQL Database queries in real time.</td>
+<td>You can troubleshoot SQL issues in real time by viewing the queries that are blocked and the queries that are blocking them. You can also view aggregated lock information for tables that currently have locks on them.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="user-interface">User interface</h2>
+<table>
+<thead>
+<tr>
+<th>What can you do?</th>
+<th>Why is this important?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Easily edit task recordings by rearranging steps or inserting new steps without playing back any existing steps.</td>
+<td>Task recorder has been improved through new tools on the <strong>Edit</strong> menu (currently titled <strong>Change recording text</strong>). The new tools let you change the order of steps in the recording. First select the step to move, and then select the location to move the step to. You can also insert new steps between existing steps. First select the location where you want to insert the new steps, and then just record the new steps. You don't have to play back any existing steps.</td>
+</tr>
+<tr>
+<td>Extensible controls are guided away from non-public application programming interfaces (APIs).</td>
+<td>To minimize future breaks in extensible controls, an effort has been made to differentiate between the public and non-public JavaScript application programming interfaces (APIs) available to extensible controls. As part of this effort, documentation is now available <a href="../../dev-itpro/user-interface/public-javascript-apis.md">here</a> for the public JavaScript APIs that extensible control authors can use. Additionally, extensible control authors should start ensuring their controls are only using public APIs, as starting with Platform Update 3 any non-public API may be removed or modified as needed. One planned modification for the non-public APIs is to prefix the names with underscores to clearly denote their access level. In this release, the only APIs that are undergoing this name change are those for which we have high confidence they are not being used.</td>
+</tr>
+<tr>
+<td>Use the updated Gantt control to develop interactive scheduling scenarios.</td>
+<td>The updated Gantt control enables the development of new interactive scheduling scenarios and delivers enhanced APIs for customizing the appearance of activities. Here are some of the new APIs:
+<ul>
+<li>Vertical drag-and-drop of activities</li>
+<li>Add/remove activities</li>
+<li>Preview booked periods in summary bar</li>
+<li>Change color and style of activity borders</li>
+<li>Change color, style and background of text in grid</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<h2 id="microsoft-office-integration">Microsoft Office integration</h2>
+<table>
+<thead>
+<tr>
+<th>What can you do?</th>
+<th>Why is this important?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View Skype contact cards by hovering over Skype presence indicators.</td>
+<td>Skype contact cards are now shown when you hover over Skype presence indicators. This feature provides easy access to contact information and a contact image.</td>
+</tr>
+<tr>
+<td>Design and generate Microsoft Word documents that have section-style tables.</td>
+<td>Word document generation now supports section-style tables in addition to grid-style tables, to improve readability and provide more space. The Word template designer has also been updated, so that section-style tables can now be added into templates.</td>
+</tr>
+<tr>
+<td>Use screen readers together with the Office Add-ins.</td>
+<td>Office Add-ins are now more accessible through full support for screen readers.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="analytics">Analytics</h2>
+<table>
+<thead>
+<tr>
+<th>What can you do?</th>
+<th>Why is this important?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Export entities to customer-owned data warehouses.</td>
+<td>The entity store that is provisioned with Dynamics AX is configured for integration with Microsoft Power BI and Microsoft Cortana Intelligence Suite. If you require integration with a third-party business intelligence (BI) tool or a preexisting data warehouse, you can now export data entities to your own SQL database. Data can be exported as a full push or as an incremental push. Therefore, this feature enables frequent updates.</td>
+</tr>
+<tr>
+<td>Run the Document Routing Agent as a Windows service application.</td>
+<td>The Document Routing Agent now offers an option to select the mode of execution. While running as a Windows service, the application can be automatically started when the computer boots and configured to run under the security context of a specific user account. This enhancement was added based on direct feedback from customers hosting the Document Routing Agent on shared resources like Network Print Servers.</td>
+</tr>
+<tr>
+<td>Exported reports use the Yu Gothic font when the target language is Japanese.</td>
+<td>Out-of-box reports, or reports that independent software vendors (ISVs) develop by using Dynamics AX tools, generate exported documents in the Yu Gothic font when the target language is Japanese. Previously, by default, reports used the Sego UI font, which doesn't support the full character set for all multi-byte languages. Therefore, exported documents appeared malformed when the target language was Japanese.</td>
+</tr>
+<tr>
+<td>Use controller extensions to establish default file names for exported and archived documents.</td>
+<td>Developers can produce documents that have contextual names that they can use to associate those documents with transactional attributes (such as customer name or invoice number). Contextual names enable the creation of friendly names for exported and archived documents.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="security">Security</h2>
+<table>
+<thead>
+<tr>
+<th>What can you do?</th>
+<th>Why is this important?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enable business-to-business scenarios by using the Azure AD Business to Business service.</td>
+<td>External users can be invited to Dynamics AX using an externally managed identity. External users no longer have to be part of an existing Azure AD tenant.</td>
+</tr>
+<tr>
+<td>Enable service-to-service authentication.</td>
+<td>Registered services can connect to Dynamics AX without requiring a user to sign in.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="integrations">Integrations</h2>
+<table>
+<thead>
+<tr>
+<th>What can you do?</th>
+<th>Why is this important?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enable the export of incremental updates to a data entity.</td>
+<td>The setup of recurring data projects now supports incremental updates. In other words, users can set up an export data project that periodically exports any changes to that entity.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-resources">Additional resources</h2>
+<p><a href="whats-new-changed.html">What's new or changed in Finance and Operations home page</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-2.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

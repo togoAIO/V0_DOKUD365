@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Production support and monitoring | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Production support and monitoring | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="production-support-and-monitoring">Production support and monitoring</h1>
+
+
+<p>To ensure a good experience during the implementation of a project and after go-live, it's important that you understand the different types of servicing that are available and how you can get the correct support for every scenario. This topic explains how to engage each type of support and learn about some of the tools available.</p>
+<p>Microsoft tools and support help ensure the stability and effectiveness of your environment by providing infrastructure and application support. However, this support can be effective only if partners and clients correctly develop, test, configure, manage, and monitor the implemented system and its environments.</p>
+<p><img src="media/support-provided-microsoft.png" alt="Support provided by Microsoft."></p>
+<h2 id="supporting-actions">Supporting actions</h2>
+<p>Supporting actions can be grouped into three categories:</p>
+<ul>
+<li>Self-service</li>
+<li>Service request</li>
+<li>Support request</li>
+</ul>
+<p>Depending on the category, the actions are triggered in different ways and might involve different lead times.</p>
+<h3 id="self-service">Self-service</h3>
+<p>Self-service actions can be triggered by users at any time and involve no lead time. Here are some of the reasons why a user might initiate a self-service action:</p>
+<ul>
+<li>Promote code (in non-production environments).</li>
+<li><a href="../../dev-itpro/database/dbmovement-operations.md">Move databases between non-production environments</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/upgrade-latest-update.md">Upgrade a production environment</a>.</li>
+<li><a href="../../dev-itpro/sysadmin/maintenance-mode.md">Turn maintenance mode on or off</a></li>
+<li>Pause upcoming automatic deployment of a service update.</li>
+<li>Restart services in non-production environments.</li>
+<li>Complete performance actions.</li>
+</ul>
+<h3 id="service-request">Service request</h3>
+<p>Service requests are usually triggered by a creating a support ticket. They involve the cooperation of the Dynamics Service Engineering (DSE) team. Each request will involve designated lead time. A service request might be created to request environment deployment, for example.</p>
+<h4 id="recommended-practices-for-working-with-the-dse-team">Recommended practices for working with the DSE team</h4>
+<ul>
+<li>Consider that there are turnaround times or Service Level Agreements (SLAs) for each type of service request.</li>
+<li>Don't use a service request if a support request is more suitable for your case.</li>
+<li>To ensure that you make the correct type of request, see <a href="../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md#service-request-types-and-slas">Service request types and SLAs</a>.</li>
+</ul>
+<h3 id="support-request">Support request</h3>
+<p>Other scenarios can usually be resolved by opening a support request. These requests involve lead time. Here are some of the reasons for creating a support request:</p>
+<ul>
+<li>Do a point-in-time restore of a production environment after go-live.</li>
+<li>Flag a regression in a service update, and ask for an exception opt-out.</li>
+<li>Make performance-related requests (for tasks that can't be completed through self-service).</li>
+<li>Activate a flighting feature (for example, customer and vendor master data sharing).</li>
+<li>Resize a production environment. (You must first update and upload a new usage profile in the subscription estimator in Microsoft Dynamics Lifecycle Services [LCS].)</li>
+<li>Create an additional LCS project in the same tenant.</li>
+<li>Move the tenant of production environments.</li>
+</ul>
+<h2 id="requesting-support">Requesting support</h2>
+<p>An effective support process requires that a clear escalation path be defined. Project teams (client or partner) should be able to monitor and read environment telemetry, and they should be capable of doing any initial troubleshooting that is required.</p>
+<p>A well-identified issue and a well-defined resolution process can make a difference in the effectiveness of the outcome.</p>
+<p>An effective support request should include the following details:</p>
+<ul>
+<li>The environment where the issue occurs</li>
+<li>The process that the issue was identified in</li>
+<li>Reproducible steps to show where the issue occurred</li>
+<li>The expected result and the actual result</li>
+<li>Pre-investigation of the issue</li>
+<li>Additional elements (for example, the error message, screenshots, the session ID, and the trace)</li>
+</ul>
+<h3 id="high-severity-support-requests">High-severity support requests</h3>
+<p>A high-severity support request should include the following information:</p>
+<ul>
+<li><strong>Business impact:</strong> How does the issue affect your business activities?</li>
+<li><strong>Financial impact:</strong> How does the issue affect your business at a financial level?</li>
+</ul>
+<p>A thorough analysis of each issue should be done before the issue is reported. The incident resolution will be much quicker if the support request includes detailed information, and if all available tools and telemetries have been used. By including all the correct information when you submit a support request, you reduce the amount of back-and-forth communication that is required to identify and replicate the issue. Therefore, you can save lots of time.</p>
+<p>There are several <a href="https://go.microsoft.com/fwlink/?LinkId=871952">support plans</a> to choose from. Therefore, every business should be able to find a plan that meets its needs.</p>
+<p>Before you request support, it's important that you choose the correct level of severity. For information about how to identify the correct severity level and estimate the initial response time for your request, see <a href="https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request">Support overview</a> and <a href="https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage">Report a production outage</a>.</p>
+<h2 id="monitoring-elements">Monitoring elements</h2>
+<p>LCS has an integrated set of tools that you can use to monitor LCS projects.</p>
+<h3 id="service-health-dashboard">Service health dashboard</h3>
+<p>The <a href="https://portal.office.com/servicestatus">Service health dashboard</a> provides the health status for Office 365 services.</p>
+<p>You can also view the service health through the <a href="https://admin.microsoft.com">Microsoft 365 admin center</a>. Go to <strong>Health</strong> &gt; <strong>Service health</strong>, or select the <strong>Service health</strong> card on the <strong>Home</strong> dashboard.</p>
+<p>By default, the <strong>All services</strong> tab is selected on the <strong>Service health</strong> page. It shows all services and their current health state. A symbol and a value in the <strong>Status</strong> column indicate the state of each service.</p>
+<p>If you're experiencing an issue with a Microsoft 365 service, but it isn't listed on the <strong>Service health</strong> page, you can notify Microsoft by selecting <strong>Report an issue</strong> and completing a short form.</p>
+<p>The issue reporting will help to identify issues and how widespread they are. After incidents are identified, they will be shown on the dashboard under <strong>service health</strong>.</p>
+<p>You can sign up to receive email communication. In this way, you can ensure that you're quickly alerted about issues that are identified in the tenant and their status change.</p>
+<h3 id="environment-monitoring">Environment monitoring</h3>
+<p>Environment monitoring is a set of tools that help you monitor and <a href="https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics">troubleshoot the health of your environments through LCS</a>.</p>
+<p>On a specific environment page for a project, the <strong>Monitoring</strong> section includes a <strong>Environment monitoring</strong> link that will take you to the <strong>Environment monitoring dashboard</strong>.</p>
+<p>The following subsections describe some of the tools that are available.</p>
+<h4 id="overview">Overview</h4>
+<p>The <strong>Overview</strong> section is common to most environment types. It provides a filterable way to trace user activity and to trace load by activity during a defined period.</p>
+<h4 id="activity">Activity</h4>
+<p>The <strong>Activity</strong> tab lets you query raw logs. It provides predefined queries for the most common events and metrics to help you monitor your environment. Here are some examples of the predefined queries that are available:</p>
+<ul>
+<li>Slow queries</li>
+<li>Deadlocks</li>
+<li>Crashes</li>
+<li>Financial reporting issues</li>
+<li>Batch throttle</li>
+<li>Distinct user sessions</li>
+</ul>
+<p>Additionally, you can add your own custom filters and export the logs to a comma-separated values (CSV) file for analysis.</p>
+<p><img src="media/activity.png" alt="Activity tab."></p>
+<h4 id="health-metrics">Health Metrics</h4>
+<p>The <strong>Health Metrics</strong> dashboard provides a series of line charts that are filtered by instance (AOS or Batch AOS) and time frame. On the <strong>AOS</strong> tab, you can observe SQL execution. On the <strong>System</strong> tab, you can observe system memory and CPU utilization over time. This tool lets you easily identify behavioral changes. Therefore, it can help you trace issues over time and the impact of changes in the solution.</p>
+<h4 id="sql-insights">SQL Insights</h4>
+<p>SQL Insights provides advanced SQL troubleshooting tools that enable performance analysis. Some of these tools resemble the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed explanation, see <a href="https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting">Performance troubleshooting using tools in Lifecycle Services (LCS)</a> and watch the <a href="https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18">Performance troubleshooting tools TechTalk</a>.</p>
+<p>SQL Insights is a reliable way to collect performance metrics on demand. It lets customers and partners run a predefined set of actions that can be used to mitigate issues in a sandbox or production environment. Because it queries SQL Server directly, you get query store metrics in near real time.</p>
+<p>Although it's important that you monitor your environments, you don't have to be on constant lookout. Microsoft also uses the emails that are provided in the LCS notification list to alert you about important issues and actions that you must take, and to provide preventive guidance for the implementation itself.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/production-support-monitoring.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

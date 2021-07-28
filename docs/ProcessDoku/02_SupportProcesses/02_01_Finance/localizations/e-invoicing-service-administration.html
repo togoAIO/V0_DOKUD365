@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Electronic invoicing administration components | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Electronic invoicing administration components | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="electronic-invoicing-administration-components">Electronic invoicing administration components</h1>
+
+
+<p>This topic provides information about the components that are related to administration of Electronic invoicing. It also provides information about how to configure the Electronic invoicing service.</p>
+<h2 id="azure">Azure</h2>
+<p>Use Microsoft Azure to create the secrets for the Key Vault and storage account. Then use the secrets in the configuration of Electronic invoicing.</p>
+<h2 id="lifecycle-services">Lifecycle Services</h2>
+<p>Use Microsoft Dynamics Lifecycle Services (LCS) to enable the microservices for your LCS deployment project.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The installation of the microservice in LCS requires at least a Tier 2 virtual machine. For more information about environment planning, see <a href="../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md">Environment planning</a>.</p>
+</div>
+<h2 id="regulatory-configuration-services">Regulatory Configuration Services</h2>
+<p>Dynamics 365 Regulatory Configuration Services (RCS) is the interface that is used to configure Electronic invoicing. Resources such as environments and electronic invoicing features are created, maintained, and hosted in RCS. When the resources are ready, they are published to Electronic invoicing service.</p>
+<p>For RCS sign-up, see <a href="https://marketing.configure.global.dynamics.com/">Regulatory services</a>.</p>
+<p>For more information about RCS, see <a href="rcs-globalization-feature.html">Regulatory Configuration Services (RCS) - Globalization features</a></p>
+<h3 id="integration-with-electronic-invoicing">Integration with Electronic invoicing</h3>
+<p>Before you can use RCS to configure electronic invoices, you must configure RCS to allow for communication with Electronic invoicing. You complete this configuration on the <strong>Electronic invoicing</strong> tab of the <strong>Electronic reporting parameters</strong> page.</p>
+<h4 id="service-endpoint">Service endpoint</h4>
+<p>Electronic invoicing is available in several Azure datacenter geographies. The following table lists the availability per region.</p>
+<table>
+<thead>
+<tr>
+<th>Azure datacenter geography</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>United States</td>
+</tr>
+<tr>
+<td>Europe</td>
+</tr>
+<tr>
+<td>United Kingdom</td>
+</tr>
+<tr>
+<td>Asia</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service-environments">Service environments</h3>
+<p>Service environments are logical partitions that are created to support execution of the electronic invoicing features in Electronic invoicing. The security secrets and digital certificates, and the governance (that is, access permissions), must be configured at the service environment level.</p>
+<p>Customers can create as many service environments as they want. All the service environments that a customer creates are independent of each other.</p>
+<p>Service environments must be created and maintained in RCS. When the service environments are ready, they must be published to Electronic invoicing.</p>
+<h4 id="service-environment-status">Service environment status</h4>
+<p>Service environments can be managed through status. The possible options are:</p>
+<ul>
+<li><strong>Not published</strong> – The environment has been created, but it hasn't yet been published.</li>
+<li><strong>Published</strong> – The environment has been published to Electronic invoicing .</li>
+<li><strong>Changed</strong> – The attributes of a published environment have been changed, but the changes haven't yet been published.</li>
+</ul>
+<h4 id="customer-secrets">Customer secrets</h4>
+<p>The Electronic invoicing service is responsible for storing all your business data in the Azure resources that your company owns. To ensure that the service works correctly, and that all the business data that is required for and generated by Electronic invoicing is accessed appropriately, you must create two main Azure resources:</p>
+<ul>
+<li>An Azure storage account (Blob storage) that will store electronic invoices</li>
+<li>An Azure Key Vault that will store certificates and the uniform resource identifier (URI) of the storage account</li>
+</ul>
+<p>A dedicated Key Vault and customer storage account must be allocated specifically for use with Electronic Invoicing. For more information, see <a href="e-invoicing-create-azure-storage-account-key-vault.html">Create an Azure storage account and a Key Vault</a>.</p>
+<p>To monitor the health of your Key Vault and receive alerts, configure the Azure Monitor for key Vault. By enabling Key Vault logging, you can monitor how, when, and by whom your Key Vaults are accessed. For more information, see <a href="/azure/key-vault/general/alert">Monitoring and alerting for Azure Key Vault</a> and <a href="/azure/key-vault/general/howto-logging?tabs=azure-cli">How to enable Key Vault logging</a>.</p>
+<p>As a best practice, periodically rotate the secrets. For more information, see <a href="/azure/key-vault/secrets/">Secrets documentation</a>.</p>
+<h4 id="users">Users</h4>
+<p>Each service environment must list the users who can connect from Dynamics 365 Finance and Dynamics 365 Supply Chain Management in Electronic invoicing.</p>
+<h4 id="publication">Publication</h4>
+<p>Service environments must be published to Electronic invoicing before they can be used. Only published environments can be accessed by Finance and Supply Chain Management. Additionally, a service environment must be published before any updates to its attributes will take effect on the electronic invoicing service.</p>
+<h3 id="connected-applications">Connected applications</h3>
+<p>Connected applications are the instances of Finance and Supply Chain Management that you might want to reach through RCS. Besides the application URL and its tenant, a connected application contains the credentials that enable RCS to connect to the environment.</p>
+<p>Through the connected applications, you can configure part of the electronic invoicing feature in Finance and Supply Chain Management to make the whole electronic invoicing feature work.</p>
+<h2 id="finance-and-supply-chain-management">Finance and Supply Chain Management</h2>
+<h3 id="integration-with-electronic-invoicing-1">Integration with Electronic invoicing</h3>
+<p>Before you can use Finance and Supply Chain Management to issue electronic invoices through Electronic invoicing, it must be configured to allow for communication with the service.</p>
+<h4 id="electronic-invoicing-integration-feature">Electronic invoicing integration feature</h4>
+<p>To enable communication between Finance and Supply Chain Management and Electronic invoicing, you must turn on the <strong>Electronic Invoicing integration</strong> feature in the <strong>Feature management</strong> workspace.</p>
+<h4 id="service-endpoint-1">Service endpoint</h4>
+<p>The service endpoint is the URL where Electronic invoicing is located. Before electronic invoices can be issued, the service endpoint must be configured in Finance and Supply Chain Management to allow for communication with the service.</p>
+<p>To configure the service endpoint, go to <strong>Organization administration &gt; Setup &gt; Electronic document parameter</strong>, and then, on the <strong>Submission services</strong> tab, in the <strong>Electronic invoicing URL</strong> field, enter the URL as described in the table described in section <strong>Service endpoint</strong>.</p>
+<h4 id="environments">Environments</h4>
+<p>The environment name that is entered in Finance and Supply Chain Management refers to the name of the environment that is created in RCS and published to Electronic invoicing.</p>
+<p>The environment must be configured on the <strong>Submission services</strong> tab of the <strong>Electronic document parameter</strong> page, so that every request to issue electronic invoices contains the environment where Electronic invoicing can determine which electronic invoicing feature must process the request.</p>
+<h2 id="additional-resources">Additional resources</h2>
+<ul>
+<li><a href="e-invoicing-configuration-rcs.html">Configure electronic invoices in RCS</a></li>
+<li><a href="e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.html">Issue electronic invoices in Finance and Supply Chain Management</a></li>
+</ul>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-service-administration.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

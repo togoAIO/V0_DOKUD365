@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure Electronic invoicing in Regulatory Configuration Services (RCS) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure Electronic invoicing in Regulatory Configuration Services (RCS) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configure-electronic-invoicing-in-regulatory-configuration-services-rcs">Configure Electronic invoicing in Regulatory Configuration Services (RCS)</h1>
+
+
+<p>This topic provides information about the configuration capabilities of Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS).</p>
+<p>It is through the configuration capabilities that Electronic invoicing helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web services, the configuration capabilities also help you meet the requirements for exchanging messages with a web services, without doing any code.</p>
+<h2 id="electronic-reporting">Electronic reporting</h2>
+<p>Electronic reporting (ER) supports Electronic invoicing.</p>
+<p>The data model mapping and formats are configurable components that are created and maintained through ER and used in Electronic invoicing. The ER format designer is the tool for creating and maintaining file formats. It's used to configure the electronic invoicing features.</p>
+<p>For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md">Electronic reporting (ER) overview</a>.</p>
+<h2 id="electronic-invoicing-features">Electronic invoicing features</h2>
+<p>The electronic invoicing features are responsible for generating electronic invoices through Electronic invoicing. They encapsulate the configuration rules and use them to process the data that Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management send to Electronic invoicing and to electronic invoices.</p>
+<p>The features also support scenarios where compliance with file format specifications is required and the output is a standalone electronic file. In most cases, the file format specifications are published by the tax authority.</p>
+<p>Finally, the features support the exchange of messages with external web services that are hosted either by the tax authority or by some accredited party, and requests for authorization or an approval stamp in the electronic invoice.</p>
+<h3 id="availability-of-electronic-invoicing-features">Availability of electronic invoicing features</h3>
+<p>Availability of the electronic invoicing features depends on the country or region. Although some features are generally available, others are in preview.</p>
+<h4 id="generally-available-features">Generally available features</h4>
+<p>The following table shows the electronic invoicing features that are generally available.</p>
+<table>
+<thead>
+<tr>
+<th>Country/region</th>
+<th>Feature name</th>
+<th>Business document</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Egypt</td>
+<td>Egyptian electronic invoice (EG)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+</tbody>
+</table>
+<h4 id="preview-features">Preview features</h4>
+<p>The following table shows the electronic invoicing features that are currently in preview.</p>
+<table>
+<thead>
+<tr>
+<th>Country/region</th>
+<th>Feature name</th>
+<th>Business document</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Austria</td>
+<td>Austrian electronic invoices (AT)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>Belgium</td>
+<td>Belgian electronic invoice (BE)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>Brazil</td>
+<td>Brazilian NF-e (BR)</td>
+<td>Fiscal document model 55, correction letters, cancellations, and discards</td>
+</tr>
+<tr>
+<td>Brazil</td>
+<td>Brazilian NFS-e ABRASF Curitiba (BR)</td>
+<td>Service fiscal documents</td>
+</tr>
+<tr>
+<td>Denmark</td>
+<td>Danish electronic invoice (DK)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>Estonia</td>
+<td>Estonian electronic invoice (EE)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>Finland</td>
+<td>Finnish electronic invoice (FI)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>France</td>
+<td>French electronic invoice (FR)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>Germany</td>
+<td>German electronic invoice (DE)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>Italy</td>
+<td>FatturaPA (IT)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>Mexico</td>
+<td>Mexican CFDI (MX)</td>
+<td>Sales invoices, packing slips, inventory transfers, payment complements, and cancellations</td>
+</tr>
+<tr>
+<td>Netherlands</td>
+<td>Dutch electronic invoice (NL)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>Norway</td>
+<td>Norwegian electronic invoice (NO)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>Spain</td>
+<td>Spanish electronic invoice (ES)</td>
+<td>Sales invoices and project invoices</td>
+</tr>
+<tr>
+<td>Europe</td>
+<td>PEPPOL electronic invoice</td>
+<td>PEPPOL sales invoices and project invoices</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configurable-components-of-electronic-invoicing-features">Configurable components of electronic invoicing features</h3>
+<p>The electronic invoicing features consist of the following groups of configurable components:</p>
+<ul>
+<li><strong>Formats</strong> – Formats let you configure what Electronic invoicing must generate when an electronic document becomes an electronic invoice. Formats include the format configuration for the electronic invoice, and for files and messages that are used to submit requests and receive responses when communication with an external web service is required.</li>
+<li><strong>Actions</strong> – Actions let you configure how Electronic invoicing generates the transformation of an electronic document that Finance and Supply Chain Management submitted into an electronic invoice.</li>
+<li><strong>Applicability rules</strong> – Applicability rules let you configure the context that Electronic invoicing must consider to process an electronic invoicing feature.</li>
+<li><strong>Variables</strong> – Variables let you configure the support for the construction of the configuration logic. Variables can work as the input of values to perform a specific action. Alternatively, they can work as an exchange of values between Finance and Supply Chain Management and Electronic invoicing.</li>
+<li><strong>Electronic document model mapping</strong> – The electronic document model mapping lets you configure the ER model mapping. The model mapping defines the data mapping of the abstract invoice that is integrated into Electronic invoicing when electronic documents are submitted.</li>
+<li><strong>Invoice context model</strong> – The invoice context model lets you configure the ER invoice context model and define the context of an electronic invoicing feature.</li>
+<li><strong>Response types</strong> – Response types let you configure what Electronic invoicing must update in Finance and Supply Chain Management as a result of the electronic invoice processing.</li>
+</ul>
+<h3 id="formats">Formats</h3>
+<p>The following lists show the ER format configurations that are available for the electronic invoicing features.</p>
+<h4 id="austrian-at-electronic-invoices-sales-and-project-invoices-for-austria">Austrian (AT) electronic invoices: Sales and project invoices for Austria</h4>
+<ul>
+<li>OIOUBL Sales invoice</li>
+<li>OIOUBL Project invoice</li>
+<li>OIOUBL Sales credit note</li>
+<li>OIOUBL Project credit note</li>
+</ul>
+<h4 id="belgian-be-electronic-invoice-sales-and-project-invoices-for-belgium">Belgian (BE) electronic invoice: Sales and project invoices for Belgium</h4>
+<ul>
+<li>UBL Sales invoice BE</li>
+<li>UBL Project invoice BE</li>
+<li>UBL Project credit note BE</li>
+<li>UBL Sales credit note BE</li>
+</ul>
+<h4 id="brazilian-br-nf-e-nf-e-federal-brazil">Brazilian (BR) NF-e: NF-e Federal (Brazil)</h4>
+<ul>
+<li>NF-e submit export format (BR)</li>
+<li>NF-e correction letter export format (BR)</li>
+<li>NF-e cancel export format (BR)</li>
+<li>NF-e discard export format (BR)</li>
+</ul>
+<h4 id="brazilian-nfs-e-br-nfs-e-abrasf-curitiba-city">Brazilian NFS-e (BR): NFS-e ABRASF Curitiba city</h4>
+<ul>
+<li>NFS-e ABRASF Curitiba (BR)</li>
+<li>NFS-e ABRASF Inquire Curitiba (BR)</li>
+</ul>
+<h4 id="danish-dk-electronic-invoice-sales-and-project-invoices-for-denmark">Danish (DK) electronic invoice: Sales and project invoices for Denmark</h4>
+<ul>
+<li>OIOUBL Sales invoice</li>
+<li>OIOUBL Project invoice</li>
+<li>OIOUBL Sales credit note</li>
+<li>OIOUBL Project credit note</li>
+</ul>
+<h4 id="dutch-nl-electronic-invoice-sales-and-project-invoices-for-netherlands">Dutch (NL) electronic invoice: Sales and project invoices for Netherlands</h4>
+<ul>
+<li>UBL Sales invoice NL</li>
+<li>UBL Project invoice NL</li>
+<li>UBL Project credit note NL</li>
+<li>UBL Sales credit note NL</li>
+</ul>
+<h4 id="egyptian-eg-electronic-invoice-sales-and-project-invoices-for-egypt">Egyptian (EG) electronic invoice: Sales and project invoices for Egypt</h4>
+<ul>
+<li>Sales invoice (EG)(Invoicing)</li>
+<li>Project invoice (EG)(Invoicing)</li>
+</ul>
+<h4 id="estonian-ee-electronic-invoice-sales-and-project-invoices-for-estonia">Estonian (EE) electronic invoice: Sales and project invoices for Estonia</h4>
+<ul>
+<li>Sales invoice (EE)</li>
+<li>Project invoice (EE)</li>
+</ul>
+<h4 id="finnish-fi-electronic-invoice-sales-and-project-invoices-for-finland">Finnish (FI) electronic invoice: Sales and project invoices for Finland</h4>
+<ul>
+<li>Sales invoice (FI)</li>
+<li>Project invoice (FI)</li>
+</ul>
+<h4 id="french-fr-electronic-invoice-sales-and-project-invoices-for-france">French (FR) electronic invoice: Sales and project invoices for France</h4>
+<ul>
+<li>UBL Sales invoice FR</li>
+<li>UBL Project invoice FR</li>
+<li>UBL Project credit note FR</li>
+<li>UBL Sales credit note FR</li>
+</ul>
+<h4 id="german-de-electronic-invoice-sales-and-project-invoices-for-germany">German (DE) electronic invoice: Sales and project invoices for Germany</h4>
+<ul>
+<li>Sales invoice (DE)</li>
+<li>Project invoice (DE)</li>
+</ul>
+<h4 id="italian-it-electronic-invoice-sales-and-project-invoices-for-italy">Italian (IT) electronic invoice: Sales and project invoices for Italy</h4>
+<ul>
+<li>Sales invoice (IT)</li>
+<li>Project invoice (IT)</li>
+</ul>
+<h4 id="mexican-mx-cfdi-cfdi-for-mexico">Mexican (MX) CFDI: CFDI for Mexico</h4>
+<ul>
+<li>CFDI invoice format (MX)</li>
+<li>CFDI Packing slip (MX)</li>
+<li>CFDI Inventory transfer (MX)</li>
+<li>CFDI payment format (MX)</li>
+<li>CFDI invoice cancel format (MX)</li>
+</ul>
+<h4 id="norwegian-no-electronic-invoice-sales-and-project-invoices-for-norway">Norwegian (NO) electronic invoice: Sales and project invoices for Norway</h4>
+<ul>
+<li>OIOUBL Sales invoice</li>
+<li>OIOUBL Project invoice</li>
+<li>OIOUBL Sales credit note</li>
+<li>OIOUBL Project credit note</li>
+</ul>
+<h4 id="peppol-electronic-invoice-peppol-sales-and-project-invoices">PEPPOL electronic invoice: PEPPOL sales and project invoices</h4>
+<ul>
+<li>PEPPOL Sales invoice</li>
+<li>PEPPOL Project invoice</li>
+<li>PEPPOL Sales credit note</li>
+<li>PEPPOL Project credit note</li>
+</ul>
+<h4 id="spanish-es-electronic-invoice-sales-and-project-invoices-for-spain">Spanish (ES) electronic invoice: Sales and project invoices for Spain</h4>
+<ul>
+<li>Sales invoice (ES)</li>
+<li>Project invoice (ES)</li>
+</ul>
+<p>In addition to the ER format configurations that are available out of the box to use with the Electronic Invoicing service, you can also create your own ER format configurations. However, the format configurations that are created to use with Electronic Invoicing features don't support direct reference to Finance or Supply Chain Management tables or any of the corresponding metadata. Only references to the ER model mapping are supported.</p>
+<h3 id="actions">Actions</h3>
+<p>The following table lists the available actions, and whether they are currently generally available or still in preview.</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Description</th>
+<th>Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transform document</td>
+<td>Run Electronic Reporting format to transform the document.</td>
+<td>Generally available</td>
+</tr>
+<tr>
+<td>Sign xml document</td>
+<td>Sign xml documents with digital signature.</td>
+<td>In preview</td>
+</tr>
+<tr>
+<td>Sign json document for Egyptian Tax Authority</td>
+<td>Sign json documents with digital signature for Egyptian Tax Authority.</td>
+<td>Generally available</td>
+</tr>
+<tr>
+<td>Integrate with Egyptian ETA service</td>
+<td>Communicate with Egyptian Tax Authority.</td>
+<td>Generally available</td>
+</tr>
+<tr>
+<td>Call Brazilian SEFAZ Service</td>
+<td>Integrate with Brazilian SEFAZ service for fiscal document submission.</td>
+<td>In preview</td>
+</tr>
+<tr>
+<td>Call Mexican PAC Service</td>
+<td>Integrate with Mexican PAC service for CFDI submission.</td>
+<td>In preview</td>
+</tr>
+<tr>
+<td>Process response</td>
+<td>Analyze the response received from the web service call.</td>
+<td>Generally available</td>
+</tr>
+<tr>
+<td>Use MS Power Automate</td>
+<td>Integrate with flow built in Microsoft Power Automate.</td>
+<td>In preview</td>
+</tr>
+</tbody>
+</table>
+<h3 id="applicability-rules">Applicability rules</h3>
+<p>Applicability rules are configurable clauses that are defined at the Electronic invoicing feature level. The rules are configured to provide a context for execution of electronic invoicing features through the Electronic Invoicing capability set.</p>
+<p>When a business document from Finance or Supply Chain Management is submitted to electronic invoicing, the business document doesn't carry an explicit reference that allows the Electronic Invoicing capability set to call a particular electronic invoicing feature to process the submission.</p>
+<p>Nevertheless, when properly configured, the business document contains the necessary elements that allow electronic invoicing to resolve which electronic invoicing feature must be selected and then generate the electronic invoice.</p>
+<p>Applicability rules allow the Electronic Invoicing capability set to find the exact electronic invoicing features that must be used to process the submission. This is done by matching the contents from the submitted business document with the clauses from the Applicability rules.</p>
+<p>For example, two electronic invoicing features with related Applicability rules are deployed into the Electronic Invoicing capability set.</p>
+<table>
+<thead>
+<tr>
+<th>Electronic invoicing feature</th>
+<th>Applicability rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td><p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p></td>
+</tr>
+<tr>
+<td>B</td>
+<td><p>Country = MX</p><p>and</p><p>Legal entity = MXMF</p></td>
+</tr>
+</tbody>
+</table>
+<p>If a business document from Finance or Supply Chain Management is submitted to the Electronic Invoicing capability set, the business document contains the following attributes filled as:</p>
+<ul>
+<li>Country = BR</li>
+<li>Legal entity = BRMF</li>
+</ul>
+<p>The Electronic Invoicing capability set will select the electronic invoicing feature <strong>A</strong> to process the submission and generate the electronic invoice.</p>
+<p>In the same way, if the business document contains:</p>
+<ul>
+<li>Country = MX</li>
+<li>Legal entity = MXMF</li>
+</ul>
+<p>Electronic invoicing feature <strong>B</strong> is selected to generate the electronic invoice.</p>
+<p>The configuration of Applicability rules can't be ambiguous. This means that two or more electronic invoicing features can't have the same clauses, otherwise it will lead to no selection. If there is a duplication of electronic invoicing features, to avoid ambiguity, use additional clauses to allow the Electronic Invoicing capability set to distinguish between the two electronic invoicing features.</p>
+<p>For example, consider electronic invoicing feature <strong>C</strong>. This feature is a copy of electronic invoicing feature <strong>A</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Electronic invoicing feature</th>
+<th>Applicability rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td><p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p></td>
+</tr>
+<tr>
+<td>C</td>
+<td><p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p></td>
+</tr>
+</tbody>
+</table>
+<p>In this example, feature <strong>C</strong> is in front of a business document submission that contains the following:</p>
+<ul>
+<li>Country = BR</li>
+<li>Legal entity = BRMF</li>
+</ul>
+<p>The Electronic Invoicing capability can't distinguish which electronic invoicing feature must be used to process the submission because the submissions contain the exact same clauses.</p>
+<p>To create a distinction between the two features through Applicability rules, a new clause must be added to one of the features to allow the Electronic Invoicing capability set to select the proper electronic invoicing feature.</p>
+<table>
+<thead>
+<tr>
+<th>Electronic invoicing feature</th>
+<th>Applicability rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td><p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p></td>
+</tr>
+<tr>
+<td>C</td>
+<td><p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p><p>and</p><p>Model=55</p></td>
+</tr>
+</tbody>
+</table>
+<p>To support creating more complex clauses, the following resources are available:</p>
+<p>Logic operators:</p>
+<ul>
+<li>And</li>
+<li>Or</li>
+</ul>
+<p>Operators types:</p>
+<ul>
+<li>Equal</li>
+<li>Not equal</li>
+<li>Greater than</li>
+<li>Less than</li>
+<li>Greater than or equal to</li>
+<li>Less than or equal to</li>
+<li>Contains</li>
+<li>Begins with</li>
+</ul>
+<p>Data types:</p>
+<ul>
+<li>String</li>
+<li>Number</li>
+<li>Boolean</li>
+<li>Date</li>
+<li>UUID</li>
+</ul>
+<p>Capability to group and ungroup clauses.
+The example looks like this.</p>
+<table>
+<thead>
+<tr>
+<th>Electronic invoicing feature</th>
+<th>Applicability rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td><p>Country = BR</p><p>and</p><p>( Legal entity = BRMF</p><p>or</p><p>Model=55)</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="configuration-providers">Configuration providers</h2>
+<p>Configuration providers provide the electronic invoicing features and their ER components, such as the model mapping, format configuration, and context model. They publish the electronic invoicing features and ER components in the associated Global repository. From there, other organizations can download them.</p>
+<p>Before you configure the electronic invoicing features through RCS, you must configure your own organization as a configuration provider in the <strong>Electronic reporting</strong> module. For information about how to set a configuration provider to <strong>Active</strong>, see <a href="../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md">Create configuration providers and mark them as active</a>.</p>
+<h2 id="viewing-electronic-invoicing-features-in-the-global-repository">Viewing electronic invoicing features in the Global repository</h2>
+<p>To browse the electronic invoicing features that are available in the Global repository for a specific configuration provider, sync your organization's RCS instance. After synchronization is completed, the list of available electronic invoicing features is updated.</p>
+<h2 id="importing-electronic-invoicing-features">Importing electronic invoicing features</h2>
+<p>Before you use or configure the electronic invoicing features, you must import them into your organization's RCS instance. The import operation creates a local copy of the features and copies all the ER artifacts that the features use (for example, format configurations and model configurations) to your organization's RCS instance.</p>
+<p>You can import the electronic invoicing features from any configuration provider.</p>
+<h2 id="creating-electronic-invoicing-features">Creating electronic invoicing features</h2>
+<p>You can create an electronic invoicing feature from scratch, or you can derive it from another electronic invoicing feature.</p>
+<p>When you create an electronic invoicing feature from scratch, you must manually add the ER components (for example, feature version configurations and other configurations, such as the feature version setup and application setup). When you create a feature by deriving it from another feature, the new feature inherits all configurations from the original.</p>
+<h2 id="electronic-invoicing-feature-version">Electronic invoicing feature version</h2>
+<p>The electronic invoicing features are versioned. When a new version is created, the version number is automatically incremented. An &quot;effective from&quot; date can be defined for the new version.</p>
+<p>Electronic invoicing feature versions follow a lifecycle that has up to three statuses:</p>
+<ul>
+<li><strong>Draft</strong> – If a feature version is in this status, you can edit its configuration attributes and any of its artifacts (for example, file format configurations).</li>
+<li><strong>Complete</strong> – If a feature version is in this status, it has been published to the Global repository that is associated with your organization. You can no longer edit the feature version or any of the ER components.</li>
+<li><strong>Published</strong> – If a feature version is in this status, it has been published to Electronic invoicing. You can no longer edit the feature version or any of the ER components.</li>
+</ul>
+<h3 id="feature-configurations">Feature configurations</h3>
+<p>Feature configurations hold all the ER format configurations that the electronic invoicing features use. All the electronic files that an electronic invoicing feature uses during processing come from the format configurations that have been added to the feature configurations of that feature.</p>
+<p>From the feature configurations, you can access the ER format designer, which is the ER tool that is used to create format configurations.</p>
+<h3 id="feature-setup">Feature setup</h3>
+<p>Feature setups are used in combination with feature configurations. Each feature setup encapsulates a set of actions, applicability rules, and variables that provide the expected behavior so that an electronic invoicing feature can meet a specific requirement of the electronic invoice.</p>
+<h3 id="application-setup">Application setup</h3>
+<p>The application setup must be associated with a previously created connected application.</p>
+<p>Through the application setup, you can configure the part of an electronic invoicing feature that must be done in Finance and Supply Chain Management. At least three configurable components are mandatory, regardless of the electronic invoicing feature:</p>
+<ul>
+<li><strong>Table name</strong> – The entity in Finance and Supply Chain Management that holds the posted invoices, and that the electronic invoicing feature is based on.</li>
+<li><strong>Context</strong> – The name of the invoice context model that was configured through ER.</li>
+<li><strong>Business document mapping</strong> – The name of the invoice mapping model that was configured through ER.</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The configuration that is entered in the application setup can be viewed in Finance and Supply Chain Management. Go to <strong>Organization administration &gt; Setup &gt; Electronic document parameter</strong>. On the <strong>Electronic document</strong> tab, select <strong>Deploy</strong>, and then select the <strong>Connected application</strong> option.</p>
+</div>
+<h3 id="deploying-feature-versions">Deploying feature versions</h3>
+<p>In RCS, you use the <strong>Deploy</strong> command to target-publish an electronic invoicing feature version. Select <strong>Deploy</strong>, and then select one of the following options to define the target of the deployment:</p>
+<ul>
+<li><strong>Service environment</strong> – When the target of the deployment is the service environment, the electronic invoicing feature version is published to the service environment. Electronic invoicing is then ready to receive and process electronic documents that Finance and Supply Chain Management send.</li>
+<li><strong>Connected application</strong> – When the target of the deployment is the connected application, the configuration that is provided by the application setup is written in the Finance and Supply Chain Management instance that was previously associated with it.</li>
+</ul>
+<p>Only electronic invoicing feature versions that have a status of <strong>Completed</strong> can be deployed to either a service environment or a connected application.</p>
+<h3 id="removing-feature-versions">Removing feature versions</h3>
+<p>In RCS, you use the <strong>Undeploy</strong> command to remove a specific electronic invoicing feature version from a service environment in Electronic invoicing.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The <strong>Undeploy</strong> command works only in service environments. It doesn't remove electronic invoicing feature versions from connected applications.</p>
+</div>
+<h3 id="rebasing-electronic-invoicing-features">Rebasing electronic invoicing features</h3>
+<p>When one electronic invoicing feature is derived from another, the <strong>Rebase</strong> command updates the derived feature with the changes that have been introduced in the original feature.</p>
+<h2 id="additional-resources">Additional resources</h2>
+<ul>
+<li><a href="e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.html">Issue electronic invoices in Finance and Supply Chain Management</a></li>
+</ul>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

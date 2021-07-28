@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>One Version service updates FAQ | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="One Version service updates FAQ | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="one-version-service-updates-faq">One Version service updates FAQ</h1>
+
+
+<p>In July 2018 we announced a <a href="https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/">change to the way we deliver Dynamics 365 updates</a> that will help you stay current in a consistent, predictable, and seamless manner.  In June 2019, based on customer feedback we announced <a href="https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/">New flexible service updates being made available</a>. This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.</p>
+<p>For more information about One Version service updates, see <a href="../../dev-itpro/lifecycle-services/oneversion-overview.md">One Version service updates overview</a>.</p>
+<h3 id="can-the-update-be-delayed-what-is-the-policy">Can the update be delayed, what is the policy?</h3>
+<p>Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects.  A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update:</p>
+<ul>
+<li>The customer is currently on version 10.0.2.</li>
+<li>The customer can pause updates 10.0.3, 10.0.4, and 10.0.5.</li>
+<li>The customer must take the 10.0.6 update when it is available.</li>
+</ul>
+<h3 id="with-a-release-date-in-early-april-when-will-the-general-availability-package-be-made-available">With a release date in early April, when will the general availability package be made available?</h3>
+<p>Production updates for a monthly release will be scheduled for the first, second, and third weeks in of the month. Depending on the configuration that you set up in Lifecycle Services (LCS), you will receive updates during that specific week.</p>
+<p>For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20 based on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup is available in LCS.</p>
+<p>Customers can always choose to apply the update at an earlier time, or if there is a more convenient time than the suggested times in Lifecycle Services.  If the customer is on the latest version the auto update will be canceled.</p>
+<h2 id="service-updates">Service updates</h2>
+<h3 id="what-product-versions-are-impacted-by-service-updates">What product versions are impacted by service updates?</h3>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8.1 and later</td>
+<td>All customers on 8.1 and later will be scheduled for automatic monthly updates with a combined application and platform update starting November 2018. You will be required to be on an update that's no older than 4 months or 3 service updates. To pause an update, refer to <a href="../../dev-itpro/lifecycle-services/pause-service-updates.md">Pause service updates</a>.</td>
+</tr>
+<tr>
+<td>8.0</td>
+<td>Customers on 8.0 can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 4 months or 3 service updates. The 8.0 application lifecycle ends in April 2019. Customers on 8.0 must update by April 30, 2019 to stay supported. In order to be on a supported application, customers should follow the process to update to the latest version. For more information, see <a href="../../dev-itpro/migration-upgrade/appupdate-80-81.md">Update environments from version 8.0 to 10.0.X</a>.</td>
+</tr>
+<tr>
+<td>7.x</td>
+<td>Customers on 7.x can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 4 months and 3 service updates. Customers on 7.x must update by April 30, 2019 to stay supported. If customer stays on version 7.3 past April 30 they will still receive automated platform updates every month. You are required to upgrade to 8.1 by April 2019 (unless extensions are not available). The only overlayered version in market will be version 7.3.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-does-the-service-update-contain">What does the service update contain?</h3>
+<p>For release 8.1 and later, service updates will contain application (including financial, reporting, and Commerce) and platform changes that are critical improvements to the service including regulatory updates. New experiences will be configurable. The service updates are backward compatible. There will be a single version representing this update.</p>
+<h3 id="what-is-a-regulatory-update">What is a regulatory update?</h3>
+<p>A regulatory update is a new feature or an existing feature change required by law (usually for a specific country/region). The regulatory update is always required by a specific law enforcement date (LED) and should be enabled by this date or earlier.</p>
+<h3 id="whats-the-upcoming-schedule-of-updates">What's the upcoming schedule of updates?</h3>
+<p>Service updates are available since November 2018. You have the option to apply the update when it is convenient for you, or let Microsoft auto-apply the service updates based on the selected maintenance window. You are required to have an update no older than 4 months.</p>
+<p>To see a targeted release schedule, see <a href="public-preview-releases.html">Service update availability</a>.</p>
+<h3 id="are-there-any-major-updates-post-81">Are there any major updates post 8.1?</h3>
+<p>There will be 2 major updates in April and October where new experiences can be enabled. Major updates will not require code or data upgrade. Breaking changes will be communicated 12 months in advance such that customers can plan accordingly. Such a change will only be introduced during a major update. The 10.0 release, which will be available in April 2019, will also be an update and not an upgrade.</p>
+<h3 id="what-does-it-mean-when-an-update-is-backward-compatible">What does it mean when an update is backward compatible?</h3>
+<p>Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This also means that on a development environment at design time, X++ public and protected APIs and metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Functional compatibility is about user experience, all new experiences will be opt-in for a 12-month period.</p>
+<p>Backward compatibility does not include non-X++/metadata APIs. Microsoft reserves the right to update versions of any dependencies the product uses, as well as remove dependencies without early warning. Microsoft does not commit to maintain backwards compatibility of dependent software libraries unless expressly stated.</p>
+<p>For more information on deprecation guidelines and deprecated methods and metadata elements, see <a href="../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md">Deprecation of methods and metadata elements</a>.</p>
+<h3 id="can-i-apply-a-platform-service-update-to-my-existing-81-or-later-environments">Can I apply a Platform service update to my existing 8.1 or later environments?</h3>
+<p>Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x Service updates. Platform only service updates cannot be applied to version 8.1.x or later. Platform service updates can only be applied to versions 7.x or 8.0.</p>
+<h3 id="will-platform-updates-be-able-to-be-scheduled-and-delaypause-by-customers">Will Platform updates be able to be scheduled and delay/pause by customers?</h3>
+<p>Yes, customers who are on version 7.3 are able to schedule platform updates directly in Lifecycle Services. A delay/pause experience is also available.</p>
+<h3 id="service-updates-for-on-premises-deployments">Service updates for on-premises deployments</h3>
+<p>The policy and schedule for service updates are now the same for both cloud and on-premises deployments. This includes, for example, the option to delay applying up to 3 consecutive updates. How to apply each of these updates remains slightly different. For more information, see <a href="../../dev-itpro/deployment/apply-updates-on-premises.md#update-an-on-premises-deployment">Apply updates to on-premises deployments</a>.</p>
+<h2 id="process">Process</h2>
+<h3 id="how-will-microsoft-ensure-quality-of-releases">How will Microsoft ensure quality of releases?</h3>
+<p>Ensuring quality of the release is a fundamental principle that's enabled through a series of progressive, rigorous, automated validations as described in <a href="public-preview-releases.html">Service update availability</a>.</p>
+<h3 id="can-i-select-the-day-and-time-to-update">Can I select the day and time to update?</h3>
+<p>Customers can configure the day and maintenance time windows in LCS. The service update, which is based on your update settings, will start within 15 minutes. Email will be sent to customers who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 7 calendar days for testing and validation.</p>
+<p>Customers can optionally choose to apply the update earlier to all environments through LCS. The production-ready, deployable package will be made available to all customers via the Action Center in Lifecycle Services. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments. For more information, see <a href="../../dev-itpro/lifecycle-services/configure-service-updates.md">Configure service update</a>.</p>
+<h3 id="a-service-update-was-applied-to-the-environment-when-looking-at-the-tile-in-lifecycle-services-for-this-environment-what-does-the-number-on-the-tile-represent">A service update was applied to the environment, when looking at the tile in Lifecycle Services for this environment what does the number on the tile represent?</h3>
+<p>The same service update will be auto applied to all customers by Microsoft. Microsoft will continue to service the latest update. The tile in LCS for that environment represents the cumulative number of hotfixes that are available to be applied to your environment. Because Microsoft will only auto apply the same version to all customers, you will be responsible for apply the cumulative hotfix package if it is required.</p>
+<h3 id="how-do-i-update-to-the-latest-version">How do I update to the latest version?</h3>
+<p>Users can update to the latest version using the tiles on the Environment details page in LCS. After the update is released by Microsoft, the tile will show the update available. Customers can choose to apply the update on their own by going through the update experience on their sandbox and production environments.</p>
+<h3 id="how-do-i-update-the-production-environment-to-the-same-version-after-microsoft-updates-the-sandbox-environment">How do I update the production environment to the same version after Microsoft updates the sandbox environment?</h3>
+<p>When Microsoft updates a sandbox environment, the package that is used for the update is saved in the project's asset library. The name of the package is prefixed by the words &quot;Service Update.&quot; Because the package was already applied to the sandbox environment, you can mark this package as a Release Candidate. You can then go to the production environment and schedule to apply the package, just as you might schedule to apply any other update.</p>
+<h3 id="what-is-the-expected-downtime">What is the expected downtime?</h3>
+<p>The expected downtime for a successful update is 30 minutes to 1 hour. However, we ask for three hours of downtime in case issues occur while the update is applied. We are actively working to reduce the downtime that is required, and you should expect improvements in the next few months.</p>
+<h3 id="whats-the-process-for-deprecation">What's the process for deprecation?</h3>
+<p>Before any feature is removed from the product, the deprecation notice will be announced in the product documentation 12 months prior to the removal.</p>
+<p>For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.</p>
+<h3 id="can-i-delay-an-update">Can I delay an update?</h3>
+<p>You can pause an update up to 4 months or 3 consecutive service updates by way of LCS configuration. After this period, an update will be scheduled and auto-applied by Microsoft. The update experience for a delayed update will incur additional downtime.</p>
+<h3 id="can-i-delay-an-update-for-longer-than-3-consecutive-service-updates-due-to-seasonal-activity-or-other-business-reason">Can I delay an update for longer than 3 consecutive service updates due to seasonal activity or other business reason?</h3>
+<p>No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to the production environment if the environments are more than 3 service updates old. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1, 10.0.2, and 10.0.3 then service update 10.0.4 will be auto applied to the sandbox.</p>
+<h3 id="what-happens-to-an-environment-that-is-running-a-finance-and-operations-version-that-is-no-longer-supported">What happens to an environment that is running a Finance and Operations version that is no longer supported?</h3>
+<p>Environments that are running a Finance and Operations version that is no longer supported display a warning message at the top of the environment details page in LCS.</p>
+<p>For all Microsoft-managed environments, as well as sandbox and production environments in on-premises implementation projects, some Lifecycle Services (LCS) functionality may not be available when an environment is running a Finance and Operations version that is no longer supported. The LCS functionality that may not be available includes the ability to do the following:</p>
+<ul>
+<li>Enable maintenance mode</li>
+<li>Use all capabilities provided for moving databases on an environment or across environments</li>
+<li>Enable firewall access to SQL Server databases</li>
+<li>Download RSAT certificates</li>
+<li>Regenerate RSAT certificates</li>
+</ul>
+<p>After you apply a service update for a supported version, this functionality will be available in the affected environment.</p>
+<h3 id="what-if-i-find-an-issue-during-the-sandbox-update">What if I find an issue during the sandbox update?</h3>
+<p>If you find an issue when doing validations in a sandbox environment, you can request to skip the update through LCS directly by providing a valid support ticket number and a business justification.</p>
+<h3 id="what-if-i-find-a-critical-issue-during-sandbox-testing-and-i-am-not-able-to-pause-the-production-auto-update">What if I find a critical issue during sandbox testing and I am not able to pause the Production auto update?</h3>
+<p>Critical issues should always be submitted to the support team via Lifecycle Services as soon as they are identified. The support staff will work with you on the resolution to the critical issue.</p>
+<h3 id="how-much-time-do-i-get-for-validation">How much time do I get for validation?</h3>
+<p>You will get 7 calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the action center in Lifecycle Service and apply to your environments. This will provide you with additional time to test the update prior to a production roll-out.</p>
+<h3 id="what-happens-when-the-service-update-is-complete">What happens when the service update is complete?</h3>
+<p>Once the service update is applied by Microsoft you will receive a notification if the update was successful or if it was not able to be applied.  There can be several reasons an update was unable to be applied:</p>
+<ul>
+<li>Pending Package Sign-off - If a package is pending signoff, Microsoft will not apply the service update to production.</li>
+<li>Deployment Failure - If there was a deployment failure, the environment will be rolled-back to the original state.</li>
+</ul>
+<h3 id="if-there-is-a-failure-can-i-reschedule-the-update-to-be-auto-applied">If there is a failure, can I reschedule the update to be auto applied?</h3>
+<p>You will not be able to reschedule the update per se, but you may apply the package when it is convenient for you, just as you might schedule to apply any other update.</p>
+<h3 id="will-critical-hotfixes-be-automatically-applied-to-my-sandbox-production-environment-during-auto-update">Will critical hotfixes be automatically applied to my sandbox/ production environment during auto-update?</h3>
+<p>The service update that will be made generally available, and auto applied to all customers will contain hotfixes and potentially new functionality.  If a critical issue is reported after the service update has been applied, customers can pull that cumulative hotfix update from the tile in Lifecycle Services.</p>
+<h3 id="how-will-my-isvs-stay-current">How will my ISVs stay current?</h3>
+<p>Service updates to customer environments will be backward compatible and no action is required by the Independent software vendors (ISVs). ISVs develop on the minimum required platform release that their code depends on. Breaking changes will have a 12-month lead time to enable ISVs to include and validate. We recommend that the ISVs be part of our <a href="https://experience.dynamics.com/insider/">Partner early access program</a>, so that they can get early access to the platform bits and validate their solutions against the update before it's made generally available.</p>
+<h3 id="what-about-new-features">What about new features?</h3>
+<p>All new features will be opt-in for a 12-month period and will not require any change management until you choose to enable the feature.</p>
+<h3 id="are-batch-jobs-suspended-during-a-service-update">Are batch jobs suspended during a service update?</h3>
+<p>Batch jobs are suspended during the maintenance windows and resume when the maintenance is completed.</p>
+<h2 id="tools">Tools</h2>
+<h3 id="how-can-i-get-early-access-to-non-released-platform-updates">How can I get early access to non-released platform updates?</h3>
+<p>You can join the <a href="https://experience.dynamics.com/insider/">First release program</a>, where Microsoft will keep your system always current with the latest updates. If you are not already a member of the Dynamics 365 Insider Program, you will need to:</p>
+<ol>
+<li>Sign up for the Insider Program using this URL: <a href="https://experience.dynamics.com">https://experience.dynamics.com</a></li>
+<li>Accept the terms and conditions to become a Dynamics 365 Insider.</li>
+<li>After your application has been approved (approximately 24 hours) you can then sign back into the Insider Portal to find the different preview programs available for you to join.</li>
+<li>Preview Early Access Program (PEAP) and First Release: The program requires that you accept additional terms and conditions to join. Please look for these programs within the Dynamics 365 Insider Program after your nomination has been accepted.</li>
+</ol>
+<h3 id="is-there-tooling-available-to-support-testing-the-latest-release">Is there tooling available to support testing the latest release?</h3>
+<p>The <a href="../../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a> is <a href="https://www.microsoft.com/download/details.aspx?id=57357">available now</a>. This tool significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a Microsoft application update or applying custom code and configurations to your production environment. It enables functional power users to record business tasks using the Task recorder and convert them into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services using the Business Process Modeler (BPM) libraries and fully integrated with Azure DevOps for test execution, reporting, and investigation. Test data parameters are decoupled from test steps and stored in Excel data files.</p>
+<h3 id="how-can-i-test-and-validate-that-the-integrations-continue-to-work">How can I test and validate that the integrations continue to work?</h3>
+<p>Data task automation lets you easily repeat many types of data tasks and validate the outcome of each task. You can also use automated testing of data entities by using task outcome validation. For more information, see the <a href="../../dev-itpro/data-entities/data-task-automation.md">Data task automation</a> topic.</p>
+<h3 id="how-can-i-determine-whats-changed-in-a-service-update">How can I determine what's changed in a service update?</h3>
+<p>The What’s new or Changed documentation is the primary source for the details contained in each service update. The <a href="/business-applications-release-notes/">Release plans</a> are the primary source of information for all new features and changes for a future release. Features will also include help topics in docs.microsoft.com as needed.</p>
+<h3 id="how-will-i-know-if-there-is-a-deprecated-feature-that-will-impact-me-if-im-not-doing-active-development-recompile-my-code">How will I know if there is a deprecated feature that will impact me if I’m not doing active development/ recompile my code?</h3>
+<p>Deprecated features will be documented with each release.  For more information, see <a href="../../dev-itpro/migration-upgrade/deprecated-features.md">Removed or Deprecated features</a>.</p>
+<h2 id="preparing-for-one-version">Preparing for One Version</h2>
+<h3 id="how-can-i-log-an-extensibility-request">How can I log an extensibility request?</h3>
+<p>Extensibility requests can be logged in LCS. Details are available in the <a href="../../dev-itpro/extensibility/extensibility-requests.md">Extensibility requests</a> topic. Please note the following timelines to log and use the available extensions.</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Extensibility requests</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January 2019</td>
+<td>All extensibility requests must be logged by January 1, 2019. ISVs and customers are requested to analyze the code and make these requests by this time. We will not provide exceptions to stay on 7.3 after April 2019, if the request has not been filed by January 1, 2019.</td>
+</tr>
+<tr>
+<td>December 2019</td>
+<td>Extensions will be available on/ before December 31, 2019 for the requests logged by January 1, 2019. Customers using these extensions are required to move to current version by April 2020.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-does-end-of-service-mean">What does end of service mean?</h3>
+<p>Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on a version that's older than 3 service updates. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.</p>
+<p>All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as long as the environment is on a supported version.</p>
+<h3 id="will-individual-hotfixes-be-supported">Will individual hotfixes be supported?</h3>
+<p>Individual hotfixes will not be supported after 8.1. Customers must update to the latest cumulative update available to apply the fix (such as 8.1.1). Critical fixes will also be cumulative and available through the LCS servicing experience.</p>
+<h3 id="will-you-notify-me-about-critical-hotfixes-released-for-the-monthly-update-that-im-on">Will you notify me about critical hotfixes released for the monthly update that I’m on?</h3>
+<p>Customer reported issues are searchable via Lifecycle Services Issue Search.  You can sign up to be notified when an open issue is resolved.</p>
+<h3 id="how-can-i-upgrade-to-8x">How can I upgrade to 8.x?</h3>
+<p>Refer to the <a href="../../dev-itpro/migration-upgrade/upgrade-latest-update.md">Process for moving to the latest update</a> topic to learn how to upgrade to the latest application. Updating from <a href="../../dev-itpro/migration-upgrade/appupdate-80-81.md">8.0 to 8.1</a> will not require any data upgrade and will be a self-serve update with much reduced downtime.</p>
+<h2 id="commerce-service-updates">Commerce service updates</h2>
+<h3 id="what-options-are-available-to-minimize-impact-to-my-commerce-cloud-components">What options are available to minimize impact to my Commerce cloud components?</h3>
+<p>Commerce cloud components will require the same down time as your Dynamics 365 headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) will be available to reduce and further schedule updates to your deployment. Please refer to our published release information on our <a href="/business-applications-release-notes/October18/dynamics365-retail/planned-features">documentation</a> and <a href="/business-applications-release-notes/?panel=products1#pivot=products">release notes</a> sites for additional details on RCSU.</p>
+<h3 id="will-there-be-options-to-take-individual-hotfixes-for-my-commerce-solution-components">Will there be options to take individual hotfixes for my commerce solution components?</h3>
+<p>All fixes and updates for commerce components will be cumulative.</p>
+<h3 id="what-are-the-maintenance-downtime-requirements-that-may-impact-channel-operations">What are the maintenance downtime requirements that may impact channel operations?</h3>
+<p>For retailers with a business need for redundancy, Modern POS offline capability allows core POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Commerce Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see <a href="../../../commerce/pos-operations.md">Online and offline point of sale (POS) operations</a>.</p>
+<h3 id="when-will-i-need-to-update-my-in-store-components">When will I need to update my in-store components?</h3>
+<p>All in-instore components must be running released software that is less than one year old in order to maintain support. Customers are responsible for updating self-hosted components (such as components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.</p>
+<h3 id="will-there-continue-to-be-backward-compatibility-for-the-in-store-components">Will there continue to be backward compatibility for the in-store components?</h3>
+<p>Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Commerce Scale Unit, Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll out updates to stores.</p>
+<h3 id="what-options-are-available-for-updating-in-store-components-across-my-organization">What options are available for updating in-store components across my organization?</h3>
+<p>Customers can choose to update self-hosted components manually at each store or use mass update tools such as Microsoft System Center Configuration Manager, Microsoft Intune, etc.</p>
+<h3 id="what-options-do-i-have-to-slowly-enable-new-functionality-across-my-channels">What options do I have to slowly enable new functionality across my channels?</h3>
+<p>Microsoft provides several mechanisms to progressively roll-out and enable functional enhancements across stores, devices, and users.</p>
+<ul>
+<li><strong>Screen layout designer</strong> – Most visual elements in POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more information, see <a href="../../../commerce/pos-screen-layouts.md">Screen layouts for the point of sale (POS)</a>.</li>
+<li><strong>Functionality profiles, POS permissions, Commerce parameters</strong> – Significant elements of functionality in POS are typically configurable by the user. This can be configured through functionality profiles, POS permissions, commerce parameters, or other controls which allow for device, register, store, or user-level functionality control in applicable scenarios.</li>
+<li><strong>Modern Point of Sale and Commerce Scale Unit</strong> – Because Modern Point of Sale and Commerce Scale Unit are self-hosted by the retailer, topologies which include either of these components enable roll out of updates at a separate (and slower) cadence, and in a more granular fashion than with cloud-only topologies.</li>
+</ul>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/one-version.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

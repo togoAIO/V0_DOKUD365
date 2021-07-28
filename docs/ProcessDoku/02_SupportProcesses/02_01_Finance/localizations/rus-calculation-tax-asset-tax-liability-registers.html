@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Calculation of tax asset and tax liability registers | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Calculation of tax asset and tax liability registers | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="calculation-of-tax-asset-and-tax-liability-registers">Calculation of tax asset and tax liability registers</h1>
+
+<p>According to Russian legislation, the accounting profit and the profit tax base are formed according to different legislation and rules. Therefore, two tax types have been developed:</p>
+<ul>
+<li><strong>Constant tax</strong>: Differences are based on income and expenses that form the accounting profit (loss) and are excluded from the calculation of the tax base for income tax. Constant tax differences generate constant tax income (CTI) and constant tax expense (CTE).</li>
+<li><strong>Temporary tax</strong>: Differences are based on deferred income tax. The tax is from when expenses or income that form the accounting profit are in one reporting period, and the tax base is in another reporting period or in other reporting periods. Temporary tax differences generate deferred tax asset (DTA) and deferred tax liability (DTL).</li>
+</ul>
+<p>This topic provides information about the two methods that tax registers use to calculate tax differences:</p>
+<ul>
+<li><p>Balance method:</p>
+<ul>
+<li><strong>Calculation of temporary tax differences by balance method</strong> tax register</li>
+<li><strong>Calculation of constant tax differences by balance method</strong> tax register</li>
+</ul>
+</li>
+<li><p>Accrual method:</p>
+<ul>
+<li><strong>Calculation of temporary tax differences</strong> tax register</li>
+<li><strong>Calculation of constant tax differences</strong> tax register</li>
+</ul>
+</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>As of January 1, 2020, tax differences must be calculated by using the balance method.</p>
+</div>
+<h2 id="turn-on-the-feature">Turn on the feature</h2>
+<ol>
+<li>In the <strong>Feature management</strong> workspace, find and select the feature that is named <strong>Tax differences registers by balance method</strong>.</li>
+<li>Select <strong>Enable now</strong>.</li>
+</ol>
+<h2 id="set-up-journal-voucher-creation-for-tax-differences">Set up journal voucher creation for tax differences</h2>
+<p>Before you create a journal voucher for tax differences in the system, you must complete the following setup procedures.</p>
+<ol>
+<li><a href="#parameters">Set up General ledger parameters</a>.</li>
+<li><a href="#method">Set up a journal for ledger posting of tax differences by using the balance method</a>.</li>
+<li><a href="#taxes">Set up ledger accounts for deferred taxes</a>.</li>
+<li><a href="#profit">Set up a sales tax code for profit tax</a>.</li>
+<li><a href="#deferrals">Set up a sales tax code for temporary tax differences that are based on deferrals</a>.</li>
+<li><a href="#registers">Set up tax registers</a>.</li>
+<li><a href="#difference">Set up tax difference registers</a>.</li>
+</ol>
+<h3 id="set-up-general-ledger-parameters"><a name="parameters">Set up General ledger parameters</a></h3>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Parameters</strong> &gt; <strong>General ledger parameters</strong>.</p>
+</li>
+<li><p>On the <strong>Profit tax</strong> tab, in the <strong>Compression</strong> field, specify the level of detail that transactions for tax differences should have:</p>
+<ul>
+<li><strong>Active and liability</strong>: Generate a uniform transaction for each operation for each object. Operations include formation, repayment, and write-off.</li>
+<li><strong>Expense and income</strong>: Generate a uniform transaction for each operation for all objects that have the same expense/income code.</li>
+<li><strong>Tax</strong>: Generate a uniform transaction for each operation for all objects that have the same sales tax code.</li>
+<li><strong>Total</strong>: Generate a uniform transaction for each operation for all objects.</li>
+</ul>
+</li>
+</ol>
+<h3 id="set-up-a-journal-for-ledger-posting-of-tax-differences-that-are-calculated-by-using-the-balance-method"><a name="method">Set up a journal for ledger posting of tax differences that are calculated by using the balance method</a></h3>
+<ol>
+<li><p>Go to <strong>General ledger</strong> &gt; <strong>Journal setup</strong> &gt; <strong>Journal names</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>New</strong>.</p>
+</li>
+<li><p>In the <strong>Name</strong> field, enter <strong>Tax differences by balance method</strong>.</p>
+</li>
+<li><p>In the <strong>Description</strong> field, enter a description of the journal.</p>
+</li>
+<li><p>On the <strong>General</strong> FastTab, in the <strong>Journal type</strong> field, select <strong>Tax differences by balance method</strong>.</p>
+</li>
+<li><p>Set all other fields as required.</p>
+<p><img src="media/ru_tax_differ1.png" alt="Selecting tax differences by balance method as the journal type on the Journal names page."></p>
+</li>
+</ol>
+<h3 id="set-up-ledger-accounts-for-deferred-taxes"><a name="taxes">Set up ledger accounts for deferred taxes</a></h3>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Ledger posting groups</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>New</strong>.</p>
+</li>
+<li><p>In the <strong>Ledger posting group</strong> field, enter the name of the ledger posting group.</p>
+</li>
+<li><p>In the <strong>Description</strong> field, enter a description of the ledger posting group.</p>
+</li>
+<li><p>On the <strong>General</strong> FastTab, in the <strong>Sales tax payable</strong> field, enter a ledger account:</p>
+<ul>
+<li>If you calculate the current profit tax based on accounting data, enter a ledger account from group of accounts <strong>68</strong> for accounting differences.</li>
+<li>If you calculate that current profit tax based on the profit tax declaration (tax accounting data), enter a ledger account from group of accounts <strong>99</strong> for tax differences.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>According to the methodological recommendations for applying the new PBU18 accounting standard, as of January 1, 2020, companies have a choice about how they calculate the current profit tax. The calculation can be based on either accounting data or the profit tax declaration.</p>
+<ul>
+<li>When the current profit tax is calculated based on accounting data, the ledger posting of temporary deferred tax should be posted in correspondence with ledger  account <strong>68.profit tax</strong>. In this case, the ledger posting of constant tax differences should be posted in correspondence with ledger account <strong>68.profit tax</strong>.</li>
+<li>When the current profit tax is calculated based on the profit tax declaration, the ledger posting of temporary deferred tax should be posted in correspondence with  ledger account <strong>99</strong>. In this case, there is ledger posting of constant tax differences.</li>
+</ul>
+<p>The company should make a make a note of their choice in the accounting policy.</p>
+</div>
+</li>
+<li><p>On the Action Pane, select <strong>Save</strong>.</p>
+</li>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Profit tax</strong> &gt; <strong>Ledger posting groups of profit tax</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>New</strong>.</p>
+</li>
+<li><p>In the <strong>Ledger posting group</strong> field, select the name of the ledger posting group that you created in step 2. The <strong>Sales tax payable</strong> field is automatically set.</p>
+</li>
+<li><p>In the <strong>Description</strong> field, enter a description of the ledger posting group.</p>
+</li>
+<li><p>On the <strong>General</strong> FastTab, set the following fields:</p>
+<ul>
+<li>In the <strong>DTA</strong> field, enter a ledger account from group of accounts <strong>09</strong>.</li>
+<li>In the <strong>DTL</strong> field, enter a ledger account from group of accounts <strong>77</strong>.</li>
+<li>In the <strong>CTI</strong> and <strong>CTE</strong> fields, enter a ledger account for posting amounts of CTI and CTI from group of accounts <strong>99</strong>.</li>
+</ul>
+</li>
+<li><p>On the Action Pane, select <strong>Save</strong>.</p>
+<p><img src="media/ru_tax_differ2.png" alt="Setting up a ledger posting group on the Ledger posting groups of profit tax page."></p>
+</li>
+</ol>
+<h3 id="set-up-a-sales-tax-code-for-profit-tax"><a name="profit">Set up a sales tax code for profit tax</a></h3>
+<ol>
+<li>Go to <strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax codes</strong>.</li>
+<li>Create and set up a sales tax code for profit tax. For more information, see <a href="../general-ledger/tasks/set-up-sales-tax-codes.html">Set up sales tax codes</a>.</li>
+<li>On the Action Pane, select <strong>Sales tax code</strong> &gt; <strong>Values</strong>.</li>
+<li>In the <strong>Value</strong> field, enter the value of the profit tax rate that will be used to calculate the tax difference.</li>
+<li>On the Action Pane, select <strong>Save</strong>.</li>
+</ol>
+<h3 id="set-up-an-expense-code-for-temporary-tax-differences-that-are-based-on-deferrals"><a name="deferrals">Set up an expense code for temporary tax differences that are based on deferrals</a></h3>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Profit tax</strong> &gt; <strong>Expense codes</strong>.</p>
+</li>
+<li><p>Create and set up expense codes that are used for deferrals postings or that form constant tax differences. For more information, see <a href="rus-expense-and-income-codes.html#create-an-expense-or-income-code">Create an expense or income code</a>.</p>
+</li>
+<li><p>On the <strong>General</strong> FastTab, set the following fields:</p>
+<ul>
+<li>In the <strong>Code type</strong> field, select <strong>Issue</strong>.</li>
+<li>In the <strong>Income tax</strong> section, in the <strong>Sales tax code</strong> field, select the sales tax code for the profit tax rate.</li>
+</ul>
+<p><img src="media/ru_tax_differ3.png" alt="Setting up an expense code on the expense codes page."></p>
+</li>
+</ol>
+<h3 id="set-up-tax-registers"><a name="registers">Set up tax registers</a></h3>
+<p>Before you complete this procedure, you must create expense codes. For more information, see <a href="rus-expense-and-income-codes.html#create-an-expense-or-income-code">Create an expense or income code</a>.</p>
+<ol>
+<li>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Profit tax</strong> &gt; <strong>Registers</strong>.</li>
+<li>Select the tax register, and then, on the Action Pane, select <strong>Expense codes</strong>.</li>
+<li>On the Action Pane, select <strong>New</strong>.</li>
+<li>In the <strong>Expense code</strong> field, select the expense code. The tax register will reflect transactions that have the selected expense code.</li>
+<li>In the <strong>Condition name</strong> field, enter a description.</li>
+</ol>
+<h3 id="set-up-tax-differences-registers"><a name="difference">Set up tax differences registers</a></h3>
+<p>Create the registers of temporary and constant tax differences for one of the calculation methods, as described in Profit tax registers journal.
+Follow these steps to set up the <strong>Calculation of temporary tax differences by balance method</strong> and <strong>Calculation of temporary tax differences</strong> tax registers.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Profit tax</strong> &gt; <strong>Registers</strong>.</p>
+</li>
+<li><p>On the <strong>Parameters</strong> FastTab, set up the parameters that should be used to generate the register. If no value is specified for a parameter, the register will be generated for all values of that parameter. To specify multiple values for a parameter, separate them with commas:</p>
+<ul>
+<li>On the line for the <strong>Tax code for FA depreciation</strong> parameter, in the <strong>Value</strong> column, select the sales tax code for profit tax.</li>
+<li>On the line for the <strong>Tax code for debt reserves</strong> parameter, in the <strong>Value</strong> column, select the sales tax code for profit tax.</li>
+<li>On the line for the <strong>Depreciation groups</strong> parameter, in the <strong>Value</strong> column, select the FA/IA group for tax accounting.</li>
+<li>On the line for the <strong>Type of fixed asset</strong> parameter, in the <strong>Value</strong> column, select the asset type.</li>
+<li>On the line for the <strong>Deferrals groups</strong> parameter, in the <strong>Value</strong> column, select the group of expenses for future periods.</li>
+</ul>
+</li>
+<li><p>In the <strong>Expand</strong> column, select the checkbox for the parameters that must be used to generate the register.</p>
+<p><img src="media/ru_tax_differ4.png" alt="Setting parameters for generation of the Calculation of temporary tax differences by balance method and Calculation of temporary tax differences tax registers on the Tax registers page."></p>
+</li>
+</ol>
+<p>Follow these steps to generate the <strong>Calculation of constant tax differences</strong> tax register.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Profit tax</strong> &gt; <strong>Registers</strong>.</p>
+</li>
+<li><p>On the <strong>Parameters</strong> FastTab, on the line for the <strong>Tax code for debt reserves</strong> parameter, in the <strong>Value</strong> column, select the sales tax code for profit tax. The rate value of the selected sales tax code will be used to calculate the amount of the constant tax asset or constant tax liability.</p>
+</li>
+<li><p>In the <strong>Expand</strong> column, select the checkbox for the parameter, so that it will be used to generate the register.</p>
+<p><img src="media/ru_tax_differ5.png" alt="Setting parameters for generation of the Calculation of constant tax differences tax register on the Tax registers page."></p>
+</li>
+</ol>
+<h2 id="tax-registers">Tax registers</h2>
+<h3 id="incomes-and-expenses-that-do-not-influence-the-tax-base-tax-register">Incomes and expenses that do not influence the tax base tax register</h3>
+<p>The <strong>Incomes and expenses that do not influence the tax base</strong> tax register contains information about income and expenses that don't influence the tax base. This information is used when the register of constant tax differences is calculated.</p>
+<p><img src="media/ru_tax_differ6.png" alt="Incomes and expenses that do not influence the tax base tax page."></p>
+<p>For each line of this tax register, the following information is shown:</p>
+<ul>
+<li><strong>Line number</strong></li>
+<li><strong>Expense/Income type</strong>: The name of the assigned expense code.</li>
+<li><strong>Income amount</strong>: The amount of the income.</li>
+<li><strong>CTI amount</strong>: The amount of CTI for the <strong>Income amount</strong> value.</li>
+<li><strong>Issue amount</strong>: The amount of the expense.</li>
+<li><strong>CTE amount</strong>: The amount of CTE for the <strong>Issue amount</strong> value.</li>
+</ul>
+<h3 id="tax-registers-for-the-calculation-of-temporary-tax-differences">Tax registers for the calculation of temporary tax differences</h3>
+<p>The <strong>Calculation of temporary tax differences by balance method</strong> and <strong>Calculation of temporary tax differences</strong> tax registers reflect information about tax differences in the following circumstances:</p>
+<ul>
+<li>Balances differ for the <strong>RAP</strong> and <strong>TAX</strong> fixed asset calculation models.</li>
+<li>Balances differ for the <strong>RAP</strong> and <strong>TAX</strong> deferral calculation models.</li>
+<li>Reserves for bad debts differ for the <strong>RAP</strong> and <strong>TAX</strong> calculation models.</li>
+</ul>
+<p>The <strong>Calculation of temporary tax differences by balance method</strong> tax register has the following sources of formation:</p>
+<ul>
+<li><strong>Fixed assets (Russia)</strong> module</li>
+<li>Deferrals</li>
+<li>Tax registers for bad debts reserve</li>
+</ul>
+<p>The following illustration shows an example of the <strong>Calculation of temporary tax differences by balance method</strong> tax register.</p>
+<p><img src="media/ru_tax_differ7.png" alt="Calculation of temporary tax differences by balance method page."></p>
+<p>For each line of this tax register, the following information is shown:</p>
+<ul>
+<li><strong>Line number</strong></li>
+<li><strong>Date attached</strong>: The date when the accounting object was created.</li>
+<li><strong>The naming of object of the account</strong>: A description of the accounting object.</li>
+<li><strong>Transaction date</strong>: The end of the reporting period.</li>
+<li><strong>Initial DTA/DTL</strong>: The amount of DTA or DTL at the beginning of the reporting period.</li>
+<li><strong>Book value in accounting</strong>: The balance value of the asset at the end of the reporting period for the <strong>RAP</strong> calculation model.</li>
+<li><strong>Book value in tax accounting</strong>: The balance value of the asset at the end of the reporting period for the <strong>TAX</strong> calculation model.</li>
+<li><strong>DTA/DTL</strong>: The amount of DTA or DTL at the end of the reporting period.</li>
+<li><strong>Creating DTA</strong>: The amount of DTA, if the initial amount of DTA doesn't exist.</li>
+<li><strong>Decreasing DTA</strong>: The difference between the DTA amount at the beginning of the reporting period and the DTA amount at the end of the reporting period, if the initial amount of DTA exists.</li>
+<li><strong>Creating DTL</strong>: The amount of DTL, if the initial amount of DTL doesn't exist.</li>
+<li><strong>Decreasing DTL</strong>: The difference between the DTL amount at the beginning of the reporting period and the DTL amount at the end of the reporting period, if the initial amount of DTL exists.</li>
+</ul>
+<p>For each line of the <strong>Calculation of temporary tax differences</strong> tax register, the following information is shown:</p>
+<ul>
+<li><strong>Line number</strong></li>
+<li><strong>Date attached</strong>: The date when the accounting object was created.</li>
+<li><strong>The naming of object of the account</strong>: A description of the accounting object.</li>
+<li><strong>Transaction date</strong>: The end of the reporting period.</li>
+<li><strong>Bookkeeping amount</strong>: The amount that was accepted for accounting.</li>
+<li><strong>Taxation amount</strong>: The amount that was accepted for tax accounting.</li>
+<li><strong>Initial DTA/DTL</strong>: The amount of DTA or DTL at the beginning of the reporting period.</li>
+<li><strong>Creating DTA</strong>: The amount of DTA, if the initial amount of DTA doesn't exist.</li>
+<li><strong>Decreasing DTA</strong>: The difference between the amount of DTA at the beginning of the reporting period and the amount of DTA at the end of the reporting period, if the initial amount of DTA exists.</li>
+<li><strong>Creating DTL</strong>: The amount of DTL, if the initial amount of DTL doesn't exist.</li>
+<li><strong>Decreasing DTL</strong>: The difference between the DTL amount at the beginning of the reporting period and the DTL amount at the end of the reporting period, if the initial amount of DTL exists.</li>
+<li><strong>Writing off DTA</strong></li>
+<li><strong>Writing off DTL</strong></li>
+</ul>
+<h3 id="tax-registers-for-the-calculation-of-constant-tax-differences">Tax registers for the calculation of constant tax differences</h3>
+<p>The <strong>Calculation of constant tax differences by balance method</strong> and <strong>Calculation of constant tax differences</strong> tax registers reflect information about the constant difference that is determined based on the amount of expenses and the rated amount for expenses of this type.
+The <strong>Calculation of constant tax differences by balance method</strong> tax register has the following sources of information:</p>
+<ul>
+<li>The <strong>Incomes and expenses that do not influence the tax base</strong> tax register.</li>
+<li>The <strong>Standard expenses in current period</strong> tax register. For more information, see <a href="rus-rated-expenses-registers.html">Rated expenses registers</a>.</li>
+</ul>
+<p>Unlike the <strong>Calculation of constant tax differences by balance method</strong> tax register, the <strong>Calculation of constant tax differences</strong> tax register isn't based on the following tax registers:</p>
+<ul>
+<li>Restoring of depreciation bonus</li>
+<li>Reserves for bad debts</li>
+</ul>
+<p>The tax registers differ because, as of January 1, 2020, these assets form temporary tax differences.
+The following illustration show an example of the <strong>Calculation of constant tax differences by balance method</strong> tax register.</p>
+<p><img src="media/ru_tax_differ8.png" alt="Calculation of constant tax differences by balance method page."></p>
+<p>For each line of this tax register, the following information is shown:</p>
+<ul>
+<li><strong>Line number</strong></li>
+<li><strong>Date attached</strong>: The beginning of the reporting period.</li>
+<li><strong>The naming of object of the account</strong>: A description of the accounting object.</li>
+<li><strong>Bookkeeping amount</strong>: The amount that was accepted for accounting.</li>
+<li><strong>Taxation amount</strong>: The amount that was accepted for tax accounting.</li>
+<li><strong>Differences (Income)</strong>: The income, which is the difference between the tax and the accounting amount.</li>
+<li><strong>CTI amount</strong>: The amount of CTI for the <strong>Differences (Income)</strong> value.</li>
+<li><strong>Differences (Expense)</strong>: The expense, which is the difference between the tax and the accounting amount.</li>
+<li><strong>CTE amount</strong>: The amount of CTE for the <strong>Differences (Expense)</strong> value.</li>
+</ul>
+<p>For each line of the <strong>Calculation of constant tax differences</strong> tax register, the following information is shown:</p>
+<ul>
+<li><strong>Line number</strong>.</li>
+<li><strong>Date attached</strong>: The beginning of the reporting period.</li>
+<li><strong>Expense/income type</strong></li>
+<li><strong>The naming of object of the account</strong>: A description of the accounting object.</li>
+<li><strong>Bookkeeping amount</strong>: The amount that was accepted for accounting.</li>
+<li><strong>Taxation amount</strong>: The amount that was accepted for tax accounting.</li>
+<li><strong>Differences (Income)</strong>: The income, which is the difference between the tax and the accounting amount.</li>
+<li><strong>CTA amount</strong>: The amount of constant tax asset (CTA) for the <strong>Differences (Income)</strong> value.</li>
+<li><strong>Differences (Expense)</strong>: The expense, which is the difference between the tax and the accounting amount.</li>
+<li><strong>CTL amount</strong>: The amount of constant tax liability (CTL) for the <strong>Differences (Expense)</strong> value.</li>
+</ul>
+<h2 id="create-a-journal-voucher-for-tax-differences">Create a journal voucher for tax differences</h2>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Journal entries</strong> &gt; <strong>Tax register journal</strong>.</p>
+</li>
+<li><p>Select the line for the period where the <strong>Calculation of temporary tax differences by balance method</strong> and <strong>Calculation of constant tax differences by balance method</strong> tax registers are calculated and approved.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Ledger journal</strong> &gt; <strong>Tax differences by balance method</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>On the <strong>Ledger journal</strong> menu, the <strong>Tax differences</strong> command generates the tax difference amounts that are calculated in the <strong>Calculation of temporary tax differences</strong> and <strong>Calculation of constant tax differences</strong> tax registers. If you generate a ledger journal that has transactions for tax differences of one type, such as accrual method or balance method, the second menu item becomes unavailable. In other words, you can't simultaneously use the old and new methods to create a ledger posting for tax differences.</p>
+</div>
+</li>
+<li><p>On the Action Pane, select <strong>Create</strong> &gt; <strong>Create journal</strong>. The journal is created, and its lines include the vouchers for the tax difference of the current period.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Lines</strong> to view the vouchers and other details.</p>
+<p><img src="media/ru_tax_differ9.png" alt="Journal voucher page."></p>
+</li>
+<li><p>On the Action Pane, select <strong>Post</strong> &gt; <strong>Post</strong> to post the journal.</p>
+</li>
+</ol>
+<h3 id="create-a-reversing-journal-voucher-for-tax-differences">Create a reversing journal voucher for tax differences</h3>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Journal entries</strong> &gt; <strong>Tax register journal</strong>.</p>
+</li>
+<li><p>Select the line for the period where the <strong>Calculation of temporary tax differences by balance method</strong> and <strong>Calculation of constant tax differences by balance method</strong> tax registers are calculated and approved.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Ledger journal</strong> &gt; <strong>Tax differences by balance method</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Create</strong> &gt; <strong>Reverse journal</strong>. The journal is created, and its lines include vouchers for the tax difference of the current period.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Lines</strong> to view the vouchers and other details.</p>
+<p><img src="media/ru_tax_differ10.png" alt="Tax differences by balance method page."></p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-calculation-tax-asset-tax-liability-registers.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

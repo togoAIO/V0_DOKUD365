@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Accounts payable debt tax registers and debt write-offs | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Accounts payable debt tax registers and debt write-offs | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="accounts-payable-debt-tax-registers-and-debt-write-offs">Accounts payable debt tax registers and debt write-offs</h1>
+
+
+<p>This topic provides information about accounts payable bad debts, write-offs for them, and the following tax registers:</p>
+<ul>
+<li>Accounts payable inventory act</li>
+<li>Accounts payable movement</li>
+</ul>
+<p>Accounts payable are formed based on outstanding invoices for purchases of goods and services, and on advance payments that are received from
+customers.</p>
+<p>Accounts payable amounts that are written off because of expiration of the limitation period are considered non-operating income.</p>
+<h2 id="setup">Setup</h2>
+<h3 id="set-up-accounts-payable-parameters">Set up Accounts payable parameters</h3>
+<ol>
+<li><p>Go to <strong>Accounts payable</strong> &gt; <strong>Setup</strong> &gt; <strong>Accounts payable parameters</strong>.</p>
+</li>
+<li><p>On the <strong>Ledger and sales tax</strong> tab, on the <strong>Creditor debts</strong> FastTab, in the <strong>Income code</strong> field, specify the income code to assign to transactions for writing off bad accounts payable debt.</p>
+</li>
+<li><p>In the <strong>Main account</strong> field, specify an account for non-operating income.</p>
+<p><img src="media/1-AP_tax.png" alt="Accounts payable parameters, Ledger and sales tax tab."></p>
+</li>
+<li><p>On the <strong>Number sequences</strong> tab, in the <strong>Number sequence code</strong> field, select the number sequence code for the <strong>Ledger voucher for debts amortization</strong> reference.</p>
+</li>
+</ol>
+<h3 id="set-up-the-debt-interval-for-hopeless-debts">Set up the debt interval for hopeless debts</h3>
+<ol>
+<li><p>Go to <strong>Accounts payable</strong> &gt; <strong>Setup</strong> &gt; <strong>Debt interval</strong>.</p>
+</li>
+<li><p>In the <strong>From</strong> field, enter the lower limit of the debt interval, in days. For example, enter <strong>240</strong>.</p>
+</li>
+<li><p>In the <strong>By</strong> field, enter the upper limit of the debt interval, in days. For example, enter <strong>0</strong> if there is no upper limit.</p>
+</li>
+<li><p>In the <strong>Description</strong> field, enter a detailed description of the debt interval.</p>
+<p><img src="media/2-AP_tax.png" alt="Creditor debt intervals."></p>
+</li>
+</ol>
+<h2 id="tax-registers">Tax registers</h2>
+<p>You must create and set up tax registers. For more information, see Profit tax registers. The following sections provide more information about each tax register.</p>
+<h3 id="accounts-payable-inventory-act-tax-register">Accounts payable inventory act tax register</h3>
+<p>The <strong>Accounts payable inventory act</strong> tax register is based on the inventory of accounts as of the reporting date. It reflects the existence of accounts payable amounts.</p>
+<p>The register is required to account for non-operating income and expenses for the reporting (tax) period.</p>
+<p><img src="media/3-AP_tax.png" alt="Accounts payable inventory act page."></p>
+<p>The register lines show the following information:</p>
+<ul>
+<li><strong>Accounting object</strong>: The number of the vendor invoice or the number of the customer advance payment that was received.</li>
+<li><strong>Transaction date</strong>: The date of the invoice or advance payment.</li>
+<li><strong>Deadline</strong>: The payment due date according to the payment terms.</li>
+<li><strong>Debt</strong>: The outstanding amount of the invoice or advance payment that was received on the date of inventory, if the aging period of the debts is within the debt interval limits that you configured earlier.</li>
+<li><strong>Debt VAT amount</strong>: The amount of value-added tax (VAT) on outstanding accounts payable on the date of inventory.</li>
+<li><strong>Closed amount</strong>: The total amount of accounts payable that were written off during the reporting (tax) period.</li>
+<li><strong>Closed VAT amount</strong>: The total amount of VAT on accounts payable that were written off during the reporting (tax) period.</li>
+<li><strong>Non-confirmed debt</strong>: Enter the amount of unconfirmed debt by vendor.</li>
+</ul>
+<h3 id="accounts-payable-movement-tax-register">Accounts payable movement tax register</h3>
+<p>The <strong>Accounts payable movement</strong> tax register is formed to summarize information about operations on the movement of accounts payable.</p>
+<p>Entries are made in the register for all occurrences of accounts payable, and all repayments (full or partial) and write-offs of them by the taxpayer, between the beginning of the tax period and the reporting date.</p>
+<p>This register doesn't reflect the amounts of the taxpayer's accounts payable to the budgets of different levels.</p>
+<p>For reporting purposes, records on transactions in foreign currency are also made for each fact about the revaluation of debt.</p>
+<p><img src="media/4-AP_tax.png" alt="Accounts payable movement page."></p>
+<p>The register lines show the following information:</p>
+<ul>
+<li><strong>Accounting object</strong>: The number of the vendor invoice or the number of the customer advance payment that was received.</li>
+<li><strong>Transaction date</strong>: The date of the invoice or advance payment.</li>
+<li><strong>Transaction description</strong>: A description of the document.</li>
+<li><strong>Deadline</strong>: The payment due date according to the payment terms.</li>
+<li><strong>Accounting order</strong>: The invoice payment terms.</li>
+<li><strong>Debt</strong>: The outstanding amount of the invoice or advance payment that was received on the date of inventory, if the aging period of the debts is within the debt interval limits that you configured earlier.</li>
+<li><strong>Debt VAT amount</strong>: The amount of VAT on outstanding accounts payable.</li>
+<li><strong>Close date</strong>: The closing date of the invoice, write-off, or payment transaction.</li>
+<li><strong>Close reason</strong>: A description of the transaction for writing off or paying the debt.</li>
+<li><strong>Close amount</strong>: The total amount of written-off accounts payable for the reporting (tax) period.</li>
+<li><strong>Closed VAT amount</strong>: The total amount of VAT on accounts payable that were written off for the reporting (tax) period.</li>
+<li><strong>Unsettled debt amount</strong>: The total amount of outstanding accounts payable after the movement.</li>
+<li><strong>Unsettled debt amount VAT</strong>: The total amount of VAT on outstanding accounts payable after the movement.</li>
+</ul>
+<h2 id="write-off-hopeless-debts">Write off hopeless debts</h2>
+<p>Before you can write off hopeless debts, you must create a register journal for the same period as the write-off and calculate the registers.</p>
+<p>In the journal, you should approve the <strong>Accounts payable inventory act</strong> register.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Don't approve the <strong>Accounts payable movement</strong> register.</p>
+</div>
+<h3 id="recognize-and-write-off-hopeless-debt">Recognize and write off hopeless debt</h3>
+<ol>
+<li><p>Calculate and approve the tax register journal for the previous period. For more information, see Profit tax registers.</p>
+</li>
+<li><p>Go to <strong>Accounts payable</strong> &gt; <strong>Periodic tasks</strong> &gt; <strong>Amortization</strong> &gt; <strong>Trade liabilities amortization</strong>.</p>
+</li>
+<li><p>In the <strong>Calculation date</strong> field, select a date that indicates the required calculation period.</p>
+<p>The page shows the debts that have expired as of the indicated reporting date:</p>
+<ul>
+<li>The <strong>Customers</strong> tab shows the list of customer prepayments.</li>
+<li>The <strong>Vendors</strong> tab shows the list of vendor invoices.</li>
+</ul>
+</li>
+<li><p>To review the original customer or vendor transactions, select <strong>Transactions</strong> on the appropriate tab.</p>
+</li>
+<li><p>Select the debts to write off. The <strong>Total</strong> field in the <strong>Marked</strong> section shows the total amount of the transactions that have been marked for debiting.</p>
+<p><img src="media/5-AP_tax.png" alt="Creditors debt cancellation journal page, Total field."></p>
+</li>
+<li><p>On the Action Pane, select <strong>Update</strong>. The marked transactions are no longer shown. In the <strong>Written off</strong> section, the amounts are increased to the value that appeared in the <strong>Total</strong> field in the <strong>Marked</strong> section before you selected <strong>Update</strong>. Transactions for customers/vendors are created. Additionally, transactions for writing off each debt are created in the general ledger. The date of the write-off operations corresponds to the date that you selected in the <strong>Calculation date</strong> field.</p>
+<p><img src="media/6-AP_tax.png" alt="Creditors debt cancellation journal page, Calculation date field."></p>
+</li>
+</ol>
+<h3 id="cancel-the-write-off-of-hopeless-debt">Cancel the write-off of hopeless debt</h3>
+<p>To cancel the write-off of hopeless debts, follow these steps.</p>
+<ol>
+<li><p>Go to <strong>Accounts payable</strong> &gt; <strong>Periodic tasks</strong> &gt; <strong>Amortization</strong> &gt; <strong>Trade liabilities amortization cancellation</strong>.</p>
+</li>
+<li><p>In the <strong>Calculation date</strong> field, select a date that indicates the required calculation period.</p>
+<p>The page shows the written-off debts that have expired as of the indicated reporting date:</p>
+<ul>
+<li>The <strong>Customers</strong> tab shows the list of written-off customer prepayments.</li>
+<li>The <strong>Vendors</strong> tab shows the list of written-off vendor invoices.</li>
+</ul>
+</li>
+<li><p>To review the original customer or vendor transactions, select <strong>Transactions</strong> on the appropriate tab.</p>
+</li>
+<li><p>Select the written-off debts to cancel. The <strong>Total</strong> field in the <strong>Marked</strong> section shows the total amount of the transactions that have been marked for debiting.</p>
+<p><img src="media/7-AP_tax.png" alt="Trade liabilities amortization cancellation journal page."></p>
+</li>
+<li><p>On the Action Pane, select <strong>Update</strong>. The marked transactions are no longer shown. In the <strong>Written off</strong> section, the amounts are decreased to the value that appeared in the <strong>Total</strong> field in the <strong>Marked</strong> section before you selected <strong>Update</strong>. Transactions that cancel the write-off of accounts payable are generated.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

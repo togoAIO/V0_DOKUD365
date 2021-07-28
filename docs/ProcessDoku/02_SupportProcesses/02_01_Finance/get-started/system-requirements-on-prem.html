@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>System requirements for on-premises deployments | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="System requirements for on-premises deployments | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="system-requirements-for-on-premises-deployments">System requirements for on-premises deployments</h1>
+
+
+<p>This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance + Operations (on-premises) deployments. Before you install, when this step is appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Dynamics 365 Finance + Operations (on-premises) deployments are not supported on any public cloud infrastructure, including Azure.</p>
+</div>
+<h2 id="network-requirements">Network requirements</h2>
+<p>Dynamics 365 Finance + Operations (on-premises) can work on networks that use Internet Protocol Version 4 (IPv4) or Internet Protocol Version 6 (IPv6). Consider the network environment when you plan your system, and use the following guidelines.</p>
+<h3 id="network-response-time">Network response time</h3>
+<p>The following table lists the minimum network requirements for the connection between the web browser and Application Object Server (AOS), and for the connection between AOS and the database in an on-premises system.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Web browser to AOS</th>
+<th>AOS to database</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bandwidth</td>
+<td>50 kilobytes per second (KBps) per user</td>
+<td>100 megabytes per second (MBps)</td>
+</tr>
+<tr>
+<td>Latency</td>
+<td>Less than 250–300 milliseconds (ms)</td>
+<td>Less than 1 ms (local area network [LAN] only). AOS and the database must be co-located.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Finance + Operations is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the datacenter that hosts Finance + Operations.</li>
+<li>Bandwidth requirements depend on your scenario. Typical scenarios require a bandwidth of more than 50 KBps between the browser and the server. However, we recommend higher bandwidth for scenarios that have high payload requirements, such as scenarios that involve workspaces or extensive customization. The specific amount of bandwidth depends on use.</li>
+</ul>
+<p>Deployments where AOS and the Microsoft SQL Server database are in different datacenters aren't supported. AOS and the SQL Server database must be co-located.</p>
+<p>In general, Finance + Operations is optimized to reduce browser-to-server round trips. The number of round trips from a browser client to the datacenter is either zero or one for each user interaction, and the payload is compressed.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Don't calculate bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. We recommend that you use a real-life simulation against a non-production environment as the best gauge of performance for your specific case.</p>
+</div>
+<h3 id="lan-environments">LAN environments</h3>
+<p>In LAN environments, Microsoft Remote Desktop in Microsoft Windows Server isn't required in order to connect to Finance + Operations. However, Remote Desktop might be required for servicing operations on the virtual machines (VMs) that make up the server deployments.</p>
+<h3 id="wan-environments">WAN environments</h3>
+<p>In wide area network (WAN) environments, Remote Desktop in Windows Server isn't required in order to connect to Finance + Operations.</p>
+<h3 id="internet-connectivity-requirements">Internet connectivity requirements</h3>
+<p>Finance + Operations doesn't require internet connectivity from user workstations. However, some features won't be available if there is no internet connectivity.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Browser client</strong></td>
+<td>An intranet scenario without internet connectivity is a design point for the on-premises deployment option. Some features that require cloud services won't be available, such as Help and Task guide libraries in Microsoft Dynamics Lifecycle Services (LCS).</td>
+</tr>
+<tr>
+<td><strong>Server</strong></td>
+<td>The AOS or Microsoft Azure Service Fabric tier must be able to communicate with LCS. The on-premises browser-based client doesn't require internet access.</td>
+</tr>
+<tr>
+<td><strong>Telemetry</strong></td>
+<td>Telemetry data might be lost if there are long interruptions in connectivity. Interruptions in connectivity to LCS don't affect the on-premises application functionality.</td>
+</tr>
+<tr>
+<td><strong>LCS</strong></td>
+<td>Connectivity to LCS is required for deployment, code deployment, and servicing operations.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="telemetry-data-transfer-to-the-cloud">Telemetry data transfer to the cloud</h2>
+<p>Most telemetry data is stored locally and can be accessed by using Event Viewer in Microsoft Windows. A small subset of telemetry events is transferred to the Microsoft telemetry pipeline in the cloud for diagnostics. Customer data and user-identifiable data aren't part of the telemetry data that is sent to Microsoft. VM names are sent to Microsoft to help with environment management and diagnostics from the LCS portal.</p>
+<h2 id="domain-requirements">Domain requirements</h2>
+<p>Consider the following domain requirements when you install Finance + Operations:</p>
+<ul>
+<li>VMs that host Finance + Operations components must belong to an Active Directory domain. Active Directory Domain Services (AD DS) must be configured in native mode.</li>
+<li>VMs that run Finance + Operations components must have access to each other. This access is configured in AD DS.</li>
+<li>The domain controller must be Microsoft Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more.</li>
+</ul>
+<h3 id="full-2-way-trust">Full 2-way trust</h3>
+<p>For compatibility with corporate domain controllers on Windows Server 2008 R2 domain functional level (DFL), a full 2-way trust between the Windows Server 2008 R2 DFL user domain and the Windows Server 2012 R2 DFL Finance + Operations service domain is supported in Platform update 33 and later.</p>
+<p>This means that users of the Finance + Operations (on-premises) application will come from the Windows Server 2008 R2 DFL domain, and the resources and service accounts hosting the Finance + Operations (on-premises) infrastructure and services will come from the Windows Server 2012 R2 DFL domain.</p>
+<p>Examples for a full 2-way trust setup could be.</p>
+<img src="media/2WayTrust.png" width="700" hspace="50" alt="Examples of supported full 2-way trust between DFL versions">
+<h4 id="known-limitations-with-using-the-full-2-way-trust-setup">Known limitations with using the full 2-way trust setup</h4>
+<ul>
+<li>Import of security groups from the Windows Server 2008 R2 user domain is not supported.</li>
+</ul>
+<h2 id="hardware-requirements">Hardware requirements</h2>
+<p>This section describes the hardware that is required in order to run Finance + Operations.</p>
+<p>The actual hardware requirements vary, based on the system configuration, the data composition, and the features that you decide to use. Here are some of the factors that can affect the choice of appropriate hardware:</p>
+<ul>
+<li>The number of transactions per hour</li>
+<li>The number of concurrent users</li>
+</ul>
+<h2 id="minimum-infrastructure-requirements">Minimum infrastructure requirements</h2>
+<p>Finance + Operations uses Service Fabric to host the AOS, Batch, Data management, Management reporter, and Environment orchestrator services.</p>
+<p>SQL Server must have a high-availability HADRON setup that has at least two nodes for production use.</p>
+<p>The following illustration shows the minimum number of nodes that is recommended for your Service Fabric cluster.</p>
+<p><a href="media/Minimum-infrastructure-Jan2017.png"><img src="media/Minimum-infrastructure-Jan2017.png" alt="Recommended number of nodes for the Service Fabric cluster."></a></p>
+<h2 id="processor-and-ram-requirements">Processor and RAM requirements</h2>
+<p>The following tables list the number of processors and the amount of random-access memory (RAM) that are required for each role that is required in order to run this deployment option. For more information, see the recommended minimum requirements for a Service Fabric standalone cluster in <a href="/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation">Plan and prepare your Service Fabric cluster</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If other Microsoft software is installed on the same computer, the system must also comply with the hardware requirements for that software. If other server applications are installed on the same computer as AOS, we recommend that you limit those server applications 1 gigabyte (GB) of RAM.</p>
+</div>
+<p><strong>Sizing by role and topology type</strong></p>
+<table>
+<thead>
+<tr>
+<th>Topology</th>
+<th>Role (node type)</th>
+<th>Recommended processor cores</th>
+<th>Recommended memory (GB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Production</td>
+<td>AOS, Data management, Batch</td>
+<td>8</td>
+<td>24</td>
+</tr>
+<tr>
+<td></td>
+<td>Management Reporter</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td></td>
+<td>SQL Server Reporting Services</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td></td>
+<td>Orchestrator</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td></td>
+<td>SQL Server</td>
+<td>8</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Sandbox</td>
+<td>AOS, Data management, Batch</td>
+<td>4</td>
+<td>24</td>
+</tr>
+<tr>
+<td></td>
+<td>Management Reporter</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td></td>
+<td>SQL Server Reporting Services</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td></td>
+<td>Orchestrator</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td></td>
+<td>SQL Server</td>
+<td>8</td>
+<td>32</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Minimum sizing estimates for production and sandbox deployments</strong></p>
+<table>
+<thead>
+<tr>
+<th>Topology</th>
+<th>Role</th>
+<th>Number of instances</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Production</td>
+<td>AOS (Data management, Batch)</td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td>Management Reporter</td>
+<td>2</td>
+</tr>
+<tr>
+<td></td>
+<td>SQL Server Reporting Services</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>Orchestrator**</td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td>SQL Server</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Sandbox</td>
+<td>AOS, Data management, Batch</td>
+<td>2</td>
+</tr>
+<tr>
+<td></td>
+<td>Management Reporter</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>SQL Server Reporting Services</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>Orchestrator</td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td>SQL Server</td>
+<td>1</td>
+</tr>
+<tr>
+<td><em>Summary for production and sandbox topologies</em></td>
+<td></td>
+<td><em>19</em></td>
+</tr>
+</tbody>
+</table>
+<p>* The numbers in this table are being validated by our preview customers and might be adjusted based on the feedback from those customers.</p>
+<p>** Orchestrator is designated as the primary node type and will also be used to run the Service Fabric services.</p>
+<p><strong>Initial estimates for the back-end SQL Server and AD DS</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Role</th>
+<th>VMs/instances</th>
+<th>Cores</th>
+<th>Total cores</th>
+<th>Memory per instance (GB)</th>
+<th>Total memory (GB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3"><strong>Shared infrastructure</strong></td>
+<td>SQL Server*</td>
+<td>2</td>
+<td>8</td>
+<td>16</td>
+<td>32</td>
+<td>64</td>
+</tr>
+<tr>
+<td>File server/Storage area network/Highly available storage</td>
+<td colspan="5">The back-end storage must be based on solid-state drives (SSDs) on a runtime storage area network (SAN).
+<p>Size and input/output operations per second (IOPS) throughput is based on the size of the workload.</p>
+</td>
+</tr>
+<tr>
+<td>Active Directory</td>
+<td>3</td>
+<td>4</td>
+<td>12</td>
+<td>16</td>
+<td>48</td>
+</tr>
+<tr>
+<td><em>Summary for shared infrastructure</em></td>
+<td></td>
+<td><em>5</em></td>
+<td></td>
+<td><em>28</em></td>
+<td></td>
+<td><em>112</em></td>
+</tr>
+</tbody>
+</table>
+<p>* SQL Server sizes are highly dependent on workloads. For more information, see <a href="hardware-sizing-on-premises-environments.html">Hardware sizing requirements for on-premises environments</a>. Separate SQL Server machines for sandbox and production environments must be used. However, SQL Server can be shared in all sandbox environments.</p>
+<h2 id="storage">Storage</h2>
+<ul>
+<li><p><strong>AOS</strong> – Finance + Operations uses a Server Message Block (SMB) 3.0 share to store unstructured data. For more information, see <a href="/windows-server/storage/storage-spaces/storage-spaces-direct-overview">Storage Spaces Direct in Windows Server 2016</a>.</p>
+</li>
+<li><p><strong>SQL</strong> – The following options are viable:</p>
+<ul>
+<li>A highly available SSD setup</li>
+<li>A SAN that is optimized for online transaction processing (OLTP) throughputs</li>
+<li>High-performance direct-attached storage (DAS)</li>
+</ul>
+</li>
+<li><p><strong>SQL Server and data management IOPS</strong> – The storage for both data management and SQL Server should have at least 2,000 IOPS. Production IOPS depends on many factors. For more information, see <a href="hardware-sizing-on-premises-environments.html">Hardware sizing requirements for on-premises environments</a>.</p>
+</li>
+<li><p><strong>VM IOPS</strong> – Each VM should have at least 100 write IOPS.</p>
+</li>
+</ul>
+<h2 id="virtual-host-requirements">Virtual host requirements</h2>
+<p>When you set up the virtual hosts for an environment, see the guidelines in <a href="/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation">Plan and prepare your Service Fabric cluster</a> and <a href="/azure/service-fabric/service-fabric-cluster-resource-manager-cluster-description">Describing a service fabric cluster</a>. Each virtual host should have enough cores for the infrastructure that is being sized. Multiple advanced configurations are possible, where SQL Server resides on physical hardware but everything else is virtualized. If SQL Server is virtualized, the disk subsystem should be a fast SAN or the equivalent. In all cases, make sure that the basic setup of the virtual host is highly available and redundant. In all cases, when virtualization is used, no VM snapshots should be taken.</p>
+<p>Finance + Operations falls under Microsoft's standard support policy regarding operation on non-Microsoft virtualization platforms – specifically VMWare. For more information, read <a href="https://support.microsoft.com/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw">Support policy for Microsoft software</a>. In short, we support our products in this environment, but if we are asked to investigate an issue, we may ask the customer to first reproduce the problem without the virtualization platform or on the Microsoft virtualization platform.</p>
+<h2 id="software-requirements-for-all-server-computers">Software requirements for all server computers</h2>
+<p>The following software must be present on a computer before any Finance + Operations components can be installed:</p>
+<ul>
+<li>The Microsoft .NET Framework. See <a href="../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md#setup">Deployment setup</a> for version information.</li>
+<li>Service Fabric</li>
+</ul>
+<p>For more information, see <a href="/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation">Plan and prepare your Service Fabric cluster</a>.</p>
+<h2 id="supported-server-operating-systems">Supported server operating systems</h2>
+<p>The following table lists the server operating systems that are supported.</p>
+<table>
+<thead>
+<tr>
+<th>Operating system</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Windows Server 2016 Datacenter or Standard</td>
+<td>These requirements are for the database and the Service Fabric cluster that hosts AOS.<p>Only en-US OS installations are supported.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="software-requirements-for-database-servers">Software requirements for database servers</h2>
+<ul>
+<li>Only 64-bit versions of SQL Server 2016 are supported.</li>
+<li>Only <strong>SQL_Latin1_General_CP1_CI_AS</strong> is valid for the server and database collation. For more information about how to select a collation for a SQL Server database, see the <a href="/sql/sql-server/sql-server-technical-documentation">SQL Server documentation</a>.</li>
+<li>In a production environment, we recommend that you install the latest cumulative update (CU) for the version of SQL Server that you're using.</li>
+</ul>
+<p>The following table lists the SQL Server versions that are supported for the databases. For more information, see the minimum hardware requirements for <a href="https://www.microsoft.com/sql-server/sql-server-2016">SQL Server</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft SQL Server 2016 Standard Edition or Enterprise Edition</td>
+<td>For the hardware requirements for SQL Server 2016, see <a href="/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server">Hardware and Software Requirements for Installing SQL Server 2016</a>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="software-requirements-for-application-object-server-aos">Software requirements for Application Object Server (AOS)</h2>
+<ul>
+<li>SQL Server Integration Services (SSIS)</li>
+</ul>
+<h2 id="software-requirements-for-reporting-server-bi">Software requirements for Reporting Server (BI)</h2>
+<ul>
+<li>SQL Server Reporting Services (SSRS)</li>
+</ul>
+<h2 id="software-requirements-for-client-computers">Software requirements for client computers</h2>
+<p>Users can access Finance + Operations by using the most recent versions of these popular browsers:</p>
+<ul>
+<li>Microsoft Edge (recommended: <a href="https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf">Chromium-based Edge</a>)</li>
+<li>Google Chrome</li>
+<li>Apple Safari</li>
+<li>Internet Explorer 11 (deprecated, not recommended)</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge.</p>
+</div>
+<h3 id="internal-explorer-deprecation">Internal Explorer deprecation</h3>
+<p>Support for Internet Explorer 11 was deprecated in December 2020, with end of support for the browser occurring in August 2021. For more information, see <a href="../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps">Internet Explorer deprecation announcement</a>.</p>
+<p>Starting in version 10.0.20, users accessing Finance and Operations apps with Internal Explorer (IE) will start seeing notifications about the end of support for that browser. Before August 17, 2021, IE users will see an informational message that IE support is soon ending. After that date, IE users will see a warning that support has officially ended. Organizations are encouraged to keep these notifications on unless IE is mandated for your users, in which case you can choose to suppress these notifications by disabling the <strong>Internet Explorer end-of-support notifications</strong> feature and relying on internal processes for migrating your user base to Microsoft Edge or another modern browser.</p>
+<p>The current target for blocking IE usage within Finance and Operations app is April 2022. To prepare organizations and users for that block, starting in January 2022, IE users will start seeing a non-dismissible error message indicating that IE support will soon be blocked. This error message is <strong>not</strong> controlled by the <strong>Internet Explorer end-of-support notifications</strong> feature, and customers will need to contact Microsoft Support if this message needs to be suppressed for their organization.</p>
+<h3 id="special-considerations">Special considerations</h3>
+<ul>
+<li>To enable Task Recorder to capture screenshots and include them in Microsoft Word documents that are generated, you must install a pre-release Chrome extension.</li>
+<li>The Workflow Editor and Report Designer for Financial reporting are started as ClickOnce applications. They require a 64-bit-compatible operating system. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications out of the box. If you're using Chrome, you must install a ClickOnce extension, such as <a href="https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc">Meta4</a> to use ClickOnce applications. If you use Chrome in incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.</li>
+<li>To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.</li>
+</ul>
+<h2 id="software-requirements-for-active-directory-federation-services">Software requirements for Active Directory Federation Services</h2>
+<p>Active Directory Federation Services (AD FS) on Windows Server 2016 is required.</p>
+<p>The domain controller must be Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more. For more information about domain functional levels, see the following pages:</p>
+<ul>
+<li><a href="/previous-versions/windows/it-pro/windows-server-2003/cc787290(v=ws.10)">What Are Active Directory Functional Levels</a></li>
+<li><a href="/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10)">Understanding Active Directory Domain Services Functional Levels</a></li>
+<li><a href="../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust">Full 2-way trust</a></li>
+</ul>
+<h2 id="supported-microsoft-office-applications">Supported Microsoft Office applications</h2>
+<p>The following Microsoft Office applications are supported in on-premises deployments:</p>
+<ul>
+<li>To run the Microsoft Excel and Microsoft Word add-ins, you must have Microsoft Office 2016 for Windows (or newer) installed. For more information about version requirements, see <a href="../../dev-itpro/office-integration/office-integration-troubleshooting.md">Troubleshoot the Office integration</a>.</li>
+<li>To view documents that are generated by the Export to Excel or Export to Word functionality, you must have Microsoft Office 2007 or later installed.</li>
+</ul>
+<h2 id="hardware-and-software-requirements-for-commerce-components">Hardware and software requirements for Commerce components</h2>
+<p>Currently, Finance + Operations doesn't include the Commerce components.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/system-requirements-on-prem.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

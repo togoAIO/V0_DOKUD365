@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>What's new or changed in Platform update 29 for Finance and Operations apps (October 2019) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="What's new or changed in Platform update 29 for Finance and Operations apps (October 2019) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="whats-new-or-changed-in-platform-update-29-for-finance-and-operations-apps-october-2019">What's new or changed in Platform update 29 for Finance and Operations apps (October 2019)</h1>
+
+
+<p>This topic describes features that are new or changed in Platform update 29 for Finance and Operations apps. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see <a href="whats-new-platform-update-28.html#additional-resources">Additional resources</a>.</p>
+<h2 id="feature-management">Feature management</h2>
+<p>The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. In Platform update 29, additional features have been added, including:</p>
+<ul>
+<li>Enable all features that are not enabled.</li>
+<li>Automatically enable all features after an update.</li>
+<li>Do not allow a feature to be enabled based on a condition, such as an existing config key is turned on.</li>
+<li>Add a button called <strong>Check for updates</strong> that manually searches for new features and adds them to the list of features.</li>
+</ul>
+<p>For more information, see <a href="feature-management/feature-management-overview.html">Feature management overview</a>.</p>
+<h2 id="data-management-job-history-clean-up">Data management job history clean up</h2>
+<p><a href="../../dev-itpro/data-entities/data-import-export-job.md#job-history-clean-up">Job history clean-up functionality</a> in Data management must be used to schedule a periodic cleanup of the execution history. This functionality replaces the existing staging table clean-up functionality, which is now deprecated.</p>
+<h2 id="business-events-catalog-security">Business events catalog security</h2>
+<p><a href="../../dev-itpro/business-events/home-page.md#role-based-security-for-business-events">Role-based security</a> can be now applied to individual business events in the business event catalog. When this security is enabled and configured, users will be able to only view and subscribe to business events to which their roles have access. This security also applies to integration scenarios, such as Microsoft Flow.</p>
+<h2 id="attachment-recovery">Attachment recovery</h2>
+<p>An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For details, see <a href="../organization-administration/configure-document-management.html">Configure document management</a>.</p>
+<h2 id="session-idle-timeout">Session idle timeout</h2>
+<p>The session idle timeout is the amount of time a user can be inactive before the user's session times out and is closed. With Platform update 29, the web browser session timeout setting is exposed in the user interface and is optimized for a default value of 30 minutes instead of 60 minutes. You can still change and set the value up to 60 minutes, but that may cause an extra load on the system. For more information, see <a href="../../dev-itpro/sysadmin/session-idle-timeout.md">Set the session idle timeout</a>.</p>
+<h2 id="visual-refresh-of-the-web-client-to-align-with-the-fluent-design-language">Visual refresh of the web client to align with the Fluent design language</h2>
+<p>As part of the Dynamics 365 app-wide effort, we are incrementally working toward a visual refresh of the web client to more closely align controls and pages with the Microsoft Fluent design language. An initial set of changes are included in Platform update 29. For more information, see the <a href="/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language">Visual refresh of the web client to align with the Fluent design language</a> topic in the Release Plans.</p>
+<p>As part of this change, the workspace tiles on the dashboard now have a new visual style. See <a href="../../dev-itpro/user-interface/create-icons-workspace-tiles.md">Create icons for workspace tiles</a> for updated guidance on creating images for workspace tiles that are visually aligned to out-of-the-box workspace tiles.</p>
+<h2 id="saved-views-preview">Saved views (Preview)</h2>
+<p>Saved views are now available in preview. This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. For more information about how to enable this feature in a developer environment, see <a href="saved-views.html">Saved views</a>. Also refer to the <a href="../../dev-itpro/user-interface/understanding-saved-views.md">Build forms that fully utilize saved views</a> topic. Note that this preview feature will continue to evolve and change until it becomes generally available.</p>
+<h2 id="new-grid-control-preview">New grid control (Preview)</h2>
+<p>The <a href="/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/user-productivity-new-grid">new grid control</a> is now available in preview. This new grid serves as a replacement for the existing grid control and features faster rendering, smoother scrolling, easier navigation in the grid, and drag-and-drop column reordering. The new grid also allows for grand totals at the bottom of numeric columns in tabular grids in a footer that can be enabled using the right-click context menu from column headers. Once enabled, all tabular and list grids will automatically switch to use the new grid, unless the page has a grid with a non-react extensible control, in which case the existing grid control will be used on that page. Note that this preview feature will continue to evolve and change until it becomes generally available.</p>
+<p>To try out the new grid control, simply add &amp;debug=reactGrid into the URL of your developer environment. Note that flighting will prevent the feature from being operational in other environments.</p>
+<h2 id="workflow-work-item-notifications-in-the-action-center">Workflow work item notifications in the action center</h2>
+<p>Users can now opt-in to receive notifications in the Action Center by going to <strong>Settings</strong> &gt; <strong>User options</strong> &gt; <strong>Workflow</strong> &gt; <strong>Notifications</strong> &gt; <strong>Send notifications to Action Center</strong>. When enabled, the user will receive a notification for each new work item that is assigned to them.</p>
+<h2 id="workflows-can-now-support-reset">Workflows can now support reset</h2>
+<p>Workflows can now support reset from the Workflow History form by optionally implementing the <strong>WorkflowIRecallUnrecoverable</strong> interface. The vendor invoice workflow has used this interface to allow unrecoverable vendor invoice workflows to be recalled and placed in a canceled state.</p>
+<h2 id="workflow-deletion-will-confirm-business-event-subscription-deletions">Workflow deletion will confirm business event subscription deletions</h2>
+<p>When business event subscriptions associated with the workflow are found, a confirmation dialog box will provide a list of any related business event subscriptions so that the user is fully aware of the effects of deleting the workflow.</p>
+<h2 id="improved-payloads-for-workflow-business-events">Improved payloads for workflow business events</h2>
+<p>Standard workflow context has been added to the payloads for all Workflow Business Events including owner, originator, and last note.</p>
+<h2 id="flow-templates-for-workflow-work-item">Flow templates for workflow work item</h2>
+<p>Flow templates have been created to provide a useful starting point for building Flows that facilitate work item completion. For more information, see <a href="../../dev-itpro/business-events/business-events-workflow.md">Workflow business events</a>.</p>
+<h2 id="extensibility-enhancements">Extensibility enhancements</h2>
+<p>The following enhanced extensibility capabilities have been added in Platform update 29:</p>
+<ul>
+<li>Enable extension of WorkflowApproval properties, WorkflowTask properties, and addition of WorkflowOutcomes into a WorkflowTask (Ref# 198831).</li>
+<li>Enable event triggering for fields on forms that come from table field groups (Ref# 247364).</li>
+<li>Enable the use of the FormObservable attribute in class declarations (Ref# 198797).</li>
+<li>Add model name to extension default naming to reduce conflicts (Ref# 300468).</li>
+<li>Enable use of extension table fields in form datasources and security privileges (Ref# 315634).</li>
+<li>Custom privilege for a standard form control should consider needed permission property value set on extension form (Ref# 313650).</li>
+<li>Allow table display methods added via extension to be used as lookup methods (Ref# 243486).</li>
+<li>Enable display methods to be added to Form Datasources via extension (Ref# 256004).</li>
+</ul>
+<h2 id="codelens-for-method-references-in-the-x-editor">CodeLens for method references in the X++ editor</h2>
+<p>The X++ source code editor now takes advantage of the CodeLens functionality of Visual Studio. The number of references to an X++ method is shown in CodeLens right above the method declaration line. You can click on the reference count to find all references to the method.</p>
+<h2 id="additional-resources">Additional resources</h2>
+<h3 id="platform-update-29-bug-fixes">Platform update 29 bug fixes</h3>
+<p>For information about the bug fixes included in each of the updates that are part of Platform update 29, sign in to Lifecycle Services (LCS) and view this <a href="https://fix.lcs.dynamics.com/Issue/Details?kb=4515866&amp;bugId=348252&amp;dbType=3&amp;qc=75eda4912fe476283a638fbb74fe1619ee8d1ac63a506b1197697c1c4693d1fc">KB article</a>.</p>
+<h3 id="dynamics-365-2019-release-wave-2-plan">Dynamics 365: 2019 release wave 2 plan</h3>
+<p>Wondering about upcoming and recently released capabilities in any of our business apps or platform?</p>
+<p>Check out the <a href="/dynamics365-release-plan/2019wave2/">Dynamics 365: 2019 release wave 2 plan</a>. We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.</p>
+<h3 id="removed-and-deprecated-features">Removed and deprecated features</h3>
+<p>The <a href="../../dev-itpro/migration-upgrade/deprecated-features.md">Removed or deprecated features for Finance and Operations</a> topic describes features that have been removed or deprecated.</p>
+<ul>
+<li>A <em>removed</em> feature is no longer available in the product.</li>
+<li>A <em>deprecated</em> feature is not in active development and may be removed in a future update.</li>
+</ul>
+<p>Before any feature is removed from the product, the deprecation notice will be announced in the <a href="../../dev-itpro/migration-upgrade/deprecated-features.md">Removed or deprecated features for Finance and Operations</a> topic 12 months prior to the removal.</p>
+<p>For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-29.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sales tax rates based on the Marginal base and Calculation methods | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Sales tax rates based on the Marginal base and Calculation methods | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="30">Sales tax rates based on the Marginal base and Calculation methods</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="34">This topic explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="36">The Marginal base on the Calculation FastTab on the Sales tax codes page determines which amount is used to pick the appropriate tax rate(s) from the rates in the Sales tax code values page. The amount type in the Marginal base field in combination with the method in the Calculation method field determines the logic to find the correct tax rate(s) for a transaction.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="38">Various combinations of values in these fields produce very different sales tax calculations, as shown by the following examples. The examples use the same tax interval values, which are set up for each tax code in the Sales tax codes values page. To open this page, click Sales tax code &gt; Values in the Sales tax codes page.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="40">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="41">If the Marginal base on one or more of your sales tax codes is based on line amounts or units, the value of the Calculation method field in the General ledger parameters page must be set to Line. |</p>
+</div>
+<h2 id="net-amount-per-line" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="43">Net amount per line</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="44">Select this option to determine sales tax rates based on the net amount for the invoice lines, excluding any other taxes.</p>
+<h3 id="example" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="46">Example</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="48">The sales tax rates are set up in the following intervals.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="50">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="50">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="50">Amount interval</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="50">Tax rate</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="52">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="52">0 - 50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="52">30%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="53">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="53">50 - 100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="53">20%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="54">100 - 0 (&gt; 100)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="54">10%</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="56">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="57">The upper limit of zero (0) in the last interval means that all amounts that exceed 100 are included in the interval.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="59">Marginal base: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="59">Net amount per line</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="61">Calculation method: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="61">Interval</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="63">You buy 8 lamps that cost 25.00 each.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="65">The net amount for the invoice line is 200.00.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="67">The tax is calculated as follows:</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="69">Total sales tax = 50 x 30% + 50 x 20% + 100 x 10% = 15 + 10 + 10 = 35.00</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="71">Total invoice amount = 200.00 + 35.00 = 235.00</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="73"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="73">Variation</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="75">If the invoice has two lines with four items on each line, the net amount on each line is 100.00 and the sales tax is calculated as follows:</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="77">Sales tax line 1 = 50 x 30% + 50 x 20% = 15 + 10 = 25.00</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="79">Sales tax line 2 = 50 x 30% + 50 x 20% = 15 + 10 = 25.00</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="81">Total sales tax = 25.00 + 25.00 = 50.00</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="83">Total invoice amount = 200.00 + 50.00 = 250.00</p>
+<h2 id="net-amount-per-unit" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="85">Net amount per unit</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="86">Select this option to determine sales tax rates based on the value of each unit, excluding any other taxes. When a unit based Marginal base is selected then also a Unit has to be specified for the Sales tax code.</p>
+<h3 id="example-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="88">Example</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="90">The sales tax rates are set up in the following intervals.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="92">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="92">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="92">Amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="92">Tax rate</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="94">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="94">0 - 50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="94">30%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="95">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="95">50 - 100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="95">20%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="96">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="96">100 - 0 (&gt; 100)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="96">10%</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="98">Marginal base: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="98">Net amount per unit</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="100">Calculation method: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="100">Whole amount</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="102">You buy 8 lamps that cost 25.00 each.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="104">The net amount for the invoice line is 200.00.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="106">The tax is calculated as follows:
+Sales tax per unit = 25.00 x 30% = 7.50
+Total sales tax = 7.50 x 8 units = 60.00
+Total invoice amount = 200.00 + 60.00 = 260.00</p>
+<h2 id="net-amount-of-invoice-balance" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="111">Net amount of invoice balance</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="113">Select this option to determine sales tax rates based on the total value for the invoice, excluding any other taxes.</p>
+<h3 id="example-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="115">Example</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="117">The sales tax rates are set up in the following intervals.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="119">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="119">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="119">Amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="119">Tax rate</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="121">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="121">0 - 50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="121">30%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="122">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="122">50 - 100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="122">20%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="123">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="123">100 -0 (&gt; 100)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="123">10%</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="125">Marginal base: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="125">Net amount of invoice balance</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="127">Calculation method: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="127">Interval</strong>
+A sales invoice has 2 lines with 4 lamps on each lines for 25.00 each.
+The net amount of invoice balance is 4 x 25.00 + 4 x 25.00 = 200.00.
+The tax is calculated as follows:
+Total sales tax = 50 x 0.30 + 50 x 0.20 + 100 x 0.10 = 15 + 10 + 10 = 35.00
+Total invoice amount = 200.00 + 35.00 = 235.00</p>
+<h2 id="gross-amount-per-line" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="134">Gross amount per line</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="136">Select this option to determine sales tax rates based on the value of the line including all other taxes for that line.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="138">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="139">In a sales tax group, you can only have one sales tax code with this selection in the Marginal base field.</p>
+</div>
+<h3 id="example-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="141">Example</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="143">The sales tax rates are set up in the following intervals.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="145">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="145">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="145">Amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="145">Tax rate</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="147">0 - 50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="147">30%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="148">50 - 100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="148">20%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="149">100 - 0 (&gt; 100)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="149">10%</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="151">Marginal base: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="151">Gross amount per line</strong>
+Calculation method: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="152">Interval</strong>
+Additionally there is another tax code calculated for a special duty of 5.00 on each lamp. The duty is added to the net amount before the sales tax calculation.
+You buy 8 lamps that cost 25.00 each. The net amount for the invoice line is 200.00.
+The gross amount for the invoice line is 8 x 25.00 + 8 x 5.00 = 240.00.
+The tax is calculated as follows:
+Total sales tax = 50 x 0.30 + 50 x 0.20 + 140 x 0.10 = 15 + 20 + 14 = 39.00
+Total duty = 5.00 x 8 = 40.00
+Total invoice amount = 200.00 + 39.00 + 40.00 = 279.00</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="161"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="161">Variation</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="163">If the invoice is created by using 2 invoice lines with 4 items on each line, the net amount per invoice line is 100.00.
+The gross amount (including the duty of 4 x 5.00) per invoice line would be 120.00, and the sales tax is created as follows:
+Sales tax invoice line 1 = 50 x 0.30 + 50 x 0.20 + 20 x 0.10 = 15 + 10 + 2 = 27.00
+Sales tax invoice line 2 = 50 x 0.30 + 50 x 0.20 + 20 x 0.10 = 15 + 10 + 2 = 27.00
+Total sales tax = 27.00 + 27.00 = 54.00 Total duty = 5.00 x 8 = 40.00
+Total invoice amount = 200.00 + 54.00 + 40.00 = 294.00</p>
+<h2 id="gross-amount-per-unit" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="170">Gross amount per unit</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="172">Select this option to determine sales tax rates based on the value of the unit including any other taxes.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="174">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="175">In a sales tax group, you can only have one sales tax code with this selection in the Marginal base field.</p>
+</div>
+<h3 id="example-4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="177">Example</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="179">The sales tax rates are set up in the following intervals.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="181">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="181">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="181">Amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="181">Tax rate</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="183">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="183">0 - 50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="183">30%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="184">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="184">50 - 100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="184">20%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="185">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="185">100 - 0 (&gt; 100)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="185">10%</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="187">Marginal base: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="187">Gross amount per unit</strong>
+There is a special duty of 5.00 on each lamp. The duty is added to the net amount before the sales tax calculation.
+You buy 8 lamps that cost 25.00 each.
+The gross amount per unit is 30.00.
+The tax is calculated as follows:
+Sales tax per unit = 30 x 30% = 9.00
+Total sales tax = 9.00 x 8 = 72.00
+Total duty = 5.00 x 8 = 40.00
+Total invoice amount = 200.00 + 72.00 + 40.00 = 312.00</p>
+<h2 id="invoice-total-incl-other-sales-tax-amounts" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="197">Invoice total incl. other sales tax amounts</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="199">Select this option to determine sales tax rates based on the total value for the invoice including any other taxes.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="200">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="201">In a sales tax group, you can only have one sales tax code with this selection in the Marginal base field</p>
+</div>
+<h3 id="example-5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="203">Example</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="205">The sales tax rates are set up in the following intervals.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="207">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="207">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="207">Amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="207">Tax rate</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="209">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="209">0 - 50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="209">30%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="210">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="210">50 - 100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="210">20%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="211">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="211">100 - 0 (&gt; 100)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="211">10%</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="213">Marginal base: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="213">Invoice total incl. other sales tax amounts</strong>
+Calculation method: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="214">Interval</strong><br>
+There is a special duty of 5.00 on each lamp. The duty is added to the net amount before the sales tax calculation.
+You buy 8 lamps that cost 25.00 each. The net amount for the invoice is 200.00.
+The gross amount for the invoice is 200.00 + (8 x 5.00) = 240.00.
+The tax is calculated as follows:
+Total sales tax = 50 x 0.30 + 50 x 0.20 + 140 x 0.10 = 15 + 10 + 14 = 39.00
+Total duty = 5.00 x 8 = 40.00
+Total invoice amount = 200.00 + 39.00 + 40.00 = 279.00</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="223">For more information, see <a href="whole-amount-interval-options-sales-tax-codes.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="223">Whole amount and Interval calculation options for sales tax codes</a> and <a href="sales-tax-calculation-methods-origin-field.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md" sourcestartlinenumber="223">Sales tax calculation methods in the Origin field</a>.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/marginal-base-field.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

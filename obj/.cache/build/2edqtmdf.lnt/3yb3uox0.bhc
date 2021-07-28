@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure Electronic invoicing in Regulatory Configuration Services (RCS) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure Electronic invoicing in Regulatory Configuration Services (RCS) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configure-electronic-invoicing-in-regulatory-configuration-services-rcs" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="30">Configure Electronic invoicing in Regulatory Configuration Services (RCS)</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="34">This topic provides information about the configuration capabilities of Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS).</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="36">It is through the configuration capabilities that Electronic invoicing helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web services, the configuration capabilities also help you meet the requirements for exchanging messages with a web services, without doing any code.</p>
+<h2 id="electronic-reporting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="38">Electronic reporting</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="40">Electronic reporting (ER) supports Electronic invoicing.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="42">The data model mapping and formats are configurable components that are created and maintained through ER and used in Electronic invoicing. The ER format designer is the tool for creating and maintaining file formats. It's used to configure the electronic invoicing features.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="44">For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="44">Electronic reporting (ER) overview</a>.</p>
+<h2 id="electronic-invoicing-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="46">Electronic invoicing features</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="48">The electronic invoicing features are responsible for generating electronic invoices through Electronic invoicing. They encapsulate the configuration rules and use them to process the data that Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management send to Electronic invoicing and to electronic invoices.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="50">The features also support scenarios where compliance with file format specifications is required and the output is a standalone electronic file. In most cases, the file format specifications are published by the tax authority.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="52">Finally, the features support the exchange of messages with external web services that are hosted either by the tax authority or by some accredited party, and requests for authorization or an approval stamp in the electronic invoice.</p>
+<h3 id="availability-of-electronic-invoicing-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="54">Availability of electronic invoicing features</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="56">Availability of the electronic invoicing features depends on the country or region. Although some features are generally available, others are in preview.</p>
+<h4 id="generally-available-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="58">Generally available features</h4>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="60">The following table shows the electronic invoicing features that are generally available.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="62">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="62">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="62">Country/region</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="62">Feature name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="62">Business document</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="64">Egypt</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="64">Egyptian electronic invoice (EG)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="64">Sales invoices and project invoices</td>
+</tr>
+</tbody>
+</table>
+<h4 id="preview-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="66">Preview features</h4>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="68">The following table shows the electronic invoicing features that are currently in preview.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="70">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="70">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="70">Country/region</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="70">Feature name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="70">Business document</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="72">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="72">Austria</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="72">Austrian electronic invoices (AT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="72">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="73">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="73">Belgium</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="73">Belgian electronic invoice (BE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="73">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="74">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="74">Brazil</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="74">Brazilian NF-e (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="74">Fiscal document model 55, correction letters, cancellations, and discards</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="75">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="75">Brazil</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="75">Brazilian NFS-e ABRASF Curitiba (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="75">Service fiscal documents</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="76">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="76">Denmark</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="76">Danish electronic invoice (DK)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="76">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="77">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="77">Estonia</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="77">Estonian electronic invoice (EE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="77">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="78">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="78">Finland</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="78">Finnish electronic invoice (FI)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="78">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="79">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="79">France</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="79">French electronic invoice (FR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="79">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="80">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="80">Germany</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="80">German electronic invoice (DE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="80">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="81">Italy</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="81">FatturaPA (IT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="81">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="82">Mexico</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="82">Mexican CFDI (MX)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="82">Sales invoices, packing slips, inventory transfers, payment complements, and cancellations</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="83">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="83">Netherlands</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="83">Dutch electronic invoice (NL)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="83">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="84">Norway</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="84">Norwegian electronic invoice (NO)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="84">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="85">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="85">Spain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="85">Spanish electronic invoice (ES)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="85">Sales invoices and project invoices</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="86">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="86">Europe</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="86">PEPPOL electronic invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="86">PEPPOL sales invoices and project invoices</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configurable-components-of-electronic-invoicing-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="88">Configurable components of electronic invoicing features</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="90">The electronic invoicing features consist of the following groups of configurable components:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="92">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="92"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="92">Formats</strong> – Formats let you configure what Electronic invoicing must generate when an electronic document becomes an electronic invoice. Formats include the format configuration for the electronic invoice, and for files and messages that are used to submit requests and receive responses when communication with an external web service is required.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="93"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="93">Actions</strong> – Actions let you configure how Electronic invoicing generates the transformation of an electronic document that Finance and Supply Chain Management submitted into an electronic invoice.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="94"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="94">Applicability rules</strong> – Applicability rules let you configure the context that Electronic invoicing must consider to process an electronic invoicing feature.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="95"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="95">Variables</strong> – Variables let you configure the support for the construction of the configuration logic. Variables can work as the input of values to perform a specific action. Alternatively, they can work as an exchange of values between Finance and Supply Chain Management and Electronic invoicing.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="96"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="96">Electronic document model mapping</strong> – The electronic document model mapping lets you configure the ER model mapping. The model mapping defines the data mapping of the abstract invoice that is integrated into Electronic invoicing when electronic documents are submitted.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="97"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="97">Invoice context model</strong> – The invoice context model lets you configure the ER invoice context model and define the context of an electronic invoicing feature.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="98"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="98">Response types</strong> – Response types let you configure what Electronic invoicing must update in Finance and Supply Chain Management as a result of the electronic invoice processing.</li>
+</ul>
+<h3 id="formats" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="100">Formats</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="102">The following lists show the ER format configurations that are available for the electronic invoicing features.</p>
+<h4 id="austrian-at-electronic-invoices-sales-and-project-invoices-for-austria" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="104">Austrian (AT) electronic invoices: Sales and project invoices for Austria</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="106">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="106">OIOUBL Sales invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="107">OIOUBL Project invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="108">OIOUBL Sales credit note</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="109">OIOUBL Project credit note</li>
+</ul>
+<h4 id="belgian-be-electronic-invoice-sales-and-project-invoices-for-belgium" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="111">Belgian (BE) electronic invoice: Sales and project invoices for Belgium</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="113">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="113">UBL Sales invoice BE</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="114">UBL Project invoice BE</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="115">UBL Project credit note BE</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="116">UBL Sales credit note BE</li>
+</ul>
+<h4 id="brazilian-br-nf-e-nf-e-federal-brazil" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="118">Brazilian (BR) NF-e: NF-e Federal (Brazil)</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="120">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="120">NF-e submit export format (BR)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="121">NF-e correction letter export format (BR)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="122">NF-e cancel export format (BR)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="123">NF-e discard export format (BR)</li>
+</ul>
+<h4 id="brazilian-nfs-e-br-nfs-e-abrasf-curitiba-city" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="125">Brazilian NFS-e (BR): NFS-e ABRASF Curitiba city</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="127">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="127">NFS-e ABRASF Curitiba (BR)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="128">NFS-e ABRASF Inquire Curitiba (BR)</li>
+</ul>
+<h4 id="danish-dk-electronic-invoice-sales-and-project-invoices-for-denmark" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="130">Danish (DK) electronic invoice: Sales and project invoices for Denmark</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="132">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="132">OIOUBL Sales invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="133">OIOUBL Project invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="134">OIOUBL Sales credit note</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="135">OIOUBL Project credit note</li>
+</ul>
+<h4 id="dutch-nl-electronic-invoice-sales-and-project-invoices-for-netherlands" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="137">Dutch (NL) electronic invoice: Sales and project invoices for Netherlands</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="139">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="139">UBL Sales invoice NL</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="140">UBL Project invoice NL</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="141">UBL Project credit note NL</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="142">UBL Sales credit note NL</li>
+</ul>
+<h4 id="egyptian-eg-electronic-invoice-sales-and-project-invoices-for-egypt" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="144">Egyptian (EG) electronic invoice: Sales and project invoices for Egypt</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="146">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="146">Sales invoice (EG)(Invoicing)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="147">Project invoice (EG)(Invoicing)</li>
+</ul>
+<h4 id="estonian-ee-electronic-invoice-sales-and-project-invoices-for-estonia" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="149">Estonian (EE) electronic invoice: Sales and project invoices for Estonia</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="151">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="151">Sales invoice (EE)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="152">Project invoice (EE)</li>
+</ul>
+<h4 id="finnish-fi-electronic-invoice-sales-and-project-invoices-for-finland" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="154">Finnish (FI) electronic invoice: Sales and project invoices for Finland</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="156">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="156">Sales invoice (FI)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="157">Project invoice (FI)</li>
+</ul>
+<h4 id="french-fr-electronic-invoice-sales-and-project-invoices-for-france" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="159">French (FR) electronic invoice: Sales and project invoices for France</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="161">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="161">UBL Sales invoice FR</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="162">UBL Project invoice FR</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="163">UBL Project credit note FR</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="164">UBL Sales credit note FR</li>
+</ul>
+<h4 id="german-de-electronic-invoice-sales-and-project-invoices-for-germany" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="166">German (DE) electronic invoice: Sales and project invoices for Germany</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="168">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="168">Sales invoice (DE)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="169">Project invoice (DE)</li>
+</ul>
+<h4 id="italian-it-electronic-invoice-sales-and-project-invoices-for-italy" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="171">Italian (IT) electronic invoice: Sales and project invoices for Italy</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="173">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="173">Sales invoice (IT)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="174">Project invoice (IT)</li>
+</ul>
+<h4 id="mexican-mx-cfdi-cfdi-for-mexico" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="176">Mexican (MX) CFDI: CFDI for Mexico</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="178">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="178">CFDI invoice format (MX)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="179">CFDI Packing slip (MX)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="180">CFDI Inventory transfer (MX)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="181">CFDI payment format (MX)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="182">CFDI invoice cancel format (MX)</li>
+</ul>
+<h4 id="norwegian-no-electronic-invoice-sales-and-project-invoices-for-norway" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="184">Norwegian (NO) electronic invoice: Sales and project invoices for Norway</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="186">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="186">OIOUBL Sales invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="187">OIOUBL Project invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="188">OIOUBL Sales credit note</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="189">OIOUBL Project credit note</li>
+</ul>
+<h4 id="peppol-electronic-invoice-peppol-sales-and-project-invoices" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="191">PEPPOL electronic invoice: PEPPOL sales and project invoices</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="193">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="193">PEPPOL Sales invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="194">PEPPOL Project invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="195">PEPPOL Sales credit note</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="196">PEPPOL Project credit note</li>
+</ul>
+<h4 id="spanish-es-electronic-invoice-sales-and-project-invoices-for-spain" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="198">Spanish (ES) electronic invoice: Sales and project invoices for Spain</h4>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="200">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="200">Sales invoice (ES)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="201">Project invoice (ES)</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="203">In addition to the ER format configurations that are available out of the box to use with the Electronic Invoicing service, you can also create your own ER format configurations. However, the format configurations that are created to use with Electronic Invoicing features don't support direct reference to Finance or Supply Chain Management tables or any of the corresponding metadata. Only references to the ER model mapping are supported.</p>
+<h3 id="actions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="205">Actions</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="207">The following table lists the available actions, and whether they are currently generally available or still in preview.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="209">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="209">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="209">Action</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="209">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="209">Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="211">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="211">Transform document</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="211">Run Electronic Reporting format to transform the document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="211">Generally available</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="212">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="212">Sign xml document</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="212">Sign xml documents with digital signature.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="212">In preview</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="213">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="213">Sign json document for Egyptian Tax Authority</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="213">Sign json documents with digital signature for Egyptian Tax Authority.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="213">Generally available</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="214">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="214">Integrate with Egyptian ETA service</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="214">Communicate with Egyptian Tax Authority.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="214">Generally available</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="215">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="215">Call Brazilian SEFAZ Service</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="215">Integrate with Brazilian SEFAZ service for fiscal document submission.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="215">In preview</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="216">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="216">Call Mexican PAC Service</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="216">Integrate with Mexican PAC service for CFDI submission.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="216">In preview</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="217">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="217">Process response</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="217">Analyze the response received from the web service call.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="217">Generally available</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="218">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="218">Use MS Power Automate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="218">Integrate with flow built in Microsoft Power Automate.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="218">In preview</td>
+</tr>
+</tbody>
+</table>
+<h3 id="applicability-rules" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="220">Applicability rules</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="222">Applicability rules are configurable clauses that are defined at the Electronic invoicing feature level. The rules are configured to provide a context for execution of electronic invoicing features through the Electronic Invoicing capability set.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="224">When a business document from Finance or Supply Chain Management is submitted to electronic invoicing, the business document doesn't carry an explicit reference that allows the Electronic Invoicing capability set to call a particular electronic invoicing feature to process the submission.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="226">Nevertheless, when properly configured, the business document contains the necessary elements that allow electronic invoicing to resolve which electronic invoicing feature must be selected and then generate the electronic invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="228">Applicability rules allow the Electronic Invoicing capability set to find the exact electronic invoicing features that must be used to process the submission. This is done by matching the contents from the submitted business document with the clauses from the Applicability rules.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="230">For example, two electronic invoicing features with related Applicability rules are deployed into the Electronic Invoicing capability set.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="232">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="232">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="232">Electronic invoicing feature</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="232">Applicability rules</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="234">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="234">A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="234"><p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="235">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="235">B</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="235"><p>Country = MX</p><p>and</p><p>Legal entity = MXMF</p></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="237">If a business document from Finance or Supply Chain Management is submitted to the Electronic Invoicing capability set, the business document contains the following attributes filled as:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="239">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="239">Country = BR</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="240">Legal entity = BRMF</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="242">The Electronic Invoicing capability set will select the electronic invoicing feature <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="242">A</strong> to process the submission and generate the electronic invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="244">In the same way, if the business document contains:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="246">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="246">Country = MX</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="247">Legal entity = MXMF</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="249">Electronic invoicing feature <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="249">B</strong> is selected to generate the electronic invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="251">The configuration of Applicability rules can't be ambiguous. This means that two or more electronic invoicing features can't have the same clauses, otherwise it will lead to no selection. If there is a duplication of electronic invoicing features, to avoid ambiguity, use additional clauses to allow the Electronic Invoicing capability set to distinguish between the two electronic invoicing features.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="253">For example, consider electronic invoicing feature <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="253">C</strong>. This feature is a copy of electronic invoicing feature <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="253">A</strong>.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="255">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="255">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="255">Electronic invoicing feature</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="255">Applicability rules</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="257">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="257">A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="257"><p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="258">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="258">C</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="258"><p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="260">In this example, feature <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="260">C</strong> is in front of a business document submission that contains the following:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="262">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="262">Country = BR</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="263">Legal entity = BRMF</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="265">The Electronic Invoicing capability can't distinguish which electronic invoicing feature must be used to process the submission because the submissions contain the exact same clauses.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="267">To create a distinction between the two features through Applicability rules, a new clause must be added to one of the features to allow the Electronic Invoicing capability set to select the proper electronic invoicing feature.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="269">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="269">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="269">Electronic invoicing feature</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="269">Applicability rules</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="271">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="271">A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="271"><p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="272">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="272">C</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="272"><p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p><p>and</p><p>Model=55</p></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="274">To support creating more complex clauses, the following resources are available:</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="276">Logic operators:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="277">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="277">And</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="278">Or</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="280">Operators types:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="281">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="281">Equal</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="282">Not equal</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="283">Greater than</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="284">Less than</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="285">Greater than or equal to</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="286">Less than or equal to</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="287">Contains</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="288">Begins with</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="290">Data types:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="291">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="291">String</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="292">Number</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="293">Boolean</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="294">Date</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="295">UUID</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="297">Capability to group and ungroup clauses.
+The example looks like this.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="300">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="300">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="300">Electronic invoicing feature</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="300">Applicability rules</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="302">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="302">C</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="302"><p>Country = BR</p><p>and</p><p>( Legal entity = BRMF</p><p>or</p><p>Model=55)</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="configuration-providers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="305">Configuration providers</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="307">Configuration providers provide the electronic invoicing features and their ER components, such as the model mapping, format configuration, and context model. They publish the electronic invoicing features and ER components in the associated Global repository. From there, other organizations can download them.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="309">Before you configure the electronic invoicing features through RCS, you must configure your own organization as a configuration provider in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="309">Electronic reporting</strong> module. For information about how to set a configuration provider to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="309">Active</strong>, see <a href="../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="309">Create configuration providers and mark them as active</a>.</p>
+<h2 id="viewing-electronic-invoicing-features-in-the-global-repository" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="311">Viewing electronic invoicing features in the Global repository</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="313">To browse the electronic invoicing features that are available in the Global repository for a specific configuration provider, sync your organization's RCS instance. After synchronization is completed, the list of available electronic invoicing features is updated.</p>
+<h2 id="importing-electronic-invoicing-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="315">Importing electronic invoicing features</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="317">Before you use or configure the electronic invoicing features, you must import them into your organization's RCS instance. The import operation creates a local copy of the features and copies all the ER artifacts that the features use (for example, format configurations and model configurations) to your organization's RCS instance.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="319">You can import the electronic invoicing features from any configuration provider.</p>
+<h2 id="creating-electronic-invoicing-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="321">Creating electronic invoicing features</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="323">You can create an electronic invoicing feature from scratch, or you can derive it from another electronic invoicing feature.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="325">When you create an electronic invoicing feature from scratch, you must manually add the ER components (for example, feature version configurations and other configurations, such as the feature version setup and application setup). When you create a feature by deriving it from another feature, the new feature inherits all configurations from the original.</p>
+<h2 id="electronic-invoicing-feature-version" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="327">Electronic invoicing feature version</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="329">The electronic invoicing features are versioned. When a new version is created, the version number is automatically incremented. An &quot;effective from&quot; date can be defined for the new version.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="331">Electronic invoicing feature versions follow a lifecycle that has up to three statuses:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="333">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="333"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="333">Draft</strong> – If a feature version is in this status, you can edit its configuration attributes and any of its artifacts (for example, file format configurations).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="334"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="334">Complete</strong> – If a feature version is in this status, it has been published to the Global repository that is associated with your organization. You can no longer edit the feature version or any of the ER components.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="335"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="335">Published</strong> – If a feature version is in this status, it has been published to Electronic invoicing. You can no longer edit the feature version or any of the ER components.</li>
+</ul>
+<h3 id="feature-configurations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="337">Feature configurations</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="339">Feature configurations hold all the ER format configurations that the electronic invoicing features use. All the electronic files that an electronic invoicing feature uses during processing come from the format configurations that have been added to the feature configurations of that feature.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="341">From the feature configurations, you can access the ER format designer, which is the ER tool that is used to create format configurations.</p>
+<h3 id="feature-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="343">Feature setup</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="345">Feature setups are used in combination with feature configurations. Each feature setup encapsulates a set of actions, applicability rules, and variables that provide the expected behavior so that an electronic invoicing feature can meet a specific requirement of the electronic invoice.</p>
+<h3 id="application-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="347">Application setup</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="349">The application setup must be associated with a previously created connected application.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="351">Through the application setup, you can configure the part of an electronic invoicing feature that must be done in Finance and Supply Chain Management. At least three configurable components are mandatory, regardless of the electronic invoicing feature:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="353">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="353"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="353">Table name</strong> – The entity in Finance and Supply Chain Management that holds the posted invoices, and that the electronic invoicing feature is based on.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="354"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="354">Context</strong> – The name of the invoice context model that was configured through ER.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="355"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="355">Business document mapping</strong> – The name of the invoice mapping model that was configured through ER.</li>
+</ul>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="357">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="358">The configuration that is entered in the application setup can be viewed in Finance and Supply Chain Management. Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="358">Organization administration &gt; Setup &gt; Electronic document parameter</strong>. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="358">Electronic document</strong> tab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="358">Deploy</strong>, and then select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="358">Connected application</strong> option.</p>
+</div>
+<h3 id="deploying-feature-versions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="360">Deploying feature versions</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="362">In RCS, you use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="362">Deploy</strong> command to target-publish an electronic invoicing feature version. Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="362">Deploy</strong>, and then select one of the following options to define the target of the deployment:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="364">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="364"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="364">Service environment</strong> – When the target of the deployment is the service environment, the electronic invoicing feature version is published to the service environment. Electronic invoicing is then ready to receive and process electronic documents that Finance and Supply Chain Management send.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="365"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="365">Connected application</strong> – When the target of the deployment is the connected application, the configuration that is provided by the application setup is written in the Finance and Supply Chain Management instance that was previously associated with it.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="367">Only electronic invoicing feature versions that have a status of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="367">Completed</strong> can be deployed to either a service environment or a connected application.</p>
+<h3 id="removing-feature-versions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="369">Removing feature versions</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="371">In RCS, you use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="371">Undeploy</strong> command to remove a specific electronic invoicing feature version from a service environment in Electronic invoicing.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="373">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="374">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="374">Undeploy</strong> command works only in service environments. It doesn't remove electronic invoicing feature versions from connected applications.</p>
+</div>
+<h3 id="rebasing-electronic-invoicing-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="376">Rebasing electronic invoicing features</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="378">When one electronic invoicing feature is derived from another, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="378">Rebase</strong> command updates the derived feature with the changes that have been introduced in the original feature.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="380">Additional resources</h2>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="382">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="382"><a href="e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md" sourcestartlinenumber="382">Issue electronic invoices in Finance and Supply Chain Management</a></li>
+</ul>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-configuration-rcs.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

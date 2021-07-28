@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Set up payment fees for TDS authority payments | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Set up payment fees for TDS authority payments | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="set-up-payment-fees-for-tds-authority-payments">Set up payment fees for TDS authority payments</h1>
+
+
+<p>This topic explains how to set up payment fees that are charged for Tax Deducted at Source (TDS) authority payments.</p>
+<ol>
+<li><p>Go to <strong>Accounts payable &gt; Payment setup &gt; Payment fee</strong>.</p>
+<p><a href="media/apac-ind-TDS-28.png"><img src="media/apac-ind-TDS-28.png" alt="Payment fee page."></a></p>
+</li>
+<li><p>Select <strong>New</strong> to create a payment fee, and enter the required details.</p>
+</li>
+<li><p>In the <strong>Fee type</strong> field, select the type of payment fee:</p>
+<ul>
+<li><strong>None</strong></li>
+<li><strong>Interest</strong> – Interest is charged on late payments that are made to the TDS authority vendor.</li>
+<li><strong>Others</strong> – Other charges are charged on late payments that are made to the TDS authority vendor.</li>
+</ul>
+<p>If you select <strong>Interest</strong> or <strong>Others</strong>, the <strong>Charge</strong> field is automatically set to <strong>Ledger</strong>.</p>
+</li>
+<li><p>If you selected <strong>Interest</strong> or <strong>Others</strong> in the <strong>Field type</strong> field, in the <strong>Main account</strong> field, select the ledger account to post the interest or other charges to.</p>
+</li>
+<li><p>Enter the other required details.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Payment fee setup</strong> to open the <strong>Payment fee setup</strong> page, where you can set up payment fees for various combinations of banks, methods of payment, payment specifications, currencies, and date intervals.</p>
+<p><a href="media/apac-ind-TDS-21.png"><img src="media/apac-ind-TDS-21.png" alt="Payment fee setup page."></a></p>
+</li>
+<li><p>On the <strong>Overview</strong> tab, in the <strong>Groupings</strong> field, specify which banks you're setting up the payment fee for:</p>
+<ul>
+<li><strong>Table</strong> – The fee is valid for a specific bank account.</li>
+<li><strong>Group</strong> – The fee is valid for a specific bank group.</li>
+<li><strong>All</strong> – The fee is valid for all the bank accounts.</li>
+</ul>
+</li>
+<li><p>If you selected <strong>Table</strong> or <strong>Group</strong> in the <strong>Groupings</strong> field, in the <strong>Bank relation</strong> field, select the specific bank account or bank group that you're setting up the payment fee for.</p>
+</li>
+<li><p>In the <strong>Method of payment</strong> field, select the method of payment for the payment of fees.</p>
+</li>
+<li><p>In the <strong>Payment specification</strong> field, select or enter the payment specification code that was generated on the <strong>Payment specification</strong> page.</p>
+<ul>
+<li>The Payment specification is used with electronic fund transfer methods of payment.</li>
+</ul>
+</li>
+<li><p>In the <strong>Payment currency</strong> field, select the currency that activates the fee. Only transactions that use the selected currency can activate the fee. If you leave this field blank, all currencies activate the fee.</p>
+</li>
+<li><p>In the <strong>Percentage/Amount</strong> field, select the calculation method. The options are <strong>Amount</strong>, <strong>Percent</strong>, and <strong>Interval</strong>.</p>
+</li>
+<li><p>In the <strong>Fee amount</strong> field, specify the fee amount as either a percentage of the payment or the amount for one payment.</p>
+</li>
+<li><p>In the <strong>Fee currency</strong> field, specify the currency code for the fee.</p>
+</li>
+<li><p>Select the <strong>General</strong> tab to view or modify the details for the selected bank account.</p>
+<p><a href="media/apac-ind-TDS-22.png"><img src="media/apac-ind-TDS-22.png" alt="General tab."></a></p>
+</li>
+<li><p>In the <strong>Minimum</strong> field, enter the minimum transaction amount that activates the fee.</p>
+</li>
+<li><p>In the <strong>Maximum</strong> field, enter the maximum transaction amount that activates the fee.</p>
+</li>
+<li><p>In the <strong>From date</strong> and <strong>To date</strong> fields, define a date range for calculating fees.</p>
+</li>
+<li><p>In the <strong>Minimum fee</strong> field, specify the amount of the fee as either a percentage of the payment or the amount for one payment.</p>
+</li>
+<li><p>In the <strong>Sales tax group</strong> field, select the sales tax group to use to calculate the sales tax for the fee amount.</p>
+</li>
+<li><p>In the <strong>Item sales tax group</strong> field, select the item sales tax group to use to calculate the item sales tax for the fee amount.</p>
+</li>
+<li><p>Select the <strong>Interval</strong> tab.</p>
+<p><a href="media/apac-ind-TDS-23.png"><img src="media/apac-ind-TDS-23.png" alt="Interval tab."></a></p>
+</li>
+<li><p>In the <strong>Days</strong> field, enter the number of days between the posting date (discounting date) of the payment and the due date of the promissory note.</p>
+</li>
+<li><p>In the <strong>Percentage/Amount</strong> field, select whether the specification is a percentage or a set amount.</p>
+</li>
+<li><p>In the <strong>Fee amount</strong> field, enter the amount of the fee as either a percentage of the payment or the amount for one payment.</p>
+</li>
+<li><p>Close the <strong>Payment fee setup</strong> page.</p>
+</li>
+<li><p>Close the <strong>Payment fee</strong> page.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Formula designer for TDS calculations | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Formula designer for TDS calculations | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="formula-designer-for-tds-calculations">Formula designer for TDS calculations</h1>
+
+
+<p>This topic provides an example of how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code. TDS tax codes are defined in the TDS group that's attached to the transaction. Before designing TDS formulas, complete the basic setup required for TDS as listed in the following steps.</p>
+<ul>
+<li>Set up TDS component groups using the <strong>Withholding tax component groups</strong> page.</li>
+<li>Set up TDS components and attach TDS component group to the TDS components using the <strong>Withholding tax components</strong> page.</li>
+<li>Set up TDS tax codes and attach TDS components to the tax codes using the <strong>Withholding tax codes</strong> page.</li>
+<li>Set up TDS tax groups using the <strong>Withholding tax groups</strong> page. Then attach the TDS tax codes to the tax group, and define the formula, using the <strong>Formula designer</strong> page.</li>
+</ul>
+<p><strong>Example formula</strong></p>
+<p>In this example, the TDS group, Rent, is attached to a purchase invoice that's created for vendor A. The invoice amount is $100,000. Refer to the following table to view the TDS calculation for the invoice.</p>
+<table>
+<thead>
+<tr>
+<th>TDS  group</th>
+<th>TDS tax codes attached to the TDS group</th>
+<th>Value</th>
+<th>Taxable basis  (Formula designer)</th>
+<th style="text-align: center;">Calculation expression  (Formula designer)</th>
+<th>Base amount</th>
+<th>Calculated TDS amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rent</td>
+<td>TDS  (TDS component-TDS)</td>
+<td>10%</td>
+<td>Gross amount</td>
+<td style="text-align: center;"></td>
+<td>100,000</td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>Surcharge  (TDS component-Surcharge)</td>
+<td>10%</td>
+<td>Excl. gross amount</td>
+<td>+TDS</td>
+<td style="text-align: center;">10000</td>
+<td>1,000</td>
+<td></td>
+</tr>
+<tr>
+<td>PE-Cess  (TDS component- PE-Cess)</td>
+<td>2%</td>
+<td>Excl. gross amount</td>
+<td>+TDS+Surcharge</td>
+<td style="text-align: center;">11000</td>
+<td>220</td>
+<td></td>
+</tr>
+<tr>
+<td>SHE Cess  (TDS component- SHE Cess)</td>
+<td>1%</td>
+<td>Excl. gross amount</td>
+<td>+TDS+Surcharge</td>
+<td style="text-align: center;">11000</td>
+<td>110</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Total</strong> <strong>TDS</strong>  <strong>calculated</strong> <strong>for</strong> <strong>the</strong> <strong>invoice</strong></td>
+<td><strong>11,330</strong></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The voucher entries are created as follows.</p>
+<table>
+<thead>
+<tr>
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rent</td>
+<td>100,000</td>
+<td></td>
+</tr>
+<tr>
+<td>Vendor A</td>
+<td></td>
+<td>100,000</td>
+</tr>
+<tr>
+<td>Vendor A</td>
+<td>11,330</td>
+<td></td>
+</tr>
+<tr>
+<td>TDS payable</td>
+<td></td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>Surcharge payable</td>
+<td></td>
+<td>1,000</td>
+</tr>
+<tr>
+<td>PE-Cess payable</td>
+<td></td>
+<td>220</td>
+</tr>
+<tr>
+<td>SHE Cess payable</td>
+<td></td>
+<td>110</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Formula-designer.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

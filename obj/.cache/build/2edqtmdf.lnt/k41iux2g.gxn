@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure financial reports in Excel (Russia) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure financial reports in Excel (Russia) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configure-financial-reports-in-excel-russia" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="28">Configure financial reports in Excel (Russia)</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="32">This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating a financial report in Microsoft Excel format.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="34">Before you read this topic, you should review <a href="../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=%2ffin-and-ops%2ftoc.json" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="34">Create Electronic reporting (ER) configurations</a> and related electronic reporting topics about creating configurations.</p>
+<h2 id="set-up-a-financial-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="36">Set up a financial report</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="38">Set up a financial report so that it has the list of financial report cells and rules for calculating financial reports cells.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="40">Upload data management package settings. For this example, upload the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="40">RU Accounting reporting 5.07 (2016).zip</strong> data management package settings as described in <a href="rus-accounting-reporting.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="40">Accounting reporting in electronic format</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="41">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="41">General ledger &gt; Financial reports setup &gt; Financial reports</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="42">Select the line that has the value <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="42">Баланс</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="42">Report code</strong> column.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="43">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="43">Setup</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="44">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="44">Requisites setup</strong> page, set up calculation rules for report cells, as described in <a href="rus-financial-reports.html#set-up-calculation-rules-for-report-cells" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="44">Financial reporting (Russia)</a>.</li>
+</ol>
+<h2 id="create-an-excel-template-for-the-financial-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="46">Create an Excel template for the financial report</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="48">Create an Excel template for your financial report. At a minimum, you should assign names to all the Excel cells that should have values on the report that is generated.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="50">For an example, download the <a href="/dynamics/s-e/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="50">Excel template example for a Russian balance sheet</a>.</p>
+<h2 id="create-an-er-configuration-for-the-financial-report-in-excel-format" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="52">Create an ER configuration for the financial report in Excel format</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="54">Create an ER configuration format that is based on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="54">Financial reports model</strong> ER model.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="56">Before you complete this procedure, see <a href="../../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=%2ffin-and-ops%2ftoc.json" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="56">ER Design a configuration for generating reports in OPENXML format (November 2016)</a> for information about how to set up an ER configuration that generates a report in Excel format.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="58">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="58"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="58">Download the latest version of the following ER configurations:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="60">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="60">Financial reports model</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="61">Financial reports model mapping (RU)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="62">Balance sheet format Excel example (RU)</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="64">For instructions, see <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="64">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="66"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="66">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="66">Workspaces &gt; Electronic reporting</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="67"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="67">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="67">Reporting configurations</strong> tile.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="68"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="68">Create a format for a financial report in Excel format:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="70">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="70">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="70">Configurations</strong> page, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="70">Financial reports model</strong> ER configuration.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="71"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="71">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="71">Create configuration &gt; Format based on data model Financial reports model</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="72"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="72">Enter a name.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="73">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="73">Format type</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="73">Excel</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="74">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="74">Data model definition</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="74">Financial report</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="75"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="75">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="75">Create configuration</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="76"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="76">Select the new configuration, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="76">Designer</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="77"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="77">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="77">Import</strong> tab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="77">Import from Excel</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="78"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="78">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="78">Import from Excel</strong> dialog box, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="78">Add template</strong>, and then select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="78">Balance sheet.xls</strong> Excel file.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="79">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="79">Create Excel Sheet format element</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="79">Yes</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="80">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="80">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="81"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="81">Review the cells that are created from the names in the Excel template.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="83"><img src="media/rus-format-designer-mapping.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="83" alt="Format mapping cells."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="85"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="85">Close the page.</p>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="87"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="87">Configure the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="87">Balance sheet format Excel example (RU)</strong> ER format:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="89">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="89"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="89">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="89">Configurations</strong> page, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="89">Balance sheet format Excel example (RU)</strong> ER configuration, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="89">Designer</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="90"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="90">Expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="90">Excel = &quot;Balance sheet&quot;</strong> format element and then the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="90">Sheet&lt;стр.1_2&gt;</strong> format element. Review all cells that will contain data in the output for the financial report.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="91"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="91">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="91">Mapping</strong> tab, review the elements of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="91">Financial reports model</strong> that are sources for financial report cells.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="92"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="92">Review the cells from <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="92">DD</strong> through <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="92">PrevPrevYear</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="92">DD</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="92">MM</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="92">YYYY</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="92">Company name</strong>, and so on). Make sure that they are mapped to model elements from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="92">Header</strong> group that contains various information about the organization and report.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="94">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="95">If any of the information about the organization on your financial report isn't in scope <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="95">Financial reports model</strong>, you can follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="97">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="97">If the missed data is external, create format User input parameter.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="98">Create a derived model that is based on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="98">Financial reports model</strong>, and add new model elements. Then create a derived model mapping that is based on <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="98">Financial reports model mapping</strong>, and bind new model elements to Finance data sources.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="100">For more information about how to create ER data models, see <a href="../../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=%2ffin-and-ops%2ftoc.json" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="100">ER Design domain specific data model</a>.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="102">For more information about how to map data model elements to data sources, see the following topics:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="104">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="104"><a href="../../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=%2ffin-and-ops%2ftoc.json" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="104">Define ER model mappings and select data sources for them</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="105"><a href="../../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=%2ffin-and-ops%2ftoc.json" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="105">ER Map data model to selected data sources</a></li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="107"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="107">Review the cells that the financial report values are exported to. For example, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="107">АктивВнеОбАНематАктПояснения</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="107">АктивВнеОбАНематАктСумОтч</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="107">АктивВнеОбАНематАктСумПрдщ</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="107">АктивВнеОбАНематАктСумПрдшв</strong> cells are mapped to the following calculated field: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="107">Calculations.'$Values'(&quot;&lt;Input parameter = Cell name&gt;&quot;).Value</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="107">Calculations.'$Values'(&quot;&lt;Input parameter = Cell code&gt;&quot;).Text</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="109">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="109">Calculations.'$Values'</strong> calculated field contains the value of the financial report cell that has a code that equals the &quot;Input parameter.&quot;</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="111">For more information about the Financial reports model, see <a href="rus-financial-reports.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="111">Financial reporting (Russia)</a>.</p>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="113"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="113">Bind the calculated values of financial report cells to elements of the ER format cells:</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="115">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="116">In the current example, elements are already bound in the format. To complete the steps in the example, you must first unbind the elements.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="118">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="118">АктивВнеОбАНематАктПояснения</strong> ER format cell, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="118">Unbind</strong>.
+Repeat this for the following three ER format cells: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="119">АктивВнеОбАНематАктСумОтч</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="119">АктивВнеОбАНематАктСумПрдщ</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="119">АктивВнеОбАНематАктСумПрдшв</strong>.
+You won't need to do this for your new reports.</p>
+</div>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="122">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="122"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="122">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="122">Mapping</strong> tab, expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="122">Calculations</strong> container, expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="122">$Values</strong> calculated field, and select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="122">Text</strong> element.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="123"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="123">In the list of Excel format cells, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="123">АктивВнеОбАНематАктПояснения</strong> cell, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="123">Bind</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="125"><img src="media/rus-format-designer-mapping-text-string.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="125" alt="Format mapping text string."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="127"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="127">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="127">Mapping</strong> tab, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="127">Value</strong> element.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="128"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="128">In the list of Excel format cells, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="128">АктивВнеОбАНематАктСумОтч</strong> cell, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="128">Bind</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="129"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="129">Repeat the previous two steps for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="129">АктивВнеОбАНематАктСумПрдщ</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="129">АктивВнеОбАНематАктСумПрдшв</strong> Excel cells.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="run-the-financial-report-format" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="132">Run the financial report format</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="134">You can configure the Electronic messages feature to run any ER configuration.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="136">To run the ER format that is based on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="136">Financial reports model</strong>, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="138">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="138"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="138">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="138">General ledger &gt; Inquiries and reports &gt; Financial reports (Russia)</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="139"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="139">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="139">Financial reports (Russia)</strong> dialog box, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="139">Format mapping</strong> field, select the ER format that should be run. For example, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="139">Balance sheet format Excel example (RU)</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="140"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="140">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="140">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="141"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="141">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="141">Electronic report parameters</strong> dialog box, define the report parameters.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="143">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="143">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="143">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="143">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="145">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="145">Signatory first name, Signatory middle name, Signatory last name</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="145">Enter the full name of the signatory.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="146">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="146">To date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="146">Enter the base date of the financial report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="147">Approval date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="147">Enter the approval date of the financial report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="148">Reporting date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="148">Enter the reporting date for the corrective report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="149">Economic activity type code</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="149">Enter the economic activity type code (&quot;ОКВЭД&quot;).</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="150">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="150">Organizational form code</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="150">Enter the organizational form code (&quot;ОКОПФ&quot;).</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="151">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="151">Ownership form code</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="151">Enter the ownership form code (&quot;ОКФС&quot;).</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="152">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="152">Report</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="152">Select the financial report that should be calculated. For this example, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="152">Баланс</strong>.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="154"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="154">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="154">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="155"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md" sourcestartlinenumber="155">Review the Excel report that is generated.</p>
+</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-excel-financial-report.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

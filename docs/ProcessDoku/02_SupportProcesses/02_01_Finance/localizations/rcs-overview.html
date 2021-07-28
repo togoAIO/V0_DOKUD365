@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Regulatory Configuration Service | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Regulatory Configuration Service | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="regulatory-configuration-service">Regulatory Configuration Service</h1>
+
+
+<p>Regulatory Configuration Service (RCS) is a standalone designer and lifecycle management service for no-code/low-code globalization functionality. RCS lets globalization stakeholders extend and customize key globalization areas of tax, e-invoicing, regulatory reporting, banking, and business documents without having to involve developers. This no-code/low-code globalization approach makes globalization easier, faster, and more cost effective to create or extend.</p>
+<p>RCS provides the following capabilities:</p>
+<ul>
+<li>Support for all functionality that is provided by Electronic reporting (ER).</li>
+<li>A prerequisite to configure new globalization microservices.</li>
+<li>Support for Electronic Invoicing. For more information, see <a href="/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-add-on-dynamics-365-ga">Electronic Invoicing</a>.</li>
+<li>Supports for Tax Calculation. For more information, see <a href="/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview">Tax service</a>.</li>
+<li>Support for new globalization feature functionality that simplifies the lifecycle management of multi-component features and provides extra capability to configure actions and set up feature parameters. For more information, see <a href="/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services">Regulatory Configuration Service – simplified globalization feature management for globalization services</a>.</li>
+<li>Support for centralized publication, storage, and sharing of custom configurations in the Global repository to simplify configuration management without requiring the use of Microsoft Dynamics Lifecycle Services (LCS).</li>
+</ul>
+<h2 id="access-rcs">Access RCS</h2>
+<p>You can sign up for or sign in to RCS from the <a href="https://marketing.configure.global.dynamics.com/">Regulatory Configuration Service page</a>.</p>
+<p><img src="media/202103_RCS%20Marketing%20page_updated_1.jpg" alt="RCS sign-up/sign-in."></p>
+<p>On the <strong>Regulatory Configuration Service</strong> page, review and accept the supplemental terms and conditions for use of the service, and then select one of the following buttons:</p>
+<ul>
+<li><strong>Sign up</strong> if you're a first-time user of the service, and you're using a business email address to provision your organization a service environment</li>
+<li><strong>Sign in</strong> if you've previously signed up for the service, and you want to access your organization environment</li>
+</ul>
+<h2 id="regional-availability">Regional availability</h2>
+<p>RCS is generally available in the following regions:</p>
+<ul>
+<li>United States</li>
+<li>India</li>
+<li>France</li>
+<li>Europe</li>
+</ul>
+<p>For a complete list of regions, see <a href="https://aka.ms/dynamics_365_international_availability_deck">Dynamics 365 and Power Platform: Availability, data location, language, and localization</a>.</p>
+<h2 id="rcs-default-company">RCS default company</h2>
+<p>Design time functionality that is used in RCS is shared across all companies. There is no company-specific functionality. Therefore, we recommend that you use one company, <strong>DAT</strong>, with your RCS environment.</p>
+<p>However, in some scenarios, you might want to make ER formats use parameters that are related to a specific legal entity. In these scenarios only, you should use the default company switcher. For an example, see <a href="../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md">Configure ER format to use parameters that are specified per legal entity</a>.</p>
+<h2 id="related-rcs-documentation">Related RCS documentation</h2>
+<p>For more information about related components, see the following topics:</p>
+<ul>
+<li><p><strong>RCS:</strong></p>
+<ul>
+<li><a href="rcs-global-repo-upload.html">Create ER configurations in RCS and upload them to the Global repository</a></li>
+</ul>
+</li>
+<li><p><strong>Global repository:</strong></p>
+<ul>
+<li><a href="rcs-global-repo-upload.html">Create ER configuration &amp; upload to Global repo</a></li>
+<li><a href="rcs-global-repo-share-configuration.html">Share configuration in Global repo</a></li>
+<li><a href="enhanced-filtering-global-repo.html">Enhanced filtering in Global repo</a></li>
+<li><a href="../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md">Download ER configurations from the Global repository</a></li>
+<li><a href="discontinuing-configurations-rcs-global-repo.html">Discontinuing configurations in Global repo</a></li>
+<li><a href="rcs-lcs-repo-dep-faq.html">Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation</a></li>
+</ul>
+</li>
+<li><p><strong>Globalization feature:</strong></p>
+<ul>
+<li><a href="/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services">Regulatory Configuration Service (RCS) - Globalization feature</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="troubleshooting-rcs-sign-up">Troubleshooting RCS sign-up</h2>
+<p>When you sign up for RCS from the service page, you might encounter an issue that is related to Azure Active Directory (Azure AD). The error message that you receive indicates that sign-up for RCS is currently turned off and must be turned on before you can complete the sign-up process.</p>
+<p><img src="media/01_RCSSignUpError.jpg" alt="RCS sign-up error message."></p>
+<p>The issue occurs because you're blocked from signing up for ad-hoc subscriptions, and the <code>AllowAdHocSubscriptions</code> property must be enabled in your tenant.</p>
+<ul>
+<li>If your IT department manages your organization's Azure tenants, contact that department to report the issue.</li>
+<li>If you're responsible for managing your Azure tenants, you can fix the issues by following the steps in <a href="/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings">What is self-service sign-up for Azure Active Directory</a>.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-overview.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

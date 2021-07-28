@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure and send email | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure and send email | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configure-and-send-email" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="29">Configure and send email</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="33">The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users to make it easy to find relevant information.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="35">Both administrators and users set the behavior of the email subsystem.</p>
+<h2 id="administrator-email-parameters-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="37">[Administrator] Email parameters page</h2>
+<h3 id="configuration-tab" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="39">Configuration tab</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="40">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="40">Email parameters</strong> page, note the following settings on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="40">Configuration</strong> tab.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="42">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="42">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="42">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="42">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="44">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="44">Batch email provider</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="44">Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Exchange provider will use the account associated with the batch process.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="45">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="45">Attachment size limit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="45">Specifies the maximum size of a single email that can be sent via the email subsystem.</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="47">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="47">Email history</strong> section serves two purposes. First, it provides an entry point to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="47">Email history</strong> page, which allows administrators to review all sent emails, including any errors that might have prevented an email from being sent. Second, it allows you to configure how long to maintain email history. By default, the last 30 days of email history is retained. This can be adjusted by changing the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="47">Number of days to retain email history</strong> field to a non-zero amount. A value of zero reverts back to the default amount and behavior.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="49">In version 10.0.16, an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="49">Email throttling</strong> section is visible if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="49">Email throttling</strong> feature has been turned on for your environment in Feature management. This feature enables non-interactive email providers (such as the batch email provider) to adhere to a per-minute sending limit. Therefore, it can help prevent some errors if the system tries to send more emails than the provider allows. Specifically, if an email can't be originally sent because the per-minute sending limit has been reached, the send attempt for the email will be deferred for up to one minute. After ten deferrals, the system will try to send the email even if the per-minute sending limit has been reached. The sending limits for Microsoft 365 email providers are automatically set according to <a href="/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="49">Exchange Online sending limits</a>. Manual configuration is required for all other email providers. You can remove the per-minute sending limit from a provider by resetting the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="49">per-minute email sending limit</strong> field to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="49">0</strong>.</p>
+<h3 id="smtp-settings-tab" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="51">SMTP settings tab</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="52">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="52">Email parameters</strong> page, note the following settings on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="52">SMTP settings</strong> tab.</p>
+<h4 id="server-information" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="54">Server information</h4>
+<table>
+<thead>  
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Outgoing mail server</td>
+    <td>The host name of the desired Simple Mail Transfer Protocol (SMTP) server.
+      <ul>
+        <li>For <a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Microsoft 365 production</a> (including *.onmicrosoft.com accounts), use smtp.office365.com. (You can find this setting at outlook.office.com at <strong>Settings</strong> &gt; <strong>Mail</strong> &gt; <strong>POP and IMAP</strong>.)</li>
+        <li>For Outlook/Hotmail, use smtp-mail.outlook.com.</li>
+      </ul>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>SMTP port number</td>
+    <td>Typically, the port number should be set to 587 for secure transport.</td>
+  </tr>
+  <tr>
+    <td>SSL required</td>
+    <td>Determines whether secure transport is used. Typically, this is <strong>Yes</strong>, except for internal or troubleshooting scenarios.</td>
+  </tr>
+</tbody>
+</table>  
+  
+#### Authentication
+<table>
+<thead>  
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Authentication required</td>
+    <td>Determines whether a user name and password are needed to send emails. </td>
+  </tr>
+  <tr>
+    <td><strong>User name</strong> and <strong>Password</strong></td>
+    <td>If authentication is required, specify the appropriate mail account to send email from. All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send SMTP mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin) at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user's mailbox in Microsoft 365</a>.
+    </td>
+  </tr>
+      
+</tbody>
+</table>
+<h2 id="administrator-email-distributor-batch-process" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="110">[Administrator] Email distributor batch process</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="112">Email that is sent directly from the server, without user interaction, via SMTP is sent by the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="112">Email distributor batch</strong> process. That batch process must be started to process the email queue. To start the process, open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="112">Email distributor batch</strong> pane (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="112">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="112">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="112">Email processing</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="112">Batch</strong>) and turn on <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="112">Batch processing</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="114">If the Exchange provider is used, then the user account associated with the batch process (usually admin) will be sender.</p>
+<h2 id="administrator-user-email" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="116">[Administrator] User email</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="118">The default <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="118">send from</strong> address for each user is pulled from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="118">Email</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="118">Users</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="118">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="118">Users</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="118">Users</strong>). Administrators can override this <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="118">send from</strong> default if needed using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="118">Sender email</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="118">Options</strong> page.</p>
+<h2 id="user-email-provider-selection-section-on-the-options-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="120">[User] Email provider selection section on the Options page</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="122">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="122">Options</strong> page can be opened via <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="122">Settings &gt; User options</strong>. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="122">Email provider selection</strong> section is on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="122">Account</strong> tab.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="124">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="124">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="124">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="124">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="126">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="126">Email provider ID</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="126">Allows the user to select the email provider that should be used when sending an email. Selecting an option here is the equivalent of selecting <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="126">Do not ask again</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="126">How would you like to send email</strong> dialog box. Selecting the blank option <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="126">Prompt for which email provider to use</strong> will cause the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="126">How would you like to send email</strong> dialog box to display when an email is going to be sent.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Sender email</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Allows the administrator to provide an email address override for the user in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">From</strong> field of the email. By default, the email alias that is associated with the user account is used as the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">From</strong> field in new emails, but this user option email address will override that. When sending email via SMTP, the user needs to have appropriate <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Send As</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Send On Behalf Of</strong> permissions configured in Exchange or on the SMTP server.<blockquote>[!NOTE] You can configure <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Send As</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Send On Behalf Of</strong> permissions in the Microsoft 365 admin center (portal.office.com/Admin) at <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Users</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Active users</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">User</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Edit mailbox permissions</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="127">Enable sending email from another user's mailbox in Microsoft 365</a>.</blockquote></td>
+</tr>
+</tbody>
+</table>
+<h2 id="user-how-would-you-like-to-send-email-dialog-box-optional" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="129">[User] How would you like to send email dialog box (optional)</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="131">When an email is going to be sent, the user will see the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="131">How would you like to send email</strong> dialog box that will list the available options for sending email.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="133">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="133">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="133">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="133">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="135">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="135">Use an email app, such as Outlook</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="135">Provides the user with a generated email (.eml) file.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="136">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="136">Use Exchange email server</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="136">Uses the Exchange Online server associated with the tenant. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="136">Exchange</strong> mail provider is currently not supported outside the public cloud, including on-premises environments.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="137">Use the system email client</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="137">Opens the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="137">Send email</strong> composition dialog box and then sends the resulting email via SMTP.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="138">Do not ask again</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="138">If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="user-send-email-dialog-box-optional" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="140">[User] Send email dialog box (optional)</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="142">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="142">Send email</strong> dialog box is opened to allow the user to edit the contents of the email that will be sent. Some of the following fields will be pre-populated in this window.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="144">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="144">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="144">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="144">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="146">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="146">From</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="146">Populated from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="146">Email</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="146">Options</strong> page.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="147"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="147">To</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="147">Cc</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="147">Bcc</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="147">Subject</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="147">Body</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="147">Populated with values specified by the process that initiated the sending of the email. These fields can be edited as needed by the user.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="148">Attachments list</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="148">May be populated with attachments specified by the process that initiated the sending of the email. This list can be edited as needed by the user.</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="150">When the email is ready to be sent, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="150">Send</strong> button will cause the email to be sent via SMTP.</p>
+<h2 id="usage-scenarios-to-verify-if-email-is-configured-correctly" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="152">Usage scenarios to verify if email is configured correctly</h2>
+<h3 id="send-mail-via-a-local-mail-client" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="154">Send mail via a local mail client</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="156">Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments. You can then send these messages via Microsoft Outlook or another email client.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="158">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="158">In Internet Explorer, navigate to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="158">Accounts receivable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="158">Customers</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="158">All customers</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="159">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="159">US-008 Sparrow Retail</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="160">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="160">Collect</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="160">Customer balances</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="160">Collections</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="160">Collections</strong> page.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="161">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="161">Communicate</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="161">Email</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="161">Statements to contact</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="162">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="162">OK</strong> to accept the default values in the dialog box.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="163">If you're prompted for the mail option to use, clear the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="163">Do not ask again</strong> check box (you can change this option from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="163">User options</strong> page), select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="163">Use an email app, such as Outlook</strong>, and then click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="163">OK</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="164">If you're using Internet Explorer on your computer, open the email (.eml) file that is generated. If you're using Internet Explorer on the VM, copy the file to your computer, and open it there.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="165">Note the email address in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="165">To</strong> field and the generated workbook attachment.</li>
+</ol>
+<h3 id="send-mail-via-smtp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="167">Send mail via SMTP</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="169">Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="171">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="171"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="171">Go to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="171">Email parameters</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="172"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="172">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="172">SMTP settings</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="173"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="173">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="173">Outgoing mail server</strong> to the desired SMTP server:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="175">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="175">For <a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="175">Microsoft 365 production</a> (including *.onmicrosoft.com accounts) use smtp.office365.com. (Find this setting via outlook.office.com, at <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="175">Settings</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="175">Mail</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="175">POP and IMAP</strong>.)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="176">For Outlook/Hotmail use smtp-mail.outlook.com.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="178"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="178">Set the user name and password to an appropriate email account and password.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="179"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="179">Leave <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="179">SSLRequired</strong> turned on, and leave <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="179">SMTP port number</strong> set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="179">587</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="180"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="180">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="180">Save</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="181"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="181">In Internet Explorer, navigate to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="181">Accounts receivable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="181">Customers</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="181">All customers</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="182"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="182">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="182">US-008 Sparrow Retail</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="183"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="183">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="183">Collect</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="183">Customer balances</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="183">Collections</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="183">Collections</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="184"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="184">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="184">Communicate</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="184">Email</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="184">Statements to contact</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="185"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="185">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="185">OK</strong> to accept the default values in the dialog box.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="186"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="186">If you're prompted for the mail option to use, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="186">Use the Microsoft Dynamics 365 for Finance and Operations email client</strong>, and then click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="186">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="187"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="187">To receive the test message, change the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="187">To address</strong> to your email address.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="189">Ensure that the account specified in the SMTP settings is able to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="189">Send As</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="189">Send On Behalf Of</strong> your email account. The easiest way to ensure this to use your email account in the SMTP settings.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="191"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="191">Enter a subject and body for the message.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="192"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="192">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="192">Send</strong>. The message should be delivered in one to five minutes.</p>
+</li>
+</ol>
+<h2 id="administrator-workflow-email-notifications" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="194">[Administrator] Workflow email notifications</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="196">Workflow email configuration is a collection of related settings that work in conjunction.</p>
+<h3 id="workflow-email-notification-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="198">Workflow email notification setup</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="200">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="200"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="200">Verify email settings:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="202">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="202">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="202">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="202">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="202">Email</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="202">Email parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="203">Verify that SMTP is enabled.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="204">Set the SMTP mail server settings.</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="206"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="206">Verify that the email batch process is running:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="208">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="208"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="208">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="208">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="208">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="208">Email processing</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="208">Email distributor batch</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="209"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="209">Enable the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="209">Batch processing</strong> option.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="210"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="210">Optionally, adjust the recurrence of the email process:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="212">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="212">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="212">No end date</strong> to adjust all recurrences of the email batch process.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="213">Adjust the count.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="214">Adjust to run every minute if needed.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="216"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="216">Verify workflow notification system email templates:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="218">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="218">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="218">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="218">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="218">Email</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="218">System email templates</strong> (for system-wide templates).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="219">Verify that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="219">Sender email</strong> field is set and valid.</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="221"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="221">Verify workflow notification organization email templates:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="223">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="223">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="223">Organization administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="223">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="223">Organization email templates</strong> (for organization-specific templates).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="224">Verify that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="224">Sender email</strong> field is set and valid.</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="226"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="226">Verify that the user can receive email notifications:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="228">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="228"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="228">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="228">Settings</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="228">User options</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="229"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="229">Go to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="229">Account</strong> tab.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="231">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="231">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="231">Email provider ID</strong> (for example, SMTP).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="232">Optionally, set a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="232">Sender email</strong> override if the default <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="232">send from</strong> address should not be used for the current user.</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="234"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="234">Navigate to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="234">Workflow</strong> tab. Set the option to send notifications in email to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="234">Yes</strong>.</p>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="236"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="236">Verify that the workflow system will send email notifications:</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="238">For each workflow that should have a notification, open the workflow properties in the workflow editor.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="240">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="240"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="240">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="240">Basic settings</strong>. Adjust the email template for the workflow notifications.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="241"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="241">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="241">Notifications</strong>.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="243">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="243">Enable the events for which a user should be notified.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="244">Set the recipient of the workflow notification for each event notification that is enabled.</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="246"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="246">On a workflow approval element for which a user should be notified:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="248">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="248">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="248">Properties</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="249">Enable the events for which a user should be notified.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="250">Set the recipient of the workflow notification for each event notification that is enabled.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="workflow-email-notification-testing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="252">Workflow email notification testing</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="254">The testing for email notifications is to simply trigger the notification and then check for it.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="256">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="256"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="256">Submit a workflow that has been set up for email notifications.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="257"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="257">Check the workflow history to make sure that a workflow work item was assigned to the expected user.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="258"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="258">Check the status of the pending email notification in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="258">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="258">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="258">Email processing</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="258">Batch email sending status</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="260">If the email is fails to send, make sure that the SMTP mail account can be opened.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="262"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="262">Check for the email notification in the appropriate inbox.</p>
+</li>
+</ol>
+<h2 id="exchange-mail-provider" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="264">Exchange mail provider</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="266">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="266">Email parameters</strong> page allows an administrator to select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="266">Exchange</strong> as an interactive email provider and as the Batch email provider. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="266">Exchange</strong> mail provider will use the current user's Exchange Online account to send emails. When used as the Batch email provider, the batch account will be used. No additional configuration is needed.
+If troubleshooting is needed, ensure that it’s possible to sign in to the current user's account and that emails can be sent from that account to the intended recipients.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="269">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="270">The Exchange mail provider is:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="271">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="271">Not supported for external users, as those users will not have Exchange accounts on the system tenant.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="272">Only available in Microsoft-managed environments.</li>
+</ul>
+</div>
+<h2 id="troubleshooting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="274">Troubleshooting</h2>
+<h3 id="common-issues-with-sending-email" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="276">Common issues with sending email</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="278">There are a few standard processes that can help you troubleshoot the configuration of email settings.</p>
+<h4 id="verify-email-settings-and-send-a-test-email" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="280">Verify email settings and send a test email</h4>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="282">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="282">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="282">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="282">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="282">Email</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="282">Email parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="283">Verify that SMTP is enabled.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="284">Verify the settings of the SMTP mail server.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="285">Sign in to the SMTP account in a separate window to make sure that the account and password are correct.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="286">Send a test email using <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="286">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="286">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="286">Email</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="286">Email parameters</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="286">Test email</strong>.</li>
+</ol>
+<h4 id="verify-that-the-email-batch-process-is-running" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="288">Verify that the email batch process is running</h4>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="290">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="290">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="290">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="290">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="290">Email processing</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="290">Batch</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="291">Make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="291">Batch processing</strong> option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="291">Yes</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="292">Review the recurrence of the email process:
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="293">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="293">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="293">No end date</strong> to adjust all recurrences of the email batch process.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="294">Adjust the count as needed.</li>
+</ol>
+</li>
+</ol>
+<h4 id="review-the-status-of-batch-emails" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="296">Review the status of batch emails</h4>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="298">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="298">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="298">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="298">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="298">Email processing</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="298">Batch email sending status</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="299">Verify that emails are being sent from the correct account.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="300">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="300">If the account is incorrect, you need to adjust settings such as user options, system templates, or organization templates, as needed.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="301">Verify that all email user accounts have been granted permission to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="301">Send As</strong> for the configured SMTP account (see the section titled <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="301">Verify all email accounts have appropriate permissions</strong>).</li>
+</ol>
+<h4 id="review-any-errors-on-the-email-history-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="303">Review any errors on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="303">Email history</strong> page</h4>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="305">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="305">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="305">System administration</strong> /&gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="305">Setup</strong> /&gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="305">Email</strong> /&gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="305">Email history</strong>.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="306">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="306">This page allows administrators to review all sent emails, including any errors that might have prevented an email from being sent. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="306">Email history</strong> page will show interactive as well as non-interactive/batch emails.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="307">For any emails with an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="307">Email status</strong> of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="307">Failed</strong>, review the error message on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="307">Failure details</strong> tab and determine if corrective actions should be taken. Some pf these errors are covered later in this topic.</li>
+</ol>
+<h4 id="verify-all-email-accounts-have-appropriate-send-as-permissions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="309">Verify all email accounts have appropriate Send as permissions</h4>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="310">In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="310">Send As</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="310">Send On Behalf Of</strong> permissions for the configured SMTP account. For more information, see <a href="/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="310">Give mailbox permissions to another user in Microsoft 365</a>.</p>
+<h4 id="verify-user-mailboxes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="312">Verify user mailboxes</h4>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="313">Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed using sign in.</p>
+<h3 id="specific-smtp-email-issues" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="315">Specific SMTP email issues</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="317">If you continue to experience issues when email is sent via SMTP, you may be running into one of the specific errors below. If not, consider entering the SMTP account information in a tool such as <a href="https://www.smtper.net/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="317">SMTPer.net</a> to verify that the SMTP server and account are valid and working correctly.</p>
+<h3 id="smtp-emails-fail-to-send-with-if-your-smtp-server-doesnt-support-authentication-please-clear-the-smtp-user-name-and-password" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="319">SMTP emails fail to send with &quot;If your SMTP server doesn't support authentication, please clear the SMTP user name and password&quot;</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="321"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="321">Issue:</strong> After moving to version 10.0.19/Platform update 39 or later, SMTP emails may fail to send and are accompanied by the following message: &quot;If your SMTP server doesn't support authentication, please clear the SMTP user name and password&quot;</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="323"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="323">Explanation:</strong> This is related to a migration from the .NET SMTP mail client (which is now obsolete) to MailKit per Microsoft recommendations. A result of this migration is a change in behavior regarding the handling of SMTP user name and password in situations where the mail server didn't support authentication. Previously, if a SMTP user name was provided but the server didn't support authentication, the .NET SMTP mail client would ignore the provided user name and password and continue without authentication. This behavior may have lead customers to the false belief they were using an authenticated mail server. With MailKit, if a user name is provided, authentication is required, which will trigger an error for mail servers that don't support authentication and will cause emails to fail to send.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="325"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="325">Fix:</strong> The user needs to go to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="325">Email parameters</strong> page (under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="325">System administration &gt; Setup &gt; Email</strong>), and clear the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="325">User name</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="325">Password</strong> fields on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="325">SMTP settings</strong> tab page.</p>
+<h3 id="smtp-emails-fail-to-send-with-5757-smtp-error-or-an-indication-that-youre-not-authenticated-or-authentication-is-required" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="327">SMTP emails fail to send with &quot;5.7.57 SMTP&quot; error or an indication that you're not authenticated or authentication is required</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="329"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="329">Issue:</strong> Emails sent via SMTP fail to send for one of the following reasons:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="330">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="330">An &quot;5.5.57 SMTP&quot; exception</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="331">The user is not authenticated</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="332">User authentication is required</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="334"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="334">Explanation:</strong> The mail server is indicating that the SMTP user credentials are invalid.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="336"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="336">Fix:</strong> Verify that the SMTP user credentials are correct.</p>
+<h3 id="smtp-emails-fail-to-send-with-microsoftdynamicsaxxppsecuritycryptoencryptionexception-encryption-error-occurred-with-exception" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="338">SMTP emails fail to send with &quot;Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception&quot;</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="340"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="340">Issue:</strong> Emails sent via SMTP fail to send and trigger the following exception: &quot;Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception&quot;</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="342"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="342">Explanation:</strong> The SMTP password is encrypted using a key specific to a single environment.  This error typically surfaces when the password can no longer be decrypted after a database migration between environments.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="344"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="344">Fix:</strong> Clear and reenter the SMTP password on the <a href="#smtp-settings-tab" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="344">SMTP settings tab</a> on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="344">Email parameters</strong> page.</p>
+<h3 id="smtp-emails-fail-to-send-with-client-does-not-have-permissions-to-send-as-this-sender" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="346">SMTP emails fail to send with &quot;Client does not have permissions to send as this sender&quot;</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="348"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="348">Issue:</strong> When sending email using SMTP, some emails may fail to send with the following error: &quot;Client does not have permissions to send as this sender.&quot;</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="350"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="350">Explanation:</strong> This issue is usually caused by incorrect setup of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="350">Send As</strong> permissions for the email account.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="352"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="352">Fix:</strong> Ensure there are appropriate <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="352">Send As</strong> permissions for the email account. For details, see <a href="#verify-all-email-accounts-have-appropriate-send-as-permissions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="352">Verify all email accounts have appropriate Send as permissions</a>.</p>
+<h2 id="frequently-asked-questions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="354">Frequently asked questions</h2>
+<h3 id="where-do-workflow-email-templates-come-from" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="356">Where do workflow email templates come from?</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="358">The email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.</p>
+<h3 id="what-email-limits-apply-when-using-exchange-or-smtp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="360">What email limits apply when using Exchange or SMTP?</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="362">The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard <a href="/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="362">Exchange Online receiving and sending limits</a> apply.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="365">Additional resources</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="367"><a href="../../dev-itpro/office-integration/office-integration-troubleshooting.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="367">Troubleshoot the Office integration</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="369"><a href="../../dev-itpro/office-integration/office-integration-tutorial.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="369">Office integration tutorial</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="371"><a href="/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md" sourcestartlinenumber="371">Configure email functionality in Microsoft Dynamics AX [AX 2012]</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-email.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

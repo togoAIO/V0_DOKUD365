@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tax isn't calculated | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tax isn't calculated | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tax-isnt-calculated">Tax isn't calculated</h1>
+
+
+<p>If you discover that tax component lines or tax document lines are missing from a tax document, follow the steps in this topic to troubleshoot the issue. The procedures use a purchase order as an example to show the troubleshooting process.</p>
+<p>For more information about the Tax engine (also referred to as GTE) or components, see <a href="../general-ledger/tax-engine.html">Tax engine overview</a>.</p>
+<h2 id="check-the-tax-applicability-in-the-tax-configuration">Check the tax applicability in the tax configuration</h2>
+<ol>
+<li><p>Open the designer for the current tax configuration.</p>
+</li>
+<li><p>If there are no tax document lines, select the <strong>Header</strong> node, and then, on the <strong>Lookups</strong> tab, verify that the condition is correct.</p>
+<p><a href="media/tax-not-calculated-Picture1.png"><img src="media/tax-not-calculated-Picture1.png" alt="Condition field on the Lookups tab for the Header node on the Tax document page."></a></p>
+</li>
+<li><p>If there are no tax component lines, verify that the condition is correct on the <strong>Lookups</strong> tab for the <strong>Lines</strong>, <strong>Tax type</strong>, and <strong>Tax component</strong> nodes.</p>
+<p><a href="media/tax-not-calculated-Picture2.png"><img src="media/tax-not-calculated-Picture2.png" alt="Condition field on the Lookups tab for the Lines node."></a></p>
+</li>
+</ol>
+<h2 id="compare-transaction-details-with-other-conditions">Compare transaction details with other conditions</h2>
+<ol>
+<li><p>Select <strong>Tax document</strong>, and then select the <strong>Header</strong> node.</p>
+</li>
+<li><p>Select <strong>View tax input</strong> to view the transaction header details.</p>
+</li>
+<li><p>Verify that all the fields are correctly set for tax calculation.</p>
+<p><a href="media/tax-not-calculated-Picture3.png"><img src="media/tax-not-calculated-Picture3.png" alt="Purchase order header."></a></p>
+</li>
+<li><p>Select the <strong>Line</strong> node, and then select <strong>View tax input</strong> to view the transaction line details.</p>
+</li>
+<li><p>Verify that all the fields are correctly set for tax calculation.</p>
+<p><a href="media/tax-not-calculated-Picture4.png"><img src="media/tax-not-calculated-Picture4.png" alt="Purchase order lines."></a></p>
+</li>
+<li><p>Compare the transaction fields at <strong>Tax document</strong> &gt; <strong>View tax input</strong> with the conditions that you found in the previous section.</p>
+</li>
+<li><p>Verify that all the fields match the corresponding conditions or lookups.</p>
+</li>
+</ol>
+<h2 id="determine-whether-customization-exists">Determine whether customization exists</h2>
+<p>If you've completed the steps in the previous sections but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.</p>
+<h2 id="prevent-transactions-from-being-posted-if-gst-hasnt-been-calculated">Prevent transactions from being posted if GST hasn't been calculated</h2>
+<p>To prevent a transaction from being posted if GST hasn't been calculated, follow these steps to turn on and set up the <strong>[India] GTE calculation validation</strong> feature.</p>
+<ol>
+<li><p>Go to <strong>Workspaces</strong> &gt; <strong>Feature management</strong>.</p>
+</li>
+<li><p>Find the <strong>[India] GTE calculation validation</strong> feature, and then select <strong>Enable now</strong>.</p>
+<p><a href="media/tax-not-calculated-Picture5.png"><img src="media/tax-not-calculated-Picture5.png" alt="Enable now button in the Feature management workspace."></a></p>
+</li>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Tax configuration</strong> &gt; <strong>Tax setup</strong>.</p>
+</li>
+<li><p>Select the company to enable the validation for, and then select <strong>Parameters</strong>.</p>
+<p><a href="media/tax-not-calculated-Picture6.png"><img src="media/tax-not-calculated-Picture6.png" alt="Parameters button on the Tax setup page."></a></p>
+</li>
+<li><p>In the <strong>Tax setup parameters</strong> dialog box, in the <strong>Validation</strong> section, in the <strong>Empty tax component</strong> and <strong>Zero tax</strong> fields, select one of the following values. Then select <strong>OK</strong> to complete the setup.</p>
+<ul>
+<li><strong>None</strong> – No validation is done.</li>
+<li><strong>Warning</strong> – A warning message is shown, but the posting operation isn't blocked.</li>
+<li><strong>Error</strong> – An error message is shown, and the posting operation is blocked.</li>
+</ul>
+<p><a href="media/tax-not-calculated-Picture7.png"><img src="media/tax-not-calculated-Picture7.png" alt="Validation section in the Tax setup parameters dialog box."></a></p>
+<p>For this example, both fields are set to <strong>Error</strong>. Therefore, if someone tries to post a transaction, but GST hasn't been calculated, one of the following error messages is shown:</p>
+<ul>
+<li><strong>No tax lines exist:</strong> &quot;No tax document lines are found in tax document. If it is not expected, please contact your system administrator, check the tax configuration, and try again.&quot;</li>
+<li><strong>No tax component lines exist:</strong> &quot;No tax component is applicable for line %1, please contact your system administrator, check the tax setup, and try again.&quot;</li>
+<li><strong>The tax amount is 0 (zero):</strong> &quot;The tax amount is 0 for line %1, please contact your system administrator, check the tax setup, and try again.&quot;</li>
+</ul>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you enable the validation, some typical scenarios might be blocked, such as exempt or zero-rate scenarios. You must decide how to set up the validation, based on your business.</p>
+</div>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

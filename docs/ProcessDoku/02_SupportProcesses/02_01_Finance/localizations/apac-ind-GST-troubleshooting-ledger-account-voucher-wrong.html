@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Incorrect ledger account in the voucher | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Incorrect ledger account in the voucher | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="incorrect-ledger-account-in-the-voucher">Incorrect ledger account in the voucher</h1>
+
+
+<p>If you find that the ledger account in the voucher is incorrect, follow the steps in the sections of this topic to try to fix the issue.</p>
+<p>This topic uses the IGST interim recoverable amount as an example.</p>
+<h2 id="verify-that-the-amount-was-posted-correctly">Verify that the amount was posted correctly</h2>
+<p>Review the voucher, and verify that the posted amount is correct. If it's correct, move on to the next section. If it's incorrect, see <a href="apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.html">Tax amount is wrong after calculation</a>.</p>
+<h2 id="review-the-tax-configuration">Review the tax configuration</h2>
+<ol>
+<li><p>Follow the steps in <a href="apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.html">Open the designer for the current tax configuration</a>.</p>
+</li>
+<li><p>Expand the <strong>Tax document</strong> node to <strong>Tax document</strong> &gt; <strong>Header</strong> &gt; <strong>Lines</strong> &gt; <strong>GST</strong> &gt; <strong>IGST</strong>, and then select <strong>IGST</strong>.</p>
+<p><a href="media/ledger-account-voucher-wrong-Picture1.png"><img src="media/ledger-account-voucher-wrong-Picture1.png" alt="Expanded Tax document node."></a></p>
+</li>
+<li><p>On the <strong>Postings</strong> tab, on the <strong>Details</strong> FastTab, find the account for <strong>Interim Recoverable Amount</strong>. Make a note of the debit and credit information. You will need this information later.</p>
+<p><a href="media/ledger-account-voucher-wrong-Picture2.png"><img src="media/ledger-account-voucher-wrong-Picture2.png" alt="Interim Recoverable Amount on the Details FastTab."></a></p>
+</li>
+<li><p>Select <strong>Condition</strong> to open the formula.</p>
+<p><a href="media/ledger-account-voucher-wrong-Picture3.png"><img src="media/ledger-account-voucher-wrong-Picture3.png" alt="Condition button on the Details FastTab."></a></p>
+</li>
+<li><p>Review the formula to determine whether your settings match the condition of the correct account. If they match, move on to the next section. If they don't match, correct your settings, or modify the tax configuration in the extension.</p>
+<p><a href="media/ledger-account-voucher-wrong-Picture4.png"><img src="media/ledger-account-voucher-wrong-Picture4.png" alt="Formula."></a></p>
+</li>
+</ol>
+<h2 id="review-the-tax-setup">Review the tax setup</h2>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Tax configuration</strong> &gt; <strong>Tax setup</strong>.</p>
+</li>
+<li><p>On the <strong>Companies</strong> FastTab, select the related company, and then select <strong>Setup</strong>.</p>
+<p><a href="media/ledger-account-voucher-wrong-Picture5.png"><img src="media/ledger-account-voucher-wrong-Picture5.png" alt="Setup button on the Tax setup page."></a></p>
+</li>
+<li><p>Go to <strong>Tax document</strong> &gt; <strong>Header</strong> &gt; <strong>Lines</strong> &gt; <strong>GST</strong> or <strong>Tax document</strong> &gt; <strong>Header</strong> &gt; <strong>Lines</strong> &gt; <strong>GST</strong> &gt; <strong>IGST</strong>, and review the tax values. If both values are empty, modify the tax configuration in the extension.</p>
+</li>
+<li><p>Verify that the account is correct. If it's correct, move on to the next section. If it's incorrect, modify it.</p>
+<p>In the following illustration, notice that the posting type values are consistent with the debit and credit accounts that you made a note of earlier.</p>
+<p><a href="media/ledger-account-voucher-wrong-Picture6.png"><img src="media/ledger-account-voucher-wrong-Picture6.png" alt="Posting type values."></a></p>
+</li>
+</ol>
+<h2 id="debug-the-code-to-analyze-the-logic">Debug the code to analyze the logic</h2>
+<ul>
+<li><p>Set a breakpoint in the <strong>TaxAccountingPostFacade::post()</strong> class, and try to debug it to find the root cause. If you find it difficult to debug the class, report the issue to Microsoft.</p>
+<p><a href="media/ledger-account-voucher-wrong-Picture7.png"><img src="media/ledger-account-voucher-wrong-Picture7.png" alt="Breakpoint in the TaxAccountingPostFacade::post() class."></a></p>
+</li>
+</ul>
+<h2 id="determine-whether-customization-exists">Determine whether customization exists</h2>
+<p>If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

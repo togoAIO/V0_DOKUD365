@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Move environments between data centers | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Move environments between data centers | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="move-environments-between-data-centers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="27">Move environments between data centers</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="31">Occasionally, you must move environments that are managed by Microsoft to a different Microsoft Azure data center. Here are some scenarios where this move might be required:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="33">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="33">The data center that you planned to use wasn't available when the environments were originally deployed.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="34">The project creators didn't do enough research to determine the best data center before the environments were originally deployed.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="35">The customer moves the physical location of its operations, and the wide area network (WAN) connection is now closer to a data center that provides lower latency.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="37">Microsoft asks that you keep all your environments in the same data center. When you move environments to a different data center, you should plan to eventually have all environments deployed in the same data center.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="39">You can verify the data center that an environment is deployed to on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="39">Manage environments</strong> page in Microsoft Dynamics Lifecycle Services (LCS).</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="41">To change the data center, you must redeploy all environments. The process differs for sandbox environments (sandbox standard acceptance test environments, and sandbox develop and test environments) and production environments.</p>
+<h2 id="move-sandbox-environments" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="43">Move sandbox environments</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="45">Because this move is a self-service action, the partner and/or customer must move the existing sandbox environments without Microsoft involvement. Although this action requires little effort on the part of the partner or customer resources, completion of the end-to-end process might require a few days. To streamline the data movement between environments, you should develop a plan to determine the best sequence before you begin the move.</p>
+<h3 id="save-data" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="47">Save data</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="49">Before you begin the move, you must save your data.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="51">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="51"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="51">Tier 1 environment database that is based on Microsoft SQL Server:</strong> Make a backup of the database.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="52"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="52">Tier 2 and higher environments that are based on Azure SQL Database:</strong> Choose one of the following options:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="54">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="54"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="54">Option 1:</strong> Review the processes that are listed in the <a href="../../dev-itpro/database/dbmovement-operations.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="54">Database movement operations home page</a> topic.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="55"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="55">Option 2:</strong> If you have an Azure subscription, save a copy of the Azure SQL database under that subscription.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="56"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="56">Option 3:</strong> If you have multiple Azure SQL database environments, redeploy one environment, leave the remaining environments in the old data center, and then request a database refresh between the environments.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="57"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="57">Option 4:</strong> Save data as data packages, and then import the packages after the redeployment is completed.</li>
+</ul>
+</li>
+</ul>
+<h3 id="move-the-environments" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="59">Move the environments</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="61">After you've saved your data, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="63">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="63"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="63">Verify that all code packages have been uploaded to the Asset library in LCS.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="64"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="64">For each environment, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="66">In LCS, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="66">Full details</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="67">Stop the environment, and then, when the environment has stopped, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="67">Deallocate</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="68">After the deallocation is completed, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="68">Delete</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="69">After the environment is deleted, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="69">Configure</strong> to redeploy the environment.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="70">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="70">Geography/location</strong> field, select the data center to use.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="71">After the environment is deployed, apply the code packages.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="72">If the redeployed environment is used as the build environment, complete the required configurations that are described in <a href="../../dev-itpro/perf-test/continuous-build-test-automation.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="72">Deploy and use an environment that supports continuous build and test automation</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="73">Restore the data.</li>
+</ol>
+</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="75">
+<h5>Note</h5>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="76">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="76">The movement of files that are stored in Azure Blob Storage isn't supported in sandbox environments.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="77">Commerce customers should be aware that extra steps are required for components to work correctly after a move. For more information, see <a href="../../dev-itpro/data-entities/data-entities-data-packages.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="77">Data management overview</a>.</li>
+</ul>
+</div>
+<h2 id="move-production-environments" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="79">Move production environments</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="81">If you already have a production environment deployed, you must open a Support request to move the production environment to another data center after you've finished moving all the sandbox environments. This scenario is rare, and there is no automated/self-service action to complete the move. In this scenario, files that are stored in Azure Blob Storage will also be moved. For information about the maintenance window and downtime that are required in order to move a production environment to a different data center, see <a href="https://go.microsoft.com/fwlink/?LinkId=867755&amp;clcid=0x409" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md" sourcestartlinenumber="81">Service Description</a> and the related service-level agreement (SLA) documents.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/move-environments-data-center.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

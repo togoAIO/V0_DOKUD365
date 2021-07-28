@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Onboard an implementation project | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Onboard an implementation project | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="onboard-an-implementation-project">Onboard an implementation project</h1>
+
+
+<p>This topic describes how to onboard a Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).</p>
+<h2 id="microsoft-365-admin-center">Microsoft 365 Admin Center</h2>
+<p>After your organization has purchased a subscription to Finance and Operations, it must be activated on your organization's Azure Active Directory (Azure AD) tenant by your Tenant Administrator, who completes the following steps:</p>
+<ol>
+<li><p>Open an InPrivate/Incognito browser session and go to the <a href="https://admin.microsoft.com/">Microsoft 365 Admin Center</a>.</p>
+</li>
+<li><p>Sign in with the Tenant Administrator credentials.</p>
+</li>
+<li><p>Go to <strong>Billing &gt; Products &amp; services</strong> and confirm that there is an active subscription for the application that you want to deploy.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you do not see an active subscription, consult with your Licensing Partner to confirm the status of the subscription transaction as well as the tenant for the subscription. By default, all Microsoft Online Services should be running on the same Azure AD tenant.</p>
+</div>
+</li>
+<li><p>If the subscription in question is shown as active, proceed to the next step by signing in to LCS to trigger the Implementation Project creation flow.</p>
+</li>
+<li><p>Open another private browser tab and go to <a href="https://lcs.dynamics.com">Lifecycle Services</a>. Select <strong>Login</strong> to access LCS with your current Tenant Admin credentials.</p>
+</li>
+<li><p>Accept and confirm any other prompts displayed to complete the Implementation Project provisioning.</p>
+</li>
+<li><p>The Tenant Administrator is assigned the Project Owner security role in the provisioned Implementation Project.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the Tenant Administrator will not be a participant in the implementation, at least one additional Project Owner must be assigned to the implementation project.</p>
+</div>
+<p>For an overview of LCS user management, including the security roles that can be assigned to users, see <a href="../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security">Configure Lifecycle Services (LCS) security</a>.</p>
+</li>
+</ol>
+<h2 id="lcs-implementation-project-workspace">LCS implementation project workspace</h2>
+<p>After the Tenant Administrator has completed the Finance and Operations subscription activation and added additional project owners as appropriate, those team members can access the <strong>Implementation project</strong> workspace.</p>
+<p>The first step to be completed in LCS is <strong>Project onboarding</strong>. This step is required for all LCS implementation projects that are created <strong>on or after August 22, 2019, PST</strong>, prior to deploying any of the Microsoft-managed environments. You can access the <strong>Project onboarding</strong> feature using the action center notification or the LCS Implementation project menu. You must be assigned to the Project owner security role to access <strong>Project onboarding</strong> in LCS.</p>
+<p>To get started with LCS, see <a href="../../dev-itpro/lifecycle-services/lcs-works-lcs.md">Lifecycle Services (LCS) for Finance and Operations apps customers</a>.</p>
+<h2 id="fasttrack-onboarding-services">FastTrack onboarding services</h2>
+<p>After the LCS <strong>Implementation project</strong> workspace is provisioned, the Microsoft FastTrack team will monitor your onboarding progress. If project onboarding is not completed within a few weeks after creating an LCS <strong>Implementation project</strong>, a reminder will be sent to the project team.</p>
+<p>For more information about the FastTrack program and the services provided, see <a href="/dynamics365/fasttrack/">Microsoft FastTrack</a>.</p>
+<p>For more information about LCS project onboarding, see <a href="../../dev-itpro/lifecycle-services/project-onboarding.md">LCS project onboarding</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All onboarding-related emails from the FastTrack team will originate from Dynamics 365 Onboarding (<a href="mailto:ond365@microsoft.com">ond365@microsoft.com</a>), so please ensure that any spam blocker/filter allows email from this address.</p>
+</div>
+<h2 id="key-data-to-keep-current-in-lcs">Key data to keep current in LCS</h2>
+<p>We recommend that you add key project members (such as project managers) from the customer and partner teams to the LCS implementation project. Be sure to include each person's work email address. In this way, you help us work best with you and help ensure that project members don't miss important communication from us.</p>
+<p>Be sure to keep the milestone dates in your LCS project current. In this way, you help us connect with you at different project stages. When you're closer to your go-live date, we will contact you for a project Go-live assessment before we deploy your production environment.</p>
+<p>Milestone dates are stored in the LCS implementation methodology. For more information, see the <a href="../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies">Methodologies</a> section of the &quot;LCS for Customers&quot; topic.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/onboard.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

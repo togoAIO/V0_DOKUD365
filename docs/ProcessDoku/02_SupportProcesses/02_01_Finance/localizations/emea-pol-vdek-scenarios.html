@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Details of specific business scenarios in the JPK-V7M report | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Details of specific business scenarios in the JPK-V7M report | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="details-of-specific-business-scenarios-in-the-jpk-v7m-report">Details of specific business scenarios in the JPK-V7M report</h1>
+
+
+<p>This topic explains details of specific business scenarios in the JPK-V7M report in Poland.</p>
+<h2 id="reporting-of-overdue-customer-invoices">Reporting of overdue customer invoices</h2>
+<p>JPK-V7M report in Microsoft Dynamics 365 Finance supports reporting of overdue customer invoices when the local Polish <a href="emea-pol-sales-tax-reports.html#allowance-for-bad-debts">Overdue debt VAT</a> feature is used.</p>
+<h3 id="business-requirement">Business requirement</h3>
+<ul>
+<li>If the procedure is applied by the company, the <strong>&lt;P_68&gt;</strong> element of the declaration part must report the amount of the taxable base for overdue invoices in the reporting period (that is, transactions that are posted to deduct value-added tax (VAT) for issued invoices that aren't paid within 150 days after the payment due date).</li>
+<li>If the procedure is applied by the company, the <strong>&lt;P_69&gt;</strong> element of the declaration part must report the amount of VAT for overdue invoices in the reporting period (that is, transactions that are posted to deduct VAT for issued invoices that aren't paid within 150 days after the payment due date).</li>
+<li>If the procedure is applied by the company, for overdue invoices in the period where the due date is 150 days, this transaction must be reported. Information about the customer from the original invoice and an amount that has a minus sign (–) must be included.</li>
+<li>If the procedure is applied by the company, for paid overdue invoices in the period when an overdue invoice was paid, this transaction must be reported. All the information about the customer from the original invoice and an amount that has a plus sign (+) must be included.</li>
+<li>If the procedure is applied by the company, and if overdue and paid overdue transactions are in the same reporting period, you can optionally report both transactions together in the sales register. In this case, the <strong>&lt;P_68&gt;</strong> and <strong>&lt;P_69&gt;</strong> elements of the declaration part aren't reported.</li>
+</ul>
+<h3 id="supported-business-user-scenario-in-finance">Supported business user scenario in Finance</h3>
+<p>When there is an overdue customer invoice, the invoice that is issued to a customer can go through three stages:</p>
+<ol>
+<li><p>The invoice is issued to the customer, tax transactions are posted, and the invoice is included in <strong>JPK</strong> &gt; <strong>Ewidencja</strong> &gt; <strong>SprzedazWiersz</strong> as usual, according to the tax setup and marker setup.</p>
+</li>
+<li><p>If the invoice isn't paid within 150 days after the payment due date, the company can apply the <a href="emea-pol-sales-tax-reports.html#allowance-for-bad-debts">Overdue debt VAT</a> periodic task by going to <strong>Accounts receivable</strong> &gt; <strong>Periodic tasks</strong> &gt; <strong>Overdue debt VAT</strong>. Tax transactions that are produced by this task are reflected in the JPK-V7M report. The following information is included:</p>
+<ul>
+<li>All the customer information from the original invoice that was posted in stage 1 is included.</li>
+<li>Amounts are reported in the same <strong>K_*</strong> elements as in the original invoice, but they have a negative sign.</li>
+<li>The same markers that were applied in the original invoice are applied.</li>
+<li>The <strong>&lt;KorektaPodstawyOpodt&gt;</strong> marker is applied.</li>
+</ul>
+<p>Moreover, the base amount and tax amount from this invoice (internal document) are included and reported in the <strong>P_68</strong> and <strong>P_69</strong> elements of the declaration part of the report.</p>
+</li>
+<li><p>If the invoice is paid after both stage 1 and stage 2 have occurred, the company must again apply the <strong>Overdue debt VAT</strong> periodic task in the period when the invoice was paid. The resulting tax transactions are reflected in the JPK-V7M report. The following information is included:</p>
+<ul>
+<li>All customer information from the original invoice that was posted in stage 1 is included.</li>
+<li>Amounts are reported in the same <strong>K_*</strong> elements as in the original invoice, but they have a positive sign.</li>
+<li>The same markers that were applied in the original invoice are applied.</li>
+<li>The <strong>&lt;KorektaPodstawyOpodt&gt;</strong> marker is applied.</li>
+</ul>
+<p>The base amount and tax amount from this invoice (internal document) are <strong>not</strong> included and reported in the <strong>P_68</strong> and <strong>P_69</strong> elements of the declaration part of the report.</p>
+</li>
+</ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>If stages 2 and 3 occur in the same reporting period, the <strong>P_68</strong> and <strong>P_69</strong> elements of the declaration part of the report aren't affected.</p>
+</div>
+<h2 id="report-ro-and-fp-document-types-for-retail-operations">Report RO and FP document types for retail operations</h2>
+<p>The JPK-V7M report in Finance supports reporting of the <strong>RO</strong> (Internal summary document) type (<strong>&lt;TypDokumentu&gt;</strong> tag under the <strong>&lt;SprzedazWiersz&gt;</strong> tag)
+for retail operations when the <a href="emea-pol-vdek.html">Supplementary invoices for retail sales for Poland</a> feature is used.</p>
+<h3 id="business-requirements">Business requirements</h3>
+<p>The following rules about reporting sales invoices for retail operations are based on the clarifications that are published in the Q&amp;A section of the official tax portal of the Ministry of Finance of Poland:</p>
+<ul>
+<li>All fiscal receipts that are printed and given to the customers must be aggregated and reported as documents of the <strong>RO</strong> type (summarized invoice). Sales to non-domestic customers must be excluded from aggregation and reported as normal invoices (without a document type marker). Aggregation should be done for the reporting period. Sales documents that are reported as documents of the <strong>RO</strong> type (summarized invoice) aren't subject to <strong>GTU</strong> markers. Domestic sales that are aggregated for reporting as taxable documents of the <strong>RO</strong> type must also be reported as separate taxable documents of the <strong>FP</strong> type if the customer requested an invoice for those sales. Invoices that are marked as documents of the <strong>FP</strong> type must be excluded from totals in both <strong>SprzedazCtrl</strong> and all related <strong>P_*</strong> values of the declaration part. Sales documents that are reported as documents of the <strong>FP</strong> type are subject to <strong>GTU</strong> markers.</li>
+</ul>
+<h3 id="initial-assumptions-for-the-reporting-of-fiscal-documents-in-a-jpk-v7m">Initial assumptions for the reporting of fiscal documents in a JPK-V7M</h3>
+<ul>
+<li><p>All the documents that come from the point of sale (POS) are fiscalized.</p>
+</li>
+<li><p>Information about fiscal receipts that are processed at the POS is correctly reflected in the following system database tables:</p>
+<ul>
+<li>RetailTransactionTable</li>
+<li>RetailTransactionSalesTrans</li>
+<li>RetailTransactionTaxTrans</li>
+</ul>
+</li>
+<li><p>If a customer provided a VAT number for the fiscal receipt at the POS, it's stored in the RetailTransactionFiscalCustomer.SerializedData table.</p>
+</li>
+<li><p>All the fiscal receipts and pre-aggregated fiscal documents that were posted via a retail statement, and that must be aggregated for reporting purposes, are posted with a status of <strong>Fiscal document</strong> or <strong>Fiscal document converted to invoice</strong> in the Customer invoice journal.</p>
+</li>
+<li><p>If an invoice was created at the POS, it's correctly reflected in the RetailTransactionSupplementaryInvoice table.</p>
+</li>
+<li><p>If a fiscal receipt was converted from a fiscal document to an invoice, it has an invoice status of <strong>Fiscal document converted to invoice</strong> in the Customer invoice journal. (This assumption applies only to fiscal documents that aren't pre-aggregated.)</p>
+</li>
+<li><p>Only posted retail transactions of the <strong>Sales</strong> type are considered retail invoices for the purpose of reporting as documents of the <strong>FP</strong> type.</p>
+</li>
+<li><p>Specific scenarios, such as the &quot;Gift card&quot; scenario, are currently out of scope.</p>
+</li>
+</ul>
+<h3 id="supported-business-user-scenario-in-finance-1">Supported business user scenario in Finance</h3>
+<p>To report the <strong>RO</strong> and <strong>FP</strong> document types for retail operations, use the following parameters in the <strong>Retail-specific sales marking</strong> group of parameters of the <strong>Wygenerowanie JPK_V7M</strong> (<strong>EMGenerateJPKVDEKReportController_PL</strong>) executable class (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Electronic messaging</strong> &gt; <strong>Executable class settings</strong>):</p>
+<ul>
+<li>The <strong>Aggregate fiscal documents</strong> checkbox activates <strong>Criteria to collect customer invoices for aggregation (RO – summarized invoices)</strong> records that are included to collect and aggregate fiscal receipts that must be reported as documents of the <strong>RO</strong> type.</li>
+<li>The <strong>Report retail POS invoices</strong> checkbox collects retail invoices that have an invoice date in the reporting period and reports them as documents of the <strong>FP</strong> type.</li>
+<li>The <strong>Report fiscal document converted to invoice</strong> checkbox collects invoices from the CustInvoiceJour table that have a status of <strong>Fiscal document converted to invoice</strong> and <strong>FiscalDocDate_PL</strong> in the reporting period, and reports them as documents of the <strong>FP</strong> type.</li>
+</ul>
+<h4 id="aggregate-fiscal-documents-parameter">Aggregate fiscal documents parameter</h4>
+<p>By default, the <strong>Aggregate fiscal documents</strong> checkbox is cleared. In this case, the system doesn't aggregate any documents. The documents are reported as standard documents where no document type is applied. Therefore, the report works as it worked before this change.</p>
+<p>When the <strong>Aggregate fiscal documents</strong> checkbox is selected, domestic invoices that have a status of <strong>Fiscal document</strong> or <strong>Fiscal document converted to invoice</strong>, and that have a <strong>Date of VAT register</strong> value that falls in the reporting period, are reported as one aggregated document of the <strong>RO</strong> type for the reporting period. You define company-specific criteria of domestic fiscal documents that must be aggregated by using <strong>Criteria to collect customer invoices for aggregation (&quot;RO&quot; - summarized invoices)</strong> records.</p>
+<p>When the aggregated <strong>RO</strong> document is included in the report, it has following header fields.</p>
+<table>
+<thead>
+<tr>
+<th>Reporting tag</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KodKrajuNadaniaTIN</td>
+<td>PL</td>
+</tr>
+<tr>
+<td>NrKontrahenta</td>
+<td>BRAK</td>
+</tr>
+<tr>
+<td>NazwaKontrahenta</td>
+<td>Sprzedaz paragonowa</td>
+</tr>
+<tr>
+<td>DowodSprzedazy</td>
+<td>ROyyyyMMdd</td>
+</tr>
+<tr>
+<td>DataWystawienia</td>
+<td>The last date of the reporting period</td>
+</tr>
+<tr>
+<td>DataSprzedazy</td>
+<td>The last date of the reporting period</td>
+</tr>
+<tr>
+<td>TypDokumentu</td>
+<td>RO</td>
+</tr>
+</tbody>
+</table>
+<h4 id="report-retail-pos-invoices-parameter">Report retail POS invoices parameter</h4>
+<p>By default, the <strong>Report retail POS invoices</strong> checkbox is cleared. When it's selected, the system collects retail invoices that meet the following criteria:</p>
+<ul>
+<li>There must be a retail invoice in the RetailTransactionSupplementaryInvoice table for the retail transaction in the RetailTransactionTable table.</li>
+<li><strong>RetailTransactionTable.Type</strong> must equal <strong>RetailTransactionType::Sales</strong>.</li>
+<li><strong>RetailTransactionTable.entryStatus</strong> must equal <strong>RetailEntryStatus::Posted</strong>, and the <strong>RetailTransactionTable.StatementId</strong> field must not be blank.</li>
+<li>The invoice date (<strong>RetailTransactionSupplementaryInvoice.InvoiceDate</strong>) is in the reporting period.</li>
+</ul>
+<p>The fields of retail POS invoices must be filled in as shown in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Reporting tag</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KodKrajuNadaniaTIN</td>
+<td>PL</td>
+</tr>
+<tr>
+<td>NrKontrahenta</td>
+<td>&quot;BRAK&quot; or RetailTransactionFiscalCustomer.SerializedData</td>
+</tr>
+<tr>
+<td>NazwaKontrahenta</td>
+<td>The name of the customer from the customer master data (RetailTransactionSupplementaryInvoice.AccountNum) or &quot;BRAK&quot;</td>
+</tr>
+<tr>
+<td>DowodSprzedazy</td>
+<td>RetailTransactionSupplementaryInvoice.InvoiceId</td>
+</tr>
+<tr>
+<td>DataWystawienia</td>
+<td>RetailTransactionSupplementaryInvoice.InvoiceDate</td>
+</tr>
+<tr>
+<td>DataSprzedazy</td>
+<td>RetailTransactionSalesTrans.TransDate</td>
+</tr>
+<tr>
+<td>TypDokumentu</td>
+<td>FP</td>
+</tr>
+</tbody>
+</table>
+<p>The fields of the SAFTTaxTransByReportingCode_PL table are filled in from the following data sources.</p>
+<table>
+<thead>
+<tr>
+<th>Table name</th>
+<th>Field names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RetailTransactionTable</td>
+<td>Type, EntryStatus, StatementId, Channel, Store, Terminal, TransactionId</td>
+</tr>
+<tr>
+<td>RetailTransactionTaxTrans</td>
+<td>TaxCode, TaxPercentage, TaxBaseAmount, Amount, IsExempt, Channel, StoreId, Terminal, TransactionId</td>
+</tr>
+<tr>
+<td>RetailTransactionSupplementaryInvoice</td>
+<td>InvoiceId, InvoiceDate, AccountNum, CustInvoiceJour, Channel, Store, Terminal, TransactionId</td>
+</tr>
+<tr>
+<td>RetailTransactionSalesTrans</td>
+<td>TaxGroup, TaxItemGroup, TransDate, Currency, Channel, Store, TerminalId, TransactionId</td>
+</tr>
+<tr>
+<td>RetailTransactionFiscalCustomer</td>
+<td>SerializedData, Channel, Store, Terminal, TransactionId</td>
+</tr>
+</tbody>
+</table>
+<h4 id="report-fiscal-document-converted-to-invoice-parameter">Report fiscal document converted to invoice parameter</h4>
+<p>By default, the <strong>Report fiscal document converted to invoice</strong> checkbox is cleared. In this case, if the set of tax transactions and related customer invoices were aggregated and reported as documents of the <strong>RO</strong> type, they are excluded from the set of transactions that are reported in the standard.</p>
+<p>When the <strong>Report fiscal document converted to invoice</strong> checkbox is selected, the system collects invoices from the CustInvoiceJour table by using the same <strong>Criteria to collect customer invoices for aggregation</strong> records that are defined for domestic invoices for aggregation. However, the following additional criteria are also used:</p>
+<ul>
+<li><strong>CustInvoiceJour_PL.FiscalDocState_PL</strong> must equal <strong>Fiscal document converted to invoice</strong>.</li>
+<li><strong>CustInvoiceJour_PL.FiscalDocDate_PL</strong> must be in the reporting period.</li>
+</ul>
+<p>During preprocessing, these invoices are treated as standard invoices. The only difference is that their document type is set to <strong>FP</strong>.</p>
+<h2 id="report-invoices-from-counterparties-in-different-countries-or-regions-that-have-identical-nip-numbers">Report invoices from counterparties in different countries or regions that have identical NIP numbers</h2>
+<p>The data structure in the JPK_V7M report collects the first International Organization for Standardization (ISO) country/region code that is found from the Tax exempt numbers table and posted in the Tax transactions table. Use different tax-exempt numbers for counterparties from different countries or regions. To differentiate identical tax-exempt numbers from different countries or regions during setup, use a prefix that includes an ISO country/region code. The first two letters of the ISO country/region code will be omitted during reporting in the <strong>NrDostawcy</strong> tag.</p>
+<h2 id="split-payment-mpp-marker">Split payment (MPP) marker</h2>
+<p>The JPK-V7M report supports reporting of the <strong>MPP</strong> marker for both sales registers and purchase registers for reporting periods before July 1, 2021. The <strong>MPP</strong> marker isn't required for periods after July 1, 2021.</p>
+<p>If a company performs operations that a split payment procedure must be applied to, the <strong>Split payment</strong> feature must be used.</p>
+<p>When the <strong>Split payment</strong> feature is used, you don't have to complete any specific setup to report the <strong>MPP</strong> marker in a JPK-V7M. The following algorithm is used to identify the <strong>MPP</strong> marker:</p>
+<ul>
+<li>The system provides a check of the <strong>Split payment</strong> and <strong>Voluntary split payment</strong> parameters of the customer transaction that is related to a sales invoice. If the <strong>Split payment</strong> parameter is selected, and the <strong>Voluntary split payment</strong> parameter is cleared, the related invoice will be reported with the <strong>MPP</strong> marker.</li>
+<li>The system provides a check of the <strong>Split payment</strong> and <strong>Voluntary split payment</strong> parameters of the vendor transaction that is related to a vendor invoice. If the <strong>Split payment</strong> parameter is selected, and the <strong>Voluntary split payment</strong> parameter is cleared, the related invoice will be reported with the <strong>MPP</strong> marker.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-scenarios.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

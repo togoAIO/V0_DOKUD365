@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sales VAT report | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Sales VAT report | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sales-vat-report">Sales VAT report</h1>
+
+
+<p>This topic describes the reports in Microsoft Dynamics 365 Finance that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.</p>
+<h2 id="generate-the-purchase-unrealized-vat-remaining-report">Generate the Purchase unrealized VAT remaining report</h2>
+<p>The <strong>Unrealized VAT remaining</strong> report includes transactions that taxes haven't been realized for.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Inquiries and reports</strong> &gt; <strong>Sales tax reports</strong> &gt; <strong>Purchase Unrealized VAT Remaining</strong>.</p>
+</li>
+<li><p>In the <strong>Tax branch code</strong> field, select a tax branch to generate the report only for the selected tax branch. For more information, see <a href="apac-tha-tax-branch-dimensions.html">Tax branch page</a>.</p>
+</li>
+<li><p>Select <strong>OK</strong>, and review the report that is generated.</p>
+<p><img src="media/apac-tha-unrealized-VAT-remaining-report.png" alt="Unrealized VAT remaining report."></p>
+<p>The following table explains the information that is shown on the <strong>Unrealized VAT remaining</strong> report.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Invoice receipt date</td>
+<td>The date when the invoice was received.</td>
+</tr>
+<tr>
+<td>Invoice number</td>
+<td>The number of the invoice.</td>
+</tr>
+<tr>
+<td>Invoice date</td>
+<td>The date when the invoice is due.</td>
+</tr>
+<tr>
+<td>Vendor account</td>
+<td>The number of the vendor account.</td>
+</tr>
+<tr>
+<td>Vendor name</td>
+<td>The name of the vendor account.</td>
+</tr>
+<tr>
+<td>Voucher</td>
+<td>The voucher number in the ledger.</td>
+</tr>
+<tr>
+<td>Tax base amount</td>
+<td>The base amount for tax calculation.</td>
+</tr>
+<tr>
+<td>Tax amount</td>
+<td>The calculated tax amount.</td>
+</tr>
+<tr>
+<td>Tax remaining amount</td>
+<td>The tax amount that isn't due.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="generate-the-purchase-vat-report-for-internal-use">Generate the Purchase VAT report (for internal use)</h2>
+<p>Two versions of the <strong>Purchase VAT</strong> report are available. One version is for internal use only, and the other is submitted to the government.</p>
+<p>The <strong>Purchase VAT</strong> report for internal use includes transactions that purchase VAT is realized for. It also includes details of the VAT that the legal entity paid for the purchase of goods and services. This report is used internally to review the transactions for a specific period. It isn't submitted to the government.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Inquiries and reports</strong> &gt; <strong>Sales tax reports</strong> &gt; <strong>Purchase VAT report (for internal use)</strong>.</p>
+</li>
+<li><p>In the <strong>Start date</strong> and <strong>End date</strong> fields, define the period to generate the report for.</p>
+</li>
+<li><p>In the <strong>Tax branch</strong> field, select a tax branch to generate the report only for the selected tax branch. For more information, see <a href="apac-tha-tax-branch-dimensions.html">Tax branch page</a>.</p>
+</li>
+<li><p>In the <strong>Sales tax code</strong> field, select a sales tax code to generate the report only for the selected sales tax code.</p>
+</li>
+<li><p>In the <strong>Tax invoice number</strong> field, enter the number of a tax invoice to generate the report only for the specified tax invoice.</p>
+</li>
+<li><p>In the <strong>Tax invoice date</strong> field, select the date when the vendor generated the tax invoice.</p>
+</li>
+<li><p>Select <strong>OK</strong>, and review the report that is generated.</p>
+<p><img src="media/apac-tha-purchase-VAT-report-for-internal-use.png" alt="Purchase VAT report  for internal use ."></p>
+<p>The following table explains the information that is shown on the <strong>Purchase VAT</strong> report for internal use.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tax invoice date</td>
+<td>The date when the invoice was received.</td>
+</tr>
+<tr>
+<td>Posting date</td>
+<td>The date when the transaction was settled.</td>
+</tr>
+<tr>
+<td>Tax invoice number</td>
+<td>The number of the tax invoice that was received from the vendor.</td>
+</tr>
+<tr>
+<td>เลขที่ใบกำกับภาษีต้นฉบับ (Original tax invoice number)</td>
+<td>The number of the original invoice.</td>
+</tr>
+<tr>
+<td>Vendor name or Actual vendor name</td>
+<td>The name of the vendor account.</td>
+</tr>
+<tr>
+<td>Tax payer identification</td>
+<td>The vendor's identification number for tax purposes.</td>
+</tr>
+<tr>
+<td>Name of place of business – Head office</td>
+<td>The value <strong>Head office</strong> is shown if the transaction was settled by using the Head office tax branch.</td>
+</tr>
+<tr>
+<td>Name of place of business – Branch No.</td>
+<td>The number of the tax branch that was used during the transaction.</td>
+</tr>
+<tr>
+<td>Goods and services base amount</td>
+<td>The base amount of the transaction.</td>
+</tr>
+<tr>
+<td>Tax amount</td>
+<td>The calculated tax amount.</td>
+</tr>
+<tr>
+<td>Total amount</td>
+<td>The total amount of goods and services. This amount includes calculated tax.</td>
+</tr>
+<tr>
+<td>Voucher</td>
+<td>The number of the voucher for the transaction.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="generate-the-purchase-vat-report">Generate the Purchase VAT report</h2>
+<p>The <strong>Purchase VAT</strong> report includes transactions that purchase VAT is realized for. It includes details of the VAT that the legal entity paid for the purchase of goods and services. This report is generated every month and submitted to the government.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Inquiries and reports</strong> &gt; <strong>Sales tax reports</strong> &gt; <strong>Purchase VAT report</strong>.</p>
+</li>
+<li><p>In the <strong>Tax month</strong> field, select the month to generate the report for.</p>
+</li>
+<li><p>In the <strong>Tax branch</strong> field, select a tax branch to generate the report only for the selected tax branch. For more information, see <a href="apac-tha-tax-branch-dimensions.html">Tax branch page</a>.</p>
+</li>
+<li><p>In the <strong>Sales tax code</strong> field, select a sales tax code to generate the report only for the selected sales tax code.</p>
+</li>
+<li><p>In the <strong>Tax invoice date</strong> field, select the date when the vendor generated the tax invoice.</p>
+</li>
+<li><p>In the <strong>Tax invoice number</strong> field, enter the sales tax code that the report should include transactions for.</p>
+</li>
+<li><p>Select <strong>OK</strong>, and review the report that is generated.</p>
+<p><img src="media/apac-tha-purchase-VAT-report.png" alt="Purchase VAT report."></p>
+<p>The following table explains the information that is shown on the <strong>Purchase VAT</strong> report.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tax invoice date</td>
+<td>The date when the invoice was received.</td>
+</tr>
+<tr>
+<td>Posting date</td>
+<td>The date when the transaction was settled.</td>
+</tr>
+<tr>
+<td>Tax invoice number</td>
+<td>The number of the tax invoice that was received from the vendor.</td>
+</tr>
+<tr>
+<td>เลขที่ใบกำกับภาษีต้นฉบับ (Original tax invoice number)</td>
+<td>The number of the original invoice.</td>
+</tr>
+<tr>
+<td>Vendor name or Actual vendor name</td>
+<td>The name of the vendor account.</td>
+</tr>
+<tr>
+<td>Tax payer identification</td>
+<td>The vendor's identification number for tax purposes.</td>
+</tr>
+<tr>
+<td>Name of place of business – Head office</td>
+<td>The value <strong>Head office</strong> is shown if the transaction was settled by using the Head office tax branch.</td>
+</tr>
+<tr>
+<td>Name of place of business – Branch No.</td>
+<td>The number of the tax branch that was used during the transaction.</td>
+</tr>
+<tr>
+<td>Goods and services base amount</td>
+<td>The base amount of the transaction.</td>
+</tr>
+<tr>
+<td>Tax amount</td>
+<td>The calculated tax amount.</td>
+</tr>
+<tr>
+<td>Total amount</td>
+<td>The total amount of goods and services. This amount includes calculated tax.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="generate-the-sales-vat-report-for-internal-use">Generate the Sales VAT report (for internal use)</h2>
+<p>Two versions of the <strong>Sales VAT</strong> report are available. One version is for internal use only, and the other is submitted to the government.</p>
+<p>The <strong>Sales VAT</strong> report for internal use includes transactions that sales VAT is realized for. It also includes details of the VAT that the legal entity received for the sale of goods and services. This report is used internally to review the transactions for a specific period. It isn't submitted to the government.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Inquiries and reports</strong> &gt; <strong>Sales tax reports</strong> &gt; <strong>Sales VAT report (for internal use)</strong>.</p>
+</li>
+<li><p>In the <strong>Start date</strong> and <strong>End date</strong> fields, define the period to generate the report for.</p>
+</li>
+<li><p>In the <strong>Tax branch</strong> field, select a tax branch to generate the report only for the selected tax branch. For more information, see <a href="apac-tha-tax-branch-dimensions.html">Tax branch page</a>.</p>
+</li>
+<li><p>In the <strong>Sales tax code</strong> field, select a sales tax code to generate the report only for the selected sales tax code.</p>
+</li>
+<li><p>In the <strong>Tax invoice date</strong> field, select the date when the vendor generated the tax invoice.</p>
+</li>
+<li><p>In the <strong>Tax invoice number</strong> field, enter the sales tax code that the report should include transactions for.</p>
+</li>
+<li><p>Select <strong>OK</strong>, and review the report that is generated.</p>
+<p><img src="media/apac-tha-sales-VAT-report-for-internal-use.png" alt="Sales VAT report for internal use ."></p>
+<p>The following table explains the information that is shown on the <strong>Sales VAT</strong> report for internal use.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tax invoice date</td>
+<td>The date when the invoice is due.</td>
+</tr>
+<tr>
+<td>Posting date</td>
+<td>The date when the transaction was settled.</td>
+</tr>
+<tr>
+<td>Tax invoice number</td>
+<td>The number of the tax invoice that was received from the vendor.</td>
+</tr>
+<tr>
+<td>Customer name</td>
+<td>The name of the customer account.</td>
+</tr>
+<tr>
+<td>Tax payer identification number</td>
+<td>The customer's identification number for tax purposes.</td>
+</tr>
+<tr>
+<td>Name of place of business – Head office</td>
+<td>The value <strong>Head office</strong> is shown if the transaction was settled by using the Head office tax branch.</td>
+</tr>
+<tr>
+<td>Name of place of business – Branch No.</td>
+<td>The number of the tax branch that was used during the transaction.</td>
+</tr>
+<tr>
+<td>Goods and services base amount</td>
+<td>The base amount of the transaction.</td>
+</tr>
+<tr>
+<td>Tax amount</td>
+<td>The calculated tax amount.</td>
+</tr>
+<tr>
+<td>Total amount</td>
+<td>The total amount of goods and services. This amount includes calculated tax.</td>
+</tr>
+<tr>
+<td>Voucher</td>
+<td>The number of the voucher for the transaction.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="generate-the-sales-vat-report">Generate the Sales VAT report</h2>
+<p>The <strong>Sales VAT</strong> report includes transactions that sales VAT is realized for. It also includes details of the VAT that the legal entity received for the sale of goods and services. This report is generated every month and submitted to the government.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Inquiries and reports</strong> &gt; <strong>Sales tax reports</strong> &gt; <strong>Sales VAT report</strong>.</p>
+</li>
+<li><p>In the <strong>Tax month</strong> field, select the month to generate the report for.</p>
+</li>
+<li><p>In the <strong>Tax branch</strong> field, select a tax branch to generate the report only for the selected tax branch. For more information, see <a href="apac-tha-tax-branch-dimensions.html">Tax branch page</a>.</p>
+</li>
+<li><p>In the <strong>Sales tax code</strong> field, select a sales tax code to generate the report only for the selected sales tax code.</p>
+</li>
+<li><p>In the <strong>Tax invoice date</strong> field, select the date when the vendor generated the tax invoice.</p>
+</li>
+<li><p>In the <strong>Tax invoice number</strong> field, enter the sales tax code that the report should include transactions for.</p>
+</li>
+<li><p>Select <strong>OK</strong>, and review the report that is generated.</p>
+<p><img src="media/apac-tha-sales-VAT-report.png" alt="Sales VAT report."></p>
+<p>The following table explains the information that is shown on the <strong>Sales VAT</strong> report.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tax invoice date</td>
+<td>The date when the tax invoice was received from the vendor.</td>
+</tr>
+<tr>
+<td>Posting date</td>
+<td>The date when the transaction was settled.</td>
+</tr>
+<tr>
+<td>Tax invoice number</td>
+<td>The number of the tax invoice that was received from the vendor.</td>
+</tr>
+<tr>
+<td>Customer name</td>
+<td>The name of the customer account.</td>
+</tr>
+<tr>
+<td>Tax payer identification number</td>
+<td>The customer's identification number for tax purposes.</td>
+</tr>
+<tr>
+<td>Name of place of business – Head office</td>
+<td>The value <strong>Head office</strong> is shown if the transaction was settled by using the Head office tax branch.</td>
+</tr>
+<tr>
+<td>Name of place of business – Branch No.</td>
+<td>The number of the tax branch that was used during the transaction.</td>
+</tr>
+<tr>
+<td>Goods and services base amount</td>
+<td>The base amount of the transaction.</td>
+</tr>
+<tr>
+<td>Tax amount</td>
+<td>The calculated tax amount.</td>
+</tr>
+<tr>
+<td>Total amount</td>
+<td>The total amount of goods and services. This amount includes calculated tax.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-sales-vat-report.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

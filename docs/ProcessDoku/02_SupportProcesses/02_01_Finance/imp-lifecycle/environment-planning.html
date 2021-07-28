@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Environment planning | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Environment planning | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="environment-planning">Environment planning</h1>
+
+
+<p>This topic provides an overview of various aspects that you must consider while you plan for your project's environment. To help guarantee a successful cloud implementation, it's important that you discuss and plan your environment early in the project.</p>
+<h2 id="environment-planning-overview">Environment planning overview</h2>
+<p>To begin, here are a few important concepts:</p>
+<ul>
+<li><strong>Environment purpose</strong> – The reasons why the environment exists. Examples include development, system testing, user acceptance testing (UAT), and operations.</li>
+<li><strong>Environment topology</strong> – The composition of the environment and the purpose. Examples include <strong>Develop</strong> and <strong>Build and Test</strong> for Tier-1 environments.</li>
+<li><strong>Environment tier</strong> – The type or category of the environment. Examples include Tier-1 environments and Tier-2 environments.</li>
+</ul>
+<p>For more information, about the various environments and tiers, see <a href="../../dev-itpro/deployment/cloud-deployment-overview.md">Cloud deployment overview</a> and download the latest <em>Microsoft Dynamics 365 Licensing Guide</em> from <a href="https://dynamics.microsoft.com/pricing/">Dynamics 365 pricing</a>.</p>
+<h3 id="environment-types">Environment types</h3>
+<p>You can use the following environment types for your project:</p>
+<ul>
+<li><strong>Standard</strong> – This environment is included in the standard offer and is managed by Microsoft in a Microsoft subscription. Standard environments include the production environment and a Tier-2 Standard Acceptance Test environment.</li>
+<li><strong>Add-on</strong> – The add-on environments are in a Microsoft-managed subscription that the customer has purchased in addition to the standard offer. For example, an add-on environment might be an additional Tier-4 environment for performance testing.</li>
+<li><strong>Cloud-hosted</strong> – Cloud-hosted environments are additional environments that are managed by the customer or partner in a customer or partner Microsoft Azure subscription. A cloud-hosted environment can include a Tier-1 demo environment.</li>
+<li><strong>Environment image (VHD)</strong> – These additional Tier-1 environments are hosted on-premises by using a virtual hard disk (VHD) that can be downloaded from <a href="https://lcs.dynamics.com/v2">Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>In a <em>customer or partner Azure subscription</em>, the customer or partner brings its own Azure subscription, and deploys environments to that subscription for evaluation and development purposes only. The customer or partner pays for the resources that are deployed to its Azure subscription. The amount that the customer or partner pays is based on the Azure price list. By contrast, in a <em>Microsoft subscription</em>, the customer purchases licenses that allow the customer to deploy environments to an Azure subscription that is managed by Microsoft. Therefore, the customer has no separate Azure billing.</p>
+</div>
+<h3 id="tier-1-vs-tier-2-and-higher">Tier-1 vs. Tier-2 and higher</h3>
+<table>
+<thead>
+<tr>
+<th>Tier-1</th>
+<th>Tier-2 and higher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single-box environment</td>
+<td>Multi-box environment</td>
+</tr>
+<tr>
+<td>All components are installed on the same server. These components include Application Object Server (AOS), the database, Dynamics 365 Commerce, and Management Reporter.</td>
+<td>Components are installed on multiple servers.</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server is used.</td>
+<td><a href="/azure/sql-database/">Azure SQL Database</a> is used.</td>
+</tr>
+<tr>
+<td>The architecture differs from the architecture of the production environment to maximize efficiency and cost of the development team.</td>
+<td>The architecture is the same as the architecture of the production environment, even though this type of environment has a different sizing and isn't enabled for disaster recovery.</td>
+</tr>
+<tr>
+<td>The environment can be cloud-hosted, or it can be deployed as an environment image (VHD).</td>
+<td>The environment can be deployed only as a standard environment or an add-on environment. It can't be cloud-hosted.</td>
+</tr>
+<tr>
+<td>The environment isn't suitable for UAT or performance testing.</td>
+<td>The environment is suitable for UAT and performance testing.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="standard-cloud-offer">Standard cloud offer</h2>
+<p>The standard cloud offer includes two environments:</p>
+<ul>
+<li><p><strong>Tier-2 environment: Standard Acceptance Testing</strong> – One Standard Acceptance Testing (UAT) instance is provided for the duration of the subscription. This instance is a non-production multi-box instance that customers can use for UAT, integration testing, and training. Additional sandbox/staging instances can be purchased separately as an optional add-on.</p>
+</li>
+<li><p><strong>Production environment</strong> – One production instance is provided per tenant. The production multi-box instance includes disaster recovery and high availability. It will be provisioned when the implementation approaches the Operate phase, after the required activities in the Microsoft Dynamics Lifecycle Services (LCS) methodology and a successful go-live assessment are completed. Additionally, some file storage and database storage are included in the offer:</p>
+<ul>
+<li><strong>File storage:</strong> Every customer receives a certain amount of file/Azure blob cloud storage for files and binary data. Additional file/blob storage can be purchased.</li>
+<li><strong>Database storage:</strong> Every subscription includes a certain amount of Azure SQL Database storage per customer at no additional charge. Additional storage capacity is provided at no charge as an organization increases the number of user and device service licenses. For more information about the various environments and the various types of storage, as well as the currently included free file and storage capacity, download the latest <em>Microsoft Dynamics 365 Licensing Guide</em> from <a href="https://dynamics.microsoft.com/pricing/">Dynamics 365 pricing</a>.</li>
+</ul>
+</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Microsoft promises service and data high availability as well as minimal servicing downtime guarantees as part of the Dynamics 365 software license agreement (SLA) for production environments. The SLA goals do not apply to non-production environments.</p>
+</div>
+<h3 id="provisioning-of-standard-environments">Provisioning of standard environments</h3>
+<p>The standard environments are provisioned at different times. The following table shows the suggested timing for the environments in the standard cloud offer.</p>
+<table>
+<thead>
+<tr>
+<th>Environment</th>
+<th>When does provisioning occur?</th>
+<th>Is it self-service?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tier-2 Standard Acceptance Test</td>
+<td>Immediately after project onboarding has been completed in LCS</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Production</td>
+<td>At production system readiness</td>
+<td>A Go-live assessment must be completed prior to configuring the production deployment request in LCS.</td>
+</tr>
+</tbody>
+</table>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Always deploy environments by using an <strong>unnamed</strong> account. This account must be from the customer domain, such as <code>dynadmin@customer.com</code> or <code>dynadmin@customer.onmicrosoft.com</code>. We strongly recommend using the same dedicated environment admin account on all environments.  ISV licenses must be issued to the domain of the account used for environment deployment, therefore using both <code>dynadmin@customer.com</code> and <code>dynadmin@customer.onmicrosoft.com</code> on different environments can lead to problems with ISV licenses.</p>
+</div>
+<h3 id="production-system-readiness">Production system readiness</h3>
+<p>The production environment can be deployed when the project is ready for the initial go-live. For more information, see <a href="prepare-go-live.html">Prepare for go-live</a>.</p>
+<p>Production system readiness includes, but isn't limited to, the following conditions:</p>
+<ul>
+<li>An up-to-date subscription estimate is activated, as described in <a href="../../dev-itpro/lifecycle-services/subscription-estimator.md">Subscription estimator in Lifecycle Services (LCS)</a>.</li>
+<li>Code, configuration, and data are ready for cutover.</li>
+<li>An engineering process is in place to manage critical fixes.</li>
+<li>The customer has signed off on the solution and UAT.</li>
+<li>A cutover plan is in place.</li>
+</ul>
+<p>Customers should use the production environment to <strong>operate</strong> the solution, not build it. The production environment is sized to run your business. The sizing is based on the subscription estimate and diagnostic data from performance testing. After deployment, customers can and should do a mock cutover and a final round of validation on the production environment. Before the final cutover, customers can request a Point in time restore to restore the production environment to a clean snapshot (maximum 28 days in the past).</p>
+<p>To select the appropriate data center for the production environment, consider the latency from the geographic locations where the business operates. Use tools such as <a href="/sysinternals/downloads/psping">PsPing</a> and <a href="https://azurespeedtest.azurewebsites.net/">Azure Speed Test</a> to test latency to Azure data centers.</p>
+<p>The following illustrations shows the environment planning process.</p>
+<p><img src="media/environment-planning-1-process-flow.png" alt="Environment planning process flow."></p>
+<h2 id="additional-environments">Additional environments</h2>
+<p>Additional environments can be purchased as add-ons, or they can be deployed as cloud-hosted environments. The following illustration shows a <em>sample</em> overview of standard and additional environments, based on the complexity of the implementation.</p>
+<p><img src="media/environment-planning-2-purpose-complexity-matrix.png" alt="Environment purpose and complexity."></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Always deploy environments by using an <strong>unnamed</strong> account, such as <code>dynadmin@customer.com</code>. Assign the environments an owner who will be responsible for their status and maintenance. We strongly recommend using the same dedicated environment admin account on all environments. After go-live, if you plan to work on new releases, get an additional Tier-2 or higher environment to support production.</p>
+</div>
+<h3 id="deployment-considerations-for-development-environments">Deployment considerations for development environments</h3>
+<p>For development environments, there are two deployment options:</p>
+<ul>
+<li><strong>Cloud-hosted</strong> – The environments are managed by the customer/partner in a customer/partner Azure subscription.</li>
+<li><strong>Environment image (downloadable VHD)</strong> – The environments are hosted on-premises.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You must allocate one development environment per developer.</p>
+</div>
+<p>The following table compares the deployment options.</p>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Cloud-hosted</th>
+<th>Environment image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Public URL</td>
+<td>✓</td>
+<td>Not supported</td>
+</tr>
+<tr>
+<td>Integration development</td>
+<td>✓</td>
+<td>Extra setup is required. (For example, run the admin user provisioning tool.)</td>
+</tr>
+<tr>
+<td>Azure DevOps</td>
+<td>✓</td>
+<td>Extra setup is required. (For example, rename the computer.)</td>
+</tr>
+<tr>
+<td>Applying deployable packages from LCS</td>
+<td>Automated</td>
+<td>Command line runbooks (AxUpdateInstaller.exe tool)</td>
+</tr>
+<tr>
+<td>Deploying data packages from LCS</td>
+<td>✓</td>
+<td>Not supported</td>
+</tr>
+<tr>
+<td>Maintenance</td>
+<td>Managed by the customer/partner</td>
+<td>Managed by the customer/partner</td>
+</tr>
+<tr>
+<td>Cost model</td>
+<td>Pay as you go (If the environment is on for eight hours, you pay for eight hours.). Cost is based on selected Virtual Machine size, disk size and settings, and premium storage settings</td>
+<td>Hardware-related</td>
+</tr>
+<tr>
+<td>Limitations</td>
+<td>None. You have full control over VM specs, disk size and storage settings. You have administrator access to the VM.</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="selecting-the-correct-tier-2-or-higher-environment">Selecting the correct Tier-2 or higher environment</h3>
+<p>It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. The guidance that is provided in the following illustration is a <em>baseline</em>. You must work with your implementation partner to adjust this guidance, based on your specific business scenarios and factors such as type of users, complexity, and volumes.</p>
+<p><img src="media/environment-planning-3-environment-tiers.png" alt="Environment tiers."></p>
+<p>After a subscription estimate is activated, you can view transaction lines per hour in LCS, as shown in the following illustration.</p>
+<p><img src="media/environment-planning-4-subscription-estimate.png" alt="Subscription estimate."></p>
+<h3 id="purchasing-add-on-environments">Purchasing add-on environments</h3>
+<p>If you want to purchase add-on environments, we recommend that you work closely with your Cloud Solution Provider or License Service Reseller. Consider the potential lead time that occurs between the time when the order is placed and the time when the environment is deployed.</p>
+<p>The following illustration shows the process for purchasing add-on environments.</p>
+<p><img src="media/environment-planning-5-procuring-add-on.png" alt="Procuring add-ons."></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>If you have a Microsoft Volume Licensing agreement, you can subscribe to add-on environments on a monthly basis through the Microsoft Products and Services Agreement (MPSA) licensing program. Alternatively, you can subscribe to them through the Microsoft Cloud Solution Provider (CSP) program. For more information about the various environments and tiers, download the latest <em>Microsoft Dynamics 365 Licensing Guide</em> from <a href="https://dynamics.microsoft.com/pricing/">Dynamics 365 pricing</a>.</p>
+</div>
+<h2 id="environments-plan">Environments plan</h2>
+<p>Create the environments plan early in your implementation.</p>
+<ol>
+<li><p>Identify the project activities that require an environment. These activities include, but aren't limited to, development of customizations and maintenance of golden configuration data.</p>
+</li>
+<li><p>Determine the <em>activities lifecycle</em> to determine the <em>environments lifecycle</em>. Here are some examples of the questions that you should ask during this step:</p>
+<ul>
+<li>When and for how long do you require the environment?</li>
+<li>Do you require the environment before or after go-live?</li>
+</ul>
+</li>
+<li><p>Determine the type and topology of the required environments.</p>
+</li>
+<li><p>Summarize the list of required environments in a matrix.</p>
+</li>
+</ol>
+<p>After you've identified the environments, the environments plan can be used to structure the Application Lifecycle Management (ALM) flows. For example, after you finalize your environments plan, you can define the flows for building and moving the code and the data across environments.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/environment-planning.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

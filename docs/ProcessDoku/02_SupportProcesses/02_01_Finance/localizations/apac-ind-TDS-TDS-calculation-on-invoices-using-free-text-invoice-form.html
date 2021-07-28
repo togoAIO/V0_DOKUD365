@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TDS calculation on invoices from the Free text invoice page | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="TDS calculation on invoices from the Free text invoice page | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tds-calculation-on-invoices-from-the-free-text-invoice-page">TDS calculation on invoices from the Free text invoice page</h1>
+
+
+<p>This topic explains how to calculate Tax Deducted at Source (TDS) on invoices by using the <strong>Free text invoice</strong> page.</p>
+<ol>
+<li><p>Go to <strong>Accounts receivable &gt; Invoices &gt; All free text invoices</strong>.</p>
+<p><a href="media/apac-ind-TDS-57-1.png"><img src="media/apac-ind-TDS-57-1.png" alt="Free text invoice page."></a></p>
+</li>
+<li><p>Select <strong>New</strong> to create a free text invoice, and enter the required details.</p>
+</li>
+<li><p>Select the <strong>Invoice</strong> tab. In the <strong>Withholding tax group</strong> section, the <strong>Nature of assessee</strong> field shows the nature of assessee category of the customer.</p>
+</li>
+<li><p>In the <strong>TDS group</strong> field, review or change the default TDS group that is defined for the customer.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When you select a value in the <strong>TDS group</strong> field, the <strong>TCS group</strong> field becomes unavailable. TDS is calculated only if the <strong>Calculate withholding tax</strong> option is set to <strong>Yes</strong> for the customer on the <strong>All customers</strong> page.</p>
+</div>
+</li>
+<li><p>On the <strong>Tax information</strong> tab, in the <strong>Company information</strong> section, in the <strong>Name</strong> field, select the company name for an alternate address that has been set up for the company.</p>
+<p>In the <strong>Withholding tax</strong> section, the <strong>Tax Account Number (TAN)</strong> field shows the tax account number (TAN) for the selected company.</p>
+</li>
+<li><p>On the <strong>Invoice lines</strong> tab, create invoice lines, and enter the required details.</p>
+<p>In the <strong>Withholding tax group</strong> section, the <strong>Tax Account Number (TAN)</strong> field shows the TAN, and the <strong>TDS group</strong> field shows the TDS group.</p>
+</li>
+<li><p>Select <strong>Withholding tax</strong> to open the <strong>Temporary withholding tax transactions</strong> page. The upper part of this page has the following fields:</p>
+<ul>
+<li><strong>Withholding tax amount in total</strong> – The total TDS that was calculated for the transaction for the TDS group.</li>
+<li><strong>Value</strong> – The total percentage that was used to calculate TDS for the transaction. The total percentage is based on the formula that is defined for the TDS tax codes and attached to the TDS group.</li>
+<li><strong>Adjusted withholding tax amount in total</strong> – The total adjusted TDS amount for all tax codes in the TDS group.</li>
+<li><strong>TDS</strong> – A selected checkbox indicates that a TDS group is attached to the transaction.</li>
+</ul>
+<p>The fields on the <strong>Overview</strong>, <strong>General</strong>, and <strong>Adjustment</strong> tabs show the calculated TDS amount and details of the adjusted TDS amount for each TDS tax code that is attached to the TDS group.</p>
+</li>
+<li><p>Select <strong>Threshold</strong> to open the <strong>Threshold</strong> page, where you can review the threshold limit that is defined for the TDS tax component that is attached to a specific TDS tax code.</p>
+</li>
+<li><p>Select <strong>Formula designer</strong> to open the <strong>Formula designer</strong> page, where you can review the formula that is defined for a specific TDS tax code.</p>
+</li>
+<li><p>Post the free text invoice. The TDS amount that is calculated for the free text invoice is posted to the receivable account that is defined for each TDS tax code in the TDS group. The receivable accounts for TDS tax codes are defined on the <strong>Withholding tax codes</strong> page.</p>
+</li>
+<li><p>Select <strong>Posted withholding tax</strong> to open the <strong>Withholding tax transactions</strong> page. The <strong>Value</strong> field shows the total percentage that was used to calculate TDS for the transaction.</p>
+<p>The fields on the <strong>Overview</strong>, <strong>General</strong>, and <strong>Amount</strong> tabs show the TDS amounts that were calculated on the invoice lines.</p>
+</li>
+<li><p>Review the TDS calculation information for each TDS tax code that is attached to the TDS group.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Get started with Electronic invoicing for Egypt | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Get started with Electronic invoicing for Egypt | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="get-started-with-electronic-invoicing-for-egypt">Get started with Electronic invoicing for Egypt</h1>
+
+
+<p>This topic provides information that will help you get started with Electronic invoicing for Egypt. The topic guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS), and complement the steps described in <a href="e-invoicing-get-started.html">Get started with Electronic invoicing</a>.</p>
+<h2 id="country-specific-configuration-for-egyptian-electronic-invoice-eg-electronic-invoicing-feature">Country-specific configuration for Egyptian electronic invoice (EG) Electronic invoicing feature</h2>
+<p>Some of the parameters from the <strong>Egyptian electronic invoice (EG) Electronic invoicing feature</strong> are published with default values. Review the values and if necessary, update the values to better reflect your business operation before you deploy the Electronic invoicing feature to the Service environment.</p>
+<p>This section complements the <strong>Country-specific configuration for Electronic invoicing feature</strong> section in the topic <a href="e-invoicing-get-started.html">Get started with Electronic invoicing</a>.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before you complete the procedure in this section, you must:</p>
+<ul>
+<li>Create a digital certificate secret, as described in the <strong>Create digital certificate secret</strong> section in <a href="e-invoicing-get-started-service-administration.html">Get started with Electronic invoicing service administration</a>. For testing purposes, the Egyptian tax authority provides specific test digital certificates that must be used only during testing and solution validation phases. For more information, consult the Egyptian tax authority website using the link provided in the <a href="https://sdk.sit.invoicing.eta.gov.eg/faq/">Egyptian e-invoicing SDK</a>.</li>
+</ul>
+<ol>
+<li>In RCS, in the <strong>Features</strong> section of the <strong>Globalization feature</strong> workspace, select the <strong>Electronic invoicing</strong> tile.</li>
+<li>On the <strong>Electronic invoicing Features</strong> page, verify that the <strong>Egyptian electronic invoice (EG)</strong> Electronic invoicing feature you created is selected.</li>
+<li>On the <strong>Versions</strong> tab, verify the <strong>Draft</strong> version is selected.</li>
+<li>On the <strong>Setups</strong> tab, in the grid, select <strong>Sales invoice</strong> feature setup.</li>
+<li>Select <strong>Edit</strong>, and on the <strong>Actions</strong> tab in the <strong>Actions</strong> field group, select <strong>Sign json document for Egyptian Tax Authority</strong>.</li>
+<li>In the <strong>Parameters</strong> field group, select the parameter, <strong>Certificate name</strong> and select the name of the digital certificate created to use with the Electronic invoicing feature.</li>
+<li>In the <strong>Actions</strong> field group, select <strong>Integrate with Egyptian ETA service</strong>. Repeat this step for the two occurrences of this action.</li>
+<li>In the <strong>Parameters</strong> field group, select <strong>Web service URL</strong> and <strong>Login service URL</strong> and, if necessary, review the URL parameters. Consult the Egyptian tax authority website to get the Testing and Production URL, using the link provided in the <a href="https://sdk.sit.invoicing.eta.gov.eg/faq/">Egyptian e-invoicing SDK</a>.</li>
+<li>Select <strong>Save</strong> and close the page.</li>
+<li>To deploy the Electronic invoicing feature to the Service environment, see <a href="e-invoicing-get-started.html">Get started with Electronic invoicing</a>.</li>
+</ol>
+<h2 id="country-specific-configuration-of-the-application-setup-for-the-egyptian-electronic-invoice-eg-electronic-invoicing-feature">Country-specific configuration of the application setup for the Egyptian electronic invoice (EG) Electronic invoicing feature</h2>
+<p>Complete these steps before you deploy the Application setup to your Finance or Supply Chain Management Connected application.</p>
+<p>This section complements the <strong>Country-specific configuration of application setup</strong> section in the topic <a href="e-invoicing-get-started.html">Get started with Electronic invoicing</a>.</p>
+<ol>
+<li>In RCS, in the <strong>Features</strong> section of the <strong>Globalization feature</strong> workspace, select the <strong>Electronic invoicing</strong> tile.</li>
+<li>In the <strong>Electronic invoicing Features</strong> page, verify that the <strong>Egyptian electronic invoice (EG)</strong> Electronic invoicing feature is selected.</li>
+<li>On the <strong>Versions</strong> tab, verify that the <strong>Draft</strong> version is selected.</li>
+<li>On the <strong>Setups</strong> tab, select <strong>Application setup</strong> and in the <strong>Connected application</strong> field, select the application where you want to deploy.</li>
+<li>In the <strong>Table name</strong> field, verify that the customer invoice journal is selected.</li>
+<li>Select <strong>Response types</strong>, and then select <strong>New</strong>.</li>
+<li>In the <strong>Response type</strong> field, enter &quot;Response&quot; and in the <strong>Description</strong> field, enter &quot;Description&quot;.</li>
+<li>In the <strong>Submission status</strong> field, select <strong>Pending</strong>.</li>
+<li>In the <strong>Model mapping</strong> field, select <strong>Model mapping from response message</strong>, with <strong>(Preview) Response message import format</strong>, and then select <strong>Save</strong>.</li>
+<li>Select <strong>New</strong> and in the <strong>Response type</strong> field, enter &quot;ResponseData&quot; as a fixed value. In the <strong>Description</strong> field, enter &quot;Description&quot;.</li>
+<li>In the <strong>Submission status</strong> field, select <strong>Pending</strong>.</li>
+<li>In the <strong>Data entity name</strong> field, select <strong>Sales invoice headers V2</strong>.</li>
+<li>In the <strong>Model mapping</strong> field, select <strong>Egypt response data import</strong>, with <strong>(Preview) Egypt response data import</strong> and then select <strong>Save</strong>.</li>
+<li>To deploy the application setup to the Finance or Supply Chain Management connected application, see <a href="e-invoicing-get-started.html">Get started with Electronic invoicing</a>.</li>
+</ol>
+<h2 id="privacy-notice">Privacy notice</h2>
+<p>Enabling the <strong>Egyptian electronic invoice (EG)</strong> feature may require sending limited data, including the organization tax registration ID. This data will be transmitted to third-party agencies authorized by the tax authority for the purpose of sending electronic invoices to this tax authority in the predefined format that's required for integration with the government's web service. An administrator can enable and disable the feature by navigating to <strong>Organization administration</strong> &gt; <strong>Setup</strong> &gt; <strong>Electronic document parameters</strong>. On the <strong>Features</strong> tab, select the row that contains the <strong>Egyptian electronic invoice (EG)</strong> feature, and then make the appropriate selection. Data imported from these external systems into this Dynamics 365 online service are subject to our <a href="https://go.microsoft.com/fwlink/?LinkId=512132">privacy statement</a>. Consult the Privacy notice sections in country-specific feature documentation for more information.</p>
+<h2 id="additional-resources">Additional resources</h2>
+<ul>
+<li><a href="e-invoicing-service-overview.html">Electronic invoicing overview</a></li>
+<li><a href="e-invoicing-get-started-service-administration.html">Get started with Electronic invoicing service administration</a></li>
+<li><a href="e-invoicing-get-started.html">Get started with Electronic invoicing</a></li>
+<li><a href="emea-egy-e-invoices.html">Customer electronic invoices in Egypt</a></li>
+</ul>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-eg-get-started.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

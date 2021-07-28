@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Withholding tax in Thailand | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Withholding tax in Thailand | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="withholding-tax-in-thailand">Withholding tax in Thailand</h1>
+
+
+<p>This topic provides information about withholding tax and how to set it up for Thailand. The withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated and withholding tax reports are generated.</p>
+<h2 id="set-up-thailand-withholding-tax">Set up Thailand withholding tax</h2>
+<p>Complete the following tasks before you can calculate withholding tax for transactions for a legal entity in Thailand:</p>
+<ol>
+<li>Set up tax registration numbers on the <strong>Legal entities</strong> page.</li>
+<li>Set up withholding settlement periods on the <strong>Withholding tax settlement periods</strong> page.</li>
+<li>Set up withholding tax authorities on the <strong>Withholding tax authorities</strong> page.</li>
+<li>Set up withholding tax codes on the <strong>Withholding tax codes</strong> page.</li>
+<li>Set up withholding tax groups on the <strong>Withholding tax groups</strong> page.</li>
+<li>Set up withholding tax revenue types on the <strong>Withholding tax revenue</strong> <strong>types</strong> page.</li>
+<li>Set up withholding tax groups on the <strong>Item withholding tax groups</strong> page for an item or service.</li>
+<li>Select the <strong>Calculate withholding tax</strong> check box on the <strong>Vendors</strong> page.</li>
+<li>Select the <strong>Calculate withholding tax</strong> check box on the <strong>Customers</strong> page.</li>
+<li>Select the <strong>Calculate withholding tax</strong> check box on the <strong>Released products</strong> page.</li>
+</ol>
+<h2 id="payments-that-include-withholding-taxes">Payments that include withholding taxes</h2>
+<p>Any payment that is made to a vendor is taxable, and the legal entity pays tax on the withholding tax. The tax that the legal entity pays on the withholding tax is also taxable. This additional tax amount is paid by the vendor. You can use either the single iteration method or the perpetual gross-up method to gross up vendor payments. For example, for a purchase order amount of THB 4,000 and a withholding tax (WHT) rate of 15 percent, here is how the tax amount, the tax on the tax amount, and the total payment amount are calculated:</p>
+<ul>
+<li><strong>Single iteration method</strong> – In this method, the legal entity pays part of the withholding tax, and the vendor pays the other part.
+<ul>
+<li>Tax on tax amount = Tax amount × WHT rate = 600 × 0.15 = THB 90</li>
+<li>Total payment amount = Purchase order amount + (Purchase order amount × WHT rate) – (Purchase order amount × WHT rate) – (Purchase order amount × WHT rate) × WHT rate = 4,000 + 600 – 600 – 90 = THB 3,910</li>
+<li>Tax amount = Purchase order amount × WHT rate = 4,000 × 0.15 = THB 600</li>
+</ul>
+</li>
+<li><strong>Perpetual gross-up method</strong> – If there is an increase in the number of iterations to calculate the tax on the tax amount, the amount that is grossed up (the purchase order amount) decreases in value. In the perpetual gross-up method, a perpetual gross-up rate percentage is calculated by using the WHT rate. The perpetual gross-up rate percentage is then rounded to two decimal places to calculate the grossed-up amount.
+<ul>
+<li>Total payment amount = Purchase order amount × Perpetual gross-up rate percentage = 4,000 × 117.65% = THB 4,706</li>
+<li>The withholding tax at 15 percent is deducted from the total payment amount of THB 4,706. In other words, (4,706 – [4,706 × 0.15]) = THB 4,000. In this manner, the vendor receives the original payment amount after withholding tax is deducted.</li>
+<li>Perpetual gross-up rate percentage = 100 ÷ (1 – WHT rate) = 100 ÷ (1 – 15%) = 100 ÷ 0.85 = 117.65%</li>
+</ul>
+</li>
+</ul>
+<h3 id="withholding-tax-for-item-or-service-purchases">Withholding tax for item or service purchases</h3>
+<p>Use the <strong>Journal voucher</strong> page to enter and post payments that you make to a vendor for the purchase of items or services. When you post a vendor payment journal, the withholding tax group that is set up for the vendor is used to calculate the withholding tax on the transaction.</p>
+<h3 id="withholding-tax-for-item-or-service-sales">Withholding tax for item or service sales</h3>
+<p>Use the <strong>Journal voucher</strong> page to enter and post payments that you receive from customers. Post a customer payment journal or general journal for withholding tax transactions that include the tax branch code.</p>
+<h3 id="making-a-withholding-tax-payment-on-behalf-of-a-vendor">Making a withholding tax payment on behalf of a vendor</h3>
+<p>Performance awards that are given to vendors are taxable and can be withheld by a legal entity. You can make withholding tax payments on behalf of the vendor. In this case, the tax that you pay is treated as an expense for the company. This process is referred to as payment gross-up. You can generate the withholding tax reports after you post a payment journal for a vendor.</p>
+<h2 id="generate-withholding-tax-reports">Generate withholding tax reports</h2>
+<p>Generate the <strong>Withholding tax certificate</strong> report after you've settled payments and before you post a vendor payment journal. On the <strong>Withholding tax slip</strong> page, select to generate the <strong>Withholding tax certificate</strong> report. You can also generate the <strong>Withholding tax (Por Ngor Dor 53)</strong>, <strong>Withholding tax (Por Ngor Dor 3)</strong>, <strong>Withholding tax special</strong>, <strong>Withholding tax accounts receivable journal</strong>, and <strong>Withholding tax accounts payable journal</strong> reports after you post a payment journal. You can mark transactions that should be excluded from withholding tax reports.</p>
+<h3 id="generate-the-withholding-tax-special-report">Generate the Withholding tax special report</h3>
+<p>When you submit the <strong>Withholding tax (Por Ngor Dor 53)</strong> or <strong>Withholding tax (Por Ngor Dor 3)</strong> report, and you pay the withheld tax to the Revenue Department of Thailand, the department issues a receipt number. Enter this receipt number in the <strong>Receipt number</strong> field on the <strong>Posted withholding tax</strong> page. Then, at the end of the month, generate the <strong>Withholding tax special</strong> report and submit it to the Revenue Department of Thailand. This report is generated in a format that is specified by the Revenue Department of Thailand.</p>
+<h3 id="withholding-tax-por-ngor-dor-53-and-por-ngor-dor-3-electronic-formats">Withholding tax Por Ngor Dor 53 and Por Ngor Dor 3 electronic formats</h3>
+<p>Taxpayers can submit Por Ngor Dor 53 and Por Ngor Dor 3 online by using an e-filing system on the Revenue Department’s website or RD Smart Tax Application. The enhanced withholding tax reporting functionality allows users to generate the content in electronic formats to be imported into the tax application.</p>
+<h4 id="download-electronic-reporting-configurations">Download Electronic reporting configurations</h4>
+<p>The implementation of withholding PND electronic formats for Thailand is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md">Electronic reporting</a>.</p>
+<p>For production and user acceptance testing (UAT) environments, follow the instructions in <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+<p>The electronic format is generated as a pipe delimited format file. In the <strong>Electronic reporting</strong> workspace, you can import the following Electronic reporting formats from the repository:</p>
+<ul>
+<li>Tax declaration model.version.82.xml or later version</li>
+<li>Tax declaration model mapping.version.82.133.xml or a later version</li>
+<li>PND formats Online (TH).version.82.06  or a later version</li>
+</ul>
+<p>After you've finished downloading the ER configurations from Lifecycle Services (LCS) or the global repository, complete the following steps.</p>
+<ol>
+<li>Go to the <strong>Electronic reporting</strong> workspace and select the <strong>Reporting configurations</strong> tile.</li>
+<li>On the <strong>Configurations</strong> page, on the Action Pane, select <strong>Exchange</strong> &gt; <strong>Load from XML file</strong>.</li>
+<li>Upload all the files in the order that they are listed in the bulleted list above. After all the configurations are uploaded, the configuration tree should be present in Finance.</li>
+</ol>
+<h4 id="set-up-application-specific-parameters">Set up application-specific parameters</h4>
+<p>The application-specific parameters option lets users establish the criteria for how the tax transactions will be classified and presented in the different forms. When the report is generated, depending on the configuration of <strong>withholding tax item group</strong> and <strong>type of vendor account</strong>,  the process will generate the format PND 53 or format PND 3.</p>
+<p>The following graphic provides an example of the suggested setup.</p>
+<p><img src="media/apac-th-wht-pndformats-setup1.png" alt="Configuration of parameters."></p>
+<p>Complete the following steps to set up the different lookups that will be used to generate PND files.</p>
+<ol>
+<li>In the <strong>Electronic reporting</strong> workspace, select <strong>Configurations</strong> &gt; <strong>Setup</strong> to set up the rules to identify the tax transaction in the <strong>Related</strong> field on the <strong>VAT return</strong> page.</li>
+<li>Select the current version and on the <strong>Lookups</strong> FastTab, select the lookup name. For example, <strong>$PNDFormatTypeLookup</strong>. This lookup identifies the list of report types that are supported in Thailand localization.</li>
+<li>On the <strong>Conditions</strong> FastTab, select <strong>Add</strong> and in the new line, in the <strong>Lookup result</strong> column, select the related line.</li>
+<li>In the <strong>Withholding tax item group</strong> column, select the related code used to identify the tax item group in the related format type.</li>
+<li>In the <strong>Name</strong>  column, select the type of vendor account.</li>
+<li>Repeat steps 3-5 for all available lookups.</li>
+<li>To include the final record line, select <strong>Add</strong> again, and in the <strong>Lookup result</strong> column, select <strong>Not applicable</strong>.</li>
+<li>In the <strong>Remainder</strong> columns, select <strong>Not blank</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>By adding this last record <strong>Not applicable</strong>, you define the following rule: When the <strong>Withholding tax item group</strong> and the <strong>Name</strong> that is passed as an argument doesn't satisfy any of the previous rules, the transactions won't be included in the withholding format type. Although this rule isn't used when generating the report, the rule does help to avoid report generation errors when there is a missing rule configuration.</p>
+</div>
+<h4 id="generate-a-withholding-pnd-electronic-file">Generate a withholding PND electronic file</h4>
+<p>Complete the following steps to generate the tax declaration report.</p>
+<ol>
+<li>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Withholding tax</strong> &gt; <strong>Generate PND electronic formats</strong>.</li>
+<li>Enter a specific <strong>Tax branch</strong>, or leave the field blank if you want to include all available tax branches.</li>
+<li>Select the from and to dates for the report.</li>
+<li>Select the settlement period and then select the PND format type.</li>
+<li>Select <strong>OK</strong> to confirm.</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-withholding-tax.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

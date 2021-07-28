@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Standard Audit File for Tax (SAF-T) for Lithuania | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Standard Audit File for Tax (SAF-T) for Lithuania | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="standard-audit-file-for-tax-saf-t-for-lithuania">Standard Audit File for Tax (SAF-T) for Lithuania</h1>
+
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Some or all of the functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see <a href="/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases">Service update availability</a>.</p>
+</div>
+
+<p>According to Article 16 of the Law on Accounting of the Republic of Lithuania, companies in Lithuania are legally required to provide a report in Standard Audit File for Tax (SAF-T) format. This topic describes how Microsoft Dynamics 365 Finance supports the SAF-T requirements and explains how to prepare Finance to work with the SAF-T report for Lithuania.</p>
+<p>For more information, see <a href="https://www.vmi.lt/evmi/en/home">SAF-T - VMI</a>.</p>
+<h2 id="setup">Setup</h2>
+<p>To start to work with the <strong>Lithuania SAF-T</strong> report, complete the following steps:</p>
+<ol>
+<li><a href="#import">Import Electronic reporting configurations.</a></li>
+<li><a href="#application">Set up application-specific parameters for the <strong>SAF-T Format (LT)</strong> configuration.</a></li>
+<li><a href="#satt">Select the SAT-T format in General ledger parameters.</a></li>
+<li><a href="#features">Turn on features in Feature management.</a></li>
+<li><a href="#contact">Create a contact person for your company.</a></li>
+</ol>
+<h3 id="import">Import Electronic reporting configurations</h3>
+<p>In Finance, import the following versions or later of these Electronic reporting (ER) configurations from the Global repository.</p>
+<p>For more information about how to download ER configurations, see <a href="../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md">Download ER configurations from the Global repository</a>.</p>
+<table>
+<thead>
+<tr>
+<th>ER configuration name</th>
+<th>Type</th>
+<th>Version</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard Audit File (SAF-T)</td>
+<td>Model</td>
+<td>128</td>
+<td>The common data model for different audit reports.</td>
+</tr>
+<tr>
+<td>SAF-T General model mapping</td>
+<td>Model mapping</td>
+<td>128.251</td>
+<td>The model mapping that provides general data source mapping.</td>
+</tr>
+<tr>
+<td>SAF-T Format (LT)</td>
+<td>Format</td>
+<td>128.198</td>
+<td>The XML format that represents the SAF-T report in accordance with the requirements for Lithuania.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/lt-saf-t-ger-configurations.png" alt="SAF-T general model mapping configuration for Lithuania."></p>
+<p>The <strong>SAF-T General model mapping</strong> configuration provides general data source mapping for the following master data:</p>
+<ul>
+<li><strong>GeneralLedgerAccounts</strong> – General ledger.</li>
+<li><strong>Customers</strong> – Purchasers and other debtors.</li>
+<li><strong>Suppliers</strong> – Suppliers and other creditors.</li>
+<li><strong>TaxTable</strong> – Tax type tables that are used in the legal entity's accounting system. Examples include value-added tax (VAT), corporate income tax, and excise taxes.</li>
+<li><strong>UOMTable</strong> – Table for units of measurement.</li>
+<li><strong>AnalysisTypeTable</strong> – Data tables for analytical accounting. This data is used to provide details of transaction data. Examples include unit costs, additional costs, a cost center, or a project.</li>
+<li><strong>MovementTypeTable</strong> – Stock movement types.</li>
+<li><strong>Products</strong> – Products and services.</li>
+<li><strong>PhysicalStock</strong> – Data about the stock that is contained in the file.</li>
+</ul>
+<p>The <strong>SAF-T General model mapping</strong> configuration also provides general data source mapping for the following transactional data:</p>
+<ul>
+<li><strong>GeneralLedgerEntries</strong> – General ledger entries.</li>
+<li><strong>Sales invoices</strong> – Initial sales documents.</li>
+<li><strong>PurchaseInvoices</strong> – Accounting documents for purchases and acquisitions.</li>
+<li><strong>Payments</strong> – Payments.</li>
+<li><strong>MovementOfGoods</strong> – Information about the movement of goods. For example, movement occurs when goods are recorded, when goods are written off after they are sold or used in production, and when finished products, determined loss, and defective goods are recorded.</li>
+<li><strong>AssetTransactions</strong> – Economic transactions or events for tangible or intangible economic assets, and for financial assets.</li>
+</ul>
+<p>Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>After all the ER configurations from the previous table are imported, set the <strong>Default for model mapping</strong> option to <strong>Yes</strong> for the <strong>SAF-T General model mapping</strong> configuration.</p>
+<p><img src="media/lt-saf-t-default-model-mapping.png" alt="Default for model mapping option set to Yes for the SAF-T General model mapping configuration."></p>
+</div>
+<h3 id="application">Set up application-specific parameters for the SAF-T Format (LT) configuration</h3>
+<ol>
+<li><p>In Electronic reporting, open the <strong>Configurations</strong> page.</p>
+</li>
+<li><p>In the configuration tree, under <strong>Standard Audit File (SAF-T)</strong>, select <strong>SAF-T Format (LT)</strong>.</p>
+</li>
+<li><p>Make sure that you're working in the company that you want to set up the application-specific parameters for.</p>
+</li>
+<li><p>Select <strong>Configurations</strong> &gt; <strong>Application-specific parameters</strong>, and then, on the Action Pane, select <strong>Setup</strong>.</p>
+</li>
+<li><p>In the list on the left, select the last version of the configuration.</p>
+</li>
+<li><p>Provide the mapping for all the lookup fields:</p>
+<ul>
+<li><strong>StandardAnalysisType_LOOKUP</strong> – Define the mapping between the dimensions that are used by the company and the standard analysis types of Lithuania. Select the value <strong>APA-100</strong> as the last condition in the list. The <strong>Analysis ID</strong> column must be set to <strong>*Not blank*</strong>. In the <strong>Line</strong> column, verify that <strong>APA-100</strong> is the last condition in the table. At least one line that has <strong>*Not blank*</strong> values must be set up.</li>
+<li><strong>ReportTaxCodes_LOOKUP</strong> – Define the mapping between the sales tax codes that are used by the company and the standard tax codes of Lithuania. Select the value <strong>PVM100</strong> as the last condition in the list. The <strong>Tax Code</strong> column must be set to <strong>*Not blank*</strong>. In the <strong>Line</strong> column, verify that <strong>PVM100</strong> is the last condition in the table. At least one line that has <strong>*Not blank*</strong> values must be set up.</li>
+<li><strong>AddressType_LOOKUP</strong> – Define the mapping between the address types that are used by the company and the address types that are used in the SAF-T report for Lithuania. Select the value <strong>KT</strong> as the last condition in the list. The <strong>Purpose Name</strong> column must be set to <strong>*Not blank*</strong>. In the <strong>Line</strong> column, verify that <strong>KT</strong> is the last condition in the table. At least one line that has <strong>*Not blank*</strong> values must be set up.</li>
+<li><strong>StandardMainAccount_Lookup</strong> – Define the mapping between the main accounts that are used by the company and the standard main accounts of Lithuania. Select the value <strong>7</strong> as the last condition in the list. The <strong>Analysis ID</strong> column must be set to <strong>*Not blank*</strong>. In the <strong>Line</strong> column, verify that <strong>7</strong> is the last condition in the table. At least one line that has <strong>*Not blank*</strong> values must be set up.</li>
+</ul>
+</li>
+<li><p>When you've finished setting up the lookup fields, in the <strong>State</strong> field, select <strong>Completed</strong>. Then save the configuration.</p>
+</li>
+</ol>
+<h3 id="satt">Select the SAT-T format in General ledger parameters</h3>
+<ol>
+<li>Go to <strong>General ledger</strong> &gt; <strong>Setup</strong> &gt; <strong>General ledger parameters</strong>.</li>
+<li>On the <strong>Standard Audit File for Tax</strong> FastTab, in the <strong>Standard Audit File for Tax (SAF-T)</strong> field, set up the SAF-T format.</li>
+</ol>
+<h3 id="features">Turn on features in Feature management</h3>
+<ol>
+<li><p>Go to <strong>Feature management</strong>, and select the <strong>All</strong> tab.</p>
+</li>
+<li><p>In the feature list, find and select the following features:</p>
+<ul>
+<li>Optimization of query data source creation time during execution of ER reports</li>
+<li>Optimize datasets memory consumption at ER reports runtime</li>
+</ul>
+</li>
+<li><p>Select <strong>Enable now</strong>.</p>
+</li>
+</ol>
+<h3 id="contact">Create a contact person for your company</h3>
+<p>The <strong>Company</strong> node of the SAF-T report must include information for a contact. This node is located under the <strong>Header</strong> node. To set up contact information that will be reported to SAF-T, follow these steps.</p>
+<ol>
+<li>Go to <strong>Sales and marketing</strong> &gt; <strong>Relationships</strong> &gt; <strong>Contacts</strong> &gt; <strong>All contacts</strong>.</li>
+<li>Select <strong>New</strong> to create a new contact for your legal entity. Be sure to select <strong>Legal entity</strong> in the <strong>Contact for</strong> field.</li>
+<li>Check by <strong>Party ID</strong> value to make sure that you select the legal entity that SAF-T will be reported from.</li>
+</ol>
+<p><img src="media/lt-saf-t-contact-person.png" alt="ER configurations for the SAF-T report for Lithuania."></p>
+<h2 id="generate-the-saf-t-report">Generate the SAF-T report</h2>
+<ul>
+<li>To generate the SAF-T report, go to <strong>General ledger</strong> &gt; <strong>Inquiries and reports</strong> &gt; <strong>Standard Audit File for Tax (SAF-T)</strong> &gt; <strong>Standard Audit File for Tax (SAF-T)</strong>.</li>
+</ul>
+<p>The following table describes the fields in the report dialog box.</p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SAF-T File type</strong></td>
+<td><p>The SAF-T supports the following file types:</p><ul><li><strong>F</strong> – A full SAF-T file. This type of SAF-T file can be split by period.</li><li><strong>GL</strong> – General ledger records. This part of the SAF-T file can be split by entities, periods, or parts. </li><li><strong>PI</strong> – Purchase data. This part of the SAF-T file can be split by entities, periods, or parts.</li><li><strong>PA</strong> – Payment data. This part of the SAF-T file can be split by entities, periods, or parts.</li><li><strong>SI</strong> – Sales data. This part of the SAF-T file can be split by entities, periods, or parts.</li><li><strong>MG</strong> – The movement of goods. This part of the SAF-T file can be split by entities, periods, or parts.</li><li><strong>AS</strong> – The movement of fixed assets. This part of the SAF-T file can be split by entities, periods, or parts.</li><ul></ul></ul></td>
+</tr>
+<tr>
+<td><strong>Reporting period from</strong> and <strong>Reporting period to</strong></td>
+<td>Define the start and end dates of the period that the SAF-T is requested for. The start date is reflected in the <strong>Header</strong> &gt; <strong>SelectionCriteria</strong> &gt; <strong>SelectionStartDate</strong> node of the SAF-T, and the end date is reflected in the <strong>Header</strong> &gt; <strong>SelectionCriteria</strong> &gt; <strong>SelectionEndDate</strong> node.</td>
+</tr>
+<tr>
+<td><strong>From date</strong> and <strong>To date</strong></td>
+<td>Specify the start and end dates of the period that the report should include data for. The start date is reflected in the <strong>Header</strong> &gt; <strong>SelectionCriteria</strong> &gt; <strong>PeriodStart</strong> node of the SAF-T. The end date is reflected in the <strong>Header</strong> &gt; <strong>SelectionCriteria</strong> &gt; <strong>PeriodEnd</strong> node. The period for one file or one part of a file can't be shorter than one month and longer than a reporting period.</td>
+</tr>
+<tr>
+<td><strong>Number of parts</strong></td>
+<td>Specify the number of parts to generate the SAF-T in. This value is reflected in the <strong>Header</strong> &gt; <strong>NumberOfParts</strong> node of the SAF-T.</td>
+</tr>
+<tr>
+<td><strong>Part number</strong></td>
+<td>Specify the number of the part to generate in the current SAF-T. This value is reflected in the <strong>Header</strong> &gt; <strong>PartNumber</strong> node of the SAF-T.</td>
+</tr>
+<tr>
+<td><strong>Print zero balance</strong></td>
+<td>This check box affects the data that is reported in the <strong>MasterFiles</strong> &gt; <strong>GeneralLedgerAccounts</strong> node of the SAF-T. Select this check box to include all the main accounts of your company, even main accounts that have a zero balance during the specified period. Clear the check box to include only main accounts that have a non-zero balance or transactions during the specified period.</td>
+</tr>
+<tr>
+<td><strong>Export all Customers</strong></td>
+<td>This check box affects the data that is reported in the <strong>MasterFiles</strong> &gt; <strong>Customers</strong> node of the SAF-T. Select this check box to include all the customers of your company, even customers that have a zero balance during the specified period. Clear the check box to include only customers that have a non-zero balance or transactions during the specified period.</td>
+</tr>
+<tr>
+<td><strong>Export all Suppliers</strong></td>
+<td>This check box affects the data that is reported in the <strong>MasterFiles</strong> &gt; <strong>Suppliers</strong> node of the SAF-T. Select this check box to include all the suppliers of your company, even suppliers that have a zero balance during the specified period. Clear the check box to include only suppliers that have a non-zero balance or transactions during the specified period.</td>
+</tr>
+<tr>
+<td><strong>Export all Analysis types</strong></td>
+<td>This check box affects the data that is reported in the <strong>MasterFiles</strong> &gt; <strong>AnalysisTypeTable</strong> node of the SAF-T. Select this check box to include all the dimensions of your company. Clear the check box to include only dimensions that are used in transactions that are reported during the specified period.</td>
+</tr>
+<tr>
+<td><strong>Export all Products</strong></td>
+<td>This check box affects the data that is reported in the <strong>MasterFiles</strong> &gt; <strong>Products</strong> node of the SAF-T. Select this check box to include all the products of your company, even products that have zero physical stock during the specified period. Clear the check box to include only products that have non-zero physical stock or transactions during the specified period.</td>
+</tr>
+<tr>
+<td><strong>Export all Sales tax codes</strong></td>
+<td>This check box affects the data that is reported in the  <strong>MasterFiles</strong> &gt; <strong>TaxTable</strong> node of the SAF-T. Select this check box to include all the sales tax codes of your company. Clear the check box to include only sales tax codes that are used in transactions that are reported during the specified period.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="saf-t-content">SAF-T content</h2>
+<p>According to the SAFT-T technical documentation, different types of SAF-T include different content, as shown in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>SAF-T file part</th>
+<th>Group of elements</th>
+<th>F</th>
+<th>GL</th>
+<th>MG</th>
+<th>SI</th>
+<th>PI</th>
+<th>PA</th>
+<th>AS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header  </td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Header</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Master files</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>GeneralLedgerAccounts</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Customers</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Suppliers</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td></td>
+<td>TaxTable</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UOMTable</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>AnalysisTypeTable</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>MovementTypeTable</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Products</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PhysicalStock</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Assets</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>General ledger entries</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>GeneralLedgerEntries</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Source documents</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Sales invoices</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>PurchaseInvoices</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Payments</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>MovementOfGoods</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>AssetTransactions</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

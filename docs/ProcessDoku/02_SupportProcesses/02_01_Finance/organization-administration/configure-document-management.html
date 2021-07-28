@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure document management | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure document management | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configure-document-management">Configure document management</h1>
+
+
+<p>This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.</p>
+<p>To learn more about document management, watch the short <a href="https://www.youtube.com/watch?v=p4rl1CkiLN4&amp;feature=youtu.be">Document Management</a> video.</p>
+<h2 id="configure-document-types">Configure document types</h2>
+<p>Document types are used to categorize the documents that you attach to records or the templates that you create. Each document type can be stored in a unique location.</p>
+<p>A default set of document types is provided. You can use these document types to categorize an attachment as a file, image, note, or URL. The <strong>File</strong> and <strong>Image</strong> default document types are configured to use <strong>Azure storage</strong> as the location.</p>
+<p>To create a new document type, follow these steps.</p>
+<ol>
+<li><p>Go to the <strong>Document types</strong> page.</p>
+</li>
+<li><p>Click <strong>New</strong>.</p>
+</li>
+<li><p>In the <strong>Type</strong> field, enter a short name for the new document type, such as <strong>SharePoint</strong> or <strong>HR Docs</strong>.</p>
+</li>
+<li><p>In the <strong>Name</strong> field, enter a longer name, such as <strong>SharePoint files</strong> or <strong>HR Docs</strong>.</p>
+</li>
+<li><p>In the <strong>Class</strong> field, specify a class to define the behavior for the document type:</p>
+<ul>
+<li><strong>Attach file</strong> – The user is prompted for a file.</li>
+<li><strong>Attach URL</strong> – The user can enter a URL in the <strong>Notes</strong> field, such as <code>https://www.microsoft.com</code>. The <strong>Open</strong> button on the <strong>Attachments</strong> page will open the URL on a browser tab.</li>
+<li><strong>Simple note</strong> – The user can add a simple note in the <strong>Notes</strong> field.</li>
+</ul>
+</li>
+<li><p>If you specified <strong>Attach file</strong> in the <strong>Class</strong> field, in the <strong>Location</strong> field, specify the storage mechanism to use.</p>
+</li>
+<li><p>If you specified <strong>SharePoint</strong> in the <strong>Location</strong> field, specify the Microsoft SharePoint address in the <strong>SharePoint Address</strong> field. To do this, click the <strong>Edit</strong> button (pencil symbol) and use the <strong>Folder selection</strong> dialog box.</p>
+</li>
+</ol>
+<h2 id="configure-sharepoint-storage">Configure SharePoint storage</h2>
+<p>Microsoft SharePoint Online is one of the storage locations that is supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>SharePoint storage is only available in Microsoft-managed environments.</p>
+</div>
+<p>To use SharePoint storage, set the <strong>Location</strong> field for a document type to <strong>SharePoint</strong>. Then, in the <strong>SharePoint Address</strong> field, enter a valid SharePoint address.</p>
+<p>To configure SharePoint storage, follow these steps.</p>
+<ol>
+<li><p>Go to the <strong>Document management parameters</strong> page.</p>
+</li>
+<li><p>On the <strong>SharePoint</strong> tab, in the <strong>Default SharePoint server</strong> field, review the host name that was automatically detected for the SharePoint site, such as contosoax7.sharepoint.com. Typically, the SharePoint host name is in the form tenantname.sharepoint.com, and accounts on that tenant are in the form <code>user1@tenantname.onmicrosoft.com</code>.</p>
+<p>Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft 365 license isn't associated with the current user (the admin).</p>
+</li>
+<li><p>Optional: Click <strong>Test SharePoint connection</strong> to test the specified SharePoint host name. This verifies that the security and license are working correctly.</p>
+</li>
+<li><p>Optional: Click <strong>Open SharePoint</strong> to open the specified SharePoint host name in a browser. Note that this does not verify security, it just opens the SharePoint path in a browser tab for easy exploration.</p>
+</li>
+</ol>
+<h3 id="troubleshooting-sharepoint-communication">Troubleshooting SharePoint communication</h3>
+<p>SharePoint communication works for the current user only if the following conditions are met:</p>
+<ul>
+<li>A Microsoft 365 license is associated with the user's account.</li>
+<li>The user is a typical user on the tenant, not an external user (for example, a user from another tenant).</li>
+<li>There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).</li>
+<li>The SharePoint site is configured to <strong>Allow this site to appear in search results</strong>.</li>
+<li>The user has access to the folder that the document is stored in.</li>
+</ul>
+<p>If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue:</p>
+<ol>
+<li><p>Verify the Admin account has an associated email account (verify or change this in the <strong>User</strong> page). If this isn't set up, you need to add the email and provider  via the OData Excel add-in. By default, the email address isn't present in the Excel design. The user needs to edit the Excel design, add all fields, apply, and refresh. Once complete, you can update the Admin account.</p>
+</li>
+<li><p>After the Admin account has an associated email account, sign in to Dynamics as the admin.</p>
+</li>
+<li><p>Open an attachment that is stored in SharePoint.</p>
+</li>
+<li><p>Sign in with another user account that has read access to the attachments page and the configured SharePoint folder. Verify that they can also open and preview the attachment.</p>
+</li>
+</ol>
+<h2 id="configure-file-types">Configure file types</h2>
+<p>By modifying the list of file extensions that are allowed, you can control the types of files that users can attach to records.</p>
+<p>To specify file types, follow these steps.</p>
+<ol>
+<li>Go to the <strong>Document management parameters</strong> page.</li>
+<li>On the <strong>File types</strong> tab, review the default file types.</li>
+<li>Remove any file types that users should not be able to attach to records, and add any file types that users should be able to attach to records.</li>
+</ol>
+<h2 id="configure-document-preview">Configure document preview</h2>
+<p>The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the <strong>Document management parameters</strong> page, on the <strong>General</strong> tab, in the <strong>Office Web Apps Server</strong> field, specify the Office Online Server instance to use for attachment previews. The default value is <code>https://onenote.officeapps.live.com</code>, which points to the cloud-based WOPI server.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For the following situations, you will need to adjust the <strong>Office Web Apps Server</strong> field as specified.</p>
+<ul>
+<li>For environments in China, use <a href="https://onenote.partner.officewebapps.cn">https://onenote.partner.officewebapps.cn</a>.</li>
+<li>For environments in the Government Commmunity Cloud (GCC), use <a href="https://gb4-onenote.officeapps.live.com">https://gb4-onenote.officeapps.live.com</a>.</li>
+</ul>
+</div>
+<h3 id="for-a-microsoft-dynamics-365-finance--operations-on-premises-environment">For a Microsoft Dynamics 365 Finance + Operations (on-premises) environment</h3>
+<p>The default cloud-based WOPI server in Finance + Operations can't read the attachment file to provide a preview. If previews are required, you must <a href="/officeonlineserver/deploy-office-online-server">install an on-premises Office Online Server instance</a> and configure it inside the environment. Set the <strong>Office Web Apps Server</strong> field to the host name of the installed Office Online Server instance, and then click <strong>Save</strong>.</p>
+<p>If previews aren't required, set the <strong>Office Web Apps Server</strong> field to <code>https://localhost</code>. The preview will then show the message &quot;No preview available&quot; instead of an error message.</p>
+<h3 id="document-preview-wopi-will-not-work-in-environments-with-an-ip-safe-list-enabled">Document preview (WOPI) will not work in environments with an IP safe list enabled</h3>
+<p>Document preview (WOPI) will not work in environments with an IP safe list enabled, because the WOPI service that provides the preview will not be able to connect back to the file service to retrieve the file for rendering.</p>
+<h2 id="other-configuration">Other configuration</h2>
+<p>Here are some other configuration options to consider, although these options are rarely used:</p>
+<ul>
+<li>On the <strong>Document management parameters</strong> page, on the <strong>General</strong> tab, you can use the <strong>Use Document Tables</strong> option to enable the <strong>Active document tables</strong> allow list. If you set this option to <strong>Yes</strong>, you disable attachments on all other tables. Therefore, turn on this option only when it's required.</li>
+<li>On the <strong>Document management parameters</strong> page, on the <strong>General</strong> tab, you can use the <strong>Maximum file size in megabytes</strong> field to set the maximum file size for attachments. Note that when SharePoint is used as a document type, users can only upload a document up to a maximum file size of 262 megabytes.</li>
+<li>On the <strong>Options</strong> page (<strong>Settings</strong> &gt; <strong>User options</strong>), on the <strong>Preferences</strong> tab, you can use the <strong>Enable document handling</strong> option to disable document handling (document management).</li>
+</ul>
+<h2 id="accessing-document-management-attachments">Accessing document management attachments</h2>
+<p>Document management appears to users as the <strong>Attach</strong> button at the top of most pages that contain data. When you select the <strong>Attach</strong> button (or when you use the corresponding keyboard shortcut, <strong>Ctrl</strong>+<strong>Shift</strong>+<strong>A</strong>), the <strong>Attachments</strong> page is opened in the context of the data source of the control that is currently selected on the page. This page shows all the attachments that are related to the corresponding data source.</p>
+<p>The <strong>Attach</strong> button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the <strong>Attachments</strong> page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows <strong>9+</strong> as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.</p>
+<h3 id="showing-related-document-attachments">Showing related document attachments</h3>
+<p>In version 10.0.12, the <strong>Show related document attachments</strong> feature changes the document attachment experience in the following ways.</p>
+<ul>
+<li><p>When the feature is enabled, the <strong>Attachments</strong> page no longer shows only attachments that are related to a single data source. Instead, users can see and access attachments from other data sources on the pages that are related to the active record. For this to occur, the data source must:</p>
+<ul>
+<li>Be directly related to the parent data source by means of an inner or outer join.</li>
+<li>Be directly related to the parent data source by means of an active, delayed, or passive join with either 1:1 or 0:1 cardinality.</li>
+</ul>
+<p>Note that this criteria excludes showing attachments from child collections (such as lines) when looking at attachments on the header record.</p>
+<p>The count of attachments on the <strong>Attach</strong> button also reflects this change.</p>
+</li>
+<li><p>Users can move and copy attachments between the related data sources on the <strong>Attachments</strong> page.</p>
+</li>
+</ul>
+<h2 id="document-attachment-history">Document attachment history</h2>
+<p>Starting in version 10.0.16/Platform update 40, a history mechanism has been made available for record attachments. This allows your organization to maintain an audit of actions related to individual attachments. In particular, you can see when an attachment was created, marked for pending deletion, restored, deleted, or moved and who performed that action. Note that attachment history is not maintained until 10.0.16/Platform update 40, so any actions on attachments prior to that version will not be available.</p>
+<h3 id="configuration-of-document-attachment-history">Configuration of document attachment history</h3>
+<p>Document attachment history can be enabled (or disabled) by going to <strong>Document management parameters</strong> &gt; <strong>General</strong> &gt; <strong>History</strong> &gt; <strong>Enable document history</strong>. The default history retention period is 180 days, but this value can be modified as needed using the <strong>Number of days to retain history</strong> field.</p>
+<h3 id="viewing-an-attachments-history">Viewing an attachment's history</h3>
+<p>There are two entry points for viewing the history of a record attachment:</p>
+<ul>
+<li>When you are looking at the attachments for a specific record (see the <a href="configure-document-management.html#accessing-document-management-attachments">Accessing document management attachments</a> section for more details), you can view the history for the current set of attachments on the <strong>Attachments</strong> page by selecting the <strong>Document history</strong> button in the Action pane.</li>
+<li>Administrators can select the <strong>Document history</strong> button in the <strong>History</strong> section of the <strong>Document management parameters</strong> page. This action opens the <strong>Document history</strong> page, which shows a list of all attachments in the system. You can then drill into any record to see the detailed history for the selected attachment.</li>
+</ul>
+<h2 id="attachment-recovery">Attachment recovery</h2>
+<p>In Platform update 29, an attachment recovery feature has been added that provides a recycle bin for record attachments to be recovered within a configured period of time.</p>
+<h3 id="configuration-of-attachment-recovery">Configuration of attachment recovery</h3>
+<p>Attachment recovery can be enabled by going to <strong>Document management parameters</strong> &gt; <strong>General</strong> &gt;  <strong>Deferred deletion</strong> &gt; <strong>Deferred deletion enabled</strong>. The default for <strong>Number of days to defer deletion</strong> is 30 days but can be changed as needed. If the <strong>Number of days to defer deletion</strong> value is zero, this means that the deleted attachments will be recoverable for an indefinite period.</p>
+<p>After attachment recovery is enabled, a batch job with this name will be created, &quot;Scans for deleted references which have reached the end of their retention period&quot;. This batch job will use the <strong>Number of days to defer deletion</strong> to determine how long to retain a deleted attachment based on the <strong>Deleted data and time</strong>.</p>
+<h3 id="deleting-attachments-when-attachment-recovery-is-active">Deleting attachments when attachment recovery is active</h3>
+<p>When a user deletes an attachment, a notification will be added to the Message Center to provide confirmation of the deletion and an option to undo to the action if the deletion was unintended.</p>
+<p>Table extension support has been built-in, so that any extension or custom field values on the <strong>DocuRef</strong> or <strong>DocuValue</strong> tables will be retained to enable their recovery.</p>
+<h3 id="recovering-attachments">Recovering attachments</h3>
+<p>When attachment recovery is enabled, attachments can be recovered in one of three ways:</p>
+<ol>
+<li>Immediately after deletion, the user can use the undo link in the <strong>Attachment deleted</strong> notification.</li>
+<li>On the <strong>Attachments</strong> page, a <strong>Deleted attachments</strong> button provides access to the list of deleted attachments that can be recovered for a particular record. The deleted attachments can be opened for review, permanently deleted, or restored.</li>
+<li>In <strong>System administration</strong> &gt; <strong>Inquiries</strong>, the <strong>Deleted attachments</strong> page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.</li>
+</ol>
+<h2 id="scanning-attachments-for-viruses-and-malicious-code">Scanning attachments for viruses and malicious code</h2>
+<p>When you work with attachments, you might want to scan the files for viruses and malicious code. Therefore, in version 10.0.12 and later, extension points are available so that customers can integrate with the file scanning software of their choice when they work with attachments. A similar extension point is also available for file upload. For more information, see <a href="../../dev-itpro/user-interface/file-upload-control.md">File upload control</a>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Out of the box, Finance and Operations apps don't scan files for viruses and malicious code, and we don't recommend specific software for file scanning. Instead, customers are responsible for choosing their own file scanning software, and for adding the appropriate code to the delegate handlers so that they can use the software or service of their choice to scan files.</p>
+</div>
+<p>The <strong>Docu</strong> class exposes the following two delegates. Handlers can be implemented for these delegates for document scanning purposes:</p>
+<ul>
+<li><strong>Docu.delegateScanDocument()</strong> – This delegate applies the file scanning logic when a new document attachment is uploaded, or when a user tries to preview or download an existing attachment. The corresponding action will fail if the scanning service determines that the file is malicious.</li>
+<li><strong>Docu.delegateScanDeletedDocument()</strong> – This delegate applies the file scanning logic to documents in the attachments recycle bin when a user tries to preview or download a file. The corresponding action will fail if the scanning service determines that the file is malicious.</li>
+</ul>
+<h3 id="implementation-details">Implementation details</h3>
+<p>The following example of the <strong>ScanDocuments</strong> class shows boilerplate code for the two handlers. For general information about how to implement handlers for delegates, see <a href="../../dev-itpro/dev-tools/event-handler-result-class.md">EventHandlerResult classes in request or response scenarios</a>.</p>
+<pre><code class="lang-xpp">    public final class ScanDocuments
+    {
+
+        [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDocument))]
+        public static void Docu_delegateScanDocument(DocuRef _docuRef, EventHandlerRejectResult _validationResult)
+        {
+            if (!ScanDocuments::scanDocument(_docuRef))
+            {
+                _validationResult.reject();
+            }
+        }
+
+        [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDeletedDocument))]
+        public static void Docu_delegateScanDeletedDocument(DocuDeletedRef _docuDeletedRef, EventHandlerRejectResult _validationResult)
+        {
+            if (!ScanDocuments::scanDeletedDocument(_docuDeletedRef))
+            {
+                _validationResult.reject();
+            }
+        }
+
+        private static boolean scanDocument(DocuRef _docuRef)
+        {
+            /*
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
+
+        private static boolean scanDeletedDocument(DocuDeletedRef _docuDeletedRef)
+        {
+            /*
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
+
+    }
+</code></pre>
+<h2 id="developer-specifying-valid-content-types-when-attaching-documents-programmatically">[Developer] Specifying valid content types when attaching documents programmatically</h2>
+<p>The following APIs from the <code>DocumentManagement</code> class allow developers to specify the file content type (MIME type) of the file being attached.</p>
+<ul>
+<li>attachFileToCommon()</li>
+<li>attachFile()</li>
+<li>attachFileToDocuRef()</li>
+</ul>
+<p>If this file content type is not specified correctly, the attached document may not behave as expected. For this reason, if you use these APIs you should consider one of the following courses of action:</p>
+<ul>
+<li>Pass <strong>null</strong> for the <code>_fileContentType</code> parameter in any of the preceeding APIs. Doing so allows the correct content type to be inferred from the file name.</li>
+<li>Switch to using one of the following methods that doesn't include a <code>_fileContentType</code> parameter. This is to avoid the possibility of passing incorrect file content types.
+<ul>
+<li><strong>attachFileForRecord()</strong>, which replaces attachFileToCommon()</li>
+<li><strong>attachFileForReference()</strong>, which replaces attachFile()</li>
+<li><strong>attachFileForDocuRefRecord()</strong>, which replaces attachFileToDocuRef()</li>
+</ul>
+</li>
+</ul>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="what-is-the-difference-between-document-handling-and-document-management">What is the difference between document handling and document management?</h3>
+<p>There is no difference between document handling and document management. Both terms refer to the same functionality. Different terms are used in different versions of the product.</p>
+<h3 id="what-is-the-difference-between-document-management-and-print-management">What is the difference between document management and print management?</h3>
+<p>Document management lets you add notes, documents, and other files to records.</p>
+<p>Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see <a href="../../dev-itpro/analytics/document-reporting-services.md">Document Reporting Services</a>.</p>
+<h3 id="what-is-the-difference-between-document-types-and-file-types">What is the difference between document types and file types?</h3>
+<p>Document types are used to categorize the documents that you attach to records or the templates that you create. Each document type can be stored in a unique location. The table for document types is named DocuType.</p>
+<p>File types include Microsoft Word documents and images. A file type is denoted by the extension of the file, such as .txt, .png, .doc, .xlsx, or .pdf.</p>
+<h3 id="does-document-management-integrate-with-microsoft-365">Does document management integrate with Microsoft 365?</h3>
+<p>Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the <strong>URL</strong> document type.</p>
+<h3 id="what-is-the-default-storage-location-for-attachments-in-finance--operations-environments">What is the default storage location for attachments in Finance + Operations environments?</h3>
+<p>By default, attachments are saved in Azure Blob storage automatically as part of the product cloud offering.</p>
+<h3 id="if-i-accidentally-delete-an-attachment-stored-in-azure-blob-storage-can-it-be-restored">If I accidentally delete an attachment stored in Azure Blob storage, can it be restored?</h3>
+<p>If an attachment stored in Azure Blob storage is accidentally deleted, it cannot be restored or recovered because it has been permanently deleted and the reference to it has also been deleted.</p>
+<h3 id="is-the-database-information-about-attachments-stored-separately-from-the-attachments-themselves">Is the database information about attachments stored separately from the attachments themselves?</h3>
+<p>Record attachment information is stored in the DocuRef and DocuView tables. The DocuRef table is the record that represents the attachment. The DocuRef record points to the record being attached to and to a DocuView record. The DocuView record points to the file that is the attachment. Files are stored outside the database, therefore any database operations, like restoring from backup, will only affect the database information about the attachment, not the attachment file itself.</p>
+<h3 id="can-attachments-be-stored-in-the-database">Can attachments be stored in the database?</h3>
+<p>No. By default, attachments are stored in Azure Blob storage.</p>
+<h3 id="what-are-the-main-differences-between-azure-blob-storage-and-database-storage">What are the main differences between Azure Blob storage and database storage?</h3>
+<p>Database storage is Azure SQL Database. File storage is Azure Blob storage. Azure Blob storage is simpler and much less expensive.</p>
+<h3 id="how-much-storage-do-we-get-for-azure-blob-storage">How much storage do we get for Azure Blob storage?</h3>
+<p>That information is in the <a href="https://go.microsoft.com/fwlink/?LinkId=866544">licensing guide</a>. Currently, you get 40 gigabytes (GB) of storage.</p>
+<h3 id="what-is-the-cost-for-additional-storage">What is the cost for additional storage?</h3>
+<p>The cost for additional storage varies, but it's similar to the <a href="https://azure.microsoft.com/pricing/details/storage/page-blobs/">standard Azure costs for storage</a>. In other words, the cost is about $0.05 per GB.</p>
+<h3 id="how-can-we-learn-how-much-storage-weve-already-used">How can we learn how much storage we've already used?</h3>
+<p>There will be proactive communications when you're approaching your database and file storage limits. However, Microsoft Dynamics Lifecycle Services (LCS) provides some information, and you can log support requests for additional information.</p>
+<h3 id="is-there-an-option-to-export-all-document-attachments-from-the-system">Is there an option to export all document attachments from the system?</h3>
+<p>Although attachments can be exported, that capability isn't a standard capability, because there isn't a standard attachment entity. Entities that provide attachments for a specific business document or record must be built.</p>
+<h3 id="how-can-attachments-be-extracted-from-the-system">How can attachments be extracted from the system?</h3>
+<p>To extract attachments, an Attachments entity must be built for a specific business document or record. There isn't a standard attachment entity because the identity for each record type is different. To learn how to build an Attachments entity, you can find examples in the Application explorer by searching for &quot;Attachment&quot; under the <strong>AOT &gt; Data Model &gt; Data Entities</strong> node.</p>
+<h3 id="how-does-the-document-preview-work-for-attachments-stored-in-sharepoint">How does the document preview work for attachments stored in SharePoint?</h3>
+<p>The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-document-management.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

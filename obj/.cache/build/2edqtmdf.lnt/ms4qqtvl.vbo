@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Finance and Operations application architecture | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Finance and Operations application architecture | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="finance-and-operations-application-architecture" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="30">Finance and Operations application architecture</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="34">The Finance and Operations application cloud architecture contains all the elements that are common to all Microsoft cloud offerings, as described in <a href="/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="34">Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings</a>. Beyond this, it also includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="36"><img src="media/cloud-architecture.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="36" alt="Cloud architecture."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="38">The cloud architecture consists of these conceptual areas:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="40"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="40"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="40">Subscription</strong> – A subscription to Finance and Operations apps gives you an online cloud environment (or multiple environments) and experience.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="41"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="41"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="41">Licenses</strong> – Customers must purchase subscription licenses (SLs) for their organization, or for their affiliates' employees and on-site agents, vendors, or contractors who directly or indirectly access Finance and Operations apps. These apps are licensed through Microsoft Volume Licensing and the Microsoft Cloud Solution Provider (CSP) program. For more information, download the latest <a href="https://dynamics.microsoft.com/pricing/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="41">Microsoft Dynamics 365 Licensing Guide from Dynamics 365 pricing</a>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="42"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="42"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="42">Tenant</strong> – In Microsoft Azure Active Directory (AAD), a tenant represents an organization. It's a dedicated instance of the AAD service that an organization receives and owns when it creates a relationship with Microsoft (for example, by signing up for a Microsoft cloud service, such as Azure, Microsoft Intune, or Microsoft 365). Every AAD tenant is distinct and separate from other AAD tenants. For more information about AAD tenants, see <a href="/azure/active-directory/develop/active-directory-howto-tenant" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="42">How to get an Azure Active Directory Tenant</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="44">A tenant houses the company's user information. This information includes passwords, user profile data, permissions, and related information. The tenant also contains groups, applications, and other information that pertains to an organization and its security.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="46">The tenant is created when customers sign up for their first subscription to any Microsoft online service, such as Microsoft 365, Microsoft Dynamics 365, or Azure. Any later subscriptions to the same online services or other online services can be grouped within the same tenant.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="48">An organization can have multiple AAD tenants. If there are multiple tenants, make sure that any subscriptions for Finance and Operations apps are associated with the correct tenant.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="50"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="50">Azure Active Directory (AAD)</strong> – AAD is the multi-tenant, cloud-based directory and identity management service from Microsoft that combines core directory services, application access management, and identity protection in a single solution. For more information, see <a href="/azure/active-directory/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="50">Azure Active Directory</a>. Finance and Operations apps use AAD as the store for identity. Access to AAD is provided as part of a subscription to Finance and Operations apps.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="51"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="51">Microsoft 365 admin center</strong> – Microsoft 365 admin center is the subscription management portal that Microsoft 365 provides for administrators. It's used to provide management functions for users (AAD) and subscriptions. As part of these management functions, it provides information about service health. For more information, see <a href="https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="51">About the Microsoft 365 admin center</a>.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="53">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="54">You don't have to have an Microsoft 365 license to deploy Finance and Operations apps. However, you might require a license for specific Office integration scenarios. For more information, see <a href="../../dev-itpro/office-integration/office-integration.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="54">Office integration overview</a>.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="56"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="56"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="56">Microsoft Dynamics Lifecycle Services (LCS)</strong> – LCS is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations. For more information, see <a href="../../dev-itpro/lifecycle-services/lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="56">Lifecycle Services resources</a>. After you purchase and activate a subscription for a Finance and Operations app, an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="56">Implementation project</strong> workspace is provisioned in LCS when the tenant administrator signs in for the first time.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="58">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="59">An implementation project is an LCS project for the cloud service. As a Microsoft partner, you can also provision non-implementation LCS projects for your own purposes. For more information, see <a href="../../dev-itpro/lifecycle-services/getting-started-lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="59">Lifecycle Services (LCS) for Finance and Operations apps partners</a>.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="61"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="61"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="61">Finance and Operations apps</strong> – Finance and Operations apps are deployed through LCS. Various topologies are available: development/test/build, acceptance test, performance test, and high-availability production. For more information about the various topologies, download the <a href="https://dynamics.microsoft.com/pricing/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="61">latest Microsoft Dynamics 365 Licensing Guide from Dynamics 365 pricing</a>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="62"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="62"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="62">Microsoft Azure DevOps</strong> – Azure DevOps is used primarily for code version control, development, and to deploy a build environment. Azure DevOps is also used to track support incidents, such as work items in Azure DevOps that are submitted to Microsoft through Cloud-powered support, and to integrate the Business process modeler (BPM) library hierarchy into your Azure DevOps project as a hierarchy of work items. Azure DevOps is also used during code upgrade.</p>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="64">&quot;Under the hood,&quot; Finance and Operations apps use many features of the Azure platform, such as Azure Storage, networking, monitoring, and Azure SQL Database, to name just a few. Shared services put into operation and orchestrate the application lifecycle of the environments for participants. Together, Azure functionality and LCS offer a robust cloud service.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="66">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md" sourcestartlinenumber="67">Although many features of the Azure platform are used, you don't have to have an Azure subscription to deploy Finance and Operations apps in the Microsoft-managed cloud. You must have an Azure subscription only if you want to deploy Finance and Operations apps cloud-hosted environments in your own Azure subscription.</p>
+</div>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/architecture-overview.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

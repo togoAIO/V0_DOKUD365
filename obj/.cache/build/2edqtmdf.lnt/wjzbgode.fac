@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Deferred expenses register | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Deferred expenses register | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="deferrals-register" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="28">Deferrals register</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="32">Separate Deferrals functionality is used to account for deferred expenses in the system. This functionality enables an unlimited number of models to be used to account for deferrals. You can keep parallel tax accounting and bookkeeping accounting of deferrals.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="34">Deferrals are generated in the following places:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="36">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="36">Manually on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="36">Deferrals</strong> page.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="37">Automatically from other modules in Microsoft Dynamics 365 Finance. For example, deferrals are automatically generated when you sell depreciable assets at a loss or account for standard expenses amounts above the norm.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="39">Deferrals are automatically written off in each period. The write-off amount is determined based on the write-off period and the deferral amount.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="41">Here are some examples of deferrals:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="43">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="43">Losses that are incurred by a taxpayer in a tax period. These losses can be transferred to subsequent tax periods within 10 years. The total amount of the transferred loss must not exceed 30 percent of the tax base.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="44">Expenses for research work or experimental development. These expenses are evenly included in other expenses for three years from the first day of the month after the month when the research was completed.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="45">Loss on the sale of depreciable property.</li>
+</ul>
+<h2 id="deferrals-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="47">Deferrals setup</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="49">For more information about how to set up deferrals, see <a href="rus-set-up-deferrals.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="49">Set up deferrals (Russia)</a>.</p>
+<h3 id="set-up-deferral-creation-when-you-sell-fixed-assets" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="51">Set up deferral creation when you sell fixed assets</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="53">When you sell fixed assets at a loss in bookkeeping accounting and tax accounting, a deferral must be created for the amount that is lost from the sale. To create a deferral automatically, follow these steps before you sell a fixed asset.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="55">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="55"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="55">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="55">Fixed assets (Russia) &gt; Common &gt; Fixed assets.</strong> In the master record for the fixed asset, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="55">Value models</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="56"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="56">Select a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="56">TAX</strong> value model.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="57">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="57">Deferrals</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="57">Add</strong> to add a line, and set the following fields:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="59">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="59">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="59">Model number</strong> field, select a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="59">TAX</strong> model for deferrals accounting.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="60">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="60">Deferrals group</strong> field, select a deferrals group.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="61">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="61">Expense code</strong> field, select an expense code.</li>
+</ul>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="64">You can also set up automatic creation of deferrals for the depreciation group of fixed assets.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="66">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="66">Depreciation groups</strong> page, select a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="66">TAX</strong> value model and a depreciation group.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="67">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="67">Deferrals</strong> FastTab, add a line, and set the fields that are described in the previous procedure. When you create value models in the fixed asset master record, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="67">Deferrals</strong> FastTab is automatically filled in.</li>
+</ol>
+<h2 id="deferrals-register-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="69">Deferrals register</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="71">The deferrals register is created to summarize information about expenses that can be included in expenses for tax purposes in future periods. These expenses are known as <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="71">deferred expenses</em>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="73">Register entries are made when the deferral is created or is written off.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="75">You should organize analytical accounting of deferrals for each object (fixed asset, research work, or experimental development) and each expense type that cause a deferred expense to be created. This organization ensures that the deferrals register lines that are created have the same level of analytical accounting.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="77">The information that is required to create the register is stored in the deferrals master record. (This information includes the creation date of the deferral, the expense code, the deferral amount, the write-off period, and the write-off amount for the period.) The register contains information about all the deferrals that haven't yet been written off in the period that the register is created for.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="79">The register calculates the total for each expense code. The register totals are used to calculate totals for revenue and expense codes.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="81">The register lines show the following information:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="83">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="83"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="83">Line number</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="84"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="84">Transaction date</strong> – The date of the deferral transaction.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="85"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="85">Expense type</strong> – The expense code that is assigned in the transaction.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="86"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="86">Expense code</strong> – The description of the expense code in the transaction.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="87"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="87">Object name</strong> – The name of the deferral.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="88"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="88">Deferrals sum</strong> – The amount of the deferral.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="89"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="89">Term of deferral's write-off</strong> – The period of the deferral write-off.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="90"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="90">Monthly amount</strong> – The monthly amount of the deferral write-off.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="91"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="91">Date begin account</strong> – The start date of accounting for the deferral.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="92"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="92">Amount of months</strong> – The number of months when there was a posted write-off transaction, up through the current month.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="93"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="93">Writing-off sum</strong> – The write-off sum for the deferral in the current register.</li>
+</ul>
+<h3 id="set-up-the-deferrals-register" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="95">Set up the deferrals register</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="97">Set up the deferrals register by following the instructions in Profit tax registers journal. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="97">Register type</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="97">Deferrals</strong>.</p>
+<h3 id="examples" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="99">Examples</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="101">The following two examples use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="101">RUMF</strong> company:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="103">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="103">Deferrals are automatically created when fixed assets are sold at a loss</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="104">Deferrals are automatically created by using a periodic task</li>
+</ul>
+<h4 id="example-deferrals-are-automatically-created-when-fixed-assets-are-sold-at-a-loss" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="107">Example: Deferrals are automatically created when fixed assets are sold at a loss</h4>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="109">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="109">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="109">Deferrals groups</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="109">General ledger &gt; Deferrals</strong>), create the following deferrals group.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111">Deferrals group</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111">Model number</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111">Write-off method</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111">Write-off time</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111">Beginning date of write-off</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="111">Disposal date</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="113">Yearly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="113">TAX</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="113">Linear</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="113">12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="113">Creation date start</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="113">Year end</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="115">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="115">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="115">Expense and income codes</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="115">Tax &gt; Setup &gt; Profit tax &gt; Expense codes</strong>), verify that the following expense codes are created.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="117">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="117">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="117"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="117">Expense code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="117"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="117">Code type</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="117"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="117">Parent code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="117"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="117">Sales tax code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="119">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="119">902000000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="119">Issue</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="119"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="119">НП</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="120">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="120">902030000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="120">Issue</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="120">902000000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="120">НП</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="122">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="122">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="122">Depreciation groups</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="122">Fixed assets (Russia) &gt; Setup &gt; Depreciation groups</strong>), create the following depreciation group that uses the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="122">TAX</strong> value model.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="124">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="124">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="124"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="124">Depreciation group</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="124"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="124">Depreciation method</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="124"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="124">Value model</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="124"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="124">Depreciation start date</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="126">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="126">FA loss</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="126">Linear</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="126">TAX</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="126">Next month start</td>
+</tr>
+</tbody>
+</table>
+<ol start="4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="128">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="128">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="128">Deferrals</strong> FastTab, create the following line.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="130">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="130">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="130"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="130">Model number</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="130"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="130">Deferrals group</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="130"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="130">Expense code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="132">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="132">TAX</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="132">Yearly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="132">902030000</td>
+</tr>
+</tbody>
+</table>
+<ol start="5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="134">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="134">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="134">FA groups</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="134">Fixed assets (Russia) &gt; Setup &gt; FA groups),</strong> create the following fixed asset (FA) group.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="136">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="136">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="136"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="136">FA group</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="136"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="136">Name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="138">Inventory</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="138">Inventory</td>
+</tr>
+</tbody>
+</table>
+<ol start="6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="140">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="140">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="140">Released products</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="140">Product information management &gt; Products &gt; Released products</strong>), create the product. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="140">Fixed assets (Russia)</strong> section, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="140">FA group</strong> field, select the fixed asset group that you just created.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="142">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="142">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="142"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="142">Product number</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="142"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="142">Product name</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="142"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="142">FA group</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="144">Inventory01</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="144">Inventory01</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="144">Inventory</td>
+</tr>
+</tbody>
+</table>
+<ol start="7" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="146">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="146"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="146">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="146">Tax registers</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="146">Tax &gt; Setup &gt; Profit tax &gt; Registers</strong>), create the following registers:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="148">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="148"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="148">FA – information about object</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="149"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="149">FA depreciation</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="150"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="150">FA/IA sale, Deferrals</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="152">For each register, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="152">Hide</strong> FastTab, select the fields that should be hidden from the register.</p>
+</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="154"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="154">On <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="154">Fixed assets</strong> page (Fixed assets (Russia) &gt; Common &gt; Fixed assets), create the following fixed asset.</p>
+</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="156">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="156">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="156"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="156">FA group</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="156"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="156">Number</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="156"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="156">Acquisition date</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="156"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="156">Acquisition cost</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="158">Inventory</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="158">4051</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="158">01/01/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="158">300,000.00</td>
+</tr>
+</tbody>
+</table>
+<ol start="9" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="160">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="160">Add the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="160">TAX</strong> value model for the fixed asset. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="160">General</strong> FastTab, set the following fields.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="162">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="162">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="162"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="162">Value model</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="162"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="162">Depreciation group</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="162"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="162">Putting into operation amount</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="164">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="164">TAX</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="164">FA loss</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="164">300,000.00</td>
+</tr>
+</tbody>
+</table>
+<ol start="10" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="166">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="166">Make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="166">Deferrals</strong> FastTab has the following line.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="168">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="168">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="168"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="168">Model number</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="168"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="168">Deferrals group</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="168"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="168">Expense code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="170">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="170">TAX</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="170">Yearly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="170">902030000</td>
+</tr>
+</tbody>
+</table>
+<ol start="11" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="172">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="172">Create the fixed asset journal for putting into operation, and do the putting into operation proposal, using January 1, 2019 (1/1/2019) as the transaction date. Then post the journal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="173">Create the fixed asset journal for depreciation, and do the depreciation proposal, using April 1, 2019 (4/1/2019) as the transaction date. Verify that the following lines have been created.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175">Accounting</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175">Date</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175">Account type</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175">Account</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175">Description</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="175">Credit</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="177">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="177">RAP</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="177">2/1/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="177">Fixed asset</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="177">4051</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="177">Depr. by 2/28/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="177">25,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="178">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="178">RAP</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="178">3/1/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="178">Fixed asset</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="178">4051</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="178">Depr. by 3/31/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="178">25,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="179">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="179">TAX</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="179">2/1/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="179">Fixed asset</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="179">4051</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="179">Depr. by 2/28/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="179">25,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="180">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="180">TAX</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="180">3/1/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="180">Fixed asset</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="180">4051</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="180">Depr. by 3/31/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="180">25,000.00</td>
+</tr>
+</tbody>
+</table>
+<ol start="13" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="182">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="182">Post the journal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="183">On <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="183">All sales orders</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="183">Accounts receivable &gt; Orders &gt; All sales orders</strong>) create a sales order that has the following line:</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="185">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="185">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="185"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="185">Item number</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="185"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="185">Quantity</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="185"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="185">Unit price</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="185"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="185">FA inventory number</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="187">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="187">Inventory01</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="187">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="187">200,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="187">4051</td>
+</tr>
+</tbody>
+</table>
+<ol start="15" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="189">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="189">Switch to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="189">Header</strong> view, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="189">Financial dimensions</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="189">ExpenseAndIncomeCode</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="189">902030000</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="189">Invoice date</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="189">3/31/2019</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="190">Post the invoice.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="191">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="191">Deferrals</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="191">General ledger &gt; Deferrals</strong>), verify that the deferral master record was created.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="192">Make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="192">Deferrals models</strong> page has the following line.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="194">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="194">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="194"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="194">Model number</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="194"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="194">Deferrals group</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="194"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="194">Beginning date of writing off</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="194"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="194">Deferrals sum</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="196">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="196">TAX</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="196">Yearly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="196">3/31/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="196">50,000.00</td>
+</tr>
+</tbody>
+</table>
+<ol start="19" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="198">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="198">Switch to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="198">General</strong> view. You should see that the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="198">Writing off time</strong> field equals the remaining lifetime of the fixed asset. Note that <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="198">50,000.00</strong> = 300,000.00 – 25,000.00 × 2 – 200,000.00.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="199">Create the tax register journal for one month of the 2019 calendar year, calculate all registers, and then approve the journal. Repeat this step for two months of the 2019 calendar year.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="200">Create the tax register journal for three months of the 2019 calendar year, and calculate all registers. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="200">Deferrals</strong> register, you should see the following information.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="202">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="202">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="202"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="202">Column</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="202"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="202">Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="204">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="204">Transaction date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="204">3/31/2019</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="205">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="205">Expense type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="205">902030000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="206">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="206">Expense code</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="206">«Прочая амортизация ОС линейным методом» (ENU: «Other FA depreciation using linear method»)</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="207">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="207">Object name</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="207">Disposal FA # 4051 on 3/31/2019</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="208">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="208">Deferrals sum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="208">50,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="209">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="209">Term of deferral's write-off</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="209">10</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="210">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="210">Monthly amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="210">-5,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="211">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="211">Date begin account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="211">3/31/2019</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="212">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="212">Amount of months</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="212">1.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="213">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="213">Writing-off sum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="213">-5,000.00</td>
+</tr>
+</tbody>
+</table>
+<ol start="22" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="215">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="215">Approve the journal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="216">Create the tax register journal for four months of the 2019 calendar year, and calculate all the registers. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="216">Deferrals</strong> register, you should see the same line that you saw in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="216">Deferrals</strong> register for three months. However, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="216">Amount of months</strong> field will be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="216">2.00</strong> instead of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="216">1.00</strong>.</li>
+</ol>
+<h4 id="example-deferrals-are-automatically-created-by-using-a-periodic-task" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="218">Example: Deferrals are automatically created by using a periodic task</h4>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="220">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="220">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="220">General ledger &gt; Deferrals setup &gt; Value models</strong>, and verify that the following value models and deferral groups are created.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="222">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="222">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="222"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="222">Model number</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="222"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="222">Deferrals group</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="222"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="222">Write-off time</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="222"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="222">Beginning date of write-off</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="224">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="224">RAP</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="224">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="224">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="224">Creation date start</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="225">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="225">TAX</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="225">Yearly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="225">12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="225">Creation date start</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="227">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="227">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="227">Standard expenses sequence</strong> page, create the following sequence.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="229">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="229">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="229"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="229">Sequence</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="229"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="229">Description</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="229"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="229">Channel</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="229"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="229">Channel reference</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="231">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="231">AutDef</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="231">Automatic deferral creation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="231">Deferral</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="231">1,Yearly</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="233">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="233">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="233">Counters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="234">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="234">Counter setup</strong> page, create a sequence. In the upper pane, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="234">Expense code</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="234">902010100</strong>, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="234">Lines</strong> FastTab, create the following lines.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236">Line number</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236">Operator</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236">Line type</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236">Period types</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="236">Output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="238">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="238">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="238"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="238">Quantity</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="238">No</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="238"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="239">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="239">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="239">*</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="239">Price</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="239">No</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="239">Data output</td>
+</tr>
+</tbody>
+</table>
+<ol start="5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="241">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="241">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="241">Accounts payable &gt; Invoices &gt; Invoice journal</strong>, and create a journal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="242">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="242">Lines</strong>, set the following fields, and then post the journal.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="244">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="244">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="244"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="244">Column</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="244"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="244">Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="246">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="246">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="246">1/1/2019</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="247">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="247">Account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="247">Vendor</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="248">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="248">Account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="248">RUMF-000002</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="249">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="249">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="249">0007</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="250">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="250">Description</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="250">«Расходы перечисление» (ENU: «Expenses transfer»)</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="251">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="251">Credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="251">10,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="252">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="252">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="252">RUB</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="253">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="253">Offset account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="253">Ledger</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="254">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="254">Offset account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="254">97.120-902010100</td>
+</tr>
+</tbody>
+</table>
+<ol start="7" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="256">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="256"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="256">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="256">Deferrals creating</strong> page, on the Action Pane, select the sequence of calculation that you created, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="256">Calculate marked</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="257"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="257">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="257">Parameters</strong> FastTab, set the following fields:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="259">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="259">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="259">Start date</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="259">1/1/2019</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="260">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="260">End date</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="260">1/31/2019</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="261">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="261">Preview</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="261">Yes</strong>.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="263"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="263">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="263">OK</strong>, and then, on the page that appears, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="263">Name</strong> field to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="263">«Расходы перечисление» (ENU: «Expenses transfer»)</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="264"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="264">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="264">Create deferrals</strong>, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="264">Deferrals</strong> page, verify that the deferral master record was created.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="265"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="265">Make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="265">Deferrals models</strong> page has the following lines.</p>
+</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="267">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="267">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="267"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="267">Model number</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="267"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="267">Deferrals group</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="267"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="267">Beginning date of write-off</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="267"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="267">Deferrals sum</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="269">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="269">RAP</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="269">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="269">1/1/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="269">10,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="270">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="270">TAX</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="270">Yearly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="270">1/1/2019</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="270">10,000.00</td>
+</tr>
+</tbody>
+</table>
+<ol start="12" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="272">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="272">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="272">Deferrals journal</strong> page, create a new journal, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="272">Lines</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="273">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="273">Journal voucher</strong> page, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="273">Group operations &gt; Writing off</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="274">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="274">Deferrals writing off</strong> page, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="274">Transaction date</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="274">3/1/2019</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="274">OK</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="275">Verify that two lines were created for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="275">TAX</strong> value model. For both lines, the operation type should be <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="275">Writing off</strong>, and the amount should equal 10,000.00 ÷ 12 = <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="275">833.33</strong>. When you've finished, post the journal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="276">Create the tax register journal for one month of the 2019 calendar year, and then calculate all the registers. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="276">Deferrals</strong> register, you should see the following information.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="278">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="278">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="278"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="278">Column</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="278"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="278">Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="280">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="280">Transaction date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="280">1/1/2019</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="281">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="281">Expense type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="281">902010100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="282">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="282">Expense code</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="282">«Прямые расходы на производство (сырье и материалы)» (ENU: «Direct production expenses (raw and materials)»)</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="283">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="283">Object name</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="283">«Расходы перечисление» (ENU: «Expenses transfer»)</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="284">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="284">Deferrals sum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="284">10,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="285">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="285">Term of deferral's write-off</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="285">12</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="286">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="286">Monthly amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="286">-833.33</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="287">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="287">Date begin account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="287">1/1/2019</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="288">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="288">Amount of months</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="288">1.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="289">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="289">Write-off sum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="289">-833.33</td>
+</tr>
+</tbody>
+</table>
+<ol start="17" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="291">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="291">Approve the journal, and then create the tax register journal for two months of the 2019 calendar year.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="292">Calculate the registers. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="292">Deferrals</strong> register, you should see the same line that you saw in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="292">Deferrals</strong> register for one month. However, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="292">Amount of months</strong> field will be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="292">2.00</strong> instead of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md" sourcestartlinenumber="292">1.00</strong>.</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-deferred-expenses-register.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

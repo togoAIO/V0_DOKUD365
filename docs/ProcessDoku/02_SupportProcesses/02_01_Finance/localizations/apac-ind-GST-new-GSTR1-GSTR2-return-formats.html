@@ -1,0 +1,660 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>New GSTR-1 and GSTR-2 return formats | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="New GSTR-1 and GSTR-2 return formats | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="new-gstr-1-and-gstr-2-return-formats">New GSTR-1 and GSTR-2 return formats</h1>
+
+
+<p>The format of the GSTR-1 and GSTR-2 returns has been updated in response to the new format that was updated by the ClearTax Goods and Services Tax (GST) Suvidha Provider, or GSP.</p>
+<p>The following comma-separated values (CSV) files have been made obsolete (deprecated):</p>
+<ul>
+<li><p><strong>GSTR-1:</strong></p>
+<ul>
+<li>GSTR1 Adjust multiple Advance receipt for invoice</li>
+<li>GSTR1 Advance receipt format</li>
+<li>GSTR1 Refund voucher</li>
+</ul>
+</li>
+<li><p><strong>GSTR-2:</strong></p>
+<ul>
+<li>GSTR2 Adjust multiple Advance payment for invoice</li>
+<li>GSTR2 Advance payment format</li>
+<li>GSTR2 Refund voucher</li>
+</ul>
+</li>
+</ul>
+<p>The following files have been updated:</p>
+<ul>
+<li><p><strong>GSTR-1:</strong></p>
+<ul>
+<li>GSTR1 Invoice and Bill of Supply</li>
+<li>GSTR1 Credit debit note</li>
+</ul>
+</li>
+<li><p><strong>GSTR-2:</strong></p>
+<ul>
+<li>GSTR2 Invoice and bill of supply</li>
+<li>GSTR2 Credit debit note</li>
+</ul>
+</li>
+</ul>
+<h2 id="changes-in-the-new-return-format">Changes in the new return format</h2>
+<h3 id="gstr-1">GSTR-1</h3>
+<p>The following columns have been added in these files:</p>
+<ul>
+<li><p><strong>Sales Invoice and Bill of supply file:</strong></p>
+<ul>
+<li>Differential % of Tax Rate</li>
+<li>Supply covered Under Sec.7 of IGST Act</li>
+<li>Would you claim Refund?</li>
+<li>Return Filing month</li>
+<li>Return Filing Quarter</li>
+</ul>
+</li>
+<li><p><strong>Sales credit Debit note file:</strong></p>
+<ul>
+<li>Applicable % of tax Rate</li>
+<li>Supply covered under Sec. 7 of IGST Act</li>
+<li>Would you claim Refund?</li>
+<li>Type of Export</li>
+<li>Shipping Port code - Export</li>
+<li>Shipping Bill number - Export</li>
+<li>Shipping Bill date - Export</li>
+<li>Return Filling Month</li>
+<li>Return filing quarter</li>
+<li>GSTN of E-commerce market place</li>
+</ul>
+</li>
+</ul>
+<h3 id="gstr-2">GSTR-2</h3>
+<p>The following columns have been added in these files:</p>
+<ul>
+<li><p><strong>Purchase Invoice and Bill of Supply file:</strong></p>
+<ul>
+<li>Supply covered under section 7 of IGST Act</li>
+<li>Would you claim Refund</li>
+<li>Return Filing Month</li>
+<li>Return Filing Quarter</li>
+</ul>
+</li>
+<li><p><strong>Purchase Credit Debit Note file:</strong></p>
+<ul>
+<li>Supply covered under Sec 7 of IGST Act</li>
+<li>Would you claim Refund</li>
+<li>Type of Import (Goods, Services, SEZ)</li>
+<li>Bill of Entry port code</li>
+<li>Bill of entry number</li>
+<li>Bill of Entry Date</li>
+<li>Bill of Entry Value</li>
+<li>Return filling Month</li>
+<li>Return filling Quarter</li>
+</ul>
+</li>
+</ul>
+<h3 id="set-up-dynamics-365-finance-to-report-anx-1">Set up Dynamics 365 Finance to report ANX-1</h3>
+<p>You must complete the following tasks to prepare Microsoft Dynamics 365 Finance to report ANX-1:</p>
+<ol>
+<li><p>Import and set up Electronic reporting (ER) configurations.</p>
+</li>
+<li><p>Map the reporting configuration in the tax setup.</p>
+</li>
+<li><p>Provide report data for report generation.</p>
+<ul>
+<li>Generate a new ANX-1 report: ANX-1 files will generate 10 CSV files.</li>
+</ul>
+</li>
+<li><p>Provide report data for report generation.</p>
+<ul>
+<li>Generate the Purchase Register Excel file.</li>
+</ul>
+</li>
+</ol>
+<h2 id="import-tax-configuration">Import tax configuration</h2>
+<ul>
+<li>Taxable Document.version.82</li>
+<li>Taxable Document (India).version 82.155</li>
+<li>Tax (India GST).version.82.155.300</li>
+</ul>
+<h2 id="import-and-set-up-er-configurations">Import and set up ER configurations</h2>
+<p>To prepare Finance for GSTR reporting, you must import the following versions of ER configurations, or later versions, in the order that they are listed in.</p>
+<table>
+<thead>
+<tr>
+<th>ER configuration name</th>
+<th>Type</th>
+<th>Format</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GST Returns model</td>
+<td>Model</td>
+<td>XML</td>
+<td>16</td>
+</tr>
+<tr>
+<td>GST Returns model mapping</td>
+<td>Model</td>
+<td>XML</td>
+<td>16.7</td>
+</tr>
+<tr>
+<td>GSTR-1 for Old Return</td>
+<td>Model</td>
+<td>XML</td>
+<td>16.32</td>
+</tr>
+<tr>
+<td>GSTR-1 for new Return</td>
+<td>Model</td>
+<td>XML</td>
+<td>16.41</td>
+</tr>
+<tr>
+<td>GSTR-2 for Old Return</td>
+<td>Model</td>
+<td>XML</td>
+<td>16.36</td>
+</tr>
+<tr>
+<td>GSTR-2 for new Return</td>
+<td>Model</td>
+<td>XML</td>
+<td>16.40</td>
+</tr>
+<tr>
+<td>GST Returns govt. model mapping</td>
+<td>Model</td>
+<td>XML</td>
+<td>19.10</td>
+</tr>
+<tr>
+<td>GST Returns govt. model</td>
+<td>Model</td>
+<td>XML</td>
+<td>19.0</td>
+</tr>
+<tr>
+<td>GST Returns govt. model mapping</td>
+<td>Model</td>
+<td>XML</td>
+<td>19.12</td>
+</tr>
+<tr>
+<td>GST ANX-1 Govt. offline tool</td>
+<td>Model</td>
+<td>XML</td>
+<td>19.22</td>
+</tr>
+<tr>
+<td>Purchase Register</td>
+<td>Model</td>
+<td>XML</td>
+<td>19.7</td>
+</tr>
+<tr>
+<td>ANX-1</td>
+<td>Format (exporting)</td>
+<td>CSV</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Purchase Register</td>
+<td>Format (exporting)</td>
+<td>Excel</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>GSTR-1 (new)</td>
+<td>Format (exporting)</td>
+<td>CSV</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>GSTR-2 (new)</td>
+<td>Format (exporting)</td>
+<td>CSV</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>Import the latest versions of these configurations. The description of each configuration version usually includes information about the changes that were introduced in that version.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>After all the ER configurations from the preceding table are imported, you must map the report configuration in the tax setup.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Version</th>
+<th>Report controller</th>
+<th>Description (Pl)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GST ANX-1 Govt. Offline Tool</td>
+<td>19.22</td>
+<td>GST ANX-1 Govt. offline Tool</td>
+<td>New GSTR return applicable from 1.4.2020 onward</td>
+</tr>
+<tr>
+<td>GSTR-1 CSV (old)</td>
+<td>16.32</td>
+<td>GSTR-1 (old)</td>
+<td>Existing GSTR-1 format</td>
+</tr>
+<tr>
+<td>GSTR-1 Govt. Offline Tool CSV</td>
+<td>19.10</td>
+<td>GSTR-1 Govt. Offline Tool</td>
+<td>Existing GSTR-1 offline tool. (Ineffective from 1.4.2020)</td>
+</tr>
+<tr>
+<td>GSTR-2 CSV (old)</td>
+<td>16.36</td>
+<td>GSTR-2 (old)</td>
+<td>Existing GSTR-2 format</td>
+</tr>
+<tr>
+<td>Purchase register</td>
+<td>19.7</td>
+<td>Purchase Register</td>
+<td>New Register for inward transaction applicable from 1.4.2020</td>
+</tr>
+<tr>
+<td>GSTR-1 CSV (new)</td>
+<td>16.41</td>
+<td>GSTR-1 (new)</td>
+<td>New GSTR-1 format</td>
+</tr>
+<tr>
+<td>GSTR-2 CSV (new)</td>
+<td>16.40</td>
+<td>GSTR-2 (new)</td>
+<td>New GSTR-2 format</td>
+</tr>
+</tbody>
+</table>
+<h2 id="important-columns-that-were-added-in-the-new-gstr-1">Important columns that were added in the new GSTR-1</h2>
+<table>
+<thead>
+<tr>
+<th>Report</th>
+<th>File format</th>
+<th>Column title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sales Invoice and Bill of supply</td>
+<td>CSV</td>
+<td>Differential % of Tax Rate</td>
+<td>If the supply is eligible to be taxed at a lower percentage of the existing tax rate, select <strong>define%</strong>. For example, if the regular tax rate is 12 percent, and the differential percentage of the tax rate is 65 percent, the applicable tax rate will be 7.8 percent.</td>
+</tr>
+<tr>
+<td>Sales Invoice and Bill of supply</td>
+<td>CSV</td>
+<td>Supply covered Under Sec. 7 of IGST Act</td>
+<td>If the supply is covered under section 7 of the Integrated GST (IGST) Act, select <strong>Yes</strong>. Otherwise, leave the field blank.</td>
+</tr>
+<tr>
+<td>Sales Invoice and Bill of supply</td>
+<td>CSV</td>
+<td>Would you claim Refund?</td>
+<td>If you want to claim a refund, select <strong>Yes</strong>. Otherwise, select <strong>No</strong>. If the supplies exclude the payment of tax, select <strong>No</strong>.</td>
+</tr>
+<tr>
+<td>Sales Invoice and Bill of supply</td>
+<td>CSV</td>
+<td>Return Filing month</td>
+<td>The system will select a month from the period that is defined in the <strong>GSTR report</strong> dialog box.</td>
+</tr>
+<tr>
+<td>Sales Invoice and Bill of supply</td>
+<td>CSV</td>
+<td>Return Filing Quarter</td>
+<td>The system will select a quarter from the period that is defined in the <strong>GSTR report</strong> dialog box.</td>
+</tr>
+<tr>
+<td>Sales credit Debit note</td>
+<td>CSV</td>
+<td>Applicable % of tax Rate</td>
+<td>If the supply is eligible to be taxed at a lower percentage of the existing tax rate, select <strong>define%</strong>. Otherwise, leave the field blank.</td>
+</tr>
+<tr>
+<td>Sales credit Debit note</td>
+<td>CSV</td>
+<td>Supply covered under Sec. 7 of IGST Act</td>
+<td>If the place of supply of the invoice address and the place of supply of the shipping address are in different locations, include the <strong>/SEZ/DE</strong> export.</td>
+</tr>
+<tr>
+<td>Sales credit Debit note</td>
+<td>CSV</td>
+<td>Would you claim Refund?</td>
+<td>If the GST payment type is <strong>WOPAY</strong> (&quot;without payment&quot;), select <strong>No</strong>. Otherwise, select <strong>Yes</strong>.</td>
+</tr>
+<tr>
+<td>Sales credit Debit note</td>
+<td>CSV</td>
+<td>Type of Export</td>
+<td>Provide one of the following four values:<ul><li>Export with Payment of GST</li><li>Export without Payment of GST</li><li>SEZ</li><li>Deemed Export</li></ul></td>
+</tr>
+<tr>
+<td>Sales credit Debit note</td>
+<td>CSV</td>
+<td>Shipping Port code - Export</td>
+<td>The shipping port code will come from the shipping bill.</td>
+</tr>
+<tr>
+<td>Sales credit Debit note</td>
+<td>CSV</td>
+<td>Shipping Bill number - Export</td>
+<td>Information about the shipping bill number will come from the posted shipping bill order.</td>
+</tr>
+<tr>
+<td>Sales credit Debit note</td>
+<td>CSV</td>
+<td>Shipping Bill date - Export</td>
+<td>Information about the shipping bill date will come from the posted shipping bill order.</td>
+</tr>
+<tr>
+<td>Sales credit Debit note</td>
+<td>CSV</td>
+<td>Return Filling Month</td>
+<td>The month that the transaction report is generated for.</td>
+</tr>
+<tr>
+<td>Sales credit Debit note</td>
+<td>CSV</td>
+<td>Return filing quarter</td>
+<td>The system will select a quarter from the period that is defined in the <strong>GSTR report</strong> dialog box.</td>
+</tr>
+<tr>
+<td>Sales credit Debit note</td>
+<td>CSV</td>
+<td>GSTN of E-commerce market place</td>
+<td>The GST Identification Number (GSTIN) of the e-commerce operator, from the e-commerce operator's tax information.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="important-columns-that-were-added-in-the-new-gstr-2">Important columns that were added in the new GSTR-2</h2>
+<table>
+<thead>
+<tr>
+<th>Report</th>
+<th>File format</th>
+<th>Column title</th>
+<th>Information description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purchase Invoice and Bill of Supply</td>
+<td>CSV</td>
+<td>Differential % of Tax Rate</td>
+<td>If the supply is eligible to be taxed at a lower percentage of the existing tax rate, select <strong>define%</strong>. Otherwise, leave the field blank. In the rate setup for the tax component, select <strong>Applicable percentage of rate</strong>.</td>
+</tr>
+<tr>
+<td>Purchase Invoice and Bill of Supply</td>
+<td>CSV</td>
+<td>Supply covered under section 7 of IGST Act</td>
+<td>If the place of supply of the invoice address and the place of supply of the shipping address are in different locations, include the <strong>/SEZ/DE</strong> export.</td>
+</tr>
+<tr>
+<td>Purchase Invoice and Bill of Supply</td>
+<td>CSV</td>
+<td>Would you claim Refund</td>
+<td>If you want to claim a refund, select <strong>Yes</strong>. Otherwise, select <strong>No</strong>. If supplies exclude payment of tax, select <strong>No</strong>.</td>
+</tr>
+<tr>
+<td>Purchase Invoice and Bill of Supply</td>
+<td>CSV</td>
+<td>Return Filing Month</td>
+<td>The system will select a month from the period that is defined in the <strong>GSTR report</strong> dialog box.</td>
+</tr>
+<tr>
+<td>Purchase Invoice and Bill of Supply</td>
+<td>CSV</td>
+<td>Return Filing Quarter</td>
+<td>The system will select a quarter from the period that is defined in the <strong>GSTR report</strong> dialog box.</td>
+</tr>
+<tr>
+<td>Purchase Credit Debit Note</td>
+<td>CSV</td>
+<td>Supply covered under Sec 7 of IGST Act</td>
+<td>If the <strong>Inter-state</strong> field in the tax document is set to <strong>Yes</strong>, this field will be set to <strong>Yes</strong>.</td>
+</tr>
+<tr>
+<td>Purchase Credit Debit Note</td>
+<td>CSV</td>
+<td>Would you claim Refund</td>
+<td>If you want to claim a refund, select <strong>Yes</strong>. Otherwise, select <strong>No</strong>. If supplies exclude payment of tax, select <strong>No</strong>.</td>
+</tr>
+<tr>
+<td>Purchase Credit Debit Note</td>
+<td>CSV</td>
+<td>Type of Import (Goods, Services, SEZ)</td>
+<td>Provide one of the following four values:<ul><li>Import WT</li><li>Import WOT</li><li>SEZ</li><li>Deemed Export</li></ul></td>
+</tr>
+<tr>
+<td>Purchase Credit Debit Note</td>
+<td>CSV</td>
+<td>Bill of Entry port code</td>
+<td>The bill of entry code will come from the bill of entry.</td>
+</tr>
+<tr>
+<td>Purchase Credit Debit Note</td>
+<td>CSV</td>
+<td>Bill of entry number</td>
+<td>Information about the bill of entry number will come from the posted bill of entry.</td>
+</tr>
+<tr>
+<td>Purchase Credit Debit Note</td>
+<td>CSV</td>
+<td>Bill of Entry Date</td>
+<td>Information about the bill of entry date will come from the posted bill of entry.</td>
+</tr>
+<tr>
+<td>Purchase Credit Debit Note</td>
+<td>CSV</td>
+<td>Bill of Entry Value</td>
+<td>This field is set to the assessable value that is shown on the <strong>Bill of entry</strong> page.</td>
+</tr>
+<tr>
+<td>Purchase Credit Debit Note</td>
+<td>CSV</td>
+<td>Return filling Month</td>
+<td>The system will select a month from the period that is defined in the <strong>GSTR report</strong> dialog box.</td>
+</tr>
+<tr>
+<td>Purchase Credit Debit Note</td>
+<td>CSV</td>
+<td>Return filling Quarter</td>
+<td>The system will select a quarter from the period that is defined in the <strong>GSTR report</strong> dialog box.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="generate-data-in-a-csv-file">Generate data in a CSV file</h2>
+<h3 id="load-the-report-configuration-into-workspaces">Load the report configuration into workspaces</h3>
+<p>Follow these steps to load the report configuration into workspaces.</p>
+<ol>
+<li>Go to <strong>Workspaces &gt; Electronic reporting</strong>, and select the <strong>Reporting configurations</strong> tile.</li>
+<li>On the <strong>Configurations</strong> page, select <strong>Exchange &gt; Load from XML file</strong>, and import the configuration files in the order that is provided in the first table in the <a href="#import-and-set-up-er-configurations">Import and set up ER configurations</a> section, earlier in this topic.</li>
+</ol>
+<p><img src="media/New-GSTR-Format-005.PNG" alt="Configurations page."></p>
+<h3 id="map-the-report-configuration-in-the-tax-setup">Map the report configuration in the tax setup</h3>
+<ol>
+<li><p>Go to <strong>Tax &gt; Setup &gt; Tax configuration &gt; Tax setup</strong>, and select <strong>Configurations</strong>.</p>
+</li>
+<li><p>On the <strong>Configurations</strong> page, on the <strong>Reporting configurations</strong> tab, follow these steps for each file that you imported:</p>
+<ol>
+<li>Select the <strong>Select</strong> check box.</li>
+<li>Select a value in <strong>Report data provider</strong> field.</li>
+</ol>
+<p><img src="media/New-GSTR-Format-006.PNG" alt="Report configuration tab on the Configurations page."></p>
+</li>
+<li><p>Select the <strong>Close</strong> button.</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you don't select a report in the <strong>Report controller</strong> field, the report won't be available for selection under <strong>Sales tax reports &gt; India</strong> in step 1 of the procedures in the next section.</p>
+</div>
+<h2 id="generate-the-new-gstr-1-and-gstr-2-reports">Generate the new GSTR-1 and GSTR-2 reports</h2>
+<h3 id="gstr-1-report">GSTR-1 report</h3>
+<p>Follow these steps to generate a GSTR-1 report in the new format.</p>
+<ol>
+<li><p>Go to <strong>Tax &gt; Sales tax reports &gt; India &gt; GER export to GSTR CSV</strong>.</p>
+</li>
+<li><p>In the <strong>GER export to GSTR CSV</strong> dialog box, in the <strong>From date</strong> field, select the start date of the reporting period for the report.</p>
+</li>
+<li><p>In the <strong>To date</strong> field, select the end date of the reporting period for the report.</p>
+</li>
+<li><p>In the <strong>Registration number</strong> field, select the registration number.</p>
+</li>
+<li><p>In the <strong>Configuration</strong> field, select <strong>GSTR-1 for New Return</strong>.</p>
+</li>
+<li><p>In the <strong>File name</strong> field, enter <strong>GSTR-1 for New Return</strong>.</p>
+<p><img src="media/New-GSTR-Format-007.PNG" alt="GER export to GSTR CSV dialog box for the GSTR-1 report."></p>
+</li>
+<li><p>Select <strong>OK</strong> to save the report.</p>
+</li>
+</ol>
+<h3 id="gstr-2-report">GSTR-2 report</h3>
+<p>Follow these steps to generate a GSTR-2 report in the new format.</p>
+<ol>
+<li><p>Go to <strong>Tax &gt; Sales Tax reports &gt; India &gt; GER export to GSTR CSV</strong>.</p>
+</li>
+<li><p>In the <strong>GER export to GSTR CSV</strong> dialog box, in the <strong>From date</strong> field, select the start date of the reporting period for the report.</p>
+</li>
+<li><p>In the <strong>To date</strong> field, select the end date of the reporting period for the report.</p>
+</li>
+<li><p>In the <strong>Registration number</strong> field, select the registration number.</p>
+</li>
+<li><p>In the <strong>Configuration</strong> field, select <strong>GSTR-2 for New Return</strong>.</p>
+</li>
+<li><p>In the <strong>File name</strong> field, enter <strong>GSTR-2 for New Return</strong>.</p>
+<p><img src="media/New-GSTR-Format-008.PNG" alt="GER export to GSTR CSV dialog box for the GSTR-2 report."></p>
+</li>
+<li><p>Select <strong>OK</strong> to save the report.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-new-GSTR1-GSTR2-return-formats.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

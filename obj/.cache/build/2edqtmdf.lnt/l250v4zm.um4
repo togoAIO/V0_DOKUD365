@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Regulatory Configuration Services (RCS) - Globalization features | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Regulatory Configuration Services (RCS) - Globalization features | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="regulatory-configuration-services-rcs---globalization-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="29">Regulatory Configuration Services (RCS) - Globalization features</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="33">You can use Microsoft Regulatory Configuration Services (RCS) to create a Globalization feature that can be used in Globalization services, such as an e-invoicing service. RCS lets you perform these tasks:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="35">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="35">Define related components of a feature.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="36">Manage the feature lifecycle through a feature's status.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="37">Make a feature available for defined environments.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="38">Share a feature with other organizations.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="40">The following procedures explain how a user in RCS can add a Globalization feature and related components, update the feature's status, and make the feature available so that it can be used in Globalization services.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="42">Before you complete the procedures, you must complete the steps that are related to the following tasks:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="44">Accessing an RCS instance.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="45">Creating and activating a configuration provider. For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="45">Create configuration providers and mark them as active</a>.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="47">In your Finance and Operations apps instance, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="49">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="49">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="49">Organization administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="49">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="49">Electronic reporting</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="50">If no RCS environment is provisioned for your company, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="50">Regulatory services – Configuration</strong>, and follow the instructions to provision one.</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="52">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="53">If an RCS environment has already been provisioned for your company, use the page URL to access the environment by selecting the sign-in option.</p>
+</div>
+<h2 id="turn-on-the-globalization-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="55">Turn on the Globalization features</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="57">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="57">In your RCS instance, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="57">Feature management</strong> tile.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="58"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="58">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="58">Feature management</strong> workspace, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="58">Globalization features</strong> in the list, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="58">Enable now</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="60"><img src="media/RCS_GlobalF_1%20Feature%20mgmt.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="60" alt="Globalization features in Feature management."></p>
+</li>
+</ol>
+<h2 id="globalization-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="62">Globalization features</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="64">To use a Globalization feature, you must first import it from the the Global repository and create your own version of it. There are two ways to add Globalization features:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="66">Add a derived feature that is based on an existing feature that has been published or shared.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="67">Add a new feature that you've created from scratch.</li>
+</ul>
+<h2 id="access-globalization-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="69">Access Globalization features</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="71">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="71"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="71">Make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="71">Globalization features</strong> feature is turned on in Feature management, as described earlier in this topic.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="72"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="72">Open the new <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="72">Globalization Features</strong> workspace, and then, under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="72">Features</strong>, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="72">e-Invoicing</strong> tile.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="74"><img src="media/RCS_GlobalF_2%20Feature%20wrkspace.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="74" alt="Global Features workspace."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="76">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="76">e-Invoicing Features</strong> page is opened.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="78"><img src="media/RCS_GlobalF_3%20Feature%20form.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="78" alt="e-Invoicing Features page."></p>
+</li>
+</ol>
+<h2 id="add-a-derived-globalization-feature" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="80">Add a derived Globalization feature</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="82">You can add a new Globalization feature by deriving it from an existing feature that has been published or shared.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="84">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="84"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="84">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="84">Import</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="84">Import feature from Global repository</strong> page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="86"><img src="media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="86" alt="Import feature from Global repository page."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="88"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="88">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="88">Synchronize</strong> to get the latest features.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="90">The synced list includes features that are available to you either because they were published by Microsoft or because they were shared with you by another configuration provider.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="92"><img src="media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="92" alt="Synced list of features."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="94"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="94">In the list, select the features to import, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="94">Import</strong>. You receive a message when the selected features have been successfully imported.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="96"><img src="media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="96" alt="Successful import message."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="98"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="98">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="98">Add</strong>, and then, in the drop-down dialog box, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="98">Based on existing version</strong> option.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="99"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="99">Enter a name and description for the feature.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="100"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="100">In the list of available features, select the base version of the feature, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="100">Create feature</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="102"><img src="media/RCS_GlobalF_7%20Feature%20create%20derived.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="102" alt="Adding a derived feature."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="104">The feature that you added is created and has a status of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="104">Draft</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="106"><img src="media/RCS_GlobalF_8%20Feature%20draft%20create.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="106" alt="Derived feature that has Draft status."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="108"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="108">Review the feature components to determine whether updates are required:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="110">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="110">Review the configurations, in case you need to customize the Electronic reporting (ER) formats and their binding with format mappings for the feature version.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="111">Review the setup, in case you need to customize the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="111">Actions</strong> tab, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="111">Applicability rules</strong> tab, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="111">Variables</strong> tab for the feature version.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="113"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="113">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="113">Versions</strong> tab, select an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="113">Effective from</strong> date, and enter a description if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="113">Description</strong> field is blank.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="114"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="114">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="114">Change status</strong> to complete the feature. Completed features can be made available for a specific environment so that they can be used in Globalization services, or they can be published to the Global repository.</p>
+</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="116">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="117">Features that have a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="117">Feature version status</strong> value of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="117">Published</strong> can be shared with external organizations.</p>
+</div>
+<h2 id="add-a-new-globalization-feature" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="119">Add a new Globalization feature</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="121">You can add a new Globalization feature by creating it from scratch.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="123">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="123"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="123">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="123">Import feature from Global repository</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="123">Add</strong>, and then, in the drop-down dialog box, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="123">New feature</strong> option.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="124"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="124">Enter a name and description for the feature.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="125"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="125">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="125">Create feature</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="127"><img src="media/RCS_GlobalF_9%20Feature%20create%20new.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="127" alt="Adding a new feature."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="129"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="129">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="129">Versions</strong> tab, select an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="129">Effective from</strong> date, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="129">Change status</strong> to complete the feature. Completed features can be made available for a specific environment so that they can be used in Globalization services, or they can be published to the Global repository.</p>
+</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="131">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="132">Features that have a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="132">Feature version status</strong> value of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="132">Published</strong> can be shared with external organizations.</p>
+</div>
+<h2 id="feature-component-overview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="134">Feature component overview</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="136">Globalization features have several components:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="138">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="138"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="138">Version</strong> – This component supports feature lifecycle management and lets users manage the status for different versions of the feature.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="139"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="139">Configurations</strong> – This component lets users manage, view, and edit related ER formats and format mappings.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="140"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="140">Setups</strong> – This component lets users of Globalization services, such as an e-invoicing service, manage the setup of the related feature version. Therefore, it supports the flexible construction of communication and responses rules.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="141"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="141">Environment</strong> – This component lets users of Globalization services, such as an e-invoicing service, manage the environment where the feature version setup is used and grant authorization to the users who will have access to it.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="142"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="142">Organizations</strong> – This component lets users to share the feature with external organizations.</li>
+</ul>
+<h2 id="configuring-feature-components" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="144">Configuring feature components</h2>
+<h3 id="version-and-status" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="146">Version and status</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="148">The version is used to manage the Globalization feature lifecycle.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="150">The status can be changed in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="150">Status</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="150">Version</strong> tab. The following statuses are available:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="152">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="152"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="152">Draft</strong> – The feature can be edited only when it's in this status.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="153"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="153">Complete</strong> – The feature and all related components have been finalized (completed) and can't be edited.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="154"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="154">Published</strong> – The feature and all related components have been published to the Global repository.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="155"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="155">Shared</strong> – The feature and all related components have been shared with external organizations.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="156"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="156">Enabled</strong> – The feature and all related components have been enabled for use in a Globalization service, such as an e-invoicing service.</li>
+</ul>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="158">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="159">Features must move sequentially through some of these statuses. Therefore, not every status might be available at every lifecycle stage.</p>
+</div>
+<h3 id="configurations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="161">Configurations</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="163">The following actions are available for configurations:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="165">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="165"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="165">View</strong> – View the underlying feature configurations that don't require any update.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="166"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="166">Edit</strong> – Create a draft version of a selected configuration so that you can edit the format or format mapping in the Format designer.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="167"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="167">Delete</strong> – Delete a selected configuration from the feature.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="168"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="168">Rebase</strong> – Rebase the feature. For more information, see the <a href="#rebase" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="168">Rebase derived Globalization features</a> section later in this topic.</li>
+</ul>
+<h3 id="setups" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="170">Setups</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="172">The following actions are available for feature setups:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="174">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="174"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="174"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="174">Add</strong> – Create a new feature setup. This feature setup can be derived from an existing feature setup or created from scratch.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="175"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="175"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="175">Delete</strong> – Delete a selected feature setup.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="176"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="176"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="176">View</strong> – View an underlying feature setup that doesn't require any changes.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="177"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="177"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="177">Edit</strong> – Create, delete, or modify the attributes of the three main components of a feature setup:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="179">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="179">Actions and their parameters</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="180">Applicability rules</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="181">Variables</li>
+</ul>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="183"><img src="media/RCS_GlobalF_10%20Feature%20set%20up.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="183" alt="Feature version setup page."></p>
+<h3 id="environments" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="185">Environments</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="187">The following actions are available for environments:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="189">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="189"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="189">Enable</strong> – For a selected feature version, select a published environment, and select an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="189">Effective from</strong> date when it should be available. For more information, see the <a href="#configureenvironment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="189">Configure environments for enablement</a> section later in this topic.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="190"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="190">Cancel</strong> – Remove an environment for a feature setup.</li>
+</ul>
+<h3 id="organizations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="192">Organizations</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="194">Follow these steps to share a Globalization feature with an external organization.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="196">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="196"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="196">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="196">e-Invoicing features</strong> page, select the feature and the feature version to share.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="197"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="197">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="197">Organizations</strong> tab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="197">Share with</strong>, and then, in the drop-down dialog box, enter the organization's domain name.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="198"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="198">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="198">Share</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="200"><img src="media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="200" alt="Sharing a feature with an organization."></p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="202">The feature is shared with the selected organization and is available for that organization in the Global repository. From there, the feature can be imported into the organization's instance of RCS or Dynamics 365 Finance so that it can be used.</p>
+<h2 id="rebase" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="204">Rebase derived Globalization features</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="206">You can rebase a derived Globalization feature to the new or updated base feature version. In this way, changes that have occurred in the base version can be automatically updated. The updated base feature version is created by the originating configuration provider, and it's then published or shared.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="208"><img src="media/RCS_GlobalF_12%20Feature%20new%20version.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="208" alt="Updated base feature version."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="210">For example, if you want to rebase the derived version of a feature that you created, you first get the latest version of the feature by importing it from the Global repository.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="212">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="212"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="212">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="212">e-Invoicing features</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="212">Import</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="213"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="213">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="213">Synchronize</strong> to get the latest features.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="214"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="214">In the list of features, select the features to import, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="214">Import</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="216"><img src="media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="216" alt="Importing the latest version of a feature."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="218"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="218">In the list of features, select the feature to rebase.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="219"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="219">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="219">Version</strong> tab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="219">New</strong> to create a draft version.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="221"><img src="media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="221" alt="New draft version created."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="223"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="223">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="223">Rebase</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="224"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="224">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="224">Rebase</strong> dialog box, select the latest version of the feature to rebase to.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="226"><img src="media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="226" alt="Rebase dialog box."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="228"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="228">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="228">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="229"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="229">Review the feature components, and make any changes that are required.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="230"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="230">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="230">Change status</strong> to complete the rebased feature. When the rebase is completed, you can perform additional actions. For example, you can publish the feature and make it available for use in Globalization services.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="232"><img src="media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="232" alt="Feature status updated to Completed."></p>
+</li>
+</ol>
+<h2 id="configureenvironment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="234">Configure environments for Globalization features</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="236">Users of Globalization services can manage the environment to set up a Globalization feature and grant authorization to other users who will have access to it.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="238">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="238"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="238">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="238">Globalization Features</strong> workspace, under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="238">Environments</strong>, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="238">e-Invoicing</strong> tile.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="240"><img src="media/RCS_GlobalF_17%20Feature%20environment.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="240" alt="Globalization Features workspace."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="242"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="242">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="242">Key Vault parameters</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="242">New</strong> to create an Azure Key Vault secret.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="243"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="243">Enter a name and description for the key vault, and then, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="243">Key Vault URI</strong> field, enter the URL that identifies the Key Vault resource in Azure.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="244"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="244">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="244">Certificates</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="244">Add</strong> to add the certificate, and enter a name and description for each certificate.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="246"><img src="media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="246" alt="Certificate added."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="248"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="248">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="248">New</strong> to create a new environment.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="249"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="249">Enter a name, a description, and the shared access signature token secret required for the storage.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="250"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="250">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="250">Users</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="250">New</strong> to add a user who will have permission to access this environment.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="251"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="251">Enter the user's user ID and email address.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="252"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="252">Repeat steps 7 and 8 to add more users.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="253"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="253">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="253">Publish</strong> to publish the environment.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="255"><img src="media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md" sourcestartlinenumber="255" alt="Published environment."></p>
+</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rcs-globalization-feature.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

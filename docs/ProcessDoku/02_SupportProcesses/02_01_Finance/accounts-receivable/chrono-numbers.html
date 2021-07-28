@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Numbering documents and vouchers chronologically | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Numbering documents and vouchers chronologically | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="numbering-documents-and-vouchers-chronologically">Numbering documents and vouchers chronologically</h1>
+
+
+<p>In some countries, there is a legal requirement to number documents and related vouchers in chronological order. The chronology must be supported by periods. All of the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented.
+This topic explains how to configure and use chronological numbers for applicable documents and related vouchers.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>In the Feature management workspace, turn on the <strong>Chronological numbering</strong> feature. For more information, see <a href="../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md">Feature management overview</a>.</p>
+<h2 id="configure-chronological-numbering">Configure chronological numbering</h2>
+<p>Chronological numbering affects the following documents.</p>
+<p><strong>Accounts receivable</strong></p>
+<ul>
+<li>Customer invoice</li>
+<li>Customer invoice voucher</li>
+<li>Sales credit note</li>
+<li>Sales credit note voucher</li>
+<li>Free text invoice</li>
+<li>Free text invoice voucher</li>
+<li>Free text credit note</li>
+<li>Free text credit note voucher</li>
+<li>Packing slip</li>
+<li>Packing slip voucher</li>
+<li>Packing slip correction voucher</li>
+<li>Interest note voucher</li>
+<li>Collection letter voucher</li>
+</ul>
+<p><strong>Accounts payable</strong></p>
+<ul>
+<li>Invoice voucher</li>
+<li>Credit note voucher</li>
+<li>Product receipt voucher</li>
+</ul>
+<p><strong>Project management</strong></p>
+<ul>
+<li>Invoice</li>
+<li>Invoice voucher</li>
+<li>Credit note</li>
+<li>Credit note voucher</li>
+</ul>
+<h3 id="define-number-sequences">Define number sequences</h3>
+<p>To define number sequences, go to <strong>Organization administration</strong> &gt; <strong>Number sequences</strong> &gt; <strong>Number sequences</strong>. You can define as many number sequences as required to cover the affected periods for required documents.</p>
+<p>Specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.</p>
+<p><img src="media/chrono-num-sequence.jpg" alt="Number sequence setup."></p>
+<h3 id="configure-number-sequence-groups">Configure number sequence groups</h3>
+<p>To configure number sequence groups, go to <strong>Accounts receivable</strong> &gt; <strong>Setup</strong> &gt; <strong>Accounts receivable parameters</strong>. On the <strong>Number sequences</strong> tab, define as many number sequences groups as required to cover the affected periods.</p>
+<p>For each group, in the <strong>Reference</strong> section, select one of the supported document references, and in the <strong>Number sequence code</strong> field, refer to a number sequence that was previously created for the related period.</p>
+<p><img src="media/chrono-num-sequence-group.jpg" alt="Number sequence group setup."></p>
+<p>Similarly, configure number sequence groups in <strong>Accounts payable</strong> and <strong>Project management and accounting</strong> modules.</p>
+<h3 id="configure-number-sequence-groups-chronology">Configure number sequence groups chronology</h3>
+<p>To configure number sequence groups chronology, go to <strong>Organization administration</strong> &gt; <strong>Number sequences</strong> &gt; <strong>Chronological number sequence groups</strong>. Define the applicability conditions for number sequence groups.</p>
+<p><img src="media/chrono-num-sequence-group-period.jpg" alt="Chronological numbers setup."></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Effective</td>
+<td>The start date of number sequence group applicability.</td>
+</tr>
+<tr>
+<td>Expiration</td>
+<td>The end date of number sequence group applicability. If no end date is applied, select <strong>Never</strong>.</td>
+</tr>
+<tr>
+<td>Number sequence group</td>
+<td>Number sequence group that will be used to generate document numbers during the period.</td>
+</tr>
+<tr>
+<td>Original number sequence group</td>
+<td>This number sequence group code is used for additional filtering for the cases when documents already have a specific <em>permanent</em> number sequence group assigned. An empty value is considered a specific value. If you need to ignore a preliminary assigned group, use the <strong>Default</strong> option for this setup.</td>
+</tr>
+<tr>
+<td>Default</td>
+<td>If turned on, the system ignores the preliminary assigned document number sequence group and uses only the periods start and end dates for applicability analysis. If turned off, the system uses the full combination <strong>Effective</strong> + <strong>Expiration</strong> + <strong>Original number sequence group</strong> for selection.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="document-posting">Document posting</h2>
+<p>When you post a document, the appropriate number sequence group is assigned to the document, based on document's posting date, and then used to generate a document number based on the detected number sequence. The system provides a message regarding the number sequence group assignment.</p>
+<p><img src="media/chrono-num-sequence-fti.jpg" alt="Document number."></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For some countries, there is a specific logic already implemented for document numbering. In this case, country-specific logic will override the <strong>Chronological numbering</strong> feature.</p>
+</div>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/chrono-numbers.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

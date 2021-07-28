@@ -1,0 +1,607 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Reporting for multiple VAT registrations | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Reporting for multiple VAT registrations | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="reporting-for-multiple-vat-registrations">Reporting for multiple VAT registrations</h1>
+
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Some or all of the functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see <a href="/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases">Service update availability</a>.</p>
+</div>
+
+<p>This topic explains how to do reporting for multiple value-added tax (VAT) registrations.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before you can do the reporting for multiple VAT registrations, the following prerequisites must be completed:</p>
+<ol>
+<li>Enable the Tax Calculation service.</li>
+<li>Configure the Tax Calculation service.</li>
+<li>Enable additional tax ID features.</li>
+<li>Set up the <strong>Multiple VAT registrations</strong> feature.</li>
+</ol>
+<h3 id="enable-the-tax-calculation-service">Enable the Tax Calculation service</h3>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; Tax configuration** &gt; <strong>Tax service setup (Preview)</strong>.</p>
+</li>
+<li><p>On the <strong>General</strong> tab, set the <strong>Enable tax service</strong> option to <strong>Yes</strong>.</p>
+<p><img src="media/Multipleid-image1.png" alt="tax service parameters."></p>
+</li>
+</ol>
+<h3 id="configure-the-tax-calculation-service">Configure the Tax Calculation service</h3>
+<p>For information about how to configure the Tax Calculation service, see <a href="global-tax-calcuation-service-overview.html">Tax Calculation</a>.</p>
+<h3 id="enable-features-in-the-feature-management">Enable features in the feature management</h3>
+<ol>
+<li><p>Go to <strong>Workspaces</strong> &gt; <strong>Feature management</strong>.</p>
+</li>
+<li><p>In the feature list, select and enable the following features:</p>
+<ul>
+<li>Support multiple VAT registration numbers</li>
+<li>EU sales list transfer based on tax transactions only</li>
+</ul>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you transfer between warehouses in different countries that have a tax registration, you must also enable the <strong>Tax in transfer order</strong> feature and configure the Tax Calculation service for tax in transfer orders. For more information, see <a href="tasks/Tax-feature-support-for-transfer-order.html">Tax feature support for transfer orders</a>.</p>
+</div>
+<h3 id="set-up-the-multiple-vat-registrations-feature">Set up the Multiple VAT registrations feature</h3>
+<p>For information about how to set up the <strong>Multiple VAT registrations</strong> feature, see <a href="emea-multiple-vat-registration-numbers.html">Multiple VAT registration numbers</a>.</p>
+<h2 id="enable-features">Enable features</h2>
+<p>In the <strong>Feature management</strong> workspace, enable the following features:</p>
+<ul>
+<li>Intrastat reporting by Multiple Tax ID</li>
+<li>EU Sales list reporting by Multiple Tax ID</li>
+<li>Sales tax declaration by Multiple Tax ID</li>
+</ul>
+<h2 id="set-up-intra-community-reporting-for-multiple-vat-registrations">Set up intra-community reporting for multiple VAT registrations</h2>
+<h3 id="set-up-countryregion-properties">Set up country/region properties</h3>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Set up</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Foreign trade parameters</strong>.</p>
+</li>
+<li><p>On the <strong>Country/region properties</strong> tab, set up the following country types: <strong>EU</strong>, <strong>EFTA</strong>, or <strong>Third country/region</strong>.</p>
+<p>The following information applies to documents about movements of goods between European Union (EU) countries, except movements within the same country (for example from Belgium to Belgium):</p>
+<ul>
+<li>By default, the list code is <strong>EU trade</strong>, and it's transferred to the EU sales list.</li>
+<li>Documents are transferred to Intrastat.</li>
+</ul>
+</li>
+</ol>
+<h3 id="set-up-intrastat">Set up Intrastat</h3>
+<h4 id="set-up-intrastat-parameters">Set up Intrastat parameters</h4>
+<p>All tax registrations have the same settings for Intrastat parameters.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Set up</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Foreign trade parameters</strong>.</p>
+</li>
+<li><p>On the <strong>Intrastat</strong> tab, set up the parameters on the following FastTabs:</p>
+<ul>
+<li>Default transaction codes</li>
+<li>Minimum limit</li>
+<li>Transfer</li>
+<li>Check setup</li>
+<li>Rounding rules</li>
+<li>Commodity code hierarchy</li>
+</ul>
+<p><img src="media/Multipleid-image2.png" alt="Foreign trade parameters1."></p>
+</li>
+</ol>
+<p>For more information about how to configure Intrastat, see <a href="emea-intrastat.html">Intrastat overview</a>.</p>
+<h4 id="set-up-intrastat-reporting-formats">Set up Intrastat reporting formats</h4>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Set up</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Foreign trade parameters</strong>.</p>
+</li>
+<li><p>On the <strong>Intrastat</strong> tab, on the <strong>Electronic reporting for countries/regions</strong> FastTab, select the Intrastat reporting format for each country of your tax registration.</p>
+</li>
+<li><p>In the <strong>File format mapping</strong> field, select the Electronic reporting (ER) format for intrastat file export, for example, select <strong>Intrastat (NL)</strong> for Netherlands.</p>
+</li>
+<li><p>In the <strong>Report format mapping</strong> field, select the ER format for printable report layout, for example, select <strong>Intrastat report</strong>.</p>
+<p><img src="media/Multipleid-image3.png" alt="foreign trade parameters2."></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can select an ER format if the <strong>ISO Country/region codes</strong> field on the <strong>ISO Country/region codes</strong> FastTab is blank in this format.</p>
+</div>
+<p>The following table shows the earliest ER format versions that you can select the format for.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Release</strong></th>
+<th><strong>Country</strong></th>
+<th><strong>ER format</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10.0.19</td>
+<td>All</td>
+<td>Intrastat model.version.16</td>
+</tr>
+<tr>
+<td>10.0.19</td>
+<td>NL</td>
+<td>Intrastat (NL).version.1.3</td>
+</tr>
+<tr>
+<td>10.0.20</td>
+<td>FR</td>
+<td>Intrastat INTRACOM (FR).version.13.5<br>Intrastat SAISUNIC (FR).version.1.3</td>
+</tr>
+<tr>
+<td>10.0.20</td>
+<td>UK (NI)</td>
+<td>Intrastat (UK).version.1.2</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p>For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md">Download ER configurations from the Global repository of Configuration service</a>.</p>
+<h4 id="set-up-transaction-codes">Set up transaction codes</h4>
+<p>A system of two-digit transaction codes is used to differentiate types of trade at the European level. For more information, see <a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-gq-21-004">European business statistics compilers' manual for international trade in goods statistics — 2021 edition - Products Manuals and Guidelines - Eurostat (europa.eu)</a>.</p>
+<p>Most countries use two-digit transaction codes. However, in some countries, such as the United Kingdom, the second digit in country-specific guidelines might differ from EU guidelines. In this case, configure country-specific transaction codes, and then manually select them in documents.</p>
+<p>Some countries, such as Belgium, Italy, and Austria, use a one-digit transaction code. In this case, you can configure two-digit transaction codes according to European guidelines. Then, if the country-specific Intrastat format should have only one digit, only the first digit will be exported to it. Alternatively, you can configure one-digit transaction code and select it manually in the documents.</p>
+<p>Before you configure settings and start to use the Intrastat feature, analyze country transaction codes, and decide how to set up the transaction codes for countries.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Set up</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Transaction codes</strong>.</p>
+</li>
+<li><p>Create the required transaction codes.</p>
+<p><img src="media/Multipleid-image4.png" alt="transaction codes."></p>
+</li>
+</ol>
+<p>For each transaction code that you create, you must set up the rules that are used to calculate invoice amounts and statistical amounts for transfer orders, and for sales orders and purchase orders.</p>
+<ul>
+<li><p>For transfer orders, set up one of the following rules:</p>
+<ul>
+<li><p><strong>Empty:</strong> The amount will be 0 (zero).</p>
+</li>
+<li><p><strong>Financial cost amount:</strong> The amount will equal the financial cost.</p>
+</li>
+<li><p><strong>Total cost:</strong> The amount will equal the total cost of the transaction.</p>
+</li>
+<li><p><strong>Manual:</strong> The amount will equal the amount that is specified in the <strong>Invoiced amount</strong> and <strong>Statistical value</strong> fields on the transfer order line. These values are taken from the <strong>Amount</strong> field on the transfer order line.</p>
+</li>
+</ul>
+<p><img src="media/Multipleid-image5.png" alt="transfer order."></p>
+</li>
+<li><p>For sales orders and purchase orders, set up one of the following rules:</p>
+<ul>
+<li><strong>Empty:</strong> The amount will be 0 (zero).</li>
+<li><strong>Invoice amount:</strong> The amount will equal the amount that is invoiced for the commodity.</li>
+<li><strong>Base amount:</strong> The amount will equal the invoice amount that would be invoiced before any discount is applied.</li>
+</ul>
+</li>
+</ul>
+<h4 id="set-up-intrastat-compression-rules">Set up Intrastat compression rules</h4>
+<p>All tax registrations have the same setup for compression rules.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Compression of Intrastat</strong>.</p>
+</li>
+<li><p>Select the values to use in the <strong>Compression</strong> function. Select all the values that are reported in any of the countries where you have tax registrations. For example, in 2021, the following values should be reported in some countries.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Value</strong></th>
+<th><strong>Belgium</strong></th>
+<th><strong>Netherlands</strong></th>
+<th><strong>Northern Ireland (United Kingdom)</strong></th>
+<th><strong>France</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mandatory elements</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Direction (Flow)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Commodity code</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Partner Member State</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Transaction code</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>VAT number of partner (Tax exempt number)<br><em>Mandatory on dispatches from 2022 for all EU countries</em></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Optional elements</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Country of origin<br><em>(On dispatch and/or on arrival)</em> <em>Mandatory on dispatches from 2022 for all EU countries</em></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Delivery terms</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Mode of transport</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>State of origin, County of origin (Region of origin)</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Statistics procedure</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Additional elements for country purposes</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Transport document (Invoice, Identification of packing slip or product receipt)</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Select all values that must be reported on the <strong>Compression of Intrastat</strong> page.</p>
+</div>
+<h3 id="set-up-the-eu-sales-list">Set up the EU sales list</h3>
+<h4 id="set-up-sales-tax-codes">Set up sales tax codes</h4>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax codes</strong>.</p>
+</li>
+<li><p>Create unique sales tax codes for each of your tax registrations.</p>
+</li>
+<li><p>On the <strong>Report setup</strong> FastTab, in the <strong>EU sales list</strong> section, set the <strong>Excluded</strong> option to <strong>Yes</strong> if tax transactions that have a selected sales tax code should <strong>not</strong> be transferred to the EU sales list.</p>
+</li>
+<li><p>In the <strong>Country/region type</strong> section, in the <strong>Country/region type</strong> field, define the tax transaction type for VAT reporting: <strong>EU</strong>, <strong>Domestic</strong>, or <strong>Third country</strong>.</p>
+<p>This setting is mandatory in some countries, such as the United Kingdom.</p>
+<p><img src="media/Multipleid-image6.png" alt="sales tax code."></p>
+</li>
+</ol>
+<h4 id="set-up-item-sales-tax-groups">Set up item sales tax groups</h4>
+<ol>
+<li>Go to <strong>Tax</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Item sales tax groups</strong>.</li>
+<li>In the <strong>Reporting type</strong> field, select the reporting type for EU sales list reporting: <strong>Item</strong>, <strong>Service</strong>, or <strong>Investment</strong> (for Belgium).</li>
+</ol>
+<h4 id="set-up-eu-sales-list-parameters">Set up EU sales list parameters</h4>
+<p>All tax registrations have the same settings for EU sales list parameters.</p>
+<ol>
+<li>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Foreign trade parameters</strong>.</li>
+<li>On the <strong>EU sales list</strong> tab, set up the parameters on the <strong>Transfer</strong> and <strong>Rounding rules</strong> FastTabs.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If one of your tax registrations is in Poland or Hungary (countries that report purchases in addition to sales), set the <strong>Transfer purchases</strong> option to <strong>Yes</strong>.</p>
+</div>
+<h4 id="set-up-eu-sales-list-reporting-formats">Set up EU sales list reporting formats</h4>
+<ol>
+<li><p>Go to **Tax &gt; <strong>Set up</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Foreign trade parameters</strong>.</p>
+</li>
+<li><p>On the <strong>EU sales list</strong> tab, on the <strong>Electronic reporting for countries/regions</strong> FastTab, select EU sales list reporting formats for each country of your tax registration.</p>
+</li>
+<li><p>In the <strong>File format mapping</strong> field, select the ER format for EU sales list report electronic format. For example, for Netherlands, select <strong>EU Sales list (NL)</strong>.</p>
+</li>
+<li><p>In the <strong>Report format mapping</strong> field, select the ER format for printable report layout. For example, select either <strong>EU sales list by rows report</strong>, or <strong>EU sales list by columns report</strong>.</p>
+<p><img src="media/Multipleid-image7.png" alt="foreign trade parameters 3."></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can select an ER format if the <strong>ISO Country/region codes</strong> field on the <strong>ISO Country/region codes</strong> FastTab is blank in this format.</p>
+</div>
+<p>The following table shows the earliest ER format versions that you can select the format for.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Release</strong></th>
+<th><strong>Country</strong></th>
+<th><strong>ER format</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10.0.19</td>
+<td>All</td>
+<td>EU Sales list model.version.9</td>
+</tr>
+<tr>
+<td>10.0.19</td>
+<td>NL</td>
+<td>EU Sales list (NL).version.1.10</td>
+</tr>
+<tr>
+<td>10.0.20</td>
+<td>FR</td>
+<td>EU Sales list (FR).version.1.2</td>
+</tr>
+<tr>
+<td>10.0.20</td>
+<td>UK (NI)</td>
+<td>EU Sales list XML (UK).version.9.6<br>EU Sales list TXT (UK).version.9.7</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="generate-intra-community-reporting-for-multiple-vat-registrations">Generate intra-community reporting for multiple VAT registrations</h2>
+<h3 id="transfer-and-report-intrastat">Transfer and report Intrastat</h3>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Intrastat</strong>.</p>
+</li>
+<li><p>Select <strong>Transfer</strong>.</p>
+</li>
+<li><p>In the <strong>Tax registration number</strong> dialog box, select the tax registration number to transfer transactions for, and then select <strong>OK</strong>.</p>
+<p><img src="media/Multipleid-image8.png" alt="transfer intrastat."></p>
+</li>
+<li><p>In the <strong>Intrastat (Transfer)</strong> dialog box, select the documents to transfer: <strong>Free text invoice</strong>, <strong>Customer invoice</strong>, <strong>Customer packing slips</strong>, <strong>Vendor invoice</strong>, <strong>Vendor product receipts</strong>, <strong>Project invoice</strong>, or <strong>Transfer order</strong>. Then and select <strong>OK</strong>.</p>
+<p><img src="media/Multipleid-image9.png" alt="Intrastat  Transfer  dialog box."></p>
+</li>
+<li><p>Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In the 10.0.19, 10.0.20 release, Intrastat <strong>Transfer</strong> function has country-specific logic that isn't yet covered in the <strong>Intrastat transfer for Multiple Tax ID</strong> feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.</p>
+</div>
+</li>
+<li><p>Select <strong>Output</strong> &gt; <strong>Report</strong>.</p>
+</li>
+<li><p>In the <strong>Tax registration number</strong> dialog box, select the tax registration number to generate the Intrastat report for, and then select <strong>OK</strong>.</p>
+<p><img src="media/Multipleid-image10.png" alt="Intrastat  Reporting  dialog box."></p>
+</li>
+<li><p>In the <strong>Intrastat Report</strong> dialog box, in the <strong>From date</strong> and <strong>To date</strong> fields, define the period to generate the Intrastat report for.</p>
+</li>
+<li><p>Set the <strong>Generate file</strong> option to <strong>Yes</strong> to generate an electronic reporting file. Then, in the <strong>File name</strong> field, enter the name of the output electronic file if applicable.</p>
+</li>
+<li><p>Set the <strong>Generate report</strong> option to <strong>Yes</strong> to generate an Excel report. Then, in the <strong>Report file name</strong> field, enter the name of the output Excel file if applicable.</p>
+<p><img src="media/Multipleid-image11.png" alt="Intrastat report dialog box."></p>
+</li>
+<li><p>The dialog box also contains country-specific fields that are required in the country-specific Intrastat report. Set these fields as required.</p>
+</li>
+<li><p>Select <strong>OK</strong> to generate the report.</p>
+</li>
+</ol>
+<h3 id="transfer-and-report-the-eu-sales-list">Transfer and report the EU sales list</h3>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>EU sales list</strong>.</p>
+</li>
+<li><p>Select <strong>Transfer</strong>.</p>
+</li>
+<li><p>In the <strong>Tax registration number</strong> dialog, select the tax registration number to transfer transactions for, and then select <strong>OK</strong>.</p>
+<p><img src="media/Multipleid-image12.png" alt="ESL transfer dialog box."></p>
+</li>
+<li><p>In the <strong>Transfer transactions for EU sales list</strong> dialog box, select the documents and reporting types to transfer.</p>
+<p><img src="media/Multipleid-image13.png" alt="ESL transfer dialog box2."></p>
+</li>
+<li><p>Select <strong>Select</strong> to adjust the default filter for transactions that should be transferred, and then select <strong>Transfer</strong>.</p>
+</li>
+<li><p>Transactions for the selected tax registration, documents, and reporting types are transferred. Review the transactions, and make any adjustments that are required.</p>
+</li>
+<li><p>Select <strong>Reporting</strong>.</p>
+</li>
+<li><p>In the <strong>Tax registration number</strong> dialog box, select the tax registration number to generate the EU sales list report for, and then select <strong>OK</strong>.</p>
+</li>
+<li><p>In the <strong>EU reporting</strong> dialog box, in the <strong>From date</strong> field, specify the first date to generate the EU sales list report for.</p>
+</li>
+<li><p>Set the <strong>Generate file</strong> option to <strong>Yes</strong> to generate an electronic reporting file. Then, in the <strong>File name</strong> field, enter the name of the output electronic file.</p>
+</li>
+<li><p>Set the <strong>Generate report</strong> option to <strong>Yes</strong> to generate an Excel report. Then, in the <strong>Report file name</strong> field, enter the name of the output Excel file.</p>
+<p><img src="media/Multipleid-image14.png" alt="ESL report dialog box."></p>
+</li>
+<li><p>The dialog box also contains country-specific fields that are required in the country-specific EU sales list report. Set these fields as required.</p>
+</li>
+<li><p>Select <strong>OK</strong> to generate the report.</p>
+</li>
+</ol>
+<h2 id="set-up-vat-reporting-for-multiple-vat-registrations">Set up VAT reporting for multiple VAT registrations</h2>
+<ol>
+<li><p>Go to <strong>Tax &gt; Set up &gt; Parameters &gt; General ledger parameters</strong>.</p>
+</li>
+<li><p>On the <strong>Sales tax</strong> tab, on the <strong>Electronic reporting for countries/regions</strong> FastTab, select the VAT reporting formats for each country of your tax registration.</p>
+<p><img src="media/Multipleid-image15.png" alt="GL parameters."></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can select an ER format if the <strong>ISO Country/region codes</strong> field on the <strong>ISO Country/region codes</strong> FastTab is blank in this format.</p>
+</div>
+<p>In the 10.0.19 release, a format for the Netherlands is available for preview. For more information, see <a href="emea-nl-vat-declaration-netherlands.html">VAT declaration for Netherlands</a> topic.</p>
+<p>The following table shows the earliest ER format versions, that you can select the format for.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Release</strong></th>
+<th><strong>Country</strong></th>
+<th><strong>ER format</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10.0.19</td>
+<td>All</td>
+<td>Tax declaration model.version.85<br>Tax declaration model mapping.version.85.138</td>
+</tr>
+<tr>
+<td>10.0.19</td>
+<td>NL</td>
+<td>VAT Declaration XML (NL).version.85.14<br>VAT Declaration Excel (NL).version.85.14.17</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="generate-a-vat-declaration-for-multiple-vat-registrations">Generate a VAT declaration for multiple VAT registrations</h2>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Report sales tax for settlement period</strong>.</p>
+</li>
+<li><p>In the <strong>Report sales tax for settlement period</strong> dialog box, in the <strong>Settlement period</strong> field, select a settlement period.</p>
+</li>
+<li><p>In the <strong>From date</strong> field, specify the first date to generate the VAT declaration for.</p>
+</li>
+<li><p>In the <strong>Sales tax payment version</strong> field, select one of the following values:</p>
+<ul>
+<li><strong>Original:</strong> Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li>
+<li><strong>Corrections:</strong> Generate a report for sales tax transactions of all subsequent sales tax payments for the period.</li>
+<li><strong>Total list:</strong> Generate a report for all sales tax transactions for the period, including the original and all corrections.</li>
+</ul>
+<p><img src="media/Multipleid-image16.png" alt="Report sales tax."></p>
+</li>
+<li><p>Select <strong>OK</strong> to generate the report.</p>
+</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-reporting-for-multiple-vat-registrations.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

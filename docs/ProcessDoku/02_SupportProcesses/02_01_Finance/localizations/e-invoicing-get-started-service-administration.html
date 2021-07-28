@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Get started with Electronic invoicing service administration | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Get started with Electronic invoicing service administration | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="get-started-with-electronic-invoicing-service-administration">Get started with Electronic invoicing service administration</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before you complete the procedures in this topic, the following prerequisites must be in place:</p>
+<ul>
+<li><p>You must have access to your Microsoft Dynamics Lifecycle Services (LCS) account.</p>
+</li>
+<li><p>You must have an LCS project that includes version 10.0.17 or later of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Additionally, these apps must be deployed in one of the following Azure geographies:</p>
+<ul>
+<li>United States</li>
+<li>Europe</li>
+<li>United Kingdom</li>
+<li>Asia</li>
+</ul>
+</li>
+<li><p>You must have access to your Dynamics 365 Regulatory Configuration Services (RCS) account.</p>
+</li>
+<li><p>You must activate the Globalization feature for your RCS account in Feature management. For more information, see <a href="rcs-globalization-feature.html">Regulatory Configuration Services (RCS) - Globalization features</a>.</p>
+</li>
+<li><p>You must create a key vault and a storage account in Azure. For more information, see <a href="e-invoicing-create-azure-storage-account-key-vault.html">Create an Azure storage account and a key vault</a>.</p>
+</li>
+</ul>
+<h2 id="install-the-add-in-for-microservices-in-lifecycle-services">Install the add-in for microservices in Lifecycle Services</h2>
+<ol>
+<li>Sign in to your LCS account, and on the LCS project dashboard, select an LCS project.</li>
+<li>In the project, on the environment dashboard, select your LCS deployment project. The project you select must must be running.</li>
+<li>On the <strong>Power Platform Integration</strong> tab, in the <strong>Environment add-ins</strong> field group, select <strong>Install a new add-in</strong>.</li>
+<li>Select <strong>Electronic Invoicing</strong>.</li>
+<li>In the <strong>AAD application ID</strong> field, enter <strong>091c98b0-a1c9-4b02-b62c-7753395ccabe</strong>. This is a fixed value.</li>
+<li>In the <strong>AAD tenant ID</strong> field, enter the tenant ID of your Azure subscription account.</li>
+<li>Review the terms and conditions, and then select the check box.</li>
+<li>Select <strong>Install</strong>.</li>
+</ol>
+<h2 id="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing">Set up the parameters for RCS integration with Electronic invoicing</h2>
+<ol>
+<li><p>Sign in to your RCS account.</p>
+</li>
+<li><p>In the <strong>Electronic reporting</strong> workspace, in the <strong>Related links</strong> section, select <strong>Electronic reporting parameters</strong>.</p>
+</li>
+<li><p>On the <strong>e-Invoicing service</strong> tab, in the <strong>Service endpoint URI</strong> field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Datacenter Azure geography</th>
+<th>Service endpoint URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>United States</td>
+<td><p><code>https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p></td>
+</tr>
+<tr>
+<td>Europe</td>
+<td><p><code>https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p></td>
+</tr>
+<tr>
+<td>United Kingdom</td>
+<td><p><code>https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p></td>
+</tr>
+<tr>
+<td>Asia</td>
+<td><p><code>https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Verify that the <strong>Application Id</strong> field is set to <strong>0cdb527f-a8d1-4bf8-9436-b352c68682b2</strong>. This value is a fixed value.</p>
+</li>
+<li><p>In the <strong>LCS Environment Id</strong> field, enter the ID of your LCS environment.</p>
+</li>
+<li><p>Select <strong>Save</strong>, and then close the page.</p>
+</li>
+</ol>
+<h2 id="create-key-vault-references">Create Key Vault references</h2>
+<ol>
+<li>Sign in to your RCS account.</li>
+<li>In the <strong>Globalization feature</strong> workspace, in the <strong>Environment</strong> section, select the <strong>Electronic invoicing</strong> tile.</li>
+<li>On the <strong>Environment setups</strong> page, on the action Pane, select <strong>Service environment</strong>, and then select <strong>Key Vault parameters</strong>.</li>
+<li>Select <strong>New</strong> to create a key vault reference.</li>
+<li>In the <strong>Name</strong> field, enter the name of the key vault reference. In the <strong>Description</strong> field, enter a description.</li>
+<li>In the <strong>Key Vault URI</strong> field, paste the key vault secret from Azure Key Vault. For more information, see <a href="e-invoicing-create-azure-storage-account-key-vault.html">Create an Azure storage account and a key vault</a>.</li>
+<li>Select <strong>Save</strong>.</li>
+</ol>
+<h2 id="create-storage-account-secret">Create Storage account secret</h2>
+<ol>
+<li>On the <strong>Environment setups</strong> page, on the Action Pane, select <strong>Service environment</strong> &gt; <strong>Key Vault parameters</strong>.</li>
+<li>Select a <strong>Key Vault reference</strong> and in the <strong>Certificates</strong> section, select <strong>Add</strong>.</li>
+<li>In the <strong>Name</strong> field, enter the name of the storage account secret. For more information, see <a href="e-invoicing-create-azure-storage-account-key-vault.html">Create an Azure storage account and a key vault</a>.</li>
+<li>In the <strong>Description</strong> field, enter a description.</li>
+<li>In the <strong>Type</strong> field, select <strong>Secret</strong>.</li>
+<li>Select <strong>Save</strong>, and then close the page.</li>
+</ol>
+<h2 id="create-a-digital-certificate-secret">Create a digital certificate secret</h2>
+<ol>
+<li>On the <strong>Environment setups</strong> page, on the action Pane, select <strong>Service environment</strong> and then select <strong>Key Vault parameters</strong>.</li>
+<li>Select a <strong>Key Vault reference</strong> and then in the <strong>Certificates</strong> section, select <strong>Add</strong>.</li>
+<li>In the <strong>Name</strong> field, enter the name of the digital certificate secret. For more information, see <a href="e-invoicing-create-azure-storage-account-key-vault.html">Create an Azure storage account and a key vault</a>.</li>
+<li>In the <strong>Description</strong> field, enter a description.</li>
+<li>In the <strong>Type</strong> field, select <strong>Certificate</strong>.</li>
+<li>Select <strong>Save</strong>, and then close the page.</li>
+</ol>
+<h2 id="create-a-service-environment">Create a service environment</h2>
+<ol>
+<li>Sign in to your RCS account.</li>
+<li>In the <strong>Globalization feature</strong> workspace, in the <strong>Environment</strong> section, select the <strong>Electronic invoicing</strong> tile.</li>
+<li>On the <strong>Environment setups</strong> page, on the Action Pane, select <strong>Service environment</strong>.</li>
+<li>Select <strong>New</strong> to create a new service environment.</li>
+<li>In the <strong>Name</strong> field, enter the name of the e-Invoicing environment. In the <strong>Description</strong> field, enter a description.</li>
+<li>In the <strong>Storage SAS token secret</strong> field, select the name of the storage account secret that must be used to authenticate access to the storage account.</li>
+<li>In the <strong>Users</strong> section, select <strong>Add</strong> to add a user who is allowed to submit electronic invoices through the environment and also connect to the storage account.</li>
+<li>In the <strong>User ID</strong> field, enter the alias of the user. In the <strong>Email</strong> field, enter the user's email address.</li>
+<li>Select <strong>Save</strong>.</li>
+<li>If your country/region-specific invoices require a chain of certificates to apply digital signatures, on the Action pane, select <strong>Key Vault parameters</strong>, then select <strong>Chain of certificates</strong>, and follow these steps:
+<ol>
+<li>Select <strong>New</strong> to create a chain of certificates.</li>
+<li>In the <strong>Name</strong> field, enter the name of the chain of certificate. In the <strong>Description</strong> field, enter a description.</li>
+<li>In the <strong>Certificates</strong> section, select <strong>Add</strong> to add a certificate to the chain.</li>
+<li>Use the <strong>Up</strong> or <strong>Down</strong> button to change the position of the certificate in the chain.</li>
+<li>Select <strong>Save</strong>, and then close the page.</li>
+<li>Close the page.</li>
+</ol>
+</li>
+<li>On <strong>Service environment</strong> page, on the Action Pane, select <strong>Publish</strong> to publish the environment to the cloud. The value of the <strong>Status</strong> field is changed to <strong>Published</strong>.</li>
+</ol>
+<h2 id="create-a-connected-application">Create a connected application</h2>
+<ol>
+<li>On the <strong>Environment setups</strong> page, on the action Pane, select <strong>Connected applications</strong>.</li>
+<li>Select <strong>New</strong> to create a connected application.</li>
+<li>In the <strong>Name</strong> field, enter the name of the application to connect.</li>
+<li>In the <strong>Application</strong> field, enter the URL of the Finance and Supply Chain Management environment to connect.</li>
+<li>In the <strong>Tenant</strong> field, enter the tenant of the Finance and Supply Chain Management environment.</li>
+<li>Select <strong>Save</strong>.</li>
+<li>On the Action Pane, select <strong>Check connection</strong> to test the connection with the environment. Then close the page.</li>
+</ol>
+<h2 id="link-connected-applications-to-environments">Link connected applications to environments</h2>
+<ol>
+<li>On the <strong>Environment setups</strong> page, select <strong>New</strong> to assign a connected application to an environment.</li>
+<li>In the <strong>Connected application</strong> field, select a connected application.</li>
+<li>In the <strong>Service environment</strong> field, select a service environment.</li>
+<li>Select <strong>Save</strong>, and then close the page.</li>
+</ol>
+<h2 id="set-up-electronic-invoicing-integration-in-finance-and-supply-chain-management">Set up Electronic invoicing integration in Finance and Supply Chain Management</h2>
+<h3 id="turn-on-the-electronic-invoicing-integration-feature">Turn on the Electronic invoicing integration feature</h3>
+<ol>
+<li>Sign in to your Finance or Supply Chain Management instance.</li>
+<li>In the <strong>Feature management</strong> workspace, search for the <strong>Electronic invoicing integration</strong> feature. If this feature doesn't appear on the page, select <strong>Check for updates</strong>.</li>
+<li>Select the feature, and then select <strong>Enable now</strong>.</li>
+</ol>
+<h3 id="set-up-the-service-endpoint-url">Set up the service endpoint URL</h3>
+<ol>
+<li><p>Go to <strong>Organization administration &gt; Setup &gt; Electronic document parameters</strong>.</p>
+</li>
+<li><p>On the <strong>Submission service</strong> tab, in the <strong>Service endpoint URL</strong> field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Datacenter Azure geography</th>
+<th>Service endpoint URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>United States</td>
+<td><p><code>https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p></td>
+</tr>
+<tr>
+<td>Europe</td>
+<td><p><code>https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p></td>
+</tr>
+<tr>
+<td>United Kingdom</td>
+<td><p><code>https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p></td>
+</tr>
+<tr>
+<td>Asia</td>
+<td><p><code>https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p><p><code>https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</code></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>In the <strong>Environment</strong> field, enter the name of the service environment published in Electronic invoicing.</p>
+</li>
+<li><p>Select <strong>Save</strong>, and then close the page.</p>
+</li>
+</ol>
+<h3 id="enable-flighting-keys">Enable Flighting keys</h3>
+<p>Enable Flight keys for  Microsoft Dynamics 365 Finance or  Microsoft Dynamics 365 Supply Chain Management versions 10.0.17 or earlier.</p>
+<ol>
+<li><p>Execute the following SQL command:</p>
+<p>INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)</p>
+<p>INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)</p>
+</li>
+<li><p>Perform an IISreset command for all AOS's.</p>
+</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started-service-administration.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

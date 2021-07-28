@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Quarterly VAT communication report | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Quarterly VAT communication report | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="quarterly-vat-communication-report">Quarterly VAT communication report</h1>
+
+
+<p>According to Legislative Decree no. 127/2015, article 1, and Decree Law 78/2010, article 21, <strong>Periodic VAT payment communication</strong> (<strong>Comunicazione IVA periodica con prospetto di liquidazione, LIPE</strong>) information must be transmitted electronically in XML format to the Italian tax authorities.</p>
+<h2 id="set-up-the-quarterly-vat-communication-lipe-report">Set up the Quarterly VAT communication (LIPE) report</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before you set up the <strong>Quarterly VAT communication (LIPE)</strong> report, follow these steps.</p>
+<ol>
+<li>Go to <strong>Organization administration</strong> &gt; <strong>Organizations</strong> &gt; <strong>Legal entities</strong>.</li>
+<li>On the <strong>Registration numbers</strong> FastTab, in the <strong>Italy</strong> section, in the <strong>Fiscal code</strong> field, enter your organization's fiscal code. (This code has between 11 and 16 digits.)</li>
+<li>On the <strong>Tax registration</strong> FastTab, in the <strong>Tax exempt number</strong> field, enter your organization's tax exempt number. (This number has 11 digits.)</li>
+</ol>
+<h3 id="create-a-number-sequence">Create a number sequence</h3>
+<p>According to the requirements, the name of the <strong>Quarterly VAT Communication (LIPE)</strong> report must consist of several components:</p>
+<ul>
+<li>An International Organization for Standardization (ISO) 3166-1 alpha-2 country code</li>
+<li>An 11-character or 16-character tax code, followed by an underscore (_)</li>
+<li>A file type (<strong>LI</strong>), followed by an underscore (_)</li>
+<li>A five-character progressive number that consists only of lowercase letters a–z, uppercase letters A–Z, or numbers 0–9</li>
+</ul>
+<p>Here are some examples:</p>
+<ul>
+<li>ITAAABBB99T99X999W_LI_00001.xml</li>
+<li>IT99999999999_LI_00002.xml</li>
+</ul>
+<p>For the progressive number, a system number sequence is used. Go to <strong>Organization administration</strong> &gt; <strong>Number sequences</strong> &gt; <strong>Number sequences</strong>, and create a number sequence. This number sequence must be continuous and five characters long, and it must be alphanumeric (that is, it must consist only of lowercase letters a–z, uppercase letters A–Z, and numbers 0–9).</p>
+<p>For example:</p>
+<p><img src="media/num-seq.png" alt="Set up number sequence for Quarterly VAT Communication (LIPE) report."></p>
+<p>Find more information about how to set up number sequences in <a href="/dynamicsax-2012/appuser-itpro/set-up-number-sequences">Set up number sequences</a> section.</p>
+<h3 id="import-and-update-electronic-reporting-configurations">Import and update Electronic reporting configurations</h3>
+<ol>
+<li><p>Import the latest versions of the following Electronic reporting (ER) configurations for the <strong>Quarterly VAT communication</strong> format.</p>
+<table>
+<thead>
+<tr>
+<th>Configuration name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Italian tax reports model</td>
+<td>Model</td>
+<td>The common data model for Italian tax reports.</td>
+</tr>
+<tr>
+<td>Quarterly VAT Communication model mapping</td>
+<td>Model mapping</td>
+<td>The model mapping for data collection from Microsoft Dynamics 365 Finance to the Italian <strong>Quarterly VAT Communication (LIPE)</strong> report.</td>
+</tr>
+<tr>
+<td>Quarterly VAT Communication</td>
+<td>Exporting format</td>
+<td>The ER format for the <strong>Italian Quarterly VAT Communication (LIPE)</strong> report in XML format.</td>
+</tr>
+</tbody>
+</table>
+<p>For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md">Download ER configurations from the Global repository</a>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Be sure to import the most recent versions of these configurations. The description of each version usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in that version.</p>
+</div>
+</li>
+<li><p>After all the ER configurations from the preceding table are imported, set the <strong>Default for model mapping</strong> option to <strong>Yes</strong> for the <strong>Quarterly VAT Communication model mapping</strong> configuration.</p>
+</li>
+<li><p>Go to <strong>Workspaces</strong> &gt; <strong>Electronic reporting</strong>.</p>
+</li>
+<li><p>Select <strong>Italian tax report model</strong> &gt; <strong>Quarterly VAT Communication</strong>, and then, on the Action Pane, select <strong>Create configuration</strong>.</p>
+</li>
+<li><p>In the drop-down dialog box, select the <strong>Derive from Name: Quarterly VAT Communication</strong> option, enter a name and description for the new format, and then select <strong>Create configuration</strong>.</p>
+<p><img src="media/derive-er-format.png" alt="Derive ER format to create the format for your company."></p>
+<p>The new format includes all the fields and mapping from the original. In the new format, you can make changes to meet your company's requirements.</p>
+</li>
+<li><p>Select the new format, and then, on the Action Pane, select <strong>Designer</strong>.</p>
+<p>The <strong>Format designer</strong> page is divided into two parts. The left side shows a format structure (XML scheme), and the right side shows a data model (data).</p>
+<p>For more information about ER, see <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md">Electronic reporting (ER) overview</a></p>
+<p>Values for the following tags of the report are collected from tax transactions that are posted in the system. The values consider the specific tax codes that your company uses and the tax directions that are applicable to your company's operations.</p>
+<ul>
+<li>TotaleOperazioniAttive</li>
+<li>TotaleOperazioniPassive</li>
+<li>IvaEsigibile</li>
+<li>IvaDetratta</li>
+</ul>
+<p>To set up tax codes for the report, on the <strong>Format designer</strong> page, on the <strong>Mapping</strong> tab, expand <strong>Model</strong> &gt; <strong>AccountingData</strong> &gt; <strong>MonthlyData</strong>, select the <strong>ActiveVATOperations</strong> node, and then select <strong>Edit</strong>.</p>
+<p><img src="media/edit-formula-active-vat-operations.png" alt="Edit formula for active VAT operations."></p>
+</li>
+<li><p>In the <strong>'Calculated field' data source properties</strong> dialog box, select <strong>Edit formula</strong>.</p>
+</li>
+<li><p>Update the formula with the tax codes that your company uses and the tax direction that is applicable to your company's operations. Manually define the tax codes as string values. For the tax directions, select values from the <strong>TaxDirection_Type</strong> data source on the left side of the <strong>Formula designer</strong> page.</p>
+<p><img src="media/formula-designer.png" alt="Add your company's tax codes in formula designer."></p>
+<p>When the report is generated, the system will use the conditions that are defined for the <strong>ActiveVATOperations</strong> node to calculate values for the <strong>TotaleOperazioniAttive</strong> and <strong>IvaEsigibile</strong> tags of the report.</p>
+</li>
+<li><p>When you've finished editing the formula, save your changes, close the <strong>Formula designer</strong> page, and select <strong>OK</strong> in the <strong>'Calculated field' data source properties</strong> dialog box.</p>
+</li>
+<li><p>On the <strong>Format designer</strong> page, on the <strong>Mapping</strong> tab, expand <strong>Model</strong> &gt; <strong>AccountingData</strong> &gt; <strong>MonthlyData</strong>, select the <strong>PassiveVATOperations</strong> node, and then select <strong>Edit</strong>.</p>
+</li>
+<li><p>In the <strong>'Calculated field' data source properties</strong> dialog box, select <strong>Edit formula</strong>.</p>
+</li>
+<li><p>Update the formula with the tax codes that your company uses and the tax directions that are applicable to your company's operations, as you did for the <strong>ActiveVATOperations</strong> node, to define the conditions that the system will use calculate the values for the <strong>TotaleOperazioniPassive</strong> and <strong>IvaDetratta</strong> tags of the report.</p>
+</li>
+<li><p>To specify the number sequence that the system should use for the progressive numbers that are included in the file name for the report file, on the <strong>Format designer</strong> page, on the <strong>Mapping</strong> tab, select <strong>Add root</strong>.</p>
+</li>
+<li><p>In the drop-down dialog box, expand <strong>Dynamics 365 for Operations</strong>, and then select <strong>Number sequence</strong>.</p>
+<p><img src="media/add-num-seq.png" alt="Add number sequence to your format."></p>
+</li>
+<li><p>Enter a name, select the number sequence that you created earlier, and then select <strong>OK</strong> to create the number sequence.</p>
+<p><img src="media/num0seq-name.png" alt="Specify a name for your number sequence in ER format."></p>
+</li>
+<li><p>On the <strong>Format designer</strong> page, select <strong>File</strong> on the left side, and then, on the <strong>Mapping</strong> tab, select the <strong>Edit</strong> button (pencil symbol) for the <strong>File name</strong> field.</p>
+<p><img src="media/file-name-edit.png" alt="Edit formula for name of the file with number sequence name."></p>
+</li>
+<li><p>Update <strong>&quot;IT&quot;&amp;model.Frontispiece.FiscalCode&amp;&quot;_LI_00000&quot;</strong> with a formula that includes a link to the new number sequence:</p>
+<ul>
+<li><strong>&quot;IT&quot;&amp;model.Frontispiece.FiscalCode&amp;&quot;<em>LI</em>&quot;&amp;LIPE_file_num</strong>. Here, <strong>LIPE_file_num</strong> is the name that you gave to the number sequence. To add <strong>LIPE_file_num</strong> to the formula, click <strong>Add data source</strong>. When you've finished, select <strong>Save</strong>.</li>
+</ul>
+<p><img src="media/file-name-formula-designer.png" alt="Edit formula for file name with number sequence name."></p>
+</li>
+<li><p>Save your changes in the ER format, and complete the configuration.</p>
+</li>
+</ol>
+<h3 id="update-input-parameters">Update input parameters</h3>
+<p>The values of some format tags must be filled in manually. The tags are included in the report dialog box so that you can set the values.</p>
+<p>By default, the <strong>Quarterly VAT Communication</strong> format includes all possible parameters. To add, delete, or update parameters in the report dialog box, on the <strong>Format designer</strong> page, on the <strong>Mapping</strong> tab, switch to <strong>Group view</strong>, and then select the <strong>Empty containers</strong> element.</p>
+<p><img src="media/empty-containers.png" alt="Empty containers."></p>
+<p>The <strong>Empty containers</strong> element includes all the input parameters for the report. Before you delete an input parameter, you must unbind it or update the mapping for the corresponding field. Expand the format structure tree on the left side of the <strong>Format designer</strong> page, find the corresponding field, and delete or update the binding.</p>
+<p>To add an input parameter, add it in the corresponding node in the <strong>Empty containers</strong> element, select a tag in the format structure tree, and then select <strong>Bind</strong>.</p>
+<p><img src="media/binding.png" alt="Bind an input parameter."></p>
+<p>When you've finished updating the format, save, close, and complete it.</p>
+<h3 id="set-up-general-ledger-parameters">Set up General ledger parameters</h3>
+<p>A new menu item for the <strong>Quarterly VAT communication (LIPE)</strong> report must be associated with the format that you created and updated for your legal entity.</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Parameters</strong> &gt; <strong>General ledger parameters</strong>.</p>
+</li>
+<li><p>On the <strong>Sales tax</strong> tab, on the <strong>Quarterly VAT communication</strong> FastTab, in the <strong>Format mapping</strong> field, select the <strong>Quarterly VAT Communication</strong> format that you created.</p>
+<p><img src="media/gl-parameters-er-format.png" alt="Set up Quarterly VAT Communication format in General ledger parameters."></p>
+</li>
+</ol>
+<h2 id="generate-a-quarterly-vat-communication-lipe-report">Generate a Quarterly VAT communication (LIPE) report</h2>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Quarterly VAT communication</strong>.</p>
+</li>
+<li><p>In the <strong>Electronic report parameters</strong> dialog box, set the parameters that are described in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Example value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anno</td>
+<td>Enter the year to generate the report for.</td>
+<td>2018</td>
+</tr>
+<tr>
+<td>Periodo di liquidazione</td>
+<td>Select the sales tax settlement period to generate the report for.</td>
+<td>MON</td>
+</tr>
+<tr>
+<td>Trimestre</td>
+<td>Select the quarter to generate the report for.</td>
+<td>IV</td>
+</tr>
+<tr>
+<td>Mese o Trimestre</td>
+<td>Select one of the following options:</td>
+<td>Month</td>
+</tr>
+<tr>
+<td>CodiceFiscaleDichiarante</td>
+<td>Enter the fiscal code of the declarant. The fiscal code is a 16-character alphanumeric value. If this field isn't applicable to your company, leave it blank. If you enter a value in this field, you must also select a value in the <strong>CodiceCarica</strong> field.</td>
+<td>1234567891234567</td>
+</tr>
+<tr>
+<td>CodiceCarica</td>
+<td>If you entered a value in the <strong>CodiceFiscaleDichiarante</strong> field, select the position code that corresponds to that fiscal code.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PIVAControllante</td>
+<td>Enter the VAT registration number of the company or authority that performs controls in the event of group payment or settlement. The VAT registration number is an 11-character alphanumeric value. If this field isn't applicable to your company, leave it blank. (Law reference: last clause of article 73)</td>
+<td>12345678912</td>
+</tr>
+<tr>
+<td>UltimoMese</td>
+<td>Enter one of the following values to specify the last month of control in the event of an interruption of group payment: <strong>1</strong>, <strong>2</strong>, <strong>3</strong>, <strong>4</strong>, <strong>5</strong>, <strong>6</strong>, <strong>7</strong>, <strong>8</strong>, <strong>9</strong>, <strong>10</strong>, <strong>11</strong>, <strong>13</strong>, or <strong>99</strong>. If this field isn't applicable to your company, select <strong>Non applicabile</strong>. (Law reference: last clause of article 73)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>LiquidazioneGruppo</td>
+<td>If the communication is related to an interruption of group payment, enter <strong>1</strong>. If it isn't related to an interruption of group payment, enter <strong>0</strong>. If this field isn't applicable to your company, select <strong>Non applicabile</strong>. (Law reference: last clause of article 73)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CFDichiarante</td>
+<td>Enter the fiscal code of the declarant that undertakes the communication. The fiscal code is a 16-character alphanumeric value. If this field isn't applicable to your company, leave it blank.</td>
+<td>1234567891234567</td>
+</tr>
+<tr>
+<td>CodiceCaricaDichiarante</td>
+<td>Enter the position code of the declaring subject. The position code is a numeric value. If this field isn't applicable to your company, leave it blank.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CodiceFiscaleSocieta</td>
+<td>Enter the tax code of the declarant company. The tax code is an 11-character alphanumeric value. Although it's usually the same as the VAT number, it can differ in some cases. If this field isn't applicable to your company, leave it blank.</td>
+<td>12345678901</td>
+</tr>
+<tr>
+<td>FirmaDichiarazione</td>
+<td>If the communication is signed by the taxpayer, select <strong>0</strong>. If it’s signed by the person who has the legal or contractual representative power, select <strong>1</strong>.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CFIntermediario</td>
+<td>Enter the fiscal code of the intermediary that is in charge of transmission. The fiscal code is a 16-character alphanumeric value. If this field isn't applicable to your company, leave it blank. If you enter a value in this field, you must also enter values in the <strong>DataImpegno</strong> and <strong>FirmaIntermediario</strong> fields.</td>
+<td>1234567891234567</td>
+</tr>
+<tr>
+<td>ImpegnoPresentazione</td>
+<td>If the communication is prepared by the contributor, select <strong>1</strong>. If it's prepared by the sender, select <strong>2</strong>. If this field isn't applicable to your company, select <strong>Not applicable</strong>.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>DataImpegno</td>
+<td>If you entered a value in the <strong>CFIntermediario</strong> field, enter the corresponding date in the format ddMMyyyy.</td>
+<td>31012019</td>
+</tr>
+<tr>
+<td>FirmaIntermediario</td>
+<td>If you entered a value in the <strong>CFIntermediario</strong> field, enter <strong>1</strong> if the intermediary's signature is present. If it isn't present, enter <strong>0</strong>.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FlagConferma</td>
+<td>If you intend to transmit a communication even if it doesn't pass any compliance check, select <strong>1</strong>. If you don't intend to transmit a communication in this situation, select <strong>0</strong>.</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Quarter</strong>: Generate an XML file that contains one <strong>Modulo</strong> block that is related to the selected quarter.</li>
+<li><strong>Month</strong>: Generate an XML file that contains three <strong>Modulo</strong> blocks, each of which is related to one month of the selected quarter.</li>
+</ul>
+</li>
+<li><p>For the parameters that are described in the following table, if you selected <strong>Month</strong> in the <strong>Mese o Trimestre</strong> field in the previous step, enter values for <strong>Mese1</strong>, <strong>Mese2</strong>, and <strong>Mese3</strong>, which correspond to the months of the selected quarter. If you selected <strong>Quarter</strong> in the <strong>Mese o Trimestre</strong> field, enter values for <strong>Trimestre</strong>, which corresponds to the selected quarter.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Example value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subfornitura</td>
+<td>If the contributor used the provided benefits, select <strong>1</strong>. If the contributor didn't use them, select <strong>0</strong>. (Law reference: article 74, clause 5)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>EventiEccezionali</td>
+<td>This field is reserved for subjects that used VAT fiscal benefits during the reference period. The possible values are <strong>1</strong> and <strong>9</strong>.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>VersamentiAutoUE</td>
+<td>Enter the total tax deposit for the first internal vehicle transfer. Enter the value in numeric format, and use a comma (,) as the decimal separator.</td>
+<td>10000,98</td>
+</tr>
+<tr>
+<td>CreditiImposta</td>
+<td>Enter the total specific tax credits that were used during the reference period. Enter the value in numeric format, and use a comma (,) as the decimal separator.</td>
+<td>10000,98</td>
+</tr>
+<tr>
+<td>InteressiDovuti</td>
+<td>Enter the total interest for the quarterly payment. Enter the value in numeric format, and use a comma (,) as the decimal separator.</td>
+<td>10000,98</td>
+</tr>
+<tr>
+<td>Acconto</td>
+<td>Enter the total down payment, even if it wasn't actually deposited. Enter the value in numeric format, and use a comma (,) as the decimal separator.</td>
+<td>10000,98</td>
+</tr>
+<tr>
+<td>Metodo</td>
+<td>Select the code for the method that is used to determine the down payment:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Operazioni straordinarie</td>
+<td>For cases that involve extraordinary operations, enter <strong>1</strong>. Otherwise, enter <strong>0</strong>.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TotaleOperazioniPassive includes non-deductible amount</td>
+<td>Select this check box if the taxable amount in the <strong>TotaleOperazioniPassive</strong> field includes a non-deductible amount.</td>
+<td>Selected</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>1</strong>: Historical</li>
+<li><strong>2</strong>: Forecast</li>
+<li><strong>3</strong>: Analytical – effective</li>
+<li><strong>4</strong>: Entities that operate in sectors such as telecommunications, water supply, electricity, waste collection, and disposal sectors</li>
+</ul>
+</li>
+<li><p>Select <strong>OK</strong> to generate the report.</p>
+</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ita-quarterly-vat-communication.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

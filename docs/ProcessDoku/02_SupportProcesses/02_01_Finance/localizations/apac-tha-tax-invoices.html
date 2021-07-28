@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tax invoices | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tax invoices | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tax-invoices">Tax invoices</h1>
+
+
+<p>This topic explains how to set up tax invoices and when they are generated.</p>
+<h2 id="preliminary-setup">Preliminary setup</h2>
+<p>This section provides information about general options that should be set up before you can start to work with tax invoices.</p>
+<p>Go to <strong>Accounts receivable</strong> &gt; <strong>Setup</strong> &gt; <strong>Accounts receivable parameters</strong>, and then, on the <strong>Number sequences</strong> tab, set up number sequences for the following references:</p>
+<ul>
+<li>Free text credit note</li>
+<li>Free text credit note voucher</li>
+<li>Sales credit note</li>
+<li>Sales credit note voucher</li>
+<li>Customer invoice</li>
+<li>Customer invoice voucher</li>
+</ul>
+<p>For more information, see <a href="../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md">Number sequences overview</a>.</p>
+<h2 id="setup">Setup</h2>
+<p>This section provides information about Thailand-specific options that should be set up before you can start to work with tax invoices.</p>
+<ol>
+<li><p>Go to <strong>Accounts receivable</strong> &gt; <strong>Setup</strong> &gt; <strong>Accounts receivable parameters</strong>, and then, on the <strong>Number sequences</strong> tab, set up number sequences for the following references.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Reference</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free text debit note</td>
+<td>The number sequence reference for the debit notes that are generated from free text invoices.</td>
+</tr>
+<tr>
+<td>Free text debit note voucher</td>
+<td>The number sequence reference for the debit note transactions when debit notes are generated from free text invoices.</td>
+</tr>
+<tr>
+<td>Sales debit note</td>
+<td>The number sequence reference for the debit notes that are generated from sales orders.</td>
+</tr>
+<tr>
+<td>Sales debit note voucher</td>
+<td>The number sequence reference for the debit note transactions when debit notes are generated from sales orders.</td>
+</tr>
+<tr>
+<td>Customer tax invoice</td>
+<td>The number sequence reference for the tax invoices that are generated from sales order invoices.</td>
+</tr>
+<tr>
+<td>Customer tax invoice voucher</td>
+<td>The number sequence reference for customer tax invoice vouchers.</td>
+</tr>
+<tr>
+<td>Free text tax invoice</td>
+<td>The number sequence reference for the tax invoices that are generated from free text invoices.</td>
+</tr>
+<tr>
+<td>Free text tax invoice voucher</td>
+<td>The number sequence reference for free text tax invoice vouchers.</td>
+</tr>
+<tr>
+<td>Receipt</td>
+<td>The number sequence reference for receipts.</td>
+</tr>
+<tr>
+<td>Receipt / Tax invoice</td>
+<td>The number sequence reference for receipts or tax invoices.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Go to <strong>Accounts payable</strong> &gt; <strong>Setup</strong> &gt; <strong>Accounts payable parameters</strong>, and then, on the <strong>Number sequences</strong> tab, set up a number sequence for the <strong>Vendor unrealized reversal ID</strong> reference that you want to associate with the vendor.</p>
+</li>
+</ol>
+<h2 id="work-with-tax-invoices">Work with tax invoices</h2>
+<p>Tax invoices are generated when value-added tax (VAT) is realized. Microsoft Dynamics 365 Finance automatically generates a tax invoice when a sales order, a purchase invoice, a purchase order, or a payment that generates a realized VAT entry is posted. If an unrealized VAT entry is generated, an invoice is generated instead of a tax invoice.</p>
+<p>For more information, see <a href="apac-tha-unrealized-vat.html">Thailand unrealized and realized VAT</a>.</p>
+<ul>
+<li><p>If you receive payment from the customer when you post a sales order, follow these steps:</p>
+<ol>
+<li><p>Go to <strong>Accounts receivable &gt; Orders &gt; All sales orders</strong>.</p>
+</li>
+<li><p>Select <strong>New</strong> to create a sales order.</p>
+</li>
+<li><p>On the <strong>Line details</strong> FastTab, on the <strong>Setup</strong> tab, in the <strong>Sales tax</strong> section, in the <strong>Item sales tax</strong> <strong>group</strong> field, select the corresponding sales tax group for realized VAT.</p>
+</li>
+<li><p>Select <strong>Save</strong>.</p>
+</li>
+<li><p>On the <strong>Invoice</strong> FastTab, in the <strong>Generate</strong> section, select <strong>Invoice</strong>.</p>
+</li>
+<li><p>In the <strong>Print options</strong> section, set the <strong>Print invoice</strong> option to <strong>Yes</strong>.</p>
+<p>A tax invoice is printed. Send this invoice to the customer.</p>
+</li>
+</ol>
+</li>
+<li><p>If you receive payment from the customer when you post a free text invoice, follow these steps:</p>
+<ol>
+<li>Go to <strong>Accounts receivable &gt; Invoices &gt; All free text invoices</strong>.</li>
+<li>In the <strong>Invoice lines</strong> section, in the <strong>Sales tax</strong> and <strong>Item sales tax</strong> <strong>group</strong> fields, select the corresponding sales tax group for realized VAT.</li>
+<li>On the Action Pane, select <strong>Post</strong> to post the invoice.</li>
+<li>In the <strong>Post free text invoice</strong> dialog box, in the <strong>Parameters</strong> section, set the <strong>Print invoice</strong> option to <strong>Yes</strong>.</li>
+</ol>
+<p>A tax invoice is printed. Send this invoice to the customer.</p>
+</li>
+</ul>
+<p>At any time, you can go back to the sales order or free text invoice to print the tax invoice.</p>
+<ul>
+<li><p><strong>For a sales order:</strong> Open the order, and then, on the <strong>Invoice</strong> FastTab, in the <strong>Journals</strong> section, select <strong>Invoice</strong> to open the invoice. On the <strong>Invoice</strong> FastTab, in the <strong>Document</strong> section, select <strong>View</strong> to view the tax invoice or <strong>Send</strong> to send it.</p>
+</li>
+<li><p><strong>For a free text invoice:</strong> Open the free text invoice, and then, on the <strong>Invoice</strong> FastTab, in the <strong>Document</strong> section, select <strong>View</strong> to view the tax invoice or <strong>Send</strong> to send it.</p>
+<p>The following illustration shows an example of a printed tax invoice.</p>
+<p><img src="media/apac-tha-tax-invoices-tax-invoice.png" alt="Table Description automatically generated."></p>
+</li>
+<li><p>If you receive payment from the customer after you post a sales order or a free text invoice, follow these steps:</p>
+<ol>
+<li><p>Create a sales order.</p>
+</li>
+<li><p>On the <strong>Line details</strong> FastTab, on the <strong>Setup</strong> tab, in the <strong>Sales tax</strong> section, in the <strong>Item sales tax</strong> <strong>group</strong> field, select the corresponding sales tax group for unrealized VAT.</p>
+</li>
+<li><p>Either generate an invoice for the order or create a free text invoice.</p>
+</li>
+<li><p>In the <strong>Invoice lines</strong> section, in the <strong>Sales tax</strong> and <strong>group</strong> <strong>Item sales tax</strong> <strong>group</strong> fields, select the corresponding sales tax group for unrealized VAT.</p>
+</li>
+<li><p>Go to <strong>Accounts receivable &gt; Payments &gt; Customer payments journal</strong>, and settle the payment. For more information, see <a href="../cash-bank-management/tasks/customer-payment-overview.html">Customer payment overview</a>.</p>
+</li>
+<li><p>Select <strong>Print</strong>, and then select <strong>Payments</strong>.</p>
+<p>A tax invoice or a receipt/tax invoice is printed.</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the lines on the invoice that a payment is settled to have a realized tax type, a receipt is printed. The receipt shows the invoice lines together with the realized tax type and the line total.</p>
+<p>If multiple lines on the settled invoice have realized and unrealized tax types, a receipt and a receipt/tax invoice are printed. The receipt/tax invoice shows the invoice lines together with the unrealized tax type and the line total.</p>
+</div>
+<p>The following illustration shows an example of a printed receipt.</p>
+<p><img src="media/apac-tha-tax-invoices-receipt.png" alt="Timeline Description automatically generated with low confidence."></p>
+<p>The following illustration shows an example of a printed receipt/tax invoice.</p>
+<p><img src="media/apac-tha-tax-invoices-receipt-tax-invoice.png" alt="A picture containing graphical user interface Description automatically generated."></p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

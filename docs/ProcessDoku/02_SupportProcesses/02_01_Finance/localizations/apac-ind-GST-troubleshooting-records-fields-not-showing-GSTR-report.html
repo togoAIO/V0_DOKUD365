@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Records and fields don't appear on the GSTR report | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Records and fields don't appear on the GSTR report | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="records-and-fields-dont-appear-on-the-gstr-report">Records and fields don't appear on the GSTR report</h1>
+
+
+<p>Follow the steps in the sections of this topic if some records or fields don't appear on the GSTR report, or if the filter for registration numbers in government office tools isn't working.</p>
+<h2 id="determine-whether-the-issue-is-related-to-excel">Determine whether the issue is related to Excel</h2>
+<p>To determine whether the issue is related to Microsoft Excel, see <a href="https://fix.lcs.dynamics.com/Issue/Details?bugId=459982&amp;dbType=3&amp;qc=38e839da1be8c7ec9b71b65e4c8607efe79c434c1c3dbcd2e1d86b9ba08b78a0">Details for issue 459982 (dynamics.com)</a>. If the issue is related to Excel, use the information in Microsoft Dynamics Lifecycle Services (LCS) to fix it. If the issue isn't related to Excel, move on to the next section.</p>
+<h2 id="review-the-report-controller-setup">Review the report controller setup</h2>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Tax configuration</strong> &gt; <strong>Tax setup</strong> &gt; <strong>Configurations</strong>.</p>
+</li>
+<li><p>On the <strong>Report configurations</strong> tab, verify that the correct report controller is selected.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture1.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture1.png" alt="Report controller field on the Report configurations tab of the Configurations page."></a></p>
+</li>
+<li><p>If the incorrect controller is selected, select the correct controller. If the correct is already selected, move on to the next section.</p>
+</li>
+</ol>
+<h2 id="if-fields-are-missing-from-the-report-review-the-field-mapping">If fields are missing from the report, review the field mapping</h2>
+<p>If fields are missing from the report, review the field mapping in the report configuration.</p>
+<ol>
+<li><p>Go to <strong>Workspaces</strong> &gt; <strong>Electronic reporting</strong> &gt; <strong>Reporting configurations</strong>.</p>
+</li>
+<li><p>Select the report configuration, and then open the format designer.</p>
+</li>
+<li><p>In the tree, find the report name, expand <strong>&lt;Report name&gt;</strong> &gt; <strong>Sequence</strong> &gt; <strong>Header</strong> &gt; <strong>Sequence</strong>, and verify that the field exists. For example, in the following illustration, the <strong>State_Place_of_Supply</strong> field exists in the <strong>Invoice and bill of supply</strong> report, according to the report configuration. If the field doesn't exist, modify the report configuration in your extension.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture2.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture2.png" alt="State_Place_of_Supply field in the expanded tree."></a></p>
+</li>
+</ol>
+<h2 id="if-lines-are-missing-from-the-report-review-the-filter-formula-in-the-report-format-configuration">If lines are missing from the report, review the filter formula in the report format configuration</h2>
+<ol>
+<li><p>Go to <strong>Workspaces</strong> &gt; <strong>Electronic reporting</strong> &gt; <strong>Reporting configurations</strong>.</p>
+</li>
+<li><p>Select the format configuration that you want to work with, and then open the format designer.</p>
+</li>
+<li><p>On the <strong>Mapping</strong> tab, select <strong>Edit</strong>.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture3.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture3.png" alt="Edit button on the Mapping tab of the Format designer page."></a></p>
+</li>
+<li><p>Select <strong>Edit formula</strong>.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture4.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture4.png" alt="Edit formula button in the 'Calculated field' data source properties dialog box."></a></p>
+</li>
+<li><p>Review the formula. If it's incorrect, modify it in your extension.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture5.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture5.png" alt="Formula."></a></p>
+</li>
+</ol>
+<h2 id="determine-whether-the-record-exists-in-the-taxdocumentrowtransaction-table">Determine whether the record exists in the TaxDocumentRowTransaction table</h2>
+<p>Follow these steps to determine whether the record exists in the <strong>TaxDocumentRowTransaction</strong> table. If the record doesn't exist, the issue is related to posting. In that case, you should report the issue to Microsoft.</p>
+<p>This procedure uses the example of free text invoice lines that are missing records in the <strong>TaxDocumentRowTransaction</strong> table.</p>
+<ol>
+<li><p>Open the free text invoice that you want to work with.</p>
+</li>
+<li><p>Select and hold (or right-click) in a blank area of the <strong>Invoice lines</strong> grid, and then select <strong>Form Name: CustFreeInvoice</strong>.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture6.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture6.png" alt="Form Name: CustFreeInvoice selected on the shortcut menu on the Free text invoice page."></a></p>
+</li>
+<li><p>Make a note of the value in the <strong>DataSource</strong> field. In this example, it's <strong>CustInvoiceLine</strong>.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture7.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture7.png" alt="DataSource field in the Form information dialog box."></a></p>
+</li>
+<li><p>Close the dialog box to return to the <strong>Free text invoice</strong> page.</p>
+</li>
+<li><p>On the header, make a note of the invoice ID in the <strong>Invoice</strong> field. In this example, it's <strong>INMF-000004</strong>.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture8.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture8.png" alt="Invoice field on the Free text invoice page."></a></p>
+</li>
+<li><p>Run the following SQL query to determine whether the <strong>TaxDocumentRowTransaction</strong> table is missing records.</p>
+<pre><code class="lang-sql">select * from TaxDocumentRowTransaction
+inner join TableIdTable on TaxDocumentRowTransaction.TransactionLineTableId = TableIdTable.ID 
+and TableIdTable.Name = 'CustInvoiceLine'
+and TaxDocumentRowTransaction.InvoiceId = 'INMF-000004'
+</code></pre>
+</li>
+</ol>
+<h2 id="debug-code-to-analyze-the-logic-of-the-missing-record">Debug code to analyze the logic of the missing record</h2>
+<ol>
+<li><p>Set a breakpoint to determine whether <strong>TaxGSTRReportDPHelper_IN::queryTrans</strong> gets the missing record in <strong>tmpLineDetail</strong>. If there appears to be an issue, report it to Microsoft.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture9.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture9.png" alt="Breakpoint at tmpLineDetail."></a></p>
+</li>
+<li><p>Set a breakpoint to determine whether <strong>TaxGSTRReportDPHelper_IN::filterTrans</strong> filters the missing record. If there appears to be an issue, report it to Microsoft.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture10.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture10.png" alt="Breakpoint at filterTrans."></a></p>
+</li>
+<li><p>Set a breakpoint to determine whether the <strong>TransCategory</strong> field of the missing record is correct, or whether the record is filtered again. If there appears to be an issue, report it to Microsoft.</p>
+<p><a href="media/records-fileds-not-show-in-GSTR-report-Picture11.png"><img src="media/records-fileds-not-show-in-GSTR-report-Picture11.png" alt="Breakpoint at tmpLineDetail.TransCategory."></a></p>
+</li>
+</ol>
+<h2 id="determine-whether-customization-exists">Determine whether customization exists</h2>
+<p>If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

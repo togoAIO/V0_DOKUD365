@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Set up fiscal books | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Set up fiscal books | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="set-up-fiscal-books">Set up fiscal books</h1>
+
+<p>This topic explains how to set up the <strong>Fiscal books</strong> module to generate and issue events to the tax authorities.</p>
+<h2 id="set-up-service-types">Set up service types</h2>
+<p>The service type table represents table 06. The tax authorities have established this table to classify the services that are provided, based on the assignment of labor. A detailed list of available values is available on the public digital bookkeeping system (SPED) website.</p>
+<ol>
+<li><p>Go to <strong>Fiscal books</strong> &gt; <strong>Setup</strong> &gt; <strong>SPED Reinf</strong> &gt; <strong>Service types</strong>.</p>
+</li>
+<li><p>Select <strong>New</strong>.</p>
+</li>
+<li><p>Enter a classification code that has been established by the tax authorities, and then enter a description.</p>
+<p><img src="media/bra-service-type-setup.png" alt="Service types page."></p>
+</li>
+<li><p>After the list of service types is created, the service types must be assigned to service codes. Go to <strong>Inventory management</strong> &gt; <strong>Setup</strong> &gt; <strong>Fiscal information</strong> &gt; <strong>Service code</strong>, and then, for each service, assign the related service type.</p>
+</li>
+</ol>
+<h2 id="set-up-tax-classification-codes">Set up tax classification codes</h2>
+<ol>
+<li>Go to <strong>Fiscal books</strong> &gt; <strong>Setup</strong> &gt; <strong>SPED Reinf</strong> &gt; <strong>Tax classification codes</strong>.</li>
+<li>Enter the available classification types.</li>
+</ol>
+<p><img src="media/bra-tax-classification-codes.png" alt="Tax classification codes page."></p>
+<p>This information is assigned to the fiscal organization and can be found on the <strong>General</strong> FastTab of the <strong>Fiscal organization</strong> page (<strong>Fiscal books &gt; Setup &gt; Fiscal organization</strong>).</p>
+<p><img src="media/bra-fiscal-organization-setup.png" alt="Fiscal organization page."></p>
+<h2 id="set-up-codes-explanation-suspension">Set up codes explanation suspension</h2>
+<ol>
+<li>Go to <strong>Fiscal books</strong> &gt; <strong>Setup</strong> &gt; <strong>SPED Reinf</strong> &gt; <strong>Codes explanation suspension</strong>.</li>
+<li>Set up the codes that are used in event R-1070 when suspension of withholding applies. These codes are assigned on the <strong>Administrative and judicial process</strong> page (<strong>Fiscal books</strong> &gt; <strong>Periodic</strong> &gt; <strong>SPED Reinf</strong> &gt; <strong>Administrative and judicial process</strong>).</li>
+</ol>
+<p><img src="media/bra-codes-explanation-suspension.png" alt="Codes explanation suspension page."></p>
+<h2 id="set-up-acquisition-type-determination">Set up acquisition type determination</h2>
+<p>This setup is used to determine the agriculture acquisition type of incoming fiscal documents that are reported in the <strong>indAquis</strong> tag for event R-2055.</p>
+<ol>
+<li><p>Go to <strong>Fiscal books</strong> &gt; <strong>Setup</strong> &gt; <strong>SPED Reinf</strong> &gt; <strong>Acquisition of rural production</strong>.</p>
+</li>
+<li><p>Define the classification of fiscal documents, based on the following criteria:</p>
+<ul>
+<li><strong>Vendor account:</strong> All, group, or table</li>
+<li><strong>CFOP:</strong> All, group, or table</li>
+<li><strong>Fiscal classification</strong></li>
+</ul>
+</li>
+</ol>
+<h2 id="set-up-gilrat-and-senar-taxes">Set up GILRAT and SENAR taxes</h2>
+<p><strong>GILRAT</strong>: The tax contribution of the degree of incidence of Labor disability resulting from occupational environmental risks.
+<strong>SENAR</strong>: The tax contribution related to rural production.</p>
+<ol>
+<li>Go to <strong>Fiscal books</strong> &gt; <strong>Setup</strong> &gt; <strong>SPED Reinf</strong> &gt; <strong>GILRAT tax codes</strong> or <strong>SENAR tax codes</strong>.</li>
+<li>Identify the sales tax codes that are used to represent GILRAT and SENAR taxes. In the definition of the sales tax codes, the tax type should be set to <strong>Other</strong>. The amount of these taxes is used in the <strong>vlrRatDescPR</strong> and <strong>vlrSenarDesc</strong> tags for event R-2055.</li>
+</ol>
+<h2 id="vendor-setup">Vendor setup</h2>
+<ul>
+<li>Go to <strong>Accounts payable</strong> &gt; <strong>Vendors</strong> &gt; <strong>All vendors</strong>.</li>
+<li>Select a vendor.</li>
+<li>On the <strong>Fiscal information</strong> tab, set up  <strong>Reinf taxation over payroll</strong>. This new attribute determines the type of taxation, because this information is required in the <strong>indOpcCP</strong> tag for event R-2055.</li>
+</ul>
+<h2 id="set-up-fiscal-books-parameters">Set up Fiscal books parameters</h2>
+<ol>
+<li>Go to <strong>Fiscal books</strong> &gt; <strong>Tax statements parameters</strong> &gt; <strong>SPED Reinf</strong> &gt; <strong>SPED Reinf parameters</strong>.</li>
+<li>On the <strong>General</strong> tab, select <strong>SPED Reinf version</strong>.</li>
+<li>Select the environment type and the status of the fiscal organization.</li>
+<li>Go to <strong>Fiscal books</strong> &gt; <strong>Setup</strong> &gt; <strong>Fiscal books parameters</strong>.</li>
+<li>On the <strong>Number sequences</strong> tab, set up the number sequence for events R-2010, R-2020, and R-2055.</li>
+</ol>
+<p><img src="media/bra-sped-fiscal-books-parameters.png" alt="Number sequences tab on the Fiscal books parameters page."></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the number sequences weren't initialized during the setup checklist for KB installation, you can generate them by using a wizard. To open the wizard, go to <strong>Organization administration</strong> &gt; <strong>Number sequences</strong> &gt; <strong>Number sequences</strong>, and select <strong>Generate</strong>. You can then configure the related number sequence:</p>
+<ul>
+<li><strong>Area:</strong> Fiscal books</li>
+<li><strong>Reference:</strong> SPED-Reinf event ID</li>
+</ul>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/latam-bra-sped-reinf-setup-fiscal-books.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

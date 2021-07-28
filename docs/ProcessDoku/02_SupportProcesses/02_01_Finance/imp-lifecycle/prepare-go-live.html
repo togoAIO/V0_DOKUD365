@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Prepare for go-live | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Prepare for go-live | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="prepare-for-go-live">Prepare for go-live</h1>
+
+
+<p>This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).</p>
+<p>Production and Sandbox can only be deployed in two different <a href="../../dev-itpro/deployment/cloud-deployment-overview.md#customer-lifecycle-subscriptions-and-environment-types">types of environments</a>: Microsoft Managed or Self-Service. Both follow the same preparation for go-live, but the service level agreements (SLA) and some of the process steps are different.</p>
+<p>This graphic and the following table list the phases of the go-live process, the environment type to which each phase applies with the expected duration, and who is responsible to take the action.</p>
+<p><img src="media/go-live-process.PNG" alt="Go-live process."></p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Action</th>
+<th>Environment type</th>
+<th>Duration/When</th>
+<th>Who</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Update Go-live date in LCS</td>
+<td>Both</td>
+<td>At the latest 2-3 months in advance</td>
+<td>Customer/Partner</td>
+<td>The milestone dates should be kept up to date on an ongoing basis.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Complete and send pre go-live checklist</td>
+<td>Both</td>
+<td>After user acceptance testing (UAT) complete</td>
+<td>Customer/Partner</td>
+<td>Follow the instructions provided in the &quot;FastTrack Go-live Assessment&quot; section later in this topic.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Project Go-Live assessment (FastTrack Essentials)</td>
+<td>Both</td>
+<td>3-business days for initial report, plus additional time for mitigation, if required</td>
+<td>Microsoft-FastTrack Solution Architect</td>
+<td>Solution Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable.</td>
+</tr>
+<tr>
+<td></td>
+<td>Go-live Assessment workshop (FastTrack)</td>
+<td>Both</td>
+<td>To coordinate with architect assigned</td>
+<td>Microsoft-FastTrack Solution Architect</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Release for production deployment</td>
+<td>Microsoft Managed</td>
+<td>Immediate upon successfully completed assessment</td>
+<td>Microsoft-FastTrack Solution Architect</td>
+<td>Do not submit production request until the assessment is successfully completed.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Self-Service</td>
+<td>Immediate upon successfully completed assessment and <strong>Configure</strong> button is enabled</td>
+<td>Microsoft-FastTrack Solution Architect</td>
+<td>For Self-Service deployment, the <strong>Configure</strong> button remains disabled until the assessment is complete.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Production deployment request</td>
+<td>Microsoft Managed</td>
+<td>Self-service</td>
+<td>Customer/Partner</td>
+<td>The production deployment request should only be submitted after the FastTrack Architect has finished the assessment.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Self-Service</td>
+<td>Self-service</td>
+<td>Customer/Partner</td>
+<td>After the assessment is complete, the <strong>Configure</strong> button will be enabled and customer will be able to request the production deployment.</td>
+</tr>
+<tr>
+<td></td>
+<td>Sizing</td>
+<td>Both</td>
+<td>Immediate in case of automatic sizing. Could require further clarifications of the subscription estimate.</td>
+<td>Microsoft-Dynamic Service Engineering (DSE)</td>
+<td>Automatic sizing based on subscription estimate by default, manual sizing by exception.</td>
+</tr>
+<tr>
+<td></td>
+<td>Deployment</td>
+<td>Microsoft Managed</td>
+<td>48 hours</td>
+<td>Microsoft-Dynamic Service Engineering (DSE)</td>
+<td>Status in LCS reflects the deployment progress. If there are any questions about your request, they will be posted as Comments on the service request.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Self-Service</td>
+<td>An average of 30 minutes</td>
+<td>Microsoft-FastTrack Solution Architect</td>
+<td>The deployment could take an average of 30 minutes after the assessment has completed and the production environment has been requested. For more information, see <a href="../../dev-itpro/deployment/deployenvironment-newinfrastructure.md">Deploy a new environment</a>.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Deployable package installation request</td>
+<td>Both</td>
+<td>Self-service</td>
+<td>Customer/Partner</td>
+<td>Follow the instructions in <a href="../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#apply-updates">Apply updates</a>. The packages must contain all the models and binaries consolidated in an <a href="../../dev-itpro/dev-tools/aio-deployable-packages.md">All-in-one</a> deployable package.</td>
+</tr>
+<tr>
+<td></td>
+<td>Package installation</td>
+<td>Both</td>
+<td>Minimum 5 hours lead time and 4 hours downtime</td>
+<td>Microsoft-Dynamic Service Engineering (DSE)</td>
+<td>Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Database copy from Sandbox request (if applicable)</td>
+<td>Both</td>
+<td>Self-service</td>
+<td>Customer/Partner</td>
+<td>Follow the instructions <a href="../../dev-itpro/database/database-refresh.md#self-service-database-refresh">Self-service database refresh</a>. If you have a golden configuration you can review <a href="../../dev-itpro/database/dbmovement-scenario-goldenconfig.md">Golden configuration promotion</a>.</td>
+</tr>
+<tr>
+<td></td>
+<td>Copy database</td>
+<td>Both</td>
+<td>Five hours lead time and four hours downtime</td>
+<td>Microsoft-Dynamic Service Engineering (DSE)</td>
+<td>Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of four hours in case a rollback is required for any reason.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Production ready</td>
+<td>Both</td>
+<td>After all previous steps have been completed</td>
+<td>Customer/Partner</td>
+<td>Customer can take control of the production environment.</td>
+</tr>
+<tr>
+<td></td>
+<td>Cutover activities</td>
+<td>Both</td>
+<td>Depends on the project</td>
+<td>Customer/Partner</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Go live</td>
+<td>Both</td>
+<td>Depends on the project</td>
+<td>Customer/Partner</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="completing-the-lcs-methodology">Completing the LCS methodology</h2>
+<p>A major milestone in each implementation project is the cutover to the production environment.</p>
+<p>To ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the <strong>Operate</strong> phase, after the required activities in the LCS methodology are complete. For more information about the environments in your subscription, see the <a href="https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409">Licensing guide</a>.</p>
+<p>Customers must complete the <strong>Analysis</strong>, <strong>Design and Develop</strong>, and <strong>Test</strong> phases in the LCS methodology before the <strong>Configure</strong> button that is used to request the production environment becomes available.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For Self-Service environments, the <strong>Configure</strong> button will only become available after the Solution Architect has signed off on the assessment.</p>
+</div>
+<p>To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see <a href="../../dev-itpro/lifecycle-services/lcs-works-lcs.md">Lifecycle Services (LCS) for Finance and Operations apps customers</a>.</p>
+<p>The process of completing a step has two parts:</p>
+<ul>
+<li>Do the actual work, such as a fit-gap analysis or user acceptance testing (UAT).</li>
+<li>Mark the corresponding step in the LCS methodology as completed.</li>
+</ul>
+<p>It's good practice to complete the steps in the methodology as you make progress with the implementation. Don't wait until the last minute. Don't just click through all the steps so that you can get a production environment. It's in the customer's best interest to have a solid implementation.</p>
+<h2 id="uat-completion-and-solution-sign-off">UAT completion and solution sign off</h2>
+<p>During the UAT phase, you must test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox, or Standard Acceptance Test, environment in the implementation project. To help ensure a successful go-live, you should consider the following as you complete the UAT phase:</p>
+<ul>
+<li>Test cases cover the entire scope of requirements.</li>
+<li>Test by using migrated data. This data should include master data and opening balances, even if they aren't yet final.</li>
+<li>Test by using the correct security roles (default roles and custom roles) that are assigned to users.</li>
+<li>Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.</li>
+<li>Run the <a href="../../dev-itpro/dev-tools/customization-analysis-report.md">Customization Analysis Report (CAR)</a> and resolve critical issues.</li>
+<li>Complete performance testing.</li>
+<li>Document all features, and obtain approval and sign-off from the customer.</li>
+</ul>
+<p>Regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD), testing can't be considered complete when you test only in an environment that is a developer or demo topology. Here are the reasons:</p>
+<ul>
+<li>The topology of the Tier-1 environments differs from the topology of your production environment. It's important that you test all functionality on a Tier-2 or higher sandbox environment in the Microsoft-managed subscription. It's especially important that you test integrations, printing functionality, workflow functionality, and warehouse and commerce devices in the sandbox environment.</li>
+<li>System performance can't be measured when you do the UAT on local virtual machines (VMs) or VMs that are privately hosted.</li>
+<li>To prevent delays during the cutover process, it's important that the team experience the servicing in LCS during the implementation. This servicing includes the processes of applying deployable packages, creating service requests, and moving database between environments.</li>
+</ul>
+<h2 id="fasttrack-go-live-assessment">FastTrack Go-live assessment</h2>
+<p>All customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your production environment. If you aren't familiar with Microsoft FastTrack, see <a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365 home page</a>.</p>
+<p>About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist.</p>
+<p>You can download the checklist from <strong>Dynamics 365 Community</strong> on the <a href="https://aka.ms/FastTrackPreGoLiveChecklist">Go-live Planning TechTalk</a> page.</p>
+<p>The project manager or a key project member must complete the go-live checklist during the pre-go-live phase of the project. Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed.</p>
+<p>When you've completed the go-live checklist, email it to <strong>Dynamics 365 FO Go-Live</strong> d365fogl@microsoft.com. Always include a key stakeholder from the customer and the implementation partner on the email.</p>
+<p>After the checklist is submitted, a Microsoft solution architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, the solution architect might highlight risk factors and ask for a mitigation plan. When the assessment is completed, the solution architect will indicate that you're ready to request the production environment in LCS.</p>
+<p>For Microsoft Managed environments, if you request the production environment before the assessment is completed, the deployment will remain in the <strong>Queued</strong> state until the assessment is successfully completed. For Self-Service environments, the <strong>Configure</strong> button to request production will be only enabled after the assessment is completed.</p>
+<p>You can cancel an environment deployment request while it is in a <strong>Queued</strong> state by following these steps:</p>
+<ol>
+<li>Select <strong>Queued</strong>.</li>
+<li>On the <strong>Customer sign-off</strong> tab, select <strong>Clear sign-off</strong>.</li>
+</ol>
+<p>This will set the environment back into a state of <strong>Configure</strong> and allow you to make changes to the configuration, such as selecting a different data center or environment topology.</p>
+<h2 id="requesting-the-production-environment">Requesting the production environment</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The production environment is used exclusively for running your business operations and shouldn't be used for testing. You will be able to perform the cutover, and if planned, to mock the cutover in production. To test the solution, you must use a UAT environment, which is designed with the necessary elements and services for testing.</p>
+</div>
+<p>After you've completed the analysis, design and develop, and test phases in the LCS methodology, and the go-live assessment has concluded that the project is ready, you can request your production environment.</p>
+<p>We recommend that you select a service account, for example a generic user account, as the Admin user of the environments that you deploy. If you use a named user account, you might not be able to access an environment if that user isn't available. Here are some scenarios where the Admin user must access an environment:</p>
+<ul>
+<li><strong>First sign-in to any environment after initial deployment</strong> – In this case, the Admin user is the only user who can access the environment.</li>
+<li><strong>First sign-in to a sandbox environment after a database refresh from the production environment</strong> – In this case, all user accounts except the Admin account are unable to sign in.</li>
+</ul>
+<p>Your production environment should be deployed to the same datacenter where your sandbox environments are deployed.</p>
+<p>After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you. For <strong>Microsoft Managed</strong> environments, the Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours. The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information. For <strong>Self-Service</strong> environments, the deployment will take around 30 minutes after the production request has been submitted. You can view the progress of the deployment in LCS. Typically, the status of the production environment request remains <strong>Queued</strong> for a few hours before it's changed to <strong>Deploying</strong>.</p>
+<p>When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team is automatically created. You can view this service request in the <strong>Service requests</strong> list in LCS. If the DSE team has questions that prevent them from deploying the production environment, they will add a comment to the service request. For example, the DSE team might ask that you update the subscription estimate or change the datacenter. In some cases, you might have to clear the sign-off from the production deployment request to make changes.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Customer aging snapshots | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Customer aging snapshots | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="customer-aging-snapshots" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="29">Customer aging snapshots</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="33">This topic provides information about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time. You can create aging snapshot records either for all customers or for the customers in a customer pool.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="35">Information from aging snapshots is shown on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="35">Aged balances</strong> list page and the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="35">Collections</strong> page. You must create an aging snapshot before you can use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="35">Aged balances</strong> list page. The list page lists only customers that an aging snapshot has been created for.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="37">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="37">Customer credit and collections</strong> workspace also shows the customer aging. For more information, see <a href="credit-collections-power-bi.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="37">Credit and collections management Power BI content</a>.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="39">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="40">To help reduce the time that is required to create an aging snapshot, turn on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="40">Customer aging performance enhancement</strong> feature in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="40">Feature management</strong> workspace. However, don't use customer pools when this feature is turned on. If a customer pool is selected, the feature won't work, but you can still create an aging snapshot.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="42">When you create a customer aging snapshot, use the following fields to enter information about it:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="44"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="44">Aging period definition</strong> – Select the aging period definition for the aging snapshot. You can have one aging snapshot for each aging period definition. The aging snapshot and the aging period definition must be created separately.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="45"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="45"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="45">Pool ID</strong> – This field is optional. You can use a pool to define the set of customers that should be processed in the aging snapshot. If you select a customer pool in this field, an aging snapshot is created only for the customer accounts that are part of that customer pool. The selected customer pool must be of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="45">Aging snapshot</strong> type. If you leave this field blank, an aging snapshot is created for all customer accounts.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="47">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="48">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="48">Customer aging performance enhancement</strong> feature is turned on, don't select a customer pool.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="50"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="50">Criteria</strong> – The aging snapshot will age based on the date that you select:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="52">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="52"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="52">Transaction date</strong> – Each transaction is aged based on its transaction date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="53"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="53">Due date</strong> – Each transaction is aged based on its due date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="54"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="54">Document date</strong> – Each transaction is aged based on its document date.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="56"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="56"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="56">Aging as of</strong> – Select the date to use in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="56">Current date</strong> field for the aging snapshot. Aging periods are then calculated based on that date.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="58">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="58"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="58">Today's date</strong> – Use the system date. Select this option if processing is set up to run in a recurring batch. Then, every time that the batch is run, the system date of that run is used.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="59"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="59">Selected date</strong> – Use a date that you specify. If you select this option, you must enter an aging date.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="61">For example, the current aging period is 30 days. If you select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="61">Today's date</strong> in this field, the current aging period starts on today's date and then includes the previous 29 days. If you select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="61">Selected date</strong> and enter a date, the current aging period starts on the specified date and then includes the previous 29 days.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="63"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="63"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="63">Update collection status</strong> – Set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="63">Yes</strong> to update the collection status of transactions on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="63">Collections</strong> page from <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="63">Promise to pay</strong> to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="63">Promise to pay broken</strong> if the aging date is beyond the date in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="63">Promise to pay date</strong> field. Set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="63">No</strong> to leave the collection status unchanged on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="63">Collections</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="64"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="64"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="64">Include customers with zero balance</strong> – Set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="64">Yes</strong> to include all customers, regardless of their balance. If you include all customers, we recommend that you to turn on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="64">Customer aging performance enhancement</strong> feature, and that you not use customer pools. Set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="64">No</strong> to include only customers that have a balance. This setting helps speed up performance, because customers that don't have a balance are skipped.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="65"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="65"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="65">Company range</strong> – On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="65">Company range</strong> tab, select the legal entities (companies) to include in the aging snapshot. Only legal entities that are set up for centralized payments are available for selection. Transactions from the selected legal entities are then included in the aging periods for customers that have the same party ID in all those legal entities. Currency amounts are converted to the currency of the legal entity that you're signed in to when you create the aging snapshot.</p>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="67">We recommend that you schedule this process to run in a batch.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="69">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="70">To help improve batch performance when aging snapshots are created, enter a number in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="70">Maximum number of batch tasks</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="70">Collections defaults</strong> FastTab on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="70">Collections</strong> tab of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="70">Accounts receivable parameters</strong> page. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="70">Age customer balances</strong> field, we recommend that you start with the default value of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md" sourcestartlinenumber="70">100</strong> and then adjust the value to optimize processing for your situation.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-aging-snapshot.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

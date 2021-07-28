@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Generate an FEC in Dynamics 365 Finance | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Generate an FEC in Dynamics 365 Finance | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="generate-an-fec-in-dynamics-365-finance" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="25">Generate an FEC in Dynamics 365 Finance</h1>
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="27">To generate a Fichier des écritures comptables (FEC) audit file, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="29">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="29"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="29">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="29">General Ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="29">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="29">Data export</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="30"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="30">If the Electronic reporting (ER) format isn't set up in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="30">Format mapping</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="30">General ledger parameters</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="30">FEC audit file (FR)</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="30">Format mapping</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="30">Data export</strong> page. Then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="30">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="31"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="31">If the ER format is set up in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="31">Format mapping</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="31">General ledger parameters</strong> page, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="31">Data export</strong> page doesn't appear. You can go directly to the dialog box for the report.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="32"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="32">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="32">Electronic report parameters</strong> page, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="32">Period - date from</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="32">Period - date to</strong> fields, enter the start and end dates of the period.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="33"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="33">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="33">FEC report content composition</strong> field, select one or more of the following output files to generate, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="33">Select</strong>.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="35">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="35">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="35">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="35">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="35">Conditions</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="37">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="37">FEC Main</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="37">Main FEC file for the period specified</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="37">For this part of the report, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="37">Period - date from</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="37">Period - date to</strong> fields. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="37">Period - date from</strong> field, if you specify the beginning of the fiscal period, transactions of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="37">opening</strong> type are included at the beginning of the FEC file. If the specified reporting period isn't a full fiscal year, the number of the period within the related fiscal year is appended to the file name (for example, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="37">123456789FEC20131231_01</strong>).</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">Customers balances</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">Customer fiscal year opening balances annex</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">For this part of the report, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">Period - date from</strong> field. The report is generated for the beginning of the fiscal year as it's related to the date that is specified in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">Period - date from</strong> field. Values in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">JournalCode</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">JournalLib</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">EcritureNum</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">PieceRef</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">EcritureLib</strong> columns of the report represent values that are collected from general ledger transactions of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="38">opening</strong> type for the reporting fiscal year.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">Vendors balances</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">Vendor fiscal year opening balances annex</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">For this part of the report, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">Period - date from</strong> field. The report is generated for the beginning of the fiscal year as it's related to the date that is specified in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">Period - date from</strong> field. Values in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">JournalLib</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">EcritureNum</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">PieceRef</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">EcritureLib</strong> columns of the report represent the values that are collected from the general ledger transactions of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="39">opening</strong> type for the reporting fiscal year.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="40">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="40">Customers transactions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="40">Customer transactions annex for the specified period.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="40">For this part of the report, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="40">Period - date from</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="40">Period - date to</strong> fields.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="41">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="41">Vendors transactions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="41">Vendor transactions annex for the specified period.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="41">For this part of the report, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="41">Period - date from</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="41">Period - date to</strong> fields.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="42">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="42">FEC Main Extended</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="42">FEC main file that includes fiscal year opening balance details for customers and vendors.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="42">For this part of the report, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="42">Period - date from</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="42">Period - date to</strong> fields. Make sure that the specified period includes the beginning of a fiscal year.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">General ledger transactions that are included in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">FEC Main</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">FEC Main Extended</strong> report types must be filtered by the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">Current</strong> posting layer. Only main accounts starting with <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">1</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">2</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">3</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">4</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">5</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">6</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">7</strong> must be included to the FEC. Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="44">Records to include</strong> field to filter for the records that the report should include. Use the filter to report data that complies with the rules in Livre des procédures fiscales, article A47 A-1, chapter VII: &quot;Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français.&quot;</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="45"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="45">To generate the report in batch mode, on <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="45">Run in the background</strong> FastTab, specify the batch parameters.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="46"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="46">When you've finished specifying all the parameters, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md" sourcestartlinenumber="46">OK</strong> to generate the report.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-generation.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

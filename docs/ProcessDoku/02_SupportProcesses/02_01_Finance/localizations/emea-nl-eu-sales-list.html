@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>EU sales list for Netherlands | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="EU sales list for Netherlands | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="eu-sales-list-for-netherlands">EU sales list for Netherlands</h1>
+
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Some or all of the functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see <a href="/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases">Service update availability</a>.</p>
+</div>
+
+<p>You can generate a European Union (EU) sales list for the Netherlands in XML format that follows <a href="https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie">NL SBR taxonomies</a> description. Taxonomies are updated by the authority each year. For example, in 2021 the taxonomy NT15 is applicable.</p>
+<p>You can also preview the EU sales list report in Microsoft Excel format. Two formats are available to select: <strong>EU sales list by rows report</strong> or <strong>EU sales list by columns report</strong>.</p>
+<p>As a prerequisite, you should learn about EU sales list reporting and create all the necessary settings described in <a href="emea-eu-sales-list.html">EU Sales list reporting</a>.</p>
+<h2 id="set-up-eu-sales-list-for-netherlands">Set up EU sales list for Netherlands</h2>
+<h3 id="set-up-xml-namespaces-for-the-eu-sales-list-in-xml">Set up XML namespaces for the EU sales list in XML</h3>
+<p>To set up XML namespaces for the EU sales list in XML, follow these steps:</p>
+<ol>
+<li><p>Go to <strong>Workspaces</strong> &gt; <strong>Electronic reporting</strong>, and import version 1.10 or higher of the format, <strong>EU Sales list (NL).</strong> For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md">Download ER configurations from the Global repository of Configuration service</a>.</p>
+</li>
+<li><p>Select <strong>Configurations</strong> &gt; <strong>Application specific parameters setup</strong>.</p>
+</li>
+<li><p>On the <strong>Lookups</strong> FastTab, select <strong>XMLNamespaces</strong>.</p>
+</li>
+<li><p>On the <strong>Conditions</strong> FastTab, define the path to the XSD schema and the paths to the schema instances, <strong>SchemaInstanceData</strong> and <strong>SchemaInstanceTuples</strong>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Lookup result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XSDSchema</td>
+<td><a href="http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-icp-opgaaf-2021.xsd">http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-icp-opgaaf-2021.xsd</a></td>
+</tr>
+<tr>
+<td>SchemaInstanceData</td>
+<td><a href="http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data">http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data</a></td>
+</tr>
+<tr>
+<td>SchemaInstanceTuples</td>
+<td><a href="http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples">http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples</a></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p>For more information about how to get the values from official documentation, see <a href="#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy">How-to get XSD schema and namespaces for the Dutch taxonomy</a>.</p>
+<h3 id="set-up-eu-sales-list-reporting-formats">Set up EU sales list reporting formats</h3>
+<p>To set up and generate the Dutch EU sales list for <a href="emea-reporting-for-multiple-vat-registrations.html">Multiple VAT registrations</a>, go to the <strong>Feature management</strong> workspace and enable the feature, <strong>Dutch ICP declaration</strong>.</p>
+<p>To set up EU sales list reporting formats, follow these steps:</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Foreign trade parameters</strong>.</p>
+</li>
+<li><p>On the <strong>EU sales list</strong> tab, in the <strong>File format mapping</strong> field, select the ER format <strong>EU sales list (NL)</strong> that you imported.</p>
+</li>
+<li><p>In the <strong>Report format mapping</strong> field, select either <strong>EU Sales list by rows report</strong> or <strong>EU sales list by columns report</strong>.</p>
+</li>
+<li><p>For legal entities with <a href="emea-reporting-for-multiple-vat-registrations.html">Multiple VAT registrations</a>, on the <strong>EU sales list</strong> tab, on the <strong>Electronic reporting for countries/regions</strong> FastTab, on the NLD country/region line, select the ER format <strong>EU sales list (NL)</strong> that you imported.</p>
+<p><img src="media/Foreign-trade-parameters-pic1.png" alt="Foreign trade parameters."></p>
+</li>
+</ol>
+<h2 id="set-up-electronic-transmission-of-tax-declarations-to-digipoort">Set up electronic transmission of tax declarations to Digipoort</h2>
+<p>Digipoort is the service used to transmit declarations to the Dutch government. Digipoort works as an electronic post office in that it receives a message, checks the message, and then confirms receipt of the message.</p>
+<h3 id="set-up-azure-key-vault-for-certificate-storage">Set up Azure Key Vault for certificate storage</h3>
+<p>To set up Azure Key Vault for certificate storage, follow these steps:</p>
+<ol>
+<li><p>Go to <strong>System administration</strong> &gt; <strong>Setup</strong> &gt; <strong>System parameters</strong>.</p>
+</li>
+<li><p>On the <strong>General</strong> tab, set the <strong>Use advanced certificate store</strong> option to <strong>Yes</strong>.</p>
+</li>
+<li><p>Upload the certificate to KeyVault.</p>
+</li>
+<li><p>Go to <strong>System administration</strong> &gt; <strong>Setup</strong> &gt; <strong>Key Vault parameters</strong>.</p>
+</li>
+<li><p>Select <strong>New</strong> and set the <strong>Name</strong> and <strong>Description</strong> fields as <strong>Digipoort</strong>.</p>
+</li>
+<li><p>On the <strong>General</strong> FastTab, set the following fields:</p>
+<ul>
+<li><strong>Key Vault URL</strong>: Enter the default Azure Key Vault URL.</li>
+<li><strong>Key Vault client</strong>: Enter the interactive client ID of the Azure Active Directory (Azure AD) application that is associated with Key Vault storage for authentication.</li>
+<li><strong>Key Vault secret key</strong>: Enter a secret key that is associated with the Azure AD application that's used for authentication to Key Vault storage.</li>
+</ul>
+</li>
+<li><p>On the <strong>Secrets</strong> FastTab, select <strong>Add</strong>, and create lines for Key Vault secrets for the Digipoort server and client certificates.</p>
+<p><img src="media/Key-vault-parameters-pic2.png" alt="Key vault parameters."></p>
+</li>
+</ol>
+<p>For more information about how to set up Key Vault parameters, see <a href="setting-up-azure-key-vault-client.html">Set up the Azure Key Vault client</a>.</p>
+<h3 id="set-up-electronic-tax-declaration-parameters">Set up electronic tax declaration parameters</h3>
+<p>To set up electronic tax declaration parameters, follow these steps:</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Electronic tax declaration parameters</strong>.</p>
+<p>For legal entities with <a href="emea-reporting-for-multiple-vat-registrations.html">Multiple VAT registrations</a>, go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade &gt; Dutch electronic tax declaration parameters</strong>.</p>
+</li>
+<li><p>On the <strong>System</strong> tab, set the following fields:</p>
+<ul>
+<li><strong>Digipoort Delivery URL</strong>: Enter the destination URL for the Digipoort service. For example, enter <em><a href="https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2%22">https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2&quot;</a></em>.</li>
+<li><strong>Digipoort Status URL</strong>: Enter the URL for the message statuses. For example, enter <em><a href="https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/statusinformatieservice/1.2">https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/statusinformatieservice/1.2</a></em>.</li>
+<li><strong>Authorization Address</strong>: Enter the URL for authorization. For example, enter <em><a href="http://geenausp.nl">http://geenausp.nl</a></em>.</li>
+<li><strong>Server Certificate</strong>: Select the line that you created for the Key Vault secret for the Digipoort server certificate.</li>
+<li><strong>Client Certificate</strong>: Select the line that you created for the Key Vault secret for the Digipoort client certificate.</li>
+</ul>
+<p><img src="media/Electronic-tax-declaration-parameters-pic3.png" alt="Electronic tax declaration parameters."></p>
+</li>
+</ol>
+<h2 id="set-up-the-dutch-eu-sales-list-transmission-to-digipoort">Set up the Dutch EU sales list transmission to Digipoort</h2>
+<h3 id="set-up-dutch-electronic-tax-declaration-parameters">Set up Dutch electronic tax declaration parameters</h3>
+<p>To set up Dutch electronic tax declaration parameters, follow these steps:</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Electronic tax declaration parameters</strong>.</p>
+<p>For legal entities with <a href="emea-reporting-for-multiple-vat-registrations.html">Multiple VAT registrations</a>, go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Dutch electronic tax declaration parameters</strong>.</p>
+</li>
+<li><p>On the <strong>General</strong> tab, in the <strong>ICP contact type</strong> field, select <strong>Taxpayer</strong> or <strong>Agent</strong>.</p>
+</li>
+<li><p>Select information in the <strong>Contact ID, Name, Contact initials</strong>, <strong>Contact prefix</strong>, and <strong>Telephone</strong> fields.</p>
+</li>
+<li><p>Set the <strong>Company part of fiscal group</strong> option to <strong>Yes</strong> if this setting is appropriate, and then, in the <strong>Fiscal group</strong> field, select the tax exempt number of the fiscal group.</p>
+<p><img src="media/Electronic-tax-declaration-parameters-pic4.png" alt="Electronic tax declaration parameters 2."></p>
+</li>
+<li><p>On the <strong>Number sequences</strong> tab, in the <strong>Number sequence code</strong> field, select a number sequence code for the <strong>Electronic ICP declaration ID</strong> and <strong>Error ID</strong> references.</p>
+</li>
+</ol>
+<h2 id="generate-the-dutch-eu-sales-list-and-send-to-digipoort">Generate the Dutch EU sales list and send to Digipoort</h2>
+<h3 id="transfer-transactions-and-preview-files">Transfer transactions and preview files</h3>
+<p>To transfer transactions and preview files, follow these steps:</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>EU sales list</strong>. Transfer the EU sales list transactions for the Netherlands to the EU sales list.</p>
+</li>
+<li><p>Mark any corrected lines as <strong>Corrected</strong>.</p>
+<p><img src="media/EU-sales-list-pic5.png" alt="EU sales list."></p>
+<p>For more information about how to work with the EU sales list journal, see <a href="emea-eu-sales-list.html">EU Sales list reporting</a>.</p>
+<p>For more information about reporting of legal entities with multiple VAT registrations, see <a href="emea-reporting-for-multiple-vat-registrations.html">Reporting for Multiple VAT registrations</a>.</p>
+</li>
+<li><p>Select <strong>Reporting</strong> to preview the EU sales list files. In the <strong>EU reporting</strong> dialog box, set the following parameters:</p>
+<ul>
+<li>In the <strong>Reporting period</strong> field, select <strong>Monthly or Quarterly.</strong></li>
+<li>In the <strong>From date</strong> field, select the first date of the reporting period.</li>
+<li>Set <strong>Generate file</strong> to <strong>Yes</strong> to generate an XML file.</li>
+<li>Set <strong>Generate report</strong> to <strong>Yes</strong> to generate a Microsoft Excel report.</li>
+</ul>
+</li>
+</ol>
+<h3 id="create-icp-declaration-and-send-to-digipoort">Create ICP declaration and send to Digipoort</h3>
+<p>To create ICP declaration and send to Digipoort, follow these steps:</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Dutch electronic ICP declaration</strong>.</p>
+</li>
+<li><p>Select <strong>New</strong>, and in the <strong>Create electronic ICP declaration</strong> dialog box, select <strong>Company tax registration number</strong>.</p>
+</li>
+<li><p>Enter or select a value in the <strong>From date</strong> field, and then select the <strong>Reporting period</strong>.</p>
+<p><img src="media/b9ba11daf6264e32fe22ebb8bc60fb8d.png" alt="Create ICP declaration."></p>
+</li>
+<li><p>Select <strong>OK</strong>. The electronic message is created.</p>
+<p><img src="media/edab2697a0ce7503ff6cddcb13a57587.png" alt="Electronic ICP declaration."></p>
+</li>
+<li><p>Select <strong>Deliveries</strong> to review the lines of the EU sales list that are transferred to the message from the <strong>EU sales list</strong> page.</p>
+</li>
+<li><p>Select <strong>Corrections</strong> to review the correction lines of the EU sales list that are transferred to the message from <strong>EU sales list</strong> page.</p>
+</li>
+<li><p>Select <strong>Reporting</strong> to generate an XML file of the EU sales list and set report generation parameters in the <strong>EU reporting</strong> dialog box.</p>
+</li>
+<li><p>Set <strong>Send electronically</strong> to <strong>Yes</strong> to send the generated XML file to <strong>Digipoort.</strong></p>
+<p><img src="media/1a41fae8750905dac7c2eda04b5facb0.png" alt="EU reporting."></p>
+</li>
+<li><p>Select <strong>OK</strong> and refresh the page. The message status is changed to <strong>Sent</strong>.</p>
+</li>
+<li><p>Select <strong>Import XML</strong> to import the response from Digipoort. The message status is changed to <strong>Acknowledgement</strong>.</p>
+</li>
+</ol>
+<h2 id="get-xsd-schema-and-namespaces-for-the-dutch-taxonomy">Get XSD schema and namespaces for the Dutch taxonomy</h2>
+<p>Dutch taxonomies change once a year. Check for the availability of a new taxonomy to get the new path to the XSD schema and new namespaces. Update application specific parameters accordingly.</p>
+<ol>
+<li>Open <a href="https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie">Documentatie Nederlandse Taxonomie | Standard Business Reporting (sbr-nl.nl)</a></li>
+<li>In the <strong>Organisatie</strong> field, select <strong>Belastingdienst.</strong></li>
+<li>In the <strong>Documenten</strong> field, select for example <strong>Omzetbelasting 2021</strong> to get taxonomy for 2021 year.</li>
+<li>Select <strong>Filter resultaten</strong>.</li>
+<li>Locate the document with description of changes, for example for changes between NT14 and NT15 taxonomies, and download the <a href="https://www.sbr-nl.nl/sites/default/files/bestanden/taxonomie/NT15_BD_20201209%20Versioning_NT14_20191211_to_NT15_20201209.zip">NT15_BD_20201209 Versioning_NT14_20191211_to_NT15_20201209</a> zip archive. Unzip the file.</li>
+</ol>
+<h3 id="eu-sales-list">EU sales list</h3>
+<p>To view the changes in EU sales list, complete the following steps.</p>
+<ol>
+<li>Open the file, Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-icp-opgaaf-2021.html to view the changes in EU sales list.</li>
+<li>In the file, under <em>Schema referenties</em>, you can see xsd schema names for taxonomies NT14 and NT15. Take the value for entering to <strong>XSDSchema</strong> lookup result. Find more details about application specific parameters for EU sales list format in the section <a href="#set-up-xml-namespaces-for-the-eu-sales-list-in-xml">Set up XML namespaces for the EU sales list in XML</a> above</li>
+<li>In the file, under the <strong>Namespaces</strong> table, you can see the line: bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data. Take this value for entering to <strong>SchemaInstanceData</strong> lookup result.</li>
+<li>In the file, under the <strong>Namespaces</strong> table, you can see the line: bd-t= <a href="http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples">http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples</a>. Take this value for entering to <strong>SchemaInstanceTuples</strong> lookup result.</li>
+</ol>
+<h3 id="vat-declaration">VAT declaration</h3>
+<p>To view the changes in VAT declaration, follow these steps:</p>
+<ol>
+<li>Open the file, Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-ob-aangifte-2021.html to see the changes in VAT declaration.</li>
+<li>In the file, under <strong>Schema referenties,</strong> you can see xsd schema names for taxonomies NT14 and NT15. Take the name of xsd schema for entering to <strong>XSDSchema</strong> lookup result. Find more details about application specific parameters for VAT declaration format in <a href="emea-nl-vat-declaration-netherlands.html">VAT declaration for Netherlands</a> topic in <strong>Set up XSD schema and namespaces</strong> section.</li>
+<li>In the file, under the <strong>Namespaces</strong> table, you can see the line: bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data. Take this value for entering to <strong>SchemaInstanceData</strong> lookup result.</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-eu-sales-list.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

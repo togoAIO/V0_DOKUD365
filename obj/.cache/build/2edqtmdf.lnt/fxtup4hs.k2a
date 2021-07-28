@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Set up and report value-added tax (VAT) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Set up and report value-added tax (VAT) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="set-up-and-report-value-added-tax-vat" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="29">Set up and report value-added tax (VAT)</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="33">Value-added tax (VAT) was introduced in the United Arab Emirates (UAE) on January 1, 2018. Businesses in the UAE are responsible for carefully documenting their business income, costs, and associated VAT charges.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="35">Registered businesses and traders will charge VAT to all their customers at the current rate, and they will incur VAT on goods and services that they buy from suppliers. The difference between these sums is reclaimed or paid to the government. Federal Decree Law No. (8) of 2017 on Value Added Tax outlines the tax scope, rate, responsibility for tax, and supply of goods and services in all cases, including supply in special cases, supply of more than one component, supply via agent, supply by government entities, and cases of deemed supply. For more detailed information about VAT regulations, see the <a href="https://government.ae/information-and-services/finance-and-investment/taxation/valueaddedtaxvat" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="35">Federal Tax Authorities of United Arab Emirates website</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="37">Dynamics 365 Finance is accredited and certified with the UAE Federal Tax Authorities (FTA) as a tax accounting software provider.</p>
+<h2 id="overview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="39">Overview</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="41">Standard sales tax functionality in Finance and Operations meets a majority of the legislative requirements of the UAE VAT law. To align the UAE VAT localization with UAE requirements for VAT reporting, the following country-specific enhancements have been added to the localization:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="43">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="43">The legal entity configuration has been extended so that it includes additional fields that are required for VAT reporting.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="44">VAT reverse charge functionality has been made available for the UAE (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="44">ARE</strong> country/region context) to correctly record taxable domestic operations in Gulf Cooperation Council (GCC) territory.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="45">Country-specific printout layouts for sales invoices and credit notes for the UAE have been added. These layouts include additional columns and VAT summary information.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="46">Sales invoices and credit notes for the UAE can be printed in two languages. These languages include the new <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="46">ar-AE</strong> Arabic language for the user interface (UI).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="47">The VAT return declaration report can be printed to an electronic file format that can be uploaded to the FTA e-Tax portal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="48">Standard audit file functionality has been shared with the UAE local functionality. Therefore, the FTA VAT audit file (FAF) that is required by FTA can be exported to the required comma-separated values (CSV) file format.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="50">For more detailed information about standard sales tax functionality, see the following topics:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="52">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="52"><a href="../general-ledger/tasks/set-up-sales-tax-authorities.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="52">Setting up sales tax authorities</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="53"><a href="../general-ledger/tasks/set-up-sales-tax-settlement-periods.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="53">Set up a sales tax settlement period</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="54"><a href="../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="54">Ledger posting groups</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="55"><a href="/dynamicsax-2012//sales-tax-exempt-codes-form" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="55">Sales tax exempt codes</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="56"><a href="../general-ledger/tasks/set-up-sales-tax-reporting-codes.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="56">Sales tax reporting codes</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="57"><a href="../general-ledger/tasks/set-up-sales-tax-codes.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="57">Setting up sales tax codes</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="58"><a href="../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="58">Setting up sales tax groups and item sales tax groups</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="59"><a href="/dynamicsax-2012/appuser-itpro/set-up-conditional-sales-taxes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="59">Set up conditional sales taxes</a> (used for cash accounting)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="60"><a href="emea-registration-ids.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="60">Set up a tax registration type</a></li>
+</ul>
+<h2 id="activate-the-uae-functionality" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="62">Activate the UAE functionality</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="64">Country-specific functionality for the UAE is activated by using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="64">Localized functionality region</strong> configuration for legal entities. If the company address is used to detect the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="64">Localized functionality region</strong> configuration, make sure that the country/region code of the legal entity's primary address is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="64">ARE</strong> on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="64">Legal entities</strong> page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="66"><a href="media/uae_vat_01.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="66"><img src="media/uae_vat_01.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="66" alt="Legal entities page."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="68">For more information about the patterns that are used in localized solutions, see the <a href="../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="68">Localization and regulatory features website</a>.</p>
+<h2 id="configure-vat-for-a-legal-entity" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="70">Configure VAT for a legal entity</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="72">The VAT declaration and the FAF require that additional information be set up in the configuration of a legal entity. In Finance and Operations, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="72">Organization administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="72">Organizations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="72">Legal entities</strong>, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="72">Value added tax</strong> FastTab, set the following fields:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="74">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="74"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="74">Taxable person name</strong> – Electronic VAT reports require the name of the taxable person. Names in English and Arabic will be filled in on reports. If the UI language of the legal entity is set to English, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="74">Known as</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="74">Global address book</strong> page can be used to store names in another language, such as Arabic.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="75"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="75">Tax agency name</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="75">Tax agent name</strong> – The tax agency name, tax agency number, tax agent name, and tax agent approval number are required when electronic VAT reports are prepared by a contracted tax agent or vendor.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="76"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="76">Declarant name</strong> – The electronic VAT report will include information about the person who is preparing a VAT declaration.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="77"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="77">VAT refund required (if any)</strong> – Set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="77">Yes</strong> if a VAT refund is due, and the company has requested to receive it.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="78"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="78">Profit margin scheme</strong> – Set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="78">Yes</strong> if the company operates in a special business scheme by using the Profit Margin scheme.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="79"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="79">VAT on behalf of customer</strong> – Set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="79">Yes</strong> if the company operates as an agent that pays import VAT on behalf of another taxable person.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="81"><a href="media/uae_vat_02.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="81"><img src="media/uae_vat_02.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="81" alt="Value added tax FastTab on the Legal entities page."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="83">For more information about VAT reporting requirements, see the instructions in the <a href="https://www.tax.gov.ae/-/media/Files/FTA/Tax-Support/tax-accounting-software-vendors/requirement-document-for-tax-accounting-software.pdf" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="83">Requirements Document for Tax Accounting Software</a> section of the UAE FTA website.</p>
+<h2 id="configure-the-tax-authority" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="85">Configure the tax authority</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="87">The federal tax authority (FTA) must be set up as a sales tax authority. After the vendor account is associated with the tax authority, the system creates automatic payments to vendor payables during the settlement process.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="89">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="89">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="89">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="89">Sales tax authorities</strong>, and set up the address information of your FTA office. Be sure to select the UAE-specific report layout that corresponds to the electronic VAT declaration.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="91"><a href="media/uae_vat_03.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="91"><img src="media/uae_vat_03.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="91" alt="Sales tax authorities page."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="93">When you've finished, you can associate sales tax settlement periods with the tax authority that you just configured and with sales tax codes.</p>
+<h2 id="configure-sales-tax-codes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="95">Configure sales tax codes</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="97">The electronic VAT declaration report is based on the configuration of a specific UAE report layout for sales tax. This layout should be selected as the default layout in the setup of the tax authority.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="99">Set up sales tax codes by following the appropriate procedure for the profile of your company's business in <a href="../general-ledger/indirect-taxes-overview.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="99">Sales Tax section</a> of the Help documentation.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="101">To run the UAE report layout that includes the electronic VAT declaration, you must first set up the appropriate number of reporting codes that are associated with the amount that is reporting in each VAT declaration.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="103">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="103">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="103">Indirect tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="103">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="103">Sales tax reporting codes</strong>, and create or update sales tax reporting codes according to the information in the following table.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="105">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="105">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="105">Sales tax code</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="105">VAT reporting code</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="105">Report setup</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="105">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="105">VAT rate</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="107">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="107">SRSAD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="107">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="107">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="107">Standard rated supplies in Abu Dhabi</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="107">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="108">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="108">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="108">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="108">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="108">Standard rated supplies in Abu Dhabi</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="108">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="109">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="109">SRSAD-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="109">15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="109">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="109">Standard rated supplies in Abu Dhabi – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="109">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="110">SRSD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="110">20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="110">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="110">Standard rated supplies in Dubai</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="110">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="111">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="111">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="111">21</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="111">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="111">Standard rated supplies in Dubai</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="111">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="112">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="112">SRSD-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="112">25</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="112">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="112">Standard rated supplies in Dubai – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="112">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="113">SRSS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="113">30</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="113">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="113">Standard rated supplies in Sharjah</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="113">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="114">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="114">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="114">31</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="114">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="114">Standard rated supplies in Sharjah</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="114">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="115">SRSS-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="115">35</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="115">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="115">Standard rated supplies in Sharjah – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="115">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="116">SRSA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="116">40</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="116">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="116">Standard rated supplies in Ajman</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="116">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="117">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="117">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="117">41</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="117">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="117">Standard rated supplies in Ajman</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="117">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="118">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="118">SRSA-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="118">45</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="118">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="118">Standard rated supplies in Ajman – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="118">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="119">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="119">SRSRQ</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="119">50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="119">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="119">Standard rated supplies in Umm Al Quwain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="119">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="120">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="120">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="120">51</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="120">Sale &gt; Tax payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="120">Standard rated supplies in Umm Al Quwain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="120">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="121">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="121">SRSRQ-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="121">55</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="121">Sale &gt; Tax payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="121">Standard rated supplies in Umm Al Quwain – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="121">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="122">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="122">SRSRK</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="122">60</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="122">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="122">Standard rated supplies in Ras Al Khaimah</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="122">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="123">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="123">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="123">61</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="123">Sale &gt; Tax payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="123">Standard rated supplies in Ras Al Khaimah</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="123">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="124">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="124">SRSRK-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="124">65</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="124">Sale &gt; Tax payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="124">Standard rated supplies in Ras Al Khaimah – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="124">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="125">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="125">SRSF</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="125">70</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="125">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="125">Standard rated supplies in Fujairah</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="125">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="126">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="126">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="126">71</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="126">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="126">Standard rated supplies in Fujairah</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="126">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="127">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="127">SRSF-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="127">75</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="127">Sale &gt; Tax payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="127">Standard rated supplies in Fujairah – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="127">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="128">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="128">TRPTS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="128">80</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="128">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="128">Tax Refunds provided to Tourists</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="128">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="129">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="129">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="129">81</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="129">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="129">Tax Refunds provided to Tourists</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="129">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="130">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="130">TRPTS-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="130">85</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="130">Sale &gt; Tax payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="130">Tax Refunds provided to Tourists – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="130">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="131">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="131">SSRCP-R</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="131">90</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="131">Purchases &gt; Taxable Purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="131">Supplies subject to the reverse charge provisions-Sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="131">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="132">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="132">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="132">91</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="132">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="132">Supplies subject to the reverse charge provisions-Sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="132">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="133">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="133">SSRCP-R-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="133">95</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="133">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="133">Supplies subject to the reverse charge provisions-Sales – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="133">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="134">ZRS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="134">100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="134">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="134">Zero rated supplies</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="134">0</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="135">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="135">SOGSRC</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="135">110</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="135">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="135">Supplies of goods and services to registered customers in other GCC implementing states</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="135">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="136">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="136">ES</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="136">120</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="136">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="136">Exempt supplies</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="136">0</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="137">GITUAE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="137">170</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="137">Purchases &gt; Taxable Purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="137">Goods imported into the UAE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="137">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="138">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="138">171</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="138">Purchases &gt; Sales tax payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="138">Goods imported into the UAE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="138">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="139">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="139">GITUAE-R</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="139">130</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="139">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="139">Goods imported into the UAE reverse charge</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="139">-5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="140">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="140">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="140">131</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="140">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="140">Goods imported into the UAE reverse charge</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="140">-5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="141">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="141">SSRCP-R</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="141">90</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="141">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="141">Supplies subject to the reverse charge provisions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="141">-5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="142">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="142">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="142">91</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="142">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="142">Supplies subject to the reverse charge provisions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="142">-5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="143">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="143">SSRCP</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="143">170</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="143">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="143">Supplies subject to the reverse charge provisions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="143">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="144">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="144">171</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="144">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="144">Supplies subject to the reverse charge provisions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="144">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="145">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="145">SRE-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="145">160</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="145">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="145">Standard rated expenses – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="145">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="146">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="146">SSRCP</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="146">170</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="146">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="146">Supplies subject to the reverse charge provisions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="146">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="147">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="147">171</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="147">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="147">Supplies subject to the reverse charge provisions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="147">-5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="148">SSRCP-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="148">175</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="148">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="148">Supplies subject to the reverse charge provisions – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="148">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="149">GTTKOB</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="149">180</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="149">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="149">Goods transferred to the Kingdom of Bahrain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="149">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="150">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="150">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="150">181</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="150">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="150">Goods transferred to the Kingdom of Bahrain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="150">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="151">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="151">GTTKOB-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="151">185</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="151">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="151">Goods transferred to the Kingdom of Bahrain – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="151">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="152">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="152">GTTSOK</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="152">190</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="152">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="152">Goods transferred to the State of Kuwait</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="152">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="153">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="153">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="153">191</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="153">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="153">Goods transferred to the State of Kuwait</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="153">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="154">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="154">GTTSOK-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="154">195</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="154">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="154">Goods transferred to the State of Kuwait – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="154">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="155">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="155">GTTSOO</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="155">200</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="155">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="155">Goods transferred to the Sultanate of Oman</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="155">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="156">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="156">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="156">201</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="156">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="156">Goods transferred to the Sultanate of Oman</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="156">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="157">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="157">GTTSOO-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="157">205</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="157">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="157">Goods transferred to the Sultanate of Oman – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="157">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="158">GTTSOQ</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="158">210</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="158">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="158">Goods transferred to the State of Qatar</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="158">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="159">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="159">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="159">211</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="159">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="159">Goods transferred to the State of Qatar</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="159">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="160">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="160">GTTSOQ-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="160">215</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="160">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="160">Goods transferred to the State of Qatar – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="160">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="161">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="161">GTTKOSA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="161">220</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="161">Sale &gt; Taxable sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="161">Goods transferred to the Kingdom of Saudi Arabia</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="161">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="162">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="162">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="162">221</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="162">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="162">Goods transferred to the Kingdom of Saudi Arabia</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="162">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="163">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="163">GTTKOSA-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="163">225</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="163">Sale &gt; Tax Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="163">Goods transferred to the Kingdom of Saudi Arabia – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="163">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="164">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="164">RVPKOB</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="164">230</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="164">Purchases &gt; Taxable Purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="164">Recoverable VAT paid in the Kingdom of Bahrain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="164">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="165">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="165">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="165">231</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="165">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="165">Recoverable VAT paid in the Kingdom of Bahrain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="165">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="166">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="166">RVPKOB-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="166">235</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="166">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="166">Recoverable VAT paid in the Kingdom of Bahrain – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="166">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="167">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="167">RVPSOK</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="167">240</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="167">Purchases &gt; Taxable Purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="167">Recoverable VAT paid in the State of Kuwait</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="167">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="168">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="168">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="168">241</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="168">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="168">Recoverable VAT paid in the State of Kuwait</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="168">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="169">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="169">RVPSOK-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="169">245</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="169">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="169">Recoverable VAT paid in the State of Kuwait – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="169">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="170">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="170">RVPSOO</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="170">250</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="170">Purchases &gt; Taxable Purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="170">Recoverable VAT paid in the Sultanate of Oman</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="170">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="171">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="171">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="171">251</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="171">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="171">Recoverable VAT paid in the Sultanate of Oman</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="171">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="172">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="172">RVPSOO-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="172">255</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="172">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="172">Recoverable VAT paid in the Sultanate of Oman – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="172">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="173">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="173">RVPSOQ</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="173">260</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="173">Purchases &gt; Taxable Purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="173">Recoverable VAT paid in the State of Qatar</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="173">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="174">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="174">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="174">261</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="174">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="174">Recoverable VAT paid in the State of Qatar</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="174">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="175">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="175">RVPSOQ-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="175">265</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="175">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="175">Recoverable VAT paid in the State of Qatar – Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="175">5</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="176">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="176">RVPKOSA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="176">270</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="176">Purchases &gt; Taxable Purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="176">Recoverable VAT paid in the Kingdom of Saudi Arabia</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="176">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="177">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="177">-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="177">271</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="177">Purchases &gt; Taxable Receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="177">Recoverable VAT paid in the Kingdom of Saudi Arabia</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="177">-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="178">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="178">RVPKOSA-A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="178">275</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="178">Purchases &gt; Taxable Purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="178">Recoverable VAT paid in the Kingdom of Saudi Arabia –  Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="178">5</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="184">Use the information in the &quot;Report setup&quot; column of the above table to configure sales tax codes and associate them with sales tax reporting codes on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="184">Report setup</strong> FastTab of each report that is relevant to your company's business.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="186"><a href="media/uae_vat_05.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="186"><img src="media/uae_vat_05.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="186" alt="Report setup FastTab."></a></p>
+<h2 id="set-up-a-vat-reverse-charge" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="188">Set up a VAT reverse charge</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="190">When a taxable customer must pay tax on a supply that is received from a non-resident supplier, VAT should be calculated and paid to tax the authorities, based on a VAT reverse charge. The customer must calculate and report the output tax on the supply and the relevant input tax.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="192">To use the reverse charge functionality, you must set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="192">Enable reverse charge</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="192">Yes</strong> on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="192">Reverse charge</strong> tab of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="192">General ledger parameters</strong> page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="194"><a href="media/uae_vat_06.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="194"><img src="media/uae_vat_06.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="194" alt="Reverse charge tab on the General ledger parameters page."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="196">Before you set the sales tax group for the reverse charge, you should set up two sales tax codes: one for input sales tax and one for output sales tax. The output sales tax code should be set up so that it has a negative value. For more information, see <a href="/dynamicsax-2012/appuser-itpro/setting-up-sales-tax-codes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="196">Setting up sales tax codes</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="198">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="198">Reverse charge</strong> sales tax group, you must select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="198">Reverse charge</strong> check box on the line that has the negative sales tax rate.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="200"><a href="media/uae_vat_07.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="200"><img src="media/uae_vat_07.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="200" alt="Sales tax groups page."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="202">When the invoice line is posted with the sales tax group defined as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="202">Reverse charge</strong>, the system will create two sales tax transactions: one that has a sales tax receivable tax direction and one that has a sales tax payable tax direction.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="204"><a href="media/uae_vat_08.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="204"><img src="media/uae_vat_08.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="204" alt="Posted sales tax page."></a></p>
+<h2 id="download-and-set-up-electronic-reporting-configurations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="206">Download and set up Electronic reporting configurations</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="208">The implementation of VAT reporting for the UAE is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="208">Electronic reporting</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="210">For production and user acceptance testing (UAT) environments, follow the instructions in <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="210">Download Electronic reporting configurations from Lifecycle Services</a> to download ER configurations.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="212">To use the VAT declaration and FAF functionality in UAE localizations, you must install the following configurations. Always use the highest available version number of a configuration file.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="214">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="214">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="214">Configuration file name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="214">Configuration type</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="216">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="216">VAT declaration model.version.4.xml</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="216">Data model</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="217">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="217">VAT declaration model mapping.version.4.4.xml</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="217">Model mapping</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="218">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="218">VAT declaration Excel (AE).version.4.1.xml</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="218">UAE-specific Microsoft Excel output format</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="219">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="219">Standard Audit File model mapping.version.6.7.xml</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="219">Data model</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="220">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="220">Standard Audit File (SAF-T).version.6.xml</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="220">Model Mapping</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="221">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="221">FTA VAT Audit file (AE).version.6.5.xml</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="221">UAE FAF CSV output format</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="223">For development and test environments, if direct access to a deployment virtual machine (VM) is available, you can download configurations from <a href="https://lcs.dynamics.com" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="223">Microsoft Dynamics Lifecycle Services (LCS)</a>. After you sign in to LCS, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="223">Shared asset library</strong> tile.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="225"><a href="media/uae_vat_09.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="225"><img src="media/uae_vat_09.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="225" alt="Shared asset library tile in LCS."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="227">In the Shared asset library, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="227">GER Configuration</strong>, select the required configurations (see the previous table), and download them to a local disk.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="229">In Finance and Operations, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="229">Electronic reporting</strong> workspace, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="229">Reporting configurations</strong> tile. Then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="229">Configurations</strong> page, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="229">Exchange</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="229">Load from XML file</strong>, and upload all the files in the order in which they are listed in the previous table.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="231"><a href="media/uae_vat_10.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="231"><img src="media/uae_vat_10.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="231" alt="Configurations page."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="233">After all the configurations are uploaded, the configuration tree should be present in Finance and Operations.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="235"><a href="media/uae_vat_11.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="235"><img src="media/uae_vat_11.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="235" alt="Configuration tree."></a></p>
+<h2 id="vat-declaration-electronic-reporting-file" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="237">VAT declaration electronic reporting file</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="239">To generate the VAT declaration report in Excel, use the standard procedure for reporting sales tax for a settlement reporting period, and print the VAT declaration report.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="241">To generate the VAT declaration after a settlement is completed, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="241">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="241">Sales tax inquiries</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="241">Sales tax payments</strong>, and select the required sales tax payment. Then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="241">Print report</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="243"><a href="media/uae_vat_12.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="243"><img src="media/uae_vat_12.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="243" alt="Sales tax parameters line item."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="245">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="245">Export VAT file</strong> dialog box, specify the required information.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="247"><a href="media/uae_vat_13.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="247"><img src="media/uae_vat_13.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="247" alt="Export VAT file dialog box."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="249">You're prompted to save the downloaded Excel file for the VAT declaration to your local computer. Save the file, and verify the content of the reported data.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="251">According to the requirements of the FTA accounting systems, an electronic reporting file can't be edited after it's generated from the system. Any corrections that are required must be made in the system. After you've finished making corrections, generate a new reporting file.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="253">After the reporting file is validated, upload it to the FTA e-Tax portal by using procedures that are specific to your company registration with FTA.</p>
+<h2 id="fta-vat-audit-file" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="255">FTA VAT audit file</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="257">After you generate the file (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="257">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="257">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="257">FAF declaration</strong>), if an FAF is requested, specify the required information in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="257">Electronic report parameters</strong> dialog box.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="259"><a href="media/uae_vat_14.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="259"><img src="media/uae_vat_14.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="259" alt="Electronic report parameters dialog box."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="261">FAF declaration can be submitted trough multiple files submission. In case a large volume of transactions included in an auditing period, consider using batch processing to run the job that generates FAF declaration in the background. Also consider dividing the audited period into smaller intervals of months, weeks or days.</p>
+<h2 id="print-a-sales-invoice-in-the-uae-layout" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="263">Print a sales invoice in the UAE layout</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="265">In the UAE localization package, printouts for sales invoices and credit notes are included in the layout that is specified in the FTA requirements for accounting systems. The following illustration shows an example of the printout for a free text invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="267"><a href="media/uae_vat_15.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="267"><img src="media/uae_vat_15.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="267" alt="Example of a free text invoice printout."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="269">The new printouts can be printed in two languages. The system will print one invoice in the language of UI. At the time, a second printout will be generated in the language of the customer, if the two languages differ.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="271">To achieve consistent printout results, other data in the system should be set up so that it has translations. For example, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md" sourcestartlinenumber="271">Released product</strong> page, set up the names and descriptions of items in different languages. You should also consider setting up sales tax descriptions and exempt codes so that they have translations.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/uae-vat-setup-reporting.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

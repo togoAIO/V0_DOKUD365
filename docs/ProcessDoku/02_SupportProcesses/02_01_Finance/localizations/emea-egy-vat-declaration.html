@@ -1,0 +1,715 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>VAT declaration for Egypt | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="VAT declaration for Egypt | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="vat-declaration-for-egypt-eg-00002">VAT declaration for Egypt (EG-00002)</h1>
+
+
+<p>This topic explains how to set up and generate the VAT return form and sales and purchase books for legal entities in Egypt.</p>
+<p>The VAT return form for Egypt is the official document that summarizes the total output VAT tax amount due, the total input VAT tax amount recoverable, and the related VAT tax amount liability. The form is used for all types of taxpayers and should be completed manually through the tax authority portal. The VAT return form is commonly referred to as VAT return filing.</p>
+<p>The VAT return form in Dynamics 365 Finance includes the following reports:</p>
+<ul>
+<li>VAT return form number 10, which provides a breakdown of amounts, adjustments, and VAT amount per line item in the VAT return form as described in the legislation.</li>
+<li>Sales transactions book</li>
+<li>Purchase transactions book</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The primary address of the legal entity must be in Egypt.
+In the <strong>Feature management</strong> workspace, enable the following feature:</p>
+<ul>
+<li>(Egypt) Category hierarchy for Sales and purchase tax report.</li>
+</ul>
+<p>For more information about how to enable features, see <a href="../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md">Feature management overview</a>.</p>
+<p>In the <strong>Electronic reporting</strong> workspace, import the following Electronic reporting format from the repository:</p>
+<ul>
+<li>VAT declaration Excel (EG)</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The format above is based on the <strong>Tax declaration model</strong> and uses the <strong>Tax declaration model mapping</strong>. Additional configurations will be automatically imported.</p>
+</div>
+<p>For more information about how to import Electronic reporting configurations, see <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+<h2 id="download-electronic-reporting-configurations">Download Electronic reporting configurations</h2>
+<p>The implementation of the VAT return form for Egypt is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md">Electronic reporting</a>.</p>
+<p>For production and user acceptance testing (UAT) environments, see <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+<p>To generate the VAT return form and related reports in an Egypt legal entity, upload the following configurations:</p>
+<ul>
+<li>Tax declaration model.version.70.xml or later version</li>
+<li>Tax declaration model mapping.version.70.120.xml or a later version</li>
+<li>VAT Declaration Excel (EG).version.70.32  or a later version</li>
+</ul>
+<p>After you download the ER configurations from Lifecycle Services (LCS) or the global repository, complete the following steps.</p>
+<ol>
+<li>Go to the <strong>Electronic reporting</strong> workspace and select the <strong>Reporting configurations</strong> tile.</li>
+<li>On the <strong>Configurations</strong> page, on the Action Pane, select <strong>Exchange</strong> &gt; <strong>Load from XML file</strong>.</li>
+<li>Upload the files in the order in which they are listed above. After all the configurations are uploaded, the configuration tree should be present in Finance.</li>
+</ol>
+<h2 id="set-up-application-specific-parameters">Set up application-specific parameters</h2>
+<p>The application-specific parameters let you establish the criteria of how tax transactions will be classified and calculated in each line when the report is generated. The determination is based on the configuration of the item sales tax group, sales tax group, sales tax code, and other criteria established in the lookup definition.</p>
+<p>The sales and purchase book reports for Egypt include a set of columns that correspond to specific transaction classifications as types of operations, products, and documents that are specific for Egypt. Instead of including these new classifications as new entry data when the transactions are posted, the classifications will be determined based on different lookups introduced in <strong>Configurations</strong> &gt; <strong>Set up application-specific parameters</strong> &gt; <strong>Setup</strong> to meet the requirements of VAT reports for Egypt.</p>
+<p><img src="media/egypt-vat-declaration-setup1.png" alt="Application specific parameters page."></p>
+<p>These following lookup configurations are used to classify the transactions in purchase and sales VAT books reports:</p>
+<ul>
+<li><strong>PurchaseItemTypeLookup</strong> &gt; Column O: Item type</li>
+<li><strong>VATRateTypeLookup</strong> &gt; Column B: Tax Type</li>
+<li><strong>VATRateTypeLookup</strong> &gt; Column C: Table item type</li>
+<li><strong>PurchaseOperationTypeLookup</strong> &gt; Column A: Document type</li>
+<li><strong>CustomerTypeLookup</strong> &gt; Column A: Document type</li>
+<li><strong>SalesOperationTypeLookup</strong> &gt; Column N: Operation type</li>
+<li><strong>SalesItemTypeLookup</strong> &gt; Column O: Item type</li>
+</ul>
+<p>Complete the following steps to set up the different lookups used to generate VAT declaration and related books reports.</p>
+<ol>
+<li>In the <strong>Electronic reporting</strong> workspace, select <strong>Configurations</strong> &gt; <strong>Setup</strong> to set up the rules to identify the tax transaction in the related box of the VAT return form.</li>
+<li>Select the current version, and on the <strong>Lookups</strong> FastTab, select the lookup name. For example, <strong>SalesItemTypeLookup</strong>. This lookup identifies the list of classifications in the Sales VAT book that are required by the tax authority.</li>
+<li>On the <strong>Conditions</strong> FastTab, select <strong>Add</strong> and in the new line in the <strong>Lookup result</strong> column, select the related line that represents the classification in <strong>Column O</strong>.</li>
+<li>In the <strong>Sales tax group</strong> column, select the sales tax group that is used to identify the classification. For example, <strong>Domestic sales invoice</strong>. You can also use item sales tax group, tax code, or the combination of tree attributes if the configuration is defined in another way.</li>
+<li>In the <strong>Name</strong> column, select the tax transaction classification.</li>
+<li>Repeat steps 3-5 for all available lookups.</li>
+<li>Select <strong>Add</strong> to include the final record line, and in the <strong>Lookup result</strong> column, select <strong>Not applicable</strong>.</li>
+<li>In the remainder columns, select <strong>Not blank</strong>.</li>
+<li>In the <strong>State</strong> field, select <strong>Completed</strong>.</li>
+<li>Select <strong>Save</strong>, and then close the <strong>Application specific parameters</strong> page.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When you add the last record, <strong>Not applicable</strong>, you define the following rule: When the sales tax group, item sales tax group, tax code, and name that's passed as an argument doesn't satisfy any of the previous rules, the transactions aren't included in the sales VAT book. Although this rule isn't used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.</p>
+</div>
+<p>The following tables represent an example of suggested configuration for the described lookup configurations.</p>
+<p><strong>SalesItemTypeLookup</strong></p>
+<table>
+<thead>
+<tr>
+<th>Lookup result</th>
+<th>Line</th>
+<th>Sales tax group</th>
+<th>Item sales tax group</th>
+<th>Tax code (Code)</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Domestic</td>
+<td>1</td>
+<td>VAT_LOCAL</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>Domestic</td>
+<td>2</td>
+<td>VAT_LOCAL</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td>SalesCreditNote</td>
+</tr>
+<tr>
+<td>Domestic</td>
+<td>3</td>
+<td>VAT_FINALC</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>Domestic</td>
+<td>4</td>
+<td>VAT_FINALC</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td>SalesCreditNote</td>
+</tr>
+<tr>
+<td>Domestic</td>
+<td>5</td>
+<td>VAT_PUBLIO</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>Domestic</td>
+<td>6</td>
+<td>VAT_PUBLIO</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td>SalesCreditNote</td>
+</tr>
+<tr>
+<td>Export</td>
+<td>7</td>
+<td>VAT_EXPORT</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>Export</td>
+<td>8</td>
+<td>VAT_EXPORT</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td>SalesCreditNote</td>
+</tr>
+<tr>
+<td>Machine and equipment</td>
+<td>9</td>
+<td><em>Not blank</em></td>
+<td>VAT_M&amp;E</td>
+<td><em>Not blank</em></td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>Machine and equipment</td>
+<td>10</td>
+<td><em>Not blank</em></td>
+<td>VAT_M&amp;E</td>
+<td><em>Not blank</em></td>
+<td>SalesCreditNote</td>
+</tr>
+<tr>
+<td>Parts machines</td>
+<td>11</td>
+<td><em>Not blank</em></td>
+<td>VAT_PARTS</td>
+<td><em>Not blank</em></td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>Parts machines</td>
+<td>12</td>
+<td><em>Not blank</em></td>
+<td>VAT_PARTS</td>
+<td><em>Not blank</em></td>
+<td>SalesCreditNote</td>
+</tr>
+<tr>
+<td>Exemptions</td>
+<td>13</td>
+<td>VAT_EXE</td>
+<td><em>Not   blank</em></td>
+<td><em>Not blank</em></td>
+<td>SaleExempt</td>
+</tr>
+<tr>
+<td>Exemptions</td>
+<td>14</td>
+<td>VAT_EXE</td>
+<td><em>Not   blank</em></td>
+<td><em>Not blank</em></td>
+<td>SalesExemptCreditNote</td>
+</tr>
+<tr>
+<td>Not applicable</td>
+<td>15</td>
+<td><em>Blank</em></td>
+<td><em>Blank</em></td>
+<td>VAT_ADJ</td>
+<td><em>Not blank</em></td>
+</tr>
+<tr>
+<td>Not applicable</td>
+<td>16</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>SalesOperationTypeLookup</strong></p>
+<table>
+<thead>
+<tr>
+<th>Lookup result</th>
+<th>Line</th>
+<th>Item sales tax group</th>
+<th>Tax code</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Goods</td>
+<td>1</td>
+<td>VAT_GOODS</td>
+<td><em>Not blank</em></td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>Goods</td>
+<td>2</td>
+<td>VAT_GOODS</td>
+<td><em>Not blank</em></td>
+<td>SalesCreditNote</td>
+</tr>
+<tr>
+<td>Goods</td>
+<td>3</td>
+<td>VAT_GOODS</td>
+<td><em>Not blank</em></td>
+<td>SaleExempt</td>
+</tr>
+<tr>
+<td>Goods</td>
+<td>4</td>
+<td>VAT_GOODS</td>
+<td><em>Not blank</em></td>
+<td>SalesExemptCreditNote</td>
+</tr>
+<tr>
+<td>Services</td>
+<td>5</td>
+<td>VAT_SERV</td>
+<td><em>Not blank</em></td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>Services</td>
+<td>6</td>
+<td>VAT_SERV</td>
+<td><em>Not blank</em></td>
+<td>SalesCreditNote</td>
+</tr>
+<tr>
+<td>Services</td>
+<td>7</td>
+<td>VAT_SERV</td>
+<td><em>Not blank</em></td>
+<td>SaleExempt</td>
+</tr>
+<tr>
+<td>Services</td>
+<td>8</td>
+<td>VAT_SERV</td>
+<td><em>Not blank</em></td>
+<td>SalesExemptCreditNote</td>
+</tr>
+<tr>
+<td>Adjustments</td>
+<td>9</td>
+<td><em>Blank</em></td>
+<td>VAT_ADJ</td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>Adjustments</td>
+<td>10</td>
+<td><em>Blank</em></td>
+<td>VAT_ADJ</td>
+<td>SalesCreditNote</td>
+</tr>
+<tr>
+<td>Not applicable</td>
+<td>11</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>PurchaseItemTypeLookup</strong></p>
+<table>
+<thead>
+<tr>
+<th>Lookup result</th>
+<th>Line</th>
+<th>Item sales tax group</th>
+<th>Tax code</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Goods</td>
+<td>1</td>
+<td>VAT_GOODS</td>
+<td><em>Not blank</em></td>
+<td>Purchase</td>
+</tr>
+<tr>
+<td>Goods</td>
+<td>2</td>
+<td>VAT_GOODS</td>
+<td><em>Not blank</em></td>
+<td>PurchaseCreditNote</td>
+</tr>
+<tr>
+<td>Services</td>
+<td>3</td>
+<td>VAT_SERV</td>
+<td><em>Not blank</em></td>
+<td>Purchase</td>
+</tr>
+<tr>
+<td>Services</td>
+<td>4</td>
+<td>VAT_SERV</td>
+<td><em>Not blank</em></td>
+<td>PurchaseCreditNote</td>
+</tr>
+<tr>
+<td>Machine and equipment</td>
+<td>5</td>
+<td>VAT_M&amp;E</td>
+<td><em>Not blank</em></td>
+<td>Purchase</td>
+</tr>
+<tr>
+<td>Machine and equipment</td>
+<td>6</td>
+<td>VAT_M&amp;E</td>
+<td><em>Not blank</em></td>
+<td>PurchaseCreditNote</td>
+</tr>
+<tr>
+<td>Parts machines</td>
+<td>7</td>
+<td>VAT_PARTS</td>
+<td><em>Not blank</em></td>
+<td>Purchase</td>
+</tr>
+<tr>
+<td>Parts machines</td>
+<td>8</td>
+<td>VAT_PARTS</td>
+<td><em>Not blank</em></td>
+<td>PurchaseCreditNote</td>
+</tr>
+<tr>
+<td>Exemptions</td>
+<td>9</td>
+<td>VAT_EXE</td>
+<td><em>Not bank</em></td>
+<td>PurchaseExempt</td>
+</tr>
+<tr>
+<td>Exemptions</td>
+<td>10</td>
+<td>VAT_EXE</td>
+<td><em>Not blank</em></td>
+<td>PurchaseExemptCreditNote</td>
+</tr>
+<tr>
+<td>Not applicable</td>
+<td>11</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>PurchaseOperationTypeLookup</strong></p>
+<table>
+<thead>
+<tr>
+<th>Lookup result</th>
+<th>Line</th>
+<th>Sales tax group</th>
+<th>Tax code</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Domestic</td>
+<td>1</td>
+<td>VAT_LOCAL</td>
+<td><em>Not blank</em></td>
+<td>Purchase</td>
+</tr>
+<tr>
+<td>Domestic</td>
+<td>2</td>
+<td>VAT_LOCAL</td>
+<td><em>Not blank</em></td>
+<td>PurchaseCreditNote</td>
+</tr>
+<tr>
+<td>Domestic</td>
+<td>3</td>
+<td>VAT_LOCAL</td>
+<td><em>Not blank</em></td>
+<td>PurchaseExempt</td>
+</tr>
+<tr>
+<td>Domestic</td>
+<td>4</td>
+<td>VAT_LOCAL</td>
+<td><em>Not blank</em></td>
+<td>PurchaseExemptCreditNote</td>
+</tr>
+<tr>
+<td>Imported</td>
+<td>5</td>
+<td>VAT_IMPORT</td>
+<td><em>Not blank</em></td>
+<td>Purchase</td>
+</tr>
+<tr>
+<td>Imported</td>
+<td>6</td>
+<td>VAT_IMPORT</td>
+<td><em>Not blank</em></td>
+<td>PurchaseCreditNote</td>
+</tr>
+<tr>
+<td>Imported</td>
+<td>7</td>
+<td>VAT_IMPORT</td>
+<td><em>Not blank</em></td>
+<td>PurchaseExempt</td>
+</tr>
+<tr>
+<td>Imported</td>
+<td>8</td>
+<td>VAT_IMPORT</td>
+<td><em>Not blank</em></td>
+<td>PurchaseExemptCreditNote</td>
+</tr>
+<tr>
+<td>Adjustments</td>
+<td>9</td>
+<td><em>Blank</em></td>
+<td>VAT_ADJ</td>
+<td>PurchaseCreditNote</td>
+</tr>
+<tr>
+<td>Adjustments</td>
+<td>10</td>
+<td><em>Blank</em></td>
+<td>VAT_ADJ</td>
+<td>Purchase</td>
+</tr>
+<tr>
+<td>Not applicable</td>
+<td>11</td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+<td><em>Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>CustomerTypeLookup</strong></p>
+<table>
+<thead>
+<tr>
+<th>Lookup result</th>
+<th>Line</th>
+<th>Sales tax group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organization</td>
+<td>1</td>
+<td>VAT_LOCAL</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>2</td>
+<td>VAT_EXPORT</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>3</td>
+<td>VAT_EXE</td>
+</tr>
+<tr>
+<td>Final consumer</td>
+<td>4</td>
+<td>VAT_FINALC</td>
+</tr>
+<tr>
+<td>Public Organization</td>
+<td>5</td>
+<td>VAT_PUBLIO</td>
+</tr>
+<tr>
+<td>Not Applicable</td>
+<td>6</td>
+<td><em>Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>VATRateTypeLookup</strong></p>
+<table>
+<thead>
+<tr>
+<th>Lookup result</th>
+<th>Line</th>
+<th>Tax code (Code)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GeneralGoods</td>
+<td>1</td>
+<td>VAT_ST</td>
+</tr>
+<tr>
+<td>GeneralGoods</td>
+<td>2</td>
+<td>VAT_RD</td>
+</tr>
+<tr>
+<td>FirstTable</td>
+<td>3</td>
+<td><em>Not blank</em></td>
+</tr>
+<tr>
+<td>SecondTable</td>
+<td>4</td>
+<td><em>Not blank</em></td>
+</tr>
+<tr>
+<td>Not applicable</td>
+<td>5</td>
+<td><em>Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="set-up-general-ledger-parameters">Set up General ledger parameters</h2>
+<p>To generate the VAT return form report in Microsoft Excel format, define an ER format on the <strong>General ledger parameters</strong> page.</p>
+<ol>
+<li>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>General ledger parameters</strong>.</li>
+<li>On the <strong>Sales tax</strong> tab, in the <strong>Tax options</strong> section, in the <strong>VAT statement format mapping</strong> field, select <strong>VAT Declaration Excel (EG)</strong>. If you leave the field blank, the standard sales tax report will be generated in SSRS format.</li>
+<li>Select the <strong>Category hierarchy</strong>. This category enables the commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports. This configuration is optional.</li>
+</ol>
+<p><img src="media/egypt-vat-declaration-setup2.png" alt="Declaration form."></p>
+<h2 id="generate-a-vat-return-report">Generate a VAT return report</h2>
+<p>The process to prepare and submit a VAT return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see <a href="../general-ledger/indirect-taxes-overview.html">Sales tax overview</a>.</p>
+<p>Complete the following steps to generate the tax declaration report.</p>
+<ol>
+<li>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Report sales tax for settlement period</strong> or <strong>Settle and post sales tax</strong>.</li>
+<li>Select the <strong>Settlement period</strong>.</li>
+<li>Select the from date and then select the sales tax payment version.</li>
+<li>Select <strong>OK</strong>.</li>
+<li>Enter the amount of credit from the previous period, if applicable, or leave the amount as zero.</li>
+<li>In the <strong>Reports details</strong> field, select one of the following available options.
+<ul>
+<li><strong>Purchase VAT book</strong>: Generate the purchase tax transactions details report.</li>
+<li><strong>Sales VAT book</strong>: Generate the sales tax transactions details report.</li>
+<li><strong>VAT declaration</strong>: Generate only the VAT declaration return form.</li>
+</ul>
+</li>
+<li>Enter the name of person who is registered to assign the form.</li>
+<li>Select the language. All reports are translated in <strong>en-us</strong> and <strong>ar-eg</strong>.</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

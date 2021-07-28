@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Set up the Azure Key Vault client | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Set up the Azure Key Vault client | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="set-up-the-azure-key-vault-client" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="28">Set up the Azure Key Vault client</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="31">The functionality for storing advanced certificates lets you define the type of certificate storage that is used in Finance and Operations apps.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="33">The functionality provides two options for storing certificates: local storage and Microsoft Azure Key Vault storage. You can define the option that is used by setting the new <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="33">Use advanced certificate store</strong> option on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="33">General</strong> tab of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="33">System parameters</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="33">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="33">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="33">System parameters</strong>).</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="35">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="35"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="35">Local storage</strong> – This storage option can be used with on-premises deployments and any kind of on-premises development environment. To use it, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="35">Use advanced certificate store</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="35">No</strong>. This storage option is recommended for development environments that are used for development and validation purposes, where it's necessary to validate the certificate and work with it.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="36"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="36">Azure Key Vault storage</strong> – This storage option is required for cloud deployments, but it can also be used with on-premises deployed environments and any kind of on-premises development environment. To use it, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="36">Use advanced certificate store</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="36">Yes</strong>. This storage option is the only option for a production environment in the Azure cloud.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="38"><img src="media/1_System_parameters.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="38" alt="System parameters page, General tab."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="40">Some setup is required before you can work with certificates that are stored in Key Vault. For information about the required settings, see the following Microsoft Knowledge Base (KB) article: <a href="https://support.microsoft.com/en-us/help/4040294/maintaining-azure-key-vault-storage" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="40">4040294 - Maintaining Azure Key Vault storage</a>. After you set up the Key Vault storage, you should link to the certificates in Finance and Operations apps.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="42">After the certificate is installed in Key Vault, it must be set up in the application.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="44">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="44">System administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="44">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="44">Key Vault parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="45">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="45">New</strong> to create a new instance.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="46">Enter a name and description, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="46">General</strong> FastTab, set the fields that are required for the integration with Key Vault storage:</li>
+</ol>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="48">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="48"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="48"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="48">Key Vault URL</strong> – Enter the default Key Vault URL if it isn't already defined by the secret reference.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="49"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="49"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="49">Key Vault client</strong> – Enter the interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage for authentication.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="50"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="50">Key Vault secret key</strong> – Enter the secret key that is associated with the Azure AD application that is used for authentication with the Key Vault storage.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="52">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="53">If several Key Vault storages are used, you should set up a separate instance for each instance on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="53">Key Vault parameters</strong> page.</p>
+</div>
+</li>
+</ul>
+<ol start="4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="55">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="55">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="55">Certificates</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="55">Add</strong> to add your certificates. For each certificate, set the following fields:</li>
+</ol>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="57">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="57"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="57">Name</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="58"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="58">Description</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="59"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="59">Key Vault certificate secret</strong> – Enter a secret reference to the certificate.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="61">The format of a Key Vault certificate secret must resemble the following example:</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="63">vault://&lt;KeyVaultName*&gt;/&lt;SecretName&gt;/&lt;SecretVersion*&gt;</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="65">Attributes that are marked with an asterisk (*) are optional. However, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="65">&lt;SecretName&gt;</strong> attribute is required. In most cases, you can define a Key Vault secret key in the following format:</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="67">vault:///&lt;SecretName&gt;</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="69">If the secret version isn't defined in the Key Vault secret key, the system retrieves the active certificate that has the latest expiration date.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="71"><img src="media/2_Key_Vault_parameters.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="71" alt="Key vault parameters page."></p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="73">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="74">The Key Vault storage functionality has been extended so that it includes caching of certificates. The following configuration is recommended:</p>
+</div>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="76">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="76">Specify a secret version in the Key Vault certificate secret.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="77">After you upload a new version of the existing certificate to the Key Vault storage, update the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="77">&lt;SecretVersion&gt;</strong> attribute in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="77">Key Vault certificate secret</strong> field.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="79">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md" sourcestartlinenumber="79">Validate</strong> function to verify that you've correctly defined the reference to the certificate, and that the certificate is valid.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/setting-up-azure-key-vault-client.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

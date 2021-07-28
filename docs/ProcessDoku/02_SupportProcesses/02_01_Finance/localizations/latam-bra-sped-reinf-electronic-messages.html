@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Set up electronic messages for SPED-Reinf events | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Set up electronic messages for SPED-Reinf events | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="set-up-electronic-messages-for-sped-reinf-events">Set up electronic messages for SPED-Reinf events</h1>
+
+<p>Electronic message functionality is new in Microsoft Dynamics 365 Finance. It lets you maintain and track various processes for electronic messages when there is an exchange of information between Finance and tax authority web services.</p>
+<p>Before you issue SPED-Reinf events to the government website, use the predefined configuration that Microsoft has prepared to meet SPED-Reinf requirements. This configuration is delivered as a data entity. After it's imported into Finance, users will be able to generate, validate, and deliver all events that are described in the SPED-Reinf scope.</p>
+<h2 id="import-the-configuration-from-the-data-entity">Import the configuration from the data entity</h2>
+<p>To set up electronic message functionality for communication of SPED-Reinf events, use the predefined configuration that is available in Microsoft Dynamics Lifecycle Services (LCS).</p>
+<ol>
+<li><p>Sign in to <a href="https://lcs.dynamics.com">LCS</a>.</p>
+</li>
+<li><p>Select the <strong>Shared asset library</strong> tile.</p>
+</li>
+<li><p>Select <strong>Data package</strong> as the asset type, and then select the package for the SPED-Reinf event communication data entities. (The file name is <strong>SPEDReinf_EMSettings.zip</strong>.)</p>
+</li>
+<li><p>Save the file in the location where data entities should be stored.</p>
+</li>
+<li><p>Sign in to Finance, and go to <strong>Workspaces</strong> &gt; <strong>Data management</strong>.</p>
+</li>
+<li><p>Select the <strong>Import</strong> tile.</p>
+</li>
+<li><p>Enter a description and a name to identify the job, such as <strong>SpedReinf</strong>.</p>
+</li>
+<li><p>In the <strong>Source data format</strong> field, select <strong>Package</strong>.</p>
+</li>
+<li><p>Select <strong>Upload</strong>, and then select the file that you saved from LCS (<strong>SPEDReinf_EMSettings.zip</strong>).</p>
+</li>
+<li><p>Select <strong>Save</strong>, and wait until all data entities are shown on the page.</p>
+</li>
+<li><p>Select <strong>Import</strong>.</p>
+<p>You will receive a notification about the import process. You can also manually refresh the page to view the progress of the import process. When the process is completed, you can view the <strong>Execution summary</strong> page.</p>
+<p><img src="media/bra-execution-summary-page.png" alt="Execution summary page."></p>
+</li>
+</ol>
+<h2 id="structure-of-electronic-messages">Structure of electronic messages</h2>
+<p>Every event that is created, delivered, and received is represented by a message and a message item.</p>
+<p><img src="media/bra-electronic-messages-structure.png" alt="Electronic messages structure."></p>
+<p>The message item is represented by the XML event message. It includes the following information that is stored in the message or updated in Finance:</p>
+<ul>
+<li>The full National Registry of Legal Entities (CNPJ) number of the fiscal establishment</li>
+<li>The root CNPJ</li>
+<li>The booking period</li>
+<li>The start date of the period that the message is valid for</li>
+<li>The receipt protocol number</li>
+<li>A value that indicates whether the message is registered in Dynamics 365</li>
+</ul>
+<p>You can find this configuration on the <strong>Additional fields</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Electronic messages</strong> &gt; <strong>Additional fields</strong>).</p>
+<p><img src="media/bra-electronic-messaging-additional-fields.png" alt="Configuration on the Additional fields page."></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Don't remove this configuration. This configuration is included in the package.</p>
+</div>
+<p>The message item types are classified by the type of event on the <strong>Message item types</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Electronic messages</strong> &gt; <strong>Message item types</strong>).</p>
+<p><img src="media/bra-message-types.png" alt="Message item types page."></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Don't remove this configuration. This configuration is included in the package.</p>
+</div>
+<ul>
+<li>To set up the number sequence for message items, go to <strong>Tax &gt; Setup &gt; Parameters &gt; General ledger parameters</strong>, and then, on the <strong>Number sequences</strong> tab, select a number sequence for the <strong>Message</strong> and <strong>Message item</strong> references.</li>
+</ul>
+<p><img src="media/bra-electronic-messages-number-sequences.png" alt="Number sequences tab on the General ledger parameters page."></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The number sequence must be defined as non-continuous.</p>
+</div>
+<h2 id="certificates">Certificates</h2>
+<p>Trusted certificates must be configured and used in Finance, because the SPED-Reinf should always be signed by an e-CNPJ certificate that is authorized by the Brazilian Public Key Infrastructure (ICP-Brasil), regardless of any other signatures. This e-CNPJ certificate should match the first eight digits of the root fiscal establishment's CNPJ number, because the report is issued by the root fiscal establishment and the related fiscal establishments.</p>
+<p>In Finance, you must register the Key Vault certificate in Azure.</p>
+<p>For information about how to set up a Key Vault client, see <a href="https://support.microsoft.com/help/4040305">Setting up Azure Key Vault Client</a>.</p>
+<ol>
+<li><p>Go to <strong>System administration</strong> &gt; <strong>Setup</strong> &gt; <strong>Key Vault parameters</strong>.</p>
+</li>
+<li><p>Enter the following information:</p>
+<ul>
+<li>Key Vault URL</li>
+<li>Key Vault client</li>
+<li>Key Vault secret key</li>
+<li>Key Vault secret ID</li>
+</ul>
+</li>
+</ol>
+<p>After registration, associate the certificate in the setup parameters for the <strong>Report generation</strong> action, as described in the next section.</p>
+<h2 id="set-up-parameters">Set up parameters</h2>
+<p>Every time that a message is created, prepared, validated, delivered, or received, the related action must be identified through an X++ class on the <strong>Executable class settings</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Electronic messages</strong> &gt; <strong>Executable class settings</strong>).</p>
+<ul>
+<li><p><strong>Preparation items (Preparacao dos eventos)</strong> – This action is used to create and prepare the XML message. The action requests more parameters, such as <strong>Booking date</strong>, <strong>CNPJ</strong>, and <strong>CNPJ root</strong>, because the events are generated based on this information.</p>
+<p><img src="media/bra-preparation-items.png" alt="Preparation items parameters."></p>
+</li>
+<li><p><strong>Process response (Processo de reposta)</strong> – This action is used to update the delivered message when the government approves it by using a protocol number. Additionally, the message is updated as registered on the government website.</p>
+<p><img src="media/bra-preparation-items-process-response.png" alt="Preparation items process response parameters."></p>
+</li>
+<li><p><strong>Report generation (Geracao de relatório)</strong> – This action is used to send and receive the message item.</p>
+<p><img src="media/bra-generate-reports-parameters.png" alt="Generate reports parameters."></p>
+</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Don't remove this configuration. This configuration is included in the package.</p>
+</div>
+<h2 id="specific-actions">Specific actions</h2>
+<p>Before a message is delivered, set up XML schema validation to help prevent rejections from the government website.</p>
+<ol>
+<li><p>Go to <strong>Organization administration</strong> &gt; <strong>Document management</strong> &gt; <strong>Document management parameters</strong>, and enable .xsd files by adding <strong>XSD</strong> as a new file type.</p>
+<p><img src="media/bra-document-management-parameters.png" alt="Document management parameters page."></p>
+</li>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Electronic messages</strong> &gt; <strong>Message processing actions</strong>, and select <strong>New</strong> &gt; <strong>File</strong> to attach the schemas (.xsd files) to the following actions:</p>
+<ul>
+<li>Verify (Validar)</li>
+<li>Re-Verify (Re-Validar)</li>
+<li>Cancel-Verify (Exclusão-Validar)</li>
+</ul>
+</li>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Electronic messages</strong> &gt; <strong>Message processing actions</strong>, select the <strong>Populate</strong> (<strong>Incluir</strong>) action, and then, in the <strong>Populate records action</strong> field, select <strong>Registrar transacões</strong>.</p>
+<p><img src="media/bra-message-processing-actions.png" alt="Message processing actions page."></p>
+</li>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Electronic messages</strong> &gt; <strong>Web service settings</strong>, and set up a web services connection and certificates for issuing and inquiring about events.</p>
+<p><img src="media/bra-web-service-settings.png" alt="Web services settings page."></p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In the settings for <strong>SPED Reinf asynchronous (SPED Reinf – assíncrono)</strong>, include the web service address for inquire event R-5011.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/latam-bra-sped-reinf-electronic-messages.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

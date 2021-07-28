@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Get started with Tax Calculation | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Get started with Tax Calculation | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="get-started-with-the-tax-calculation-preview">Get started with the Tax Calculation (Preview)</h1>
+
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Some or all of the functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see <a href="/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases">Service update availability</a>.</p>
+</div>
+
+<p>This topic provides information about how to get started with Tax Calculation. It first guides you through the configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), and Dynamics 365 Finance and Dynamics 365 Supply Chain Management. It then reviews the common process for using Tax Calculation capabilities in Finance and Supply Chain Management transactions.</p>
+<p>The setup consists of four main steps:</p>
+<ol>
+<li>In LCS, install Tax Calculation.</li>
+<li>In RCS, set up the Tax Calculation feature. This setup isn't specific to a legal entity. It can be shared across legal entities in Finance and Supply Chain Management.</li>
+<li>In Finance and Supply Chain Management, set up the Tax Calculation parameters by legal entity.</li>
+<li>In Finance and Supply Chain Management, create transactions such as sales orders, and use Tax Calculation to determine and calculate taxes.</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before you can complete the procedures in this topic, the following prerequisites must be in place:</p>
+<ul>
+<li>You have access to your LCS account, and you've deployed an LCS project with a Tier 2 (or above) environment that runs Dynamics 365 version 10.0.18 with <a href="https://fix.lcs.dynamics.com/Issue/Details?kb=4616360&amp;bugId=568738&amp;dbType=3&amp;qc=1f1c04ff39adad74ef871f539e8d73e14c1893ef7cc4b6e3f7d5c5864ec2781a">KB4616360</a>, or later.</li>
+<li>You have access to your RCS account.</li>
+<li>You've contacted Microsoft to enable the flighting in your deployed Finance or Supply Chain Management environment.</li>
+</ul>
+<h2 id="set-up-tax-calculation-in-lcs">Set up Tax Calculation in LCS</h2>
+<ol>
+<li>Sign in to <a href="https://lcs.dynamics.com">LCS</a></li>
+<li>Complete the setup for Microsoft Power Platform integration. For more information, see <a href="../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md">Add-ins overview</a>.</li>
+<li>Select one of your deployed non-production environments, and then select <strong>Install a new add-in</strong>.</li>
+<li>Select <strong>Tax Calculation (preview)</strong>.</li>
+<li>Read and agree to the terms and conditions, and then select <strong>Install</strong>.</li>
+</ol>
+<h2 id="set-up-tax-calculation-in-rcs">Set up Tax Calculation in RCS</h2>
+<p>The steps in this section aren't related to a specific legal entity. You must complete this procedure only one time, and you can complete it in any legal entity in RCS.</p>
+<ol>
+<li><p>Sign in to <a href="https://marketing.configure.global.dynamics.com/">RCS</a>.</p>
+</li>
+<li><p>In the <strong>Feature management</strong> workspace, select and enable the feature, <strong>Globalization features</strong>.</p>
+</li>
+<li><p>In the <strong>Electronic reporting</strong> workspace, add a new configuration provider. Use your company name as the name of the provider. For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md">Create configuration providers and mark them as active</a>.</p>
+</li>
+<li><p>Select the configuration provider that you just created, and then select <strong>Set active</strong>.</p>
+</li>
+<li><p>Select the <strong>Microsoft</strong> configuration provider, and then select <strong>Repositories</strong>.</p>
+</li>
+<li><p>In the <strong>Type</strong> field, select <strong>Global</strong>.</p>
+</li>
+<li><p>Select <strong>Open</strong>.</p>
+</li>
+<li><p>Go to <strong>Tax Data Model</strong>, expand the file tree, and then select <strong>Tax Configuration</strong>.</p>
+</li>
+<li><p>Select the latest version, and then select <strong>Import</strong>.</p>
+</li>
+<li><p>Return to the <strong>Globalization features</strong> workspace, select <strong>Features</strong>, select the <strong>Tax Calculation</strong> tile, and then select <strong>Add</strong>.</p>
+</li>
+<li><p>Select one of the following feature types:</p>
+<ul>
+<li><strong>New feature</strong> – Create a feature setup that has blank content.</li>
+<li><strong>Based on existing feature</strong> – Create a feature from an existing feature, and copy the content from the existing feature setup.</li>
+</ul>
+</li>
+<li><p>Enter a name and description for the feature, and then select <strong>Create feature</strong>.</p>
+<p>After the feature is created, a draft version of it is automatically created.</p>
+</li>
+<li><p>Select the draft version of the feature, and then select <strong>Edit</strong>. The <strong>Tax Calculation setup</strong> page is filled in.</p>
+</li>
+<li><p>Select <strong>Configuration version</strong>. You should see the configuration version that you imported in step 8.</p>
+<p>Microsoft provides a default tax configuration for the tax calculation add-in. This configuration covers most of the requirements for tax calculation behaviors. It will be updated based on market feedbacks. If you must extend the configuration to meet specific requirements, see <a href="tax-service-add-data-fields-tax-integration-by-extension.html">How to build extension in tax service</a> for information about how to generate and select your own tax configuration.</p>
+<p>After you select <strong>Configuration version</strong>, several additional tabs appear:</p>
+<ul>
+<li><strong>Tax codes</strong> – This tab is mandatory. It's used to maintain master data for tax codes. All tax codes that are created on this tab are automatically synced to Finance when you enable the current version of the tax feature setup in the legal entity.</li>
+<li><strong>Tax codes applicability</strong> – This tab is mandatory. It's used to define a matrix that determines the tax code, tax group, and item tax group. The tax code that is determined is used to calculate the tax amount. The values of the <strong>Tax code</strong>, <strong>Tax group</strong>, and <strong>Item tax group</strong> fields are returned to Finance.</li>
+<li><strong>Customer tax registration number applicability</strong> – This tab is optional. If you have multiple tax registration numbers for one customer, Tax Calculation can automatically determine the correct tax registration number. In the matrix on this tab, you define the rules that the uses to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default tax registration number on taxable documents for sales transactions.</li>
+<li><strong>Vendor tax registration number applicability</strong> – This tab is optional. If you have multiple tax registration numbers for one vendor, Tax Calculation can automatically determine the correct tax registration number. In the matrix on this tab, you define the rules that the uses to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default tax registration number on taxable documents for purchase transactions.</li>
+<li><strong>List code applicability</strong> – This tab is optional. It can help automatically determine the value of the <strong>List code</strong> field through more flexible and configurable rules. In the matrix on this tab, you can define the rules that the uses to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default code on taxable documents.</li>
+</ul>
+</li>
+<li><p>On the <strong>Tax codes</strong> tab, select <strong>Add</strong>, and enter the tax code and a description.</p>
+</li>
+<li><p>Select <strong>Tax component</strong>. The tax component is a group of methods that were defined in the previous version of the selected tax configuration. The following tax components are available:</p>
+<ul>
+<li>By net amount</li>
+<li>By gross amount</li>
+<li>By quantity</li>
+<li>By margin</li>
+<li>Tax on tax</li>
+</ul>
+</li>
+<li><p>Select <strong>Save</strong>. More fields become available, based on the tax component that you selected.</p>
+</li>
+<li><p>Use the following options to identify the nature of the tax code:</p>
+<ul>
+<li>Is Exempt</li>
+<li>Is Use tax</li>
+<li>Is Reverse Charge</li>
+<li>Exclude from Base Amount Calculation</li>
+</ul>
+<p>For a use tax scenario, set up a single tax code that has a positive tax rate, and mark it as <strong>Is Use tax</strong>.</p>
+<p>For a reverse charge scenario, set up two tax codes, one of which has a positive tax rate, and the other of which has a negative tax rate but the same rate value. Mark the negative tax code as <strong>Is reverse charge</strong>. For more information about the reverse charge solution in Finance, see <a href="emea-reverse-charge.html">Reverse charge mechanism for VAT/GST scheme</a>.</p>
+<p>For some tax types which should be excluded in the tax base amount calculation for price inclusive transactions, like custom duty in some countries, select the <strong>Exclude from Base Amount Calculation</strong> check box.</p>
+<p>Maintain tax rates and the tax amount limits for this tax code.</p>
+</li>
+<li><p>Repeat steps 14 through 17 to add all other tax codes that are required.</p>
+</li>
+<li><p>On the <strong>Tax codes applicability</strong> tab, select the columns that are required to determine the correct tax code, and then select <strong>Add</strong>.</p>
+</li>
+<li><p>Enter or select values for each column. The <strong>Tax code</strong>, <strong>Tax group</strong>, and <strong>Item tax group</strong> fields will be the output of this matrix.</p>
+</li>
+<li><p>Repeat steps 19 through 20 to set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes.</p>
+</li>
+<li><p>Select <strong>Save</strong>, and then close the page.</p>
+</li>
+<li><p>Select <strong>Change status</strong> &gt; <strong>Complete</strong>. After the status is changed to <strong>Complete</strong>, the version can no longer be edited.</p>
+</li>
+<li><p>Select <strong>Change status</strong> &gt; <strong>Publish</strong>. This version of the tax feature setup will be pushed to the global repository and will be visible to each legal entity in Finance.</p>
+</li>
+</ol>
+<h2 id="dynamics-365-setup">Dynamics 365 setup</h2>
+<p>After you complete the setup in RCS, as described in the previous section, you will have a published version of the tax feature. Follow these steps to set up Tax Calculation in Finance.</p>
+<p>The setup in this section is done by legal entity. You must configure it for each legal entity that you want to enable Tax Calculation for in Finance.</p>
+<ol>
+<li><p>In Finance, go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Tax configuration</strong> &gt; <strong>Tax calculation setup (Preview)</strong>.</p>
+</li>
+<li><p>On the <strong>General</strong> tab, set the following fields:</p>
+<ul>
+<li><strong>Enable Tax Calculation</strong> – Select this check box to enable Tax Calculation add-in for the legal entity. If it isn't enabled for the current legal entity, the legal entity will continue to use the existing tax engine to determine and calculate tax.</li>
+<li><strong>Feature setup</strong> – Select a published tax feature setup and version for the legal entity. For more information about how to set up and complete a published tax feature, see the previous section of this topic.</li>
+<li><strong>Business Process</strong> – Select the business processes to enable.</li>
+<li><strong>Enable tax code adjustment</strong> – Set this option to <strong>Yes</strong> to enable tax code adjustments on the sales tax page.</li>
+</ul>
+</li>
+<li><p>On the <strong>Calculation</strong> tab, define the expected rounding rule for the legal entity.</p>
+</li>
+<li><p>On the <strong>Error handling</strong> tab, define the expected error handling method for the legal entity. Three options are available for each result code:</p>
+<ul>
+<li>No</li>
+<li>Warning</li>
+<li>Error</li>
+</ul>
+</li>
+<li><p>Save the setup.</p>
+</li>
+<li><p>Repeat steps 1 through 5 for each additional legal entity.</p>
+</li>
+</ol>
+<h2 id="transaction-processing">Transaction processing</h2>
+<p>After you've completed all the setup procedures, you can use Tax Calculation to determine and calculate tax in Finance. The steps to process transactions remain the same. The following transactions are supported in Finance version 10.0.18:</p>
+<ul>
+<li><p>Sales process</p>
+<ul>
+<li>Sales quotation</li>
+<li>Sales order</li>
+<li>Confirmation</li>
+<li>Picking list</li>
+<li>Packing slip</li>
+<li>Sales invoice</li>
+<li>Credit note</li>
+<li>Return order</li>
+<li>Header charge</li>
+<li>Line charge</li>
+</ul>
+</li>
+<li><p>Purchase process</p>
+<ul>
+<li>Purchase order</li>
+<li>Confirmation</li>
+<li>Receipts list</li>
+<li>Product receipt</li>
+<li>Purchase invoice</li>
+<li>Header charge</li>
+<li>Line charge</li>
+<li>Credit note</li>
+<li>Return order</li>
+<li>Purchase requisition</li>
+<li>Purchase requisition line charge</li>
+<li>Request for quotation</li>
+<li>Request for quotation header charge</li>
+<li>Request for quotation line charge</li>
+</ul>
+</li>
+<li><p>Inventory process</p>
+<ul>
+<li>Transfer order – ship</li>
+<li>Transfer order - receive</li>
+</ul>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/global-get-started-with-tax-calculation-service.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

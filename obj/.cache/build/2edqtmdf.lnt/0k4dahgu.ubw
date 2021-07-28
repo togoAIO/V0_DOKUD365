@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Create a workflow document class | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Create a workflow document class | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="create-a-workflow-document-class" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="30">Create a workflow document class</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="34">You define table fields in a query to create workflow conditions. In a typical scenario, calculated fields are used to determine the behavior of a workflow. For example, a dynamic sales total of all records in a table can be used as a workflow condition to determine whether the step should be used. However, a limitation of queries is that you can't define calculated fields in the queries themselves. To overcome this query limitation, you must use a workflow document class. This topic describes how to create a workflow document class.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="36">The workflow document class that you create defines table fields for conditions in two ways: the Application Explorer query and parameter methods. You must override the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="36">getQueryName</strong> method of the <a href="/previous-versions/dynamics/ax-2012/application-classes/gg798542(v=ax.60)" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="36">WorkflowDocument class</a> to return the name of the query. You can optionally add calculated fields by adding parameter methods that have a specific signature on the class. For more information about workflow conditions, see <a href="configure-workflow-properties.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="36">Configure workflow properties</a> and <a href="configure-conditional-decision-workflow.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="36">Configure conditional decisions in a workflow</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="38">The following procedures explain how to create a workflow document class that includes a parameter method for a calculated field. Before you begin, you must create a query that specifies the data that will be accessed. For more information about workflow queries, see <a href="workflow-type-query.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="38">Create a query for a workflow type</a>.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="40">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="41">If you used the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="41">Workflow</strong> wizard to create the workflow type, the wizard has already created the workflow document class.</p>
+</div>
+<h2 id="create-a-workflow-document-class-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="43">Create a workflow document class</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="45">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="45"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="45">Follow one of these steps to create a new query:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="47">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="47">In Application Explorer, expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="47">Classes</strong> node. Right-click the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="47">Classes</strong> node, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="47">New Class</strong>. A class group appears under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="47">Classes</strong> node. Right-click the new class, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="47">Rename</strong>, and then enter a name for the workflow document class.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="48">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="48">Project</strong> menu, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="48">Add new item</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="48">Add new item</strong> dialog box, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="48">Class</strong>. Enter a name for the class, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="48">Create</strong>.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="50">Expand the new class, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="50">classDeclaration</strong>, right-click the class declaration, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="50">Edit</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="51">Enter the following code in the class declaration.</p>
+<pre><code class="lang-X++" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="53">class &lt;MyWorkflowDocumentClassName&gt; extends WorkflowDocument
+{
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="59"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="59">Close the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="59">Editor</strong> window, and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="59">Yes</strong> to save your changes.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="60"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="60">Right-click the new class, point to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="60">Override Method</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="60">getQueryName</strong>. A method node that is named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="60">getQueryName</strong> appears under the workflow document class node, and the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="60">Editor</strong> window appears.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="62">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="63">Be sure to select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="63">getQueryName</strong> as the method to override. The <a href="/previous-versions/dynamics/ax-2012/application-classes/gg798533(v=ax.60)" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="63">WorkflowDocument.getQuery method</a> is used only internally to retrieve the actual query, based on the string that is returned by the <a href="/previous-versions/dynamics/ax-2012/application-classes/gg798541(v=ax.60)" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="63">WorkflowDocument.getQueryName method</a>.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="65"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="65">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="65">Editor</strong> window, enter the following code for the query method.</p>
+<pre><code class="lang-X++" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="67">QueryName getQueryName()
+{
+    return querystr(&lt;MyWorkflowDocumentQueryName&gt;);
+}
+</code></pre>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="74">After you create the workflow document class, you can bind it to the workflow type. For more information, see <a href="workflow-type-associate-document.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="74">Associate a workflow document class with a workflow type</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="76">You can add a calculated field to the workflow document class only if it meets these conditions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="78">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="78">It must be named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="78">parm &lt;name&gt;</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="79">It must define the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="79">CompanyId</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="79">TableId</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="79">RecId</strong> parameters.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="80">It must return an extended data type (EDT) that will be included in the list of fields that define conditions or notification messages. The label for the EDT must uniquely identify the value.</li>
+</ul>
+<h2 id="add-a-calculated-field-to-the-workflow-document-class" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="82">Add a calculated field to the workflow document class</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="84">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="84"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="84">In the workflow document class that you want to add a calculated field to, right-click the class, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="84">New Method</strong>. A new method node appears under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="84">Classes</strong> node.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="85"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="85">Right-click the new method node, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="85">Edit</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="86"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="86">Enter code in the format that is shown in the following example. This example shows how to add a calculated field to determine the total credit amount for a journal.</p>
+<pre><code class="lang-X++" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="88">public TotalJournalCreditAmount parmTotalJournalCreditAmount(CompanyId _companyId, TableId _tableId, RecId _recId)
+{
+    // The calculateAmounts method contains business and validation logic
+    this.calculateAmounts(_companyId, _tableId, _recId);
+    return totalJournalCreditAmount;
+}
+</code></pre>
+</li>
+</ol>
+<h2 id="see-also" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="97">See also</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="99"><a href="workflow-type-associate-document.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md" sourcestartlinenumber="99">Associate a workflow document class with a workflow type</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-document-create.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

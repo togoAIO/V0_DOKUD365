@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Settle partial and final payments in full before the discount date | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Settle partial and final payments in full before the discount date | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="settle-partial-and-final-payments-in-full-before-the-discount-date" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="30">Settle partial and final payments in full before the discount date</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="34">This article provides scenarios that show how to record partial payments for a customer and take cash discounts within the cash discount period.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="36">Fabrikam sells goods to customer 4028. Fabrikam offers a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. Fabrikam also offers cash discounts on partial payments. The settlement parameters are located on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="36">Accounts receivable parameters</strong> page.</p>
+<h2 id="customer-invoice" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="38">Customer invoice</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="39">On June 25, Arnie enters and posts an invoice for 1,000.00 for customer 4028. Arnie can view this transaction on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="39">Customer transactions</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="41">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="41">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="41">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="41">Transaction type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="41">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="41">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="41">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="41">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="41">Balance</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="41">Currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="43">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="43">FTI-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="43">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="43">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="43">10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="43">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="43"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="43">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="43">USD</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="45">From the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="45">Customer</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="45">Customer transactions</strong> page, Arnie can open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="45">Settle transactions</strong> page to view the dates and amounts of cash discounts that are available for the invoice. The due date is July 25, and a cash discount of 10.00 is available if the invoice is paid by July 9.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">Mark</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">Use cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">Due date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">Amount in transaction currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="47">Amount to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">FTI-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">4028</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="49">990.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="51">Discount information appears at the bottom of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="51">Settle transactions</strong> page for the marked invoice.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="53">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="53">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="53"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="53"> </th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="55">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="55">Cash discount date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="55">7/09/2015</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="56">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="56">Cash discount amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="56">10.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="57">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="57">Use cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="57">Normal</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="58">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="58">Cash discount taken</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="58">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="59">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="59">Cash discount amount to take</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="59">10.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="61">Arnie clicks the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="61">Cash discount</strong> tab to view the discount amount.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="63">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="63">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="63">Cash discount date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="63">Cash discount amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="63">Amount in transaction currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="65">7/9/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="65">10.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="65">990.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="66">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="66">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="66">1,000.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="partial-payment-by-using-the-enter-customer-payments-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="68">Partial payment by using the Enter customer payments page</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="69">Customer 4028 sends a payment for 500.00 on July 1. To enter this payment, Arnie doesn't click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="69">Lines</strong>. Instead, Arnie records the payment by creating a new payment journal and then opening the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="69">Enter customer payments</strong> page. Arnie enters the payment information and marks the invoice that they entered. When Arnie enters <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="69">500.00</strong> as the amount, they also enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="69">500.00</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="69">Amount to pay</strong> field in the grid. Because Fabrikam allows a cash discount on partial payments, Arnie sees that a partial cash discount of 5.05 will also be taken. The calculation for this discount is 500.00 ÷ 0.99 × 0.01 = 5.05. (In this calculation, 500.00 is divided by 0.99, because there is a 1-percent discount. Therefore, the customer pays 99 percent of the invoice. The result is then multiplied by the discount percentage, which is 1 percent, or 0.01. If the customer takes the full discount of 10.00, the amount that must be settled will be 990.00.) Discount information appears in the grid at the bottom of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="69">Enter customer payments</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="71">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="71">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="71">Cash discount amount to take</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="71">Cash discount taken</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="71">Amount to pay</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="73">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="73">5.05</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="73">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="73">500.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="partial-payment-by-using-the-journal-lines" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="75">Partial payment by using the journal lines</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="76">Instead of opening the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="76">Enter customer payments</strong> page in the payment journal, Arnie can click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="76">Lines</strong> to enter a payment. The payment journal is displayed, where Arnie can enter a line for customer 4028. Arnie then opens the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="76">Settle transactions</strong> page, so that Arnie can mark the invoice for settlement. Arnie marks the invoice and changes the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="76">Amount to settle</strong> field to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="76">500.00</strong>. Again, Arnie sees that the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="76">Cash discount amount</strong> field is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="76">10.00</strong> for the full invoice, and the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="76">Cash discount amount to take</strong> field is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="76">5.05</strong>. Therefore, Arnie is settling 505.05 of this invoice.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">Mark</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">Use cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">Due date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">Amount in transaction currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="78">Amount to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">FTI-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">4028</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="80">500.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="82">Discount information appears at the bottom of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="82">Settle open transactions</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="84">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="84">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="84"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="84"> </th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="86">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="86">Cash discount date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="86">7/09/2015</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="87">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="87">Cash discount amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="87">10.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="88">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="88">Use cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="88">Normal</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="89">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="89">Cash discount taken</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="89">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="90">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="90">Cash discount amount to take</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="90">5.05</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="92">If the customer wants to settle exactly half the invoice, the customer submits a payment of 495.00. In this case, Arnie enters <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="92">495.00</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="92">Amount to settle</strong> field. The cash discount for 5.00 will also be taken, so that the total settled amount is 500.00.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">Mark</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">Use cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">Due date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">Amount in transaction currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="94">Amount to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">FTI-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">4028</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="96">495.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="98">Discount information appears at the bottom of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="98">Settle open transactions</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="100">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="100">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="100"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="100"> </th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="102">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="102">Cash discount date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="102">7/09/2015</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="103">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="103">Cash discount amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="103">10.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="104">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="104">Use cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="104">Normal</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="105">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="105">Cash discount taken</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="105">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="106">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="106">Cash discount amount to take</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="106">5.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="108">Arnie closes the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="108">Settle transactions</strong> page. A payment line for 495.00 is created in the journal, and Arnie then posts the journal. Arnie can review the customer transactions on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="108">Customer transactions</strong> page. On this page, Arnie sees that the invoice has a balance of 500.00. Arnie also sees a payment of 495.00 and a discount of 5.00.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="110">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="110">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="110">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="110">Transaction type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="110">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="110">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="110">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="110">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="110">Balance</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="110">Currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="112">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="112">FTI-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="112">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="112">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="112">10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="112">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="112"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="112">500.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="112">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="113">ARP-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="113">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="113">7/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="113"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="113"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="113">495.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="113">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="113">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="114">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="114">DISC-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="114">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="114">7/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="114"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="114"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="114">5.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="114">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="114">USD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="payment-for-the-remaining-amount" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="116">Payment for the remaining amount</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="117">Customer 4028 pays the remaining amount of 495.00 on July 8, which is in the cash discount period. Arnie creates the payment journal on July 8 and marks the transaction for settlement. Arnie sees that the amount that must be settled is 495.00. The value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="117">Estimated cash discount</strong> field is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="117">5.00</strong>, because the 5.00 discount was previously taken.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="119">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="119">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="119"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="119"> </th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="121">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="121">Marked total</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="121">495.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="122">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="122">Estimated cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="122">5.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="124">Information about the marked transaction appears in the grid on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="124">Settle open transactions</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">Mark</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">Use cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">Due date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">Amount in transaction currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="126">Amount to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">FTI-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">4028</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="128">495.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="130">Discount information appears at the bottom of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="130">Settle open transactions</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="132">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="132">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="132"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="132"> </th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="134">Cash discount date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="134">7/09/2015</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="135">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="135">Cash discount amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="135">10.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="136">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="136">Use cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="136">Normal</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="137">Cash discount taken</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="137">5.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="138">Cash discount amount to take</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="138">5.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="140">Arnie posts this journal and reviews the customer transactions on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="140">Customer transactions</strong> page. The balance for the invoice is now 0.00, and Arnie sees the two payments and the two cash discounts.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="142">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="142">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="142">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="142">Transaction type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="142">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="142">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="142">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="142">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="142">Balance</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="142">Currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="144">FTI-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="144">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="144">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="144">10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="144">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="144"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="144">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="144">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="145">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="145">ARP-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="145">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="145">7/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="145"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="145"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="145">495.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="145">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="145">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="146">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="146">DISC-10010</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="146">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="146">7/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="146"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="146"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="146">5.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="146">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="146">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="147">ARP-10011</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="147">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="147">7/8/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="147"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="147"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="147">495.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="147">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="147">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="148">DISC-10011</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="148">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="148">7/8/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="148"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="148"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="148">5.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="148">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md" sourcestartlinenumber="148">USD</td>
+</tr>
+</tbody>
+</table>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

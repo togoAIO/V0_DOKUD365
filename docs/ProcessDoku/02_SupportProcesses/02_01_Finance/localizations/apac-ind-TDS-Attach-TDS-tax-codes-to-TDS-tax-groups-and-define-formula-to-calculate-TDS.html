@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds">Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS</h1>
+
+
+<p>This topic explains how to set up Tax Deducted at Source (TDS) tax groups and attach TDS tax codes to TDS tax groups. To calculate TDS for a TDS tax group, you must define the formula for TDS tax codes that are attached to it.</p>
+<p>Follow these steps to set up a TDS tax group, attach TDS tax codes to it, and define the formula for calculating TDS.</p>
+<ol>
+<li><p>Go to <strong>Tax &gt; Indirect taxes &gt; Withholding tax &gt; Withholding tax groups</strong>.</p>
+<p><a href="media/apac-ind-TDS-29.png"><img src="media/apac-ind-TDS-29.png" alt="Withholding tax groups page."></a></p>
+</li>
+<li><p>On the Action Pane, select <strong>New</strong> to create a withholding tax group for TDS, and enter the required details.</p>
+</li>
+<li><p>In the <strong>Tax type</strong> field, select <strong>TDS</strong>.</p>
+</li>
+<li><p>On the <strong>Setup</strong> FastTab, select <strong>Add</strong> to create a line.</p>
+</li>
+<li><p>In the <strong>Withholding tax code</strong> field, select the TDS tax code for the TDS tax group. The <strong>Withholding tax name</strong> field shows the name of the TDS tax code, and the <strong>Value</strong> field shows the value.</p>
+</li>
+<li><p>To ignore the threshold limit and exception threshold limit that are defined for the TDS tax component that is attached to the TDS tax code in TDS transactions, select the <strong>Overlook threshold</strong> check box.</p>
+</li>
+<li><p>To prevent the tax group from being calculated in transactions, select the <strong>Exempt</strong> check box.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Designer</strong> to open the formula designer, so that you can define the formula for calculating TDS for the TDS tax group. On the <strong>Designer</strong> page, the <strong>Taxes</strong> tab shows the TDS tax codes that have been selected for the TDS tax group.</p>
+<p><a href="media/apac-ind-TDS-30.png"><img src="media/apac-ind-TDS-30.png" alt="Designer page."></a></p>
+</li>
+<li><p>On the <strong>Calculation</strong> tab, select <strong>Alt+N</strong> to create a line. The <strong>ID</strong> field shows the automatically generated priority ID for TDS calculation.</p>
+</li>
+<li><p>In the <strong>Tax code</strong> field, select the TDS tax code to define the formula for. All the TDS tax codes that have been selected for the TDS tax group are available for selection in this field.</p>
+</li>
+<li><p>In the <strong>Taxable basis</strong> field, select the basis for calculating TDS:</p>
+<ul>
+<li><strong>Gross amount</strong> – Calculate TDS based on the gross transaction amount (that is, the invoice amount) by using the calculation expression that is defined for the tax code.</li>
+<li><strong>Excl Gross amount</strong> – Calculate TDS based on the calculation expression that is defined for the tax code.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Taxable basis</strong> field can't be set to <strong>Excl Gross amount</strong> for the TDS tax code that has a priority ID of <strong>1</strong>.</p>
+</div>
+</li>
+<li><p>The TDS calculation is based on the formula that is defined in the <strong>Calculation expression</strong> field for each tax code that is attached to the TDS tax group. Select the plus sign (<strong>+</strong>), minus sign (<strong>-</strong>), multiplication sign (<strong>*</strong>), or division sign (<strong>/</strong>) button to enter the calculation expression for the selected TDS tax code in the <strong>Calculation expression</strong> field.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>No calculation expression can be defined for the TDS tax code that has a priority ID of <strong>1</strong>.</p>
+</div>
+</li>
+<li><p>To define the calculation expression for the TDS tax code in the <strong>Calculation expression</strong> field, add TDS tax codes that are available on the <strong>Taxes</strong> tab. To add TDS tax codes in the <strong>Calculation expression</strong> field, you can use any of the following methods:</p>
+<ul>
+<li>Drag the required tax code from the <strong>Taxes</strong> tab to the <strong>Calculation expression</strong> field.</li>
+<li>Double-tap (or double-click) the required tax code on the <strong>Taxes</strong> tab.</li>
+<li>Select and hold (or right-click) the required tax code on the <strong>Taxes</strong> tab, and then select <strong>Add tax code</strong>.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Insert a calculation expression before each TDS tax code. The TDS tax codes that have been added to the calculation expression appear in brackets ([...]).</p>
+</div>
+</li>
+<li><p>To clear the calculation expression that is defined for a tax code in the <strong>Calculation expression</strong> field, select the <strong>C</strong> button.</p>
+</li>
+<li><p>To delete a record on the <strong>Calculation</strong> tab, select <strong>Delete</strong>.</p>
+</li>
+<li><p>Close the page.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

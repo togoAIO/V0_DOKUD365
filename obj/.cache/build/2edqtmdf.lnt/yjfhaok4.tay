@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Calculate TDS invoices using purchase order form and sales order form | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Calculate TDS invoices using purchase order form and sales order form | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="calculate-tds-invoices-using-purchase-order-form-and-sales-order-form" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="32">Calculate TDS invoices using purchase order form and sales order form</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="36">This topic lists the steps for calculating Tax Deducted at Source (TDS) on various types of invoices using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="36">Purchase order</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="36">Purchase journal</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="36">Blanket order</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="36">Sales order</strong> pages.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="38"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="38">Create a purchase order, purchase journal, purchase blanket order, or a sales order using the page listed. Enter the required details.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="40"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="40">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="40">Setup</strong> tab to view the nature of the assessee of the vendor or customer. This information is listed in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="40">Nature of assessee</strong> field, under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="40">Withholding tax group</strong> field group.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="42"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="42">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="42">TDS group</strong> field, view or modify the default TDS group defined for the vendor or customer.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="44">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="45">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="45">TCS group</strong> field isn't available when you select a TDS group in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="45">TDS group</strong> field. TDS is calculated only if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="45">Calculate withholding tax</strong> check box is selected for the vendor or customer on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="45">All vendors</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="45">All customers</strong> page.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="47"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="47">Create item lines on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="47">Lines</strong> tab and enter the required details.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="49"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="49">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="49">Setup</strong> tab (line-level) to view or change the TDS group defined at the header-level. The TDS group is displayed in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="49">TDS group</strong> field, which is under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="49">Withholding tax group</strong> field group.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="51">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="51">Tax information</strong> tab and select alternate addresses that are set up for the company name that's displayed in this field. The company name is displayed in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="51">Name</strong> field, which is under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="51">Company information</strong> field group.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="53">The TAN of the selected company name is displayed in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="53">Tax Account Number</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="53">TAN</strong>) field, under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="53">Withholding tax</strong> field group.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="55"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="55">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="55">Withholding tax</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="55">Temporary withholding tax transactions</strong> page. View the following fields on the upper pane of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="55">Temporary withholding tax transactions</strong> page.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="57">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="57"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="57">Withholding</strong> <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="57">tax</strong> <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="57">amount</strong> <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="57">in</strong> <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="57">total</strong> - The total TDS calculated for the transaction for the TDS group.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="59"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="59"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="59">Value</strong> - The total percentage used to calculate TDS for the transaction. The total percentage is based on the formula that is defined for TDS tax codes attached to the TDS group.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="61"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="61"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="61">Adjusted withholding tax amount in total</strong> - The total adjusted TDS amount for all tax codes in the TDS group.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="63"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="63"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="63">TDS</strong> - If selected, a TDS group is attached to the transaction.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="65">The fields on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="65">Overview</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="65">General</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="65">Adjustment</strong> tabs on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="65">Temporary withholding tax transactions</strong> page display the calculated TDS amount and adjusted TDS amount details for each TDS tax code attached to the TDS group.</p>
+<ol start="8" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="67">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="67"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="67">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="67">Threshold</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="67">Threshold</strong> page. View the threshold limit defined for the TDS tax component attached to a specific TDS tax code on this page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="69">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="69">Formula designer</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="69">Formula designer</strong> page. View the formula that is defined for a specific TDS tax code on this page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="71"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="71">Post the invoice. The TDS amount calculated on purchase invoices is posted to the payable account and the TDS amount calculated on sales invoices is posted to the receivable account that is defined for each TDS tax code in the TDS group. The payable accounts or receivable accounts for TDS tax codes are defined on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="71">Withholding tax codes</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="73">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="73">Inquiry</strong> button <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="73">&gt; Invoice &gt; Posted withholding tax</strong> button to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="73">Withholding tax transactions</strong> page. You can view the total percentage used to calculate TDS for the transaction in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="73">Value</strong> field.</p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="75">The fields on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="75">Overview</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="75">General</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="75">Amount</strong> tabs on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md" sourcestartlinenumber="75">Withholding tax transactions</strong> page display the information of TDS calculated for the transaction. View the TDS calculation information for each TDS tax code attached to the TDS group.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

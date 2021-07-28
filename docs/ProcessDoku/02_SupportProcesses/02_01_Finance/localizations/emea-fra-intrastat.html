@@ -1,0 +1,689 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>French Intrastat | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="French Intrastat | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="french-intrastat">French Intrastat</h1>
+
+
+<p>Companies in France that are registered for value-added tax (VAT), and that trade with other European Union (EU) countries, must declare the exchange of goods and services to and from France. The Declaration d'exchanges de biens (Declaration of Trade in Goods, or DEB) is a combination of the EU Sales List and the Intrastat report. You must submit this report monthly for all intracommunity sales of goods.</p>
+<p>You can generate the DEB report in either of two electronic text file formats: SAISUNIC 330 or INTRACOM format.</p>
+<p>The following table shows the fields that are included in the French Intrastat declaration in SAISUNIC 330 format.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Report level</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong>4 (simplified)</strong></td>
+<td><strong>1 (full)</strong></td>
+</tr>
+<tr>
+<td>Period Of Reference</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Number Of Declaration</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Line Number</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Country ISO Code (FR)</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Complementary Code</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Siren Number</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>VAT Code Of Customer</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Direction Code</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Transaction Type</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Obligation Level</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Commodity Code</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>National NGP</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>County (Department)</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Nature Of Transaction</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Country Of Origination</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Country Of Origin - Imports</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Final Destination - Exports</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Invoice Value</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Statistical Value</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Net Weight</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Additional Units</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Transport Code</td>
+<td></td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<p>The following table shows the fields that are included in the French Intrastat declaration in INTRACOM format.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Report level</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong>4 (simplified)</strong></td>
+<td><strong>1 (full)</strong></td>
+</tr>
+<tr>
+<td>Code</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Number Of Declaration</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Number Of Line</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Siren</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>County (Department)</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Transport Code</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Country Of Origin</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Nature Of Transaction</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Invoice Value</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Modes Of Delivery</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Transaction Type</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Obligation Level</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Commodity Code</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>National NGP</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Net Weight</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Statistical Value</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Additional Units</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Country Of Origin - Imports</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Final Destination - Exports</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>VAT Code Of Customer</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Complementary Code</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Period Of Reference</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<h3 id="set-up-intrastat">Set up Intrastat</h3>
+<ol>
+<li>In <a href="https://lcs.dynamics.com/Logon/Index">Microsoft Dynamics Lifecycle Services (LCS)</a>, in the Shared asset library, download the latest versions of the following Electronic reporting (ER) configurations for the Intrastat declaration:</li>
+</ol>
+<ul>
+<li><p>Intrastat model</p>
+</li>
+<li><p>Intrastat report</p>
+</li>
+<li><p>Intrastat INTRACOM (FR)</p>
+</li>
+<li><p>Intrastat SAISUNIC (FR)</p>
+</li>
+</ul>
+<p>For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+<ol start="2">
+<li><p>In Dynamics 365 Finance, go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Foreign trade parameters</strong>, and follow these steps:</p>
+<ol>
+<li><p>On the <strong>Intrastat</strong> tab, on the <strong>Electronic reporting</strong> FastTab, in the <strong>File format mapping</strong> field, select <strong>Intrastat INTRACOM (FR)</strong> or <strong>Intrastat SAISUNIC (FR)</strong>.</p>
+</li>
+<li><p>In the <strong>Report format mapping</strong> field, select <strong>Intrastat report</strong>.</p>
+</li>
+<li><p>On the <strong>Commodity code hierarchy</strong> FastTab, in the <strong>Category hierarchy</strong> field, select <strong>Intrastat</strong>.</p>
+</li>
+<li><p>On the <strong>General</strong> FastTab, in the <strong>Transaction code</strong> field, select the code that is used for transfers of goods.</p>
+</li>
+<li><p>In the <strong>Credit note</strong> field, select the code that is used for returns of goods.</p>
+</li>
+<li><p>In the <strong>Obligation level for export</strong> field, enter the level of detail for the export report. The level that you select affects the lines that are shown on the report. For more information, see the tables at the beginning of this topic.</p>
+</li>
+</ol>
+</li>
+<li><p>Go to <strong>Organization administration</strong> &gt; <strong>Organizations</strong> &gt; <strong>Legal entities</strong>, select your company, and then follow these steps:</p>
+<ol>
+<li><p>On the <strong>Registration numbers</strong> FastTab, in the <strong>NAF code</strong> field, enter your NAF code. For more information, see <a href="tasks/fr-00003-naf-codes-siret-numbers.html">FR-00003 NAF codes and Siret numbers</a>.</p>
+</li>
+<li><p>On the <strong>Foreign trade and logistics</strong> FastTab, in the <strong>Intrastat</strong> section, set the <strong>VAT exempt number export</strong> and <strong>VAT exempt number import</strong> fields.</p>
+</li>
+<li><p>On the <strong>Tax registration</strong> FastTab, in the <strong>Tax registration number</strong> field, enter your company's tax registration number.</p>
+</li>
+</ol>
+</li>
+<li><p>To specify NAF codes and tax-exempt numbers for customers, go to <strong>Accounts receivable</strong> &gt; <strong>Customers</strong> &gt; <strong>All customers</strong>, and follow these steps:</p>
+<ol>
+<li><p>Select a customer.</p>
+</li>
+<li><p>On the <strong>Invoice and delivery</strong> FastTab, in the <strong>Sales tax</strong> section, in the <strong>Tax exempt number</strong> field, enter the customer's tax-exempt number.</p>
+</li>
+<li><p>On the <strong>Sales demographics</strong> FastTab, in the <strong>French Siret</strong> field, enter the company's Siret number.</p>
+</li>
+<li><p>In the <strong>NAF code</strong> field, enter the company's NAF code.</p>
+</li>
+<li><p>Repeat these steps for other customers.</p>
+</li>
+</ol>
+</li>
+<li><p>To specify NAF codes and tax-exempt numbers for vendors, go to <strong>Accounts payable</strong> &gt; <strong>Vendors</strong> &gt; <strong>All vendors</strong>, and follow these steps:</p>
+<ol>
+<li><p>Select a vendor.</p>
+</li>
+<li><p>On the <strong>Invoice and delivery</strong> FastTab, in the <strong>Sales tax</strong> section, in the <strong>Tax exempt number</strong> field, enter the vendor's tax-exempt number.</p>
+</li>
+<li><p>On the <strong>Purchasing demographics</strong> FastTab, in the <strong>French Siret</strong> field, enter the company's Siret number.</p>
+</li>
+<li><p>In the <strong>NAF code</strong> field, enter the company's NAF code.</p>
+</li>
+<li><p>Repeat these steps for other vendors.</p>
+</li>
+</ol>
+</li>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Compression of Intrastat</strong>, and select the fields that should be compared when Intrastat information is summarized. For French Intrastat, select <strong>Statistics procedure</strong>, <strong>State of origin</strong>, <strong>Country/region of origin</strong>, <strong>Delivery terms</strong>, <strong>Transport</strong>, <strong>Correction</strong>, <strong>Country/region</strong>, <strong>County of origin/destination</strong>, <strong>Direction</strong>, <strong>Country/region of sender</strong>, <strong>State of sender</strong>, <strong>State</strong>, <strong>Transaction code</strong>, and <strong>Commodity</strong>.</p>
+</li>
+<li><p>Go to <strong>Warehouse management</strong> &gt; <strong>Setup</strong> &gt; <strong>Warehouse</strong> &gt; <strong>Warehouses</strong>, select a warehouse, and then follow these steps:</p>
+<ol>
+<li><p>On the <strong>Addresses</strong> FastTab, select <strong>Add</strong> or <strong>Edit</strong>.</p>
+</li>
+<li><p>In the dialog box, in the <strong>City</strong> field, select the warehouse's city. The city's state will be used as a county for your DEB report.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="ngp-codes">NGP codes</h3>
+<p>On the DEB report, the codification of products consists of the following elements:</p>
+<ol>
+<li><p>The eight-digit CN8 code that represents the tariff and statistical nomenclature of the EU.</p>
+</li>
+<li><p>If applicable, the one-digit Nomenclature Générale des Produits (NGP) national item code.</p>
+</li>
+</ol>
+<p>In 2021, the NGP applies to only three types of products:</p>
+<ul>
+<li><p>Some products from cows, sheep, and goats</p>
+</li>
+<li><p>Military equipment</p>
+</li>
+<li><p>French wines</p>
+</li>
+</ul>
+<p>You must set up the NGP codes and assign them to related products. The <strong>NGP</strong> field is then automatically set on the <strong>Intrastat journal</strong> page.</p>
+<h4 id="set-up-an-ngp-code">Set up an NGP code</h4>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>NGP codes</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>New</strong> to create an NGP code.</p>
+</li>
+<li><p>In the <strong>NGP</strong> field, enter a single-digit code.</p>
+</li>
+<li><p>In the <strong>Description</strong> field, enter a description for the code.</p>
+</li>
+</ol>
+<h4 id="assign-an-ngp-code-to-a-product">Assign an NGP code to a product</h4>
+<ol>
+<li><p>Go to <strong>Product information management</strong> &gt; <strong>Products</strong> &gt; <strong>Released products</strong>.</p>
+</li>
+<li><p>In the grid, select a product.</p>
+</li>
+<li><p>On the <strong>Foreign trade</strong> FastTab, in the <strong>Intrastat</strong> section, in the <strong>NGP</strong> field, select the appropriate NGP code.</p>
+</li>
+</ol>
+<h2 id="intrastat-journal">Intrastat journal</h2>
+<p>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Foreign</strong> <strong>trade</strong> &gt; <strong>Intrastat</strong> to manage your transactions that are applicable to foreign trade with EU countries. For more information, see <a href="emea-intrastat.html">Intrastat overview</a>.</p>
+<p>The <strong>NGP</strong> column is specific to France. It shows the NGP code for the product. If the NGP isn't applicable to a product, <strong>0</strong> (zero) is shown. You can adjust the NGP code. Select the transaction, and then, on the <strong>General</strong> tab, in the <strong>Codes</strong> section, in the <strong>NGP</strong> field, select the required NGP code.</p>
+<h3 id="intrastat-transfer">Intrastat transfer</h3>
+<p>On the <strong>Intrastat</strong> page, on the Action Pane, you can select <strong>Transfer</strong> to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.</p>
+<p>Because the DEB report is a combination of the EU Sales List and the Intrastat report, it also includes <em>triangular</em> transactions, where a direct delivery is made from one EU country (party A) to another EU country (party C), and a French legal entity (party B) is in the middle of the triangular deal.</p>
+<h3 id="generate-a-deb-intrastat-report">Generate a DEB (Intrastat) report</h3>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Intrastat</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Output</strong> &gt; <strong>Report</strong>.</p>
+</li>
+<li><p>In the <strong>Intrastat Report</strong> dialog box, set the following fields.</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>From date</td>
+<td>Select the start date for the report.</td>
+</tr>
+<tr>
+<td>To date</td>
+<td>Select the end date for the report.</td>
+</tr>
+<tr>
+<td>Generate file</td>
+<td>Set this option to <strong>Yes</strong> to generate a .txt file.</td>
+</tr>
+<tr>
+<td>File name</td>
+<td>Enter the name of the .txt file for your Intrastat report.</td>
+</tr>
+<tr>
+<td>Generate report</td>
+<td>Set this option to <strong>Yes</strong> to generate an .xml file.</td>
+</tr>
+<tr>
+<td>Report file name</td>
+<td>Enter the required name.</td>
+</tr>
+<tr>
+<td>Only corrections</td>
+<td>Set this option to <strong>Yes</strong> to report only corrections. Set it to <strong>No</strong> to report both normal transactions and corrections.</td>
+</tr>
+<tr>
+<td>Direction</td>
+<td>Select <strong>Arrivals</strong> for a report about intracommunity arrivals. Select <strong>Dispatches</strong> for a report about intracommunity dispatches.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Example</h2>
+<p>The following example shows how to set up and work with NGP codes. It uses the <strong>DEMF</strong> legal entity.</p>
+<ol>
+<li>In <a href="https://lcs.dynamics.com/Logon/Index">Microsoft Dynamics Lifecycle Services (LCS)</a>, in the Shared asset library, download the latest versions of the following ER configurations for the Intrastat declaration format:</li>
+</ol>
+<ul>
+<li><p>Intrastat model</p>
+</li>
+<li><p>Intrastat report</p>
+</li>
+<li><p>Intrastat INTRACOM (FR)</p>
+</li>
+</ul>
+<ol start="2">
+<li><p>In Finance, set up a transaction code:</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Transaction codes</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>New</strong>.</p>
+</li>
+<li><p>In the <strong>Transaction code</strong> field, enter <strong>11</strong>.</p>
+</li>
+<li><p>In the <strong>Name</strong> field, enter <strong>Purchase or Sales</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Save</strong>.</p>
+</li>
+</ol>
+</li>
+<li><p>Set up a product hierarchy:</p>
+<ol>
+<li><p>Go to <strong>Product information management</strong> &gt; <strong>Setup</strong> &gt; <strong>Categories and attributes</strong> &gt; <strong>Category hierarchies</strong>.</p>
+</li>
+<li><p>In the grid, select <strong>Intrastat</strong>. Then, on the Action Pane, on the <strong>Category hierarchy</strong> tab, in the <strong>Maintain</strong> group, select <strong>Edit</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>New category node</strong>.</p>
+</li>
+<li><p>In the <strong>Name</strong> field, enter <strong>Autres Libournais</strong>.</p>
+</li>
+<li><p>In the <strong>Code</strong> field, enter <strong>2204 21 42</strong></p>
+</li>
+<li><p>On the Action Pane, select <strong>Save</strong>.</p>
+</li>
+</ol>
+</li>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Foreign trade parameters</strong>, and follow these steps:</p>
+<ol>
+<li><p>On the <strong>Intrastat</strong> tab, on the <strong>General</strong> FastTab, in the <strong>Transaction code</strong> field, select <strong>11</strong>.</p>
+</li>
+<li><p>On the <strong>Electronic reporting</strong> FastTab, in the <strong>File format mapping</strong> field, select <strong>Intrastat INTRACOM (FR)</strong>.</p>
+</li>
+<li><p>In the <strong>Report format mapping</strong> field, select <strong>Intrastat report</strong>.</p>
+</li>
+<li><p>On the <strong>Commodity code hierarchy</strong> FastTab, in the <strong>Category hierarchy</strong> field, select <strong>Intrastat</strong>.</p>
+</li>
+</ol>
+</li>
+<li><p>Set up an NGP code:</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>NGP codes</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>New</strong>.</p>
+</li>
+<li><p>In the <strong>NGP</strong> field, enter <strong>8</strong>.</p>
+</li>
+<li><p>In the <strong>Description name</strong> field enter <strong>NGP 8</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Save</strong>.</p>
+</li>
+</ol>
+</li>
+<li><p>Assign the NGP code to a product:</p>
+<ol>
+<li><p>Go to <strong>Product information management</strong> &gt; <strong>Products</strong> &gt; <strong>Released products</strong>.</p>
+</li>
+<li><p>In the grid, select <strong>0001</strong>.</p>
+</li>
+<li><p>On the <strong>Foreign trade</strong> FastTab, in the <strong>NGP</strong> field, select <strong>8</strong>.</p>
+</li>
+<li><p>In the <strong>Commodity</strong> field, select <strong>2204 21 42</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Save</strong>.</p>
+</li>
+</ol>
+</li>
+<li><p>Create a sales order that includes the new product:</p>
+<ol>
+<li><p>Go to <strong>Accounts receivable</strong> &gt; <strong>Orders</strong> &gt; <strong>All sales orders</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>New</strong>.</p>
+</li>
+<li><p>In the <strong>Create</strong> <strong>sales</strong> <strong>order</strong> dialog box, in the <strong>Customer</strong> section, in the <strong>Customer</strong> <strong>account</strong> field, select <strong>100001</strong>.</p>
+</li>
+<li><p>In the <strong>Address</strong> section, in the <strong>Delivery address</strong> field, select the plus sign (<strong>+</strong>) to create an address.</p>
+</li>
+<li><p>In the <strong>New address</strong> dialog box, in the <strong>Name of description</strong> field, enter <strong>Germany</strong>.</p>
+</li>
+<li><p>In the <strong>Country/region</strong> field, select <strong>DEU</strong>.</p>
+</li>
+<li><p>Select <strong>OK</strong>.</p>
+</li>
+<li><p>In the <strong>Create sales order</strong> dialog box, select <strong>OK</strong>.</p>
+</li>
+<li><p>On the <strong>Sales</strong> <strong>order lines</strong> FastTab, in the <strong>Item number</strong> field, select <strong>0001</strong>.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Save</strong>.</p>
+</li>
+<li><p>On the Action Pane, on the <strong>Invoice</strong> tab, in the <strong>Generate</strong> group, select <strong>Invoice</strong>.</p>
+</li>
+<li><p>In the <strong>Posting invoice</strong> dialog box, on the <strong>Parameters</strong> FastTab, in the <strong>Parameter</strong> section, in the <strong>Quantity</strong> field, select <strong>All</strong>. Then select <strong>OK</strong> to post the invoice.</p>
+</li>
+</ol>
+</li>
+<li><p>Create the DEB report:</p>
+<ol>
+<li><p>Go to <strong>Tax</strong> &gt; <strong>Declarations</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Intrastat</strong>:</p>
+</li>
+<li><p>On the Action Pane. select <strong>Transfer</strong>.</p>
+</li>
+<li><p>In the <strong>Intrastat (Transfer)</strong> dialog box, in the <strong>Parameters</strong> section, set the <strong>Customer invoice</strong> option to <strong>Yes</strong>. Then select <strong>OK</strong>.</p>
+</li>
+<li><p>Sort transactions by the <strong>Date</strong> field. The top transaction is the result transaction. The <strong>NGP</strong> field is automatically set.</p>
+</li>
+<li><p>On the Action Pane, select <strong>Output</strong> &gt; <strong>Report</strong>.</p>
+</li>
+<li><p>In the <strong>Intrastat Report</strong> dialog box, on the <strong>Parameters</strong> FastTab, in the <strong>Date</strong> section, select the month of the sales order that you created.</p>
+</li>
+<li><p>In the <strong>Export options</strong> section, set the <strong>Generate file</strong> option to <strong>Yes</strong>.</p>
+</li>
+<li><p>In the <strong>File name</strong> field, enter the required name.</p>
+</li>
+<li><p>Select <strong>OK</strong>, and review the report.</p>
+</li>
+</ol>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-intrastat.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

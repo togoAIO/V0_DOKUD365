@@ -1,0 +1,673 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Get started with Electronic invoicing | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Get started with Electronic invoicing | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../TOC.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="get-started-with-electronic-invoicing">Get started with Electronic invoicing</h1>
+
+
+<p>This topic provides information that will help you get started with Electronic invoicing. This topic guides you through the common configuration steps in Regulatory Configuration Services (RCS) and Dynamics 365 Finance, and provides the steps you must follow to submit business documents and review the processing results.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before you complete the procedures in this topic, the following prerequisites must be in place:</p>
+<ul>
+<li>Configure your Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), and your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment. For more information, see <a href="e-invoicing-get-started-service-administration.html">Get started with Electronic invoicing service administration</a>.</li>
+<li>Create a configuration provider for your organization. For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md">Create a configuration provider and mark them as active</a>.</li>
+</ul>
+<h2 id="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider">Import an Electronic invoicing feature from the Microsoft configuration provider</h2>
+<ol>
+<li>Sign in to your Regulatory Configuration Service (RCS) account.</li>
+<li>In the <strong>Globalization feature</strong> workspace, in the <strong>Features</strong> section, select the <strong>Electronic invoicing</strong> tile.</li>
+<li>Select <strong>Import</strong>, and then select <strong>Synchronize</strong>.</li>
+<li>Filter the <strong>Configuration provider</strong> column by the term <strong>Microsoft</strong>.</li>
+<li>Select the name of an Electronic invoicing feature from the table at the beginning of this topic, and then select <strong>Import</strong>.</li>
+</ol>
+<h2 id="create-an-electronic-invoicing-feature-under-your-organization-provider">Create an Electronic invoicing feature under your organization provider</h2>
+<ol>
+<li>In RCS, in the <strong>Features</strong> section of the <strong>Globalization feature</strong> workspace, select the <strong>Electronic invoicing</strong> tile.</li>
+<li>Select <strong>Add</strong> &gt; <strong>Based on existing feature</strong>, and in the <strong>Name</strong> field, enter the name of the Electronic invoicing feature.</li>
+<li>In the <strong>Description</strong> field, enter a description of the feature.</li>
+<li>In the <strong>Base feature field</strong>, select the imported Electronic invoicing feature from the Microsoft configuration provider.</li>
+<li>Select <strong>Create feature</strong>.</li>
+</ol>
+<h2 id="country-specific-configuration-for-electronic-invoicing-feature">Country-specific configuration for Electronic invoicing feature</h2>
+<p>Depending on the country or region, the Electronic invoicing feature might require specific configuration.</p>
+<p>For the specific steps, see the &quot;Get started&quot; documentation that is available for your country or region.</p>
+<h2 id="import-the-model-mapping-configurations-from-electronic-reporting">Import the model mapping configurations from Electronic reporting</h2>
+<ol>
+<li>In RCS, select the <strong>Electronic reporting</strong> workspace.</li>
+<li>From the list of <strong>Microsoft</strong> Configuration providers, select <strong>Repositories</strong>.</li>
+<li>Select <strong>Global</strong> and on Action Pane, select <strong>Open</strong>.</li>
+<li>Import the model mapping configurations according to the following table by feature name.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feature name</th>
+<th>Model mapping configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Austrian electronic invoices (AT)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>Belgian electronic invoice (BE)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>Brazilian NF-e (BR)</td>
+<td><p>Customer invoice context model</p><p>Fiscal documents</p><p>Response message model</p></td>
+</tr>
+<tr>
+<td>Brazilian NFS-e ABRASF Curitiba (BR)</td>
+<td><p>Customer invoice context model</p><p>Fiscal documents</p><p>Response message model</p></td>
+</tr>
+<tr>
+<td>Danish electronic invoice (DK)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>Egyptian electronic invoice (EG)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p><p>Response message model</p></td>
+</tr>
+<tr>
+<td>Estonian electronic invoice (EE)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>Finish electronic invoice (FI)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>French electronic invoice (FR)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>German electronic invoice (DE)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>FatturaPA (IT)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>Mexican CFDI Interfactura (MX)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p><p>Response message model</p></td>
+</tr>
+<tr>
+<td>Dutch electronic invoice (NL)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>Norwegian electronic invoice (NO)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>Spanish electronic invoice (ES)</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr>
+<td>PEPPOL electronic invoice</td>
+<td><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="configure-the-application-setup">Configure the application setup</h2>
+<ol>
+<li><p>Select the Electronic invoicing feature that you created.</p>
+</li>
+<li><p>On the <strong>Setups</strong> tab, select <strong>Application setup</strong>.</p>
+</li>
+<li><p>In the <strong>Connect application</strong> field, select the connection that is associated with your instance of Finance or Supply Chain Management.</p>
+</li>
+<li><p>In the <strong>Electronic document types</strong> section, select <strong>Add</strong>.</p>
+</li>
+<li><p>Select and enter a <strong>Table name</strong> value according to the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Feature name</th>
+<th>Business document</th>
+<th>Table name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Austrian electronic invoices (AT)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>Belgian electronic invoice (BE)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>Brazilian NF-e (BR)</td>
+<td><p>Fiscal document</p><p>Correction letter</p></td>
+<td>Fiscal document</td>
+</tr>
+<tr>
+<td>Brazilian NFS-e ABRASF Curitiba (BR)</td>
+<td>Service Fiscal document</td>
+<td>Fiscal document</td>
+</tr>
+<tr>
+<td>Danish electronic invoice (DK)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>Egyptian electronic invoice (EG)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>Estonian electronic invoice (EE)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>Finish electronic invoice (FI)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>French electronic invoice (FR)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>German electronic invoice (DE)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>FatturaPA (IT)</td>
+<td><p>Sales invoice</p><p>Project invoice</td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>Mexican CFDI Interfactura (MX)</td>
+<td><p>Sales invoice</p><p>Packing slip</p><p>Inventory transfer</p><p>Payment complement</p></td>
+<td>Customer invoice journal</td>
+</tr>
+<tr>
+<td>Dutch electronic invoice (NL)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>Norwegian electronic invoice (NO)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>Spanish electronic invoice (ES)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr>
+<td>PEPPOL electronic invoice</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>For each table name you create, select and enter a context value according to the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Feature name</th>
+<th>Business document</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Austrian electronic invoices (AT)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>Belgian electronic invoice (BE)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>Brazilian NF-e (BR)</td>
+<td><p>Fiscal document</p><p>Correction letter</p></td>
+<td><p>Customer invoice context model – Fiscal document context</p><p>Customer invoice context model – FD correction letter context</p></td>
+</tr>
+<tr>
+<td>Brazilian NFS-e ABRASF Curitiba (BR)</td>
+<td>Service Fiscal document</td>
+<td>Customer invoice context model – Fiscal document context</td>
+</tr>
+<tr>
+<td>Danish electronic invoice (DK)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>Egyptian electronic invoice (EG)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>Estonian electronic invoice (EE)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>Finish electronic invoice (FI)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>French electronic invoice (FR)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>German electronic invoice (DE)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>FatturaPA (IT)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>Mexican CFDI Interfactura (MX)</td>
+<td><p>Sales invoice</p><p>Packing slip</p><p>Inventory transfer</p><p>Payment complement</p></td>
+<td>Customer invoice context model – Customer invoice context</td>
+</tr>
+<tr>
+<td>Dutch electronic invoice (NL)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>Norwegian electronic invoice (NO)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>Spanish electronic invoice (ES)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr>
+<td>PEPPOL electronic invoice</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>For each table name and context, select and enter a business document mapping value according to the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Feature name</th>
+<th>Business document</th>
+<th>Business document mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Austrian electronic invoices (AT)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>Belgian electronic invoice (BE)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>Brazilian NF-e (BR)</td>
+<td><p>Fiscal document</p><p>Correction letter</p></td>
+<td><p>Fiscal document mapping – Fiscal document mapping</p><p>Fiscal document mapping – correction letter mapping</p></td>
+</tr>
+<tr>
+<td>Brazilian NFS-e ABRASF Curitiba (BR)</td>
+<td>Service Fiscal document</td>
+<td>Fiscal document mapping – Fiscal document mapping</td>
+</tr>
+<tr>
+<td>Danish electronic invoice (DK)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>Egyptian electronic invoice (EG)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>Estonian electronic invoice (EE)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>Finish electronic invoice (FI)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>French electronic invoice (FR)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>German electronic invoice (DE)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>FatturaPA (IT)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>Mexican CFDI Interfactura (MX)</td>
+<td><p>Sales invoice</p><p>Packing slip</p><p>Inventory transfer</p><p>Payment complement</p></td>
+<td>Invoice model mapping – Customer invoice</td>
+</tr>
+<tr>
+<td>Dutch electronic invoice (NL)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>Norwegian electronic invoice (NO)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>Spanish electronic invoice (ES)</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr>
+<td>PEPPOL electronic invoice</td>
+<td><p>Sales invoice</p><p>Project invoice</p></td>
+<td><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="country-specific-configuration-of-application-setup">Country-specific configuration of application setup</h2>
+<p>Depending on the country or region, the Application setup might require specific configuration.</p>
+<p>For the specific steps, see the &quot;Get started&quot; documentation that is available for your country or region.</p>
+<h2 id="deploy-the-electronic-invoicing-feature-to-service-environment">Deploy the Electronic invoicing feature to Service environment</h2>
+<ol>
+<li>On the <strong>Versions</strong> tab, select the version of the Electronic invoicing feature that you want to deploy.</li>
+<li>Select <strong>Change status</strong> &gt; <strong>Complete</strong>.</li>
+<li>Select <strong>Change status</strong> &gt; <strong>Publish</strong>.</li>
+<li>Select <strong>Deploy</strong>.</li>
+<li>Set the <strong>Deploy to connected application</strong> option to <strong>No</strong>.</li>
+<li>Set the <strong>Deploy to service environment</strong> option to <strong>Yes</strong>.</li>
+<li>In the <strong>Service environment</strong> field, select the Electronic invoicing service environment where you want to deploy the Electronic invoicing feature.</li>
+<li>In the <strong>From date</strong> field, select the date when the Electronic invoicing feature must become effective in Electronic invoicing.</li>
+<li>Select <strong>OK</strong>.</li>
+</ol>
+<h2 id="deploy-the-electronic-invoicing-feature-to-connected-application">Deploy the Electronic invoicing feature to Connected application</h2>
+<ol>
+<li>On the <strong>Versions</strong> tab, select a version of the Electronic invoicing feature that you want to deploy.</li>
+<li>Select <strong>Deploy</strong>.</li>
+<li>Set the <strong>Deploy to connected application</strong> option to <strong>Yes</strong>.</li>
+<li>On the <strong>Connect application</strong> field, select the connection that is associated with your instance of Finance or Supply Chain Management.</li>
+<li>Set the <strong>Deploy to service environment</strong> option to <strong>No</strong>.</li>
+<li>Select <strong>OK</strong>.</li>
+</ol>
+<h2 id="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management">Turn on the Electronic invoicing feature in Finance or Supply Chain Management</h2>
+<ol>
+<li><p>Sign in to Finance or Supply Chain Management, and verify that you're in the correct legal entity.</p>
+</li>
+<li><p>Go to <strong>Organization administration</strong> &gt; <strong>Setup</strong> &gt; <strong>Electronic document parameters</strong>.</p>
+</li>
+<li><p>On the <strong>Features</strong> tab, select the country/region-specific feature to turn on the Electronic invoicing feature for Finance or Supply Chain Management. The following table provides a list of the electronic invoicing features available for specific country/regions.</p>
+<table>
+<thead>
+<tr>
+<th>Feature name</th>
+<th>Country/region</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Austrian electronic invoices (AT)</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>Belgian electronic invoice (BE)</td>
+<td>Belgium</td>
+</tr>
+<tr>
+<td>CFDI Mexican electronic invoice (MX)</td>
+<td>Mexico</td>
+</tr>
+<tr>
+<td>Danish electronic invoice (DK)</td>
+<td>Denmark</td>
+</tr>
+<tr>
+<td>Dutch electronic invoice (NL)</td>
+<td>The Netherlands</td>
+</tr>
+<tr>
+<td>Egyptian electronic invoice (EG)</td>
+<td>Egypt</td>
+</tr>
+<tr>
+<td>Estonian electronic invoice (EE)</td>
+<td>Estonia</td>
+</tr>
+<tr>
+<td>Finnish electronic invoice (FI)</td>
+<td>Finland</td>
+</tr>
+<tr>
+<td>French electronic invoice (FR)</td>
+<td>France</td>
+</tr>
+<tr>
+<td>German electronic invoice (DE)</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>Italian electronic invoice (IT)</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>NF-e Federal - Brazilian electronic invoice (BR)</td>
+<td>Brazil</td>
+</tr>
+<tr>
+<td>NFS-e - Brazilian service (city) electronic invoice</td>
+<td>Brazil</td>
+</tr>
+<tr>
+<td>Norwegian electronic invoice (NO)</td>
+<td>Norway</td>
+</tr>
+<tr>
+<td>PEPPOL electronic invoice</td>
+<td>Global</td>
+</tr>
+<tr>
+<td>Spanish electronic invoice (ES)</td>
+<td>Spain</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Select <strong>Save</strong>.</p>
+</li>
+</ol>
+<h2 id="issue-electronic-invoices">Issue electronic invoices</h2>
+<ol>
+<li><p>Go to <strong>Organization administration</strong> &gt; <strong>Periodic</strong> &gt; <strong>Electronic documents</strong> &gt; <strong>Submit electronic documents</strong>.</p>
+</li>
+<li><p>On the <strong>Record to include</strong> FastTab, select <strong>Filter</strong>.</p>
+</li>
+<li><p>Select <strong>Add</strong> to add a table name to the query filter.</p>
+</li>
+<li><p>Select the table that contains the invoices.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The table name must be listed in the table in the <a href="#configure-the-application-setup">Configure the application setup</a> section earlier in this topic.</p>
+</div>
+</li>
+<li><p>Select the field name from the table that you want to query.</p>
+</li>
+<li><p>Enter the table name and field name for the criteria to query on.</p>
+</li>
+<li><p>Repeat steps 5 and 6 to add more fields and criteria to the query, and then select <strong>OK</strong>.</p>
+</li>
+<li><p>Select <strong>OK</strong>.</p>
+</li>
+</ol>
+<h2 id="view-submission-logs">View submission logs</h2>
+<ol>
+<li><p>Go to <strong>Organization administration</strong> &gt; <strong>Periodic</strong> &gt; <strong>Electronic documents</strong> &gt; <strong>Electronic document submission log</strong>.</p>
+</li>
+<li><p>In the <strong>Document type</strong> field, select the table that contains the invoices.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The table name must be listed in the table in the <a href="#configure-the-application-setup">Configure the application setup</a> section earlier in this topic.</p>
+</div>
+</li>
+<li><p>Select an invoice in the grid, and then select <strong>Inquire</strong> &gt; <strong>Submission details</strong>.</p>
+</li>
+</ol>
+<h2 id="related-topics">Related topics</h2>
+<ul>
+<li><a href="e-invoicing-service-overview.html">Electronic invoicing overview</a></li>
+<li><a href="e-invoicing-get-started-service-administration.html">Get started with Electronic invoicing service administration</a></li>
+<li><a href="e-invoicing-bra-get-started.html">Get started with Electronic invoicing for Brazil</a></li>
+<li><a href="e-invoicing-mex-get-started.html">Get started with Electronic invoicing for Mexico</a></li>
+<li><a href="e-invoicing-ita-get-started.html">Get started with Electronic invoicing for Italy</a></li>
+<li><a href="emea-egy-e-invoices.html">Customer electronic invoices in Egypt</a></li>
+</ul>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
