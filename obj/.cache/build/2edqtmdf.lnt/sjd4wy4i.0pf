@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Make backing tables consumable as financial dimensions | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Make backing tables consumable as financial dimensions | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="make-backing-tables-consumable-as-financial-dimensions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="30">Make backing tables consumable as financial dimensions</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="34">This topic provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="36">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="37">Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. Views cannot be used as a source of dimension values for a DimAttribute. Although this may seem to work, it will cause MR to fall back to row-by-row processing in order to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="39">The primary table that is to be used as a source of financial dimension data MUST have a unique natural key value of 30 characters or less, and that value MUST resolve to a single RECID within that table. The extended Name column can come from another source join (such as DirPartyTable or elsewhere) because it is used only for displaying additional context to the user and is not used to resolve uniqueness on natural key entry.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="41">Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="43">Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="45">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="45">Documents</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="46">Sales orders</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="47">Purchase orders</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="48">Transactions</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="49">Checks</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="50">Serials</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="51">Tickets</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="52">License numbers</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="54">These are referred to as degenerate dimensions. Tracking these values should be done outside of financial dimensions. This means that you should use customizations for the transactional records that need information, and these values should not be stored along with the financial dimension values.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="56">By following these steps, your view will automatically appear in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="56">Use values from</strong> drop-down menu on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="56">Financial dimensions</strong> page, and the values will be populated on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="56">Financial dimension values</strong> page.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="59">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="60">If your dimension is backed by the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="60">OMOperatingUnit</strong> table then many of the steps are already completed for you. Follow the steps in the &quot;<a href="#add-a-new-omoperatingunit-type-backed-entity" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="60">Add a new OMOperatingUnit type backed entity</a>&quot; section.</p>
+</div>
+<h2 id="step-1-create-a-view" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="62">Step 1: Create a view</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="64">The first step is to create a view in the same model as your backing table. Before you complete the following steps, verify that the backing table has <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="64">Create Rec Id Index = Yes</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="64">Table Properties</strong> pane. Alternatively, ensure that the table has a unique index and RECID is the first segment of that index.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="66"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="66">In your project, click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="66">Add</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="66">New Item</strong>. Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="66">View</strong> and then click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="66">Add</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="67"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="67">Right-click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="67">View</strong> and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="67">Rename</strong>. Name the view <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="67">DimAttribute</strong>[BackingTableName]. For example, DimAttributeCustTable.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="68"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="68">Expand <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="68">View Metadata</strong>, and then drag your table to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="68">Data Sources</strong> node on the view.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="69">Rename the node from <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="69">BackingTableName</strong> to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="69">BackingEntity</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="70">Identify the key, value, and name for the table that you want to use as a financial dimension. Find the fields and drag to the BackingEntity data source list, or copy and paste the fields on the data source. Rename the three fields to:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="71">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="71"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="71">Key</strong> – This is the surrogate key, typically the RecID.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="72"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="72">Value</strong> - This is the natural key, for example the AccountNum. It is a string up to 30 characters.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="73"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="73">Name</strong> – This is the description, which is typically the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="73">Name</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="73">Description</strong> field. It is a string up to 60 characters.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="74">You may need to create a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="74">Range</strong> on the view if the backing table removes data. For example, if you are using an Operating unit and only want Department, you will want to use the range for that operating unit.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="75"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="75">Right-click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="75">Indexes</strong> and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="75">New Index</strong>. Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="75">Value</strong> as the Data field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="75">Properties</strong> pane. You can rename the index if needed, however you need to set <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="75">Allow Duplicates</strong> to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="75">No</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="76"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="76">Right-click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="76">Indexes</strong> and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="76">New Index</strong>. Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="76">Name</strong> as the Data field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="76">Properties</strong> pane. You can rename the index if needed, however you need to set <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="76">Allow Duplicates</strong> to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="76">Yes</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="77"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="77">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="77">View</strong>, and in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="77">Properties</strong> pane, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="77">Singular label</strong> field to the reference label ID of your choice. This should be the label that indicates a single value, such as Customer.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="78"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="78">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="78">Label</strong> field to the reference label ID of your choice. This should be the label that indicates multiple values, such as Customers. This value will show in the drop-down list in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="78">Use Values from</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="78">Financial dimensions</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="79">Enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="79">Value</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="79">TitleField1</strong> field in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="79">Properties</strong> pane.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="80">Enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="80">Name</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="80">TitleField2</strong> field in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="80">Properties</strong> pane.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="81"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="81">Review the backing table properties and identify the config key it is using. On <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="81">View</strong>, enter the same <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="81">Configuration key</strong> as the backing table.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="83">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="84">Security access must be granted to non-admin users for the new view.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">For releases 7.2 and earlier where over-layering is used - Search for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">DimensionEssentials</strong> and add it to the Project. Expand <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">DimensionEssentials</strong>, right-click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">Permissions</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">New Permission</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">Properties</strong> pane, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">Access Level</strong> to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">Read</strong>. Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">Security Privilege</strong> and add the view under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">Permissions</strong> node with an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">Access Level</strong> of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="85">Read</strong>. You may need to extend one of these into the model that you're using.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="86">For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="86">Permissions</strong> node, and choose <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="86">New Permission</strong>. Enter the name of new DimAttribute[DimensionName] view created above in step 2 and set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="86">Access Level</strong> to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="86">Read</strong>. Search for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="86">Security Duty SysServerAXBasicMaintain</strong>. Right-click and choose <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="86">Create extension</strong>. Rename the extension as appropriate. Drag-and-drop the newly created <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="86">Security Privilege</strong> into the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="86">Privileges list</strong>.</li>
+</ul>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="88"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="88">Right-click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="88">View</strong> and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="88">View Code</strong>. Add the following code to the view. This will register it in the dimension framework. Here is an example using the view created for CustTable.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="90">[SubscribesTo(classstr(DimensionEnabledType),
+delegatestr(DimensionEnabledType,
+registerDimensionEnabledTypeIdentifiersDelegate))]
+
+public static void registerDimensionEnabledTypeIdentifier(DimensionIEnabledType _dimensionEnabledType)
+{
+   _dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="101"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="101">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="101">Microsoft Dynamics 365</strong> and click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="101">Options</strong>. Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="101">Best Practices</strong>. Select your model and then scroll until you find
+<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="102">Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker</strong>. Verify that the rule and its children are selected.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="103"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="103">Build and then synchronize the view.</p>
+</li>
+</ol>
+<h2 id="step-2-validate-that-the-view-returns-the-correct-data-in-sql" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="105">Step 2: Validate that the view returns the correct data in SQL</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="107">At this point you should be able to run the following query in SQL Server Management Studio to ensure that it's pulling the correct data. Here is an abbreviated example using the view created for CustTable.</p>
+<pre><code class="lang-sql" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="109">select * from DIMATTRIBUTECUSTTABLE
+</code></pre>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="112"> </p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="114">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="114">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="114">KEY</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="114">VALUE</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="114">DATA AREA ID</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="114">PARTITION</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="114">RECID</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="114">NAME</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="114">PARTITION #2</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="116">22565425322</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="116">US_SI_0129</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="116">ussi</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="116">5637144576</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="116">22565425322</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="116">Adventure Services</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="116">5637144576</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="117">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="117">22565424579</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="117">US_SI_0128</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="117">ussi</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="117">5637144576</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="117">22565424579</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="117">Alpine Electronics</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="117">5637144576</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-3-override-methods-on-the-backing-table" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="120">Step 3: Override methods on the backing table</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="122">To integrate with the dimensions framework when deleting or renaming the natural key of the backing table, you must write custom code on the backing table's delete method, and on either the update or renamePrimaryKey method. If your table blocks updates of the natural key, you will need to use the renamePrimaryKey override. If it does not, then you can put the code in the update method. Here is an example from CustTable.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="124">public void delete()
+{
+    if (!DimensionValidation::canDeleteEntityValue(this))
+    {
+        throw error(strFmt(&quot;@SYS134392&quot;, this.AccountNum));
+    }
+      
+    ttsbegin;
+    DimensionAttributeValue::updateForEntityValueDelete(this);
+    ttscommit;
+}
+   
+public void update()
+{
+    Common originalRecord = this.orig();
+    super();
+    DimensionValueRename::syncRenamedValue(this, originalRecord);
+}
+   
+public void renamePrimaryKey()
+{
+    Common originalRecord = this.orig();
+    super();
+    DimensionValueRename::syncRenamedValue(this, originalRecord);
+}
+</code></pre>
+<h2 id="step-4-clear-caches-to-force-detection-of-the-new-view" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="152">Step 4: Clear caches to force detection of the new view</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="154">Because the list of entities that can be consumed as a dimension are cached on the server, the creation of a new entity will not appear in the list of existing entities until a call to clear the caches is performed, or until both the client and the server are restarted. To clear the caches and have the new view appear immediately, you must execute the following line of code within a runnable class.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="156">DimensionCache::clearAllScopes();
+</code></pre>
+<h2 id="step-5-verify-that-the-dimension-appears-in-the-use-value-from-lookup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="160">Step 5: Verify that the dimension appears in the Use Value From lookup</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="162">Now that you have completed the steps, navigate to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="162">Financial dimensions</strong> page in the General ledger. Click the drop-down menu on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="162">Use Values from</strong> field and verify that your value is available.</p>
+<h2 id="add-a-new-omoperatingunit-type-backed-entity" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="165">Add a new OMOperatingUnit type backed entity</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="167">If a new Organization Model OMOperatingUnitType enumeration is added, the steps to make it consumable as a dimension are similar but can be made shorter as follows:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="169">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="169">Copy one of the existing DimAttributeOM[BackingTableName] views, rename it appropriately, and then adjust all associated labels and help text.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="170">Expand the Datasource\BackingEntity (OMOperatingUnit)\Ranges node on the copied view. Change the value property on the range to the new OMOperatingUnitType enumeration value that was just added.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="171">Build and synchronize the project.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="172">Follow the steps in this topic starting with Step 2, where you validate the data in SQL, and then continue through Step 5, where you validate that the dimension appears in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="172">Use Value From</strong> lookup.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="174">Because the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="174">OMOperatingUnitType</strong> is backed by the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="174">OMOperatingUnit</strong> table, generic code already exists to handle the delete, update, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="174">renamePrimaryKey</strong> methods. Therefore, you do not need to update these methods.</p>
+<h2 id="step-6-setting-a-dimension-to-be-self-referenced" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="176">Step 6: Setting a dimension to be self-referenced</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="178">If you also want to create an data entity for your new entity, and that entity has a reference to default dimensions, add this code to the persistEntity() method.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="180">if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+{
+    this.&lt;Your entity ‘private’ RecId Dimension field&gt; = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(&lt;Your backing table&gt;), this.&lt;Your entity Key field&gt;, this.&lt;Your entity ‘public’ DisplayValue field&gt;);
+}
+</code></pre>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="186"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="186">Example</strong></p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="188">public void persistEntity(DataEntityRuntimeContext _entityCtx)
+{
+    if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+    {
+        this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
+    }
+
+    super(_entityCtx);
+}
+</code></pre>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="200">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md" sourcestartlinenumber="201">This ensures that if you also want the dimension to use itself as a default dimension value, the information is created in the correct sequence.</p>
+</div>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

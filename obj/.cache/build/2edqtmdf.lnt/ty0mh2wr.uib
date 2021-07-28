@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tax configuration errors | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tax configuration errors | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tax-configuration-errors" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="29">Tax configuration errors</h1>
+
+[!include[banner](../includes/banner.md)]<h2 id="rcm-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="33">RCM transactions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="35">Reverse charge mechanism (RCM) transactions are posted for a vendor that is marked as a goods transport agency (GTA). Additionally, the transactions are marked to indicate that the reverse charge percentage was updated to 100 percent in the tax document. However, the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="35">Is reverse charge applicable</strong> field isn't updated to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="35">Yes</strong> on the GSTR 2 report.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="37">To fix this issue, when you create a new posting type for a tax payable in a tax configuration, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="37">Tax</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="37">Tax accounting provider</strong> field and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="37">Tax payable</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="37">Tax Posting Type</strong> field.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="39"><a href="media/tax-configuration-errors-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="39"><img src="media/tax-configuration-errors-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="39" alt="Tax accounting provider and Tax posting type fields in the Posting type dialog box."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="41">For more information, see <a href="https://fix.lcs.dynamics.com/Issue/Details?bugId=515068&amp;dbType=3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="41">RCM transaction for GTA vendor does not show as &quot;Y&quot; in RCM column in GSTR2 report</a>.</p>
+<h2 id="model-mapping-error-when-cgst_tds-is-configured" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="43">Model mapping error when CGST_TDS is configured</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="45">When you're configuring <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="45">CGST_TDS</strong>, a model mapping error might occur. The error message states that no model mapping exists for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="45">TDS TCS Registration Number</strong> data model. To fix this issue, see <a href="https://fix.lcs.dynamics.com/Issue/Details?bugId=527080&amp;dbType=3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="45">While configuring CGST_TDS facing model mapping error</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="47"><a href="media/tax-configuration-errors-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="47"><img src="media/tax-configuration-errors-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="47" alt="Model mapping error message."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="49">If you receive similar error messages, in the form &quot;No model mapping exists for the 'xxx' data model,&quot; follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="51">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="51">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="51">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="51">Electronic reporting</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="51">Tax configurations</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="52">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="52">Taxable Document</strong>, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="52">Taxable Document (India)</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="52">Designer</strong> to open the designer for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="52">Taxable Document (India)</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="53"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="53">Go to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="53">Taxable Document</strong> node, expand <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="53">Header</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="53">Lines</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="53">Tax Identification Number</strong>, and verify that the reference model is selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="53">Natural key</strong> field.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="55"><a href="media/tax-configuration-errors-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="55"><img src="media/tax-configuration-errors-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="55" alt="Natural key field for Tax Identification Number on the Taxable Document (India) page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="57">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="57">Map model to datasource</strong>, and verify that the model mapping for the reference model exists.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="59"><a href="media/tax-configuration-errors-Picture4.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="59"><img src="media/tax-configuration-errors-Picture4.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="59" alt="Map model to datasource button on the Taxable Document (India) page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="61"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="61">Define a model mapping for the tax identification number that refers to the model mapping of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="61">GST registration number</strong>. For more information, see <a href="../general-ledger/extend-tax-engine-configurations.html#complete-data-mapping-for-the-extended-taxable-document" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="61">Extend tax engine configurations</a>.</p>
+</li>
+</ol>
+<h2 id="error-when-gst-is-calculated" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="63">Error when GST is calculated</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="65">When you use division in a formula, pay close attention when the divisor is 0 (zero), because this value might cause an error when Goods and Services Tax (GST) is calculated. The error message is in the following form: &quot;Attempted to divide by zero. Please check the formula of mapping field 'xxx' for taxable document mapping 'xxx' in active taxable document, it encounters an unhandled exception.&quot;</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="67">In the following procedure, the formula <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="67">Net price = @.'Net Amount'/@.Quantity</strong> that is defined on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="67">PurchParmTable</strong> model mapping is used as an example.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="69">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="69">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="69">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="69">Electronic reporting</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="69">Tax configurations</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="70">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="70">Taxable Document</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="70">Taxable Document (India)</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="70">Designer</strong> to open the designer for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="70">Taxable Document (India)</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="71"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="71">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="71">Map model to datasource</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="73"><a href="media/tax-configuration-errors-Picture5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="73"><img src="media/tax-configuration-errors-Picture5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="73" alt="Map model to datasource button."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="75"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="75">Find and select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="75">Bundler.PurchOrderParm</strong> model mapping, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="75">Designer</strong> to open the model mapping designer.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="76"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="76">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="76">Data model</strong> section, expand <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="76">Header</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="76">Lines</strong>, and find <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="76">Net price</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="78"><a href="media/tax-configuration-errors-Picture6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="78"><img src="media/tax-configuration-errors-Picture6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="78" alt="Net price field in the Data model section of the Model mapping designer page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="80">Notice that the formula for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="80">Net price</strong> field is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="80">@.'Net Amount'/@.Quantity</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="81"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="81">Contact the business department, and confirm that a quantity of 0 (zero) is allowed. If it isn't allowed, correct the transaction, and then perform the operation again. If it's allowed, change the formula to a format such as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md" sourcestartlinenumber="81">IF(@.Quantity = 0, @.'Net Amount', @.'Net Amount'/@.Quantity)</strong>.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

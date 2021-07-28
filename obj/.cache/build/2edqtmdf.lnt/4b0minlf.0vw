@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Create a direct debit mandate for a customer | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Create a direct debit mandate for a customer | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="create-a-direct-debit-mandate-for-a-customer" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="26">Create a direct debit mandate for a customer</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="30">This task guide demonstrates how to create a direct debit mandate and use it on an invoice.</p>
+<h2 id="create-a-bank-account" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="33">Create a bank account</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="34">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="34">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="34">Navigation pane</strong>, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="34">Modules &gt; Accounts receivable &gt; Customers &gt; All customers</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="35">In the list, select a record. For example, select US-001</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="36">On the Action Pane, click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="36">Customer</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="37">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="37">Bank accounts</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="38">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="38">New</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="39">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="39">Bank account</strong> field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="40">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="40">Name</strong> field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="41">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="41">IBAN</strong> field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="42">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="42">Currency</strong> field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="43">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="43">Save</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="44">Close the page.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="45">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="45">Navigation pane</strong>, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="45">Modules &gt; Cash and bank management &gt; Bank accounts &gt; Bank accounts</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="46">In the list, find and select the desired record.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="47">In the list, click the link in the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="48">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="48">Edit</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="49">Expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="49">Additional identification</strong> fastTab.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="50">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="50">Direct debit ID</strong> field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="51">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="51">IBAN</strong> field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="52">Close the page.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="53">Close the page.</li>
+</ol>
+<h2 id="define-the-electronic-payment-method" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="55">Define the electronic payment method</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="56">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="56">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="56">Navigation pane</strong>, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="56">Modules &gt; Accounts receivable &gt; Payments setup &gt; Methods of payment</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="57">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="57">New</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="58">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="58">Method of payment</strong> field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="59">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="59">Description</strong> field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="60">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="60">Payment type</strong> field, enter 'Electronic payment'. The payment type for a direct debit mandate method of payment must be Electronic payment.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="61">Select Yes in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="61">Require mandate</strong> field.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="62">Close the page.</li>
+</ol>
+<h2 id="add-a-direct-debit-mandate-to-a-customer" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="64">Add a direct debit mandate to a customer.</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="65">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="65">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="65">Navigation pane</strong>, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="65">Modules &gt; Accounts receivable &gt; Customers &gt; All customers</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="66">In the list, select a record. For example, select US-001</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="67">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="67">Edit</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="68">Expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="68">Payment defaults</strong> fastTab.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="69">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="69">Method of payment</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="70">Expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="70">Payment defaults</strong> fastTab.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="71">Expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="71">Direct debit mandates</strong> fastTab.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="72">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="72">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="73">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="73">Bank account</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="74">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="74">Creditor bank account</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="75">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="75">Payment frequency</strong> field, enter the number of payments that you expect to process for this mandate.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="76">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="76">OK</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="77">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="77">Print</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="78">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="78">Mandate report</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="79">Close the page.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="80">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="80">Edit</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="81">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="81">Signature date</strong> field, enter a date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="82">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="82">Yes</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="83">Enter the location where the mandate was signed.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="84">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="84">OK</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="85">Close the page.</li>
+</ol>
+<h2 id="create-a-free-text-invoice-with-mandate" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="87">Create a free text invoice with mandate</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="88">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="88">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="88">Navigation pane</strong>, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="88">Modules &gt; Accounts receivable &gt; Invoices &gt; All free text invoices</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="89">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="89">New</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="90">Select the customer that you added the mandate to.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="91">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md" sourcestartlinenumber="91">Direct debit mandate ID</strong> field, enter or select a value.</li>
+</ol>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/create-direct-debit-mandate-customer.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

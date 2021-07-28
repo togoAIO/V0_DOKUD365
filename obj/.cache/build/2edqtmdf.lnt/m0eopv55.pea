@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>VAT declaration for Egypt | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="VAT declaration for Egypt | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="vat-declaration-for-egypt-eg-00002" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="28">VAT declaration for Egypt (EG-00002)</h1>
+
+[!include[banner](../includes/banner.md)][!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="34">This topic explains how to set up and generate the VAT return form and sales and purchase books for legal entities in Egypt.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="36">The VAT return form for Egypt is the official document that summarizes the total output VAT tax amount due, the total input VAT tax amount recoverable, and the related VAT tax amount liability. The form is used for all types of taxpayers and should be completed manually through the tax authority portal. The VAT return form is commonly referred to as VAT return filing.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="38">The VAT return form in Dynamics 365 Finance includes the following reports:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="40">VAT return form number 10, which provides a breakdown of amounts, adjustments, and VAT amount per line item in the VAT return form as described in the legislation.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="41">Sales transactions book</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="42">Purchase transactions book</li>
+</ul>
+<h2 id="prerequisites" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="44">Prerequisites</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="45">The primary address of the legal entity must be in Egypt.
+In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="46">Feature management</strong> workspace, enable the following feature:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="48">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="48">(Egypt) Category hierarchy for Sales and purchase tax report.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="50">For more information about how to enable features, see <a href="../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="50">Feature management overview</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="52">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="52">Electronic reporting</strong> workspace, import the following Electronic reporting format from the repository:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="54">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="54">VAT declaration Excel (EG)</li>
+</ul>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="56">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="57">The format above is based on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="57">Tax declaration model</strong> and uses the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="57">Tax declaration model mapping</strong>. Additional configurations will be automatically imported.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="59">For more information about how to import Electronic reporting configurations, see <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="59">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+<h2 id="download-electronic-reporting-configurations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="61">Download Electronic reporting configurations</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="63">The implementation of the VAT return form for Egypt is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="63">Electronic reporting</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="65">For production and user acceptance testing (UAT) environments, see <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="65">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="67">To generate the VAT return form and related reports in an Egypt legal entity, upload the following configurations:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="69">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="69">Tax declaration model.version.70.xml or later version</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="70">Tax declaration model mapping.version.70.120.xml or a later version</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="71">VAT Declaration Excel (EG).version.70.32  or a later version</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="73">After you download the ER configurations from Lifecycle Services (LCS) or the global repository, complete the following steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="75">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="75">Go to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="75">Electronic reporting</strong> workspace and select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="75">Reporting configurations</strong> tile.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="76">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="76">Configurations</strong> page, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="76">Exchange</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="76">Load from XML file</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="77">Upload the files in the order in which they are listed above. After all the configurations are uploaded, the configuration tree should be present in Finance.</li>
+</ol>
+<h2 id="set-up-application-specific-parameters" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="79">Set up application-specific parameters</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="81">The application-specific parameters let you establish the criteria of how tax transactions will be classified and calculated in each line when the report is generated. The determination is based on the configuration of the item sales tax group, sales tax group, sales tax code, and other criteria established in the lookup definition.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="83">The sales and purchase book reports for Egypt include a set of columns that correspond to specific transaction classifications as types of operations, products, and documents that are specific for Egypt. Instead of including these new classifications as new entry data when the transactions are posted, the classifications will be determined based on different lookups introduced in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="83">Configurations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="83">Set up application-specific parameters</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="83">Setup</strong> to meet the requirements of VAT reports for Egypt.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="85"><img src="media/egypt-vat-declaration-setup1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="85" alt="Application specific parameters page."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="87">These following lookup configurations are used to classify the transactions in purchase and sales VAT books reports:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="89">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="89"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="89">PurchaseItemTypeLookup</strong> &gt; Column O: Item type</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="90"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="90">VATRateTypeLookup</strong> &gt; Column B: Tax Type</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="91"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="91">VATRateTypeLookup</strong> &gt; Column C: Table item type</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="92"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="92">PurchaseOperationTypeLookup</strong> &gt; Column A: Document type</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="93"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="93">CustomerTypeLookup</strong> &gt; Column A: Document type</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="94"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="94">SalesOperationTypeLookup</strong> &gt; Column N: Operation type</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="95"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="95">SalesItemTypeLookup</strong> &gt; Column O: Item type</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="97">Complete the following steps to set up the different lookups used to generate VAT declaration and related books reports.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="99">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="99">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="99">Electronic reporting</strong> workspace, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="99">Configurations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="99">Setup</strong> to set up the rules to identify the tax transaction in the related box of the VAT return form.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="100">Select the current version, and on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="100">Lookups</strong> FastTab, select the lookup name. For example, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="100">SalesItemTypeLookup</strong>. This lookup identifies the list of classifications in the Sales VAT book that are required by the tax authority.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="101">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="101">Conditions</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="101">Add</strong> and in the new line in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="101">Lookup result</strong> column, select the related line that represents the classification in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="101">Column O</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="102">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="102">Sales tax group</strong> column, select the sales tax group that is used to identify the classification. For example, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="102">Domestic sales invoice</strong>. You can also use item sales tax group, tax code, or the combination of tree attributes if the configuration is defined in another way.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="103">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="103">Name</strong> column, select the tax transaction classification.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="104">Repeat steps 3-5 for all available lookups.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="105">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="105">Add</strong> to include the final record line, and in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="105">Lookup result</strong> column, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="105">Not applicable</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="106">In the remainder columns, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="106">Not blank</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="107">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="107">State</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="107">Completed</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="108">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="108">Save</strong>, and then close the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="108">Application specific parameters</strong> page.</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="110">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="111">When you add the last record, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="111">Not applicable</strong>, you define the following rule: When the sales tax group, item sales tax group, tax code, and name that's passed as an argument doesn't satisfy any of the previous rules, the transactions aren't included in the sales VAT book. Although this rule isn't used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="113">The following tables represent an example of suggested configuration for the described lookup configurations.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="115"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="115">SalesItemTypeLookup</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="117">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="117">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="117">Lookup result</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="117">Line</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="117">Sales tax group</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="117">Item sales tax group</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="117">Tax code (Code)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="117">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="119">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="119">Domestic</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="119">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="119">VAT_LOCAL</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="119"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="119">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="119"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="119">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="119">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="120">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="120">Domestic</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="120">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="120">VAT_LOCAL</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="120"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="120">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="120"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="120">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="120">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="121">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="121">Domestic</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="121">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="121">VAT_FINALC</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="121"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="121">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="121"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="121">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="121">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="122">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="122">Domestic</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="122">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="122">VAT_FINALC</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="122"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="122">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="122"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="122">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="122">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="123">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="123">Domestic</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="123">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="123">VAT_PUBLIO</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="123"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="123">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="123"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="123">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="123">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="124">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="124">Domestic</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="124">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="124">VAT_PUBLIO</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="124"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="124">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="124"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="124">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="124">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="125">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="125">Export</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="125">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="125">VAT_EXPORT</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="125"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="125">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="125"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="125">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="125">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="126">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="126">Export</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="126">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="126">VAT_EXPORT</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="126"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="126">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="126"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="126">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="126">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="127">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="127">Machine and equipment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="127">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="127"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="127">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="127">VAT_M&amp;E</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="127"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="127">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="127">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="128">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="128">Machine and equipment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="128">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="128"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="128">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="128">VAT_M&amp;E</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="128"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="128">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="128">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="129">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="129">Parts machines</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="129">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="129"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="129">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="129">VAT_PARTS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="129"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="129">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="129">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="130">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="130">Parts machines</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="130">12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="130"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="130">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="130">VAT_PARTS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="130"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="130">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="130">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="131">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="131">Exemptions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="131">13</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="131">VAT_EXE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="131"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="131">Not   blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="131"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="131">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="131">SaleExempt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="132">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="132">Exemptions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="132">14</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="132">VAT_EXE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="132"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="132">Not   blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="132"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="132">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="132">SalesExemptCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="133">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="133">Not applicable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="133">15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="133"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="133">Blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="133"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="133">Blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="133">VAT_ADJ</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="133"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="133">Not blank</em></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134">Not applicable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134">16</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="134">Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="136"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="136">SalesOperationTypeLookup</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="138">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="138">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="138">Lookup result</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="138">Line</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="138">Item sales tax group</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="138">Tax code</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="138">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="140">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="140">Goods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="140">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="140">VAT_GOODS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="140"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="140">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="140">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="141">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="141">Goods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="141">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="141">VAT_GOODS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="141"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="141">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="141">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="142">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="142">Goods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="142">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="142">VAT_GOODS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="142"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="142">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="142">SaleExempt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="143">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="143">Goods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="143">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="143">VAT_GOODS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="143"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="143">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="143">SalesExemptCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="144">Services</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="144">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="144">VAT_SERV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="144"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="144">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="144">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="145">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="145">Services</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="145">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="145">VAT_SERV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="145"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="145">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="145">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="146">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="146">Services</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="146">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="146">VAT_SERV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="146"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="146">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="146">SaleExempt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="147">Services</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="147">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="147">VAT_SERV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="147"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="147">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="147">SalesExemptCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="148">Adjustments</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="148">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="148"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="148">Blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="148">VAT_ADJ</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="148">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="149">Adjustments</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="149">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="149"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="149">Blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="149">VAT_ADJ</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="149">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="150">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="150">Not applicable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="150">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="150"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="150">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="150"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="150">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="150"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="150">Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="152"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="152">PurchaseItemTypeLookup</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="154">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="154">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="154">Lookup result</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="154">Line</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="154">Item sales tax group</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="154">Tax code</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="154">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="156">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="156">Goods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="156">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="156">VAT_GOODS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="156"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="156">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="156">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="157">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="157">Goods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="157">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="157">VAT_GOODS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="157"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="157">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="157">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="158">Services</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="158">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="158">VAT_SERV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="158"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="158">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="158">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="159">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="159">Services</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="159">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="159">VAT_SERV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="159"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="159">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="159">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="160">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="160">Machine and equipment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="160">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="160">VAT_M&amp;E</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="160"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="160">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="160">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="161">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="161">Machine and equipment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="161">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="161">VAT_M&amp;E</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="161"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="161">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="161">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="162">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="162">Parts machines</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="162">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="162">VAT_PARTS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="162"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="162">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="162">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="163">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="163">Parts machines</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="163">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="163">VAT_PARTS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="163"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="163">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="163">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="164">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="164">Exemptions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="164">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="164">VAT_EXE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="164"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="164">Not bank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="164">PurchaseExempt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="165">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="165">Exemptions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="165">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="165">VAT_EXE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="165"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="165">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="165">PurchaseExemptCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="166">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="166">Not applicable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="166">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="166"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="166">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="166"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="166">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="166"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="166">Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="168"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="168">PurchaseOperationTypeLookup</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="170">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="170">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="170">Lookup result</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="170">Line</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="170">Sales tax group</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="170">Tax code</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="170">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="172">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="172">Domestic</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="172">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="172">VAT_LOCAL</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="172"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="172">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="172">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="173">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="173">Domestic</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="173">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="173">VAT_LOCAL</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="173"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="173">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="173">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="174">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="174">Domestic</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="174">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="174">VAT_LOCAL</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="174"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="174">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="174">PurchaseExempt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="175">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="175">Domestic</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="175">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="175">VAT_LOCAL</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="175"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="175">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="175">PurchaseExemptCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="176">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="176">Imported</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="176">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="176">VAT_IMPORT</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="176"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="176">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="176">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="177">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="177">Imported</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="177">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="177">VAT_IMPORT</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="177"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="177">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="177">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="178">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="178">Imported</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="178">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="178">VAT_IMPORT</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="178"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="178">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="178">PurchaseExempt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="179">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="179">Imported</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="179">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="179">VAT_IMPORT</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="179"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="179">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="179">PurchaseExemptCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="180">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="180">Adjustments</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="180">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="180"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="180">Blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="180">VAT_ADJ</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="180">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="181">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="181">Adjustments</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="181">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="181"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="181">Blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="181">VAT_ADJ</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="181">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="182">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="182">Not applicable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="182">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="182"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="182">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="182"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="182">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="182"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="182">Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="184"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="184">CustomerTypeLookup</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="186">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="186">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="186">Lookup result</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="186">Line</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="186">Sales tax group</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="188">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="188">Organization</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="188">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="188">VAT_LOCAL</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="189">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="189">Organization</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="189">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="189">VAT_EXPORT</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="190">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="190">Organization</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="190">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="190">VAT_EXE</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="191">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="191">Final consumer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="191">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="191">VAT_FINALC</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="192">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="192">Public Organization</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="192">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="192">VAT_PUBLIO</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="193">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="193">Not Applicable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="193">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="193"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="193">Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="195"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="195">VATRateTypeLookup</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="197">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="197">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="197">Lookup result</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="197">Line</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="197">Tax code (Code)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="199">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="199">GeneralGoods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="199">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="199">VAT_ST</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="200">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="200">GeneralGoods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="200">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="200">VAT_RD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="201">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="201">FirstTable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="201">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="201"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="201">Not blank</em></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="202">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="202">SecondTable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="202">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="202"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="202">Not blank</em></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="203">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="203">Not applicable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="203">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="203"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="203">Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="set-up-general-ledger-parameters" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="206">Set up General ledger parameters</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="208">To generate the VAT return form report in Microsoft Excel format, define an ER format on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="208">General ledger parameters</strong> page.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="210">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="210">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="210">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="210">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="210">General ledger parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="211">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="211">Sales tax</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="211">Tax options</strong> section, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="211">VAT statement format mapping</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="211">VAT Declaration Excel (EG)</strong>. If you leave the field blank, the standard sales tax report will be generated in SSRS format.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="212">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="212">Category hierarchy</strong>. This category enables the commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports. This configuration is optional.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="214"><img src="media/egypt-vat-declaration-setup2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="214" alt="Declaration form."></p>
+<h2 id="generate-a-vat-return-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="217">Generate a VAT return report</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="218">The process to prepare and submit a VAT return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see <a href="../general-ledger/indirect-taxes-overview.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="218">Sales tax overview</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="220">Complete the following steps to generate the tax declaration report.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="222">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="222">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="222">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="222">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="222">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="222">Report sales tax for settlement period</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="222">Settle and post sales tax</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="223">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="223">Settlement period</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="224">Select the from date and then select the sales tax payment version.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="225">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="225">OK</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="226">Enter the amount of credit from the previous period, if applicable, or leave the amount as zero.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="227">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="227">Reports details</strong> field, select one of the following available options.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="228">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="228"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="228">Purchase VAT book</strong>: Generate the purchase tax transactions details report.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="229"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="229">Sales VAT book</strong>: Generate the sales tax transactions details report.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="230"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="230">VAT declaration</strong>: Generate only the VAT declaration return form.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="231">Enter the name of person who is registered to assign the form.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="232">Select the language. All reports are translated in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="232">en-us</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md" sourcestartlinenumber="232">ar-eg</strong>.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-egy-vat-declaration.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

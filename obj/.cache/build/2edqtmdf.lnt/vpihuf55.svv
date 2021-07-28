@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Set up fixed asset posting profiles | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Set up fixed asset posting profiles | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="set-up-fixed-asset-posting-profiles" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="26">Set up fixed asset posting profiles</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="30">This task guide will set up Fixed asset posting profiles.  It uses the Accountant role and demo data for the USMF legal entity.  Examples given in the task guide are for a basic posting profile, though posting profiles must be created for your specific chart of accounts and financial reporting requirements.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="32">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="32">In the Navigation pane, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="32">Modules &gt; Fixed assets &gt; Setup &gt; Fixed asset posting profiles</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="33">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="33">New</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="34">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="34">Posting profile</strong> field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="35">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="35">Description</strong> field, type a value. You will need to create a posting profile for each fixed asset transaction type you will be using when working with fixed assets. This task guide will start with the Acquisition transaction type.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="36">In the toolbar, click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="36">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="37">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="37">Book</strong> field, enter or select a value. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="37">Groupings</strong> field allows you to define the posting profile down to the Table (one account set up for each fixed asset) or Group (one account set up for each fixed asset group). For this task guide, leave the value set to &quot;All&quot; to apply to all fixed assets with the specified Book.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="38">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="38">Main account</strong> field, specify the desired values. For acquisitions, you can enter an offset account or leave it blank to be filled in for the specific transaction.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="39">In the drop-down menu under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="39">Ledger accounts</strong> fastTab, select 'Acquisition adjustment'. For acquisition adjustment transactions, we will use the same accounts as used for Acquisition transactions.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="40">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="40">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="41">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="41">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="42">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="42">Main account</strong> field, specify the desired values. For acquisition adjustments, you can enter an offset account or leave it blank to be filled in for the specific transaction.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="43">In the drop-down menu under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="43">Ledger accounts</strong> fastTab, select 'Depreciation'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="44">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="44">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="45">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="45">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="46">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="46">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="47">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="47">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="48">In the drop-down menu under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="48">Ledger accounts</strong> fastTab, select 'Depreciation adjustment'. For depreciation adjustment transactions, we will use the same accounts as used for Depreciation transactions.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="49">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="49">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="50">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="50">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="51">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="51">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="52">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="52">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="53">In the drop-down menu under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="53">Ledger accounts</strong> fastTab, select 'Disposal - sale'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="54">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="54">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="55">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="55">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="56">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="56">Main account</strong> field, specify the desired values. For disposals, you can enter an offset account or leave it blank to be filled in for the specific transaction.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="57">In the drop-down menu under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="57">Ledger accounts</strong> fastTab, select 'Disposal - scrap'. Use the same accounts for 'Disposal sale' and 'Disposal scrap'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="58">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="58">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="59">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="59">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="60">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="60">Main account</strong> field, specify the desired values. For disposals, you can enter an offset account or leave it blank to be filled in for the specific transaction.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="61">Expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="61">Disposal</strong> fastTab. You must set up disposal posting profiles for both sale and scrap.  We will start with disposal sale transactions.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="62">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="62">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="63">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="63">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="64">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="64">Post value</strong> field, select 'Acquisition value'.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="65">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="65">Acquisition value will address Acquisition and Acquisition adjustment values for all years. You can also define accounts for these transaction types separately.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="66">You can set the disposal process to use different accounts depending upon if the disposal results in a gain or loss. I will set the Sales value type to &quot;All&quot; to use the same accounts for all types of disposals.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="67">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="67">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="68">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="68">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="69">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="69">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="70">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="70">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="71">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="71">Post value</strong> field, select 'Depreciation (prior years)'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="72">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="72">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="73">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="73">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="74">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="74">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="75">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="75">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="76">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="76">Post value</strong> field, select 'Depreciation (this year)'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="77">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="77">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="78">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="78">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="79">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="79">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="80">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="80">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="81">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="81">Post value</strong> field, select 'Depreciation adjustments (prior years)'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="82">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="82">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="83">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="83">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="84">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="84">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="85">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="85">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="86">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="86">Post value</strong> field, select 'Depreciation adjustments (this year)'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="87">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="87">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="88">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="88">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="89">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="89">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="90">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="90">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="91">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="91">Post value</strong> field, select 'Net book value'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="92">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="92">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="93">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="93">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="94">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="94">Sale or scrap</strong> field, select 'Scrap'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="95">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="95">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="96">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="96">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="97">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="97">Post value</strong> field, select 'Acquisition value'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="98">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="98">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="99">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="99">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="100">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="100">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="101">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="101">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="102">In <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="102">Post value</strong> field, select 'Depreciation (prior years)'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="103">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="103">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="104">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="104">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="105">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="105">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="106">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="106">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="107">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="107">Post value</strong> field, select 'Depreciation (this year)'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="108">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="108">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="109">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="109">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="110">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="110">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="111">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="111">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="112">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="112">Post value</strong> field, select 'Depreciation adjustments (prior years)'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="113">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="113">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="114">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="114">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="115">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="115">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="116">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="116">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="117">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="117">Post value</strong> field, select 'Depreciation adjustments (this year)'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="118">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="118">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="119">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="119">Offset account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="120">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="120">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="121">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="121">Book</strong> field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="122">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="122">Post value</strong> field, select 'Net book value'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="123">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="123">Main account</strong> field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="124">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md" sourcestartlinenumber="124">Offset account</strong> field, specify the desired values.</li>
+</ol>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

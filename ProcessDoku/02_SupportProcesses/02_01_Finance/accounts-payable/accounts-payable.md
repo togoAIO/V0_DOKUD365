@@ -123,32 +123,5 @@ The following topics provide information about settlements. Settlement is the pr
 
 
 
-### Additional resources
-
-#### What's new and in development
-
-Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features are planned. 
-
-#### Blogs
-
-You can find opinions, news, and other information about Accounts payable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)and the [Microsoft Dynamics 365 Finance - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).
-
-The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.
-
-#### Community blogs
-
-[How to manage payables in Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
-
-#### Task guides
-Additional help is available as task guides inside the application. To access task guides, click the Help button on any page.
-
-#### Videos
-
-Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

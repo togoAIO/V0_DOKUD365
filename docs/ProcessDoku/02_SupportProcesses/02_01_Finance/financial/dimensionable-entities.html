@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Make backing tables consumable as financial dimensions | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Make backing tables consumable as financial dimensions | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="make-backing-tables-consumable-as-financial-dimensions">Make backing tables consumable as financial dimensions</h1>
+
+[!include[banner](../includes/banner.md)]
+<p>This topic provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. Views cannot be used as a source of dimension values for a DimAttribute. Although this may seem to work, it will cause MR to fall back to row-by-row processing in order to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports.</p>
+<p>The primary table that is to be used as a source of financial dimension data MUST have a unique natural key value of 30 characters or less, and that value MUST resolve to a single RECID within that table. The extended Name column can come from another source join (such as DirPartyTable or elsewhere) because it is used only for displaying additional context to the user and is not used to resolve uniqueness on natural key entry.</p>
+</div>
+<p>Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.</p>
+<p>Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:</p>
+<ul>
+<li>Documents</li>
+<li>Sales orders</li>
+<li>Purchase orders</li>
+<li>Transactions</li>
+<li>Checks</li>
+<li>Serials</li>
+<li>Tickets</li>
+<li>License numbers</li>
+</ul>
+<p>These are referred to as degenerate dimensions. Tracking these values should be done outside of financial dimensions. This means that you should use customizations for the transactional records that need information, and these values should not be stored along with the financial dimension values.</p>
+<p>By following these steps, your view will automatically appear in the <strong>Use values from</strong> drop-down menu on the <strong>Financial dimensions</strong> page, and the values will be populated on the <strong>Financial dimension values</strong> page.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If your dimension is backed by the <strong>OMOperatingUnit</strong> table then many of the steps are already completed for you. Follow the steps in the &quot;<a href="#add-a-new-omoperatingunit-type-backed-entity">Add a new OMOperatingUnit type backed entity</a>&quot; section.</p>
+</div>
+<h2 id="step-1-create-a-view">Step 1: Create a view</h2>
+<p>The first step is to create a view in the same model as your backing table. Before you complete the following steps, verify that the backing table has <strong>Create Rec Id Index = Yes</strong> in the <strong>Table Properties</strong> pane. Alternatively, ensure that the table has a unique index and RECID is the first segment of that index.</p>
+<ol>
+<li><p>In your project, click <strong>Add</strong> &gt; <strong>New Item</strong>. Select <strong>View</strong> and then click <strong>Add</strong>.</p>
+</li>
+<li><p>Right-click <strong>View</strong> and select <strong>Rename</strong>. Name the view <strong>DimAttribute</strong>[BackingTableName]. For example, DimAttributeCustTable.</p>
+</li>
+<li><p>Expand <strong>View Metadata</strong>, and then drag your table to the <strong>Data Sources</strong> node on the view.</p>
+</li>
+<li><p>Rename the node from <strong>BackingTableName</strong> to <strong>BackingEntity</strong>.</p>
+</li>
+<li><p>Identify the key, value, and name for the table that you want to use as a financial dimension. Find the fields and drag to the BackingEntity data source list, or copy and paste the fields on the data source. Rename the three fields to:</p>
+<ul>
+<li><strong>Key</strong> – This is the surrogate key, typically the RecID.</li>
+<li><strong>Value</strong> - This is the natural key, for example the AccountNum. It is a string up to 30 characters.</li>
+<li><strong>Name</strong> – This is the description, which is typically the <strong>Name</strong> or <strong>Description</strong> field. It is a string up to 60 characters.</li>
+</ul>
+</li>
+<li><p>You may need to create a <strong>Range</strong> on the view if the backing table removes data. For example, if you are using an Operating unit and only want Department, you will want to use the range for that operating unit.</p>
+</li>
+<li><p>Right-click <strong>Indexes</strong> and select <strong>New Index</strong>. Select <strong>Value</strong> as the Data field on the <strong>Properties</strong> pane. You can rename the index if needed, however you need to set <strong>Allow Duplicates</strong> to <strong>No</strong>.</p>
+</li>
+<li><p>Right-click <strong>Indexes</strong> and select <strong>New Index</strong>. Select <strong>Name</strong> as the Data field on the <strong>Properties</strong> pane. You can rename the index if needed, however you need to set <strong>Allow Duplicates</strong> to <strong>Yes</strong>.</p>
+</li>
+<li><p>Click <strong>View</strong>, and in the <strong>Properties</strong> pane, set the <strong>Singular label</strong> field to the reference label ID of your choice. This should be the label that indicates a single value, such as Customer.</p>
+</li>
+<li><p>Set the <strong>Label</strong> field to the reference label ID of your choice. This should be the label that indicates multiple values, such as Customers. This value will show in the drop-down list in the <strong>Use Values from</strong> field on the <strong>Financial dimensions</strong> page.</p>
+</li>
+<li><p>Enter <strong>Value</strong> in the <strong>TitleField1</strong> field in the <strong>Properties</strong> pane.</p>
+</li>
+<li><p>Enter <strong>Name</strong> in the <strong>TitleField2</strong> field in the <strong>Properties</strong> pane.</p>
+</li>
+<li><p>Review the backing table properties and identify the config key it is using. On <strong>View</strong>, enter the same <strong>Configuration key</strong> as the backing table.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Security access must be granted to non-admin users for the new view.</p>
+<ul>
+<li>For releases 7.2 and earlier where over-layering is used - Search for <strong>DimensionEssentials</strong> and add it to the Project. Expand <strong>DimensionEssentials</strong>, right-click <strong>Permissions</strong>, and then select <strong>New Permission</strong>. In the <strong>Properties</strong> pane, set the <strong>Access Level</strong> to <strong>Read</strong>. Click <strong>Security Privilege</strong> and add the view under the <strong>Permissions</strong> node with an <strong>Access Level</strong> of <strong>Read</strong>. You may need to extend one of these into the model that you're using.</li>
+<li>For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the <strong>Permissions</strong> node, and choose <strong>New Permission</strong>. Enter the name of new DimAttribute[DimensionName] view created above in step 2 and set the <strong>Access Level</strong> to <strong>Read</strong>. Search for <strong>Security Duty SysServerAXBasicMaintain</strong>. Right-click and choose <strong>Create extension</strong>. Rename the extension as appropriate. Drag-and-drop the newly created <strong>Security Privilege</strong> into the <strong>Privileges list</strong>.</li>
+</ul>
+</div>
+</li>
+<li><p>Right-click <strong>View</strong> and select <strong>View Code</strong>. Add the following code to the view. This will register it in the dimension framework. Here is an example using the view created for CustTable.</p>
+<pre><code class="lang-xpp">[SubscribesTo(classstr(DimensionEnabledType),
+delegatestr(DimensionEnabledType,
+registerDimensionEnabledTypeIdentifiersDelegate))]
+
+public static void registerDimensionEnabledTypeIdentifier(DimensionIEnabledType _dimensionEnabledType)
+{
+   _dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
+}
+</code></pre>
+</li>
+<li><p>Select <strong>Microsoft Dynamics 365</strong> and click <strong>Options</strong>. Select <strong>Best Practices</strong>. Select your model and then scroll until you find
+<strong>Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker</strong>. Verify that the rule and its children are selected.</p>
+</li>
+<li><p>Build and then synchronize the view.</p>
+</li>
+</ol>
+<h2 id="step-2-validate-that-the-view-returns-the-correct-data-in-sql">Step 2: Validate that the view returns the correct data in SQL</h2>
+<p>At this point you should be able to run the following query in SQL Server Management Studio to ensure that it's pulling the correct data. Here is an abbreviated example using the view created for CustTable.</p>
+<pre><code class="lang-sql">select * from DIMATTRIBUTECUSTTABLE
+</code></pre>
+<p> </p>
+<table>
+<thead>
+<tr>
+<th>KEY</th>
+<th>VALUE</th>
+<th>DATA AREA ID</th>
+<th>PARTITION</th>
+<th>RECID</th>
+<th>NAME</th>
+<th>PARTITION #2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22565425322</td>
+<td>US_SI_0129</td>
+<td>ussi</td>
+<td>5637144576</td>
+<td>22565425322</td>
+<td>Adventure Services</td>
+<td>5637144576</td>
+</tr>
+<tr>
+<td>22565424579</td>
+<td>US_SI_0128</td>
+<td>ussi</td>
+<td>5637144576</td>
+<td>22565424579</td>
+<td>Alpine Electronics</td>
+<td>5637144576</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-3-override-methods-on-the-backing-table">Step 3: Override methods on the backing table</h2>
+<p>To integrate with the dimensions framework when deleting or renaming the natural key of the backing table, you must write custom code on the backing table's delete method, and on either the update or renamePrimaryKey method. If your table blocks updates of the natural key, you will need to use the renamePrimaryKey override. If it does not, then you can put the code in the update method. Here is an example from CustTable.</p>
+<pre><code class="lang-xpp">public void delete()
+{
+    if (!DimensionValidation::canDeleteEntityValue(this))
+    {
+        throw error(strFmt(&quot;@SYS134392&quot;, this.AccountNum));
+    }
+      
+    ttsbegin;
+    DimensionAttributeValue::updateForEntityValueDelete(this);
+    ttscommit;
+}
+   
+public void update()
+{
+    Common originalRecord = this.orig();
+    super();
+    DimensionValueRename::syncRenamedValue(this, originalRecord);
+}
+   
+public void renamePrimaryKey()
+{
+    Common originalRecord = this.orig();
+    super();
+    DimensionValueRename::syncRenamedValue(this, originalRecord);
+}
+</code></pre>
+<h2 id="step-4-clear-caches-to-force-detection-of-the-new-view">Step 4: Clear caches to force detection of the new view</h2>
+<p>Because the list of entities that can be consumed as a dimension are cached on the server, the creation of a new entity will not appear in the list of existing entities until a call to clear the caches is performed, or until both the client and the server are restarted. To clear the caches and have the new view appear immediately, you must execute the following line of code within a runnable class.</p>
+<pre><code class="lang-xpp">DimensionCache::clearAllScopes();
+</code></pre>
+<h2 id="step-5-verify-that-the-dimension-appears-in-the-use-value-from-lookup">Step 5: Verify that the dimension appears in the Use Value From lookup</h2>
+<p>Now that you have completed the steps, navigate to the <strong>Financial dimensions</strong> page in the General ledger. Click the drop-down menu on the <strong>Use Values from</strong> field and verify that your value is available.</p>
+<h2 id="add-a-new-omoperatingunit-type-backed-entity">Add a new OMOperatingUnit type backed entity</h2>
+<p>If a new Organization Model OMOperatingUnitType enumeration is added, the steps to make it consumable as a dimension are similar but can be made shorter as follows:</p>
+<ol>
+<li>Copy one of the existing DimAttributeOM[BackingTableName] views, rename it appropriately, and then adjust all associated labels and help text.</li>
+<li>Expand the Datasource\BackingEntity (OMOperatingUnit)\Ranges node on the copied view. Change the value property on the range to the new OMOperatingUnitType enumeration value that was just added.</li>
+<li>Build and synchronize the project.</li>
+<li>Follow the steps in this topic starting with Step 2, where you validate the data in SQL, and then continue through Step 5, where you validate that the dimension appears in the <strong>Use Value From</strong> lookup.</li>
+</ol>
+<p>Because the <strong>OMOperatingUnitType</strong> is backed by the <strong>OMOperatingUnit</strong> table, generic code already exists to handle the delete, update, and <strong>renamePrimaryKey</strong> methods. Therefore, you do not need to update these methods.</p>
+<h2 id="step-6-setting-a-dimension-to-be-self-referenced">Step 6: Setting a dimension to be self-referenced</h2>
+<p>If you also want to create an data entity for your new entity, and that entity has a reference to default dimensions, add this code to the persistEntity() method.</p>
+<pre><code class="lang-xpp">if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+{
+    this.&lt;Your entity ‘private’ RecId Dimension field&gt; = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(&lt;Your backing table&gt;), this.&lt;Your entity Key field&gt;, this.&lt;Your entity ‘public’ DisplayValue field&gt;);
+}
+</code></pre>
+<p><strong>Example</strong></p>
+<pre><code class="lang-xpp">public void persistEntity(DataEntityRuntimeContext _entityCtx)
+{
+    if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+    {
+        this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
+    }
+
+    super(_entityCtx);
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This ensures that if you also want the dimension to use itself as a default dimension value, the information is created in the correct sequence.</p>
+</div>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensionable-entities.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

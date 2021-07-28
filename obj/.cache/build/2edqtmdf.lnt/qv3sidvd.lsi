@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Plan case category security, case processes, and case categories | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Plan case category security, case processes, and case categories | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="plan-case-category-security-case-processes-and-case-categories" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="30">Plan case category security, case processes, and case categories</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="34">This article describes the considerations and decisions that you must make during the planning process, before you begin to configure cases.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="36">You can use the case functionality to resolve both issues that are external to your organization and internal issues.</p>
+<h2 id="case-category-security-by-role" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="38">Case category security by role</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="40">Only appropriate employees in an organization should have access to cases and related information. To control which employees have access to view, create, and update different types of cases, you can assign security roles to case category types. You must determine which security roles should have access to the various case category types.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="42"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="42">Decision:</strong> Determine which security roles should have access to the following case category types. Your organization might not use all these category types, so make decisions only for those categories that are appropriate.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="44">General</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="45">Sales</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="46">Purchase</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="47">Service</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="48">Project</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="49">Production</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="50">Collections</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="51">Audit</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="52">Web</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="53">Human Resources</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="54">Product change</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="55">FMLA</li>
+</ul>
+<h2 id="case-processes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="57">Case processes</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="59">You should set up processes that employees must follow for the cases that are opened in your organization. Processes help guarantee consistency for the people who are involved in cases, and also help employees resolve cases faster and more efficiently. You can set up a process for each case category that cases are assigned to. Although planning a separate process for each case type takes time, case resolution will go much more smoothly if the processes are planned out.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="61"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="61">Decisions:</strong> For each case process, you must make the following decisions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="63">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="63">What are the name and description of the process?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="64">Is the process active, and should employees use it when they handle a case that the process is assigned to?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="65">Who in the organization will be responsible for applying the process to a case? For example, Cost accounting or Human resources might be responsible for some case processes. Note that multiple areas can be responsible for completing one process.</li>
+</ul>
+<h2 id="case-categories" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="67">Case categories</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="69">The Case category hierarchy provides a list of categories that you can assign cases to (see the &quot;Case category security by role&quot; section). Each top-level category includes subcategories, so that you can create more specific categories for the cases that your organization works with. Review the list of existing categories and subcategories to determine whether you must create more. If you must create more categories and subcategories, you must make the following decisions for each addition.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="71"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="71">Decisions:</strong></p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="73">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="73">Are you creating a new top-level category?</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="75">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="75">What is the name of the category</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="77"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="77">Are you creating a new subcategory?</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="79">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="79">What is the parent category of the subcategory?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="80">What is the name of the subcategory?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="81">Which worker will own the subcategory?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="82">What department is the subcategory assigned to?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="83">What case process will be assigned to this subcategory?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="84">What is the default service level agreement (SLA) that is assigned to this subcategory?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="85">Should an activity be created when a case that this subcategory is assigned to is opened?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="86">If so, what are the activity category, type, purpose, and phase?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="87">Should a follow-up activity for the case be created?</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md" sourcestartlinenumber="88">If so, what are the follow-up activity category, type, purpose, and phase?</li>
+</ul>
+</li>
+</ul>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/plan-case-management.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

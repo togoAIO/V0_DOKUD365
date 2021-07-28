@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Dual reporting | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Dual reporting | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="dual-reporting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="30">Dual reporting</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="34">This topic guides you through an example that shows how you can fulfill the requirements for both International Financial Reporting Standard (IFRS) reporting and statutory reporting in Asset leasing. Familiarity with posting layers in Microsoft Dynamics 365 Finance is required and will make the example easier to understand.</p>
+<h2 id="example" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="36">Example</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="38">The following example accounts for a lease under Italian statutory reporting by using both the cash-basis method and IFRS reporting methods. The company must establish three books to account for both the Italian statutory requirements and the IFRS 16 requirements. One book is required for IFRS 16, one book is required for statutory requirements, and one book is required to automatically reverse statutory postings. The books are set up as shown in the following tables.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="40"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="40">IFRS 16 book</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="42">The IFRS 16 book is set up so that it complies with the IFRS 16 accounting standard. All entries that are posted in this book will be posted to a custom layer.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="44">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="44">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="44">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="44">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="46">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="46">Book type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="46">IFRS 16</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="47">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="47">Book description</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="47">IFRS 16</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="48">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="48">Posting Layer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="48">Custom layer 1</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="49">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="49">Lease Type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="49">Finance</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="50">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="50">Accounting Framework</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="50">IFRS 16</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="51">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="51">Lease Term / Useful life Set Up</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="51">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="52">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="52">Present Value / Asset Fair Value Set Up</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="52">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="53">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="53">Short-term threshold</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="53">12</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="54">Low Value Threshold</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="54">5,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="55">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="55">Pay to Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="55">No</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="57"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="57">Statutory book</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="59">The statutory book is a cash-basis book where the company will account for the lease expense as the amount of cash that is paid each month for rent. This book won't produce a right-of-use (ROU) asset or lease liability.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="61">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="61">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="61">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="61">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="63">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="63">Book type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="63">Statutory</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="64">Book description</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="64">Local GAAP</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="65">Posting Layer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="65">Current</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="66">Lease Type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="66">Automatic</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="67">Accounting Framework</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="67">Cash basis</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="68">Lease Term / Useful life Set Up</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="68">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="69">Present Value / Asset Fair Value Set Up</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="69">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="70">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="70">Short-term threshold</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="70">0</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="71">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="71">Low Value Threshold</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="71">0</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="72">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="72">Pay to Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="72">No</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="74"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="74">Statutory reversal book</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="76">The statutory reversal book is set up in the same way as the statutory book.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="78">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="78">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="78">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="78">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="80">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="80">Book type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="80">Statutory – Reversal</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="81">Book description</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="81">Book to reverse statutory book</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="82">Posting Layer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="82">Custom layer 1</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="83">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="83">Lease Type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="83">Automatic</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="84">Accounting Framework</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="84">Cash basis</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="85">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="85">Lease Term / Useful life Set Up</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="85">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="86">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="86">Present Value / Asset Fair Value Set Up</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="86">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="87">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="87">Short-term threshold</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="87">0</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="88">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="88">Low Value Threshold</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="88">0</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="89">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="89">Pay to Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="89">No</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="91">For this example, a lease has been created that has the following settings on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="91">General</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="91">Payment schedule lines</strong> tabs.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="93"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="93">General tab</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="95">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="95">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="95">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="95">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="97">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="97">Incremental borrowing rate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="97">5%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="98">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="98">Commencement date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="98">1/1/2020</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="99">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="99">Lease group</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="99">Buildings</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="100">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="100">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="100">1001</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="101">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="101">Fair value of the asset</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="101">245,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="102">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="102">Asset useful life</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="102">120</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="103">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="103">Annuity type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="103">Ordinary annuity</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="104">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="104">Compounding interval</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="104">Monthly</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="106"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="106">Payment schedule lines tab</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="108">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="108">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="108">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="108">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="110">Start date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="110">1/1/2020</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="111">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="111">Period interval</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="111">Months</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="112">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="112">Periods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="112">24</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="113">End date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="113">12/31/2020</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="114">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="114">Payment frequency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="114">Monthly</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="115">Payment amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="115">1,000</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="117">To account for this lease under two frameworks, you use a current posting layer and a custom posting layer. The following table shows an example of every journal entry that required to fairly represent the financials under each reporting standard. A detailed description of each journal entry for the first month of the lease is provided afterward.</p>
+<table>
+<thead>
+<tr>
+<th rowspan='3'>Account number</th>
+<th rowspan='3'>Description</th>
+<th colspan='3'>Statutory book (current layer)</th>
+<th rowspan='3'>Current layer total</th>
+<th>Reversal book (custom layer)</th>
+<th colspan='4'>IFRS 16 book (custom layer)</th>
+<th rowspan='3'>Current layer + custom layer total</th>
+</tr>
+<tr>
+<th>JE-100</th>
+<th>JE-110</th>
+<th>JE-120</th>
+<th>JE-130</th>
+<th>JE-140</th>
+<th>JE-150</th>
+<th>JE-160</th>
+<th>JE-170</th>
+</tr>
+<tr>
+<th>Dr (Cr)</th>
+<th>Dr (Cr)</th>
+<th>Dr (Cr)</th>
+<th>Dr (Cr)</th>
+<th>Dr (Cr)</th>
+<th>Dr (Cr)</th>
+<th>Dr (Cr)</th>
+<th>Dr (Cr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Lease expense</td>
+<td>1,000.00</td>
+<td></td>
+<td></td>
+<td>1,000.00</td>
+<td>-1,000.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bank fee</td>
+<td></td>
+<td>3.00</td>
+<td></td>
+<td>3.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>VAT expense</td>
+<td></td>
+<td>5.00</td>
+<td></td>
+<td>5.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Clearing account</td>
+<td>-1,000.00</td>
+<td>1,000.00</td>
+<td></td>
+<td>0.00</td>
+<td>1,000.00</td>
+<td></td>
+<td>-1,000.00</td>
+<td></td>
+<td></td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Accounts payable</td>
+<td></td>
+<td>-1,008.00</td>
+<td>1,008.00</td>
+<td>0.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ROU asset</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+<td></td>
+<td>22,794.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td>22,793.90</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Finance lease obligation</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+<td></td>
+<td>-22,794.00</td>
+<td>1,000.00</td>
+<td>-94.97</td>
+<td></td>
+<td>-21,888.87</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Interest expense</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td>94.97</td>
+<td></td>
+<td>94.97</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Cash</td>
+<td></td>
+<td></td>
+<td>-1,008.00</td>
+<td>-1,008.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-1,008.00</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Depreciation expense</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>949.75</td>
+<td>949.75</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Accumulated depreciation</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-949.75</td>
+<td>-949.75</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="309">As the preceding table shows, three books are required to report under both statutory reporting and IFRS reporting.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="311">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="311">The statutory book records the lease payment according to the rules for cash-basis accounting under the current layer.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="312">The statutory reversal book reverses the statutory journal entries.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="313">The IFRS 16 book creates the journal entries that are required under IFRS 16.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="315">You must enter a lease only one time. You can then open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="315">Books</strong> page to see all the books that are associated with the lease.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="317">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="318">When you create the books, all three of them must be associated with the same lease record.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="320">The first journal entry records the lease expense under the statutory book. You can create the payments either in a batch or by selecting the payment schedule in the statutory book.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="322">For this example, the following journal entry is produced for the statutory book from the payment schedule.</p>
+<h3 id="lease-payment--1312020--je-100" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="324">Lease payment – 1/31/2020 – JE 100</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="326">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="326">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="326">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="326">Account number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="326">Layer</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="326">Account description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="326">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="326">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="328">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="328">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="328">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="328">Current</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="328">Lease expense</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="328">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="328"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="329">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="329">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="329">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="329">Current</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="329">Clearing account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="329"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="329">1,000.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="331">An Accounts payable clerk uses standard Dynamics 365 functionality to create an invoice to pay for the lease outside Asset leasing. However, instead of selecting <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="331">Lease expense</strong> as the debit account, the Accounts payable clerk selects a clearing account to generate the following entry.</p>
+<h3 id="ap-process--1312020--je-110" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="333">AP process – 1/31/2020 – JE 110</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="335">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="335">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="335">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="335">Account number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="335">Layer</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="335">Account description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="335">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="335">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="337">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="337">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="337">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="337">Current</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="337">Clearing account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="337">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="337"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="338">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="338">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="338">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="338">Current</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="338">Bank fee</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="338">3.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="338"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="339">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="339">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="339">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="339">Current</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="339">VAT expense</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="339">5.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="339"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="340">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="340">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="340">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="340">Current</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="340">Accounts payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="340"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="340">1,008.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="342">When the statement is issued to the vendor, you follow the regular payment process. During this process, the following journal entry is generated.</p>
+<h3 id="cash-payment--1312020--je-120" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="344">Cash payment – 1/31/2020 – JE 120</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="346">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="346">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="346">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="346">Account number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="346">Layer</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="346">Account description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="346">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="346">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="348">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="348">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="348">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="348">Current</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="348">Accounts Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="348">1,008.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="348"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="349">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="349">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="349">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="349">Current</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="349">Cash</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="349"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="349">1,008.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="351">At this point, you've fully accounted for this lease under statutory reporting requirements and can generate a trial balance by using the current layer. The system returns a trial balance that has the following figures.</p>
+<table>
+<thead>
+<tr>
+<th rowspan='3'>Account number</th>
+<th rowspan='3'>Description</th>
+<th colspan='3'>Statutory book (current layer)</th>
+<th rowspan='3'>Current layer total</th>
+</tr>
+<tr>
+<th>JE-100</th>
+<th>JE-110</th>
+<th>JE-120</th>
+</tr>
+<tr>
+<th>Dr (Cr)</th>
+<th>Dr (Cr)</th>
+<th>Dr (Cr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Lease expense</td>
+<td>1,000.00</td>
+<td></td>
+<td></td>
+<td>1,000.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bank fee</td>
+<td></td>
+<td>3.00</td>
+<td></td>
+<td>3.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>VAT expense</td>
+<td></td>
+<td>5.00</td>
+<td></td>
+<td>5.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Clearing account</td>
+<td>-1,000.00</td>
+<td>1,000.00</td>
+<td></td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Accounts payable</td>
+<td></td>
+<td>-1,008.00</td>
+<td>1,008.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ROU asset</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Finance lease obligation</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Interest expense</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Cash</td>
+<td></td>
+<td></td>
+<td>-1,008.00</td>
+<td>-1,008.00</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Depreciation expense</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Accumulated depreciation</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="464">If you want to use the IFRS 16 figures to run the same trial balance, the statutory accounting journal entries must be reversed, and the IFRS 16 journal entries must be posted. To reverse the statutory journal entries, this example includes a statutory reversal book that has the same setup as the statutory book but an opposite posting profile. For example, the statutory book <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="464">debited</em> a lease expense account, but the reversal book will <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="464">credit</em> this account. These relationships are easily defined in the Asset leasing posting accounts on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="464">Asset leasing parameters</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="464">Asset leasing &gt; Setup &gt; Asset leasing parameters</strong>).</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="466">When the same process that was used for the statutory book is used for the reversal book, the following journal entry is produced. The difference is that the reversal book books the reversing entries from the statutory book. The reversing entries are also made to the custom layer. When a trial balance is run at the current layer, the reversing journal entries aren't included.</p>
+<h3 id="lease-payment--1312020--je-130" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="468">Lease payment – 1/31/2020 – JE 130</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="470">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="470">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="470">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="470">Account number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="470">Layer</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="470">Account description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="470">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="470">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="472">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="472">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="472">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="472">Custom</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="472">Clearing account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="472">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="472"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="473">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="473">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="473">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="473">Custom</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="473">Lease expense</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="473"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="473">1,000.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="475">Now that you've eliminated the statutory journal entries, you will book all the journal entries that IFRS 16 requires in the IFRS 16 book. These entries include the initial recognition of the ROU asset and the liability, and the record of interest and depreciation.</p>
+<h3 id="initial-recognition--112020--je-140" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="477">Initial recognition – 1/1/2020 – JE 140</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="479">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="479">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="479">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="479">Account number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="479">Layer</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="479">Account description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="479">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="479">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="481">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="481">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="481">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="481">Custom</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="481">ROU Asset</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="481">22,793.90</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="481"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="482">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="482">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="482">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="482">Custom</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="482">Finance lease obligation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="482"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="482">22,793.90</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="484">The lease payment is posted like the other lease payments. The reason for using the clearing account is to ensure that cash is credited only one time.</p>
+<h3 id="lease-payment--1312020--je-150" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="486">Lease payment – 1/31/2020 – JE 150</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="488">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="488">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="488">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="488">Account number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="488">Layer</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="488">Account description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="488">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="488">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="490">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="490">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="490">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="490">Custom</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="490">Finance lease obligation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="490">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="490"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="491">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="491">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="491">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="491">Custom</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="491">Clearing account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="491"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="491">1,000.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="493">The interest expense journal entry is generated from the liability amortization schedule.</p>
+<h3 id="interest-expense--1312020--je-160" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="495">Interest expense – 1/31/2020 – JE 160</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="497">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="497">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="497">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="497">Account number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="497">Layer</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="497">Account description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="497">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="497">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="499">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="499">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="499">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="499">Custom</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="499">Interest expense</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="499">94.97</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="499"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="500">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="500">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="500">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="500">Custom</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="500">Finance lease obligation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="500"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="500">94.97</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="502">The depreciation expense journal entry is generated from the asset depreciation schedule.</p>
+<h3 id="depreciation-expense--1312020--je-170" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="504">Depreciation expense – 1/31/2020 – JE 170</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="506">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="506">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="506">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="506">Account number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="506">Layer</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="506">Account description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="506">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="506">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="508">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="508">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="508">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="508">Custom</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="508">Depreciation expense</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="508">949.75</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="508"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="509">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="509">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="509">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="509">Custom</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="509">Accumulated depreciation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="509"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="509">949.75</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="511">After all these journal entries are created and posted, you will see the following &quot;custom layer 1&quot; values. Note that the last column includes the bank fee, the value-added tax (VAT) expense, and the reduction of cash from the previous layer, but it doesn't include the statutory reporting journal entries. Therefore, you achieve true dual-reporting capabilities. At this point, the company just has to run its trial balance, and combine the current layer and the custom layer to create an IFRS trial balance.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">Account No</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">Statutory Book-Current Layer-JE-100-Dr (Cr)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">Statutory Book-Current Layer-JE-110-Dr (Cr)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">Statutory Book-Current Layer-JE-120-Dr (Cr)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">Current Layer - Totals</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">-</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">Reversal Book-Custom layer-JE-130-Dr (Cr)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">IFRS 16 Book-Custom layer-JE-140-Dr (Cr)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">IFRS 16 Book-Custom layer-JE-150-Dr (Cr)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">IFRS 16 Book-Custom layer-JE-160-Dr (Cr)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">IFRS 16 Book-Custom layer-JE-170-Dr (Cr)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="513">Custom Layer + Current Layer - Totals</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515">Lease expense</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515">-1,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="515">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516">Bank fee</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516">3.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516">3.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="516">3.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517">VAT expense</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517">5.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517">5.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="517">5.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518">Clearing account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518">-1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518">1,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518">-1,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="518">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519">Accounts payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519">-1,008.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519">1,008.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="519">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520">ROU asset</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520">22,794</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="520">22,793.90</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521">Finance lease obligation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521">-22,794</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521">1,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521">-94.97</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="521">-21,888.87</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522">Interest expense</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522">94.97</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="522">94.97</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523">Cash</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523">-1,008.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523">-1,008.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="523">-1,008.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524">Depreciation expense</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524">949.75</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="524">949.75</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525">Accumulated depreciation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525">-949.75</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md" sourcestartlinenumber="525">-949.75</td>
+</tr>
+</tbody>
+</table>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/dual-reporting.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

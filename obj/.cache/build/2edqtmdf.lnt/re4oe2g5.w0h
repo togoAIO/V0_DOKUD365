@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JPK-V7M reporting | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="JPK-V7M reporting | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="jpk-v7m-reporting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="25">JPK-V7M reporting</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="29">The JPK-V7M reporting process is predefined by the data entities that are delivered in the PL JPK_V7M EM setup.zip package. The following illustration shows an overview of the process.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="31"><img src="media/vdek-em-processing.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="31" alt="JPK_V7M reporting process flow"></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="33">The PL JPK_V7M EM setup.zip package provides a setup for the JPK-V7M processing that supports the process of JPK-V7M reporting. This setup consists of the following steps:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="35">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="35"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="35">Tworzyć (Create):</strong> Create an electronic message for JPK-V7M reporting.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="36"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="36">Wygeneruj plik (Generate file):</strong> Generate an XML file in JPK-V7M format.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="37"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="37">Podgląd w programie Excel (Preview in Excel format):</strong> Generate the JPK-V7M report in Microsoft Excel format for preview.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="38"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="38">Zmień status (Change status):</strong> Change the status of the electronic message.</li>
+</ul>
+<h2 id="initial-assumptions-for-the-jpk-v7m-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="40">Initial assumptions for the JPK-V7M report</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="42">The implementation of the JPK-V7M report is based on the same set of sales tax reporting codes that were used in the JPK_VAT report.
+For more information, see <a href="emea-pol-standard-audit-file-saf.html#generate-a-saf-vat-sales-and-purchase-register" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="43">Generate a SAF VAT sales and purchase register</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="45">The following table shows the sales tax reporting codes that are used in the JPK_VAT report, and their mapping with <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="45">K_*</strong> elements of the JPK-V7M report.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="47">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="47">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="47">Element name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="47">Element description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="47">Sales tax reporting codes</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="49">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="49">K_10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="49">The taxable amount of the supply of goods and services in Poland that are exempted from tax.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="49">10302, 10402, 10502, 10602</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="50">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="50">K_11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="50">The taxable amount of the supply of goods and services outside Poland.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="50">10101, 10102, 10104, 10105, 10201, 10204</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="51">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="51">K_12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="51">The taxable amount of the supply of services that are stated in article 100, section 1, point 4 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="51">10201, 10204</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="52">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="52">K_13</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="52">The taxable amount of the supply of goods or services in Poland at a 0-percent VAT rate.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="52">10601, 10604, 10701, 10702, 10704, 10705</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="53">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="53">K_14</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="53">The taxable amount of the supply of goods that are stated in article 129 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="53">10701, 10702, 10704, 10705</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="54">K_15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="54">The taxable amount of the supply of goods or services in Poland at a 5-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="54">10501, 10504</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="55">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="55">K_16</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="55">The value of output VAT for the supply of goods or services in Poland at a 5-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="55">10503, 10506</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="56">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="56">K_17</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="56">The taxable amount of the supply of goods or services in Poland at a 7-percent or 8-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="56">10401, 10404</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="57">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="57">K_18</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="57">The value of output VAT for the supply of goods or services in Poland at a 7-percent or 8-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="57">10403, 10406</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="58">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="58">K_19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="58">The taxable amount of the supply of goods or services in Poland at a 22-percent or 23-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="58">10301, 10304</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="59">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="59">K_20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="59">The value of output VAT for the supply of goods or services in Poland at a 22-percent or 23-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="59">10303, 10306</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="60">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="60">K_21</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="60">The taxable amount of the intra-community supply of goods that is mentioned in article 13, sections 1 and 3 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="60">10807</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="61">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="61">K_22</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="61">The taxable amount of the export of goods.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="61">10901, 10905</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="62">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="62">K_23</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="62">The taxable amount of the intra-community acquisition of goods.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="62">10810, 10811 (Reverse change)</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="63">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="63">K_24</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="63">The value of output VAT for the intra-community acquisition of goods.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="63">10812</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="64">K_25</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="64">The taxable amount of the import of goods that must be settled under article 33a of the VAT Act, as confirmed by the customs declaration or import declaration that is referred to in article 33b of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="64">111010</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="65">K_26</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="65">The value of output VAT for the import of goods that must be settled under article 33a of the VAT Act, as confirmed by the customs declaration or import declaration that is referred to in article 33b of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="65">11012</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="66">K_27</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="66">The taxable amount that arises from the import of services that are subject to article 28b of the VAT Act. Services that are purchased from the VAT taxpayers are excluded.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="66">11110, 11117 (Reverse change)</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="67">K_28</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="67">The value of output VAT that arises from the import of services that are subject to article 28b of the VAT Act. Services that are purchased from the VAT taxpayers are excluded.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="67">11112</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="68">K_29</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="68">The taxable amount of the import of services that are subject to article 28b of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="68">11210, 11119 (Reverse change)</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="69">K_30</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="69">The value of output VAT that arises from the import of services from the VAT taxpayers that are subject to article 28b of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="69">11212</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="70">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="70">K_31</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="70">The taxable amount that arises from the supply of goods in cases where the purchaser is a taxpayer, as mentioned in article 17, section 1, point 5 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="70">No default value</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="71">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="71">K_32</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="71">The value of output VAT that arises from the supply of goods in cases where the purchaser is a taxpayer, as mentioned in article 17, section 1, point 5 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="71">No default value</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="72">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="72">K_33</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="72">The value of output VAT for goods that are covered by physical stock counting under article 14, section 5 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="72">No default value</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="73">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="73">K_34</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="73">The refund of a previously deducted or refunded amount that was spent on the purchase of cash registers that are mentioned in article 111, section 6 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="73">No default value</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="74">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="74">K_35</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="74">The value of output VAT that is determined based on the intra-community acquisition of vehicles that are mentioned in pos. 24, and that must be paid within the period that is referred to in article 103, section 3 in connection with section 4 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="74">No default value</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="75">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="75">K_36</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="75">The value of output VAT that arises from the intra-community acquisition of goods that are mentioned in article 103, section 5aa of the VAT Act, and that must be paid within the period that is referred to in article 103, sections 5a and 5b of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="75">No default value</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="76">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="76">K_40</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="76">The net value of the purchase of goods and services that are classified as fixed assets by the taxpayer.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="76">20107, 20115</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="77">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="77">K_41</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="77">The value of input tax that is eligible for deduction based on article 86, section 2 of the VAT Act, under the conditions that are specified in the VAT Act, and that arises from the acquisition of goods and services that are classified as fixed assets by the taxpayer.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="77">20109</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="78">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="78">K_42</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="78">The net value that arises from the acquisition of other goods and services.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="78">20207, 20215</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="79">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="79">K_43</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="79">The amount of input tax that is eligible for deduction based on article 86, section 2 of the VAT Act, under the conditions that are specified in the VAT Act, and that arises from the purchase of other goods and services.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="79">20209</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="80">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="80">K_44</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="80">The amount of input tax that arises from input tax adjustments that are referred to in articles 90a through 90c and 91 of the VAT Act, because of the acquisition of goods and services that are classified as fixed assets by the taxpayer.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="80">20116</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="81">K_45</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="81">The amount of the input tax base that arises from input tax adjustments that are referred to in articles 90a through 90c and 91 of the VAT Act, because of the purchase of other goods and services.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="81">20216</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="82">K_46</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="82">The amount of input tax that arises from the correction of input tax that is referred to in article 89b, section 1 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="82"><p>30101, 30102</p><p><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="82">Note:</strong> For the &quot;Overdue&quot; scenario, the amount can be collected for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="82">K_43</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="82">K_41</strong>.</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="83">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="83">K_47</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="83">The amount of input tax that arises from the correction of input tax that is referred to in article 89b, section 4 of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="83"><p>30201, 30202</p><p><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="83">Note:</strong> For the &quot;Overdue&quot; scenario, the amount can be collected for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="83">K_43</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="83">K_41</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="create-an-electronic-message-for-jpk-v7m-reporting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="85">Create an electronic message for JPK-V7M reporting</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="87">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="87"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="87">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="87">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="87">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="87">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="87">Electronic messages</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="88"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="88">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="88">JPK-V7M</strong>, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="88">Messages</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="88">New</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="89"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="89">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="89">Run processing</strong> dialog box, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="89">OK</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="91"><img src="media/create-em.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="91" alt="Run processing dialog box"></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="93"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="93">A new electronic message is created. Enter a description, and specify the start and end dates of the period that you want to generate the JPK-V7M report for.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="94"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="94">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="94">Message additional fields</strong> FastTab, specify any additional values that are required for the declaration part of the JPK-V7M report.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="96"><img src="media/message-additional-fields.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="96" alt="Message additional fields FastTab."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="98"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="98">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="98">CelZlozenia</strong> additional field, specify whether this submission is an original report or a correction. Two values are allowed:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="100">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="100"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="100">1</strong> – This submission is the initial submission of the file for the specified period. This value is the default value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="101"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="101">2</strong> – This submission is a corrected submission of the file for the specified period.</li>
+</ul>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="103">You can also specify manual values for the following additional fields that are related to elements of the declaration.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="105">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="105">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="105">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="105">Tag of the declaration</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="105">Description (En)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="105">Description (Pl)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="107">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="107">P_39</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="107">P_39</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="107">A non-negative integer that has a maximum of 14 digits. The value of the surplus of input VAT over output VAT that was moved from the previous period.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="107">Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">P_49</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">P_49</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">A non-negative integer that has a maximum of 14 digits. The amount that was spent on the purchase of cash registers, and that must be deducted in the specified period and therefore reduce the value of output VAT. The amount that is specified in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">P_49</strong> can't be more than <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">P_38</strong> – <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">P_48</strong>. If <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">P_38</strong> – <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">P_48</strong> is less than or equal to 0 (zero), you should show <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">0</strong>.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="108">Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">P_50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">P_50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">A non-negative integer that has a maximum of 14 digits. The amount of tax that is covered by the abandonment of collection. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">P_50</strong> can't be more than <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">P_38</strong> – <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">P_48</strong> – <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">P_49</strong>. If <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">P_38</strong> – <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">P_48</strong> – <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">P_49</strong> is less than zero (0), or more than or equal to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">P_50</strong>, you should show <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">0</strong>.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="109">Wysokość podatku objęta zaniechaniem poboru</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="110">P_52</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="110">P_52</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="110">A non-negative integer that has a maximum of 14 digits. The amount that was spent on the purchase of cash registers, and that must be deducted in the specified period and returned in the given settlement period. Alternatively, the amount that was spent on the purchase of cash registers, and that increases the amount of input tax that must be transferred to the next settlement period.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="110">Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym przysługująca do zwrotu w danym okresie rozliczeniowym lub powiększająca wysokość podatku naliczonego do przeniesienia na następny okres rozliczeniowy</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="111">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="111">P_54</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="111">P_54</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="111">The amount of input tax surplus that must be returned to the account that is designated by the taxpayer.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="111">Wysokość nadwyżki podatku naliczonego nad należnym do zwrotu na rachunek wskazany przez podatnika</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="112">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="112">P_54_Powód</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="112">P_55, P_56, P_57, or P_58, depending on the user selection</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="112">The refund to the bank account that is referred to in article 87, section 6a (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="112">P_55</strong>), 6 (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="112">P_56</strong>), 2 (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="112">P_57</strong>), or 5a (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="112">P_58</strong>) of the VAT Act.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="112">Zwrot na rachunek VAT, o którym mowa w art. 87 ust. 6a (P_55) lub 6 (P_56) lub 2 (P_57) lub 5a (P_58) ustawy</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="113">P_60</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="113">P_60</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="113">A non-negative integer that has a maximum of 14 digits. The amount of refund that must be credited against future tax liabilities.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="113">Wysokość zwrotu do zaliczenia na poczet przyszłych zobowiązań podatkowych</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="114">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="114">P_61</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="114">P_61</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="114">A string (1..240) that must be used if <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="114">P_60</strong> is used. The type of future tax liability.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="114">Rodzaj przyszłego zobowiązania podatkowego</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="115">P_ORDZU</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="115">P_ORDZU</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="115">A string (1..240). An explanation of the reasons for submitting a corrected VAT return.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="115">Uzasadnienie przyczyn złożenia korekty</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="117">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="117">P_54_Powód</strong> additional field is available as of version 98.194 of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="117">JPK-V7M XML format (PL)</strong> Electronic reporting (ER) configuration and version 98.194.50 of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="117">JPK-V7M Excel format (PL)</strong> ER configuration. It can be imported by using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="117">PL JPK_V7M EM setup v.5 KB4614816.zip</strong> file (version 5 or later of the package of data entities that includes a predefined electronic message setup).</p>
+<h2 id="generate-the-jpk-v7m-report-in-excel-format-for-preview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="119">Generate the JPK-V7M report in Excel format for preview</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="121">When all the data is ready in the system, follow these steps to generate the JPK-V7M report in Excel format.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="123">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="123"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="123">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="123">Electronic messages</strong> page, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="123">Messages</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="123">Generate report</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="124"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="124">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="124">Run processing</strong> dialog box, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="124">Action</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="124">Podgląd w programie Excel</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="125"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="125">To run report generation in a batch, specify parameters on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="125">Run in the background</strong> FastTab. When the report is generated, it's attached to the electronic message as a file.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="126"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="126">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="126">OK</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="128"><img src="media/generate-vdek.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="128" alt="Using the Run processing dialog box to generate the JPK-V7M report in Excel format"></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="130"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="130">To view the file, select the electronic message, and then select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="130">Attachments</strong> button (paper clip symbol) in the upper-right corner of the page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="131"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="131">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="131">Attachments for Message</strong> page, select the attachment, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="131">Open</strong>.</p>
+</li>
+</ol>
+<h2 id="generate-an-xml-file-in-jpk-v7m-format" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="133">Generate an XML file in JPK-V7M format</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="135">When all the data is ready in the system, follow these steps to generate an XML file in JPK-V7M format.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="137">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="137"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="137">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="137">Electronic messages</strong> page, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="137">Messages</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="137">Generate report</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="138"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="138">To run report generation in a batch, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="138">Run processing</strong> dialog box, specify parameters on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="138">Run in the background</strong> FastTab.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="139"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="139">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="139">OK</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="141"><img src="media/generate-xml-vdek.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="141" alt="Using the Run processing dialog box to generate  an XML file in JPK-V7M format"></p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="143">After you select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="143">OK</strong> in the dialog box, you should see the following declaration text:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="145">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="145"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="145">English:</strong> &quot;When you generate the VAT declaration you confirm information in the report is true and complete. Your consent will be recorded in the report. Incomplete payment or non-payment of VAT due to the Tax Authority, this declaration is the basis for the issuance of a writ of execution in accordance with the provisions of the enforcement proceedings in the administration. A false or incomplete declaration may result in prosecution in accordance with regulations of fiscal penal code.&quot;</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="146"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="146">Polish:</strong> &quot;Wygenerowanie deklaracji VAT oznacza potwierdzenie, że informacje w raporcie są prawdziwe i kompletne. Twoja zgoda zostanie odnotowana w raporcie. W przypadku niewpłacenia w obowiązującym terminie podatku podlegającego wpłacie do urzędu skarbowego lub wpłacenia go w niepełnej wysokości niniejsza deklaracja stanowi podstawę do wystawienia tytułu wykonawczego zgodnie z przepisami o postępowaniu egzekucyjnym w administracji. Za podanie nieprawdy lub zatajenie prawdy i przez to narażenie podatku na uszczuplenie grozi odpowiedzialność przewidziana w przepisach Kodeksu karnego skarbowego.&quot;</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="148">By selecting <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="148">OK</strong> on the declaration page, you give your consent to the declaration. The JPK_VDEK will be generated only if you consent to the declaration.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="150">The action log is related to the electronic message log information about the user who generated the JPK_VDEK and performed other actions with the electronic message.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="152">When an XML file for the JPK-V7M report is generated, it's attached to the electronic message. To view the file, select the electronic message, and select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="152">Attachments</strong> button (paper clip symbol) in the upper-right corner of the page. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="152">Attachments for Message</strong> page, select the attachment, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="152">Open</strong>.</p>
+<h2 id="change-the-status-of-the-electronic-message" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="154">Change the status of the electronic message</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="156">When you've finished working with a report, you can change the status to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="156">Zgłoszone JPK_VDEK</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="156">Reported JPK-V7M</strong>). Electronic message that are in this status can't be deleted. You can change the status back to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="156">Wygenerowane JPK_VDEK</strong> as required.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="158">To change status of the electronic message, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="158">Messages</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="158">Update status</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="158">New status</strong>.</p>
+<h2 id="generate-the-jpk-v7m-report-for-part-of-a-month" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="160">Generate the JPK-V7M report for part of a month</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="162">You can prepare the JPK-V7M report for periods that are shorter than a full month. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="162">Electronic messages</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="162">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="162">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="162">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="162">Electronic messages</strong>), use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="162">From date</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="162">To date</strong> fields to define the date interval that you want to generate JPK-V7M report for. These dates must be in the same calendar month.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="164">When you generate the JPK-V7M report in XML format for a period that is shorter than a full month, you receive a warning that the report is being generated for less than a full month, and that it can't be used for submission to the authority. The report will also contain the following information that indicates that it isn't for a full month:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="166">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="166">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="166">&lt;Miesiac&gt;</strong> tag will contain information about the date interval that report is generated for.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="167">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="167">&lt;P_*&gt;</strong> tag of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="167">Deklaracja</strong> part of the report contains calculated values that represent the aggregation of amounts from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="167">SprzedazWiersz</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md" sourcestartlinenumber="167">ZakupWiersz</strong> parts of the report. The values in this tag will be rounded to a two-digit decimal value, not an integer value.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek-reporting.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

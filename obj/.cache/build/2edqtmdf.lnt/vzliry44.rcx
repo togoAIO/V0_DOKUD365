@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tax is posted to the wrong ledger account in the voucher | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tax is posted to the wrong ledger account in the voucher | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tax-is-posted-to-the-wrong-ledger-account-in-the-voucher" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="28">Tax is posted to the wrong ledger account in the voucher</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="32">During posting, tax might be posted to the wrong ledger account in the voucher. To troubleshoot this issue, follow the steps in the following sections as required. The examples in this topic use a sales order as the business document.</p>
+<h2 id="find-the-tax-code-of-the-incorrectly-posted-tax-transaction" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="34">Find the tax code of the incorrectly posted tax transaction</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="36">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="36"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="36">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="36">Voucher transactions</strong> page, select the transaction that you want to work with, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="36">Posted sales tax</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="38"><a href="media/tax-posted-to-wrong-ledger-account-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="38"><img src="media/tax-posted-to-wrong-ledger-account-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="38" alt="Posted sales tax button on the Voucher transactions page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="40"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="40">Review the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="40">Sales tax code</strong> field. In this example, it's <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="40">VAT 19</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="42"><a href="media/tax-posted-to-wrong-ledger-account-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="42"><img src="media/tax-posted-to-wrong-ledger-account-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="42" alt="Sales tax code field on the Posted sales tax page."></a></p>
+</li>
+</ol>
+<h2 id="check-the-ledger-posting-group-of-the-tax-code" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="44">Check the ledger posting group of the tax code</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="46">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="46"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="46">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="46">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="46">Indirect taxes</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="46">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="46">Sales tax codes</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="47"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="47">Find and select the tax code, and then review the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="47">Ledger posting group</strong> field. In this example, it's <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="47">VAT</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="49"><a href="media/tax-posted-to-wrong-ledger-account-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="49"><img src="media/tax-posted-to-wrong-ledger-account-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="49" alt="Ledger posting group field on the Sales tax codes page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="51">The value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="51">Ledger posting group</strong> field is a link. To view the details of the group's configuration, select the link. Alternatively, select and hold (or right-click) in the field, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="51">View details</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="53"><a href="media/tax-posted-to-wrong-ledger-account-Picture4.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="53"><img src="media/tax-posted-to-wrong-ledger-account-Picture4.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="53" alt="View details command."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="55"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="55">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="55">Sales tax payable</strong> field, verify that the account number is correct, according to the transaction type. If it isn't, select the correct account to post to. In this example, the sales tax of the sales order should be posted to sales tax payable account 222200.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="57"><a href="media/tax-posted-to-wrong-ledger-account-Picture5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="57"><img src="media/tax-posted-to-wrong-ledger-account-Picture5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="57" alt="Sales tax payable field on the Ledger posting groups page."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="59">The following table provides information about each field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="59">Ledger posting groups</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="61">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="61">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="61">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="61">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="63">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="63">Sales tax payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="63">The main account for outgoing sales taxes that are payable to the tax authority.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="64">Sales tax receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="64">The main account for incoming taxes that are received from the tax authority.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="65">Use tax expense</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="65">The main account that is used to post deductible use taxes that vendors don't claim or report to the tax authority as part of European Union (EU) reverse charge Goods and Services Tax (GST)/Harmonized Sales Tax (HST). <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="65">Use tax</strong> must be selected for the sales tax code in the sales tax group that is used in the transaction. This field isn't available if <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="65">Apply sales tax taxation rules</strong> is selected on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="65">General ledger parameters</strong> page.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="66">Use tax payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="66">The main account that is used to post incoming use taxes that are payable to tax authorities.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="67">Settlement account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="67">The main account that is used to post the net balance of the ledger accounts that are specified in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="67">Use tax payable</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="67">Sales tax receivable</strong> fields.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="68">Vendor cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="68">The main account that is used to post a cash discount for sales tax codes that are associated with this ledger posting group.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="69">Customer case discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="69">The main account that is used to post a cash discount for sales tax codes that are associated with this ledger posting group.</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="71">For more information, see, <a href="tasks/set-up-ledger-posting-groups-sales-tax.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="71">Set up Ledger posting groups for sales tax</a></p>
+</li>
+</ol>
+<h2 id="debug-in-code-to-check-ledger-dimensions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="73">Debug in code to check ledger dimensions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="75">In the code, the posting account is determined by the ledger dimension. The ledger dimension saves the record ID of an account in the database.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="77">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="77"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="77">For a sales order, add a breakpoint at the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="77">Tax::saveAndPost()</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="77">Tax::post()</strong> methods. Pay attention to the value of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="77">_ledgerDimension</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="79"><a href="media/tax-posted-to-wrong-ledger-account-Picture6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="79"><img src="media/tax-posted-to-wrong-ledger-account-Picture6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="79" alt="Sales order code sample that has a breakpoint."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="81">For a purchase order, add a breakpoint at the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="81">TaxPost::saveAndPost()</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="81">TaxPost::postToTaxTrans()</strong> methods. Pay attention to the value of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="81">_ledgerDimension</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="83"><a href="media/tax-posted-to-wrong-ledger-account-Picture7.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="83"><img src="media/tax-posted-to-wrong-ledger-account-Picture7.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="83" alt="Purchase order code sample that has a breakpoint."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="85"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="85">Run the following SQL query to find the display value of the account in the database, based on the record ID that is saved by the ledger dimension.</p>
+<pre><code class="lang-sql" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="87">select * from DIMENSIONATTRIBUTEVALUECOMBINATION where recid={the value of _ledgerDimension}
+</code></pre>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="91"><a href="media/tax-posted-to-wrong-ledger-account-Picture8.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="91"><img src="media/tax-posted-to-wrong-ledger-account-Picture8.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="91" alt="Display value of the record ID."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="93"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="93">Examine the callstack to find where the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="93">_ledgerDimension</strong> value is assigned. Usually, the value is from <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="93">TmpTaxWorkTrans</strong>. In this case, you should add a breakpoint at <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="93">TmpTaxWorkTrans::insert()</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="93">TmpTaxWorkTrans::update()</strong> to find where the value assigned.</p>
+</li>
+</ol>
+<h2 id="determine-whether-customization-exists" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="95">Determine whether customization exists</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md" sourcestartlinenumber="97">If you've completed the steps in the previous sections but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

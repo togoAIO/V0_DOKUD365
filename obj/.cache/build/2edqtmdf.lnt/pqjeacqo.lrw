@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>What's new or changed in Dynamics 365 Finance version 10.0.7 (January 2020) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="What's new or changed in Dynamics 365 Finance version 10.0.7 (January 2020) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="whats-new-or-changed-in-dynamics-365-finance-version-1007-january-2020" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="29">What's new or changed in Dynamics 365 Finance version 10.0.7 (January 2020)</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="33">This topic describes features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.7. This version has a build number of 10.0.283 and is available as follows:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="35">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="35">Preview release is in October 2019.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="36">General availability (self-update) is in November 2019.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="37">Auto-update is in January 2020.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="39">For more information about Platform update 31, see <a href="../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md#additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="39">Additional resources</a>.</p>
+<h2 id="budget-register-entry-enhancements" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="41">Budget register entry enhancements</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="43">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="43">Budget register entries for quantity only</strong> feature enables the ability to post a budget register entry with quantity-only amounts. For example, you could post a budget entry of quantity 32 with a price of zero, resulting in an amount of zero. You can then use this quantity within the context of a financial reporting report to display a calculation of an amount divided by this quantity. For more information, see <a href="../budgeting/basic-budgeting-overview-configuration.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="43">Budgeting overview</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="45">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="45">Budget register entries defaulting of amount type</strong> feature enables the defaulting of amount type to revenue or expense based on the main account of the budget line. For details, see <a href="../budgeting/basic-budgeting-overview-configuration.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="45">Budgeting overview</a> for details.</p>
+<h2 id="ability-to-export-records-from-the-accounts-payable-invoice-pool-form" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="48">Ability to export records from the Accounts payable invoice pool form</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="49">This feature lets you export records from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="49">Accounts payable invoice pool</strong> form to Excel. This capability makes it easier to review and analyze the grid data in Excel.</p>
+<h2 id="ledger-settlement-by-user" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="51">Ledger settlement by user</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="53">Ledger settlement will now settle marked transactions by user.  When opening the page, only transactions marked by the user for settlement or transactions not marked by anyone will display. Also, a new button has been introduced to clear transactions by user ID.  This will allow an accounting manager to clear transactions for a user who might have left on vacation before finishing the settlement or for a user who has left the organization. The action will free up those transactions for another user to mark them for settlement.</p>
+<h2 id="forecast-position-reports-public-sector" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="55">Forecast position reports (Public Sector)</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="57">You can use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="57">Forecast position summary</strong> report to generate forecast position information for a budget plan and scenario that you specify. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="57">Forecast position summary</strong> report shows forecast position costs by account distributions. The forecast position costs are shown, grouped by their assigned account distributions. The cost amounts are factored by the percentage assigned to the account distribution.</p>
+<h2 id="purchasing-cards-public-sector" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="59">Purchasing cards (Public Sector)</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="61">Agencies use purchasing cards so that employees can procure goods and services without using the standard purchase requisition process. The pages and fields that are related to purchasing cards provide a mechanism for tracking purchases. Each purchase that an employee makes by using a purchasing card is recorded on a vendor invoice. However, the invoice isn't paid by using a check or electronic payment to the vendor that provided the goods or services. Instead, each invoice of this type is associated with another vendor invoice that is created to pay the vendor that provides the purchasing card services (that is, the financial institution). The card purchases are paid off when the balance that is owed to the purchasing card services provider is paid each month.</p>
+<h2 id="mark-a-purchase-agreement-as-closed" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="63">Mark a purchase agreement as &quot;Closed&quot;</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="65">Users can now mark a purchase agreement as &quot;Closed&quot; to signal that the agreement is no longer actively used, making it so users will not be able to create release orders from the purchase agreement.</p>
+<h2 id="delayed-tax-calculation-on-journal" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="67">Delayed tax calculation on journal</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="69">This feature improves the performance of tax calculations on journals when that contain a significant number of transactions. Tax amounts will only be calculated when you click the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="69">Sales Tax</strong> command or when you post the journal when this feature is enabled. For more information, see <a href="../general-ledger/enable-delayed-tax-calculation.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="69">Enable delayed tax calculation on journal</a>.</p>
+<h2 id="reverse-journal-posting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="71">Reverse journal posting</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="73">This feature lets you reverse an entire posted journal or reverse one or more vouchers from the voucher transaction list regardless of their origin. For more information, see <a href="../general-ledger/reverse-journal-posting.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="73">Reverse journal posting</a>.</p>
+<h2 id="prohibit-submission-to-workflow-when-there-are-unallocated-charges-on-a-vendor-invoice" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="75">Prohibit submission to workflow when there are unallocated charges on a vendor invoice</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="76">This feature lets you prevent a vendor invoice from being submitted to the workflow process when it contains unallocated charges. Instead, the person who submitted the invoice receives an alert that there are unallocated charges and lets the user make corrections before submitting it to workflow.</p>
+<h2 id="account-groups-selection-for-chinese-voucher-types" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="78">Account groups selection for Chinese voucher types</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="80">This feature allows you to select accounts groups when setting up voucher types for China.</p>
+<h3 id="enable-the-feature" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="82">Enable the feature</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="83">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="83">Enable the feature in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="83">Workspaces &gt; Feature management</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="84">This introduces a new table where voucher type setup is stored. To copy existing Chinese voucher type setup information to a new table, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="84">System administration &gt; Periodic tasks &gt; Database &gt; Consistency check</strong>. Expand <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="84">Program &gt; General ledger</strong> and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="84">Restriction type for voucher</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="85">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="85">Check</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="85">Check/Fix</strong> field to check whether there are settings in existing setup to copy to a new table.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="86">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="86">Fix</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="86">Check/Fix</strong> field to copy settings from an existing table to a new table.</li>
+</ol>
+<h3 id="set-up-voucher-type" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="88">Set up voucher type</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="89">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="89">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="89">General ledger &gt; Journal setup &gt; Chinese voucher type &gt; Voucher type</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="90">Under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="90">Rules</strong> FastTab, select the line with specific restriction.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="91">Under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="91">Impacted accounts</strong> FastTab, click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="91">Add</strong> and set up the accounts for the selected rule:</li>
+</ol>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="92">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="92">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="92">Account type</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="92">Ledger</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="92">Customer</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="92">Vendor</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="92">Project</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="92">Fixed assets</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="92">Bank</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="93">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="93">Account code</strong>, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="93">Account</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="93">Group</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="93">All</strong>. Note that the value <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="93">Group</strong> is not available for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="93">Ledger</strong> account code.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="94">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="94">Group number</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="94">Customer group</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="94">Vendor group</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="94">Project group</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="94">Fixed asset group</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="94">Bank group</strong> to match the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="94">Account type</strong> field, if you selected <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="94">Group</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="94">Account code</strong> field.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">Account number</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">Ledger account</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">Customer account</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">Vendor account</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">Project ID</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">Fixed asset number</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">Bank account value</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">Account type</strong> field, if you selected <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">Table</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="95">Account code</strong> field.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="98">For details about how to set up Chinese voucher types, see <a href="../localizations/tasks/set-up-chinese-vouchers.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="98">Set up Chinese vouchers</a>.</p>
+<h2 id="sort-by-resource-in-the-project-invoice-proposal" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="100">Sort by resource in the project invoice proposal</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="102">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="102">Enable sorting by resource during project invoice proposal creation</strong> feature allows the project accountant to sort the project transactions available for billing by the resource when creating a new project invoice proposal. The grid displaying the available project transactions will have a separate field for Resource ID and Resource, allowing the user to filter and sort on the resource name. This feature is disabled by default and can be enabled in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="102">Workspaces &gt; Feature management</strong>.</p>
+<h2 id="run-settle-and-post-sales-tax-in-batch-mode" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="104">Run Settle and post sales tax in batch mode</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="106">Users can now run <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="106">Settle and post sales tax</strong> in batch mode in Italy, Belgium, and Australia. Refer to <a href="../general-ledger/tasks/set-up-sales-tax-settlement-periods.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="106">Set up sales tax settlement periods</a> for setup information.</p>
+<h2 id="tax-engine" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="108">Tax engine</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="110">The tax engine (GTE) is currently only available for India.</p>
+<h3 id="create-tax-component-with-pre-defined-rules" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="112">Create tax component with pre-defined rules</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="114">Instead of creating a new tax component, users can now create it with predefined tax rules that support the most commonly used taxation rules like reverse charge and non-deductible. For more information, see <a href="../localizations/tax-engine-create-tax-component.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="114">Create tax component</a>.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="117">Additional resources</h2>
+<h3 id="platform-update-31" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="119">Platform update 31</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="121">Microsoft Dynamics 365 Finance 10.0.7 includes Platform update 31. To learn more, see <a href="../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="121">What's new and changed in Platform update 31</a>.</p>
+<h3 id="bug-fixes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="124">Bug fixes</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="125">For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the <a href="https://fix.lcs.dynamics.com/Issue/Details?bugId=386529&amp;dbType=3&amp;qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="125">KB article</a>.</p>
+<h3 id="dynamics-365-2019-release-wave-2-plan" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="128">Dynamics 365: 2019 release wave 2 plan</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="130">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="132">Check out the <a href="/dynamics365-release-plan/2019wave2/index" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="132">Dynamics 365: 2019 release wave 2 plan</a>. We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.</p>
+<h3 id="removed-and-deprecated-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="134">Removed and deprecated features</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="136">The <a href="../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="136">Removed or deprecated features</a> topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="138">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="138">A <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="138">removed</em> feature is no longer available in the product.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="139">A <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="139">deprecated</em> feature is not in active development and may be removed in a future update.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="141">Before any feature is removed from the product, the deprecation notice will be announced in the <a href="../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="141">Removed or deprecated features</a> topic 12 months prior to the removal.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md" sourcestartlinenumber="143">For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-7.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Add lookup values for financial dimensions to Excel templates | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Add lookup values for financial dimensions to Excel templates | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="add-lookup-values-for-financial-dimensions-to-excel-templates">Add lookup values for financial dimensions to Excel templates</h1>
+
+[!include[banner](../includes/banner.md)]
+<p>This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.</p>
+<p>The only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the <a href="dimensions-overview.html">Add dimensions to Excel templates</a> topic. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this topic.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.</p>
+</div>
+<ol>
+<li><p>In Visual Studio, open the project where you modified <strong>DimensionCombinationEntity</strong> or <strong>DimensionSetEntity.</strong></p>
+</li>
+<li><p>Right-click <strong>DimensionCombinationEntity</strong> or <strong>DimensionSetEntity</strong>. Select <strong>Open</strong>.</p>
+</li>
+<li><p>Right click <strong>Relations</strong>. Select <strong>New</strong> and then click <strong>Relation.</strong></p>
+</li>
+<li><p>In the <strong>Properties</strong> pane, set the following properties.</p>
+<ul>
+<li><p><strong>Validate</strong> - No</p>
+</li>
+<li><p><strong>Cardinality</strong> - ZeroMore</p>
+</li>
+<li><p><strong>Name</strong> - Enter the name of the financial dimension, such as Department.</p>
+</li>
+<li><p><strong>Related Data Entity</strong> - Select the entity for the financial dimension that you entered in the <strong>Name</strong> field. The following table contains a list of the financial dimensions and the related entities.</p>
+<table>
+<thead>
+<tr>
+<th>Financial dimension 'Use values from'</th>
+<th>Related entity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt; Custom dimension &gt;</td>
+<td>DimAttributeFinancialTagEntity</td>
+</tr>
+<tr>
+<td>Agreements</td>
+<td>DimAttributeAgreementHeaderExt_RUEntity</td>
+</tr>
+<tr>
+<td>Bank accounts</td>
+<td>DimAttributeBankAccountTableEntity</td>
+</tr>
+<tr>
+<td>BusinessUnits</td>
+<td>DimAttributeOMBusinessUnitEntity</td>
+</tr>
+<tr>
+<td>Campaigns</td>
+<td>DimAttributeSmmCampaignTableEntity</td>
+</tr>
+<tr>
+<td>Cash accounts</td>
+<td>DimAttributeRCashTable_RUEntity</td>
+</tr>
+<tr>
+<td>Cost centers</td>
+<td>DimAttributeOMCostCenterEntity</td>
+</tr>
+<tr>
+<td>Customer groups</td>
+<td>DimAttributeCustGroupEntity</td>
+</tr>
+<tr>
+<td>Customers</td>
+<td>DimAttributeCustTableEntity</td>
+</tr>
+<tr>
+<td>Deferrals</td>
+<td>DimAttributeRDeferralsTable_RUEntity</td>
+</tr>
+<tr>
+<td>Departments</td>
+<td>DimAttributeOMDepartmentEntity</td>
+</tr>
+<tr>
+<td>Expense and income codes</td>
+<td>DimAttributeRTax25ProfitTable_RUEntity</td>
+</tr>
+<tr>
+<td>Expense Purposes</td>
+<td>DimAttributeTrvTravelTxtEntity</td>
+</tr>
+<tr>
+<td>Fiscal establishments</td>
+<td>DimAttributeFiscalEstablishment_BREntity</td>
+</tr>
+<tr>
+<td>Fixed asset groups</td>
+<td>DimAttributeAssetGroupEntity</td>
+</tr>
+<tr>
+<td>Fixed assets</td>
+<td>DimAttributeAssetTableEntity</td>
+</tr>
+<tr>
+<td>Fixed assets (Russia)</td>
+<td>DimAttributeRAssetTable_RUEntity</td>
+</tr>
+<tr>
+<td>Funds</td>
+<td>DimAttributeLedgerFund_PSN</td>
+</tr>
+<tr>
+<td>Item groups</td>
+<td>DimAttributeInventItemGroupEntity</td>
+</tr>
+<tr>
+<td>Items</td>
+<td>DimAttributeInventTableEntity</td>
+</tr>
+<tr>
+<td>Jobs</td>
+<td>DimAttributeHcmJobEntity</td>
+</tr>
+<tr>
+<td>Legal entities</td>
+<td>DimAttributeCompanyInfoEntity</td>
+</tr>
+<tr>
+<td>POS registers</td>
+<td>DimAttributeRetailTerminalEntity</td>
+</tr>
+<tr>
+<td>Positions</td>
+<td>DimAttributeHcmPositionEntity</td>
+</tr>
+<tr>
+<td>Project contracts</td>
+<td>DimAttributeProjInvoiceTableEntity</td>
+</tr>
+<tr>
+<td>Project groups</td>
+<td>DimAttributeProjGroupEntity</td>
+</tr>
+<tr>
+<td>Projects</td>
+<td>DimAttributeProjTableEntity</td>
+</tr>
+<tr>
+<td>Prospects</td>
+<td>DimAttributeSmmBusRelTableEntity</td>
+</tr>
+<tr>
+<td>Resource groups</td>
+<td>DimAttributeWrkCtrResourceGroupEntity</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>DimAttributeWrkCtrTableEntity</td>
+</tr>
+<tr>
+<td>Stores</td>
+<td>DimAttributeRetailStoreEntity</td>
+</tr>
+<tr>
+<td>Value streams</td>
+<td>DimAttributeOMValueStreamEntity</td>
+</tr>
+<tr>
+<td>Vendor groups</td>
+<td>DimAttributeVendGroupEntity</td>
+</tr>
+<tr>
+<td>Vendors</td>
+<td>DimAttributeVendTableEntity</td>
+</tr>
+<tr>
+<td>Workers</td>
+<td>DimAttributeHcmWorkerEntity</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p><strong>Related Data Entity Cardinality</strong> - <strong>ZeroOne</strong></p>
+</li>
+<li><p><strong>Related Data Entity Role</strong> - Enter a unique name, such as &quot;Dimension Department Lookup&quot;.</p>
+</li>
+<li><p><strong>Relationship Type</strong> - <strong>Association</strong></p>
+</li>
+<li><p><strong>Role</strong> - Enter a unique name, such as Dimension Department.</p>
+</li>
+</ul>
+</li>
+<li><p>Right-click the <strong>Financial dimension</strong> name under <strong>Relations.</strong></p>
+</li>
+<li><p>Select <strong>New</strong>, and then click <strong>Normal.</strong></p>
+</li>
+<li><p>In the Properties pane, choose the name of the Financial dimension in the <strong>Field</strong>.</p>
+</li>
+<li><p>In the Related field, type <strong>Value</strong>. The new relation is similar to the following example.</p>
+<pre><code class="lang-xpp">DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
+</code></pre>
+<p><img src="media/lookupwiki.png" alt="Relation properties in Visual Studio."></p>
+</li>
+<li><p>Build the project and then synchronize it with the database.</p>
+</li>
+</ol>
+<h2 id="additional-resources">Additional resources</h2>
+<p><a href="add-dimensions-excel-templates.html">Add lookup values for financial dimensions to Excel templates</a></p>
+<p><a href="../extensibility/extensibility-home-page.md">Extensibility home page</a></p>
+<p><a href="../office-integration/office-integration-edit-excel.md">Create Open in Excel experiences</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/financial/add-dimensions-excel-templates.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

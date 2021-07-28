@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>What's new or changed in Dynamics 365 for Finance and Operations platform update 27 (June 2019) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="What's new or changed in Dynamics 365 for Finance and Operations platform update 27 (June 2019) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-27-june-2019" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="29">What's new or changed in Dynamics 365 for Finance and Operations platform update 27 (June 2019)</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="33">This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 27. This version has a build number of 7.0.5286. For more information about Platform update 27, see <a href="whats-new-platform-update-27.html#additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="33">Additional resources</a>.</p>
+<h2 id="feature-management" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="35">Feature Management</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="36">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="36">Feature management</strong> experience provides a workspace where you can view, enable, disable, and schedule features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="38">For more information about Feature management, see <a href="feature-management/feature-management-overview.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="38">Feature management overview</a>.</p>
+<h2 id="dedicated-capacity-to-process-business-events" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="40">Dedicated capacity to process business events</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="41">It will be no longer required to schedule the business event processing batch job to process business events. Dedicated threads are allocated to process business events by the system, which ensures faster processing of business events. The existing batch job is still available (but is not needed to run unless there are issues with dedicated capacity). If the batch job was already scheduled prior to this platform update, the batch will become ineffective and dedicated threads will take over after the update.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="43">For more information, see <a href="../../dev-itpro/business-events/home-page.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="43">Business events overview</a>.</p>
+<h2 id="cancel-a-running-batch-job" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="45">Cancel a running batch job</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="46">It can take a long time to cancel a batch job if the job has tasks that are currently executing. The abort option provides a system administrator or batch job manager with the ability to cancel already executing tasks for jobs if the jobs are canceled. This provides a much faster mechanism to cancel a long running job that might impact system usage in other places. For more information, see <a href="../../dev-itpro/sysadmin/batch-abort.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="46">Abort an executing batch job</a></p>
+<h2 id="extensibility-enhancements" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="48">Extensibility enhancements</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="49">The <a href="/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="49">fourth wave of platform extensibility enhancements</a> included in Platform update 27 is documented in the April 2019 release notes. There are two enhancements detailed, with the highlight being that View extensions can now change label and help text values.</p>
+<h2 id="export-data-from-all-companies-to-byod-can-be-enabled-via-parameters" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="51">Export data from all companies to BYOD can be enabled via parameters</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="52">The functionality to enable export from all companies to BYOD can now be enabled in framework parameters in data management. Until now, this required a flight to be enabled which is no longer needed.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="54">Additional resources</h2>
+<h3 id="platform-update-27-bug-fixes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="56">Platform update 27 bug fixes</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="57">For information about the bug fixes included in each of the updates that are part of Platform update 27, sign in to Lifecycle Services (LCS) and view this <a href="https://fix.lcs.dynamics.com/Issue/Details?bugId=320391&amp;dbType=3&amp;qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="57">KB article</a>.</p>
+<h3 id="dynamics-365-april-19-release-notes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="59">Dynamics 365 April '19 release notes</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="60">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="62"><a href="/business-applications-release-notes/April19/index" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="62">Check out the April '19 release notes</a>. We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.</p>
+<h3 id="removed-and-deprecated-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="64">Removed and deprecated features</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="65">The <a href="../../dev-itpro/migration-upgrade/deprecated-features.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="65">Removed or deprecated features for Finance and Operations</a> topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="67">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="67">A <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="67">removed</em> feature is no longer available in the product.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="68">A <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="68">deprecated</em> feature is not in active development and may be removed in a future update.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="70">Before any feature is removed from the product, the deprecation notice will be announced in the <a href="../../dev-itpro/migration-upgrade/deprecated-features.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="70">Removed or deprecated features for Finance and Operations</a> topic 12 months prior to the removal.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md" sourcestartlinenumber="72">For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-27.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

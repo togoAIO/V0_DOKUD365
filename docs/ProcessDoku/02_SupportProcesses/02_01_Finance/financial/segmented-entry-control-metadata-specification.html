@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Design-time metadata for Segmented Entry controls | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Design-time metadata for Segmented Entry controls | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="design-time-metadata-for-segmented-entry-controls">Design-time metadata for Segmented Entry controls</h1>
+
+[!include[banner](../includes/banner.md)]
+<p>Describes the design-time metadata properties for Segmented Entry controls.</p>
+<p>The custom properties for the Segmented Entry control are found under the Controller group. Here is an example.</p>
+<p><a href="media/10.jpg"><img src="media/10.jpg" alt="SEC Property Sheet Example."></a></p>
+<p>Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  For more information, see <a href="#valid-properties">Valid properties</a>.</p>
+<h2 id="property-details">Property details</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Valid values</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Account Type Field</td>
+<td>A field from the data source.</td>
+<td>Determines the type of account used. Typically used for journal entry from a multi-segment ledger account to single segment values from other backing tables, such as Cust, Vend, Bank, Project, and similar.</td>
+</tr>
+<tr>
+<td>Controller Class</td>
+<td>One of 7 Controller classes. For example, LedgerDimensionDefaultAccountController.</td>
+<td>Determines the pattern and behavior of the Segmented Entry control.</td>
+</tr>
+<tr>
+<td>Include Financial Accounts</td>
+<td>NoYes</td>
+<td>Determines if Main accounts that are Financial accounts are valid for use.</td>
+</tr>
+<tr>
+<td>Include Total Accounts</td>
+<td>NoYes</td>
+<td>Determines if Main accounts of type Total are valid for use.</td>
+</tr>
+<tr>
+<td>Is Default Account</td>
+<td>TrueFalse</td>
+<td>For a Dynamic account, determines if the account should be a default or full account.</td>
+</tr>
+<tr>
+<td>Lock Main Account Segment</td>
+<td>NoYes</td>
+<td>Controls whether the Main account segment is locked.  Typically used in journals and distributions based on configuration.</td>
+</tr>
+<tr>
+<td>Posting Type</td>
+<td>A value from the LedgerPostingType enumeration.</td>
+<td>The Main account is validated to see if the posting type can be with that account.</td>
+</tr>
+<tr>
+<td>Validate Blocked For Manual Entry</td>
+<td>NoYes</td>
+<td>Determines if the 'Blocked for Manual Entry' status on the dimension should be respected.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="valid-properties">Valid properties</h2>
+<p>The following sections show which properties are valid for each Controller type.</p>
+<h3 id="validate-blocked-for-manual-entry">Validate Blocked For Manual Entry</h3>
+<p>BudgetLedgerDimension: Yes</p>
+<p>BudgetPlanningLedgerDimension: Yes</p>
+<p>DimensionDynamicAccount: Yes</p>
+<p>LedgerDimensionAccount: Yes</p>
+<p>LedgerDimensionDefaultAccount: Yes</p>
+<p>LedgerDimensionAccountAlias: Yes</p>
+<h3 id="account-type-field">Account Type Field</h3>
+<p>BudgetLedgerDimension: No</p>
+<p>BudgetPlanningLedgerDimension: No</p>
+<p>DimensionDynamicAccount: Yes</p>
+<p>LedgerDimensionAccount: No</p>
+<p>LedgerDimensionDefaultAccount: No</p>
+<p>LedgerDimensionAccountAlias: No</p>
+<h3 id="is-default-account">Is Default Account</h3>
+<p>BudgetLedgerDimension: No</p>
+<p>BudgetPlanningLedgerDimension: No</p>
+<p>DimensionDynamicAccount: Yes</p>
+<p>LedgerDimensionAccount: No</p>
+<p>LedgerDimensionDefaultAccount: No</p>
+<p>LedgerDimensionAccountAlias: No</p>
+<h3 id="lock-main-account-segment">Lock Main Account Segment</h3>
+<p>BudgetLedgerDimension: No</p>
+<p>BudgetPlanningLedgerDimension: Yes</p>
+<p>DimensionDynamicAccount: Yes</p>
+<p>LedgerDimensionAccount: Yes</p>
+<p>LedgerDimensionDefaultAccount: Yes</p>
+<p>LedgerDimensionAccountAlias: No</p>
+<h3 id="posting-type">Posting Type</h3>
+<p>BudgetLedgerDimension: No</p>
+<p>BudgetPlanningLedgerDimension: Yes</p>
+<p>DimensionDynamicAccount: Yes</p>
+<p>LedgerDimensionAccount: Yes</p>
+<p>LedgerDimensionDefaultAccount: Yes</p>
+<p>LedgerDimensionAccountAlias: Yes</p>
+<h3 id="include-total-accounts">Include Total Accounts</h3>
+<p>BudgetLedgerDimension: No</p>
+<p>BudgetPlanningLedgerDimension: No</p>
+<p>DimensionDynamicAccount: Yes</p>
+<p>LedgerDimensionAccount: No</p>
+<p>LedgerDimensionDefaultAccount: Yes</p>
+<p>LedgerDimensionAccountAlias: No</p>
+<h3 id="include-financial-accounts">Include Financial Accounts</h3>
+<p>BudgetLedgerDimension: No</p>
+<p>BudgetPlanningLedgerDimension: No</p>
+<p>DimensionDynamicAccount: Yes</p>
+<p>LedgerDimensionAccount: No</p>
+<p>LedgerDimensionDefaultAccount: Yes</p>
+<p>LedgerDimensionAccountAlias: No</p>
+<h2 id="additional-resources">Additional resources</h2>
+<p><a href="segmented-entry-control-dialog-support.html">Support for Segmented Entry controls on dialogs</a></p>
+<p><a href="segmented-entry-control-parm-method-specification.html">Parm methods for Segmented Entry controls</a></p>
+<p><a href="segmented-entry-control-conversion.html">Migrate Segmented Entry controls</a></p>
+<p><a href="segmented-entry-control-migration-guidance.html">Migration guidance for Segmented Entry controls</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-metadata-specification.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

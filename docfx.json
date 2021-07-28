@@ -79,16 +79,14 @@
 
     "globalMetadata": {
       "_appTitle": "WIKA Documentation",
-      "_enableSearch": "true"
+      "_enableSearch": "true",
+      "_appFooter": "<span>Customized Footer</span>"
 
       
     
     },
     
-      "template": [
-          "default",
-          "templates/material"
-      ],
+    "template":["default","templates/discordfx"],
   
     "postProcessors": ["ExtractSearchIndex"],
     "markdownEngineName": "markdig",

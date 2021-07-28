@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Use one payment to settle invoices that span multiple discount periods | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Use one payment to settle invoices that span multiple discount periods | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="30">Use one payment to settle invoices that span multiple discount periods</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="34">This topic shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in this article highlight how the cash discounts that are taken vary, depending on when the payment is made.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="36">Fabrikam sells goods to customer 4032. Fabrikam offers a cash discount of 1 percent if the invoice is paid in 14 days. Fabrikam also offers cash discounts on partial payments. The settlement parameters are located on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="36">Accounts receivable parameters</strong> page.</p>
+<h2 id="invoices" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="38">Invoices</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="39">Customer 4032 has three invoices that total 3,000.00:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="41">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="41">Invoice FTI-10040, for 1,000.00, was entered on May 15. This invoice is eligible for a cash discount of 1 percent if it's paid in 14 days.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="42">Invoice FTI-10041, for 1,000.00, was entered on June 25. This invoice is eligible for a cash discount of 1 percent if it's paid in 14 days.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="43">Invoice FTI-10042, for 1,000.00, was entered on June 25. This invoice is eligible for a cash discount of 2 percent if it's paid in five days and a discount of 1 percent if it's paid in 14 days.</li>
+</ul>
+<h2 id="settle-all-invoices-on-june-29" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="45">Settle all invoices on June 29</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="46">If Arnie creates a payment journal to fully settle these invoices on June 29, the payment is 2,970.00. The total of all discount amounts is 30.00. Arnie creates a payment for customer 4032 and then opens the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="46">Settle transactions</strong> page. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="46">Settle transactions</strong> page, Arnie marks all three invoice lines for settlement:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="48">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="48">The payment for invoice FTI-10040 is 1,000.00. No cash discount is taken.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="49">The payment for invoice FTI-10041 is 990.00. A cash discount of 1 percent, or 10.00, is taken.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="50">The payment for invoice FTI-10042 is 980.00. A cash discount of 2 percent, or 20.00, is taken.</li>
+</ul>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Mark</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Use cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Due date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="52">Amount to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">FTI-10040</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">4032</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">5/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">6/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">10040</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="54">1,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">FTI-10041</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">4032</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">10041</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="55">990.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">Selected and highlighted</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">FTI-10042</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">4032</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">10042</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="56">980.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="58">After the payment is posted, the customer balance is 0.00.</p>
+<h2 id="settle-all-invoices-on-july-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="60">Settle all invoices on July 1</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="61">If Arnie creates a payment journal to fully settle these invoices on July 1, the payment is 2,980.00. Arnie creates a payment for customer 4032 and then opens the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="61">Settle transactions</strong> page. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="61">Settle transactions</strong> page, Arnie marks all three invoice lines for settlement:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="63">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="63">The payment for invoice FTI-10040 is 1,000.00. No cash discount is taken.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="64">The payment for invoice FTI-10041 is 990.00. A cash discount of 1 percent, or 10.00, is taken.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="65">The payment for invoice FTI-10042 is 990.00. A cash discount of 1 percent, or 10.00 is taken. Although July 1 is after the period that qualifies for the 2-percent discount, it's still in the period that qualifies for the 1-percent discount.</li>
+</ul>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Mark</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Use cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Due date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="67">Amount to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">FTI-10040</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">4032</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">5/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">6/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">10040</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="69">1,000.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">FTI-10041</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">4032</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">10041</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="70">990.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">Selected and highlighted</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">FTI-10042</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">4032</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">10042</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="71">990.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="partial-settlement-on-june-29" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="73">Partial settlement on June 29</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="74">Customer 4032 can pay a partial amount, such as half of each invoice. Arnie creates a payment for customer 4032 and then opens the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="74">Settle transactions</strong> page. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="74">Settle transactions</strong> page, Arnie marks all three invoice lines for settlement. On each line, Arnie enters the amount to settle, based on the instructions that the customer provided. When Arnie selects a line, Arnie sees the discount amount for that line and the cash discount amount that is taken. Because the customer is paying half the invoice, Arnie sees that the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="74">Cash discount amount</strong> field for FTI-10042 is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="74">20.00</strong>, but the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="74">Cash discount taken</strong> field is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="74">10.00</strong>. The payment amount is 1,485.00.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Mark</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Use cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Due date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="76">Amount to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">FTI-10040</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">4032</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">5/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">6/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">10040</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="78">500.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">FTI-10041</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">4032</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">10041</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="79">495.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">Selected and highlighted</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">FTI-10042</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">4032</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">10042</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="80">490.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="82">Arnie can also manually enter the payment amount of 1,485.00 before opening the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="82">Settle transactions</strong> page. If Arnie manually enters the payment amount and then marks all three transactions, but doesn't adjust the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="82">Amount to settle</strong> field for each transaction, Arnie receives the following message when the page closes:</p>
+<blockquote sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="84">
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="84">The total amount of marked transactions is different from the journal amount. Change journal amount?</p>
+</blockquote>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="86">If Arnie wants the payment amount to be only 1,485.00, Arnie clicks <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="86">No</strong> and then posts the journal. The transactions are settled as follows:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="88">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="88">Invoice FTI-10040 is fully settled for 1,000.00, because it was entered on May 15 and is the oldest invoice. No cash discount is taken. The remaining amount on the payment transaction is 485.00.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="89">Invoice FTI-10041 isn't settled at all. Invoices FTI-10041 and FTI-10042 were entered on the same date. However, a 1-percent discount is available to invoice FTI-10041, and a 2-percent discount is available to invoice FTI-10042. Because a better discount is available to invoice FTI-10042, the remaining 485.00 is settled with invoice FTI-10042.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="90">Invoice FTI-10042 is settled with the remaining 485.00. Fabrikam offers partial discounts. In this case, the discount is 9.90 (= 485.00 ÷ 0.98 × 0.02). The amount (485.00) is divided by 0.98, because there is a 2-percent discount (therefore, the customer pays 98 percent of the invoice). The result is then multiplied by the discount percentage, or 2 percent. The payment of 485.00 plus the discount of 9.90 equals 494.90. The amount of the original invoice was 1,000.00. Therefore, the transaction has a balance of 505.10 (= 1,000.00 – 494.90).</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="92">Arnie views the information on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="92">Customer transactions</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="94">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="94">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="94">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="94">Transaction type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="94">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="94">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="94">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="94">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="94">Balance</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="94">Currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="96">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="96">FTI-10040</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="96">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="96">5/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="96">10040</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="96">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="96"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="96">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="96">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="97">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="97">FTI-10041</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="97">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="97">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="97">10041</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="97">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="97"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="97">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="97">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="98">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="98">FTI-10042</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="98">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="98">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="98">10042</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="98">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="98"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="98">505.10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="98">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="99">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="99">ARP-10040</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="99">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="99">6/29/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="99"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="99"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="99">1,485.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="99">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="99">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="100">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="100">DISC-10040</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="100">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="100">6/29/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="100"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="100"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="100">9.90</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="100">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md" sourcestartlinenumber="100">USD</td>
+</tr>
+</tbody>
+</table>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

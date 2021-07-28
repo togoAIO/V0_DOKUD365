@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Uptake of Dimension Entry controls | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Uptake of Dimension Entry controls | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="uptake-of-dimension-entry-controls">Uptake of Dimension Entry controls</h1>
+
+[!include[banner](../includes/banner.md)]
+<p>Describes the Dimension Entry control and associated Controller classes.</p>
+<h2 id="general-approach">General approach</h2>
+<p>The design goal is to encapsulate the control implementation and not require the form to interact with the classes backing the control. In alignment with this design, <strong>all forms should interact only with the Dimension Entry control instance API and not directly with the controller classes</strong>, like LedgerDimensionEntryController, LedgerDefaultDimensionEntryController, etc. Any property that was manipulated or any method that was called on the controller would now need to be called on the control.</p>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>The upgrade script only handles Dimension Entry controls constructed with the constructInGroupWithValues() and constructInTabWithValues() methods. Other controls will need to be upgraded manually.</li>
+<li>The upgrade script will not handle any Dimension Entry controls sent as parameters to helper methods. This code will need to be manually upgraded.</li>
+<li>In Dynamics AX 2012, the container for the default dimension control may have been defined as a securable control by setting ‘Needed Permission’ = Manual. Access to the control was granted in the security model so view and maintain access worked correctly. The default dimension control is now a design-time experience. Therefore forms no longer need to define the container of the control as a securable control. In most cases, forms that control metadata should be updated to remove the Manual setting and the references to the control in the security model need to be removed. The setting can be left as Manual if it is used to maintain fine-grained security control over the Dimension Entry control.</li>
+<li>In Dynamics AX 2012, parmAttributeSetDataSource and parmAttributeValueSetDataSource were used to set the datasource and datasource field associated with the Default Dimensions control.  Typically these were set in the init method of the form, immediately after constructing the DimensionDefaultingController instance.  All calls to parmAttributeSetDataSource and parmAttributeValueSetDataSource will be removed after upgrade.  The values from these calls are used to populate metadata on the upgraded control.  After upgrade the form should be checked to verify that it is working as expected after the removal of all these calls.</li>
+<li>Dimension Entry controls are now modelled on form design. To find a Dimension Entry control, expand the design elements or search for “DimensionEntry” on the form design. Here is what the new control will look like at design time.</li>
+</ul>
+<p><a href="media/1.png"><img src="media/1.png" alt="New project dialog."></a></p>
+<h2 id="properties">Properties</h2>
+<p>The custom properties for the Dimension Entry control are found under the <strong>Controller</strong> group.</p>
+<p><a href="media/capture1.png"><img src="media/capture1.png" alt="Properties for controller."></a></p>
+<h4 id="details-on-the-properties">Details on the properties</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Valid Values</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caption Text</td>
+<td>Any label</td>
+<td>Caption for the control.</td>
+</tr>
+<tr>
+<td>Controller Class</td>
+<td>One of the 8 Controller classes. For example, LedgerDefaultDimensionEntryController</td>
+<td>Determines the behavior of the Dimension Entry control. More information about this property is provided below.</td>
+</tr>
+<tr>
+<td>Data Source</td>
+<td>Any data source in the form data source list</td>
+<td>The data source specified here should be pointed to the table that holds the field specified in the Value Data Field property and/or the Enum Data Field property.</td>
+</tr>
+<tr>
+<td>Enum Data Field</td>
+<td>A field in the table referenced by the data source provided in the Data Source property.</td>
+<td>This is the field that the enumeration values will be stored in. This property shouldn’t be specified if the control is not using an enumeration.</td>
+</tr>
+<tr>
+<td>Enumeration</td>
+<td>Any enumeration. For example, NoYes</td>
+<td>The enumeration used by the control. The enumeration will be used by the control instead of Dimension values.</td>
+</tr>
+<tr>
+<td>Value Data Field</td>
+<td>A field in the table referenced by the data source provided in the Data Source property.</td>
+<td>This is the field that the Dimension Entry control is bound to.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="controller-class-property">Controller class property</h2>
+<p>The table provided below gives details about each controller.</p>
+<table>
+<thead>
+<tr>
+<th>Controller</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BudgetDefaultDimensionValueSet</td>
+<td>This controller provides budget based support for default value data entry in the Dimension Entry control. Budget Default Dimensions require a Main Account Dimension.</td>
+</tr>
+<tr>
+<td>PurchReqDefaultDimensionValueSet</td>
+<td>This controller provides PurchReq based support for default value data entry in the Dimension Entry control. PurchReq Default Dimensions require a Main Account Dimension.</td>
+</tr>
+<tr>
+<td>LedgerDefaultDimensionValueSet</td>
+<td>This controller provides ledger based support for default value data entry in the Dimension Entry control. Default Dimensions require the phrase “No default” to appear in the name column of any row that doesn’t have a value specified. This controller is typically used with setup, master data, and header records.</td>
+</tr>
+<tr>
+<td>LedgerDimensionValueSet</td>
+<td>This controller provides ledger based support for data entry in the Dimension Entry control. This controller is typically used with line item or transactional data.</td>
+</tr>
+<tr>
+<td>InventSiteLockedDimensionValueSet</td>
+<td>This controller provides support for data entry in the Dimension Entry control specifically for the InventSite form.</td>
+</tr>
+<tr>
+<td>InventSiteLinkedDimensionValueSet</td>
+<td>This controller provides support for data entry in the Dimension Entry control for the behavior mandated by the Inventory Dimension Link setup. This controller updates the control in a special way when the company is changed.</td>
+</tr>
+<tr>
+<td>InventSiteSMAItemDimensionValueSet</td>
+<td>This controller provides support for data entry in the Dimension Entry control for the behavior mandated by the Inventory Dimension Link setup.</td>
+</tr>
+<tr>
+<td>InventSiteTmpLedgerBaseLinkedDimensionValueSet</td>
+<td>This controller provides support for data entry in the Dimension Entry control for the behavior mandated by the Inventory Dimension Link setup. This controller specifically works with the DefaultDimension field on the TmpLedgerBase table.</td>
+</tr>
+</tbody>
+</table>
+<p>Some Dimension Entry controls might not have the controller property set. The controller is inferred from the EDT of the control’s Value Data Field in these cases. A set of Dimension Entry control specific properties is provided below. These properties are for the Dimension Entry control selected in the General Approach section above (DimensionEntryControlHeader) on the PurchTable form. This Dimension Entry control is using the DefaultDimension field on the PurchTable table. The Extended Data Type property of the DefaultDimension field on PurchTable is set to LedgerDefaultDimensionValueSet (shown below). At runtime, this EDT will be mapped to the LedgerDefaultDimensionEntryController. So the DimensionEntryControlHeader control uses the LedgerDefaultDimensionEntryController in this case. The following example shows the EDTs and the controllers they are mapped to.</p>
+<p><img src="media/3.png" alt="Add new item."></p>
+<p><img src="media/4.png" alt="Select a resource file."></p>
+<h4 id="extended-data-types-and-the-controllers-they-are-mapped-to">Extended data types and the controllers they are mapped to</h4>
+<table>
+<thead>
+<tr>
+<th>Extended data type</th>
+<th>Controller</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BudgetDefaultDimensionValueSet</td>
+<td>BudgetDefaultDimensionEntryController</td>
+</tr>
+<tr>
+<td>PurchReqDefaultDimensionValueSet</td>
+<td>PurchReqDefaultDimensionEntryController</td>
+</tr>
+<tr>
+<td>LedgerDefaultDimensionValueSet</td>
+<td>LedgerDefaultDimensionEntryController</td>
+</tr>
+<tr>
+<td>LedgerDimensionValueSet</td>
+<td>LedgerDimensionEntryController</td>
+</tr>
+<tr>
+<td>InventSiteLockedDimensionValueSet</td>
+<td>InventSiteLockedDimensionEntryController</td>
+</tr>
+<tr>
+<td>InventSiteLinkedDimensionValueSet</td>
+<td>InventSiteLinkedDimensionEntryController</td>
+</tr>
+<tr>
+<td>InventSiteSMAItemDimensionValueSet</td>
+<td>InventSiteSMAItemDimensionEntryController</td>
+</tr>
+<tr>
+<td>InventSiteTmpLedgerBaseLinkedDimensionValueSet</td>
+<td>InventSiteTmpLedgerBaseLinked-<br>DimensionEntryController</td>
+</tr>
+</tbody>
+</table>
+<h2 id="upgrade-script-todos">Upgrade Script TODOs</h2>
+<h3 id="dynamics-ax-2012">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">/* TODO: (Code Upgrade) [Dimension entry control]
+Replace this based on the migration guidance. */
+DimensionEntryControl.reactivate();
+</code></pre>
+<h3 id="finance-and-operations">Finance and Operations</h3>
+<p>The reactivate method refreshes the Dimension Entry control with current settings. The method only refreshes the control if the company or displayed dimension list changes. This call can be removed if neither of these are changed before it. Otherwise leave the call as is. If parmCompany() is called immediately before reactivate(), and it is the only DEC API called before reactivate(), and the method it resides in is called during the active() of the datasource, then an optimization can be manually made to improve performance and reduce code uptake:</p>
+<ol>
+<li><p>Remove the parmCompany() and reactivate() calls during the datasource active process.</p>
+</li>
+<li><p>In the form init(), run(), datasource init(), or similar methods called before initial user interaction with the form, add the following line of code:</p>
+<pre><code class="lang-xpp">DimensionEntryControl.parmCompanyReference(
+    fieldStr([myTable], [myCompanyContextField]);
+</code></pre>
+<p>This change will allow the DEC to automatically find the company field reference that is updated when the active record changes and refresh the list of dimensions accordingly.</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This should not be combined with the use of parmDisplayedDimensionSet() otherwise the list of dimensions may not be the ones expected. In all other locations, such as the modified method of a company selection field, parmCompany() must be called to immediately reflect the change in company as the datasource is not in the process of being read at that time.</p>
+</div>
+<h3 id="dynamics-ax-2012-1">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">/* TODO: (Code Upgrade) [Dimension entry control]
+Replace this based on the migration guidance. */
+DimensionEntryControl.setEditability(true, 0);
+</code></pre>
+<h3 id="finance-and-operations-1">Finance and Operations</h3>
+<p>If a specific editable dimension set is needed, replace this call with:</p>
+<pre><code class="lang-xpp">DimensionEntryControl.parmEditableDimensionSet(
+    editableDimensionSet);
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The editableDimensionSet parameter is of type DimensionEnumeration.</p>
+</div>
+<h3 id="dynamics-ax-2012-2">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">/* TODO: (Code Upgrade) [Dimension entry control]
+This method can be removed if there is
+no custom implementation */
+// dimensionDefaultingController.pageActivated();
+</code></pre>
+<h3 id="finance-and-operations-2">Finance and Operations</h3>
+<p>If this call is made within the pageActivated method of the Dimension Entry control’s parent control or the form init method, it can be removed. The intent of this method call outside the above mentioned locations isn’t clear. Remove the call and test the control.</p>
+<h3 id="dynamics-ax-2012-3">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">/* TODO: (Code Upgrade) [Dimension entry control]
+Replace this based on the migration guidance. */
+DimensionEntryControl.deleted();
+</code></pre>
+<h3 id="finance-and-operations-3">Finance and Operations</h3>
+<p>A TODO will be left for a call to deleted() that is not inside a data source delete method. These calls are only expected to be in data source delete methods, and there is no replacement. Try to remove the call and test the control.</p>
+<h3 id="dynamics-ax-2012-4">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">/* TODO: (Code Upgrade) [Dimension entry control]
+Replace this based on the migration guidance. */
+// dimensionDefaultingController.writing();
+</code></pre>
+<h3 id="finance-and-operations-4">Finance and Operations</h3>
+<p>The Dimension Entry control framework will save values. Remove the call and test the control.</p>
+<h3 id="dynamics-ax-2012-5">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">/* TODO: (Code Upgrade) [Dimension entry control]
+Replace this based on the migration guidance. */
+dimensionDefaultingController::findBackingEntityInstance();
+</code></pre>
+<h3 id="finance-and-operations-5">Finance and Operations</h3>
+<p>To find the entity, the getEntityInstance method needs to be called from the DimensionAttributeValue. Replace this call with something similar to the following:</p>
+<pre><code class="lang-xpp">DimensionAttributeValue dimAttrValue =
+    DimensionAttributeValue::
+        findByDimensionAttributeAndValueNoError(
+            dimensionAttributeTable, dimensionValue);
+if (dimAttrValue) {
+    common = dimAttrValue.getEntityInstance();
+}
+</code></pre>
+<h3 id="dynamics-ax-2012-6">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">/* TODO: (Code Upgrade) [Dimension entry control]
+Replace this based on the migration guidance. */
+DimensionEntryControlHeader.updateValues(NoYesUnchanged::Yes);
+</code></pre>
+<h3 id="finance-and-operations-6">Finance and Operations</h3>
+<p>Since the updateValues() method is only called with one parameter here, the call can be replaced with a call to allowEdit().</p>
+<pre><code class="lang-xpp">DimensionEntryControlHeader.allowEdit(
+    NoYesUnchanged::Yes);
+</code></pre>
+<h3 id="dynamics-ax-2012-7">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">/* TODO: (Code Upgrade) [Dimension entry control]
+Replace this based on the migration guidance. */
+DimensionEntryControlHeader.updateValues(
+    NoYesUnchanged::No, true);
+</code></pre>
+<h3 id="finance-and-operations-7">Finance and Operations</h3>
+<p>Since the call to updateValues() has two parameters in this case, it needs to be replaced with a call to allowEdit() to change the editability of the control and a call to loadAttributeValueSet() to clear the control’s values.</p>
+<pre><code class="lang-xpp">DimensionEntryControlHeader.allowEdit(
+    NoYesUnchanged::No);
+DimensionEntryControlHeader.loadAttributeValueSet(0);
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the first parameter in the updateValues method call was NoYesUnchanged::Unchanged, then the new call to allowEdit is not needed. Similarly, if the second parameter in the updateValues method call was false, then the call to loadAttributeValueSet is not needed.</p>
+</div>
+<h2 id="methods-to-potentially-remove">Methods to potentially remove</h2>
+<p>Any leftover methods on the datasource or tabpage/group that holds the Dimension Entry control can be removed if there is no custom logic. The following table shows examples of methods without customizations which should be deleted.</p>
+<h3 id="dynamics-ax-2012-8">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">public int active(){int ret;ret = super();return ret;}
+</code></pre>
+<h3 id="finance-and-operations-8">Finance and Operations</h3>
+<p>This method will be on the data source. It can be removed if there is no custom logic.</p>
+<h3 id="dynamics-ax-2012-9">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">public void delete(){super();}
+</code></pre>
+<h3 id="finance-and-operations-9">Finance and Operations</h3>
+<p>This method will be on the data source. It can be removed if there is no custom logic.</p>
+<h3 id="dynamics-ax-2012-10">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">public void deleted(){super();}
+</code></pre>
+<h3 id="finance-and-operations-10">Finance and Operations</h3>
+<p>This method will be on the data source. It can be removed if there is no custom logic.</p>
+<h3 id="dynamics-ax-2012-11">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">public void deleting(){super();}
+</code></pre>
+<h3 id="finance-and-operations-11">Finance and Operations</h3>
+<p>This method will be on the data source. It can be removed if there is no custom logic.</p>
+<h3 id="dynamics-ax-2012-12">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">public boolean validateDelete(){boolean ret;ret = super();return ret;}
+</code></pre>
+<h3 id="finance-and-operations-12">Finance and Operations</h3>
+<p>This method will be on the data source. It can be removed if there is no custom logic.</p>
+<h3 id="dynamics-ax-2012-13">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">public void write(){super();}
+</code></pre>
+<h3 id="finance-and-operations-13">Finance and Operations</h3>
+<p>This method will be on the data source. It can be removed if there is no custom logic.</p>
+<h3 id="dynamics-ax-2012-14">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">public void writing(){super();}
+</code></pre>
+<h3 id="finance-and-operations-14">Finance and Operations</h3>
+<p>This method will be on the data source. It can be removed if there is no custom logic.</p>
+<h3 id="dynamics-ax-2012-15">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">public void written(){super();}
+</code></pre>
+<h3 id="finance-and-operations-15">Finance and Operations</h3>
+<p>This method will be on the data source. It can be removed if there is no custom logic.</p>
+<h3 id="dynamics-ax-2012-16">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">public boolean validateWrite(){boolean ret;ret = super();return ret;}
+</code></pre>
+<h3 id="finance-and-operations-16">Finance and Operations</h3>
+<p>This method will be on the data source. It can be removed if there is no custom logic.</p>
+<h3 id="dynamics-ax-2012-17">Dynamics AX 2012</h3>
+<pre><code class="lang-xpp">public void pageActivated()
+{
+    super();
+    /* TODO: (Code Upgrade) [Dimension entry control] This method can be removed if
+    there is no custom implementation */
+    // dimensionDefaultingController.pageActivated();
+}
+</code></pre>
+<h3 id="finance-and-operations-17">Finance and Operations</h3>
+<p>This method will be on the tabpage or group that holds the Dimension Entry control. If there is no custom logic, the method can be deleted.</p>
+<h2 id="compile-errors">Compile Errors</h2>
+<p>This section will go through how to address common compile errors that may be left behind.</p>
+<h3 id="dynamics-ax-2012-18">Dynamics AX 2012</h3>
+<p><strong>On the form (PurchTable):</strong></p>
+<pre><code class="lang-xpp">purchTableForm.parmDimensionDefaultingControllerHeader(
+    dimensionDefaultingControllerHeader);
+</code></pre>
+<p><strong>In the class (PurchTableForm):</strong></p>
+<pre><code class="lang-xpp">public DimensionDefaultingController
+parmDimensionDefaultingControllerHeader(
+    DimensionDefaultingController
+        _dimensionDefaultingControllerHeader =
+        dimensionDefaultingControllerHeader)
+{
+   dimensionDefaultingControllerHeader =
+       _dimensionDefaultingControllerHeader;
+   return dimensionDefaultingControllerHeader;
+}
+</code></pre>
+<h3 id="finance-and-operations-18">Finance and Operations</h3>
+<p><strong>On the form (PurchTable):</strong></p>
+<pre><code class="lang-xpp">purchTableForm.parmDimensionEntryControlHeader(
+    DimensionEntryControlHeader);
+</code></pre>
+<p><strong>In the class (PurchTableForm):</strong></p>
+<pre><code class="lang-xpp">public DimensionEntryControl
+parmDimensionEntryControlHeader(
+    DimensionEntryControl
+       _dimensionEntryControlHeader =
+       dimensionEntryControlHeader)
+
+{
+    dimensionEntryControlHeader =
+        _dimensionEntryControlHeader;
+    return dimensionEntryControlHeader;
+}
+</code></pre>
+<h2 id="additional-resources">Additional resources</h2>
+<p><a href="dimension-entry-control-migration.html">Migrate default dimensions controls to Dimension Entry controls</a></p>
+<p><a href="dimension-entry-control-dialog-support.html">Support for Dimension Entry controls on dialogs</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-entry-control-uptake.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

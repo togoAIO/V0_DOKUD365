@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Automatic settlement and prioritization | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Automatic settlement and prioritization | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="automatic-settlement-and-prioritization" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="30">Automatic settlement and prioritization</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="34">This topic describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="36">You have two options when you settle payments with invoices and other transactions. You can manually select the transactions to settle, or the system can select the transactions automatically by using the automatic settlement functionality. You can also customize how automatic settlements are processed by using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="36">Prioritize settlement</strong> option. All these options are part of the settlement parameters that are defined on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="36">Accounts receivable parameters</strong> page. The way that transactions are automatically settled can differ, depending on the method that you use for automatic settlement. The following methods are available:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="38">User-defined settlement priority</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="39">Default automatic settlement</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="41">The following sections describe how transactions are settled for each method.</p>
+<h2 id="example-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="43">Example transactions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="44">The examples of settlements later in this article are based on the following transactions. All transactions are for customer 2050.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="46">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="46">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="46">Transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="46">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="46">Amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="46">Cash discount terms</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="46">Cash discount date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="46">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="48">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="48">Invoice 1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="48">August 15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="48">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="48">2%14, Net 30</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="48">August 29</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="48"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="49">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="49">Invoice 2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="49">September 1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="49">250.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="49">2%14, Net 30</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="49">September 15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="49"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="50">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="50">Invoice 3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="50">October 15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="50">500.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="50">2% 14/Net 30</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="50">October 29</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="50"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="51">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="51">Interest note</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="51">October 15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="51">7.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="51"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="51"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="51">This interest note is for invoice 1 and invoice 2. The amount is calculated as 2-percent interest on amounts that are 30 or more days past due. For example, 0.02 × (100.00 + 250.00) = 7.00.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="user-defined-settlement-priority" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="53">User-defined settlement priority</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="54">If you set <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="54">Use priority for automatic settlements</strong> to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="54">Yes</strong> on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="54">Accounts receivable parameters</strong> page, the settlement priority that you define on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="54">Settlement priority</strong> page is used when transactions are selected for automatic settlement. For this example, the following settlement priority is defined:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="56">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="56"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="56">Transaction type</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="57">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="57">Payment fees</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="58">Collection letters</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="59">Interest notes</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="60">Invoices</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="62"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="62">Transaction date, Ascending</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="63"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="63">Voucher</p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="65">If you post a payment for 700.00 on October 25, the payment is settled to the transactions in the following order.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="67">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="67">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="67">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="67">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="67">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="67">Amount in transaction currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="67">Amount to settle</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="67">Balance</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="67">Currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="69">Interest note</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="69">10/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="69"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="69">7.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="69">7.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="69">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="69">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="70">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="70">Invoice 1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="70">8/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="70">10001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="70">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="70">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="70">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="70">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="71">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="71">Invoice 2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="71">9/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="71">10002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="71">250.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="71">250.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="71">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="71">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="72">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="72">Invoice 3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="72">10/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="72"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="72">500.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="72">343.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="72">157.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="72">USD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="default-automatic-settlement" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="74">Default automatic settlement</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="75">If there is no user-defined settlement priority, transactions are automatically selected for settlement based on the due date. The transactions that are settled must have the same currency as the transaction that they are settled with. If you post a payment for 700.00 on October 25, the following transactions are selected for settlement.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="77">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="77">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="77">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="77">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="77">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="77">Amount in transaction currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="77">Amount to settle</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="77">Balance</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="77">Currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="79">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="79">Invoice 1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="79">8/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="79">10001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="79">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="79">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="79">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="79">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="80">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="80">Invoice 2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="80">9/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="80">10002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="80">250.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="80">250.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="80">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="80">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="81">Invoice 3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="81">10/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="81"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="81">500.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="81">350.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="81">150.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="81">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="82">Interest note</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="82">10/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="82"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="82">7.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="82">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="82">7.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md" sourcestartlinenumber="82">USD</td>
+</tr>
+</tbody>
+</table>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/automatic-settlement-prioritization.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

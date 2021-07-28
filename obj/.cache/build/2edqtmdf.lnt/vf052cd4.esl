@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Get started with Electronic invoicing | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Get started with Electronic invoicing | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="get-started-with-electronic-invoicing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="30">Get started with Electronic invoicing</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="34">This topic provides information that will help you get started with Electronic invoicing. This topic guides you through the common configuration steps in Regulatory Configuration Services (RCS) and Dynamics 365 Finance, and provides the steps you must follow to submit business documents and review the processing results.</p>
+<h2 id="prerequisites" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="36">Prerequisites</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="38">Before you complete the procedures in this topic, the following prerequisites must be in place:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="40">Configure your Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), and your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment. For more information, see <a href="e-invoicing-get-started-service-administration.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="40">Get started with Electronic invoicing service administration</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="41">Create a configuration provider for your organization. For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="41">Create a configuration provider and mark them as active</a>.</li>
+</ul>
+<h2 id="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="43">Import an Electronic invoicing feature from the Microsoft configuration provider</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="45">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="45">Sign in to your Regulatory Configuration Service (RCS) account.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="46">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="46">Globalization feature</strong> workspace, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="46">Features</strong> section, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="46">Electronic invoicing</strong> tile.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="47">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="47">Import</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="47">Synchronize</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="48">Filter the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="48">Configuration provider</strong> column by the term <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="48">Microsoft</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="49">Select the name of an Electronic invoicing feature from the table at the beginning of this topic, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="49">Import</strong>.</li>
+</ol>
+<h2 id="create-an-electronic-invoicing-feature-under-your-organization-provider" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="51">Create an Electronic invoicing feature under your organization provider</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="53">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="53">In RCS, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="53">Features</strong> section of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="53">Globalization feature</strong> workspace, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="53">Electronic invoicing</strong> tile.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="54">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="54">Add</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="54">Based on existing feature</strong>, and in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="54">Name</strong> field, enter the name of the Electronic invoicing feature.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="55">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="55">Description</strong> field, enter a description of the feature.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="56">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="56">Base feature field</strong>, select the imported Electronic invoicing feature from the Microsoft configuration provider.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="57">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="57">Create feature</strong>.</li>
+</ol>
+<h2 id="country-specific-configuration-for-electronic-invoicing-feature" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="59">Country-specific configuration for Electronic invoicing feature</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="61">Depending on the country or region, the Electronic invoicing feature might require specific configuration.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="63">For the specific steps, see the &quot;Get started&quot; documentation that is available for your country or region.</p>
+<h2 id="import-the-model-mapping-configurations-from-electronic-reporting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="65">Import the model mapping configurations from Electronic reporting</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="67">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="67">In RCS, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="67">Electronic reporting</strong> workspace.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="68">From the list of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="68">Microsoft</strong> Configuration providers, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="68">Repositories</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="69">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="69">Global</strong> and on Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="69">Open</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="70">Import the model mapping configurations according to the following table by feature name.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="72">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="72">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="72">Feature name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="72">Model mapping configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="74">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="74">Austrian electronic invoices (AT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="74"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="75">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="75">Belgian electronic invoice (BE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="75"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="76">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="76">Brazilian NF-e (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="76"><p>Customer invoice context model</p><p>Fiscal documents</p><p>Response message model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="77">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="77">Brazilian NFS-e ABRASF Curitiba (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="77"><p>Customer invoice context model</p><p>Fiscal documents</p><p>Response message model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="78">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="78">Danish electronic invoice (DK)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="78"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="79">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="79">Egyptian electronic invoice (EG)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="79"><p>Customer invoice context model</p><p>Invoice model</p><p>Response message model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="80">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="80">Estonian electronic invoice (EE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="80"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="81">Finish electronic invoice (FI)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="81"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="82">French electronic invoice (FR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="82"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="83">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="83">German electronic invoice (DE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="83"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="84">FatturaPA (IT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="84"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="85">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="85">Mexican CFDI Interfactura (MX)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="85"><p>Customer invoice context model</p><p>Invoice model</p><p>Response message model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="86">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="86">Dutch electronic invoice (NL)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="86"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="87">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="87">Norwegian electronic invoice (NO)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="87"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="88">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="88">Spanish electronic invoice (ES)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="88"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="89">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="89">PEPPOL electronic invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="89"><p>Customer invoice context model</p><p>Invoice model</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="configure-the-application-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="92">Configure the application setup</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="94">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="94"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="94">Select the Electronic invoicing feature that you created.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="95"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="95">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="95">Setups</strong> tab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="95">Application setup</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="96"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="96">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="96">Connect application</strong> field, select the connection that is associated with your instance of Finance or Supply Chain Management.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="97"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="97">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="97">Electronic document types</strong> section, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="97">Add</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="98"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="98">Select and enter a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="98">Table name</strong> value according to the following table.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="100">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="100">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="100">Feature name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="100">Business document</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="100">Table name</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="102">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="102">Austrian electronic invoices (AT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="102"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="102"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="103">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="103">Belgian electronic invoice (BE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="103"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="103"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="104">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="104">Brazilian NF-e (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="104"><p>Fiscal document</p><p>Correction letter</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="104">Fiscal document</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="105">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="105">Brazilian NFS-e ABRASF Curitiba (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="105">Service Fiscal document</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="105">Fiscal document</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="106">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="106">Danish electronic invoice (DK)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="106"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="106"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="107">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="107">Egyptian electronic invoice (EG)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="107"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="107"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="108">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="108">Estonian electronic invoice (EE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="108"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="108"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="109">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="109">Finish electronic invoice (FI)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="109"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="109"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="110">French electronic invoice (FR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="110"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="110"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="111">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="111">German electronic invoice (DE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="111"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="111"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="112">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="112">FatturaPA (IT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="112"><p>Sales invoice</p><p>Project invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="112"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="113">Mexican CFDI Interfactura (MX)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="113"><p>Sales invoice</p><p>Packing slip</p><p>Inventory transfer</p><p>Payment complement</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="113">Customer invoice journal</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="114">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="114">Dutch electronic invoice (NL)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="114"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="114"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="115">Norwegian electronic invoice (NO)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="115"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="115"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="116">Spanish electronic invoice (ES)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="116"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="116"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="117">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="117">PEPPOL electronic invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="117"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="117"><p>Customer invoice journal</p><p>Project invoice</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="119"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="119">For each table name you create, select and enter a context value according to the following table.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="121">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="121">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="121">Feature name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="121">Business document</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="121">Context</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="123">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="123">Austrian electronic invoices (AT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="123"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="123"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="124">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="124">Belgian electronic invoice (BE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="124"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="124"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="125">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="125">Brazilian NF-e (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="125"><p>Fiscal document</p><p>Correction letter</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="125"><p>Customer invoice context model – Fiscal document context</p><p>Customer invoice context model – FD correction letter context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="126">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="126">Brazilian NFS-e ABRASF Curitiba (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="126">Service Fiscal document</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="126">Customer invoice context model – Fiscal document context</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="127">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="127">Danish electronic invoice (DK)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="127"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="127"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="128">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="128">Egyptian electronic invoice (EG)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="128"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="128"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="129">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="129">Estonian electronic invoice (EE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="129"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="129"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="130">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="130">Finish electronic invoice (FI)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="130"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="130"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="131">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="131">French electronic invoice (FR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="131"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="131"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="132">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="132">German electronic invoice (DE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="132"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="132"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="133">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="133">FatturaPA (IT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="133"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="133"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="134">Mexican CFDI Interfactura (MX)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="134"><p>Sales invoice</p><p>Packing slip</p><p>Inventory transfer</p><p>Payment complement</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="134">Customer invoice context model – Customer invoice context</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="135">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="135">Dutch electronic invoice (NL)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="135"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="135"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="136">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="136">Norwegian electronic invoice (NO)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="136"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="136"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="137">Spanish electronic invoice (ES)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="137"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="137"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="138">PEPPOL electronic invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="138"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="138"><p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="140"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="140">For each table name and context, select and enter a business document mapping value according to the following table.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="142">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="142">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="142">Feature name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="142">Business document</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="142">Business document mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="144">Austrian electronic invoices (AT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="144"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="144"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="145">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="145">Belgian electronic invoice (BE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="145"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="145"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="146">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="146">Brazilian NF-e (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="146"><p>Fiscal document</p><p>Correction letter</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="146"><p>Fiscal document mapping – Fiscal document mapping</p><p>Fiscal document mapping – correction letter mapping</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="147">Brazilian NFS-e ABRASF Curitiba (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="147">Service Fiscal document</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="147">Fiscal document mapping – Fiscal document mapping</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="148">Danish electronic invoice (DK)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="148"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="148"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="149">Egyptian electronic invoice (EG)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="149"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="149"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="150">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="150">Estonian electronic invoice (EE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="150"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="150"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="151">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="151">Finish electronic invoice (FI)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="151"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="151"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="152">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="152">French electronic invoice (FR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="152"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="152"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="153">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="153">German electronic invoice (DE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="153"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="153"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="154">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="154">FatturaPA (IT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="154"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="154"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="155">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="155">Mexican CFDI Interfactura (MX)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="155"><p>Sales invoice</p><p>Packing slip</p><p>Inventory transfer</p><p>Payment complement</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="155">Invoice model mapping – Customer invoice</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="156">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="156">Dutch electronic invoice (NL)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="156"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="156"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="157">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="157">Norwegian electronic invoice (NO)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="157"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="157"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="158">Spanish electronic invoice (ES)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="158"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="158"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="159">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="159">PEPPOL electronic invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="159"><p>Sales invoice</p><p>Project invoice</p></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="159"><p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="country-specific-configuration-of-application-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="162">Country-specific configuration of application setup</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="164">Depending on the country or region, the Application setup might require specific configuration.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="166">For the specific steps, see the &quot;Get started&quot; documentation that is available for your country or region.</p>
+<h2 id="deploy-the-electronic-invoicing-feature-to-service-environment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="168">Deploy the Electronic invoicing feature to Service environment</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="170">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="170">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="170">Versions</strong> tab, select the version of the Electronic invoicing feature that you want to deploy.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="171">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="171">Change status</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="171">Complete</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="172">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="172">Change status</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="172">Publish</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="173">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="173">Deploy</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="174">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="174">Deploy to connected application</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="174">No</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="175">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="175">Deploy to service environment</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="175">Yes</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="176">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="176">Service environment</strong> field, select the Electronic invoicing service environment where you want to deploy the Electronic invoicing feature.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="177">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="177">From date</strong> field, select the date when the Electronic invoicing feature must become effective in Electronic invoicing.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="178">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="178">OK</strong>.</li>
+</ol>
+<h2 id="deploy-the-electronic-invoicing-feature-to-connected-application" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="180">Deploy the Electronic invoicing feature to Connected application</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="182">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="182">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="182">Versions</strong> tab, select a version of the Electronic invoicing feature that you want to deploy.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="183">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="183">Deploy</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="184">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="184">Deploy to connected application</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="184">Yes</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="185">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="185">Connect application</strong> field, select the connection that is associated with your instance of Finance or Supply Chain Management.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="186">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="186">Deploy to service environment</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="186">No</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="187">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="187">OK</strong>.</li>
+</ol>
+<h2 id="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="189">Turn on the Electronic invoicing feature in Finance or Supply Chain Management</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="191">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="191"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="191">Sign in to Finance or Supply Chain Management, and verify that you're in the correct legal entity.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="192"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="192">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="192">Organization administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="192">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="192">Electronic document parameters</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="193"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="193">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="193">Features</strong> tab, select the country/region-specific feature to turn on the Electronic invoicing feature for Finance or Supply Chain Management. The following table provides a list of the electronic invoicing features available for specific country/regions.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="195">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="195">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="195">Feature name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="195">Country/region</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="197">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="197">Austrian electronic invoices (AT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="197">Austria</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="198">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="198">Belgian electronic invoice (BE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="198">Belgium</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="199">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="199">CFDI Mexican electronic invoice (MX)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="199">Mexico</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="200">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="200">Danish electronic invoice (DK)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="200">Denmark</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="201">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="201">Dutch electronic invoice (NL)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="201">The Netherlands</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="202">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="202">Egyptian electronic invoice (EG)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="202">Egypt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="203">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="203">Estonian electronic invoice (EE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="203">Estonia</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="204">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="204">Finnish electronic invoice (FI)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="204">Finland</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="205">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="205">French electronic invoice (FR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="205">France</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="206">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="206">German electronic invoice (DE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="206">Germany</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="207">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="207">Italian electronic invoice (IT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="207">Italy</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="208">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="208">NF-e Federal - Brazilian electronic invoice (BR)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="208">Brazil</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="209">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="209">NFS-e - Brazilian service (city) electronic invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="209">Brazil</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="210">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="210">Norwegian electronic invoice (NO)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="210">Norway</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="211">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="211">PEPPOL electronic invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="211">Global</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="212">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="212">Spanish electronic invoice (ES)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="212">Spain</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="214"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="214">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="214">Save</strong>.</p>
+</li>
+</ol>
+<h2 id="issue-electronic-invoices" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="216">Issue electronic invoices</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="218">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="218"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="218">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="218">Organization administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="218">Periodic</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="218">Electronic documents</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="218">Submit electronic documents</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="219"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="219">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="219">Record to include</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="219">Filter</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="220"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="220">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="220">Add</strong> to add a table name to the query filter.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="221"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="221">Select the table that contains the invoices.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="223">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="224">The table name must be listed in the table in the <a href="#configure-the-application-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="224">Configure the application setup</a> section earlier in this topic.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="226"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="226">Select the field name from the table that you want to query.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="227"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="227">Enter the table name and field name for the criteria to query on.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="228"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="228">Repeat steps 5 and 6 to add more fields and criteria to the query, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="228">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="229"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="229">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="229">OK</strong>.</p>
+</li>
+</ol>
+<h2 id="view-submission-logs" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="231">View submission logs</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="233">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="233"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="233">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="233">Organization administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="233">Periodic</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="233">Electronic documents</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="233">Electronic document submission log</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="234"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="234">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="234">Document type</strong> field, select the table that contains the invoices.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="236">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="237">The table name must be listed in the table in the <a href="#configure-the-application-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="237">Configure the application setup</a> section earlier in this topic.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="239"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="239">Select an invoice in the grid, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="239">Inquire</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="239">Submission details</strong>.</p>
+</li>
+</ol>
+<h2 id="related-topics" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="242">Related topics</h2>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="244">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="244"><a href="e-invoicing-service-overview.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="244">Electronic invoicing overview</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="245"><a href="e-invoicing-get-started-service-administration.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="245">Get started with Electronic invoicing service administration</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="246"><a href="e-invoicing-bra-get-started.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="246">Get started with Electronic invoicing for Brazil</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="247"><a href="e-invoicing-mex-get-started.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="247">Get started with Electronic invoicing for Mexico</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="248"><a href="e-invoicing-ita-get-started.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="248">Get started with Electronic invoicing for Italy</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="249"><a href="emea-egy-e-invoices.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md" sourcestartlinenumber="249">Customer electronic invoices in Egypt</a></li>
+</ul>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-get-started.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Global address book overview | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Global address book overview | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="global-address-book-overview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="30">Global address book overview</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="34">The global address book is a centralized repository for master data that must be stored for all internal and external persons and organizations that the company interacts with. The data that is associated with party records includes the party's name, address, and contact information. Other details vary, depending on whether the party is a person or an organization. Each party record is assigned to a party, and each party can be associated with one or more party roles in a company. Party roles include customer, prospect, worker, user, vendor, competitor, applicant, and contact. For example, the organization party First Up Consultants, can be associated with customer, business relation, and vendor roles in the CEE company, and can also be associated with the vendor role in the CEU company. Here are some of the benefits of this shared data:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="36">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="36">The data shows the relationships that people and organizations have with other areas of the company. The relationship between two organizations changes when one organization has multiple roles, such as vendor and customer. Communication between the two organization also changes. There might be special agreements that can be negotiated to encourage a closer partnership with the other organization.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="37">Setup and maintenance are easier. For example, when an address changes, the update must be made in only one place. All the other associated records are updated automatically.</li>
+</ul>
+<h2 id="how-the-global-address-book-works" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="39">How the global address book works</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="41">The following illustration shows how party records, party roles, locations, and transactions interact and relate to an address book. As the illustration shows, a party record can belong to one or more address books. Each party record can store one or more locations, or addresses, and is assigned a party role. The role that is assigned to the party record can have specific transactions types associated with it. The following sections provide more information about party roles, locations, and transaction types. The following image is a graphical representation of the ways that parties, party roles, locations, and transactions interact in relation to the global address book.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="43"><a href="media/address-book-structure.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="43"><img src="media/address-book-structure-300x157.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="43" alt="Global address book interaction with AX entities and transactions."></a></p>
+<h3 id="party-roles" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="45">Party roles</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="47">Roles that are associated with party records are referred to as party roles. There are several party roles, and they can be assigned to both party types, person and organization. Here are the definitions for each party role:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="49">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="49"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="49">Customer</strong> – Individuals, companies, or other entities who purchase goods and services that are produced by other individuals, companies, or entities.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="50"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="50">Prospect</strong> – A party that might provide a service or benefit to a legal entity.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="51"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="51">Worker</strong> – A person who assumes the role of an employee or a contractor, and who is paid in exchange for services.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="52"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="52">User</strong> – A person who is a user of the system.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="53"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="53">Vendor</strong> – A party that supplies products to one or more legal entities in exchange for payment.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="54"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="54">Competitor</strong> – A person or organization that provides goods or services that are similar to the goods or services that your business provides.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="55"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="55">Applicant</strong> – A person who makes a formal written or electronic request to work for or fill an open position in an organization.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="56"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="56">Contact</strong> – A person, either inside or outside your organization, that you have created an entry for. In this entry, you can save information such as the person's street and email addresses, telephone and fax numbers, and webpage URLs.</li>
+</ul>
+<h3 id="creating-new-party-records" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="58">Creating new party records</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="60">There are two ways to enter party records in the global address book:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="62">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="62"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="62">Creating a party record when you don't know the role</strong> – When you create a party record and don't know the role type (for example, you don't know whether the party is a customer or an opportunity), you create the record in the global address book. You can select the role type later.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="63"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="63">Creating a party record when you know the role</strong> – If you know the role type for the party, you can create a record on the appropriate page for that type. For example, if the party is a customer, you create a record on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="63">Customer</strong> page. When you create and save a record by using the page for the party's role type, the record is automatically created in the global address book.</li>
+</ul>
+<h3 id="party-roles-and-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="65">Party roles and transactions</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="67">For transactions that are a part of the business processes, multiple parties might be associated with each transaction. An example is a customer that needs to be referenced on project quotations.</p>
+<h3 id="parties-locations-addresses-and-contact-information" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="69">Parties locations, addresses, and contact information</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="71">Each party record's addresses, locations, and contact information are shared across all the party roles that are associated with that party. Therefore, when any of this information is changed, all other associated records are updated accordingly.</p>
+<h3 id="locations-and-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="73">Locations and transactions</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md" sourcestartlinenumber="75">When a party role is included in a transaction, the location, address, or contact information of the party can be accessed when transaction details are entered.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/overview-global-address-book.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

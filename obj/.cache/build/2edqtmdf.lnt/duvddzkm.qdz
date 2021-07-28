@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Incorrect field value in an invoice journal or voucher | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Incorrect field value in an invoice journal or voucher | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="incorrect-field-value-in-an-invoice-journal-or-voucher" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="29">Incorrect field value in an invoice journal or voucher</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="33">When you work with an invoice journal or a voucher, you might find an incorrect field value in the following places:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="35">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="35">Posted sales tax (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="35">TaxTrans</strong> table)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="36"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="36">TaxDocumentRowTransaction</strong> table</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="37"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="37">TaxDocumentComponentTransaction</strong> table</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="38">Voucher (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="38">GeneralJournalAccountEntry</strong> table)</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="40">If this issue occurs, follow the steps in the sections of this topic to try to fix it.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="42">This topic uses a free text invoice as an example.</p>
+<h2 id="review-the-tax-document" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="44">Review the tax document</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="46">You should first review the tax document to determine whether the tax calculation issue also occurs there.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="48">Follow these steps to determine whether the tax amount in the tax document is correct.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="50">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="50">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="50">Tax document</strong> page, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="50">Tax details</strong> FastTab, review the field values on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="50">Overview</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="50">Details</strong> tabs.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="52"><a href="media/field-value-invoice-journal-voucher-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="52"><img src="media/field-value-invoice-journal-voucher-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="52" alt="Overview tab on the Tax details FastTab of the Tax document page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="54"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="54">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="54">Lines</strong> view, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="54">View tax input</strong> to review the values of additional fields, such as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="54">Transaction date</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="54">Invoice date</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="54">Tax direction</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="56"><a href="media/field-value-invoice-journal-voucher-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="56"><img src="media/field-value-invoice-journal-voucher-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="56" alt="View tax input button on the Tax document page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="58"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="58">If the tax document is incorrect, see <a href="apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="58">Tax amount is wrong after calculation</a> If it's correct, move on to the next section..</p>
+</li>
+</ol>
+<h2 id="review-the-voucher" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="60">Review the voucher</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="62">In the tax document, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="62">Voucher</strong> to determine whether the amount is posted to another account. If the amount is posted to another account, see <a href="apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="62">Incorrect ledger account in the voucher</a>. If it isn't posted to another account, move on to the next section.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="64"><a href="media/field-value-invoice-journal-voucher-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="64"><img src="media/field-value-invoice-journal-voucher-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="64" alt="Voucher transactions page."></a></p>
+<h2 id="debug-the-code-to-analyze-the-logic" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="66">Debug the code to analyze the logic</h2>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="68">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="68"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="68">If the field in the voucher (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="68">GeneralJournalAccountEntry</strong> table) is incorrect, report the issue to Microsoft.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="69">If field in the posted sales tax (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="69">TaxTrans</strong> table) is incorrect, set breakpoints, and review the logic:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="71">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="71"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="71">Set a breakpoint in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="71">TaxAccountingPostTaxTransHandlerBase</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="73"><a href="media/field-value-invoice-journal-voucher-Picture4.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="73"><img src="media/field-value-invoice-journal-voucher-Picture4.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="73" alt="Breakpoint in TaxAccountingPostTaxTransHandlerBase."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="75"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="75">In <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="75">TaxAccountingPostTaxTransHandler</strong>, set breakpoints where the incorrect value is assigned. For example, set breakpoints for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="75">taxTrans.TaxAmount</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="77"><a href="media/field-value-invoice-journal-voucher-Picture5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="77"><img src="media/field-value-invoice-journal-voucher-Picture5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="77" alt="Breakpoints for taxTrans.TaxAmount when incorrect value is assigned."></a></p>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="79">If the field in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="79">TaxDocumentRowTransaction</strong> is incorrect, set breakpoints, and review the logic:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="81">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="81"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="81">Set a breakpoint in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="81">TaxAccountingPostTaxTransHandlerBase</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="83"><a href="media/field-value-invoice-journal-voucher-Picture6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="83"><img src="media/field-value-invoice-journal-voucher-Picture6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="83" alt="Breakpoint for TaxAccountingPostTaxTransHandlerBase."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="85"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="85">In <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="85">TaxAccountingPostTaxRowTransHandler</strong>, set breakpoints where the incorrect value is assigned. For example, set breakpoints for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="85">taxDocumentRowTransaction.BaseAmountCur</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="87"><a href="media/field-value-invoice-journal-voucher-Picture7.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="87"><img src="media/field-value-invoice-journal-voucher-Picture7.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="87" alt="Breakpoints for taxDocumentRowTransaction.BaseAmountCur."></a></p>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="89"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="89">If the field in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="89">TaxDocumentComponentTransaction</strong> is incorrect, set breakpoints, and review the logic:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="91">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="91"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="91">Set a breakpoint in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="91">TaxAccountingPostTaxTransHandlerBase</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="93"><a href="media/field-value-invoice-journal-voucher-Picture8.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="93"><img src="media/field-value-invoice-journal-voucher-Picture8.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="93" alt="Breakpoint at TaxAccountingPostTaxTransHandlerBase."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="95"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="95">In <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="95">TaxAccountingPostTaxCompTransHandler</strong>, set breakpoints where the incorrect value is assigned. For example, set breakpoints for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="95">taxDocumentComponentTransaction.TaxAmount</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="97"><a href="media/field-value-invoice-journal-voucher-Picture9.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="97"><img src="media/field-value-invoice-journal-voucher-Picture9.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="97" alt="Breakpoints for taxDocumentComponentTransaction.TaxAmount."></a></p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="determine-whether-customization-exists" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="99">Determine whether customization exists</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md" sourcestartlinenumber="101">If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

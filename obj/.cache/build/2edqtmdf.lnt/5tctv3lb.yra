@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tax engine applicability | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tax engine applicability | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tax-engine-applicability" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="27">Tax engine applicability</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="31">The <a href="tax-engine.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="31">Tax engine</a> (also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. This topic walks you through a tax engine configuration to help you understand how GTE handles tax applicability.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="33">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="34">The Tax engine functionality is only available for legal entities with a primary address in India.</p>
+</div>
+<h2 id="prerequisites" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="36">Prerequisites</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="37">This document uses India Goods and Services Tax configuration to explain the tax applicability. For more information, see <a href="../localizations/apac-ind-gst.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="37">India Goods and Services Tax (GST) overview</a>.</p>
+<h2 id="overview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="39">Overview</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="40">Tax applicability is the condition under which tax type, tax component, or tax rate are applicable. For example, for India GST, if you sell goods from one state to another state, you need to charge IGST, and the goods you are selling will determine the tax rate.
+The tax engine provides two ways to handle the tax applicability, lookup and condition. A lookup is mainly used to handle the dynamic applicability rules, and a condition is used to handle the static applicability rules.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="43">The following GTE components are relevant to tax applicability.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="45">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="45">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="45">GTE component</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="45">Lookup/Condition</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="45">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="47">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="47">Tax type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="47">Lookup &amp; Condition</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="47"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="48">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="48">Tax component</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="48">Lookup &amp; Condition</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="48">Both tax component and tax type can have applicability logic. Because the tax component is under tax type, applicability logic is used to determine whether a specific tax component is applicable.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="49">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="49">Tax measure</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="49">Lookup</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="49">The measure type should be <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="49">Tax rate</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="49">Percentage</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="49">Percentage group</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="50">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="50">Formula</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="50">Condition</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="50">For a specific transaction type, not all tax formulas are relevant. For example, the formula that is used to calculate the non-deductible tax is only relevant for document purchases.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="51">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="51">Posting</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="51">Condition</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="51">Different transaction types have different posting logic. In this case, a condition is used to ensure that the correct posting profile is used.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="52">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="52">Accounting</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="52">Lookup</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="52">Accounting is the same as tax accounts. With a lookup, you can maintain different sets of tax accounts for different scenarios. For example, different tax registration numbers have different tax accounts.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="53">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="53">Credit pool</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="53">Lookup</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="53">Use a lookup to determine how to settle tax. For example, you can settle tax based on different tax registration numbers.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="54">Tax period</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="54">Lookup</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="54">Use a lookup to determine which tax period should be used for different scenarios.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="condition" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="57">Condition</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="58">If the applicability rule is always static, you need to use a condition. For example, GST is not applicable for intra-state inventory transfer in India.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="60">Open Tax (India GST) by clicking the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="60">Designer</strong> button.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="62"><img src="media/gte-tax-document-applicability-cgst.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="62" alt="CGST condition."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="64">Select the tax component CGST, and click the pencil icon, to check the detailed condition.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="66"><img src="media/gte-tax-document-applicability-cgst-condition.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="66" alt="CGST condition details."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="68">The condition is actually an <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="68">Electronic Reporting</a> expression. It is comprised of the fields on the left in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="68">Data source</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="68">Functions</strong> on the right. For a list of supported functions, see <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="68">Formula designer in Electronic reporting (ER)</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="70">The following condition means that <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="70">Taxable Document Type</em> cannot be &quot;Invent transfer order receive&quot;, &quot;Invent transfer order shipment&quot;, or &quot;Invent transfer order&quot;. This also means that either HSN Code or SAC should be specified.</p>
+<pre><code class="lang-sql" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="72">AND(Header.'Taxable Document Type'&lt;&gt;&quot;Invent transfer order receive&quot;,
+    Header.'Taxable Document Type'&lt;&gt;&quot;Invent transfer order shipment&quot;,
+    Header.'Taxable Document Type'&lt;&gt;&quot;Invent transfer order&quot;, 
+    OR(NOT(Header.Lines.'HSN Code'=&quot;&quot;), NOT(Header.Lines.SAC=&quot;&quot;))
+   )
+</code></pre>
+<h3 id="enable-gst-for-intra-state-inventory-transfer-order" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="80">Enable GST for intra-state inventory transfer order</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="81">In this scenario, suppose that the Indian government requires you to calculate GST for intra-state inventory transfer orders if the GST registration numbers are different between the ship from and ship to warehouse.</p>
+<h4 id="structure-of-the-data-source-in-the-formula-designer" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="83">Structure of the Data source in the formula designer</h4>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="84">On the leftmost side of the formula designer, you can find all the fields that are defined in the taxable document and tax document, and the reference model that is defined in the taxable document.</p>
+<pre><code class="lang-Text" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="86">Header
+└───Header fields
+└───Lines
+|   └───Lines field
+|       └───Tax types
+|           └───Tax components
+|               └───Tax measures
+Reference models
+</code></pre>
+<h4 id="change-the-applicability-condition" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="97">Change the applicability condition</h4>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="98">To change the applicability condition, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="98">Header &gt; Lines &gt; GST Registration number</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="98">Header &gt; Lines &gt; Party GST Registration number</strong>. These represent the GST registration numbers for the ship from and ship to warehouse. The condition can be changed to the following.</p>
+<pre><code class="lang-Text" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="100">AND(
+    OR(
+       AND(
+           OR(
+              Header.'Taxable Document Type'=&quot;Invent transfer order receive&quot;,
+              Header.'Taxable Document Type'=&quot;Invent transfer order shipment&quot;,
+              Header.'Taxable Document Type'=&quot;Invent transfer order&quot;
+             ),
+             'GST Registration Number'&lt;&gt;'Party GST Registration Number'
+           ),
+       AND(
+           Header.'Taxable Document Type'&lt;&gt;&quot;Invent transfer order receive&quot;,
+           Header.'Taxable Document Type'&lt;&gt;&quot;Invent transfer order shipment&quot;,
+           Header.'Taxable Document Type'&lt;&gt;&quot;Invent transfer order&quot;
+          )
+      ), 
+    OR(NOT(Header.Lines.'HSN Code'=&quot;&quot;), NOT(Header.Lines.SAC=&quot;&quot;))
+   )
+</code></pre>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="121">Select the field from the data source, and use <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="121">Add data source</strong> to add the field into the formula. Make sure to use single quotes for the data source field if there is an empty space in the name, like 'Taxable Document Type'. Use a double quote for the value if there is an empty space, like &quot;Inventory transfer order&quot;.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="123">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="123">Test</strong> to test your formula after you are done with editing.</p>
+<h2 id="lookup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="125">Lookup</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="126">If the static applicability rules are complex, or it is a dynamic applicability rule, you need to use a lookup.</p>
+<h3 id="lookup-for-static-applicability-rules" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="128">Lookup for static applicability rules</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="129">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="129">GST</strong>, click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="129">Lookups</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="131"><img src="media/gte-tax-document-applicability-static-lookups.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="131" alt="CGST condition for lookups."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="133">Because a lookup can handle both static applicability rules and dynamic applicability rules, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="133">Source type</strong> drop-down list is for this purpose. Use <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="133">Configuration</strong> for the static applicability rule, which means that the data used in the lookup comes from the configuration. Use <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="133">User data</strong> for the dynamic applicability rule, which means that the data used in the lookup comes from the runtime environment.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="135">A lookup is a matrix. The relation of each line is <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="135">OR</em>, and the relation of each column within the line is <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="135">AND</em>. If the value of the cell is empty, it means that all of the values satisfy the condition.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="137">In the screenshot above, all the data for the lookup of tax type GST comes from the configuration, so the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="137">Source type</strong> is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="137">Configuration</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="139">If you convert the lookup of GST into a condition, it will look like following.</p>
+<pre><code class="lang-Text" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="141">OR(
+    AND(Exempt=Exempt.No,
+        AND('Tax Direction' = &quot;Sales tax receivable&quot;,
+            'GST Composition Scheme' = NoYes.No,
+            'Party GST Registration Number' &lt;&gt; &quot;&quot;
+        ),
+        AND('Tax Direction' = &quot;Sales tax payable&quot;,
+            'Export Order' = NoYes.No,
+            'GST Registration Number' &lt;&gt; &quot;&quot;
+        ),
+        AND('Tax Direction' = &quot;Sales tax receivable&quot;,
+            'GST Composition Scheme' = NoYes.No,
+            'GST Registration Number' &lt;&gt; &quot;&quot;
+        )
+    )
+)
+</code></pre>
+<h3 id="lookup-for-dynamic-applicability-rules" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="160">Lookup for dynamic applicability rules</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="161">Many applicability rules depend on the runtime data. For example, some tax components are only applicable for a certain good or service, so a different type of tax transaction results in a different tax rate.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="163">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="163">CESS</strong>, click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="163">Lookups</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="165">In India, CESS is applicable for certain goods and services. In Dynamics 365 Finance, HSN represents goods, and SAC represents services, so the HSN Code and SAC are used in the lookup. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="165">Source type</strong> is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="165">User data</strong>, because the real value of the HSN Code and SAC comes from Finance.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="167">Now, let's check how the CGST rate is determined. Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="167">CGST &gt; Rate</strong>, click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="167">Lookups</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="169"><img src="media/gte-tax-document-applicability-dynamic-lookups.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="169" alt="Select CGST, Rate, Lookup."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="171">Runtime data is required to determine the tax rate, so the system hides the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="171">Source type</strong>, and the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="171">User data</strong> value.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="173">Different goods and services result in different tax rates, so there are <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="173">HSN Code</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="173">SAC</strong>. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="173">Party GST Registration Number</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="173">Tax Direction</strong> are used to handle the scenario of purchasing from an unregistered GST supplier. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="173">Transaction Date from</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="173">Transaction Date to</strong> are used to handle different tax rate per periods.</p>
+<h3 id="enable-different-tax-rate-for-different-goods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="175">Enable different tax rate for different goods</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="176">Different goods can share one HSN code, so the lookup cannot satisfy this scenario. A different lookup column is needed to handle this.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="178">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="178">Columns</strong>. On the left side, you can find all of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="178">Available columns</strong>. The structure is the same as the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="178">Data source</strong> in the formula designer, except that there are no reference models.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="180"><img src="media/gte-tax-document-applicability-change-lookups.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="180" alt="Lookup column."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="182">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="182">Item ID</strong> in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="182">Available columns</strong> to uniquely determine the goods. Click the right-arrow icon to add it to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="182">Selected columns</strong> side. If HSN is not needed, you can select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="182">HSN Code</strong> in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md" sourcestartlinenumber="182">Selected columns</strong>, and click the left-arrow icon to remove it.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/tax-engine-applicability.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

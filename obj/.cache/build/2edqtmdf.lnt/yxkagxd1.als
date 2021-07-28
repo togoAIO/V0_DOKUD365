@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Create an Azure storage account and a key vault | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Create an Azure storage account and a key vault | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="create-an-azure-storage-account-and-a-key-vault" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="30">Create an Azure storage account and a key vault</h1>
+
+[!include[banner](../includes/banner.md)]<h2 id="prerequisites" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="34">Prerequisites</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="36">Before you can complete the steps in this topic, you must make sure that the following tasks have been completed:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="38">Create a key vault resource in Azure. For more information, see <a href="/azure/key-vault/general/overview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="38">About Azure Key Vault</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="39">Create an Azure storage account (Blob storage). For more information, see <a href="/azure/storage/blobs/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="39">Maintaining Azure Storage Account</a>.</li>
+</ul>
+<h2 id="overview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="41">Overview</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="43">In this topic, you will complete two main steps:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="45">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="45">Set up the Azure storage account to get the storage account URI.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="46">Set up the key vault to store the storage account URI.</li>
+</ul>
+<h2 id="set-up-the-azure-storage-account-to-get-the-storage-account-uri" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="48">Set up the Azure storage account to get the storage account URI</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="50">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="50">Open the storage account that you plan to use with Electronic invoicing.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="51">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="51">Blob service</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="51">Containers</strong>, and create a new container.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="52">Enter a name for the container, and set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="52">Public access level</strong> field to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="52">Private (no anonymous access)</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="53"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="53">Open the container, and go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="53">Settings &gt; Access policy</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="54"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="54">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="54">Add policy</strong> to add a stored access policy.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="55"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="55">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="55">Identifier</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="55">Permissions</strong> fields as appropriate. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="55">Permissions</strong> field, you should select all permissions.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="57"><img src="media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="57" alt="Granting Blob storage permission."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="59"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="59">Enter the start and expiry dates. The expiry date should be in future.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="60"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="60">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="60">OK</strong> to save the policy, and then save your changes to the container.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="61"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="61">Return to the storage account, and open <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="61">Storage Explorer (preview)</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="62"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="62">Right-click the container, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="62">Get Shared Access Signature</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="63"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="63">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="63">Shared Access Signature</strong> dialog box, copy and store the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="63">URI</strong> field. This value will be used in the next procedure and will be referred to as the <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="63">shared access signature URI</em>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="65"><img src="media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="65" alt="Selecting and copying the URI value."></p>
+</li>
+</ol>
+<h2 id="set-up-the-key-vault-to-store-the-storage-account-uri" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="67">Set up the key vault to store the storage account URI</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="69">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="69">Open the key vault that you intend to use with Electronic invoicing.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="70">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="70">Settings</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="70">Secrets</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="70">Generate/Import</strong> to create a new secret.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="71"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="71">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="71">Create a secret</strong> page, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="71">Upload options</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="71">Manual</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="72"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="72">Enter the name of the secret. This name will be used during setup of the service in Regulatory Configuration Service (RCS) and will be referred to as the <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="72">key vault secret name</em>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="73">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="73">Value</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="73">Shared Access Signature URI</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="73">Create</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="74">Set up the access policy to grant Electronic invoicing the correct level of secure access to the secret you created. Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="74">Settings &gt; Access policy</strong>, and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="74">Add Access Policy</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="75"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="75">Set the secret permissions for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="75">Get</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="75">List</strong> operations.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="77"><img src="media/e-Invoicing-services-create-azure-resources-grant-service-access.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="77" alt="Granting service access."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="79">Set the certificate permissions for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="79">Get</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="79">List</strong> operations.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="81"><img src="media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="81" alt="Granting certificate permission."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="83"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="83">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="83">Select principal</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="83">None selected</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="84"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="84">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="84">Principal</strong> dialog box, select the principal by adding <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="84">e-Invoicing Service</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="85"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="85">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="85">Add</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="85">Save Key Vault changes</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="86"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="86">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="86">Overview</strong> page, copy the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="86">DNS name</strong> value for the key vault. This value will be used during setup of the service in RCS and will be referred as the <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="86">key vault URI</em>.</p>
+</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="88">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="89">For additional security on the storage account, configure the Azure Defender for Storage.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="91">For more information, see <a href="/azure/security-center/defender-for-storage-introduction" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md" sourcestartlinenumber="91">Introduction to Azure Defender for Storage</a>.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

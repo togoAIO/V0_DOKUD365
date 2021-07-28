@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tax invoices | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tax invoices | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tax-invoices" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="28">Tax invoices</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="32">This topic explains how to set up tax invoices and when they are generated.</p>
+<h2 id="preliminary-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="34">Preliminary setup</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="36">This section provides information about general options that should be set up before you can start to work with tax invoices.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="38">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="38">Accounts receivable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="38">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="38">Accounts receivable parameters</strong>, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="38">Number sequences</strong> tab, set up number sequences for the following references:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="40">Free text credit note</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="41">Free text credit note voucher</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="42">Sales credit note</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="43">Sales credit note voucher</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="44">Customer invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="45">Customer invoice voucher</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="47">For more information, see <a href="../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="47">Number sequences overview</a>.</p>
+<h2 id="setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="49">Setup</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="51">This section provides information about Thailand-specific options that should be set up before you can start to work with tax invoices.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="53">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="53"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="53">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="53">Accounts receivable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="53">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="53">Accounts receivable parameters</strong>, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="53">Number sequences</strong> tab, set up number sequences for the following references.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="55">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="55">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="55"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="55">Reference</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="55"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="55">Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="57">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="57">Free text debit note</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="57">The number sequence reference for the debit notes that are generated from free text invoices.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="58">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="58">Free text debit note voucher</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="58">The number sequence reference for the debit note transactions when debit notes are generated from free text invoices.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="59">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="59">Sales debit note</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="59">The number sequence reference for the debit notes that are generated from sales orders.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="60">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="60">Sales debit note voucher</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="60">The number sequence reference for the debit note transactions when debit notes are generated from sales orders.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="61">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="61">Customer tax invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="61">The number sequence reference for the tax invoices that are generated from sales order invoices.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="62">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="62">Customer tax invoice voucher</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="62">The number sequence reference for customer tax invoice vouchers.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="63">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="63">Free text tax invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="63">The number sequence reference for the tax invoices that are generated from free text invoices.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="64">Free text tax invoice voucher</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="64">The number sequence reference for free text tax invoice vouchers.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="65">Receipt</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="65">The number sequence reference for receipts.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="66">Receipt / Tax invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="66">The number sequence reference for receipts or tax invoices.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="68"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="68">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="68">Accounts payable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="68">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="68">Accounts payable parameters</strong>, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="68">Number sequences</strong> tab, set up a number sequence for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="68">Vendor unrealized reversal ID</strong> reference that you want to associate with the vendor.</p>
+</li>
+</ol>
+<h2 id="work-with-tax-invoices" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="70">Work with tax invoices</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="72">Tax invoices are generated when value-added tax (VAT) is realized. Microsoft Dynamics 365 Finance automatically generates a tax invoice when a sales order, a purchase invoice, a purchase order, or a payment that generates a realized VAT entry is posted. If an unrealized VAT entry is generated, an invoice is generated instead of a tax invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="74">For more information, see <a href="apac-tha-unrealized-vat.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="74">Thailand unrealized and realized VAT</a>.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="76">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="76"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="76">If you receive payment from the customer when you post a sales order, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="78">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="78"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="78">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="78">Accounts receivable &gt; Orders &gt; All sales orders</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="79">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="79">New</strong> to create a sales order.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="80">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="80">Line details</strong> FastTab, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="80">Setup</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="80">Sales tax</strong> section, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="80">Item sales tax</strong> <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="80">group</strong> field, select the corresponding sales tax group for realized VAT.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="81"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="81">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="81">Save</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="82"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="82">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="82">Invoice</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="82">Generate</strong> section, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="82">Invoice</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="83"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="83">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="83">Print options</strong> section, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="83">Print invoice</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="83">Yes</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="85">A tax invoice is printed. Send this invoice to the customer.</p>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="87"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="87">If you receive payment from the customer when you post a free text invoice, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="89">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="89">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="89">Accounts receivable &gt; Invoices &gt; All free text invoices</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="90">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="90">Invoice lines</strong> section, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="90">Sales tax</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="90">Item sales tax</strong> <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="90">group</strong> fields, select the corresponding sales tax group for realized VAT.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="91">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="91">Post</strong> to post the invoice.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="92">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="92">Post free text invoice</strong> dialog box, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="92">Parameters</strong> section, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="92">Print invoice</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="92">Yes</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="94">A tax invoice is printed. Send this invoice to the customer.</p>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="96">At any time, you can go back to the sales order or free text invoice to print the tax invoice.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98">For a sales order:</strong> Open the order, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98">Invoice</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98">Journals</strong> section, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98">Invoice</strong> to open the invoice. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98">Invoice</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98">Document</strong> section, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98">View</strong> to view the tax invoice or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="98">Send</strong> to send it.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="99"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="99"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="99">For a free text invoice:</strong> Open the free text invoice, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="99">Invoice</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="99">Document</strong> section, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="99">View</strong> to view the tax invoice or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="99">Send</strong> to send it.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="101">The following illustration shows an example of a printed tax invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="103"><img src="media/apac-tha-tax-invoices-tax-invoice.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="103" alt="Table Description automatically generated."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="105"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="105">If you receive payment from the customer after you post a sales order or a free text invoice, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="107">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="107"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="107">Create a sales order.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="108"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="108">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="108">Line details</strong> FastTab, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="108">Setup</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="108">Sales tax</strong> section, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="108">Item sales tax</strong> <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="108">group</strong> field, select the corresponding sales tax group for unrealized VAT.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="109"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="109">Either generate an invoice for the order or create a free text invoice.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="110"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="110">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="110">Invoice lines</strong> section, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="110">Sales tax</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="110">group</strong> <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="110">Item sales tax</strong> <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="110">group</strong> fields, select the corresponding sales tax group for unrealized VAT.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="111"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="111">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="111">Accounts receivable &gt; Payments &gt; Customer payments journal</strong>, and settle the payment. For more information, see <a href="../cash-bank-management/tasks/customer-payment-overview.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="111">Customer payment overview</a>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="112"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="112">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="112">Print</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="112">Payments</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="114">A tax invoice or a receipt/tax invoice is printed.</p>
+</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="116">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="117">If the lines on the invoice that a payment is settled to have a realized tax type, a receipt is printed. The receipt shows the invoice lines together with the realized tax type and the line total.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="119">If multiple lines on the settled invoice have realized and unrealized tax types, a receipt and a receipt/tax invoice are printed. The receipt/tax invoice shows the invoice lines together with the unrealized tax type and the line total.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="121">The following illustration shows an example of a printed receipt.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="123"><img src="media/apac-tha-tax-invoices-receipt.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="123" alt="Timeline Description automatically generated with low confidence."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="126">The following illustration shows an example of a printed receipt/tax invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="128"><img src="media/apac-tha-tax-invoices-receipt-tax-invoice.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md" sourcestartlinenumber="128" alt="A picture containing graphical user interface Description automatically generated."></p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-invoices.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

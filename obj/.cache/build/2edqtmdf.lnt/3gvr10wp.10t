@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure conditional decisions in a workflow | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure conditional decisions in a workflow | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configure-conditional-decisions-in-a-workflow" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="30">Configure conditional decisions in a workflow</h1>
+
+<div class="IMPORTANT" sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="1">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="2">Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
+</div>
+
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="34">Use the following procedure to configure the properties of a conditional decision.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="36">A conditional decision is a point at which a workflow divides into two branches. To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="36">Properties</strong> to open the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="36">Properties</strong> form.</p>
+<h2 id="name-a-decision" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="38">Name a decision</h2>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="40">Follow these steps to enter a name for a conditional decision.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="42">In the left pane, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="42">Basic Settings</strong>.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="43">In the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="43">Name</strong> field, enter a unique name for the conditional decision.</li>
+</ol>
+<h2 id="set-conditions" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="45">Set conditions</h2>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="47">The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="49">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="49"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="49">In the left pane, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="49">Basic Settings</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="50">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="50">Add condition</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="51">Enter a condition.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="52">Enter additional conditions, if they are required.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="53"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="53">To verify that the conditions that you entered are configured correctly, complete the following steps:</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="55">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="55">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="55">Test</strong> to open the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="55">Test workflow condition</strong> form.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="56">Select a record in the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="56">Validate condition</strong> area of the form.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="57">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="57">Test</strong>. The system evaluates the record to determine whether it meets the conditions that you defined.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="58">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="58">OK</strong> or <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="58">Cancel</strong> to return to the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md" sourcestartlinenumber="58">Properties</strong> form.</li>
+</ol>
+</li>
+</ol>
+<!---
+title: Konfigurieren von bedingten Entscheidungen in einem Workflow
+description: Verwenden Sie die folgenden Verfahren, um die Eigenschaften der bedingten Entscheidung zu konfigurieren.
+author: ChrisGarty
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, IT Pro
+ms.reviewer: sericks
+ms.custom: 195703
+ms.assetid: cd5554a4-210c-4c20-a7d3-4b1563c2b5df
+ms.search.region: Global
+ms.author: cgarty
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 957246ac9a758de9f420b9c672520dcb07c43a69
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693953"
+---
+# <a name="configure-conditional-decisions-in-a-workflow"></a>Konfigurieren von bedingten Entscheidungen in einem Workflow
+
+[!include [banner](../includes/banner.md)]
+
+Verwenden Sie die folgenden Verfahren, um die Eigenschaften der bedingten Entscheidung zu konfigurieren.
+
+Eine bedingte Entscheidung ist ein Punkt, an dem ein Workflow sich in zwei Verzweigungen gabelt. Klicken Sie zum Konfigurieren einer bedingten Entscheidung im Workflow-Editor mit der rechten Maustaste auf die bedingte Entscheidung, und klicken Sie dann auf **Eigenschaften**, um das Formular **Eigenschaften** zu öffnen.
+
+## <a name="name-a-decision"></a>Name einer Entscheidung
+
+Gehen Sie folgendermaßen vor, um einen Namen für die bedingte Entscheidung einzugeben.
+
+1. Klicken Sie im linken Bereich auf **Grundeinstellungen**.
+2. Geben Sie im Feld **Name** einen eindeutigen Namen für die bedingte Entscheidung ein.
+
+## <a name="set-conditions"></a>Festlegen von Bedingungen
+
+Das System bestimmt durch Überprüfen, ob das übermittelte Dokument bestimmten Bedingungen entspricht, welche Verzweigung verwendet wird.
+
+1. Klicken Sie im linken Bereich auf **Grundeinstellungen**.
+2. Klicken Sie auf **Bedingung hinzufügen**.
+3. Geben Sie eine Bedingung ein.
+4. Geben Sie ggf. zusätzliche Bedingungen ein.
+5. Führen Sie folgende Schritte aus, um die korrekte Konfiguration der eingegebenen Bedingungen zu überprüfen:
+
+    1. Klicken Sie auf **Test**, um das Formular **Workflow-Bedingungen testen** zu öffnen.
+    2. Wählen Sie im Bereich **Bedingung überprüfen** des Formulars einen Datensatz aus.
+    3. Klicken Sie auf **Test**. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht.
+    4. Klicken Sie auf **OK** oder **Abbrechen**, um zum Formular **Eigenschaften** zurückzukehren.
+--->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/00_Basics/MS_Content/organization-administration/configure-conditional-decision-workflow.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

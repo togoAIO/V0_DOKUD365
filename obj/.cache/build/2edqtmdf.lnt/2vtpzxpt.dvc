@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cash overview Power BI content | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Cash overview Power BI content | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cash-overview-power-bi-content" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="27">Cash overview Power BI content</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="31">This topic describes the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="31">Cash overview</strong> Microsoft Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.</p>
+<h2 id="overview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="33">Overview</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="35">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="35">Cash overview</strong> Power BI content was created for individuals who are responsible for cash in their organization. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="35">Cash overview</strong> Power BI content provides visibility into your cash flow. It also provides forecasts that can help you make better decisions and therefore improve the health of your cash flow. You can analyze cash by legal entity, currency, and bank account to get a better understanding of surpluses and shortfalls.</p>
+<h2 id="setup-needed-to-view-power-bi-content" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="37">Setup needed to view Power BI content</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="39">The following setup needs to be completed in order for data to display in <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="39">Cash overview</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="39">Bank management</strong> Power BI visuals.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="41">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="41">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="41">System administration &gt; Setup &gt; System Parameters</strong> to set <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="41">System currency</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="41">System Exchange Rate</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="42">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="42">General Ledger &gt; Calendars &gt; Fiscal calendars</strong> to validate fiscal calendar dates assigned to the active time period.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="43">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="43">General Ledger &gt; Setup &gt; Ledger</strong> to set <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="43">Accounting Currency</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="43">Exchange Rate Type</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="44">Define exchange rates between transaction currencies and accounting currency, accounting currency and system currency, and accounting currency and bank currencies. To do this, go <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="44">General Ledger &gt; Currencies &gt; Currency exchange rates</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="45">Configure and run Cash Flow Forecasting. For more information about how to set up Cash flow forecasting, see <a href="cash-flow-forecasting.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="45">Cash flow forecasting</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="46">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="46">System administration &gt; Setup &gt; Entity Store</strong> to refresh the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="46">LedgerCovLiquidityMeasurement</strong> aggregate measurement.</li>
+</ol>
+<h2 id="accessing-the-power-bi-content" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="48">Accessing the Power BI content</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="50">Reports from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="50">Cash overview</strong> Power BI content are displayed in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="50">Cash overview</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="50">Bank management</strong> workspaces.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="52">To view the Cash flow forecasting reports with data, you must first run the forecast calculation process using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="52">Calculate cash flow forecasts</strong> function from the Cash and bank management area. This needs to be completed for each company included in the forecast.  You then need to refresh the LedgerCovLiquidityMeasurement aggregate measurement on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="52">Entity Store</strong> page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="54">For demonstration purposes, you can add cash flow forecasting demo data using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="54">Generate data</strong> page from the Demo data module.  This script will insert data into the cash flow forecasting tables to quickly populate information necessary for reports.  This module is only available if you have the Demo data suite model deployed on the environment.</p>
+<h2 id="reports-that-are-included-in-the-power-bi-content" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="56">Reports that are included in the Power BI content</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="58">The following table provides details about the metrics that are found on each report page in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="58">Cash overview</strong> Power BI content.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="60">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="60">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="60">Report</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="60">Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="62">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="62">Cash overview – all companies</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="62"><ul><li>Inflows and outflows in system currency</li><li>Forecasted currency balances</li><li>Total bank balance in system currency</li><li>Balance by legal entity</li><li>Today’s actual vs forecasted balance in bank account currency</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="63">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="63">Cash overview – current company</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="63"><ul><li>Inflows and outflows in accounting currency</li><li>Forecasted currency balances</li><li>Total bank balance in accounting currency</li><li>Today’s actual vs forecasted balance in bank account currency</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="64">Cash flow forecast – all companies</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="64"><ul><li>Inflows and outflows in system currency</li><li>Daily forecast summary</li><li>Forecast details</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="65">Cash flow forecast – currency company</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="65"><ul><li>Inflows and outflows in accounting currency</li><li>Daily forecast summary</li><li>Forecast details</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="66">Currency forecast</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="66"><ul><li>Forecasted currency balances</li><li>Daily currency summary</li><li>Forecast details</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="67">Bank balances</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="67"><ul><li>Total bank balance in system currency</li><li>Balance by legal entity</li><li>Today’s actual vs forecasted balance in bank account currency</li><li>Balance by bank account</li><li>Balance by currency</li></ul></td>
+</tr>
+</tbody>
+</table>
+<h2 id="understanding-the-data-model-and-entities" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="70">Understanding the data model and entities</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="72">The following table shows the entities that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="72">Cash overview</strong> Power BI content is based on.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="74">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="74">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="74">Entity</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="74">Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="76">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="76">LedgerCovLiquidityMeasurement_Company</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="76">Companies to filter reports by</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="77">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="77">LedgerCovLiquidityMeasurement_Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="77">Dates to filter reports by</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="78">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="78">LedgerCovLiquidityMeasurement_LedgerCovForecastActual</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="78">Actual bank balance vs last forecasted bank balance</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="79">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="79">LedgerCovLiquidityMeasurement_LedgerCovLiquidity</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="79">Forecasted transaction details</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="80">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="80">LedgerCovLiquidityMeasurement_LedgerCovLiquidityInflowOutflowBalanceCompany</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="80">Summarized cash inflows, outflows, and balance using each company’s accounting currency</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="81">LedgerCovLiquidityMeasurement_LedgerCovLiquidityInflowOutflowBalanceEnterprise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="81">Summarized cash inflows, outflows, and balance using the system currency for all companies</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="82">LedgerCovLiquidityMeasurement_LedgerCovLiquidityTransactionCurrency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md" sourcestartlinenumber="82">Summarized net transaction amount and balance of currencies using the transaction currency</td>
+</tr>
+</tbody>
+</table>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/Cash-Overview-Power-BI-content.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

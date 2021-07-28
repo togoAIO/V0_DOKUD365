@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Year-end close | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Year-end close | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="year-end-close" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="30">Year-end close</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="34">This topic describes the required setup and steps for running the general ledger year-end close process.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="36">At the end of a fiscal year, you must run the year-end close process to transfer opening balances to the new year. Most organizations will run the year-end close process multiple times. The first run moves the balances into the new fiscal year. The process can then be rerun as many times as required to move the balances from adjusting entries into the new fiscal year.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="38">During the year-end close process, there are two types of possible transactions created. An Opening transaction is always generated and is used to create the opening balances in the new fiscal year. The Opening transaction shows the balance sheet ledger account balances in the new fiscal year and balances from the profit and loss ledger account balances in the retained earnings ledger account in the new fiscal year. The Closing transaction is optionally created to bring the balances of the profit and loss accounts down to zero in the fiscal year being closed.</p>
+<h2 id="prepare-to-run-the-year-end-close" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="40">Prepare to run the year-end close</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="42">Before you run the year-end close process, validate the settings for the following:</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="44">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="44">Main account</strong> page:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="46">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="46">Verify that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="46">Main account type</strong> field is correctly set for each main account. The main account type determines whether the balance of the main account will be brought forward as an opening balance or closed into retained earnings in the opening transaction.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="47">The balance of the main account can be transferred to a new main account during the year-end close. Enter the new main account in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="47">Opening account</strong> field. Typically, this field is used for balance sheet main accounts when the main account is inactivated and a new main account is used for the new fiscal year.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="49">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="49">General ledger parameters</strong> page under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="49">Fiscal year close</strong>:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="51">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="51">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="51">Delete existing year-end entries when re-closing the year</strong> option is used to specify whether the system-generated opening transaction from a previous year-end close should be deleted when the year-end close is rerun. If this option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="51">Yes</strong>, the previous opening and optional closing transactions are deleted, and a new opening or closing transaction is created based on the current balances. If this option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="51">No</strong>, the previous opening and optional closing transactions remain, and an additional opening or closing transaction is created to move the balances forward from adjusting transactions that are posted after the previous year-end close.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="52">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="52">Create closing transactions during transfer</strong> option is used to create closing transactions in the fiscal year that is being closed, to bring the balances of the profit and loss accounts to 0 (zero). If this option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="52">Yes</strong>, both the opening transaction and the closing transaction are created. If this option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="52">No</strong>, only the opening transaction is created in the next fiscal year to transfer the balances. The profit and loss account balances remain at the end of the fiscal year.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="53">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="53">Set fiscal year status to permanently closed</strong> option is used to set the fiscal year to a permanently closed status. Use this option carefully, because periods that have a permanently closed status can't be reopened. Therefore, adjustments can't be posted to the fiscal year. As a best practice, this option should be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="53">No</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="54">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="54">Voucher number must be filled in</strong> option has been removed. A voucher is now required when the year-end close process is run. At that time, the voucher number is manually entered.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="56">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="56">Fiscal calendar</strong> page:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="58">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="58">The next fiscal year must exist before the year-end close is run. Otherwise, the beginning balances can't be created in the opening period.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="60">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="60">Ledger calendar</strong> page:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="62">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="62">Optional: Each fiscal period for the fiscal year that is being closed can be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="62">On hold</strong> to prevent new transactions from being entered. When adjusting entries are identified, the on-hold periods can be reopened so that adjusting entries can be posted, even if the year-end close process has already been run.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="64">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="64">Year-end close template setup</strong> page:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="66">When the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="66">General ledger year-end enhancements</strong> feature is turned on, the process of setting up of the year-end close template is separated from the process of running the year-end close. The template can be defined on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="66">Year-end close template setup</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="66">General ledger &gt; Ledger setup &gt; Year-end close template setup</strong>), or it can be accessed from the year-end close process.</li>
+</ul>
+<h2 id="define-year-end-close-templates" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="68">Define year-end close templates</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="70">After the system is configured, the year-end close process can be run. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="70">Year-end close template setup</strong> page, a template can be defined for the group of legal entities that the year-end close process will be run for. The template will be reused at each year-end close, but it can be modified if your organization changes.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="72">First, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="72">Group name</strong> field for the template, and select the fiscal calendar. The group name should identify the group of legal entities that is included. When you're determining the groups of legal entities, remember that legal entities can be included in the same group only if the same fiscal calendar is selected for them. For example, the templates can be set up based on geography, and separate groups can be created for North American legal entities, Europe, the Middle East, and Africa (EMEA) legal entities, and Asia-Pacific (APAC) legal entities.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="74">Next, the legal entities can be added to the template. Legal entities can be added by selecting an organizational hierarchy or by selecting the legal entities. If an organizational hierarchy is selected, only legal entities within the hierarchy that use the selected fiscal calendar will be added to the template. If you use legal entities to add to the template, only legal entities with the same fiscal calendar can be added. The same fiscal calendar is required because the year-end close is run by selecting a fiscal year, which can vary from calendar to calendar.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="76">After the legal entities are added, define the retained earnings main accounts for each legal entity.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="78">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="78">Financial dimension</strong> tab is used to define which financial dimensions will be used on the opening transaction. Note that the setup on this tab applies only to the legal entity that is selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="78">Legal entities</strong> grid. You must repeat the setup for each legal entity in the grid.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="80">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="80">Transfer balance sheet dimensions</strong> option is used to specify whether the financial dimensions on transactions that are posted to balance sheet accounts should be maintained on the opening transaction. As a best practice, this option should be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="80">Yes</strong>. The setting for the balance sheet dimensions doesn't affect existing balances in the retained earnings ledger accounts. Those balances are determined by the profit and loss dimensions that are defined in the next section. For example, fiscal year 2019 was the first year that was closed, and the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="80">Close all</strong> option was used to select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="80">Department</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="80">Cost center</strong> dimensions for closing. In this case, a separate retained earnings account was created for each combination of a department and a cost center. When the year-end close is run for fiscal year 2020, the retained earnings from the previous year remain exactly as they were posted, even if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="80">Transfer balance sheet dimensions</strong> is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="80">No</strong>. Balances that are posted to retained earnings from previous year-end closes are never changed.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Transfer profit and loss dimensions</strong> section is used to specify which financial dimensions on transactions that are posted to profit and loss accounts will be transferred to the retained earnings main account. First, identify the financial dimensions that are relevant to the selected legal entity. These financial dimensions include any financial dimension that was posted against during the year, even if the financial dimension isn't part of an active account structure. Next, define each dimension as either <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Close single</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Close all</strong>. The default option is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Close all</strong>. This option maintains the original financial dimension values from posted transactions and uses them to create the opening balances for the retained earnings account. Separate retained earnings beginning balances will be created for each unique combination of financial dimension values. If <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Close single</strong> is selected, all posted transactions that have that financial dimension will be summarized into a retained earnings beginning balance for the dimension value that is entered in the field that appears after <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Close single</strong>. For example, all transactions for the fiscal year were posted with the account structure <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Main account - Department</strong>. For the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Department</strong> financial dimension on the template, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Close single</strong> is selected, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">100</strong> is entered as the dimension value. If the total income of all transactions that are posted to departments 200, 300, and 400 is $100,000, one opening balance will be created for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Retained earnings - 100</strong>. If you select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="82">Close single</strong> but leave the financial dimension value blank, all transactions will be posted to retained earnings, and the dimension value will be blank.</p>
+<h2 id="run-the-year-end-close-process" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="84">Run the year-end close process</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="86">After the year-end close templates are created, you can initiate the year-end close process on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="86">Year-end close</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="86">General ledger &gt; Period close &gt; Year-end close</strong>). Before you run the year-end close, you can add new year-end close templates or modify existing templates by selecting <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="86">Year-end close template setup</strong> to open the setup page for the templates.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="88">Select the year-end close template, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="88">Run year-end close</strong>. Select either all legal entities or a subset of legal entities from the template that you're running the year-end close for. If you're running the year-end close for the first time in a fiscal year, you will probably select all the legal entities, so that you create beginning balances for all of them. If you've previously run the year-end close, you might want to rerun it only for the legal entities that adjusting entries were posted for.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="90">Next, select the fiscal year to run the year-end close process against. If more than one closing period exists for the last period of the fiscal year, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="90">Period name</strong> field becomes available. You can then select the closing period to use to post the closing transaction, if the setup is defined to create the closing transaction.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="92">Next, enter a voucher number. The same voucher number will be used for all the legal entities that you've selected for the year-end close process. The voucher number isn't generated by using a number sequence.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="94">By default, the year-end close process runs in batch mode. Therefore, after you initiate it, you can return to other activities.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="96">Because account structures can change throughout a fiscal year, the relevant account structure can't always be identified. Therefore, the year-end close process doesn't adhere to account structures. When opening transactions are created, the balances are brought forward with financial dimensions, as defined in the year-end close template. The beginning balances entries can include financial dimensions that are no longer in the current account structure and segment combinations that are no longer valid in the current account structure. If your organization wants to exclude a financial dimension for the retained earnings beginning balance, define the financial dimension as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="96">Close single</strong>, and leave the dimension value blank.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="98">After the process is completed, a record is created for each combination of a legal entity and a fiscal year. You will see records only for legal entities that you have access to. Each record includes the system date and time when the process was run, and a direct link to the vouchers that were created for the year-end close.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="100"><a href="media/run-yr-end-close.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="100"><img src="media/run-yr-end-close.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="100" alt="Records created on the Year-end close history FastTab of the Year-end close page"></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="102">If you rerun the year-end close, you will see one or multiple records for each combination of a legal entity and a fiscal year, depending on the setting of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="102">Delete existing year-end entries when re-closing the year</strong> option on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="102">General ledger parameters</strong> page:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="104">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="104">If the option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="104">Yes</strong>, the voucher for the previous year-end close is deleted. The record is marked as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="104">Reversed</strong>, and stamped with the date and time when the reversal was done. Additionally, the link to the voucher number is removed. When the year-end close is completed, a new record will be created for the new voucher that is created.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="105">If the option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="105">No</strong>, the record for the previous year-end close remains, together with the link to the voucher. Each time that the year-end close is rerun, a new record will be created, together with a link to the new vouchers.</li>
+</ul>
+<h2 id="reverse-the-year-end-close-process" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="107">Reverse the year-end close process</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="109">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="109">Year-end close</strong> page, you can reverse a year-end close. Select the record for the combination of a legal entity and a fiscal year that must be reversed, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="109">Reverse year-end close</strong>. The reversal process deletes all opening and closing vouchers that were created for the fiscal year. The record is marked as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="109">Reversed</strong>, and stamped with the date and time when the reversal was done. Additionally, the link to the voucher number is removed. Like the year-end close process, the reversal runs in batch mode.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="111">A <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="111">Show reversed</strong> checkbox that is available above the grid lets you hide or show the records for reversed year-end close processes. After you run the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="111">Reverse year-end close</strong> process, you might have to select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="111">Show reversed</strong> checkbox to see the record. You can set additional filters to view other information.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="113"><a href="media/rvrs-yr-end-close.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="113"><img src="media/rvrs-yr-end-close.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="113" alt="Using the Show reversed checkbox to see records for reversed year-end close processes on the Year-end close page"></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="115">For more information, see <a href="close-general-ledger-at-period-end.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="115">Close the general ledger at period end</a> and <a href="tasks/close-fiscal-year.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md" sourcestartlinenumber="115">Close the fiscal year</a>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/year-end-close.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

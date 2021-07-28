@@ -53,31 +53,4 @@ Select a feature area to learn more about it.
 :::row-end:::
 
 
-## Additional resources
-
-### Blogs
-
-- [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
-- [Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials) 
-- [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
-
-### Task guides
-Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
-
-### Videos
-
-Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
-### Country/region functionality
-
-Country/region regulations affect tax setup and other areas of financial management. Refer to the [Localization and regulatory features](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) section of our help content to learn about country/region-specific functionality.
-
-### Additional content
-
-Supply chain management functionality covers parts of the procure-to-pay process that includes requisitioning, ordering, receiving, invoicing and paying for the goods and services your organization purchases. Refer to the [Supply Chain Management home page](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) for information about the capabilities for managing purchases, inventory, and manufacturing.
-
-## eLearning courses
-
-For online courses and training, check out [Dynamics 365 Finance on Microsoft Learn](/learn/browse/?products=dynamics-finance&resource_type=learning+path).
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

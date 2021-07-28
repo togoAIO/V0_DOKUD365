@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Financial dimension configuration | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Financial dimension configuration | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="financial-dimension-configuration">Financial dimension configuration</h1>
+
+[!include[banner](../includes/banner.md)]
+<p>This topic describes the Financial dimension configuration. There are two important areas for setup:</p>
+<ul>
+<li>The order of financial dimensions for financial reporting. The order is configured on the <strong>Financial reporting setup</strong> page.</li>
+<li>The data entity integration formats. The formats are configured on the <strong>Integrating applications</strong> page. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.</li>
+</ul>
+<h2 id="financial-reporting">Financial reporting</h2>
+<p>The <strong>Financial reporting setup</strong> page has a list of all financial dimensions in the system (<strong>General ledger</strong> &gt; <strong>Ledger setup</strong> &gt; <strong>Financial reporting setup</strong>).</p>
+<p>The <strong>Financial reporting setup</strong> page has two sections that determine the data you report on in Financial reporting:</p>
+<ul>
+<li><strong>Dimensions</strong> tab - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports. This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting.</li>
+<li><strong>Attributes</strong> tab - This tab is where you can select whether you want the ability to use <strong>Vendors</strong> and <strong>Customers</strong> as attributes for filtering and report design. Reporting on Vendor and Customer will only be valuable if you do not enter multiple vendors or customers in a single voucher when posting transactions. Choosing Vendor and/or Customer will add additional time to the integration.</li>
+</ul>
+<h2 id="data-entities">Data entities</h2>
+<p>The <strong>Data entities</strong> tab is where you define the order of financial dimensions for importing data. There is no rule about how you should set the order of your dimension formats. They are designed to be flexible enough that you can take your source files from an external system and import the data without spending time to make the source files match your account structures. Dimension validation still occurs during the import process, to verify that you aren't importing financial dimension values that don't exist for a particular segment. However, outside validation, account structures and dimension formats are independent of each other. There are four dimension format types:</p>
+<ul>
+<li><strong>Default dimension format</strong> – This format type is required when you import default dimensions, through both Data Management and the Microsoft Excel integration. For example, you might require a default dimension format if you're importing the financial dimensions that are associated with a customer or vendor account. Main account is not included in this format.</li>
+<li><strong>Ledger dimension format</strong> – This format type is required when you import ledger dimensions, through both Data Management and the Excel integration. The ledger dimension format is the most common format, because it's used any time that transactions are imported, such as through the general journal. The main account is specified on this format. This setting applies across all legal entities and the account structures used in your environment. The setup must include a cumulative set of all dimensions that can be used for transaction import across your legal entities. Any dimensions not used for a given legal entity are to be left blank in the import file.</li>
+<li><strong>Budget register dimension format</strong> – This format type is required any time that you import dimensions for budgeting and budget control, through both Data Management and the Excel integration.</li>
+<li><strong>Budget planning dimension format</strong> – This format type is required any time that you import dimensions for budget planning, through both Data Management and the Excel integration.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p><em>The dimension format types are not company-specific. The setup is a global setup.</em> You can set up as many of each format type as you need, but only one format type can be active at one time. If no dimension format type is set up, you will receive an error when you import. You will also receive errors if the order is incorrect.</p>
+</div>
+<p>Let's look at some examples that show how the dimension formats work. We will use the ledger dimension format for these examples.</p>
+<h3 id="example-1">Example 1</h3>
+<p>You're importing the following file.</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Main account and dimensions</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6/1/2016</td>
+<td>605140-001-02</td>
+<td>$150.00</td>
+</tr>
+<tr>
+<td>6/1/2016</td>
+<td>110110-002-04-ABC</td>
+<td>$-150.00</td>
+</tr>
+</tbody>
+</table>
+<p>When you import the file, the system reviews the <strong>Main account and dimensions</strong> column, and maps it to what you've set up in the active ledger dimension format. For this example, the active ledger dimension format is as follows: <strong>Main account - Department - Cost Center</strong></p>
+<p>The system reads the first segment in the <strong>Main account and dimensions</strong> column as the main account. In this example, that segment is 605140 in the first row. Therefore, the mapping from the import file to the active ledger dimension format is as follows: <strong>Main account == 605140</strong> <strong>Department == 001</strong> <strong>Cost Center == 02</strong></p>
+<p>Now let's look at the second row. The second row contains a fourth segment, ABC. In this example, ABC is dropped during the import from the line: <strong>Main account == 110110</strong> <strong>Department == 002</strong> <strong>Cost Center == 04</strong> <strong>Segment 4, ABC, isn't imported.</strong></p>
+<h3 id="example-2">Example 2</h3>
+<p>For this example, we will use the same import file.</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Main account and dimensions</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6/1/2016</td>
+<td>605140-001-02</td>
+<td>$150.00</td>
+</tr>
+<tr>
+<td>6/1/2016</td>
+<td>110110-002-04-ABC</td>
+<td>$-150.00</td>
+</tr>
+</tbody>
+</table>
+<p>However, we will use the following active ledger dimension format: <strong>Main account - Department - Cost Center - Customer</strong></p>
+<p>For the first row of the import file, because only three segments are defined, a blank or dash is assumed for the Customer segment: <strong>Main account == 605140</strong> <strong>Department == 001</strong> <strong>Cost Center == 02</strong> <strong>Customer == blank</strong></p>
+<p>Therefore, the string looks like this: <strong>605140-001-02-</strong></p>
+<p>The second row is imported as defined in the import file: <strong>Main account == 110110</strong> <strong>Department == 002</strong> <strong>Cost Center == 04</strong> <strong>Customer == ABC</strong></p>
+<h2 id="additional-resources">Additional resources</h2>
+<p><a href="dimensions-overview.html">Add dimensions to Excel templates</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/financial/financial-dimension-configuration-integration.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

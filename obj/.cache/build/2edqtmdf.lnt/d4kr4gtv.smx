@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Currency capabilities in financial reporting | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Currency capabilities in financial reporting | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="currency-capabilities-in-financial-reporting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="29">Currency capabilities in financial reporting</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="33">Financial reporting includes features that support complex currency reporting requirements. Financial reporting can generate reports using any of the following currency amounts:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="35">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="35">Accounting currency amount</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="36">Reporting currency amount</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="37">Transaction currency amount</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="38">Translated amount (currency translation is also known as conversion), translated to any currency that has been set up in the system</li>
+</ul>
+<h2 id="filtering-by-currency" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="40">Filtering by currency</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="41">By default, all report amounts are summarized and presented in the accounting currency of the relevant company. If you need to do additional analysis by the transactions and related currencies, you can do so by setting filters on the report.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="43">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="43"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="43">In the column definition, you can use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="43">Currency</strong> filter for any amount column. You can also  specify the ISO code of the currency you want to restrict the column to. When you set the column to a specific currency, only transactions entered for that currency will be displayed.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="45"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="45">In the row definition, you can specify a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="45">Row modifier</strong> with the attribute set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="45">Transaction currency</strong> with a currency code listed as the restriction. When you restrict the row to a specific currency, only transactions that are entered for the matching currency will be displayed. This is also the case when you restrict a column to a currency.</p>
+</li>
+</ul>
+<h2 id="reporting-on-currency" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="48">Reporting on currency</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="49">By default, any amount appearing on a report will appear as the accounting currency amount. Any of the following actions will cause some level of translation to take place:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="50">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="50">Modifying the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="50">Currency display</strong> field in the column definition to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="50">Reporting currency from Ledger</strong>, which will bring back translated amounts that are calculated in the Reporting currency</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="51">Modifying the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="51">Currency display</strong> field in the column definition to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="51">Transaction currency</strong>, which will force the report to total different currencies together and display the entered amount in the column, regardless of currency</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="52">Modifying the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="52">Currency display</strong> field in the column definition to any of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="52">Translate to...</strong> options, which will perform the currency translation within Financial reporting</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="54">Additionally, the following actions will also cause translation:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="55">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="55">Use of a reporting tree to summarize multiple legal entities with different accounting currencies. Amounts will be translated to the accounting currency based on the legal entity specified in the report definition or the current company context if the @ANY company is used in the report definition. You will see the currency being used in Report Designer near the top of the page with text stating &quot;Values will be displayed in USD&quot; when US dollar is the accounting currency of the current company.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="56">Using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="56">Currency</strong> button in the web report viewer will cause one additional version of the report to be generated, overriding the accounting currency if it wasn't previously specified.
+Using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="57">Include all reporting currencies</strong> button in Report Designer will cause additional versions of the report to be generated using translated data for each currency selected.</li>
+</ul>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="59">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="60">This option should only be used if these versions are expected, since it takes additional resources to generate the additional reports.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="62">For amounts being translated within Financial reporting, the following types of translation are available for use, and are specified within each main account.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="64">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="64">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="64">Translation type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="64">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="64">Example rate calculation</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="66">Current</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="66">Uses the last rate on or before the period specified. Typically used for Balance Sheet accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="66">(Rate)</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="67">Weighted average</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="67">Uses the weighted average rate for the period. Typically used for P&amp;L accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="67">((Rate1 * Number of days in effect) + (Rate2 * Number of days in effect)) + …/ Number of days in the period</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="68">Average</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="68">This is a simpler average rate for the period. Typically used for Profit and loss accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="68">(Sum of rates)/(number of rates)</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="69">Transaction date (Historical)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="69">Uses the rate in effect on the posting date of the transaction. If no rate is available, the system will use the closest previously entered rate. Typically used for Retained Earnings, Equity accounts and longer-term fixed assets (for example, Land).</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="69">(Rate)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setup-for-exchange-rate-type" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="72">Setup for Exchange rate type</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="73">The exchange rate type defines the table of exchange rates and currencies to be used. The exchange rate type can be set in multiple locations.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="75">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="75">You can set the exchange rate type on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="75">Main accounts</strong> page within General ledger; there is an option for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="75">Exchange rate type</strong> on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="75">Financial reporting</strong> FastTab.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="76">You can also specify an override of an exchange rate type for a legal entity, which will override the default behavior.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="77">If no exchange rate type is specified for a main account, the exchange rate type will default from the ledger.</li>
+</ul>
+<h3 id="setup-for-currency-translation-type" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="79">Setup for Currency translation type</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="80">The Currency translation type will determine how each main account is translated. Currency translation rate type can also be set in multiple locations.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="81">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="81">Within the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="81">Main accounts</strong> page in General ledger, there is an option for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="81">Currency translation type</strong> on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="81">Financial reporting</strong> FastTab.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="82">You can also specify an override of a currency translation rate type for a legal entity, which will override the default behavior.</li>
+</ul>
+<h3 id="setup-for-retained-earnings" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="85">Setup for Retained Earnings</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="86">Currency translation for retained earnings accounts is subject to some specific requirements:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="87">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="87">Any retained earnings account must be assigned to the Retained earnings main account category <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="87">Reference ID</strong> of 29 on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="87">Main accounts</strong> page if the account balance should be translated using the appropriate calculation.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="88">If the default category was renamed, financial reporting still expects the original with <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="88">Reference ID</strong> of 29.
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="89">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="90">You may have to personalize the form and add <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="90">Reference ID</strong> as a column in order for this to display on the page.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="91">The retained earnings account only translates system-generated transactions initiated through the fiscal year-end close process. If any transactions are posted directly, they will not be accurately reflected through translation.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="92">The retained earnings balance is translated at the rate that exists at the end of the most recently closed year. This means that it is a point-in time-calculation, not an accumulation of amounts and rates calculated from the beginning balance entered through today.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="94">Functionality that was introduced in preview for Dynamics 365 Finance version 10.0.7 enables functionality for enhanced flexibility for consolidation and dual currency. To enable this functionality in preview, create a support incident for financial reporting to be enabled in a sandbox or development environment.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="96">This feature improves the precision of calculations of retained earnings when earnings are calculated across multiple years using currency translation. When you enable this feature, any retained earnings account that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="96">Currency translation type</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="96">Main accounts</strong> page set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="96">Transaction date</strong> will calculate the translated balance of the account using rates and balances from its entire history using the end-of-year rate X the balance for all years, rather than only using the most recent year and rate.</p>
+<h2 id="report-design-elements-related-to-currency" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="98">Report design elements related to currency</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="99">The are additional report design elements that can be used when doing reporting on currencies.</p>
+<h3 id="autotext-codes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="101">Autotext codes</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="102">Users can dynamically see the currency symbol, code, and description they have defined when the currency is changed. Three autotext options are available to Financial reporting to enable this functionality:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="103">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="103">Currency symbol (@CurrencySymbol)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="104">Currency code (@CurrencyCode)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="105">Currency description (@CurrencyDescription)</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="107">You can add the autotext both in the Column Definition and in the Report Definition headers. Additionally, anywhere in a report where a currency symbol is used will update with the appropriate symbol for the currency from Dynamics. Currency symbols are used in the following fields:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="109">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="109"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="109">Display currency symbol on first row</strong>, which is defined in the Report Definition</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="110"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="110">Use currency format in this row</strong> (CS), which is defined in the Row Definition</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="111">Format Overrides</strong> defined in the Row and Column Definition</li>
+</ul>
+<h3 id="financial-reporting-attributes-related-to-currency" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="113">Financial reporting attributes related to currency</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="114">The following are additional report design attributes that can be used when reporting on currencies that will be included in the account or transaction drill-down lists in support of amount lines.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="116">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="116">Account currency</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="117">Currency code</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="118">Transaction currency</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="119">Acquisition date</li>
+</ul>
+<h3 id="currency-translation-adjustment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="121">Currency Translation Adjustment</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="122">The currency translation adjustment (CTA) is the difference between the rates used to calculate the balance sheet accounts and the rate used for the income statement accounts. This difference in rates will cause the balance sheet to be out of balance.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="124">You can use Financial reporting to calculate the CTA in two ways:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="126">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="126">Use the Rounding Adjustments dialog in the row definition</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="128">Financial reporting will calculate the amount of the difference from currency calculations using the rounding adjustments calculation. To use this calculation, edit the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="128">Row Definition</strong> and click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="128">Edit &gt; Rounding Adjustment</strong>. Set the total assets row, total liabilities and equities row, and a threshold for maximum variance to silently accept. A line named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="128">Rounding Adjustment</strong> will be created for the rounding difference row and shown upon drill-down of the row you've selected.</p>
+<ol start="2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="130">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="130">Create a single line that includes all accounts and use it to calculate the CTA.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md" sourcestartlinenumber="132">Put all of the accounts in a range, from assets to expenses. The difference will be the same amount as the rounding adjustment (CTA) and you can use the total to verify that the rounding adjustment dialog doesn't include any missing account balances.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

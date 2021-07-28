@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Foreign currency sales, purchases, and transfers | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Foreign currency sales, purchases, and transfers | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="foreign-currency-sales-purchases-and-transfers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="28">Foreign currency sales, purchases, and transfers</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="32">Dynamics 365 Finance lets you perform the following tasks:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="34">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="34">Register transactions for a sale, purchase, or transfer of foreign currency that is done by using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="34">Money transfers in transit</strong> ledger account.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="35">Automatically calculate the profit/loss amounts that are caused by the foreign currency conversion for a sale or purchase of foreign currency. (The calculation considers the foreign currency exchange rate of the Central Bank and the exchange rate of the legal entity's bank on the date of the foreign currency transfer.) Also automatically generate transactions for profit/loss from the foreign currency conversion.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="36">Automatically generate transactions for the unrealized exchange rate difference that is caused when the exchange rates on the foreign currency transaction dates differ.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="37">Print a foreign currency transfer order.</li>
+</ul>
+<h2 id="set-up-the-sale-purchase-and-transfer-of-foreign-currency" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="40">Set up the sale, purchase and transfer of foreign currency</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="42">Here is an overview of the tasks that you must complete to set up the system to calculate the exchange adjustment and the profit/loss on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="42">Remittance en route</strong> account:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="44"><a href="#set-up-an-exchange-rate" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="44">Set up an exchange rate</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="45"><a href="#set-up-a-bank-to-use-for-foreign-currency-conversion-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="45">Set up a bank to use for foreign currency conversion transactions</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="46"><a href="#set-up-a-bank-transaction-type" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="46">Set up a bank transaction type</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="47"><a href="#set-up-a-method-of-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="47">Set up a method of payment</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="48"><a href="#set-up-a-number-sequence" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="48">Set up a number sequence</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="49"><a href="#set-up-a-bank-account" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="49">Set up a bank account</a></li>
+</ul>
+<h3 id="set-up-an-exchange-rate" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="51">Set up an exchange rate</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="53">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="53">Currency revaluation accounts</strong> page to set up the calculation of profit/loss amounts for foreign currency conversion.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="55">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="55">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="55">General ledger &gt; Currencies &gt; Currency parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="56">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="56">Legal entities</strong> field, select a company.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="57">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="57">Purchases/Vendors</strong> FastTab, define the following ledger accounts for currency conversion: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="57">Conversion gain</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="57">Conversion loss</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="58">Define the following revenue and income codes for foreign currency conversion: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="58">Revenue code (currency conversion)</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="58">Expense code (currency conversion)</strong>.</li>
+</ol>
+<h3 id="set-up-a-bank-to-use-for-foreign-currency-conversion-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="60">Set up a bank to use for foreign currency conversion transactions</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="62">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="62">Banks</strong> page to associate a vendor account with the bank that should be used for foreign currency sale or purchase transactions.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="64">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="64">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="64">Cash and bank management &gt; Setup &gt; Bank groups</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="65">Create a bank, or select an existing bank.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="66">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="66">General</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="66">Vendor account</strong> field, select the vendor account.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="68">When you associate a vendor account with a bank, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="68">Transactions</strong> button on the Action Pane becomes available. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="68">Settle open transactions</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="68">Closed transaction editing</strong> options on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="68">Functions</strong> menu button also become available.</p>
+<h3 id="set-up-a-bank-transaction-type" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="70">Set up a bank transaction type</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="72">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="72">Bank transaction types</strong> page to set up a bank transaction type for foreign currency sale, purchase, and transfer transactions.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="74">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="74">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="74">Cash and bank management &gt; Setup &gt; Bank transaction types</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="75">Create a bank transaction type.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="76">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="76">Transaction extended type</strong> field, select one of the following foreign currency transfer types: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="76">Currency sale</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="76">Currency purchase</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="76">Currency transfer</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="77">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="77">Vendor posting profile</strong> field, select the vendor posting profile that should be used to post to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="77">Money transfers in transit</strong> ledger account.</li>
+</ol>
+<h3 id="set-up-a-method-of-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="79">Set up a method of payment</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="81">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="81">Methods of payment</strong> page to set up a method of payment for the sale, purchase, or transfer of foreign currency.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="83">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="83"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="83">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="83">Accounts payable &gt; Payment setup &gt; Methods of payment</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="84"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="84">Create a method of payment.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="85"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="85">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="85">General</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="85">Account type</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="85">Bank</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="86"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="86">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="86">Payment account</strong> field, select the bank account to transfer foreign currency from for this method of payment.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="87"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="87">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="87">Bank transaction type</strong> field, select the bank transaction type for the sale, purchase, or transfer of foreign currency.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="88"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="88">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="88">File formats</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="88">Export format</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="88">Currency transfer order</strong>.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="90">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="91">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="91">Currency transfer order</strong> option isn't available, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="91">Setup</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="91">File formats for methods of payment</strong> page. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="91">Export</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="91">Available</strong> list, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="91">Currency transfer order</strong>, and then select the right arrow button to add the format to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="91">Selected</strong> list.</p>
+</div>
+</li>
+</ol>
+<h3 id="set-up-a-bank-account" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="93">Set up a bank account</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="95">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="95">Bank accounts</strong> page to set up specific information for the sale or purchase of foreign currency.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="97">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="97">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="97">Cash and bank management &gt; Bank accounts &gt; Bank accounts</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="98">Create a bank account, or select an existing bank account.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="99">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="99">Payment management</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="99">Order template (currency sale)</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="99">Order template (currency purchase)</strong> fields, select the Microsoft Word template.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="101">For more information, see <a href="rus-local-settings-requisites-bank-module.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="101">Set up Bank accounts (Russia)</a>.</p>
+<h3 id="set-up-a-number-sequence" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="103">Set up a number sequence</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="105">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="105">Cash and bank management parameters</strong> page to assign a number sequence for foreign currency transactions.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="107">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="107">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="107">Cash and bank management &gt; Setup &gt; Cash and bank management parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="108">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="108">Number sequences</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="108">Number sequence code</strong> field for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="108">Currency transfer order</strong> reference, select a number sequence.</li>
+</ol>
+<h2 id="foreign-currency-sales" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="110">Foreign currency sales</h2>
+<h3 id="create-a-foreign-currency-sale-transaction" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="112">Create a foreign currency sale transaction</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="114">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="114"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="114">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="114">Accounts payable &gt; Payments &gt; Payment journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="115"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="115">Create a payment journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="116"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="116">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="116">Lines</strong>, and create a journal line.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="117"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="117">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="117">List</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="117">Account</strong> field, select the vendor account that is associated with the bank account that is used for foreign currency conversion transactions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="118"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="118">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="118">Debit</strong> field, enter the transaction amount in the foreign currency that must be sold.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="119"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="119">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="119">Currency</strong> field, enter the code for the foreign currency that is ordered to be sold.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="120"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="120">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="120">Offset account type</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="120">Bank</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="121"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="121">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="121">Offset account</strong> field, select the bank account.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="122"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="122">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="122">Method of payment</strong> field, select the method of payment that you created earlier for the sale of foreign currency.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="123"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="123">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="123">Bank</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="123">Bank transaction type</strong> field, validate the value that is automatically filled in based on the method of payment, or select the transaction type for the foreign currency sale transaction.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="124"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="124">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="124">Payment</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="124">Posting profile</strong> field, verify that the value equals the profile that is used to post to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="124">Money transfers in transit</strong> ledger account.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="125"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="125">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="125">Generate payments</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="126"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="126">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="126">Generate payments</strong> dialog box, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="126">Export format</strong> option, and then, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="126">Export format</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="126">Currency transfer order</strong>. Alternatively, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="126">Method of payment</strong> option, and then, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="126">Method of payment</strong> field, select the method of payment for the foreign currency sale.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="127"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="127">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="127">Bank account</strong> field, select the bank account for the payment.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="128"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="128">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="128">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="129"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="129">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="129">Bank currency transfer</strong> dialog box, enter the required information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="131">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="131">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="131">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="131">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="133">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="133">Worker</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="133">Select the worker who is responsible for the foreign currency sale.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="134">Transit account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="134">Select the bank account where rubles should be received for the foreign currency that is sold (the result of the foreign currency conversion). The template that will be used to print a foreign currency sales order is taken from this bank account.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="135">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="135">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="135">Select the currency code that should be received in the transit bank account after the foreign currency sale.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="136">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="136">Bank exchange rate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="136">Identify the foreign currency exchange rate for the foreign currency conversion. This information will be printed on the foreign currency sale order.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="137">Supplier account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="137">Select information about the contract in foreign currency that is the basis for the foreign currency sale transaction.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="138">Purchase agreement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="138">Select information about the contract in foreign currency that is the basis for the foreign currency sale transaction.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="139">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="139">Print Document</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="139">Set the option to &quot;Yes&quot; to print a foreign currency sale order when payments are generated.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="143"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="143">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="143">OK</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="145">On the payment journal line, the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="145">Payment status</strong> field is updated to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="145">Sent</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="147">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="147">Payment</strong> tab, the fields <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="147">Transit account</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="147">Foreign counteragent</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="147">Contracts group</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="147">Contract of the deal</strong> are updated.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="149"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="149">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="149">Print &gt; Currency sale order</strong> to print the foreign currency sales order. The report contains the following information:</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="150"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="150">Validate and post the journal.</p>
+</li>
+</ol>
+<h3 id="create-transactions-for-the-bank-commission-and-the-local-currency-rubles-amount-that-is-received-as-a-result-of-the-foreign-currency-sale" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="152">Create transactions for the bank commission and the local currency (rubles) amount that is received as a result of the foreign currency sale</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="154">After you post the payment order for a foreign currency sale, you can register the bank commission and the local currency that is received as a result of the foreign currency conversion. (In this case, Russian rubles are received.)</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="156">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="156"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="156">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="156">Accounts payable &gt; Payments &gt; Payment journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="157"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="157">Create a payment journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="158"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="158">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="158">Lines</strong>, create a journal line for the bank commission withdrawal, and enter the following information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="160">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="160">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="160">Tab</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="160">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="160">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="162">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="162">List</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="162">Account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="162">Select the vendor account that you used for the foreign currency sale transaction in the previous procedure.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="163">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="163"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="163">Credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="163">Enter the amount of the bank commission.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="164">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="164"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="164">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="164">Select the currency of the bank commission.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="165">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="165"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="165">Offset account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="165">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="165">Ledger</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="166">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="166"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="166">Offset account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="166">Select the ledger account for bank commission losses.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="167">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="167">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="167">Bank transaction type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="167">Select the transaction type that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="167">Currency sale</strong> extended type.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="168">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="168">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="168">Posting profile</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="168">Verify that the value equals the profile that is used to post to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="168">Money transfers in transit</strong> ledger account.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="170"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="170">Create a journal line for the received local currency, and enter the following information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="172">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="172">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="172">Tab</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="172">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="172">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="174">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="174">List</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="174">Account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="174">Select the vendor account that you used for the foreign currency sale transaction in the previous procedure.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="175">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="175"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="175">Credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="175">Enter the amount of accounting currency (rubles) that is received.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="176">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="176"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="176">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="176">Select the accounting currency, which is the currency that is received as a result of the foreign currency sale (rubles).</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="177">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="177"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="177">Offset account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="177">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="177">Bank</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="178">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="178"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="178">Offset account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="178">Select the bank account where the accounting currency is received.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="179">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="179">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="179">Bank transaction type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="179">Select the transaction type that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="179">Currency sale</strong> extended type.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="180">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="180">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="180">Currency (under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="180">Currency conversion</strong>)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="180">Select the foreign currency that was sold. This foreign currency code must differ from the accounting currency.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="181">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="181"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="181">Bank exchange rate (under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="181">Currency conversion</strong>)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="181">Enter the bank exchange rate that was applied to the foreign currency sale.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="182">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="182"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="182">Posting profile</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="182">Verify that the value equals the profile that is used to post to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="182">Money transfers in transit</strong> ledger account.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="184"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="184">Post the journal.</p>
+</li>
+</ol>
+<h3 id="post-the-settlement-of-foreign-currency-sale-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="186">Post the settlement of foreign currency sale transactions</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="188">You post the settlement of foreign currency sale transactions to generate profit/loss transactions from them and from the foreign currency exchange difference transactions.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="190">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="190"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="190">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="190">Cash and bank management &gt; Setup &gt; Bank groups</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="191"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="191">Select a bank, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="191">Functions &gt; Settle open transactions</strong> to settle foreign currency sale transactions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="192"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="192">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="192">Settlement posting date</strong> field, select the posting date type: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="192">Latest date</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="192">Today's date</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="192">Selected date</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="193"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="193">If you selected <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="193">Selected date</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="193">Settlement posting date</strong> field, manually enter the posting date.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="194"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="194">Review the transactions that will be settled:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="196">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="196"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="196">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="196">Overview</strong> tab, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="196">Transit account</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="196">Bank account - inflow</strong> fields are specific to the foreign currency sale:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="198">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="198">For positive transactions, the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="198">Transit account</strong> field equals the transit bank account that was selected for the foreign currency sale transaction in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="198">Transit account</strong> field in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="198">Bank currency transfer</strong> dialog box.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="199">For negative transactions, the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="199">Bank account - inflow</strong> field equals the bank account where the accounting currency amount is received as a result of the foreign currency sale transaction.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="201">The values of these fields should be equal for transactions that are marked for settlement.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="203"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="203">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="203">General</strong> tab, the fields in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="203">Currency conversion</strong> section are specific to the foreign currency sale.</p>
+</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="205"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="205">Mark transactions for settlement.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="207">During settlement, the following information is validated:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="209">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="209">The transaction type of both transactions must have the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="209">Currency sale</strong> extended type.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="210">The value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="210">Currency</strong> field in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="210">Currency conversion</strong> section of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="210">General</strong> tab for the positive transaction (the foreign currency sale) must equal the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="210">Currency</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="210">Overview</strong> tab for the negative transaction (the accounting currency receipt that is a result of the foreign currency sale).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="211">The bank account that is specified in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="211">Transit account</strong> field for the positive transaction must equal the bank account that is specified in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="211">Bank account - inflow</strong> field for the negative transaction.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="213"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="213">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="213">Post</strong>. The following transactions are generated:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="215">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="215">Unrealized foreign currency exchange difference (if, for the foreign currency that is sold, the foreign currency exchange rate on the date of the foreign currency sale differs from the foreign currency exchange rate on the accounting currency receipt date)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="216">Foreign currency sale profit or loss (if, for the foreign currency that is sold, the bank exchange rate differs from the Central Bank exchange rate on the date of the accounting currency receipt transaction)</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="218"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="218">You can review the transactions that are generated. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="218">Bank groups</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="218">Transactions</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="219"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="219">You can also post an unsettlement of the transactions. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="219">Bank groups</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="219">Functions &gt; Closed transitions editing</strong>, mark transactions, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="219">Reverse</strong>.</p>
+</li>
+</ol>
+<h2 id="foreign-currency-purchases" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="221">Foreign currency purchases</h2>
+<h3 id="create-a-transaction-of-rubles-movement-for-a-foreign-currency-purchase" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="223">Create a transaction of rubles movement for a foreign currency purchase</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="225">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="225"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="225">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="225">Accounts payable &gt; Payments &gt; Payment journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="226"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="226">Create a payment journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="227"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="227">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="227">Lines</strong>, create a journal line, and enter the following information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="229">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="229">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="229">Tab</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="229">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="229">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="231">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="231">List</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="231">Account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="231">Select the vendor account that is associated with the bank account that is used for foreign currency conversion transactions. If you enter an amount in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="231">Debit</strong> field, and if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="231">Bank transaction type</strong> field is set to the transaction type of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="231">Value</strong> extended type, this field is automatically filled in when you select a bank account in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="231">Offset account</strong> field.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="232">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="232"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="232">Debit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="232">Enter the transaction amount in the accounting currency (rubles).</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="233">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="233"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="233">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="233">Enter the code for the accounting currency (rubles).</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="234">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="234"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="234">Offset account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="234">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="234">Bank</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="235">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="235"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="235">Offset account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="235">Select the bank account that rubles are moved from for the foreign currency purchase.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="236">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="236"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="236">Method of payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="236">Select the method of payment that you created earlier for the purchase of foreign currency.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="237">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="237">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="237">Bank transaction type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="237">Validate the value that is automatically filled in based on the method of payment, or select the transaction type for the foreign currency purchase transaction.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="238">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="238">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="238">Posting profile</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="238">Verify that the value equals the profile that is used to post to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="238">Money transfers in transit</strong> ledger account.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="240"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="240">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="240">Generate payments</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="241"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="241">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="241">Generate payments</strong> dialog box, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="241">Method of payment</strong> option, and then, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="241">Method of payment</strong> field, select the method of payment for the foreign currency purchase.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="242"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="242">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="242">Bank account</strong> field, select the bank account for the payment.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="243"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="243">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="243">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="244"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="244">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="244">Bank currency transfer</strong> dialog box, enter the required information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="246">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="246">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="246">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="246">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="248">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="248">Worker</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="248">Select the worker who is responsible for the foreign currency purchase.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="249">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="249">Transit account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="249">Select the bank account where the foreign currency that is purchased should be received (the result of the foreign currency conversion).</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="250">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="250">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="250">Select the foreign currency code that should be received in the transit bank account after the foreign currency purchase.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="251">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="251">Bank exchange rate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="251">Identify the foreign currency exchange rate for the foreign currency conversion. This information will be printed on the currency purchase order.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="252">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="252">Supplier account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="252">Select information about the contract in foreign currency that is the basis for the foreign currency purchase transaction.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="253">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="253">Purchase agreement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="253">Select information about the contract in foreign currency that is the basis for the foreign currency purchase transaction.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="254">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="254">Print Document</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="254">Set the option to &quot;Yes&quot; to print a foreign currency purchase order when payments are generated.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="256"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="256">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="256">OK</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="258">On the payment journal line, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="258">Payment status</strong> field is updated to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="258">Sent</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="260">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="260">Payment</strong> tab, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="260">Transit account</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="260">Foreign counteragent</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="260">Contracts group</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="260">Contract of the deal</strong> fields are updated.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="262">During generation of the foreign currency purchase order, the following information is validated:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="264">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="264">The currency code of the transit bank account must differ from the accounting currency.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="265">The currency code of the transit bank account must equal the currency code that is selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="265">Bank currency transfer</strong> dialog box.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="266">The currency code of the payment journal line must be the accounting currency.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="268"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="268">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="268">Print &gt; Currency purchase order</strong> to print the foreign currency purchase order. (The template is taken from the transit bank account that is selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="268">Bank currency transfer</strong> dialog box.)</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="269"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="269">Validate and post the journal.</p>
+</li>
+</ol>
+<h3 id="create-transactions-for-the-bank-commission-and-the-foreign-currency-amount-that-is-received-as-a-result-of-the-foreign-currency-purchase" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="271">Create transactions for the bank commission and the foreign currency amount that is received as a result of the foreign currency purchase</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="273">After you post the payment order for a foreign currency purchase, you can register the bank commission and the foreign currency amount that is received as a result of the foreign currency conversion.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="275">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="275"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="275">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="275">Accounts payable &gt; Payments &gt; Payment journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="276"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="276">Create a payment journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="277"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="277">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="277">Lines</strong>, create a journal line for the bank commission withdrawal, and enter the following information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="279">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="279">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="279">Tab</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="279">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="279">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="281">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="281">List</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="281">Account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="281">Select the vendor account that you used for the foreign currency purchase transaction in the previous procedure.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="282">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="282"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="282">Credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="282">Enter the amount of the bank commission.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="283">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="283"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="283">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="283">Select the currency code of the bank commission.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="284">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="284"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="284">Offset account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="284">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="284">Ledger</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="285">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="285"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="285">Offset account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="285">Select the ledger account for bank commission losses.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="286">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="286">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="286">Bank transaction type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="286">Select the transaction type that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="286">Currency purchase</strong> extended type.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="287">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="287">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="287">Posting profile</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="287">Verify that the value equals the profile that is used to post to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="287">Money transfers in transit</strong> ledger account.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="289"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="289">Create a journal line for the received foreign currency, and enter the following information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="291">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="291">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="291">Tab</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="291">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="291">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="293">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="293">List</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="293">Account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="293">Select the vendor account that you used for the foreign currency purchase transaction in the previous procedure.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="294">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="294"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="294">Credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="294">Enter the amount of foreign currency that is received.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="295">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="295"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="295">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="295">Select the code for the foreign currency that is purchased.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="296">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="296"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="296">Offset account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="296">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="296">Bank</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="297">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="297"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="297">Offset account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="297">Select the bank account where the foreign currency is received. The bank of this bank account should have a relation for the vendor account that you selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="297">Account</strong> field.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="298">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="298">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="298">Bank transaction type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="298">Select the transaction type that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="298">Currency purchase</strong> extended type.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="299">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="299">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="299">Currency (under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="299">Currency conversion</strong>)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="299">Select the accounting currency that is used for the foreign currency purchase.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="300">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="300"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="300">Bank exchange rate (under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="300">Currency conversion</strong>)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="300">Enter the bank exchange rate that was applied to the foreign currency purchase.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="301">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="301"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="301">Posting profile</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="301">Verify that the value equals the profile that is used to post to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="301">Money transfers in transit</strong> ledger account.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="303"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="303">Post the journal.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="305">During posting, the following information is validated:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="307">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="307">The transaction currency code must differ from the company's accounting currency.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="308">The currency code that is selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="308">Currency</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="308">Payment</strong> tab must equal the company's accounting currency.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="309">Values must be entered in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="309">Currency</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="309">Bank exchange rate</strong> fields on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="309">Payment</strong> tab.</li>
+</ul>
+</li>
+</ol>
+<h3 id="post-the-settlement-of-foreign-currency-purchase-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="311">Post the settlement of foreign currency purchase transactions</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="313">You post the settlement of foreign currency purchase transactions to generate profit/loss transactions from them.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="315">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="315"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="315">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="315">Cash and bank management &gt; Setup &gt; Bank groups</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="316"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="316">Select a bank, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="316">Functions &gt; Settle open transactions</strong> to settle foreign currency purchase transactions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="317"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="317">Mark transactions for settlement.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="319">During settlement, the following information is validated:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="321">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="321">The transaction type of both transactions must have the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="321">Currency purchase</strong> extended type.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="322">The value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="322">Currency</strong> field in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="322">Currency conversion</strong> section of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="322">General</strong> tab for the foreign currency purchase transaction must equal the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="322">Currency</strong> field on <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="322">Overview</strong> tab for the transaction for the foreign currency receipt.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="323">The bank account that is specified in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="323">Transit account</strong> field for the foreign currency purchase transaction must equal the bank account where the foreign currency is received.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="325"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="325">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="325">Post</strong>. The transaction for profit or loss from the foreign currency purchase is generated (if, for the foreign currency that is purchased, the bank exchange rate differs from the Central Bank exchange rate on the date of the foreign currency receipt).</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="326"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="326">You can review the transactions that are generated. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="326">Bank groups</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="326">Transactions</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="327"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="327">You can also post an unsettlement of transactions. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="327">Bank groups</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="327">Functions &gt; Closed transitions editing</strong>, mark transactions, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="327">Reverse</strong>.</p>
+</li>
+</ol>
+<h2 id="foreign-currency-transfers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="329">Foreign currency transfers</h2>
+<h3 id="create-a-foreign-currency-movement-for-a-foreign-currency-transfer" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="331">Create a foreign currency movement for a foreign currency transfer</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="333">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="333"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="333">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="333">Accounts payable &gt; Payments &gt; Payment journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="334"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="334">Create a payment journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="335"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="335">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="335">Lines</strong>, create a journal line, and enter the following information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="337">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="337">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="337">Tab</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="337">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="337">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="339">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="339">List</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="339">Account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="339">Select the vendor account number that is associated with the bank account that is used for currency conversion transactions.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="340">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="340"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="340">Debit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="340">Enter the transaction amount for the foreign currency transfer.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="341">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="341"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="341">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="341">Enter the code for the currency that is transferred.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="342">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="342"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="342">Offset account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="342">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="342">Bank</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="343">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="343"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="343">Offset account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="343">Select the bank account that the foreign currency transfer is generated from. The bank of this bank account must be associated with the vendor account that you selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="343">Account</strong> field.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="344">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="344"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="344">Method of payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="344">Select the method of payment that you created earlier for the transfer of foreign currency transfer.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="345">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="345">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="345">Bank transaction type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="345">Validate the value that is automatically filled in based on the method of payment, or select the transaction type for the foreign currency transfer transaction.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="346">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="346">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="346">Posting profile</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="346">Verify that the value equals the profile that is used to post to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="346">Money transfers in transit</strong> ledger account.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="348"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="348">Validate and post the journal.</p>
+</li>
+</ol>
+<h3 id="create-transactions-for-the-bank-commission-and-the-result-of-the-foreign-currency-transfer" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="350">Create transactions for the bank commission and the result of the foreign currency transfer</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="352">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="352"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="352">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="352">Accounts payable &gt; Payments &gt; Payment journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="353"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="353">Create a payment journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="354"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="354">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="354">Lines</strong>, create a journal line for the bank commission withdrawal, and enter the following information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="356">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="356">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="356">Tab</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="356">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="356">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="358">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="358">List</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="358">Account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="358">Select the vendor account that is related to the bank account that is used for the foreign currency transfer.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="359">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="359"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="359">Credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="359">Enter the amount of the bank commission.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="360">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="360"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="360">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="360">Select the currency code of the bank commission.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="361">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="361"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="361">Offset account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="361">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="361">Ledger</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="362">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="362"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="362">Offset account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="362">Select the ledger account for bank commission losses.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="363">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="363">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="363">Bank transaction type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="363">Select the transaction type that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="363">Currency transfer</strong> extended type.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="364">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="364">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="364">Posting profile</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="364">Verify that the value equals the profile that is used to post to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="364">Money transfers in transit</strong> ledger account.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="366"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="366">Create a journal line for receiving the transferred foreign currency, and enter the following information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="368">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="368">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="368">Tab</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="368">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="368">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="370">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="370">List</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="370">Account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="370">Select the vendor account that is related to the bank account that is used for the foreign currency transfer.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="371">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="371"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="371">Credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="371">Enter the amount of the foreign currency transfer.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="372">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="372"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="372">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="372">Select the code for the currency that is transferred.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="373">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="373"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="373">Offset account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="373">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="373">Bank</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="374">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="374"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="374">Offset account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="374">Select the bank account where the foreign currency is received. The bank of this bank account should have a relation for the vendor account that you selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="374">Account</strong> field.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="375">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="375">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="375">Bank transaction type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="375">Select the transaction type that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="375">Currency transfer</strong> extended type.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="376">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="376">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="376">Posting profile</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="376">Verify that the value equals the profile that is used to post to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="376">Money transfers in transit</strong> ledger account.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="378"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="378">Post the journal.</p>
+</li>
+</ol>
+<h3 id="post-the-settlement-of-foreign-currency-transfer-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="380">Post the settlement of foreign currency transfer transactions</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="382">You post the settlement of foreign currency purchase transactions to generate foreign currency exchange difference transactions.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="384">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="384"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="384">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="384">Cash and bank management &gt; Setup &gt; Bank groups</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="385"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="385">Select a bank, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="385">Functions &gt; Settle open transactions</strong> to settle foreign currency purchase transactions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="386"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="386">Mark transactions for settlement.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="388">During settlement, the following information is validated:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="390">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="390">The transaction type of both transactions must have the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="390">Currency transfer</strong> extended type.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="391">The currency codes of the transactions must be equal.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="393"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="393">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="393">Post</strong>. The exchange rate difference transaction is generated. Ledger accounts for the foreign currency exchange difference are taken from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="393">Realized gain</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="393">Realized loss</strong> accounts that are specified in the setup of foreign currency parameters.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="394"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="394">You can review the transactions that are generated. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="394">Bank groups</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="394">Transactions</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="395"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="395">You can also post an unsettlement of transactions. On <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="395">Bank groups</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="395">Functions &gt; Closed transitions editing</strong>, mark transactions, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md" sourcestartlinenumber="395">Reverse</strong>.</p>
+</li>
+</ol>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-currency-sale-purchase.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

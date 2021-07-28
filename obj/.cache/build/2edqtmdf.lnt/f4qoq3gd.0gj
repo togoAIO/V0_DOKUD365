@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Lease termination proposal | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Lease termination proposal | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="propose-a-lease-for-termination" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="32">Propose a lease for termination</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="36">If a lease is terminated early, Asset leasing can record a termination journal entry to write off the lease liability, right-of-use (ROU) asset, and accumulated depreciation, and book a gain or loss. The early termination process terminates a lease and its associated lease books. It doesn't terminate individual lease books. This topic describes the functionality that lets you propose a lease for termination and process the lease termination journal entry.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="38">If a lease isn't classified as a deferred rent treatment lease and isn't associated with a fixed asset, Asset leasing produces the following termination journal entry.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="40">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="40">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="40">Transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="40">Debit (Dr.)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="40">Credit (Cr.)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="42">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="42">Dr. Lease liability</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="42">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="42"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="43">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="43">Dr. Accumulated depreciation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="43">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="43"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="44">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="44">Dr. Gain (loss) on lease modification</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="44">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="44"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="45">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="45">Cr. Lease asset</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="45"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="45">X</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="46">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="46">Cr. Gain (loss) on lease modification</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="46"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="46">X</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="48">If the lease book is classified as a deferred rent book, the entry writes off the balance of the deferred rent before the termination to the gain or loss account, as shown here.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="50">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="50">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="50">Transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="50">Debit (Dr.)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="50">Credit (Cr.)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="52">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="52">Dr. Deferred rent</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="52">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="52"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="53">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="53">Cr. Gain (loss) on lease modification</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="53"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="53">X</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="54">Cr. Deferred rent</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="54"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="54">X</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="55">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="55">Dr. Gain (loss) on lease modification</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="55">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="55"></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="57">If the lease book is connected to a fixed asset, the ROU asset is accounted for in Fixed assets. This accounting includes the accounting for early terminations. Asset leasing produces the following journal entry to write off the lease liability.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="59">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="59">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="59">Transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="59">Debit (Dr.)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="59">Credit (Cr.)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="61">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="61">Dr. Lease liability</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="61">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="61"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="62">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="62">Cr. Gain (loss) on lease modification</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="62"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="62">X</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="64">For information about the correct way to dispose of an ROU asset, see <a href="../fixed-assets/dispose-of-a-fixed-asset-as-scrap.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="64">Dispose of a fixed asset as scrap</a>.</p>
+<h2 id="propose-a-lease-for-termination-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="66">Propose a lease for termination</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="68">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="68"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="68">Go to the lease that must be terminated, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="68">Termination proposal</strong>.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="70">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="71">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="71">Termination proposal</strong> button is unavailable if there are any unposted journal entries against any book. Before you can terminate the lease, you must post or delete any journal entries that have been created against the lease.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="73">In the dialog box that appears, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="73">Effective date</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="73">Posting date</strong> fields for the termination journal entry.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="74">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="74">Termination proposal</strong> to propose the lease for termination.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="75"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="75">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="75">Post lease termination</strong> to automatically post the lease termination journal entry.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="76"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="76">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="76">Lease terminations</strong> page, select the lease ID of the lease that you proposed for termination to view the termination lines. The termination lines show the carrying values of the ROU asset, lease liability, accumulated depreciation, deferred rent (if applicable), and gain or loss that must be recognized on the termination of the lease.</p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="78">The lease is now ready for termination. The value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="78">Termination status</strong> field for the lease book is changed to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="78">Ready for termination</strong>. At this point, you can no longer post journal entries against the lease, or adjust or impair it.</p>
+<h2 id="process-leases-that-are-ready-for-termination" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="80">Process leases that are ready for termination</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="82">To process leases that are ready for termination and post the termination journal entry, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="84">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="84">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="84">Lease terminations</strong> page, select the lease to process, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="84">Terminate</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="85">In the dialog box that appears, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="85">OK</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="87">The system posts the termination journal entry. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="87">Lease status</strong> field for the lease book is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="87">Terminated</strong>, and the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="87">Termination proposal status</strong> field is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="87">Completed</strong>.</p>
+<h2 id="reverse-a-lease-termination" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="89">Reverse a lease termination</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="91">To reverse a lease termination journal entry and open a terminated lease, follow this step.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="93">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="93">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="93">Lease terminations</strong> page, select the terminated lease to reverse, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="93">Reverse termination</strong>.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="95">The system reverses the termination journal entry. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="95">Lease status</strong> field for the lease book is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="95">Open</strong>. The lease no longer appears on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="95">Lease terminations</strong> page and can be proposed again for termination.</p>
+<h2 id="example-of-a-lease-termination" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="97">Example of a lease termination</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="99">For this example, the lease is associated with a non-specialized asset, and it doesn't transfer ownership of the asset or grant the lessee the option to purchase the asset.</p>
+<h3 id="setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="101">Setup</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="103">The following tables show the values that are set on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="103">General</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="103">Payment schedule lines</strong> tabs for the lease that is used in this example.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="105"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="105">General tab</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="107">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="107">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="107">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="107">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="109">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="109">Fair value of the asset</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="109">600,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="110">Currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="110">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="111">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="111">Initial direct costs</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="111">1,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="112">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="112">Incremental borrowing rate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="112">7%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="113">Compounding interval</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="113">Annually</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="114">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="114">Asset useful life (months)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="114">600</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="115">Annuity type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="115">Ordinary annuity</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="116">Commencement date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="116">1/1/2019</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="118"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="118">Payment schedule lines tab</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="120">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="120">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="120">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="120">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="122">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="122">Start date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="122">1/1/2019</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="123">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="123">Period interval</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="123">Monthly</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="124">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="124">Periods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="124">120</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="125">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="125">End date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="125">12/31/2028</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="126">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="126">Payment frequency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="126">Annually</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="127">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="127">Payment amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="127">10,000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="steps-for-terminating-the-lease" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="129">Steps for terminating the lease</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="131">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="131"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="131">After you create the lease as described earlier in this topic, go to the lease book, and confirm the payment schedule. Then post the initial recognition journal entry. The initial ROU asset is $71,235.81, and lease liability should be $70,235.81. For this example, the lease was classified as an operating lease under Accounting Standards Codification Topic 842 (ASC 842).</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="132"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="132">Run the batch journal process three times to simulate the passage of three years for the lease payments, interest expenses, and depreciation expenses.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="133"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="133">After you've finished running all three batch jobs, go back to the lease book, and open the Liability and Asset transactions tables to view the current carrying value of the ROU asset and lease liability. After three years, the value of the liability should be approximately $-53,893.00, and the value of the asset should be approximately $54,593.00.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="135">After the three years have passed, the business and lessor mutually agree to terminate the lease. Therefore, you must now terminate the lease.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="137"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="137">Go to the lease that must be terminated, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="137">Termination proposal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="138"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="138">In the dialog box that appears, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="138">Effective date</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="138">Posting date</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="138">1/1/2021</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="139"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="139">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="139">Termination proposal</strong> to propose the lease for termination.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="141">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="141">Lease terminations</strong> page appears and shows the lease that will be terminated.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="143"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="143">To view the termination lines, select the lease ID of the lease that you proposed for termination. The termination lines show the carrying values of the lease. The following table shows what these values should be for this example.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="145">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="145">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="145">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="145">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="147">Carrying balance of liability in transaction currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="147">$53,892.89</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="148">Right-of-use asset in transaction currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="148">$71,235.81</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="149">Accumulated depreciation in transaction currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="149">$16,642.92</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="150">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="150">Gain (loss) in transaction currency</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="150">$-700.00</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="152"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="152">To post the termination journal entry, select the lease on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="152">Lease terminations</strong> page, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="152">Terminate</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="153"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="153">In the dialog box that appears, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="153">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="154"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="154">To view the termination journal entry that has been created and posted, go to the asset's leasing journal in the lease book. The following table shows what this entry should look like for this example.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="156">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="156">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="156">Transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="156">Debit (Dr.)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="156">Credit (Cr.)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="158">Dr. Lease liability</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="158">53,892.89</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="158"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="159">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="159">Dr. Accumulated depreciation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="159">16,642.92</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="159"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="160">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="160">Dr. Gain (loss) on lease modification</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="160">700.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="160"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="161">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="161">Cr. Lease asset</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="161"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="161">71,235.81</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="163"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="163">To view the net effect of the termination, where the ROU asset and lease liability will be 0 (zero), open the Liability and Asset transactions tables.</p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="165">The lease status should now be <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md" sourcestartlinenumber="165">Terminated</strong>. No additional journal entries will be posted against this lease unless the termination is reversed.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/lease-termination.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

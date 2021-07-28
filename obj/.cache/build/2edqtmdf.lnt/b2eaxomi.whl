@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cost rollup policy and overhead calculation | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Cost rollup policy and overhead calculation | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cost-rollup-policy-and-overhead-calculation" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="30">Cost rollup policy and overhead calculation</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="34">Cost accounting lets you gain insight into how the cost flow relates to the products and services that are delivered within an organization. To see the cost transparency, it's crucial to achieve cost allocation between cost objects based on an appropriate allocation basis. By default, the cost allocation is achieved for the primary cost element, which is desired in some situations, but it has a few implications that should be considered.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="36">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="36"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="36">Auxiliary cost objects will end with a zero balance for the primary cost element
+after overhead calculation.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="39"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="39">The volume of cost entries generated by overhead calculation can be very
+high.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="42"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="42">It is not possible to track the cost flow between cost objects.</p>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="44">To avoid these implications, Cost accounting lets you configure cost allocation to fit into your organization managerial reporting requirements. This topic discusses how you can determine the correct level of secondary cost elements and create cost rollup rules that fit into organization reporting and cost traceability.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="46">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="47">You can change configurations if reporting requirements change.</p>
+</div>
+<h2 id="example-of-cost-rollup-policy-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="49">Example of cost rollup policy setup</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="51">Imagine that an organization has the following structure with 4 cost centers.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="53"><img src="media/dimension-hierarchy-org.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="53" alt="Example of an organization structure."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="55"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="55">Cost object dimension</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="57">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="57">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="57">Cost centers</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="57">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="59">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="59">CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="59">HR</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="60">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="60">CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="60">Finance</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="61">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="61">CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="61">Assembly</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="62">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="62">CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="62">Packaging</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="64"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="64">Cost element dimension</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="66">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="66">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="66">Cost elements</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="66">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="66">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="68">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="68">Electricity</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="68">Primary</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="69">1002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="69">Salaries</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="69">Primary</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="70">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="70">1003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="70">Advertising</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="70">Primary</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="72">A dimension hierarchy that fulfills the organizational reporting requirements can be set up as follows.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="74"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="74">Dimension hierarchy details</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="76">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="76">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="76">Dimension hierarchy name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="76">Dimension</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="76">Dimension hierarchy type name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="76">Access list hierarchy</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="78">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="78">Organization</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="78">Cost centers</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="78">Dimension classification hierarchy</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="78">No</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="80"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="80">Dimension hierarchy</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="82">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="82">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="82"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="82">Dimension member ranges</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="82"> </th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="84"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="84">Nodes</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="84"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="84">From dimension member</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="84"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="84">To dimension member</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="85">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="85">Organization</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="85"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="85"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="86">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="86">  Admin</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="86"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="86"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="87">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="87">    Finance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="87">CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="87">CC001</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="88">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="88">    HR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="88">CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="88">CC002</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="89">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="89">  Production</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="89"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="89"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="90">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="90">    Packaging</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="90">CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="90">CC003</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="91">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="91">    Assembly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="91">CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="91">CC004</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="93">A dimension hierarchy that fulfills the policy requirement can be set up as follows.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="95"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="95">Dimension hierarchy details</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="97">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="97">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="97">Dimension hierarchy name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="97">Dimension</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="97">Dimension hierarchy type name</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="99">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="99">Profit &amp; Loss statement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="99">Cost elements</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="99">Dimension classification hierarchy</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="101"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="101">Dimension hierarchy</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="103">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="103">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="103"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="103">Dimension member ranges</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="103"> </th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="105">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="105">Nodes</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="105">From dimension member</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="105">To dimension member</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="106">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="106">Profit &amp; Loss statement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="106"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="106"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="107">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="107">    Primary cost</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="107">10001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="107">10003</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="109">After the general ledger entries are processed, the cost entry balance by cost object looks like this.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="111">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="111">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="111"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="111">Cost object</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="111"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="111"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="111"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="111">Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113">Cost element</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113">CC001</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113">CC002</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113">CC003</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113">CC004</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="113"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="114">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="114"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="114">1001 Electricity</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="114">100,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="114">200,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="114">6.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="114">2.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="114"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="114">8.300,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="115"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="115">1002 Salaries</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="115">10.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="115">10.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="115">8.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="115">6.500,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="115"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="115">34.500,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="116"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="116">1003 Advertising</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="116">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="116">4.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="116">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="116">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="116"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="116">4.000,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="117">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="117"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="117">10.100,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="117">14.200,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="117">14.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="117">8.500,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="117"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="117">46.800,00</strong></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="119"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="119">Statistical dimension</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="121">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="121">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="121">Statistical elements</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="121">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="123">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="123">SE-1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="123">HR services</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="124">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="124">SE-2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="124">Finance services</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="126">Cost object CC001 HR is contributing HR services to several cost objects.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="128">HR services are consumed by the following distribution of magnitude.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="130">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="130">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="130">Cost object</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="130">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="130">HR services</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="132">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="132">CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="132">Finance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="132">35</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="133">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="133">CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="133">Assembly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="133">55</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="134">CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="134">Packaging</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="134">10</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="136">Cost object CC002 Finance is contributing to several cost objects.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="138">Finance services are consumed by the following distribution of magnitude.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="140">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="140">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="140">Cost object</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="140">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="140">Finance services</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="142">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="142">CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="142">Assembly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="142">65</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="143">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="143">CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="143">Packaging</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="143">35</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="145">Cost allocation polices can be set up as follows.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="147">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="147">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="147">Policy name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="147">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="147">Cost object dimension hierarchy</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="147">Statistical dimension</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="147">Cost element dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="149">2017</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="149">Cost allocation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="149">Organization</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="149">Statistical elements</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="149">Cost elements</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="151">Cost allocation rules can be set up as follows.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="153">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="153">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="153">Cost object dimension hierarchy node</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="153">Cost behavior</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="153">Allocation base</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="155">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="155">CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="155">Total</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="155"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="155">HR services</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="156">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="156">CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="156">Total</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="156"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="156">Financial services</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-cost-flows-between-cost-centers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="158"><br>How cost flows between cost centers</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="160">If you want to learn how cost flows between the cost centers in the organization, you can create cost elements of the type <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="160">Secondary</strong> for each cost center. These cost elements will then be used to transfer balances between the cost centers during the overhead calculation.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="162">Cost element dimension members can be set up as follows.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="164">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="164">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="164">Cost elements</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="164">Type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="164"> </th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="166">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="166">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="166">Electricity</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="166">Primary</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="167">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="167">1002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="167">Salaries</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="167">Primary</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="168">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="168">1003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="168">Advertising</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="168">Primary</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="169">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="169"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="169">SC-CC001</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="169"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="169">HR</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="169"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="169">Secondary</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="170">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="170"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="170">SC-CC002</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="170"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="170">Finance</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="170"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="170">Secondary</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="171">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="171"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="171">SC-CC003</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="171"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="171">Assembly</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="171"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="171">Secondary</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="172">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="172"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="172">SC-CC004</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="172"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="172">Packaging</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="172"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="172">Secondary</strong></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="174">The dimension hierarchy <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="174">Profit &amp; Loss statement</strong> needs to be updated with the new dimension members so that the dimension hierarchy contains the correct data that can be used for defining reporting and policies.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="176"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="176">Dimension hierarchy details</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="178">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="178">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="178">Dimension hierarchy name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="178">Dimension</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="178">Dimension hierarchy type name</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="180">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="180">Profit &amp; Loss statement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="180">Cost elements</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="180">Dimension classification hierarchy</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="182"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="182">Dimension hierarchy</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="184">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="184">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="184"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="184">Dimension member ranges</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="184"> </th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="186">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="186">Nodes</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="186">From dimension member</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="186">To dimension member</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="187">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="187">Profit &amp; Loss statement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="187"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="187"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="188">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="188">    Primary cost</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="188">10001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="188">10003</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="189">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="189">    Secondary cost</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="189"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="189">SC-CC001</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="189"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="189">SC-CC004</strong></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="191">Create a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="191">Cost rollup policy</strong> where each cost center is mapped to a corresponding cost element of the type <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="191">Secondary</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="193"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="193">Cost rollup polices</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="195">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="195">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="195">Policy name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="195">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="195">Cost object dimension hierarchy</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="195">Cost element dimension hierarchy</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="197">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="197">2017</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="197">Cost flow</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="197">Organization</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="197">Profit &amp; Loss statement</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="199"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="199">Cost rollup rules</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="201">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="201">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="201">Cost object dimension hierarchy node</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="201">Cost element dimension hierarchy node</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="201">Secondary cost element</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="203">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="203">CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="203">Profit &amp; Loss statement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="203"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="203">SC-CC001</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="204">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="204">CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="204">Profit &amp; Loss statement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="204"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="204">SC-CC002</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="205">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="205">CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="205">Profit &amp; Loss statement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="205"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="205">SC-CC003</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="206">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="206">CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="206">Profit &amp; Loss statement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="206"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="206">SC-CC004</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="perform-overhead-calculation" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="208">Perform overhead calculation</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="210"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="210">Journal</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="212">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="212">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="212">Journal</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="212">Journal type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="212">Fiscal calendar period</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="212">Year</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="212">Period</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="212">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="214">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="214">00002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="214">Cost allocation journal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="214">Fiscal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="214">2017</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="214">Period 1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="214">Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="216">The system will now apply the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="216">Cost rollup policy</strong> when it creates the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="216">Cost object balance journal entries</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="218"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="218">Cost object balance journal entries</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="220">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="220">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="220">Accounting date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="220">Cost object</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="220">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="220">Cost element</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="220">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="220">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="222">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="222">31-01-2017</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="222">CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="222">HR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="222">SC-CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="222">HR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="222">10.100,00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="223">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="223">31-01-2017</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="223">CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="223">Finance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="223">SC-CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="223">Finance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="223">17.735,00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="224">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="224">31-01-2017</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="224">CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="224">Assembly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="224">SC-CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="224">Assembly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="224">31.082,75</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="225">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="225">31-01-2017</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="225">CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="225">Packaging</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="225">SC-CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="225">Packaging</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="225">15.717,25</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="227">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="228">The journal entries are created based on the rules in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="228">Cost rollup policy</strong> if a policy exists. The balance displayed is the balance of the overhead calculation.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="230">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="230">Cost object cost balance journal entry details</strong> page that is accessed from the journal entries displays how the balance is obtained.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="232"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="232">Example: The journal entry for Cost object CC002 Finance</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="234"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="234">Cost object cost balance journal entry details</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="236">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="236">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="236">Cost element dimension member</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="236">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="236">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="238">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="238">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="238">Electricity</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="238">200,00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="239">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="239">1002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="239">Salaries</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="239">10.000,00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="240">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="240">1003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="240">Advertising</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="240">4.000,00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="241">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="241">SC-CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="241">HR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="241">3.535,00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="243"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="243">Cost entries generated by the Overhead calculation</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="245">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="245">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="245">Cost object</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="245">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="245">Cost element</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="245">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="245">Amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="245">Accounting date</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="247">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="247">CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="247">HR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="247">SC-CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="247">HR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="247">-10.100,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="247">31-01-2017</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="248">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="248">CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="248">Finance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="248">SC-CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="248">HR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="248">3.535,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="248">31-01-2017</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="249">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="249">CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="249">Assembly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="249">SC-CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="249">HR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="249">5.555,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="249">31-01-2017</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="250">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="250">CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="250">Packaging</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="250">SC-CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="250">HR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="250">1.010,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="250">31-01-2017</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="251">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="251">CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="251">Finance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="251">SC-CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="251">Finance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="251">-17.735,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="251">31-01-2017</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="252">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="252">CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="252">Assembly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="252">SC-CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="252">Finance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="252">11.527,75</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="252">31-01-2017</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="253">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="253">CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="253">Packaging</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="253">SC-CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="253">Finance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="253">6.207,25</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="253">31-01-2017</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="255">After the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="255">Overhead calculation</strong> is completed, you can report the results using tools such as Microsoft SharePoint Workspace, Excel, or Power BI.</p>
+<h2 id="view-reporting-in-excel" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="257">View reporting in Excel</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="259">The dimension hierarchies allow you to view data at different aggregation levels.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="261">Here is an example of a Power Pivot reporting in Excel.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263">Profit &amp; Loss statement</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263">Cost object</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="263">Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265">CC001</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265">CC002</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265">CC003</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265">CC004</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="265"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266">Primary cost</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266">10.100,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266">14.200,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266">14.000,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266">8.500,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="266">46.800,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="267">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="267">    1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="267">100,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="267">200,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="267">6.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="267">2.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="267"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="267">8.300,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="268">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="268">    1002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="268">10.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="268">10.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="268">8.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="268">6.500,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="268"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="268">34.500,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="269">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="269">    1003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="269">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="269">4.000,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="269">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="269">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="269"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="269">4.000,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270">Secondary cost</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270">-10.100,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270">-14.200,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270">17.082.75</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270">7.217,25</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="270">0,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="271">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="271">    SC-CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="271">-10.100,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="271">3.535,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="271">5.555,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="271">1.010,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="271"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="271">0,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="272">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="272">    SC-CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="272">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="272">-17.735,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="272">11.527,75</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="272">6.207,25</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="272"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="272">0,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="273">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="273">    SC-CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="273">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="273">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="273">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="273">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="273">0,00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="274">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="274">    SC-CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="274">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="274">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="274">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="274">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="274">0,00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275">Total</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275">0,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275">0,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275">31.082,75</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275">15.717,25</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="275">46.800,00</strong></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="277">Using <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="277">Cost rollup policy</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="277">Cost elements of the type secondary</strong> allows you to leave the primary cost per cost object for internal reporting as the primary cost that remains after <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="277">Overhead calculation</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="279">If the same example had been performed without creating the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="279">Cost rollup policy,</strong> the reporting result would be as shown below. The cost flows correctly but the traceability and insight into how cost flows between the cost centers are lost.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281">Profit &amp; Loss statement</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281">Cost object</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281"> </th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="281">Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283">CC001</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283">CC002</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283">CC003</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283">CC004</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="283"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284">Primary cost</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284">0,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284">0,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284">31.082,75</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284">15.717,25</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="284">46.800,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="285">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="285">    1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="285">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="285">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="285">6.207,75</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="285">2.092,25</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="285"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="285">8.300,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="286">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="286">    1002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="286">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="286">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="286">22.275,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="286">12.225,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="286"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="286">34.500,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="287">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="287">    1003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="287">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="287">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="287">2600,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="287">1.400,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="287"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="287">4.000,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288">Secondary cost</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288">0,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288">0,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288">0,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288">0,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="288">0,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="289">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="289">     SC-CC001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="289">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="289">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="289">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="289">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="289"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="289">0,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="290">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="290">     SC-CC002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="290">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="290">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="290">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="290">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="290"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="290">0,00</strong></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="291">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="291">     SC-CC003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="291">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="291">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="291">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="291">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="291">0,00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="292">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="292">     SC-CC004</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="292">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="292">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="292">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="292">0,00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="292">0,00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293">Total</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293">0,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293">0,00</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293">31.082,75</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293">15.717,25</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="293">46.800,00</strong></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="295">Depending on the reporting and traceability requirements in your organization, you can determine the correct level of secondary cost elements and create cost rollup rules that fit your needs.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="297">The clear separation between <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="297">Cost allocation</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="297">Cost rollup policies</strong> provides the flexibility to make continuous updates without affecting each other.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="301">Additional resources</h2>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="302">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="302"><a href="cost-objects.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="302">Cost object dimensions</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="303"><a href="cost-elements.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="303">Cost element dimensions</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="304"><a href="dimension-hierarchy.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="304">Dimension hierarchy</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="305"><a href="overhead-calculation.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md" sourcestartlinenumber="305">Overhead calculation</a></li>
+</ul>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/cost-accounting/cost-rollup.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Support for different dimension patterns | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Support for different dimension patterns | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="support-for-different-dimension-patterns">Support for different dimension patterns</h1>
+
+[!include[banner](../includes/banner.md)]
+<p>To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.</p>
+<h2 id="the-sfk-and-the-natural-key">The SFK and the Natural key</h2>
+<p>To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions. When this nesting of data entities occurs, the surrogate foreign key (SFK) and natural key of the dimensions data entity are treated differently. The following table describes the differences.</p>
+<table>
+<thead>
+<tr>
+<th>Key type</th>
+<th>Access modifier</th>
+<th>Description, when the dimension entity is a data source on another entity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SFK</td>
+<td>private</td>
+<td>As with any SFK, the SFK of the dimension is defined on the outer data entity as a private field.</td>
+</tr>
+<tr>
+<td>Natural key</td>
+<td>public</td>
+<td>The natural key of the dimension entity is exposed as a public string of dimension attribute values. The values are concatenated together but are separated by the account delimiter. The account delimiter is defined per partition. The concatenated string is used as a display value. The phrase “DisplayValue” is appended as a suffix to some fields of an entity, as explained later in this document.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reads-and-writes">Reads and writes</h2>
+<p><strong>Read:</strong> On a read of the outer data entity, the public display value will be retrieved from a computed column by using the dimension entity of the framework. Because the read uses a computed column, it doesn't require any X++ logic for export scenarios. <strong>Write:</strong> On the creation or update of entity instance values, the public display value is resolved to the SFK to match the private field.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>DimensionEntityTestEntity</strong> is a test entity that has more than one dimension pattern. For the default dimension, you can focus on the <strong>DimensionDefault</strong> and <strong>DimensionDefaultDisplayValue</strong> fields, and ignore the rest.</p>
+<h4 id="read-example">Read example</h4>
+<p><a href="media/suba.png"><img src="media/suba.png" alt="Read example."></a></p>
+<h4 id="write-example">Write example</h4>
+<p>The entity exposes a default dimension field, <strong>DimensionDefaultDisplayValue</strong>. This is a display value field. You can set this field to a concatenated string value that is similar to the segmented entry control of the user interface.</p>
+<p><a href="media/subb.png"><img src="media/subb.png" alt="Write example."></a> <strong>DisplayValue</strong> resolves to <strong>DefaultDimension</strong> at run time.</p>
+<h2 id="create-an-entity-by-using-a-wizard">Create an entity by using a wizard</h2>
+<p>This section describes how to create a data entity by using a wizard. We recommend that you use the wizard. It requires only that you select the SFK field of the dimension. The wizard creates the required data source, fields, and relations that have all the correct settings.</p>
+<ol>
+<li><p>Click <strong>File</strong> &gt; <strong>New</strong> &gt; <strong>Project</strong> to create a new project.</p>
+</li>
+<li><p>In Solution Explorer, right-click your project, and then click <strong>Properties</strong>. The <strong>Property Pages</strong> dialog box for your project opens.</p>
+</li>
+<li><p>In the <strong>Property Pages</strong> dialog box, follow these steps:</p>
+<ol>
+<li>Change the value of the <strong>Model</strong> property to <strong>Application Suite Unit tests</strong>, and then click <strong>OK</strong>. You must set this property only one time per project.</li>
+<li>Change the value of the <strong>Synchronize database on build</strong> property to <strong>True</strong>, and then click <strong>OK</strong>. You must set this property only one time per project.</li>
+</ol>
+<p><a href="media/dim2.png"><img src="media/dim2.png" alt="Setting the project properties."></a></p>
+</li>
+<li><p>Create a new entity that is named <strong>DimensionTestEntity</strong>, and add it to the project. When you click the <strong>Add</strong> button, the <strong>Data Entity View</strong> wizard starts. Under <strong>Installed</strong>, then select <strong>Dynamics 365 Artifacts</strong>, then selec <strong>Data Model</strong>. Select <strong>Data Entity</strong> from the list. <strong>Note:</strong> A naming convention document is evolving that covers data entities and other items.</p>
+</li>
+<li><p>Specify the property values for the data entity that you're creating, as shown in the following screen shot. <strong>Note:</strong> The most important field is <strong>Primary data source</strong>, where you select <strong>DimensionEntityTestTable</strong>.</p>
+<p><a href="media/dim4.png"><img src="media/dim4.png" alt="Setting the entity properties."></a> Click <strong>Next</strong>.</p>
+</li>
+<li><p>Add fields to the entity from the primary data source, <strong>DimensionEntityTestTable</strong>:</p>
+<ol>
+<li><p>Clear the <strong>Select all</strong> check box to deselect all fields.</p>
+<p><a href="media/dim5.png"><img src="media/dim5.png" alt="Deselecting all fields."></a></p>
+</li>
+<li><p>Manually select the check box for each of the following fields:</p>
+<ul>
+<li>FieldDimensionDefault</li>
+<li>FieldAlternativeKey</li>
+</ul>
+<p><a href="media/dim6.png"><img src="media/dim6.png" alt="Selecting fields for the entity."></a></p>
+</li>
+<li><p>Click <strong>Finish</strong> to add the new data entity to your project. A node for the entity appears in Solution Explorer.</p>
+<p><a href="media/dim7.png"><img src="media/dim7.png" alt="The entity node in Solution Explorer."></a></p>
+</li>
+</ol>
+</li>
+<li><p>Click <strong>Build</strong> &gt; <strong>Build Solution</strong> to build your project.</p>
+</li>
+<li><p>In the <strong>Errors</strong> pane, verify that the build was completed without any errors. At this stage in the process, warnings are tolerated.</p>
+</li>
+<li><p>Validate the properties of <strong>DimensionTestEntity</strong>. In Solution Explorer, select the <strong>DimensionTestEntity</strong> node, and compare the values in the <strong>Properties</strong> pane values to the values in the following screen shot.</p>
+<p><a href="media/dim8.png"><img src="media/dim8.png" alt="Properties."></a></p>
+</li>
+<li><p>In Solution Explorer, right-click the <strong>DimensionTestEntity</strong> node, and then click <strong>Open</strong>. The designer for the entity opens in the middle pane.</p>
+<p><a href="media/dim9.png"><img src="media/dim9.png" alt="Entity designer."></a></p>
+</li>
+<li><p>In the designer for <strong>DimensionTestEntity</strong>, expand <strong>Fields</strong> &gt; <strong>FieldDimensionDefaultDisplayValue</strong>, and select the node for the <strong>FieldDimensionDefaultDisplayValue</strong> field.</p>
+</li>
+<li><p>In the <strong>Properties</strong> pane, change the value of the <strong>AccessModifier</strong> property from <strong>Private</strong> to <strong>Public</strong>.</p>
+<p><a href="media/dim10.png"><img src="media/dim10.png" alt="Setting the AccessModifier property."></a></p>
+</li>
+<li><p>Override the <strong>persistEntity</strong> method on the data entity, and enter the following X++ code.</p>
+<p><a href="media/dim11.png"><img src="media/dim11.png" alt="Code for persistEntity."></a></p>
+</li>
+<li><p>For testing, see the existing unit test class, <strong>DimensionEntityTest</strong>.</p>
+</li>
+</ol>
+<h2 id="manually-configure-and-understand-default-dimensions">Manually configure and understand default dimensions</h2>
+<p>This section describes how to add a dimension data source to a new entity. The new entity requires the dimension display value from the dimension tables.</p>
+<ol>
+<li><p>On a new entity, create a data source that has the property values that are shown in the following screen shot. In particular, notice the settings for the properties that are described in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Property name</th>
+<th>Property value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Allow Add</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td>Is Read Only</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>Join Mode</td>
+<td>OuterJoin</td>
+<td></td>
+</tr>
+<tr>
+<td>Name</td>
+<td>FieldDimensionDefaultDAVS</td>
+<td>The value is derived by appending the four-character literal &quot;DAVS&quot; to the name of the SFK field from the data source.</td>
+</tr>
+<tr>
+<td>Table</td>
+<td>DimensionSetEntity</td>
+<td>The name that you chose for the data entity for the data source. The value that is shown here, <strong>DimensionSetEntity</strong>, is a framework dimension data entity for the DefaultDimension pattern.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="media/dim12.png"><img src="media/dim12.png" alt="Data source properties."></a></p>
+</li>
+<li><p>Create a private field for the dimension SFK. For this entity field, the source field is the <strong>FieldDimensionDefault</strong> SFK field.</p>
+<p><a href="media/dim13fixed.png"><img src="media/dim13fixed.png" alt="FieldDimensionDefault field."></a></p>
+</li>
+<li><p>Create a public field for the dimension display value, and bind it to the data source that you created in a previous step. The name of the dimension display value field must be the private field name, to which the twelve-character literal “DisplayValue” is appended.</p>
+<p><a href="media/dim14fixed.png"><img src="media/dim14fixed.png" alt="FieldDimensionDefaultDisplayValue field."></a></p>
+</li>
+<li><p>Add an entity relation. An entity relation will enable OData navigation between entities. The name of the relation should be the name of the private dimension field name, to which “DimensionSet” is appended. The public name for <strong>DimensionSetEntity</strong> is <strong>DimensionSet</strong>. Therefore, the navigation to that entity should have a meaningful name. A good choice is the name of the dimension SFK plus “DimensionSet.”</p>
+<p><a href="media/dim15fixed.png"><img src="media/dim15fixed.png" alt="New entity relation."></a></p>
+</li>
+<li><p>Override the <strong>persistEntity</strong> method, and enter the following X++ code.</p>
+<p><a href="media/dim16.png"><img src="media/dim16.png" alt="Overriding the persistEntity method."></a></p>
+</li>
+</ol>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

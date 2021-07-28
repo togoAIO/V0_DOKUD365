@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Credit or debit note against an export order | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Credit or debit note against an export order | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="credit-or-debit-note-against-an-export-order" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="29">Credit or debit note against an export order</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="33">Currently, credit notes and debit notes can't be posted against an export invoice that has been posted. However, this feature lets you post credit notes against an export order, similarly to the way that you post a sales order.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="35">Per the proposed new Goods and Services Tax Return (GSTR), ANX-1 inserts information that is related to credit and debit notes that are issued against an export order.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="37">When a credit note or a debit note is posted against an export order that already has a posted shipping bill, it shows the following information:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="39">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="39">Shipping bill number</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="40">Shipping bill date</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="42">When the credit or debit note is posted, these fields will automatically be set, based on the posted export order.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="44">Export orders can be posted in the following ways:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="46">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="46">Export that includes payment of tax</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="47">Export that excludes payment of tax</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="49">If the credit or debit note is posted against an export invoice, the same options are available:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="51">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="51">If the export order is posted with payment of tax, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="51">With the payment of Tax</strong> field for the credit note is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="51">Yes</strong> by default.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="52">If the export order is posted without payment of tax, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="52">With the payment of Tax</strong> field for the credit note is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="52">No</strong> by default.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="54">If the credit or debit note is posted against an export order that is posted with payment of tax, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="54">Would you claim refund?</strong> field is also available, and can be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="54">Yes</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="54">No</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="56">When a credit note is created against a posted export order, the same field is available in the credit note.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="58">You can use the following three transaction types to post a credit or debit note against an export order:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="60">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="60">Export order invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="61">Free text invoice with a negative value</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="62">General journal</li>
+</ul>
+<h2 id="set-up-a-credit-or-debit-note-against-an-export-invoice" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="64">Set up a credit or debit note against an export invoice</h2>
+<h3 id="turn-on-the-feature-in-feature-management" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="66">Turn on the feature in Feature management</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="68">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="68">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="68">Workspaces &gt; Feature management</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="69">In the list, find and select the feature that is named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="69">(India) Enable Credit/Debit note against an export invoice</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="69">Enable</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="71"><img src="media/Credit-Debit-note-EO-001.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="71" alt="Feature management workspace."></p>
+<h3 id="set-up-a-number-sequence-in-the-gst-reference-number-sequence-group" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="73">Set up a number sequence in the GST reference number sequence group</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="75">To maintain a Goods and Services Tax (GST) transaction ID for credit notes against an export invoice, you can set up a number sequence in the GST reference number sequence group.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="77">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="77">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="77">Tax &gt; Setup &gt; GST reference number sequence group</strong>.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="79"><img src="media/Credit-Debit-note-EO-002.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="79" alt="GST reference number sequence group page."></p>
+<h2 id="post-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="81">Post transactions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="83">This section shows how to post a credit note that has a GST payment by using an export sales order.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="85">When a credit note is posted against a posted export invoice, the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="85">With payment of tax</strong> field in the export invoice defaults to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="85">Tax information</strong> page. If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="85">With the payment of tax</strong> option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="85">Yes</strong>, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="85">Would you claim refund?</strong> field is shown.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="87">By default, if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="87">Would you claim refund?</strong> field in the posted export invoice is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="87">Yes</strong>, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="87">Would you claim refund?</strong> field in the credit note will be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="87">Yes</strong>. Otherwise, the field in the credit note will be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="87">No</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="89">For example, you create a credit note for five items that has the following information:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="91">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="91"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="91">Export order line</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="92"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="92">In the originally posted export order, the following values are set:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="94">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="94"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="94">With payment of tax</strong> = <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="94">Yes</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="95"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="95">Would you claim refund?</strong> = <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="95">Yes</strong></li>
+</ul>
+</li>
+</ul>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="97">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="97">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="97">Item</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="97">Qty</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="97">Unit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="97">Net amt.</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="97">Tax group</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="97">IGST</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="97">Tax rate</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="99">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="99">A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="99">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="99">1,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="99">5,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="99">Cust1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="99">IGST @10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="99">10</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="101">The cost of the item is 4,000.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="103">The following tables show how the export invoice will be posted.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="105"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="105">IGST calculation</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="107">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="107">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="107">Sales value</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="107">GST @10%</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="109">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="109">5,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="109">500</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="111">Voucher transaction</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="113">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="113">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="113">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="113">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="113">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="115">Customer1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="115">5,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="115"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="116">IGST Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="116"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="116">500</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="117">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="117">Export order revenue</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="117"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="117">5,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="118">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="118">Refundable account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="118">500</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="118"></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="120"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="120">Result when the credit note is posted against the posted export invoice</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="122">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="122">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="122">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="122">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="122">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="124">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="124">Export order revenue</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="124">5,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="124"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="125">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="125">Customer `</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="125"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="125">5,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="126">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="126">IGST Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="126">500</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="126"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="127">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="127">Refundable account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="127"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="127">500</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="128">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="128">Export Inventory issue (cost of item)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="128"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="128">4,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="129">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="129">Sale of goods (cost of item)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="129">4,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="129"></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="131">When the export order is posted, the following values are set:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="133">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="133"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="133">With payment of tax</strong> = <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="133">Yes</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="134"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="134">Would you claim refund?</strong> = <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="134">Yes</strong></li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="136">The following tables show how the export invoice will be posted.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="138"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="138">Voucher transaction</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="140">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="140">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="140">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="140">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="140">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="142">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="142">Customer1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="142">5,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="142"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="143">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="143">IGST Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="143"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="143">500</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="144">Export order revenue</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="144"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="144">5,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="145">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="145">Export Expenses</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="145">500</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="145"></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="147"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="147">Result when the credit note is posted against the posted export invoice</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="149">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="149">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="149">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="149">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="149">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="151">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="151">Export order revenue</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="151">5,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="151"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="152">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="152">Customer `</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="152"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="152">5,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="153">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="153">IGST Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="153">500</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="153"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="154">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="154">Export Expenses</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="154"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="154">500</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="155">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="155">Export Inventory issue (cost of item)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="155"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="155">4,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="156">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="156">Sale of goods (cost of item)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="156">4,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="156"></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="158">If you review the header information on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="158">Tax document</strong> page for the credit note, you will see the original export invoice ID, and the shipping bill number and shipping bill date.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="160"><img src="media/Credit-Debit-note-EO-003.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="160" alt="Tax document page."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="162">After you post the credit note against the export invoice, you can run the monthly ANX-1 offline tool to view the credit note transaction. Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="162">Tax &gt; Inquiries and reports &gt; Tax reports &gt; ANX-1 report</strong>. The following illustration shows an example of an ANX-1 report where a credit/debit note was posted against an export invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="164"><img src="media/Credit-Debit-note-EO-005.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="164" alt="ANX-1 report."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="166">A credit/debit note that is issued against an export order can also be viewed in the new GSTR-1 report. The following illustration shows an example of a GSTR-1 report where a credit/debit note was posted against an export invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="168"><img src="media/Credit-Debit-note-EO-004.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md" sourcestartlinenumber="168" alt="New GSTR-1 report."></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-credit-debit-note-against-export-order.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Extend the budget planning layout | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Extend the budget planning layout | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="extend-the-budget-planning-layout" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="27">Extend the budget planning layout</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="31">This topic describes the process for extending the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. This process might be required if you're comparing information over multiple years, if many scenarios are being evaluated, or if weekly or daily periods are being evaluated. This topic was written for a developer audience.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="33">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="33"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="33">BudgetPlanLineActiveView table</strong> – This table contains the pivoted budget planning data. Out of the box, it contains 36 monetary columns and 36 quantity columns. This default configuration lets users manipulate the budget plan layout so that they can show and compare up to three years of monthly planning data.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="34"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="34">BudgetPlanWorksheetEntity entity</strong> – This entity is a counterpart of the BudgetPlanLineActiveView table and serves as a data source for the Microsoft Excel worksheet. The columns in this entity map to the columns in the BudgetPlanLineActiveView table. Any changes in the table must be replicated in the entity.</li>
+</ul>
+<h2 id="extend-the-columns-in-the-budgetplanlineactiveview-table" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="36">Extend the columns in the BudgetPlanLineActiveView table</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="38">You can extend the columns in the BudgetPlanLineActiveView table by using a four-step process. After you complete these steps, you must build the project and validate your changes.</p>
+<h3 id="step-1-add-columns-to-the-budgetplanlineactiveview-table" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="40">Step 1: Add columns to the BudgetPlanLineActiveView table</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="42">You begin the process by creating a new extension, adding fields, and setting the data type for the fields that you add.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="44">Open Microsoft Visual Studio</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="45">Open Application explorer.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="46">Create an extension on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="46">BudgetPlanLineActiveView</strong> table to a new project.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="47">Open the table in designer mode.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="48">Right-click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="48">Fields</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="48">New &gt; Real</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="49">Name the field by using the next available name, where the suffix is incremented (for example, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="49">TransactionCurrencyAmount37</strong>).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="50">Set the extended data type to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="50">BudgetPlanCurrencyAmount</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="51">Right-click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="51">Fields</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="51">New &gt; Real</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="52">Name the field by using the next available name, where the suffix is incremented (for example, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="52">Quantity37</strong>).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="53">Set the extended data type to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="53">BudgetPlanQuantity</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="54">Repeat steps 5 through 10 for all the additional columns of each extended data type that you require.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="55">Optional: Add the monetary columns added to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="55">Monetary</strong> field group quantity columns to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="55">Quantity</strong> field group.</li>
+</ol>
+<h3 id="step-2-add-columns-to-the-budgetplanworksheetentity-entity" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="57">Step 2: Add columns to the BudgetPlanWorksheetEntity entity</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="59">To add columns to the BudgetPlanWorksheetEntity entity, follow these follow steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="61">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="61">Create an extension on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="61">BudgetPlanWorksheetEntity</strong> entity to the existing project.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="62">Open the entity extension in designer mode.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="63">Drag the columns from the data sources node into the fields node.</li>
+</ol>
+<h3 id="step-3-create-an-extension-for-the-budgetplan-form" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="65">Step 3: Create an extension for the BudgetPlan form</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="67">To update the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="67">BudgetPlan</strong> form so that it includes the new columns, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="69">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="69">Create an extension on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="69">BudgetPlan</strong> form.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="70">Replicate any events or customizations in a new event handler that exists on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="70">TransactionCurrencyAmount</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="70">Quantity</strong> fields, onto the new fields. The following example shows the standard events that currently exist for both <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="70">CurrencyAmount</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="70">Quantity</strong>. These events must be created for anything beyond the original 36 <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="70">CurrencyAmount</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="70">Quantity</strong> values.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="72">[FormDataFieldEventHandler(formDataFieldStr(BudgetPlan, BudgetPlanLineActiveView, TransactionCurrencyAmount37), FormDataFieldEventType::Modified)]
+publicstaticvoid transactionCurrencyAmount37\_OnModified(FormDataObject \_sender, FormDataFieldEventArgs \_e)
+{
+    Object budgetPlanLineActiveView\_ds = \_sender.datasource() asFormDataSource;
+    budgetPlanLineActiveView\_ds.updateTransactionCurrencyAmount(fieldNum(BudgetPlanLineActiveView, TransactionCurrencyAmount37));
+}
+[FormDataFieldEventHandler(formDataFieldStr(BudgetPlan, BudgetPlanLineActiveView, Quantity37), FormDataFieldEventType::Modified)]
+publicstaticvoid quantity37\_OnModified(FormDataObject \_sender, FormDataFieldEventArgs \_e)
+{
+    Object budgetPlanLineActiveView\_ds = \_sender.datasource() asFormDataSource;
+    budgetPlanLineActiveView\_ds.updateQuantity(fieldNum(BudgetPlanLineActiveView, Quantity37));
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="87"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="87">Verify that a modified event handler exists for every copy that you've created of a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="87">TransactionCurrencyAmount</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="87">Quantity</strong> column.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="88"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="88">In the search fields above the form designer, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="88">LineViewLinesGrid</strong>, find the node, and expand it.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="90">Cancel the search by selecting the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="90">X</strong> at the end of the search field. The lines view grid will remain expanded and in view.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="92"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="92">Drag all the new columns that you added onto <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="92">LineViewLinesGrid</strong> (the grid).</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="93"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="93">Rename the new fields so that they follow the existing naming pattern (for example, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="93">TransactionCurrencyAmount37</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="93">Quantity37</strong>).</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="94"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="94">Reorder the fields so that they are in order for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="94">Quantity</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="94">TransactionCurrencyAmounts</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="95"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="95">Save your changes.</p>
+</li>
+</ol>
+<h3 id="step-4-update-the-budgetplanlinefieldactiveviewmapping-class-via-a-delegate" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="97">Step 4: Update the BudgetPlanLineFieldActiveViewMapping class via a delegate</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="99">To extend the mapping between the BudgetPlanLineActiveView and BudgetPlanLine tables, follow this step.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="101">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="101"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="101">Create a new class, and paste in the event handler method from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="101">gettingBudgetPlanLineFieldName</strong> delegate. There should be a statement for each <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="101">TransactionCurrencyAmount</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="101">Quantity</strong> field that you extended.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="103">[SubscribesTo(classStr(BudgetPlanLineFieldActiveViewMapping), staticDelegateStr(BudgetPlanLineFieldActiveViewMapping, gettingBudgetPlanLineFieldName))]
+publicstaticvoid BudgetPlanLineFieldActiveViewMapping\_gettingBudgetPlanLineFieldName(FieldName \_budgetPlanLineActiveViewFieldName, EventHandlerResult \_result)
+{
+    FieldName budgetPlanLineFieldName;
+    switch (\_budgetPlanLineActiveViewFieldName)
+    {
+        case
+            fieldStr(BudgetPlanLineActiveView, TransactionCurrencyAmount37), fieldStr(BudgetPlanLineActiveView, TransactionCurrencyAmount38):
+            budgetPlanLineFieldName = fieldStr(BudgetPlanLine, TransactionCurrencyAmount);
+            break;
+        case
+            fieldStr(BudgetPlanLineActiveView, Quantity37), fieldStr(BudgetPlanLineActiveView, Quantity38):
+            budgetPlanLineFieldName = fieldStr(BudgetPlanLine, Quantity);
+            break;
+    }
+    \_result.result(budgetPlanLineFieldName);
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="build-the-project" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="123">Build the project</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="125">Build your project, and synchronize the database.</p>
+<h2 id="validate-your-changes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="127">Validate your changes</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="129">To validate your changes, you must create a layout in budget planning beyond 36 monetary and/or quantity columns. If you completed all the steps correctly, you should be able to enter a value in every column, save the value, and edit it in Excel.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md" sourcestartlinenumber="131">After the changes are verified, the extension can be published and promoted beyond the local development environment.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/budgeting/extending-budget-planning-layout.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

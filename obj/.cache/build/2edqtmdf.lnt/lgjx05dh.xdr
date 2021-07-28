@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure parallel activities in a workflow | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure parallel activities in a workflow | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configure-parallel-activities-in-a-workflow" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="30">Configure parallel activities in a workflow</h1>
+
+<div class="IMPORTANT" sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="1">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="2">Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
+</div>
+
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="34">To configure a parallel activity, complete the following procedures in the workflow editor.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="36">A parallel activity consists of workflow branches that run at the same time.</p>
+<h2 id="name-a-parallel-activity" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="38">Name a parallel activity</h2>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="40">Follow these steps to enter a name for a parallel activity.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="42">Right-click the parallel activity, and then click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="42">Properties</strong> to open the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="42">Properties</strong> form.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="43">In the left pane, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="43">Basic Settings</strong>.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="44">In the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="44">Name</strong> field, enter a unique name for the parallel activity.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="45">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="45">Close</strong>.</li>
+</ol>
+<h2 id="configure-the-branches-of-a-parallel-activity" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="47">Configure the branches of a parallel activity</h2>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="49">Follow these steps to add and configure the branches of this parallel activity.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="51">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="51">Double-click the parallel activity to display the branches of the parallel activity.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="52">To add a branch, drag the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="52">Branch</strong> element from the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="52">Workflow elements</strong> area to an insertion point on the canvas. The following figure shows an insertion point.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="54"><img src="media/workflow_insertionpoint.gif" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="54" alt="Insertion point."></p>
+<div class="NOTE" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="56">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="57">The order of the branches is not important because all the branches of a parallel activity run at the same time.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="59"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="59">To configure each branch, see <a href="configure-parallel-branch-workflow.html" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md" sourcestartlinenumber="59">Configure parallel branches in a workflow</a>.</p>
+</li>
+</ol>
+<!---
+title: Konfigurieren paralleler Aktivitäten in einem Workflow
+description: Führen Sie im Workflow-Editor die folgenden Schritte aus, um eine parallele Aktivität zu konfigurieren.
+author: ChrisGarty
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, IT Pro
+ms.reviewer: sericks
+ms.custom: 195753
+ms.assetid: 6d0656df-b5af-4001-96e6-6f0fcc44d022
+ms.search.region: Global
+ms.author: cgarty
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8043e2854ccc8db0128969ffe36a5517a12c37ac
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693353"
+---
+# <a name="configure-parallel-activities-in-a-workflow"></a>Konfigurieren paralleler Aktivitäten in einem Workflow
+
+[!include [banner](../includes/banner.md)]
+
+Führen Sie im Workflow-Editor die folgenden Schritte aus, um eine parallele Aktivität zu konfigurieren.
+
+Eine parallele Aktivität besteht aus Workflowverzweigungen, die gleichzeitig ausgeführt werden.
+
+## <a name="name-a-parallel-activity"></a>Name der Parallelaktivität
+
+Gehen Sie folgendermaßen vor, um einen Namen für die parallele Aktivität einzugeben.
+
+1. Klicken Sie mit der rechten Maustaste auf die parallele Aktivität, und klicken Sie anschließend auf **Eigenschaften**, um das Formular **Eigenschaften** zu öffnen.
+2. Klicken Sie im linken Bereich auf **Grundeinstellungen**.
+3. Geben Sie im Feld **Name** einen eindeutigen Namen für die parallele Aktivität ein.
+4. Klicken Sie auf **Schließen**.
+
+## <a name="configure-the-branches-of-a-parallel-activity"></a>Konfigurieren der Verzweigungen der parallelen Aktivität
+
+Gehen Sie folgendermaßen vor, um die Verzweigungen dieser parallelen Aktivität hinzuzufügen und zu konfigurieren.
+
+1. Doppelklicken Sie auf die parallele Aktivität, um die Verzweigungen der parallelen Aktivität anzuzeigen.
+2. Ziehen Sie zum Hinzufügen einer Zweigstelle das Element **Zweigstelle** aus dem Bereich **Elemente** hinzu. Die folgende Abbildung zeigt einen Einfügepunkt.
+
+    ![Einfügepunkt](./media/workflow_insertionpoint.gif)
+
+    > [!NOTE]
+    > Die Reihenfolge der Verzweigungen ist nicht relevant, da alle Verzweigungen einer parallelen Aktivität gleichzeitig ausgeführt werden.
+
+3. Informationen zum Konfigurieren jeder Zweigstelle finden Sie unter [Konfigurieren paralleler Verzweigungen in einem Workflow](configure-parallel-branch-workflow.md).
+--->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/00_Basics/MS_Content/organization-administration/configure-parallel-activity-workflow.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

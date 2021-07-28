@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ledger settlements | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Ledger settlements | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ledger-settlements" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="29">Ledger settlements</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="33">Ledger settlements let you match debit and credit transactions in the general ledger, and mark them as settled. In this way, you can make sure that related transactions have been cleared. You can also reverse settlements if they were made by mistake.</p>
+<h2 id="enable-advanced-ledger-settlements" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="35">Enable advanced ledger settlements</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="37">The advanced ledger settlements page provides additional capabilities for filtering and selecting transactions. To enable advanced ledger settlements page, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="39">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="39">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="39">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="39">Ledger setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="39">General ledger parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="40">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="40">Ledger settlements</strong> tab, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="40">Advanced ledger settlement</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="40">Yes</strong> to turn on the advanced ledger settlement functionality. The advanced <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="40">Ledger settlements</strong> page will be used when you select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="40">Ledger settlements</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="40">Periodic tasks</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="41">You must enter the list of accounts to use for ledger settlements for each chart of accounts. This list is used to filter the list of transactions that appears on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="41">Ledger settlements</strong> page. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="41">Chart of accounts</strong> list, select a chart of accounts, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="41">New</strong> to add new accounts to the list.</li>
+</ol>
+<h2 id="settle-transactions-by-using-the-advanced-ledger-settlements-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="43">Settle transactions by using the advanced ledger settlements page</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="45">To settle ledger transactions, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="47">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="47"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="47">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="47">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="47">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="47">Ledger settlements</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="48"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="48">Set the filters at the top of the page:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="50">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="50">Select a date range, or select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="50">Date interval code</strong> to automatically fill in the date range.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="51">Change the posting layer as you require.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="52">To show the ledger account and dimensions separately, select a financial dimension set.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="54"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="54">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="54">Display transactions</strong> to show all the transactions that match the filters that you set and the list of accounts that you specified when you set up the chart of accounts list in the previous section. If you change any of the filters or the dimension sets, you must select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="54">Display transactions</strong> again.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="55"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="55">Select one or more lines that you're considering for settlement. The value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="55">Selected amount</strong> field at the top of the page increases or decreases by the total amount on the lines that you selected.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="56"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="56">After you've finished selecting transactions, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="56">Mark selected</strong>. A check mark appears in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="56">Marked</strong> column for each transaction that you selected. Additionally, the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="56">Marked amount</strong> field above the grid increases or decreases by the total amount on the lines that you marked.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="57">When the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="57">Marked amount</strong> value is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="57">0</strong> (zero), select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="57">Settle marked transactions</strong>. The status of the marked transactions is updated to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="57">Settled</strong>.</p>
+</li>
+</ol>
+<h2 id="make-transactions-easier-to-find" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="59">Make transactions easier to find</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="61">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="61">Ledger settlements</strong> page includes capabilities that make it easier to see the transactions that you need for settlement.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="63">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="63">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="63">Unmark selected</strong> button clears the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="63">Marked</strong> field for all lines that are selected.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="64">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="64">Marked</strong> filter lets you filter transactions based on whether the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="64">Marked</strong> field for them is selected or cleared.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="65">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="65">Status</strong> filter lets you filter transactions based on whether their status is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="65">Settled</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="65">Not settled</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="66">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="66">Sort by absolute amount</strong> button lets you sort the amounts by absolute value, so that you can group together debits and credits that have the same amount.</li>
+</ul>
+<h2 id="reverse-a-settlement" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="68">Reverse a settlement</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="70">You can reverse a settlement that was made by mistake.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="72">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="72">Follow steps 1 through 3 in the &quot;Settle transactions by using advanced ledger settlements page&quot; section to show the transactions that you're looking for.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="73">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="73">Status</strong> filter, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="73">Settled</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="74">Select one or more lines that you're considering for reversal. The value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="74">Selected amount</strong> field at the top of the page increases or decreases by the total amount on the lines that you selected.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="75">After you've finished selecting transactions, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="75">Mark selected</strong>. A check mark appears in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="75">Marked</strong> column for each transaction that you selected. Additionally, the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="75">Marked amount</strong> field at the top of the page increases or decreases by the total amount on the lines that you marked.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="76">When the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="76">Marked amount</strong> value is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="76">0</strong> (zero), select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="76">Reverse marked transactions</strong>. The status of the marked transactions is updated to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="76">Not settled</strong>.</li>
+</ol>
+<h2 id="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="78">Update the list of accounts that are included in the list of transactions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="80">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="80">Ledger settlement accounts</strong> to open a dialog box where you can edit the accounts that are included in the list of transactions. Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="80">New</strong> to add new accounts to the list. This list is used to filter the list of transactions that appears on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md" sourcestartlinenumber="80">Ledger settlements</strong> page.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/ledger-settlements.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

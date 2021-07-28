@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Price simulation | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Price simulation | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="price-simulation" sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="1">Price simulation</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="5">This article provides information about price simulation for quotations. Price simulation helps you to evaluate the effect of deductions on the future sales price during the quotation process, before you commit to a specific price.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="7">A price simulation for a quotation shows a new total amount, based on a proposed new price. A price simulation can also show a new amount for a specific line that is created in an existing quotation. You can enter a price simulation and apply it later. Alternatively, you can use the original quotation without a price simulation and make more changes as you work through the sales process with your customer.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="9">A price simulation doesn't change the price in the quotation. If the price simulation is applied to a whole quotation, it’s treated as a special discount on the quotation header. If the price simulation is applied to specific items, it’s treated as a special discount on the quotation lines. The unit sales price on a quotation line that is created doesn't change when a price simulation is applied. Instead, a discount percentage that corresponds to the price reduction of the quotation line is applied. When a price simulation is applied, the unit sales price and the discount percentage are transferred to the quotation line or the quotation header.</p>
+<blockquote sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="11">
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="11">[Note!]
+When you run a price simulation, only the current sales currency is used to create the simulation. However, when you view the quotation totals, you see a combination of the company currency and the sales currency.</p>
+</blockquote>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="14">Supplementary items that are added to quotation lines might trigger line discounts or multiline discounts. They might also trigger total discounts that change the contribution margins and contribution ratios of the quotation lines and the whole discount.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="16">You can run multiple price simulations to track the effects of price adjustments on the targets of a quotation. By running these simulations, you can adjust the overall price of the quotation, or the price of one or more specific lines in the quotation, and then apply the price simulation that is most likely to help you close the sale.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="18">When you create a quotation, you can set up an alert. Here are some of the ways that alerts are used:</p>
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="20">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="20">They can keep you informed about the status of quotations in the organization.</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="21">They can trigger a review of a specific quotation or inform you when discount limits are exceeded.</li>
+</ul>
+<h2 id="price-simulation-and-discounts" sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="23">Price simulation and discounts</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="24">To guarantee that discounts and prices are calculated correctly, be careful when you run price simulations on quotations that have discounts. Because all price simulations are treated as special discounts on the active quotation line or the whole quotation, you must track the differences in the discounts.</p>
+<h3 id="types-of-discounts-in-trade-agreements" sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="26">Types of discounts in trade agreements</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="28">Trade agreements in Supply Chain Management can have four types of price discounts. These discounts can be set up for different items, customers, or price groups, and they can be limited by date. To avoid miscalculations, you must consider trade agreements when you run price simulations. Here are the four types of discounts in trade agreements:</p>
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="30">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="30"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="30">Sales price</strong> – Separate sales prices can be specified for items. When quotation lines are created, the program searches for the correct sales price for an item and transfers it to the quotation lines. Therefore, a trade agreement that has this kind of discount doesn't affect the price simulation. The sales price that is used in the quotation line reflects the trade agreement.</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="31"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="31">Line discount</strong> – Special discounts are specified for items, depending on the quantity that is ordered. Line amounts are typically reduced by the line discount before a price simulation is run. Therefore, a trade agreement that has this kind of discount affects the price simulation.</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="32"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="32">Multiline discount</strong> – If the combined quantities exceed the limit that you've defined, predefined combinations of ordered items trigger a discount on the whole order. Line amounts are typically reduced by the line discount before a price simulation is run. Therefore, a trade agreement that has this kind of discount affects the price simulation.</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="33"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="33">Total discount</strong> – If the combined amounts exceed the limit that you've defined, predefined ordered items trigger a discount on the whole order. The total discount is generated by the quotation lines. However, because the total discount is applied to the quotation total as a discount, it reduces the total amount of the quotation. Therefore, a trade agreement that has this kind of discount affects the price simulation.</li>
+</ul>
+<h3 id="quotation-lines-and-trade-agreements" sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="35">Quotation lines and trade agreements</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="37">When you create or adjust a quotation line, line discounts are automatically calculated. The relevant sales price is found for the item, based on the trade agreement.</p>
+<h2 id="price-simulation-examples" sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="39">Price simulation examples</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="40">The following examples use price simulation for quotation headers and single line items.</p>
+<h3 id="price-simulation-for-quotation-headers" sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="42">Price simulation for quotation headers</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="44">You create a quotation that has the following lines:</p>
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="46">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="46">10 units of item BR-12 (cost price per unit: USD 9.52, sales price per unit: USD 15.32)</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="47">12 units of item BR-14 (cost price per unit: USD 7.48, sales price per unit: USD 13.75)</li>
+</ul>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="49">The following table shows the quotation lines.</p>
+<table sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="51">
+<thead>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="51">
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="51"> </th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="51">Calculation</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="51">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="53">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="53">Sales quantity</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="53">10 units + 12 units</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="53">22 units</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="54">Sales value in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="54">(10 × 15.32) + (12 × 13.75)</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="54">318.20</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="55">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="55">Cost value in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="55">(10 × 9.52) + (12 × 7.48)</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="55">184.96</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="56">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="56">Contribution margin in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="56">318.20 – 184.96</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="56">133.24</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="57">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="57">Contribution ratio</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="57">([318.20 – 184.96] ÷ 318.20) × 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="57">41.87%</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="59">You run a price simulation and apply a 15-percent total discount for the whole quotation, or the quotation header. The following table shows the new totals of the quotation after the price simulation is run.</p>
+<table sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="61">
+<thead>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="61">
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="61"> </th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="61">Calculation</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="61">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="63">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="63">Sales quantity</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="63">10 units + 12 units</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="63">22 units</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="64">Old sales value in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="64">(10 × 15.32) + (12 × 13.75)</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="64">318.20</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="65">Old cost value in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="65">(10 × 9.52) + (12 × 7.48)</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="65">184.96</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="66">Old contribution margin in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="66">318.20 – 184.96</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="66">133.24</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="67">Old contribution ratio</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="67">([318.20 – (10 × 9.52)] ÷ 318.20) × 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="67">41.87%</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="68">Price simulation of 15-percent total discount in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="68">(15 × 318.2) ÷ 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="68">47.73</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="69">New sales value in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="69">318.20 – 47.73</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="69">270.47</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="70">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="70">New contribution margin in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="70">270.47 – 184.96</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="70">85.51</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="71">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="71">New contribution ratio</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="71">[(270.47 – 184.96) ÷ 270.47] × 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="71">31.61%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="price-simulation-for-single-line-items" sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="73">Price simulation for single line items</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="75">You create a quotation that has the following lines:</p>
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="77">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="77">10 units of item BR-12 (cost price per unit: USD 9.52, sales price per unit: USD 15.32)</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="78">12 units of item BR-14 (cost price per unit: USD 7.48, sales price per unit: USD 13.75)</li>
+</ul>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="80">The following table shows the quotation lines.</p>
+<table sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="82">
+<thead>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="82">
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="82"> </th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="82">Calculation</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="82">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="84">Sales quantity</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="84">10 units + 12 units</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="84">22 units</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="85">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="85">Sales value in USD for BR-12</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="85">10 × 15.32</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="85">153.20</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="86">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="86">Sales value in USD for BR-14</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="86">12 × 13.75</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="86">165.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="87">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="87">Cost value in USD for BR-12</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="87">10 × 9.52</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="87">95.20</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="88">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="88">Cost value in USD for BR-14</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="88">12 × 7.48</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="88">89.76</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="89">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="89">Contribution margin in USD for BR-12</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="89">153.20 – 95.20</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="89">58.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="90">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="90">Contribution margin in USD for BR-14</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="90">165.00 – 89.76</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="90">75.24</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="91">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="91">Contribution ratio in USD for BR-12</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="91">[(153.20 – 95.20) ÷ 153.20] × 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="91">37.86</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="92">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="92">Contribution ratio in USD for BR-14</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="92">[(165.00 – 89.76) ÷ 165.00] × 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="92">45.60</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="93">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="93">Total sales value in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="93">(10 × 15.32) + (12 × 13.75)</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="93">318.20</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="94">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="94">Total cost value in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="94">(10 × 9.52) + (12 × 7.48)</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="94">184.96</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="95">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="95">Total contribution margin in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="95">318.20 – 184.96</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="95">133.24</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="96">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="96">Total contribution ratio</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="96">[(318.20 – 184.96) ÷ 318.20] × 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="96">41.87%</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="98">You run a price simulation and apply a 10-percent total discount to the BR-12 units. The following table shows the new totals of the quotation after the price simulation is run for the single line item.</p>
+<table sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="100">
+<thead>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="100">
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="100"> </th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="100">Calculation</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="100">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="102">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="102">Sales quantity</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="102">10 units + 12 units</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="102">22 units</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="103">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="103">Old sales value in USD for BR-12</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="103">10 × 15.32</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="103">153.20</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="104">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="104">Price simulation of 10-percent discount for BR-12</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="104">(10 × 153.2) ÷ 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="104">15.32</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="105">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="105">New sales value in USD for BR-12</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="105">(10 × 15.32) – 15.32</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="105">137.88</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="106">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="106">Sales value in USD for BR-14</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="106">12 × 13.75</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="106">165.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="107">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="107">Cost value in USD for BR-12</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="107">10 × 9.52</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="107">95.20</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="108">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="108">Cost value in USD for BR-14</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="108">12 × 7.48</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="108">89.76</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="109">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="109">New contribution margin in USD for BR-12</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="109">137.88 – 95.20</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="109">42.68</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="110">Contribution margin in USD for BR-14</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="110">165.00 – 89.76</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="110">75.24</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="111">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="111">New contribution ratio in USD for BR-12</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="111">[(137.88 – 95.20) ÷ 137.88] × 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="111">30.95</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="112">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="112">Contribution ratio in USD for BR-14</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="112">[(165.00 – 89.76) ÷ 165.00] × 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="112">45.60</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="113">New total sales value in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="113">[(10 × 15.32) – 15.32] + (12 × 13.75)</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="113">302.88</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="114">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="114">Total cost value in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="114">(10 × 9.52) + (12 × 7.48)</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="114">184.96</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="115">New total contribution margin in USD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="115">302.88 – 184.96</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="115">117.92</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="116">New total contribution ratio</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="116">[(302.88 – 184.96) ÷ 302.88] × 100</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="116">38.93%</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md" sourcestartlinenumber="118">The price simulation affects only the line that it's applied to and reduces the total for that line.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/01_CoreProcesses/01_02_Quotations/Quotations2.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

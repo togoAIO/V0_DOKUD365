@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Migrate default dimensions controls to Dimension Entry controls | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Migrate default dimensions controls to Dimension Entry controls | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="migrate-default-dimensions-controls-to-dimension-entry-controls">Migrate default dimensions controls to Dimension Entry controls</h1>
+
+[!include[banner](../includes/banner.md)]
+<p>This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.</p>
+<h2 id="simple-migration-scenario---purchtable-form">Simple migration scenario - PurchTable form</h2>
+<ol>
+<li><p>Search for the <strong>PurchTable</strong> form in the <strong>Application Explorer</strong>.</p>
+</li>
+<li><p>Add the form to the current project.</p>
+</li>
+<li><p>Open the form in the designer and code editor view.</p>
+</li>
+<li><p>In the form design view:</p>
+<ol>
+<li><p>Locate the dimension entry controls (DECs), either by manually in the control tree or by searching for &quot;DimensionEntry&quot; in the search bar below the <strong>File</strong> tab.</p>
+</li>
+<li><p>Select the first <strong>DEC</strong> (DimensionEntryControlHeader) and verify the following:</p>
+<ul>
+<li>The type for the control, specified in parenthesis next the control, is Dimension Entry Control.</li>
+<li>The Controller class property is blank. This property indicates what type of controller will be used by this instance of DEC, which in turn governs the behavior of the control. When this property is blank, the controller is determined by the EDT of the field specified in the <strong>Value Data</strong> field (in this case, the <strong>DefaultDimension</strong> field on the <strong>PurchTable</strong> table). Search for the <strong>PurchTable</strong> table in the Application Explorer. Right-click <strong>PurchTable</strong> and select <strong>Open Designer</strong>. Expand the <strong>Fields</strong> node and select the <strong>DefaultDimension</strong> field. The EDT property of this field is set to LedgerDefaultDimensionValueSet. This EDT implies that this control will use the LedgerDefaultDimensionEntryController.</li>
+</ul>
+</li>
+<li><p>Back in the <strong>PurchTable</strong> form design view, select the second <code>DEC</code> (DimensionEntryControlLine) and verify the following properties:</p>
+<ul>
+<li>The type for the control, specified in parenthesis next to the control, is Dimension Entry Control.</li>
+<li>The Controller class property is blank. The controller will be determined by the EDT of the field specified in the <strong>Value Data</strong> Field, as it was for the <code>DEC</code>.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>Switch to the code editor view.</p>
+</li>
+<li><p>Search for all occurrences of &quot;TODO: (Code Upgrade) [Dimension entry control]&quot; in the form source code.</p>
+</li>
+<li><p>Go through each of the remaining TODO comments as follows.</p>
+</li>
+</ol>
+<h2 id="data-source-purchtable">Data source PurchTable</h2>
+<p><strong>(Form &gt; Data sources &gt; PurchTable &gt; Methods</strong>)</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] Replace this TODO based on the migration guidance. */DimensionEntryControlHeader.reactivate();</td>
+<td>Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. As a general rule with reactivate method calls, if it may not be needed, remove the call and test the control to make sure it works correctly. If it doesn’t, add the reactivate call back.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-field-orderaccount">Data field OrderAccount</h2>
+<p>(<strong>Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; OrderAccount &gt; Methods</strong>)</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] Replace this TODO based on the migration guidance. */DimensionEntryControlHeader.reactivate();</td>
+<td>Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-field-projid-purchtable">Data field ProjId (PurchTable)</h2>
+<p>(<strong>Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; ProjId &gt; Methods</strong>)</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] Replace this TODO based on the migration guidance. */DimensionEntryControlHeader.reactivate();</td>
+<td>Because this method call does not have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. The entire modified() method can be deleted as well because the super() call is all that remains. The ProjId class can be removed because there are no methods in it.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-field-vendgroup">Data field VendGroup</h2>
+<p>(<strong>Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; VendGroup &gt; Methods</strong>)</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] Replace this TODO based on the migration guidance. */DimensionEntryControlHeader.reactivate();</td>
+<td>Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. The entire modified() method and VendGroup class can be deleted as well.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-source-purchline">Data source PurchLine</h2>
+<p>(<strong>Form &gt; Data sources &gt; PurchLine &gt; Methods</strong>)</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] Replace this TODO based on the migration guidance. */DimensionEntryControlLine.reactivate(); <strong>Note:</strong> This is the reactivate method call in the itemIdModified method on the data source.</td>
+<td>Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</td>
+</tr>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] Replace this TODO based on the migration guidance. */DimensionEntryControlLine.reactivate();<strong>Note:</strong> This is the reactivate method call in the create() method on the data source.</td>
+<td>Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-field-assetgroup">Data field AssetGroup</h2>
+<p>(<strong>Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; AssetGroup &gt; Methods</strong>)</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] Replace this TODO based on the migration guidance. */DimensionEntryControlLine.reactivate();</td>
+<td>Because this method call does not have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. The entire modified() method and AssetGroup class can be deleted as well.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-field-assetidform--data-sources--purchline--fields--assetid--methods">Data field AssetId(<strong>Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; AssetId &gt; Methods</strong>)</h2>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] Replace this TODO based on the migration guidance. */DimensionEntryControlLine.reactivate();</td>
+<td>Because this method call does not have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-field-procurementcategory">Data field ProcurementCategory</h2>
+<p>(<strong>Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; ProcurementCategory &gt; Methods</strong>)</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] Replace this TODO based on the migration guidance. */DimensionEntryControlLine.reactivate();</td>
+<td>Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-field-projid-purchline">Data field ProjId (PurchLine)</h2>
+<p>(<strong>Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; ProjId &gt; Methods</strong>)</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] Replace this TODO based on the migration guidance. */DimensionEntryControlLine.reactivate();</td>
+<td>Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tabpage-tabfinancialdimensionsline">TabPage TabFinancialDimensionsLine</h2>
+<p>(Search for TabFinancialDimensionsLine in the search bar below the form tab)</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] This method can be removed if there is no custom implementation *///dimensionDefaultingControllerLine.pageActivated();</td>
+<td>The pageActivated method no longer needs to be called. This entire method and the TabFinancialDimensionsLine class can be removed because there is no custom logic in the pageActivated method.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tabpage-tabfinancialdimensionsheader">TabPage TabFinancialDimensionsHeader</h2>
+<p>(Search for TabFinancialDimensionsHeader in the search bar below the form tab)</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/* TODO: (Code Upgrade) [Dimension entry control] This method can be removed if there is no custom implementation *///dimensionDefaultingControllerHeader.pageActivated();</td>
+<td>The pageActivated method no longer needs to be called. This entire method and the TabFinancialDimensionsHeader class can be removed because there is no custom logic in the pageActivated method.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-resources">Additional resources</h2>
+<ul>
+<li><a href="dimension-entry-control-uptake.html">Uptake of Dimension Entry controls</a></li>
+<li><a href="dimension-entry-control-dialog-support.html">Support for Dimension Entry controls on dialogs</a></li>
+</ul>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-entry-control-migration.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

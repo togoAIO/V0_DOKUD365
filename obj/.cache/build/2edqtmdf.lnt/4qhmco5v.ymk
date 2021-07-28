@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Value-added tax (VAT) for tax agents (Russia) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Value-added tax (VAT) for tax agents (Russia) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="value-added-tax-vat-for-tax-agents-russia" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="27">Value-added tax (VAT) for tax agents (Russia)</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="31">When a company is acknowledged as a tax agent, it must correctly accrue and deduct value-added tax (VAT) from funds that are paid to taxpayers, or it must accrue VAT at the expense of its own funds. It must then transfer VAT to the tax authority.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="33">This functionality is required in order to generate invoices, factures, and payments to vendors that the company is defined as a tax agent (fiscal agent) for.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="35">The following functions are supported:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="37">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="37">Create vendors that your company operates as a tax agent for.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="38">Mark sales tax codes for tax agent transactions to specify whether the VAT payments must be made from the vendor's funds or at the expense of your company's own funds.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="39">Create payment proposals for vendor invoices.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="40">Create payments for tax authorities.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="41">Post and settle payments to the vendor.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="42">Create and print factures for the VAT amount that is to be remitted to tax authorities, and register the factures in the sales book</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="43">Register factures for VAT deduction in the purchase book.</li>
+</ul>
+<h2 id="set-up-tax-agent-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="45">Set up tax agent transactions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="47">Before you can create tax agent transactions, you must set up the parameters for them in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="47">Tax</strong> module.</p>
+<h3 id="set-up-the-vat-operation-code-for-the-tax-declaration" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="49">Set up the VAT operation code for the tax declaration</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="51">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="51">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="51">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="51">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="51">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="51">VAT operation codes</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="52">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="52">VAT operation code</strong> field, enter the operation code for the VAT declaration.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="53">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="53">Description</strong> field, enter a description for the transaction code.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="54">Close the page.</li>
+</ol>
+<h3 id="set-up-the-sales-tax-code-for-tax-agent-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="56">Set up the sales tax code for tax agent transactions</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="58">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="58"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="58">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="58">Indirect taxes</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="58">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="58">Sales tax codes</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="59"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="59">Create a tax code.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="60"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="60">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="60">Sales tax code</strong> field, enter a code for sales tax.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="61"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="61">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="61">Settlement period</strong> field, select the period that the tax is calculated and paid to the tax authority for.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="62"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="62">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="62">Ledger posting group</strong> field, select the ledger posting group for the sales tax code.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="63"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="63">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="63">Type of tax</strong> field, select either <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="63">Standard VAT</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="63">Reduced VAT</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="64"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="64">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="64">VAT charge</strong> field, select the source of VAT accrual:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="66"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="66">From vendor funds</strong> − The VAT payment is made from the vendor's income.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="67"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="67">From own funds</strong> − The VAT payment is made from the tax agent's funds.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="69">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="69">Values</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="69">Values</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="70">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="70">Value</strong> field, enter the VAT percentage.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="71"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="71">Close the page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="72"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="72">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="72">Indirect taxes</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="72">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="72">Sales tax groups</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="73">Create a sales tax group, and enter the required information.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="74">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="74">Setup</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="74">Sales tax code</strong> field, select the sales tax code that you created in steps 1 through 10.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="76">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="77">If you selected the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="77">From own funds</strong> option for the sales tax code in step 7, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="77">Exempt</strong> option is selected by default on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="77">Setup</strong> tab.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="79">Close the page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="80">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="80">Indirect taxes</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="80">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="80">Item sales tax groups</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="81"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="81">Create an item sales tax group, and enter the required information.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="82"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="82">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="82">Setup</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="82">Sales tax code</strong> field, select the sales tax code that you created in steps 1 through 10.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="83"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="83">Close the page.</p>
+</li>
+</ol>
+<h3 id="set-up-a-vendor-tax-authority" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="85">Set up a vendor tax authority</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="87">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="87">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="87">Indirect taxes</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="87">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="87">Sales tax authorities</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="88">Create a tax authority, and enter the required information.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="89">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="89">Vendor account</strong> field, select the vendor that operates as the tax authority.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="90">Close the page.</li>
+</ol>
+<h2 id="create-a-vendor-that-your-company-acts-as-a-tax-agent-for-and-post-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="92">Create a vendor that your company acts as a tax agent for, and post transactions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="94">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="94">Vendors</strong> page, you can define a vendor as a tax agent. You can then perform transactions with this vendor.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="96">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="96"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="96">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="96">Accounts payable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="96">Vendors</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="96">All vendors</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="97"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="97">Create a vendor that your company acts as a tax agent for, and enter the required information.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="98"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="98">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="98">General</strong> tab, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="98">Tax agent</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="98">Yes</strong> to define the vendor as a tax agent.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="99"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="99">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="99">Vendor type</strong> field, select the type of vendor:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="101">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="101"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="101">Blank</strong> – The vendor is a common vendor.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="102"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="102">Non resident</strong> – The vendor is a foreigner.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="103"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="103">State authority</strong> – The vendor is a governmental or municipal authority.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="105"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="105">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="105">VAT operation code</strong> field, select the operation code for the VAT declaration.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="106"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="106">Close the page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="107"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="107">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="107">Accounts payable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="107">Purchase orders</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="107">All purchase orders</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="108"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="108">Create a purchase order for the vendor, and enter the required information.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="109"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="109">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="109">Header</strong> to open the Header view, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="109">Setup</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="109">VAT operation code</strong> field, view or modify the code for the VAT declaration.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="110"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="110">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="110">VAT charge</strong> field, select the source of VAT accrual: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="110">From vendor funds</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="110">From own funds</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="111"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="111">Confirm the purchase order, and post the invoice.</p>
+</li>
+</ol>
+<h2 id="create-tax-payments" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="113">Create tax payments</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="115">In the Vendor payment journal, two options for paying VAT as a tax agent are implemented:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="117">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="117">Payment for a specific invoice</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="118">Prepayment (invoice is unknown)</li>
+</ul>
+<h3 id="create-a-payment-proposal-for-a-tax-agent-invoice" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="120">Create a payment proposal for a tax agent invoice</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="122">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="122">Vendor payment proposal</strong> page, you can create payment proposals that you can use to generate payments to a vendor tax agent. You can also generate VAT payments to a tax authority.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="124">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="124"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="124">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="124">Accounts payable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="124">Payments</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="124">Payment journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="125"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="125">Create a journal, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="125">Lines</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="125">Vendor payments</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="126"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="126">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="126">Payment proposal</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="126">Create payment proposal</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="126">Vendor payment proposal</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="127"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="127">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="127">Select invoices by</strong> field, select the type of payment proposal to create. You can create the proposal by due date, by cash discount date, or by both due date and cash discount date.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="128"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="128">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="128">Records to include</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="128">Filter</strong> to define the criteria for the payment proposal. For example, you can use the vendor account as a criterion.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="129"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="129">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="129">OK</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="129">Vendor payment proposal</strong> page. In the upper pane, you can view the open invoice transactions that contribute to the payment proposal line. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="129">VAT Proposal</strong> tab, you can view the details of the tax transaction for the VAT payment to the tax authorities.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="130"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="130">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="130">Create payments</strong> to transfer the proposal lines to the payment journal.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="132">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="132">Vendor payments</strong> page shows two payment lines for each invoice. One line is for a payment to a vendor, and the other line is for a tax payment to a tax authority. On the second journal line, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="132">Purpose text</strong> field shows the purpose of the VAT payment. The vendor account number and address are included.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="134">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="135">For the line that is a tax payment to a tax authority, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="135">Sales tax code</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="135">General</strong> tab shows the sales tax code. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="135">Vendor account</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="135">Payment</strong> tab shows the vendor account that the tax is paid for.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="137"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="137">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="137">VAT operation code</strong> field, view or modify the operation code for the VAT declaration.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="138"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="138">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="138">Generate payments</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="138">Generate payments</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="139"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="139">Select either the payment method or the export format, depending on the method of payment on the journal line. Then select the bank account to draw the payment from, and enter the required information.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="140"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="140">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="140">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="141"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="141">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="141">Print</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="141">Payment order</strong> to print the payment order report.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="142"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="142">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="142">Journal voucher</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="142">Validate</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="142">Validate</strong> to validate the journal line. Then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="142">Post</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="142">Post</strong> to post the journal lines.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="144">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="145">After payments to the vendor are completed, you can view the settled transactions on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="145">Transactions on settlement</strong> page. You can view the posted sales tax transactions on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="145">Sales tax transactions</strong> page.</p>
+</div>
+</li>
+</ol>
+<h3 id="create-a-prepayment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="147">Create a prepayment</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="149">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="149"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="149">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="149">Accounts payable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="149">Payments</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="149">Payment journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="150"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="150">Create a journal, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="150">Lines</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="150">Vendor payments</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="151"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="151">Create a new journal line, select the vendor, and enter a prepayment amount.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="152"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="152">Specify the sales tax group and item sales tax group that contain the sales tax code that has the required setup of the VAT charge.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="154">
+<h5>Note</h5>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="155">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="155">The VAT amount that must be paid is calculated based on the value of the sales tax code.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="156">To prevent tax from being calculated on the prepayment itself, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="156">Accounts payable parameters</strong> page, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="156">Ledger and sales tax</strong> tab, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="156">Sales tax on prepayment in payment journal</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="156">No</strong>.</li>
+</ul>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="158"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="158">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="158">Payment proposal</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="158">VAT Proposal</strong>. The tax payment line that is created includes information about the tax code, the VAT operation code, and the supplier that you pay the tax for.</p>
+</li>
+</ol>
+<h2 id="create-and-print-factures-for-vat-deductions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="161">Create and print factures for VAT deductions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="163">Before you can create and print a facture report for received invoices, issued invoices, purchases, or sales in estimates of VAT, you must complete the following tasks.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="165">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="165"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="165">Set up the parameters for a tax agent transaction.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="166"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="166">Define a vendor as a tax agent.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="167"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="167">Create and post a purchase order that has a sales tax group and an item sales tax group.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="168"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="168">Create a payment proposal, and post the payment.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="170">As a result of tax payment posting, sales tax transactions are created that have the following tax directions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="172">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="172"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="172">Tax agent – charged</strong> – Accrued VAT that must be paid. A facture document is created on this sales tax transaction and will be reflected in the sales book.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="173"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="173">Sales tax receivable</strong> – VAT that must be deducted because the VAT amount was transferred to the tax authority. The facture is created on the sales tax transaction and will be reflected in the purchase book after VAT incoming is processed.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="175"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="175">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="175">Accounts payable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="175">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="175">Facture</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="176"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="176">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="176">Print</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="176">Original</strong> for the facture that is created on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="176">Tax agent - charged</strong> sales tax transaction.</p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md" sourcestartlinenumber="178">The facture report shows the number and date of the payment order, the base amount without VAT, and the computational tax rate (VAT value ÷ VAT value + 100).</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-tax-agent.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

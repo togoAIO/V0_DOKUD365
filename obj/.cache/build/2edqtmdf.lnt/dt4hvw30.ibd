@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Incorrect field values on the GSTR report | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Incorrect field values on the GSTR report | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="incorrect-field-values-on-the-gstr-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="29">Incorrect field values on the GSTR report</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="33">When the GSTR report is generated, some of the field values might be incorrect. In this case, follow the steps in the sections of this topic to try to fix the issue.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="35">This topic uses the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="35">State of supply</strong> value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="35">Invoice and bill of supply</strong> field in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="35">GSTR-1</strong> legal entity as an example.</p>
+<h2 id="determine-whether-the-issue-is-related-to-excel" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="37">Determine whether the issue is related to Excel</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="39">To determine whether the issue is related to Microsoft Excel, see <a href="https://fix.lcs.dynamics.com/Issue/Details?bugId=459982&amp;dbType=3&amp;qc=38e839da1be8c7ec9b71b65e4c8607efe79c434c1c3dbcd2e1d86b9ba08b78a0" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="39">Details for issue 459982 (dynamics.com)</a>. If the issue is related to Excel, use the information in Microsoft Dynamics Lifecycle Services (LCS) to fix it, or remove the quotation marks (&quot;) in the data. If the issue isn't related to Excel, move on to the next section.</p>
+<h2 id="review-the-report-controller-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="41">Review the report controller setup</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="43">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="43"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="43">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="43">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="43">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="43">Tax configuration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="43">Tax setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="43">Configurations</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="44">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="44">Report configurations</strong> tab, verify that the correct report controller is selected.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="46"><a href="media/field-value-incorrect-in-GSTR-report-result-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="46"><img src="media/field-value-incorrect-in-GSTR-report-result-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="46" alt="Report controller field on the Report configurations tab of the Configurations page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="48"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="48">If the incorrect controller is selected, select the correct controller. If the correct controller is already selected, move on to the next section.</p>
+</li>
+</ol>
+<h2 id="review-the-taxdocumentrowtransaction-value" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="50">Review the TaxDocumentRowTransaction value</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="52">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="52">Run the following SQL query to verify that the value of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="52">TaxDocumentRowTransaction</strong> is correct.</p>
+<pre><code class="lang-sql" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="54">select * from TaxDocumentRowTransaction T1 
+    inner join TaxDocumentRowTransaction_IN T2
+on T1.RecId = T2.TaxDocumentRowTransactionRecId
+    inner join TaxDocumentExtension_IN T3
+on T2.TaxDocumentExtension = T3.RecId
+    where T3.TaxTransactionId = 'xx'; 
+</code></pre>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="63">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="64">In the last line of the query, replace <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="64">xx</strong> with the invoice number from your GSTR report.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="66"><a href="media/field-value-incorrect-in-GSTR-report-result-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="66"><img src="media/field-value-incorrect-in-GSTR-report-result-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="66" alt="Invoice number in a generated GSTR report."></a></p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="68"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="68">If the value is incorrect, the issue is related to posting. To fix the issue, see <a href="apac-ind-GST-troubleshooting-invoice-journal-wrong.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="68">Incorrect field value in an invoice journal or voucher</a>. If the value is correct, move on to the next section.</p>
+</li>
+</ol>
+<h2 id="verify-that-the-field-value-was-transferred-to-the-gstr-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="70">Verify that the field value was transferred to the GSTR report</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="72">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="72"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="72">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="72">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="72">Electronic reporting</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="72">Reporting configurations</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="73">Select the configuration, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="73">Format designer</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="74">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="74">Format designer</strong> page, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="74">Mapping</strong> tab.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="76"><a href="media/field-value-incorrect-in-GSTR-report-result-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="76"><img src="media/field-value-incorrect-in-GSTR-report-result-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="76" alt="Mapping tab on the Format designer page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="78"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="78">In the tree, find the report name, expand <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="78">&lt;Report name&gt;</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="78">Sequence</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="78">Lines</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="78">Sequence</strong>, and verify that the field mapping is correct. In this example, the field mapping should be <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="78">parmPlaceOfSupply</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="80"><a href="media/field-value-incorrect-in-GSTR-report-result-Picture4.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="80"><img src="media/field-value-incorrect-in-GSTR-report-result-Picture4.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="80" alt="Field mapping in the expanded tree."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="82"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="82">Go to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="82">TaxGSTRReportContract_IN</strong> class, and search in the report configuration to determine whether the field mapping exists. In this example, search for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="82">parmPlaceOfSupply</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="82">TaxGSTRReportContract_IN</strong> class.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="84"><a href="media/field-value-incorrect-in-GSTR-report-result-Picture5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="84"><img src="media/field-value-incorrect-in-GSTR-report-result-Picture5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="84" alt="Field mapping in the TaxGSTRReportContract_IN class."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="86"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="86">If the field mapping doesn't exist, report the issue to Microsoft. If the field mapping exists, move on to the next section.</p>
+</li>
+</ol>
+<h2 id="debug-code-to-analyze-the-field-logic" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="88">Debug code to analyze the field logic</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="90">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="90"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="90">Find references of the method as explained earlier in the topic.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="91"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="91">Set breakpoints in the places where the method is called, and then debug it.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="93"><a href="media/field-value-incorrect-in-GSTR-report-result-Picture6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="93"><img src="media/field-value-incorrect-in-GSTR-report-result-Picture6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="93" alt="Breakpoints in references."></a></p>
+</li>
+</ol>
+<h2 id="determine-whether-customization-exists" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="95">Determine whether customization exists</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md" sourcestartlinenumber="97">If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.</p>
+[!include[footer-include](../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

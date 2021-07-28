@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>What's new or changed in Finance and Operations version 10.0.1 (April 2019) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="What's new or changed in Finance and Operations version 10.0.1 (April 2019) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../microsoft-dynamics-crm-365-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="whats-new-or-changed-in-finance-and-operations-version-1001-april-2019" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="29">What's new or changed in Finance and Operations version 10.0.1 (April 2019)</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="34">This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.1. This version will be released in April and has a build number of 10.0.51. For more information about version 10.0.1, see <a href="whats-new-changed-10-0-1.html#additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="34">Additional resources</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="36">To learn about the new features and changes in the latest releases of Retail, see <a href="../../../commerce/get-started/whats-new-10-0-1.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="36">What's new or changed in Dynamics 365 for Retail version 10.0.1</a>.</p>
+<h2 id="enable-edit-for-externally-maintained-fields" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="39">Enable edit for externally maintained fields</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="41">Due to integration scenarios with external systems, such as the Prospect to cash integration, certain fields on Global address book and customer records were marked as externally maintained with the expectation that these values would be maintained in an external system. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="41">Enable edit for externally maintained fields</strong> option has been added to the Global address book parameters (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="41">Organization administration &gt; Global address book &gt; Global address book parameters</strong>) with the default value of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="41">No</strong>.  If the user scenario requires these fields to be available for edit even though maintained externally, the value can be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="41">Yes</strong>.</p>
+<h2 id="russian-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="43">Russian features</h2>
+<h3 id="journal-of-alcohol-sales" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="45">Journal of alcohol sales</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="46">This functionality includes printing the journal of Alcohol retail sales in statutory format.</p>
+<h3 id="electronic-format-of-accounting-reporting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="48">Electronic format of accounting reporting</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="49">Electronic reporting configuration is now available. It allows you to generate accounting reporting in electronic format, and contains data calculated based on the configured Financial report. For more information, see <a href="../../../finance/localizations/rus-accounting-reporting.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="49">Accounting reporting in electronic format (Russia)</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="51">You can find information about how to do the following tasks in <a href="../../../finance/localizations/rus-financial-reports.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="51">Financial reporting (Russia)</a>:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="52">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="52">Set up financial reports.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="53">Configure Electronic reporting to use the results of financial report calculations.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="54">Configure electronic messages to generate the financial report and store the results.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="56">For more information about configuring printing for financial reports in Excel, see <a href="../../../finance/localizations/rus-excel-financial-report.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="56">Configure financial reports in Excel (Russia)</a></p>
+<h3 id="assessed-tax-registers-and-electronic-format-of-declaration-version-505-2019" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="58">Assessed tax registers and electronic format of declaration version 5.05 (2019)</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="59">This functionality allows you to keep technical and tax information for realty assets, calculate assessed tax registers, and generate assessed tax declaration in electronic format, applicable from the reporting for year 2019. For more information, see <a href="../../../finance/localizations/rus-assessed-tax-declaration.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="59">Assessed tax declaration (Russia)</a></p>
+<h3 id="transport-tax-registers-and-electronic-format-of-declaration" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="61">Transport tax registers and electronic format of declaration</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="62">This functionality allows you to keep technical and tax information for vehicles, calculate transport tax registers, and generate transport tax declaration in electronic format.</p>
+<h3 id="land-tax-registers-and-electronic-format-of-declaration-version-506-2018" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="64">Land tax registers and electronic format of declaration version 5.06 (2018)</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="65">This functionality allows you to keep technical and tax information for ground areas, calculate land tax registers, and generate land tax declaration in electronic format, applicable from the annual reporting for year 2018.</p>
+<h3 id="vat-declaration-in-electronic-format-version-506-2019" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="67">VAT declaration in electronic format version 5.06 (2019)</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="68">This functionality allows you to generate a VAT statement in XML format that is applicable from the reporting for year 2019.
+For more information, see <a href="../../../finance/localizations/rus-VAT-declaration.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="69">VAT declaration (Russia)</a>.</p>
+<h3 id="sales-purchase-books-and-factures-journals-in-electronic-format-2019" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="71">Sales, purchase books, and factures journals in electronic format (2019)</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="72">This functionality allows you to generate sales, purchase books, and factures journals in electronic format applicable from the year 2019. For details about how to work with sales and purchase books, see <a href="../../../finance/localizations/rus-sales-books-purchase-books.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="72">Sales books, purchase books, and invoice-factures journals</a>.</p>
+<h2 id="regulatory-updates" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="74">Regulatory updates</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="75">For information about the regulatory updates for Finance and Operations, see <a href="../../../finance/localizations/regulatory-updates.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="75">Regulatory updates</a>. Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.</p>
+<h2 id="extensibility-enhancements" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="77">Extensibility enhancements</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="79">In this release of Finance and Operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see <a href="../../dev-itpro/extensibility/extensibility-changes-10-1.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="79">Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.1</a>.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="81">Additional resources</h2>
+<h3 id="bug-fixes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="83">Bug fixes</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="84">For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.1, sign in to Lifecycle Services (LCS) and view the <a href="https://fix.lcs.dynamics.com/Issue/Details?bugId=299640&amp;dbType=3&amp;qc=2da6de70aab0f4c61b0f920b3242211f5043697189d50a6e1fb1ac3d27ee5f78" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="84">KB article</a>.</p>
+<h3 id="platform-update-25" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="86">Platform update 25</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="87">Microsoft Dynamics 365 for Finance and Operations version 10.0.1 includes Platform update 25. To learn more about Platform update 25, see <a href="whats-new-platform-25.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="87">What's new or changed in Dynamics 365 for Finance and Operations platform update 25 (April 2019)</a>.</p>
+<h3 id="dynamics-365-april-19-release-notes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="89">Dynamics 365 April '19 release notes</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="90">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="92"><a href="/business-applications-release-notes/April19/index" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="92">Check out the April '19 release notes</a>. We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.</p>
+<h3 id="removed-and-deprecated-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="94">Removed and deprecated features</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="95">The <a href="../../dev-itpro/migration-upgrade/deprecated-features.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="95">Removed or deprecated features for Finance and Operations</a> topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="97">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="97">A <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="97">removed</em> feature is no longer available in the product.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="98">A <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="98">deprecated</em> feature is not in active development and may be removed in a future update.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="100">Before any feature is removed from the product, the deprecation notice will be announced in the <a href="../../dev-itpro/migration-upgrade/deprecated-features.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="100">Removed or deprecated features for Finance and Operations</a> topic 12 months prior to the removal.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md" sourcestartlinenumber="102">For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-changed-10-0-1.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
