@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Single voucher with multiple customer or vendor records | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Single voucher with multiple customer or vendor records | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="single-voucher-with-multiple-customer-or-vendor-records" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="30">Single voucher with multiple customer or vendor records</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="34">This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="36">Some common examples where one voucher is used for multiple customers or vendors include balance transfers between customers, and netting balances between customers and vendors in the same organization.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="38">A voucher containing more than one customer or vendor can be entered using one of the following methods:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="40">Using a journal that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="40">One voucher number only</strong> option selected so that every line added to the journal is included on the same voucher.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="41">Using a multi-line voucher, where there is no offset ledger account, with more than one customer or vendor.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="42">Entering a voucher with the account and offset account being vendor/vendor, customer/customer, vendor/customer, or customer/vendor.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="44">This topic shows how settlement will be processed when one voucher  with multiple customer or vendor records is posted. Additionally, this topic provides workarounds to help you understand how to avoid using one voucher with multiple customers or vendors. In particular, there are examples which illustrate two common settlement scenarios that are impacted by the use of one voucher with multiple customers or vendors:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="46">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="46">Cash discount accounting</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="47">Revaluation accounting</li>
+</ul>
+<h2 id="how-does-settlement-impact-single-voucher-usage" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="49">How does settlement impact single voucher usage</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="50">When posting a voucher that contains multiple customer or vendor records, a single accounting voucher is created that contains multiple accounts receivable or accounts payable balances. During the settlement process, the original accounting entries are used to create accounting entries for the cash discount, unrealized gains and losses, realized gains and losses, and the relief of the original document’s summary account. For example, if a cash discount is taken when settling a vendor payment to an invoice, the cash discount accounting must post to the Accounts payable ledger account from the original invoice. If the original invoice was posted in a voucher that contains multiple vendor records, the original accounting is summarized. In this case, because there is no way to access the detailed accounting entry for each vendor transaction in the single voucher, there is no way to determine how the user intended the cash discount to be accounted for.</p>
+<h3 id="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="52">One voucher with multiple vendors and the impact on cash discount accounting</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="54">In the following example, multiple vendor invoices are recorded in General ledger on a single voucher in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="54">General journal</strong> page. These invoices are distributed across multiple account dimensions.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="56">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="56">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="56">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="56">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="56">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="56">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="56">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="56">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="58">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="58">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="58">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="58">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="58">INV1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="58"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="58">100.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="59">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="59">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="59">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="59">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="59">INV2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="59"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="59">200.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="60">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="60">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="60">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="60">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="60">INV3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="60"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="60">300.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="61">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="61">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="61">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="61">606300-001--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="61">INV1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="61">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="61"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="62">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="62">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="62">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="62">606300-002--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="62">INV1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="62">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="62"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="63">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="63">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="63">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="63">606300-003--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="63">INV2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="63">200.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="63"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="64">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="64">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="64">606300-004--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="64">INV3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="64">300.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="64"></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="66">After posting, one voucher is created.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="68">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="68">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="68">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="68">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="68">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="68">Amount in transaction currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="70">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="70">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="70">606300-001--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="70">Ledger journal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="70">50.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="71">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="71">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="71">606300-002--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="71">Ledger journal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="71">50.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="72">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="72">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="72">606300-003--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="72">Ledger journal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="72">200.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="73">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="73">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="73">606300-004--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="73">Ledger journal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="73">300.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="74">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="74">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="74">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="74">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="74">-100.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="75">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="75">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="75">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="75">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="75">-200.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="76">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="76">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="76">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="76">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="76">-300.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="78">Notice that the voucher contains three entries for the posting type of Vendor balance in the single voucher. There is no way to indicate that the 50.00 debit for 606300-001 and the 50.00 debit for 606300-002 are intended to offset the vendor balance entry of 200110-001. This is because the user entered the multiple vendor records in a single voucher.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="80">Using this example, we can analyze the impact that using one voucher has on the downstream settlement accounting. Assume that you pay 197.00 of the 200.00 invoice, taking a cash discount of 3.00. Notice that the cash discount account value is allocated across all of the dimensions from the invoice voucher’s expense accounts. This is because one voucher was used to post the above invoice, with no indication of how the user intended the expense distributions to correlate to the vendor balance in the single voucher.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="82">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="82">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="82">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="82">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="82">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="82">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="82">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="84">APPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="84">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="84">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="84">197.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="84"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="85">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="85">APPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="85">110110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="85">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="85"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="85">197.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="86">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="86">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="86">520200-001--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="86">Vendor cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="86"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="86">0.25</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="87">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="87">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="87">520200-002--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="87">Vendor cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="87"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="87">0.25</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="88">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="88">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="88">520200-003--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="88">Vendor cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="88"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="88">1.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="89">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="89">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="89">520200-004--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="89">Vendor cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="89"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="89">1.50</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="90">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="90">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="90">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="90">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="90">3.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="90"></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="92">If the user is dissatisfied with the cash discount being allocated across all of the expense distributions from the original invoice, instead of one voucher, multiple vouchers should be used to record the invoices. Here’s an example of how multiple vouchers could be entered in General ledger, instead of using one voucher, as shown at the beginning of this example.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="94">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="94">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="94">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="94">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="94">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="94">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="94">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="94">Credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="94">Offset type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="94">Offset account</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="96">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="96">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="96">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="96">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="96">INV1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="96"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="96">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="96">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="96">&lt;blank&gt;</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="97">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="97">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="97">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="97">606300-001--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="97">INV1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="97">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="97"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="97">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="97">&lt;blank&gt;</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="98">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="98">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="98">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="98">606300-002--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="98">INV1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="98">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="98"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="98">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="98">&lt;blank&gt;</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="99">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="99">GNJL002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="99">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="99">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="99">INV2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="99"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="99">200.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="99">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="99">606300-003--</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="100">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="100">GNJL003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="100">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="100">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="100">INV3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="100"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="100">300.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="100">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="100">606300-004--</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="102">Now, when INV2 is paid, the following entry will be made. Notice that the cash discount’s financial dimensions follow the associated expense’s financial dimensions.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="104">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="104">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="104">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="104">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="104">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="104">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="104">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="106">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="106">APPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="106">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="106">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="106">197.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="106"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="107">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="107">APPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="107">110110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="107">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="107"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="107">197.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="108">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="108">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="108">520200-003--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="108">Vendor cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="108"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="108">3.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="109">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="109">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="109">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="109">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="109">3.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="109"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="111">One voucher with multiple vendors and the impact on realized gain/loss accounting</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="113">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="113">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="113">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="113">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="113">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="113">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="113">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="113">Credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="113">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="113">Account</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="115">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="115">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="115">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="115">INV1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="115"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="115">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="115">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="115">606300-001--</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="116">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="116">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="116">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="116">INV2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="116"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="116">200.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="116">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="116">606300-002--</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="118">In the following example, multiple vendor invoices are recorded in General ledger on a single voucher in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="118">General journal</strong> page. These invoices are distributed across multiple account dimensions. After posting, one voucher is created.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="120">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="120">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="120">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="120">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="120">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="120">Amount in transaction currency (EUR)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="120">Amount in accounting currency (USD)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="122">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="122">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="122">606300-001--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="122">Ledger journal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="122">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="122">114.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="123">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="123">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="123">606300-002--</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="123">Ledger journal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="123">200.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="123">228.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="124">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="124">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="124">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="124">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="124">-100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="124">-114.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="125">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="125">GNJL001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="125">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="125">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="125">-200.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="125">-228.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="127">Notice that the voucher contains two entries for the posting type of Vendor balance in the single voucher. There is no way to indicate that the debit for 606300-001 is intended to offset the vendor balance entry of 100.00 to 200110-001. This is because the user entered multiple vendor records in a single voucher.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="129">Using this example, we can analyze the impact that using one voucher has on the downstream settlement accounting. Assume that your accounting currency is USD and the above transactions were posted in a transaction currency of EUR. Assume that you fully pay the 200.00 EUR invoice but you encounter a realized loss due to a difference in the exchange rate between the time you posted your invoice and payment. Notice that the realized loss account value is allocated across all of the dimensions from the invoice voucher’s expense accounts. In this case, both dimension 001 and 002 were allocated, even though the user’s perception may be that only 002 belongs to the expense account from the invoice that is being settled. This is because one voucher was used to post the above invoice, leaving no way to indicate how the user intended the expense distributions to correlate to the vendor balance in the single voucher.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="131">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="131">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="131">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="131">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="131">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="131">Amount in transaction currency (EUR)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="131">Amount in accounting currency (USD)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="133">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="133">APPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="133">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="133">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="133">200.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="133">230.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="134">APPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="134">110110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="134">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="134">-200.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="134">-230.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="135">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="135">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="135">801300-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="135">Exchange rate loss</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="135">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="135">0.67</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="136">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="136">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="136">801300-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="136">Exchange rate loss</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="136">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="136">1.33</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="137">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="137">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="137">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="137"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="137">-2.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="139">If the user is dissatisfied with the Exchange rate loss being allocated across all of the expense distributions from the original invoice, instead of one voucher, multiple vouchers should be used to record the invoices. Here’s an example of how multiple vouchers could be entered in General ledger, instead of using one voucher as shown at the beginning of this example.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="141">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="141">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="141">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="141">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="141">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="141">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="141">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="141">Credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="141">Offset type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="141">Offset account</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="143">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="143">GNJL002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="143">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="143">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="143">INV1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="143"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="143">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="143">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="143">606300-001--</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="144">GNJL003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="144">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="144">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="144">INV2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="144"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="144">200.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="144">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="144">606300-002--</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="146">Now, when INV2 is paid, the following entry will be made. Notice that the exchange rate loss financial dimensions follow the associated expense’s financial dimensions.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="148">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="148">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="148">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="148">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="148">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="148">Amount in transaction currency (EUR)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="148">Amount in accounting currency (USD)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="150">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="150">APPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="150">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="150">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="150">200.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="150">230.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="151">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="151">APPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="151">110110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="151">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="151">-200.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="151">-230.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="152">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="152">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="152">801300-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="152">Exchange rate loss</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="152">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="152">2.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="153">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="153">14000056</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="153">200110-001-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="153">Vendor balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="153"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="153">-2.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="one-voucher-for-balance-transfers-and-netting-scenarios" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="155">One voucher for balance transfers and netting scenarios</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="156">Two commonly used scenarios that utilize one voucher that contains multiple customers or vendors include balance transfers from one customer/vendor to another customer/vendor, and netting of a customer and vendor that are the same organization. The following two examples illustrate the preferred method for entering these scenarios, as an alternative to entering them in one voucher.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="158">A <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="158">balance transfer</em> is one voucher with multiple customers, entered for the purpose of transferring the balance from one customer to another customer (same for vendors). This scenario can occur when the responsibility for paying the invoice shifts to another party, such as a child company shifting the responsibility to a parent company.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="160">This example assumes a sale where the customer is eligible for a cash discount if payment is made within 10 days. The customer in this example utilizes an insurance company that will be responsible for paying the bill. The insurance company is set up as a second customer in the system. The original customer’s balance is transferred to the insurance company, who pays the bill, taking a 2% cash discount for paying within the discount period.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="162">To illustrate, assume the following sale is made to customer ACME. The following accounting entries represent the sale.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="164">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="164">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="164">Ledger account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="164">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="164">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="164">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="166">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="166">401100-002-023-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="166">Revenue</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="166"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="166">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="167">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="167">130100-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="167">Customer balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="167">100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="167"></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="169">Next, the user transfers the balance due from ACME to the insurance company, in one voucher in the Accounts receivable payment journal. The insurance company is set up as customer Insurance.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="171">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="171">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="171">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="171">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="171">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="171">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="171">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="171">Credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="171">Offset type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="171">Offset account</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="173">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="173">ARPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="173">Customer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="173">ACME</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="173">Transfer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="173"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="173">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="173">Customer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="173">Insurance</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="175">Notice that the above entry is contained in one voucher. This voucher contains two customer records. The following voucher is created when the above General ledger entry is posted.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="177">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="177">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="177">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="177">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="177">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="177">Amount in transaction currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="179">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="179">ARPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="179">130100-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="179">Customer balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="179">100.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="180">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="180">ARPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="180">130100-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="180">Customer balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="180">-100.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="182">Next, assume that you receive a payment from the Insurance customer for 98.00 and you choose to settle the payment with the invoice created by the balance transfer. This will result in the following voucher being posted. There may be an expectation that settlement uses the financial dimensions from the original invoice, but that is not possible because there isn’t an invoice document for the Insurance customer. Notice that by default, the distribution dimensions on the cash discount come from the customer transaction created from the transfer, not from the original invoice’s revenue account. The default is a result of using one voucher to transfer the balances.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="184">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="184">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="184">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="184">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="184">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="184">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="184">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="186">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="186">ARPAYM002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="186">110110-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="186">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="186">98.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="186"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="187">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="187">ARPAYM002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="187">130100-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="187">Customer balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="187"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="187">98.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="189">On the related voucher for cash discount, the default for the financial dimension comes from the customer transaction created from the transfer, because the transfer has more than one customer.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="191">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="191">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="191">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="191">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="191">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="191">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="191">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="193">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="193">ARP-00001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="193">403300-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="193">Customer cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="193">2.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="193"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="194">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="194">ARP-00001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="194">130100-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="194">Customer balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="194"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="194">2.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="196">If the user is dissatisfied with the default for the financial dimensions for the cash discount, instead of one voucher, multiple vouchers should be used to record the balance transfer. This scenario should be accomplished by creating a credit memo for the customer that the balance is moved FROM, and a debit memo or invoice created for the customer to whom the balance is moved TO. The following example shows how multiple vouchers could be entered in the accounts receivable payment journal to transfer the balance, instead of using one voucher, as shown earlier in this example.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="198">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="198">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="198">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="198">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="198">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="198">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="198">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="198">Credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="198">Offset type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="198">Offset account</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="200">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="200">ARPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="200">Customer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="200">ACME</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="200"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="200"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="200">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="200">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="200">401100-002-023-</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="201">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="201">ARPAYM002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="201">Customer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="201">Insurance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="201"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="201">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="201"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="201">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="201">401100-002-023-</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="203">This means that when the Insurance customer pays 98.00 with voucher ARPAYM02, the correct financial dimensions from voucher ARPAYM002’s ledger account entry will be used.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="205">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="205">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="205">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="205">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="205">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="205">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="205">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="207">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="207">ARPAYM003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="207">110110-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="207">Bank</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="207">98.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="207"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="208">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="208">ARPAYM003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="208">130100-002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="208">Customer balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="208"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="208">98.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="210">On the related voucher for cash discount, the financial dimensions will be used from the offsetting revenue account shown on ARPAYM002’s voucher.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="212">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="212">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="212">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="212">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="212">Posting type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="212">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="212">Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="214">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="214">ARP-00001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="214">403300-002-023-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="214">Customer cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="214">2.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="214"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="215">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="215">ARP-00001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="215">130100-002-</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="215">Customer balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="215"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="215">2.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="one-voucher-with-a-netting-for-multiple-customers-and-vendors" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="217">One voucher with a netting for multiple customers and vendors</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="218">Netting can be useful when an organization purchases and sells to the same company. Rather than paying the vendor invoices and waiting to receive payment for the customer invoices, the vendor and customer invoices are netted. The netting transaction is settled against the outstanding balances.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="220">To illustrate, assume that vendor 1001 and customer US-008 are the same entity, so your organization wants to net the payables and receivables balances before paying/receiving the remaining balance. Assume that the customer record owes 75.00 EUR and the vendor record is owed 100.00 EUR, meaning that you would prefer to net the balances and only pay the vendor 25.00 EUR. Further assume that the accounting currency is USD. In this case, a netting transaction is entered in one voucher in the account payable payment journal.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="222">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="222">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="222">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="222">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="222">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="222">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="222">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="222">Credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="222">Offset type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="222">Offset account</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="224">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="224">APPAYM001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="224">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="224">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="224">Netting</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="224">75.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="224"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="224">Customer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="224">US-008</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="226">To avoid unwanted issues with future settlements for this transaction, instead of using one voucher, multiple vouchers should be entered in the journal to record the netting transaction. Notice that the customer and vendor balances are offset with a single clearing account to avoid the use of one voucher that contains multiple customer and vendor balances.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="228">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="228">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="228">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="228">Account type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="228">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="228">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="228">Debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="228">Credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="228">Offset type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="228">Offset account</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="230">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="230">001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="230">Customer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="230">US-008</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="230"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="230"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="230">75.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="230">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="230">999999---</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="231">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="231">002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="231">Vendor</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="231">1001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="231"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="231">75.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="231"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="231">Ledger</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/single-voucher-multiple-customer-vendor-records.md" sourcestartlinenumber="231">999999---</td>
+</tr>
+</tbody>
+</table>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

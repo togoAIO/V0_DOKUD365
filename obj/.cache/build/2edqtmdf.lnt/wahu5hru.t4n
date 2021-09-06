@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>VAT declaration for Germany | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="VAT declaration for Germany | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="vat-declaration-for-germany" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="28">VAT declaration for Germany</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="33">This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in Germany.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="35">For general information about how to set up the VAT statement, see <a href="emea-vat-reporting.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="35">VAT reporting for Europe</a>.</p>
+<h2 id="set-up-sales-tax-reporting-codes-for-vat-reporting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="37">Set up sales tax reporting codes for VAT reporting</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="39">Set up sales tax reporting codes by following the instructions in <a href="../general-ledger/tasks/set-up-sales-tax-reporting-codes.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="39">Set up sales tax reporting codes</a>. The following table provides an example of sales tax reporting codes for Germany.</p>
+<table width="614">
+<thead>
+<tr>
+<td width="75">
+<p><strong>Code</strong></p>
+</td>
+<td width="340">
+<p><strong>Description</strong></p>
+</td>
+<td width="95">
+<p><strong>Element in the XML file of the VAT declaration</strong></p>
+</td>
+<td width="104">
+<p><strong>Tax base or tax amount</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Tax-free sales with input tax deduction for intra-community supplies (&sect;4, no. 1, letter b of the UStG [Umsatzsteuergesetz</strong><strong>, or </strong><strong>VAT law])</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>41</p>
+</td>
+<td width="340">
+<p>Intra-community shipment (&sect;4, no. 1b of the UStG) to customers with tax registration.</p>
+</td>
+<td width="95">
+<p>Kz41</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>44</p>
+</td>
+<td width="340">
+<p>Intra-community deliveries of new vehicles to customers without a VAT ID.</p>
+</td>
+<td width="95">
+<p>Kz44</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>49</p>
+</td>
+<td width="340">
+<p>Intra-community deliveries of new vehicles outside a company.</p>
+</td>
+<td width="95">
+<p>Kz49</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>43</p>
+</td>
+<td width="340">
+<p>Additional tax-free sales with input tax deduction (for example, exports).</p>
+</td>
+<td width="95">
+<p>Kz43</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Tax-free sales without input tax deduction (for example, sales according to &sect;4, no. 8 through 28 of the UStG)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>48</p>
+</td>
+<td width="340">
+<p>Tax-free sales without input tax deduction.</p>
+</td>
+<td width="95">
+<p>Kz48</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Taxable sales</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>81</p>
+</td>
+<td width="340">
+<p>Tax base for deliveries or services that are charged at 19 percent.</p>
+</td>
+<td width="95">
+<p>Kz81</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>181</p>
+</td>
+<td width="340">
+<p>Tax amount for deliveries or services that are charged at 19 percent.</p>
+</td>
+<td width="95">
+<p>Not shown separately in the XML file but considered in the total (Kz83)</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>86</p>
+</td>
+<td width="340">
+<p>Tax base for deliveries or services that are charged at 7 percent.</p>
+</td>
+<td width="95">
+<p>Kz86</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>186</p>
+</td>
+<td width="340">
+<p>Tax amount for deliveries or services that are charged at 7 percent.</p>
+</td>
+<td width="95">
+<p>Not shown separately in the XML file but considered in the total (Kz83)</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>35</p>
+</td>
+<td width="340">
+<p>Tax base for deliveries or services at other tax rates.</p>
+</td>
+<td width="95">
+<p>Kz35</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>36</p>
+</td>
+<td width="340">
+<p>Tax amount for deliveries or services at other tax rates.</p>
+</td>
+<td width="95">
+<p>Kz36</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>77</p>
+</td>
+<td width="340">
+<p>Deliveries of agricultural and forestry businesses, according to &sect;24 of the UStG, to customers who have a VAT ID.</p>
+</td>
+<td width="95">
+<p>Kz77</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>76</p>
+</td>
+<td width="340">
+<p>Tax base of turnover that tax is payable for, according to &sect;24 of the UStG (sawmill products, beverages and alcoholic liquids, such as wine).</p>
+</td>
+<td width="95">
+<p>Kz76</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>80</p>
+</td>
+<td width="340">
+<p>Tax amount of turnover that tax is payable for, according to &sect;24 of the UStG (sawmill products, beverages and alcoholic liquids, such as wine).</p>
+</td>
+<td width="95">
+<p>Kz80</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Intra-community acquisitions and VAT payable for such acquisitions</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>91</p>
+</td>
+<td width="340">
+<p>Tax-free intra-community acquisitions.</p>
+</td>
+<td width="95">
+<p>Kz91</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>89</p>
+</td>
+<td width="340">
+<p>Tax base for the acquisition of goods from countries in the European Union (EU), charged at 19 percent.</p>
+</td>
+<td width="95">
+<p>Kz89</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>189</p>
+</td>
+<td width="340">
+<p>Tax amount for the acquisition of goods from countries in the EU, charged at 19 percent.</p>
+</td>
+<td width="95">
+<p>Not shown separately in the XML file but considered in the total (Kz83)</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>93</p>
+</td>
+<td width="340">
+<p>Tax base for the acquisition of goods from countries in the EU, charged at 7 percent.</p>
+</td>
+<td width="95">
+<p>Kz93</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>193</p>
+</td>
+<td width="340">
+<p>Tax amount for the acquisition of goods from countries in the EU, charged at 7 percent.</p>
+</td>
+<td width="95">
+<p>Not shown separately in the XML file but considered in the total (Kz83)</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>95</p>
+</td>
+<td width="340">
+<p>Tax base for the acquisition of goods from countries in the EU at other tax rates.</p>
+</td>
+<td width="95">
+<p>Kz95</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>98</p>
+</td>
+<td width="340">
+<p>Tax amount for the acquisition of goods from countries in the EU at other tax rates.</p>
+</td>
+<td width="95">
+<p>Kz98</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>94</p>
+</td>
+<td width="340">
+<p>Tax base for intra-community acquisitions of new vehicles (&sect;1b, paragraphs 2 and 3 of the UStG) from suppliers without a VAT ID, at the general tax rate.</p>
+</td>
+<td width="95">
+<p>Kz94</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>96</p>
+</td>
+<td width="340">
+<p>Tax amount for intra-community acquisitions of new vehicles (&sect;1b, paragraphs 2 and 3 of the UStG) from suppliers without a VAT ID, at the general tax rate.</p>
+</td>
+<td width="95">
+<p>Kz96</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Additional information about sales</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>42</p>
+</td>
+<td width="340">
+<p>Deliveries by the first customer for intra-community triangular transactions (&sect;25b of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz42</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>60</p>
+</td>
+<td width="340">
+<p>Taxable sales of the performing entrepreneur that the service recipient owes the tax for, according to &sect;13b (5) of the UStG.</p>
+</td>
+<td width="95">
+<p>Kz60</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>21</p>
+</td>
+<td width="340">
+<p>Other non-taxable services according to &sect;18b, sentence 1, no. 2 of the UStG.</p>
+</td>
+<td width="95">
+<p>Kz21</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>45</p>
+</td>
+<td width="340">
+<p>Other non-taxable sales (where the place of performance isn't in Germany).</p>
+</td>
+<td width="95">
+<p>Kz45</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Beneficiary as tax debtor (&sect;13b of the UStG)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>46</p>
+</td>
+<td width="340">
+<p>Tax base for other services in accordance with &sect;3a (2) UStG of an entrepreneur that is located in the rest of the community (&sect;13b (1) of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz46</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>47</p>
+</td>
+<td width="340">
+<p>Tax amount for other services in accordance with &sect;3a (2) UStG of an entrepreneur that is located in the rest of the community (&sect;13b (1) of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz47</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>73</p>
+</td>
+<td width="340">
+<p>Tax base of turnover that is covered by the property transfer tax law &ndash; in particular, deliveries of land for which the performing entrepreneur has opted for tax liability in accordance with &sect;9 (3) of the UStG.</p>
+</td>
+<td width="95">
+<p>Kz73</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>74</p>
+</td>
+<td width="340">
+<p>Tax amount of turnover that is covered by the property transfer tax law &ndash; in particular, deliveries of land for which the performing entrepreneur has opted for tax liability in accordance with &sect;9 (3) of the UStG.</p>
+</td>
+<td width="95">
+<p>Kz74</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>84</p>
+</td>
+<td width="340">
+<p>Tax base of other services (&sect;13b (2), no. 1, 2, and 4 through 11 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz84</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>85</p>
+</td>
+<td width="340">
+<p>Tax amount of other services (&sect;13b (2), no. 1, 2, and 4 through 11 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz85</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Deductible input tax amounts</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>66</p>
+</td>
+<td width="340">
+<p>Tax on input from invoices of other companies (&sect;15, paragraph 1, no. 1 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz66</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>61</p>
+</td>
+<td width="340">
+<p>Input VAT amount from intra-community acquisitions of objects (&sect;15, paragraph 1, no. 3 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz61</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>62</p>
+</td>
+<td width="340">
+<p>Import sales tax that is incurred (&sect;15, paragraph 1, no. 2 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz62</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>67</p>
+</td>
+<td width="340">
+<p>Input tax amounts from services within the meaning of &sect;13b of the UStG (&sect;15, paragraph 1, clause 1, no. 4 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz67</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>63</p>
+</td>
+<td width="340">
+<p>Input tax amounts that are calculated according to general average rates (&sect;23 and &sect;23a of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz63</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>64</p>
+</td>
+<td width="340">
+<p>Correction of input tax deduction (&sect;15a of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz64</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>59</p>
+</td>
+<td width="340">
+<p>Input tax deduction for intra-community deliveries of new vehicles outside a company (&sect;2a of the UStG) and small businesses within the meaning of &sect;19 (1) of the UStG (&sect;15 (4a) of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz59</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Other tax amounts</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>65</p>
+</td>
+<td width="340">
+<p>Tax because of changes in the form of taxation, and after-tax on taxed down payments, and so on, because of changes in tax rate.</p>
+</td>
+<td width="95">
+<p>Kz65</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>69</p>
+</td>
+<td width="340">
+<p>Tax amounts that are shown incorrectly or unjustifiably on invoices (&sect;14c of the UStG), and also tax amounts that are <strong>owed</strong> in accordance with &sect;6a (4), sentence 2; &sect;17 (1), sentence 6; and &sect;25b (2) of the UStG, or <strong>tax amounts that are owed</strong> by an outsourcer or warehouse keeper in accordance with &sect;13a (2) 1, no. 6 of the UStG.</p>
+</td>
+<td width="95">
+<p>Kz69</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>39</p>
+</td>
+<td width="340">
+<p>Deduction of the stipulated special advance payment for long-term extension (which usually will be completed only in the last advance notification of the taxation period).</p>
+</td>
+<td width="95">
+<p>Kz39</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>83</p>
+</td>
+<td width="340">
+<p>Total VAT amount (VAT advance payment or VAT surplus).</p>
+<p>On the VAT declaration in XML format, the value in this box is automatically calculated as the sum of reporting codes 181, 186, 36, 80, 189, 193, 98, 96, 47, 74, and 85, minus reporting codes 66, 61, 62, 67, 63, 64, 59, 69, and 39.</p>
+</td>
+<td width="95">
+<p>Kz83</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="721">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="722">For sample forms of advance VAT returns that include declaration row codes, see <a href="https://umsatzsteuer-voranmeldung-2020.taxpool.net/Umsatzsteuer-Voranmeldung-2020.pdf" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="722">Forms in the VAT procedure for the year 2020</a>.</p>
+</div>
+<h2 id="prerequisite" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="724">Prerequisite</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="726">Before you begin, go to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="726">General ledger parameters</strong> page and expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="726">Tax options</strong> FastTab. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="726">Special report</strong> field group, make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="726">Include corrections</strong> parameter isn't enabled.</p>
+<h2 id="set-up-sales-tax-codes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="728">Set up sales tax codes</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="730">Set up sales tax codes by following the instructions in <a href="emea-vat-reporting.html#sales-tax-codes-for-vat-reporting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="730">Sales tax codes for VAT reporting</a> and <a href="../general-ledger/indirect-taxes-overview.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="730">Sales tax overview</a>.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="732">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="733">In a German legal entity, sales tax codes for tax-free sales should be set up according to the following rules:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="735">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="735">The tax rate is more than 0 (zero).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="736">The tax code is marked as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="736">Exempt</strong> on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="736">Sales tax groups</strong> page.</li>
+</ul>
+</div>
+<h2 id="create-a-vat-declaration-in-xml-format" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="738"><a name="createvatdecxmlformat"></a>Create a VAT declaration in XML format</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="740">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="740"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="740">In <a href="https://lcs.dynamics.com/V2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="740">Microsoft Dynamics Lifecycle Services (LCS)</a>, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="740">Shared asset library</strong>, download the latest versions of the Electronic reporting (ER) configurations for the VAT declaration format:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="742">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="742"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="742">Elster (DE)</strong></li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="744">For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="744">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="746"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="746">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="746">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="746">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="746">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="746">Electronic tax declaration setup</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="747"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="747">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="747">Format mapping</strong> field, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="747">Elster (DE)</strong> format that you downloaded earlier.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="748"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="748">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="748">Tax &gt; Declarations &gt; Sales tax &gt; Report sales tax for settlement period</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="749"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="749">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="749">Report sales tax for settlement period</strong> dialog box, set the following fields.</p>
+</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="751">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="751">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="751"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="751">Field</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="751"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="751">Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="753">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="753">Settlement period</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="753">Select the applicable reporting period.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="754">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="754">From date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="754">Enter the first date of the sales tax settlement period that sales tax should be calculated for. This value corresponds to the date in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="754">From</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="754">Sales tax settlement periods</strong> page.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="755">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="755">Transaction date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="755">Enter the date when the sales tax report is calculated. The default value is the current date. The sales tax payment is calculated for all transactions that were posted during the settlement period.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="756">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="756">Sales tax payment version</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="756">Select the type of sales tax settlement. If this sales tax settlement is the first sales tax settlement for the period, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="756">Original</strong>. If a sales tax settlement has already been generated, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="756">Latest corrections</strong>. For more information, see <a href="../general-ledger/tasks/create-sales-tax-payment.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="756">Create a sales tax payment</a>.</td>
+</tr>
+</tbody>
+</table>
+<ol start="6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="758">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="758">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="758">OK</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="759">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="759">German sales tax report</strong> dialog box, set the following fields.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="761">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="761">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="761"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="761">Field</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="761"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="761">Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="763">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="763">Create electronic tax document</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="763">Set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="763">Yes</strong> to create an electronic document that contains the details of the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="764">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="764">Documents submitted separately</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="764">Set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="764">Yes</strong> if the printed report isn't submitted together with the electronic document. In the XML file, code Kz22 should have the value <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="764">1</strong>.</td>
+</tr>
+</tbody>
+</table>
+<ol start="8" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="766">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="766">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="766">OK</strong>. A new line is created on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="766">Electronic tax declaration log</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="766">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="766">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="766">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="766">Electronic tax declaration log</strong>).</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="768"><img src="media/1_Electronic_tax_declaration_log.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="768" alt="Electronic tax declaration log page."></p>
+<h2 id="preview-the-xml-file" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="770">Preview the XML file</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="772">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="772">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="772">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="772">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="772">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="772">Electronic tax declaration log</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="773">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="773">Electronic tax declaration log</strong> page, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="773">Preview</strong> tab to preview the reported values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="774">To review or save the XML file for further submission (outside of the system), select the line on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="774">Electronic tax declaration log</strong> page, and then select the paper clip symbol in the upper-right corner.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="775">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="775">Document handling</strong> page appears and shows the generated file. Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="775">Open</strong> at the top of the page to open the file in the application that is associated with the .xml extension in your system.</li>
+</ol>
+<h2 id="submission-the-vat-declaration-to-elster" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="777">Submission the VAT declaration to ELSTER</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="779">ELSTER (Elektronische Steuererklärung, or electronic tax declaration) is a German online tax office system that was designed by the Federal Central Tax Office for online submission of tax declarations.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="781">The <a href="https://www.elster.de/elsterweb/entwickler/infoseite/download_eric_28." sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="781">Developers area</a> of the ELSTER website provides examples that show how developers can interact with ELSTER Rich Client (ERiC) for the submission of VAT declarations in XML file format. Examples are provided for C++, C#, and Java. To access this area of the website, you must be <a href="https://www.elster.de/elsterweb/registrierung-entwickler" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="781">registered as a developer</a>. An example might help you create your own executable file that you can use to submit XML files via ERiC. To use an executable file to submit XML files to ELSTER, you must download ERiC dynamics-link libraries (DLLs).</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="783">For more information about ERiC releases, see <a href="https://www.elster.de/elsterweb/entwickler/infoseite/eric" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="783">ELSTER website</a>.</p>
+<h2 id="example" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="785"> Example</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="787">The following example shows how you can set up sales tax codes and sales tax reporting codes, post transactions, and generate the German VAT declaration.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="789">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="789">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="789">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="789">Indirect taxes</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="789">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="789">Sales tax codes</strong>, and set up the following sales tax codes.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="791">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="791">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="791"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="791">Sales tax code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="791"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="791">Percentage</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="791"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="791">Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="793">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="793">VAT19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="793">19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="793">Domestic sales at a rate of 19 percent.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="794">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="794">VAT7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="794">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="794">Domestic sales at a rate of 7 percent.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="795">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="795">InVAT19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="795">19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="795">Domestic purchases at a rate of 19 percent.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="796">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="796">InVAT7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="796">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="796">Domestic purchases at a rate of 7 percent.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="797">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="797">EU19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="797">19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="797">EU purchases at a rate of 19 percent, where the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="797">Use tax</strong> option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="797">Yes</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="798">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="798">EU7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="798">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="798">EU purchases at a rate of 7 percent, where the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="798">Use tax</strong> option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="798">Yes</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="799">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="799">EUS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="799">19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="799">EU sales where the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="799">Exempt</strong> option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="799">Yes</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="800">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="800">THIRD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="800">19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="800">Export sales where the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="800">Exempt</strong> option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="800">Yes</strong>.</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="802">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="802">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="802">Sales tax codes</strong> page, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="802">Report setup</strong> FastTab, assign reporting codes to sales tax codes.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="804">The following table shows how to assign the sales tax reporting codes to sales tax codes.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">Sales tax code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">Taxable sales</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">Tax-free sale</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">Sales tax payable</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">Taxable purchases</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">Sales tax receivable</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">Taxable import</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">Use tax</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="806">Offset use tax</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="808">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="808">VAT19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="808">81</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="808"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="808">181</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="808"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="808"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="808"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="808"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="808"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="809">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="809">VAT7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="809">86</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="809"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="809">186</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="809"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="809"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="809"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="809"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="809"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="810">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="810">InVAT19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="810"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="810"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="810"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="810"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="810">66</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="810"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="810"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="810"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="811">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="811">InVAT7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="811"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="811"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="811"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="811"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="811">66</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="811"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="811"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="811"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="812">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="812">EU19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="812"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="812"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="812"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="812"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="812"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="812">89</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="812">189</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="812">61</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="813">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="813">EU7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="813"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="813"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="813"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="813"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="813"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="813">93</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="813">193</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="813">61</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="814">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="814">EUS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="814"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="814">41</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="814"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="814"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="814"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="814"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="814"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="814"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="815">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="815">THIRD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="815"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="815">43</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="815"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="815"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="815"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="815"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="815"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="815"></td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="817">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="818">The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="818">Report setup</strong> FastTab.</p>
+</div>
+<ol start="3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="820">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="820">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="820">Tax &gt; Setup &gt; Sales tax &gt; Electronic tax declaration setup</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="821">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="821">Format mapping</strong> field, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="821">Elster (DE)</strong> format that you downloaded earlier.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="822">Post the following transactions. For example, for customer invoices, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="822">Accounts receivable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="822">Invoices</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="822">All free text invoices</strong>. For vendor invoices, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="822">Accounts payable &gt; Invoices &gt; Invoice journal</strong>.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824">Date</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824">Transaction type</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824">Amount net</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824">VAT amount</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824">Sales tax code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824">Expected tax base – reporting code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="824">Expected tax amount – reporting code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="826">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="826">January 1, 2020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="826">Customer invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="826">100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="826">19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="826">VAT19</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="826">81</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="826">181</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="827">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="827">January 1, 2020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="827">Vendor invoice (EU)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="827">100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="827">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="827">EU7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="827">93</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="827">193 – Tax payable 61 – Tax deduction</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="828">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="828">January 1, 2020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="828">Customer invoice (EU)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="828">100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="828">0</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="828">EUS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="828">41</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="828">Not applicable</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="829">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="829">January 1, 2020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="829">Customer invoice (export)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="829">100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="829">0</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="829">THIRD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="829">43</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="829">Not applicable</td>
+</tr>
+</tbody>
+</table>
+<ol start="6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="831">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="831"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="831">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="831">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="831">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="831">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="831">Report sales tax for settlement period</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="832"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="832">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="832">Report sales tax for settlement period</strong> dialog box, set the following fields to the specified values:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="834">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="834"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="834">Settlement period:</strong> Mon</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="835"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="835">From date:</strong> 1/1/2020</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="837"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="837">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="837">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="838"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="838">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="838">German sales tax report</strong> dialog box, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="838">Create electronic tax document</strong> check box.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="839"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="839">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="839">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="840"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="840">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="840">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="840">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="840">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="840">Electronic tax declaration log</strong>, and select the required line.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="841"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="841">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="841">Electronic tax declaration log</strong> page, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="841">General</strong> tab, and review the general information.</p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="843"><img src="media/2_Electronic_tax_declaration_log.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="843" alt="Electronic tax declaration log page, General tab."></p>
+<ol start="13" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="845">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="845">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="845">Preview</strong> tab, and review the reported values.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="847"><img src="media/3_Electronic_tax_declaration_log.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="847" alt="Preview of the Electronic tax declaration log."></p>
+<ol start="14" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="849">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="849">Select the paper clip symbol in the upper-right corner.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="850">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="850">Open</strong> at the top of the page, and review the XML file.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="852"><img src="media/4_XML_file.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="852" alt="XML file."></p>
+<h3 id="correction-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="854">Correction transactions</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="856">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="856">Post a new transaction. For example, to post a customer invoice, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="856">Accounts receivable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="856">Invoices</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="856">All free text invoices</strong>.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858">Date</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858">Transaction type</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858">Amount net</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858">VAT amount</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858">Sales tax code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858">Expected tax base – Reporting code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="858">Expected tax amount – Reporting code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="860">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="860">January 1, 2020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="860">Customer invoice (domestic)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="860">100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="860">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="860">VAT7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="860">86</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="860">186</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="862">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="862"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="862">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="862">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="862">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="862">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="862">Report sales tax for settlement period</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="863"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="863">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="863">Report sales tax for settlement period</strong> dialog box, set the following fields to the specified values:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="865">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="865"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="865">Settlement period:</strong> Mon</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="866"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="866">From date:</strong> 1/1/2020</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="868"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="868">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="868">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="869"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="869">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="869">German sales tax report</strong> dialog box, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="869">Create electronic tax document</strong> check box.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="870"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="870">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="870">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="871"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="871">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="871">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="871">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="871">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="871">Electronic tax declaration log</strong>, and select the required line.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="872"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="872">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="872">Preview</strong> tab, and review the reported values.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="874"><img src="media/5_Electronic_tax_declaration_log.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="874" alt="Preview of Electronic tax declaration log."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="876">A correction transaction is added to the declaration in codes <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="876">86</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="876">83</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="878"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="878">Select the paper clip symbol in the upper-right corner.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="879"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="879">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="879">Open</strong> at the top of the page, and review the XML file.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="881"><img src="media/6_XML_file.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="881" alt="XML file to review."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="883">A correction transaction is added to the declaration in codes <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="883">86</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="883">83</strong>.</p>
+</li>
+</ol>
+<h2 id="review-sales-tax-report-amounts" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="885">Review sales tax report amounts</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="887">You can optionally review sales tax amount in SSRS report.</p>
+<h3 id="set-up-the-report-layout-for-sales-tax-authorities" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="889">Set up the report layout for sales tax authorities</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="891">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="891">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="891">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="891">Indirect taxes</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="891">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="891">Sales tax authorities</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="892">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="892">Sales tax authorities</strong> page, select the sales tax authority that will be used in the sales tax codes for the sales tax settlement period.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="893">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="893">Report layout</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="893">German report layout</strong>.</li>
+</ol>
+<h3 id="generatesalestaxpayment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="895"> Generate a sales tax payment and print the German sales tax report</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="897">At the end of the VAT reporting period, calculate the sales tax amounts for the settlement period.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="899">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="899">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="899">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="899">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="899">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="899">Settle and post sales tax</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="900">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="900">Settle and post sales tax</strong> dialog box, set the required fields as described <a href="#createvatdecxmlformat" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="900">earlier</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="901">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="901">OK</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="902">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="902">German sales tax report</strong> dialog box, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="902">Create electronic tax document</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="902">No</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="903">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="903">OK</strong> to generate the sales tax payment and review the report.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="905">If you post transactions as described in step 5 of the <a href="#example" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="905">example</a> earlier in this topic, you will see the following data.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="907"><img src="media/7_Sales_tax_reporting.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="907" alt="Generated German sales tax report, page 1."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="909"><img src="media/8_Sales_tax_reporting.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="909" alt="Generated German sales tax report, page 2."></p>
+<h3 id="print-a-sales-tax-payment-report-from-a-sales-tax-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="911">Print a sales tax payment report from a sales tax payment</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="913">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="913">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="913">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="913">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="913">Sales tax payments</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="914">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="914">Sales tax payment</strong> page, select the record, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="914">Print report</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="915">In the dialog box, set the fields as described in the previous section, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="915">OK</strong>.</li>
+</ol>
+<h3 id="report-sales-tax-for-the-settlement-period" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="917">Report sales tax for the settlement period</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="919">You can also generate the German sales tax report by using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="919">Report sales tax for settlement period</strong> inquiry.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="921">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="921">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="921">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="921">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="921">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="921">Report sales tax for settlement period</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="922">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="922">Report sales tax for settlement period</strong> dialog box, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="922">Settlement period</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="922">From date</strong> fields as described in the <a href="#generatesalestaxpayment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="922">Generate a sales tax payment and print the German sales tax report</a> section earlier in this topic.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="923">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="923">Sales tax payment version</strong> field, select one of the following values:</li>
+</ol>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="925">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="925"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="925">Original</strong> – Generate a report for sales tax transactions of the first posted settlement calculation for the period.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="926"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="926">Corrections</strong> – Generate a report for sales tax transactions of subsequent settlement calculations for the period.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="927"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="927">Total list</strong> – Generate a report for all sales transactions for the period. These transactions include original and corrected transactions.</li>
+</ul>
+<ol start="4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="929">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="929">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="929">OK</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="930">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="930">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="930">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="930">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="930">Settle and post sales tax</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="931">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="931">Settle and post sales tax</strong> dialog box, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="931">Sales tax payment version</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="931">Original</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="932">Print the report, and review the data.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="934">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="934">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="934"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="934">Reporting code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="934"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="934">Sales tax amount</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="936">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="936">41</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="936">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="937">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="937">43</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="937">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="938">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="938">61</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="938">7</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="939">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="939">81</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="939">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="940">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="940">93</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="940">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="941">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="941">181</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="941">19</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="942">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="942">193</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="942">7</td>
+</tr>
+</tbody>
+</table>
+<ol start="8" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="944">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="944">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="944">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="944">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="944">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="944">Settle and post sales tax</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="945">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="945">Settle and post sales tax</strong> dialog box, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="945">Sales tax payment version</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="945">Latest corrections</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="946">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="946">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="946">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="946">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="946">Report sales tax for settlement period</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="947">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="947">Report sales tax for settlement period</strong> dialog box, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="947">Sales tax payment version</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="947">Corrections</strong>. The following table shows the result.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="949">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="949">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="949"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="949">Reporting code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="949"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="949">Sales tax amount</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="951">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="951">86</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="951">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="952">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="952">186</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="952">7</td>
+</tr>
+</tbody>
+</table>
+<ol start="12" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="954">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="954">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="954">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="954">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="954">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="954">Report sales tax for settlement period</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="955">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="955">Report sales tax for settlement period</strong> dialog box, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="955">Sales tax payment version</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="955">Total list</strong>. The following table shows the result.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="957">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="957">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="957"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="957">Reporting code</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="957"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="957">Sales tax amount</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="959">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="959">41</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="959">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="960">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="960">43</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="960">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="961">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="961">61</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="961">7</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="962">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="962">81</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="962">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="963">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="963">86</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="963">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="964">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="964">93</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="964">100</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="965">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="965">181</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="965">19</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="966">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="966">186</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="966">7</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="967">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="967">193</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-de-vat-declaration.md" sourcestartlinenumber="967">7</td>
+</tr>
+</tbody>
+</table>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
