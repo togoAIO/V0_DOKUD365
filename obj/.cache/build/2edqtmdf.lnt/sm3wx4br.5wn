@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Return orders | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Return orders | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="return-orders" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="28">Return orders</h1>
+
+[!include[banner](../includes/banner.md)]<h2 id="return-order-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="32">Return order page</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="34">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="34">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="34">Sales and marketing</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="34">Return orders</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="34">All return orders</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="35">Create a return order for a taxable item.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="36">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="36">Line details</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="36">Disposition code</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="36">Credit only</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="37">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="37">Return order</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="37">Send</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="37">Return order</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="38">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="38">OK</strong>, and then close the page.</li>
+</ol>
+<h2 id="sales-order-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="40">Sales order page</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="42"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="42">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="42">Accounts receivable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="42">Sales orders</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="42">All sales orders</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="43"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="43">Select the record where the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="43">Order type</strong> field is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="43">Returned order</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="44">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="44">Sales order</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="44">Maintain</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="44">Edit</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="45"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="45">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="45">Tax information</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="46"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="46">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="46">GST</strong> tab.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="47"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="47">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="47">Customer tax information</strong> tab.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="49">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="50">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="50">Tax information</strong> value is automatically set, based on the original sales order that the return order was created against.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="52">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="52">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="53"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="53">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="53">Sell</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="53">Tax</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="53">Tax document</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="55">You should see something that resembles the following example:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="57">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="57"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="57">Taxable amount:</strong> 10,000</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="58"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="58">CGST:</strong> 10 percent</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="59"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="59">SGST:</strong> 10 percent</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="60"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="60">CESS:</strong> 1 percent</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="62"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="62">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="62">Close</strong>.</p>
+</li>
+</ol>
+<h2 id="post-the-invoice" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="64">Post the invoice</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="66">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="66">Invoice</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="66">Generate</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="66">Invoice</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="67">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="67">Quantity</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="67">All</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="68">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="68">OK</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="68">Yes</strong> to acknowledge the warning message that you receive.</li>
+</ol>
+<h2 id="validate-the-voucher" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="70">Validate the voucher</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="72">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="72">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="72">Invoice</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="72">Journals</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="72">Invoice</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="73">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="73">Voucher</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="75">The following illustration shows the financial entry for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="75">Credit only</strong>/<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="75">Replace and scrap</strong>/<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="75">Scrap</strong> disposition code.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="77"><img src="media/Annotation-2019-05-20-163321.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="77" alt="Financial entry for the Credit only/Replace and scrap/Scrap disposition code."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="79">The following illustration shows the financial entry for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="79">Credit</strong>/<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="79">Replace and credit</strong> disposition code.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="81"><img src="media/Annotation-2019-05-20-163405.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-return-order-form.md" sourcestartlinenumber="81" alt="Financial entry for the Credit/Replace and credit disposition code."></p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

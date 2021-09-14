@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Inventory reports | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Inventory reports | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="inventory-reports" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="27">Inventory reports</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="31">There are four local inventory reports available in Russia:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="33">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="33">Inventory balance turnover</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="34">Pay-sheet of receipts and reports expenditure</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="35">Adjustments</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="36">Adjustment (cur.)</li>
+</ul>
+<h2 id="preliminary-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="38">Preliminary setup</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="40">Before you can generate the local inventory reports, complete the following steps to set up number sequences for on-hand inventory dimension combination.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="42">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="42">Inventory management</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="42">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="42">Inventory and warehouse management parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="43">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="43">Number sequences</strong> tab, select a number sequence code for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="43">On-hand inventory on date dimension combination</strong> reference, and then assign the number sequence in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="43">Number sequence code</strong> field.</li>
+</ol>
+<h2 id="inventory-balance-turnover" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="45">Inventory balance turnover</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="47">Using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="47">Inventory balance turnover</strong> inquiry, you can view balances and turnovers in the context of dimensions. You can select dimensions to include in the report, and specify the selection criteria for dimensions when you use filters.</p>
+<h3 id="calculate-on-hand-inventory-on-inventory-closing-date" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="49">Calculate on-hand inventory on inventory closing date</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="51">To optimize the performance of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="51">Inventory balance turnover</strong> inquiry, use the periodic procedure, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="51">On-hand inventory on date</strong>. It calculates on-hand inventory on the date when the inventory was previously closed.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="53">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="53"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="53">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="53">Inventory management &gt; Periodic tasks &gt; On-hand inventory on date</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="54"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="54">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="54">Calculation on-hand inventory on date</strong> page, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="54">Parameters</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="54">Date of on-hand calculation</strong> field, specify the inventory closing date for which the inventory calculation must be performed. By default, this is the first date the inventory was closed without an inventory calculation.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="55"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="55">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="55">Update calculation</strong> toggle to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="55">Yes</strong> if you want to clear the results of the previous inventory calculation on the specified inventory closing date and perform a full inventory calculation.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="57"><img src="media/1_Calculation_on-hand_inventory_on_date.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="57" alt="Calculation on-hand inventory on date page."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="59"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="59">When the inventory calculation is complete, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="59">Closing and adjustment</strong> page, for the corresponding inventory closure line, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="59">Session</strong> tab, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="59">Calculation on-hand inventory on date</strong> option will be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="59">Yes</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="61"><img src="media/2_Closing_and_adjustment.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="61" alt="Closing and adjustment page."></p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="63">If you try to run the inventory calculation again to close an inventory that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="63">Calculation on-hand inventory on date</strong> option set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="63">Yes</strong>, and the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="63">Update calculation</strong> option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="63">No</strong>, an error will occur.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="65">The results of the on-hand inventory calculation on the inventory closing date are deleted from the system when the corresponding inventory closing is canceled.</p>
+<h3 id="inventory-balance-turnover-inquiry" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="67">Inventory balance turnover inquiry</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="69">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="69">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="69">Inventory management</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="69">Inquires and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="69">Transactional reports (Russia)</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="69">Inventory balance turnover</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="71"><img src="media/3_Inventory_balance_turnover.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="71" alt="Inventory balance turnover page."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="73">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="73">Inventory balance turnover</strong> dialog box, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="73">General</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="73">Start date</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="73">To date</strong> fields, specify the period of report.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="74">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="74">Expand turnovers</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="74">Yes</strong> to divide the turnover columns into two groups in the inquiry results:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="76">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="76"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="76">Internal turnovers that <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="76">don’t</em> change the total balances of the company. This includes inventory movements on inventory transfer journals and transfer orders.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="78">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="79">The following documents are not considered internal turnovers because the item from the warehouse can be written off:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="81">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="81">Quarantine orders</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="82">Transfer order scarp</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="83">Quality orders</li>
+</ul>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="85"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="85">External turnovers that <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="85">do</em> change the total balances of the company. This includes inventory movements on purchase or sales orders and inventory journals.</p>
+</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="87"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="87">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="87">Show physical turnover</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="87">Yes</strong> to separate physical turnovers from financial turnovers. Physical turnovers include packing slips and production orders, picking lists, by-product journals and report-as-finished journals for production orders. Financial turnovers include purchase or sales invoices, inventory journals, and the calculation of production orders. The physical turnover will be allocated to a separate group of columns. If you set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="87">Show physical turnover</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="87">No</strong>, the physical turnover is added to the financial turnover.</p>
+</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="89">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="90">If you use the physical storno mechanism for inventory transactions during a financial update, the physical turnover and storno physical turnover for financially updated inventory transactions are reflected in the same column as a receipt or issue, but with opposite signs. That is, they are summarized to zero, if both the physical and financial dates of the inventory transaction are included in the inquiry period. If the physical date is included in the inquiry period, and the financial is not, the inquiry will contain only physical movement, but the reverse/storno of physical movement and financial movement will not be considered.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="92">For example, for the following inventory transactions, the purchase and credit note for the purchase are listed.</p>
+</div>
+<blockquote sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="94">
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="94">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="94">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="94">Document type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="94">Type of inventory transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="94">Credit correction (physical)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="94">Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="96">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="96">Purchase order</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="96">Receipt</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="96">No</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="96">10</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="97">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="97">Credit note for the purchase</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="97">Issue</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="97">Yes</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="97">-3</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="99">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="99">Storno</strong> dimension is not selected, the report will show the line with the following quantities:</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="101">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="101">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="101">Quantity (Receipt)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="101">Quantity (Issue)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="103">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="103">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="103">0</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="105">If the physical or financial update of inventory transaction wasn’t posted to the general ledger, the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="105">Balance account</strong> dimension for the inventory transactions is empty.</p>
+</blockquote>
+<ol start="5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="107">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="107"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="107">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="107">Show totals</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="107">Yes</strong> to view lines with subtotals on dimensions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="108"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="108">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="108">Show zero turnover</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="108">Yes</strong> to view lines with zero turnovers (but a non-zero initial balance) for the period. This option is automatically selected if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="108">Show totals</strong> option is selected.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="109"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="109">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="109">Show item name</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="109">Yes</strong> to view the product name in addition to the product code.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="110"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="110">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="110">Dimensions</strong> tab, select dimensions to include in the report.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="112"><img src="media/4_Inventory_balance_turnover.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="112" alt="Inventory balance turnover report, Dimensions tab."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="114">The following dimensions are available:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="116">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="116"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="116"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="116">Item number</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="117"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="117"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="117">Inventory dimensions</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="118"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="118"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="118">Kind of activity</strong>: The value <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="118">Unspecified</strong> is displayed if the inventory movement does not have an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="118">Inventory profile</strong> dimension.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="119"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="119"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="119">Balance account</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="120"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="120"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="120">Agreement</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="121"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="121"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="121">Storno</strong> allows you to separate storno transactions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="123"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="123">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="123">Storno</strong> dimension is selected, then storno inventory transactions are displayed separately in the report on separate lines. These lines have the value <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="123">Yes</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="123">Storno</strong> column. The transactions are displayed with different direction and amount sign. Storno of incoming inventory transactions are shown in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="123">Issue</strong> column with a negative sign, and storno of outgoing inventory transactions are shown in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="123">Receipt</strong> column with a negative sign.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="124"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="124">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="124">Storno</strong> dimension is not selected, the storno inventory transactions decrease the value of the initial transaction in the corresponding columns. Storno of incoming inventory transactions have a decreased value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="124">Issue</strong> column, where storno of outgoing inventory transactions have a decreased value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="124">Receipt</strong> column.</p>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="126">For example, the following inventory transactions show the purchase and credit note for the purchase:</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="128">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="128">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="128">Document type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="128">Type of inventory transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="128">Credit correction (physical)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="128">Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="130">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="130">Purchase order</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="130">Receipt</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="130">No</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="130">10</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="131">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="131">Credit note for the purchase</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="131">Issue</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="131">Yes</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="131">-3</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="133">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="133">Storno</strong> dimension is selected, the report will show the lines with the following quantities:</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="135">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="135">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="135">Storno</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="135">Quantity (Receipt)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="135">Quantity (Issue)</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="137">No</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="137">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="137">0</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="138">Yes</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="138">-3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="138">0</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="140"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="140">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="140">Records to include</strong> tab, use the filter to define the transactions to include in the report.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="141"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="141">Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="141">OK</strong> to generate a report.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="143"><img src="media/5_Inventory_balance_turnover.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="143" alt="Inventory balance turnover report, Standard view."></p>
+</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="145">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="146">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="146">Line type</strong> column, you can see the type of the line: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="146">Transactions</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="146">Totals</strong></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="148">The quantity columns (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="148">Quantity (at the beginning)</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="148">Quantity (at the end)</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="148">Quantity (receipt)</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="148">Quantity (issue)</strong>) are displayed only if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="148">Item number</strong> is selected as one of the report dimensions. In these fields, the data are is displayed in the inventory unit of measurement for the item.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="150">If the date of the corresponding inventory settlements falls within the inquiry period, the fields with amounts, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="150">Amount (at the beginning)</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="150">Amount (Receipt)</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="150">Amount (Issue)</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="150">Amount (at the end)</strong> contain the financial amount of the corresponding inventory transactions in the accounting currency and the adjustments of the financial amount.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="152">The report quantities and amounts also include inventory transactions that have been updated physically. The physical amount of the inventory transaction is used. Inventory transactions that are updated financially are included in the inquiry with the financial transaction date. Inventory transactions that are updated only physically are included in the inquiry with the physical transaction date. Inventory settlements are reflected in the report with the date of the inventory settlement.</p>
+</div>
+<ol start="11" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="154">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="154"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="154">Depending on the type of inventory transaction, the inquiry determines the direction of the inventory turnover as follows:</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="156">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="156">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="156">Type of inventory transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="156">Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="158">Purchase order</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="158">Receipt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="159">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="159">Sales order</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="159">Issue</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="160">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="160">Production</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="160">Receipt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="161">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="161">Production line</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="161">Issue</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="162">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="162">By-products</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="162">Receipt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="163">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="163">Other types of inventory transactions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="163">Receipt for incoming transactions and Issue for outgoing transactions</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="165"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="165">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="165">Item number</strong> dimension is selected, you can select a line with the line type, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="165">Transaction</strong>, and on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="165">Action pane</strong>, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="165">Transaction</strong>. On the opened <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="165">Inventory transactions</strong> page, you can see the list of transactions that generated turnovers in the selected line. If the financial date does not fall within the inquiry period, but there are inventory settlements within the inquiry period, the transaction is not reflected on this page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="166"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="166">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="166">Recalculate</strong> to set new inquiry parameters and recreate the results.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="167"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="167">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="167">Print</strong> to view or save the report as a Microsoft Excel document. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="167">Parameters</strong> FastTab, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="167">Print ranges</strong> to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="167">Yes</strong> if you want the report to display the filters specified in the inquiry parameters, as well as the filters applied to the inquiry results.</p>
+</li>
+</ol>
+<h3 id="clean-up-temporary-data" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="169">Clean up temporary data</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="171">When calculating data for an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="171">Inventory balance turnover</strong> inquiry, the system generates temporary data but stores the data in permanent database tables. After closing the inquiry form, the data is deleted from the system. However, temporary data may not be completely deleted (for example, in case of system failures). To clear the temporary data, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="171">On-hand inventory calculation on date</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="171">Record references cleanup</strong> periodic operations are used.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="173">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="173"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="173">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="173">Inventory management</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="173">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="173">Clean up</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="173">On-hand inventory calculation on date</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="175"><img src="media/6_Cleanup_on-hand_inventory_calculation_on_date.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="175" alt="Clean up on-hand inventory calculation on date page."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="177"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="177">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="177">Parameters</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="177">Created until</strong> field, specify the date. The temporary data with a creation date before the specified date will be deleted. Specify the date equal to current date minus one (1) day to avoid deleting the data currently used by another user.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="178"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="178">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="178">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="179"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="179">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="179">Organization administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="179">Periodic</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="179">Record references cleanup</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="181"><img src="media/7_Record_references_cleanup.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="181" alt="Record references clean up page."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="183"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="183">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="183">Parameters</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="183">Created until</strong> field, specify the date. All temporary data with creation date before the specified date will be deleted.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="184"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="184">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="184">OK</strong>.</p>
+</li>
+</ol>
+<h2 id="pay-sheet-of-receipts-and-expenditure-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="186">Pay-sheet of receipts and expenditure report</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="188">This report displays receipts and issues for all items.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="190">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="190"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="190">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="190">Inventory management</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="190">Inquires and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="190">Transactional reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="190">Pay-sheet of receipts and reports expenditure</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="192"><img src="media/8_Pay-sheet_of_receipts_and_expenditure.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="192" alt="Pay-sheet of receipts and reports expediture report."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="194"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="194">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="194">Pay-sheet of receipts and expenditure</strong> dialog box, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="194">Parameters</strong> FastTab, specify the value of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="194">Exclude storno</strong> parameter:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="196">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="196">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="196">Exclude storno</strong> option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="196">Yes</strong>, the system displays the storno turnovers in the total inventory movements without allocating the storno turnovers as a separate line.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="197">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="197">Exclude storno</strong> option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="197">No</strong>, the system displays a line with initial transactions for each item and a line with storno transactions, if there were any. If the original and storno transactions are in the same reporting period, they do not add turnovers for the item, but if they are in different periods, the transaction that falls within the inquiry period will affect the period's turnovers.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="199"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="199">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="199">Records to include</strong> FastTab, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="199">Filter</strong> to apply filters for the report.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="200"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="200">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="200">OK</strong> to generate a report.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="202"><img src="media/9_Pay-sheet_of_receipts_and_expenditure.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="202" alt="Generated Pay-sheet of receipts and reports expediture report."></p>
+</li>
+</ol>
+<h2 id="adjustments-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="204">Adjustments report</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="206">This report shows all adjustments that were done during the inventory recalculation or closing. To do this, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="206">Inventory management</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="206">Inquires and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="206">Transactional reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="206">Adjustments</strong>. Specify the parameters, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="206">OK</strong> to generate a report.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="208"><img src="media/10_Adjustments.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="208" alt="Generated Adjustments report."></p>
+<h2 id="adjustments-in-currency-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="210">Adjustments in currency report</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="212">This report shows all adjustments that were done during the inventory recalculation or closing in the reporting currency. To do this, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="212">Inventory management</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="212">Inquires and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="212">Transactional reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="212">Adjustment (cur.)</strong>. Specify the parameters, and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-inventory-reports.md" sourcestartlinenumber="212">OK</strong> to generate a report.</p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

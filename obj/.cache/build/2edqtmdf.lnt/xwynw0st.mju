@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure lease parameters (Preview) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure lease parameters (Preview) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configure-lease-parameters" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="31">Configure lease parameters</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="35">Several configuration settings affect how Asset leasing behaves. These settings include journal names, general parameters, and posting profile settings.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="37">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="37"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="37">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="37">Asset leasing &gt; Setup &gt; Asset leasing parameters</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="38"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="38">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="38">Leases</strong> tab, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="38">General</strong> FastTab.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="40">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="40">Allow manual classification override</strong> parameter determines whether the lease classification can be overridden before the payment schedule is confirmed.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="42">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="42">Cross-entity batch</strong> parameter determines whether you can post to other legal entities from the current legal entity. If this parameter is turned on, you can create journal entries for the legal entities that you have access to.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="44">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="44">Allow delete of confirmed leases</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="44">Yes</strong> to allow leases that have confirmed payment schedules to be deleted. Leases can't be deleted if posted or unposted transactions are associated with them, regardless of the setting of this option. You can't restore a lease record after it's deleted. If you upload any records for a deleted lease, either manually or through data entities, the uploaded information is treated as new, not as an update to an existing lease.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="46">If you set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="46">Yes</strong>, and the transition type of the book is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="46">Cumulative Catchup Option A or B</strong>, the system sets the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="46">Incremental borrowing rate</strong> field to the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="46">Incremental borrowing rate at transition</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="46">Book setup</strong> page. If this option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="46">No</strong>, the rate on the head lease is set to the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="46">Incremental borrowing rate</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="46">Book details</strong> page, regardless of the transition type of the book.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="48"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="48">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="48">Allow depreciation reversals on closed book version</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="48">Yes</strong> to allow depreciation expense transactions to be reversed. Expense transactions can be reversed even when the book version is closed.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="50">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="51">We recommend that you keep this option set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="51">No</strong>. The setting of this option is used as a validation and control to prevent a closed book version from being accidently depreciated. By keeping the option set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/config-lease-parameters.md" sourcestartlinenumber="51">No</strong>, you help keep the net book value and future depreciation calculations accurate.</p>
+</div>
+</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

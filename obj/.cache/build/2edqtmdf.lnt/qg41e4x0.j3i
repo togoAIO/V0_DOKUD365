@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>NO-00002 Customer payment based on payment ID | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="NO-00002 Customer payment based on payment ID | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="no-00002-customer-payment-based-on-payment-id" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="26">NO-00002 Customer payment based on payment ID</h1>
+
+[!include[banner](../../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="30">This task walks you through setting up and maintaining Norwegian payment IDs.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="32">A payment identification (ID) is a unique identifier for customer payments that are settled electronically. It can be divided into different parts, such as the customer account number, invoice number, prefix, suffix, and external reference. When you receive a payment from a customer, the payment ID identifies the payment transaction for a sales invoice that is received from a bank.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="34">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</p>
+<h2 id="set-up-a-payment-id" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="37">Set up a payment ID</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="38">Go to Accounts receivable &gt; Payments setup &gt; Payment ID.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="39">Click New.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="40">In the Payment ID type field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="41">In the Name field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="42">In the Payment ID length field, enter a number.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="43">In the Account from position field, enter a number.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="44">In the Account to position field, enter a number.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="45">In the Invoice from position field, enter a number.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="46">In the Invoice to position field, enter a number.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="47">In the Modulo field, select 'Modulo 10'.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="48">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="48">Select the modulo check method to calculate the check number. The last digit of a payment ID is reserved for the check number to verify that the payment ID is valid. The following options are available:     Modulo 10 – The total length of the payment ID is divided by 10. The remainder is the check number.   Modulo 11 – The total length of the payment ID is divided by 11. The remainder is the check number.   - (None) – No check number is calculated.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="49">Click Save.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="50">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="50">After saving the record, you can preview the selected payment ID in the Payment ID test field.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="51">Go to Accounts receivable &gt; Payments setup &gt; Payment ID per country/region.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="52">Click New.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="53">In the Country/region field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="54">In the Payment ID type field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="55">Click Save.</li>
+</ol>
+<h2 id="attach-a-payment-id-to-a-customer" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="57">Attach a payment ID to a customer</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="58">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="58">Go to Accounts receivable &gt; Customers &gt; All customers.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="59">Use the Quick Filter to filter on the Account field with a value of 'DE-010'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="60">In the list, click the link in the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="61">Expand the Payment defaults section.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="62">Click Edit.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="63">In the Payment ID type field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="64">Click Save.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="65">Go to Accounts receivable &gt; Payments setup &gt; Methods of payment.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="66">Use the Quick Filter to find records. For example, filter on the Method of payment field with a value of 'ELECTRONIC'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="67">Click Edit.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="68">Expand the Payment control section.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="69">In the Payment ID type field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="70">Click Save.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="71">Go to Accounts receivable &gt; Setup &gt; Customer groups.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="72">Click Edit.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="73">In the Payment ID type field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="74">Click Save.</li>
+</ol>
+<h2 id="update-the-payment-id" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="76">Update the payment ID</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="77">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="77">Go to Accounts receivable &gt; Periodic tasks &gt; Update invoice payment ID.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="78">Select the Delete payment ID check box to delete the payment ID information from all documents
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="79">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="79">This option should be used only when you want to remove or update Payment IDs for documents that got Payment IDs assigned. You will be offered a dialog to delete Payment ID from specific type of documents.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="80">Select Yes in the Update invoice payment ID field.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="81">Click OK.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="82">Click Yes.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="83">Click Yes.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="84">Click Yes.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="85">Click Yes.</li>
+</ol>
+<h2 id="view-the-payment-id" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="87">View the payment ID</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="88">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="88">Go to Accounts receivable &gt; Inquiries and reports &gt; Invoices &gt; Invoice journal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="89">Click Show filters.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/no-00002-customer-payment-based-payment-id.md" sourcestartlinenumber="90">Apply the following filters: Enter a filter value of &quot;&quot; on the &quot;Payment ID&quot; field using the &quot;is not&quot; filter operator.</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

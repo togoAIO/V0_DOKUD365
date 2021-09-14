@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TCS on sales of goods | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="TCS on sales of goods | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tcs-on-sales-of-goods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="29">TCS on sales of goods</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="33">This topic provides information about the functionality for Tax Collection at Source (TCS) on sales of goods. For example, it describes how to do the basic setup for TCS deduction on sale of goods transactions, how to calculate TCS on transactions from customers or groups of customers, and how to calculate TCS on transactions when customers don't have a permanent account number (PAN).
+Per section 206C (1H), TCS should be collected when payment is received from a customer against a sale consideration. When the seller receives the payment, the TCS amount is debited to the interim account and credited to the TCS payable account. When the invoice is posted, the TCS amount will be posted to the interim payable account and added to the invoice value.
+One important aspect of this feature is that if multiple customers have the same PAN, the transaction amount will be accumulated and compared to a threshold to determine whether the transaction is eligible for TCS deduction.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="37">The following illustration shows the process flow for this feature.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="39"><img src="media/TCS-on-Sale-of-Goods-001.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="39" alt="Flow diagram."></p>
+<h2 id="base-amount-for-tcs-deduction" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="41">Base amount for TCS deduction</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="43">Central Board of Direct Taxes (CBDT) vide circular no. 17, dated September 30, 2020, clarified the base amount for TCS deduction. Because the collection is based on receipt of the amount of the sale consideration, no adjustment because of indirect taxes, including Goods and Services Tax (GST), is required for the collection of tax under this provision. Therefore, TCS that is collected on the sale consideration must include GST.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="45">In the withholding tax group, you can include the GST tax component and charges in the base amount for TCS calculation.</p>
+<h2 id="pan-based-accumulation-of-transactions-for-multiple-customers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="47">PAN-based accumulation of transactions for multiple customers</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="49">In the case of TCS on sales of goods, TCS will be deducted based on PANs. If multiple customers have the same PAN, all transactions by those customers will be accumulated and compared to the threshold that is prescribed by the government. You can also accumulate the purchase threshold based on the PANs of vendors.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="51">However, the accumulation is based on vendors or customers in one legal entity. Accumulation among multiple legal entities is out of scope.</p>
+<h2 id="the-point-of-collection-of-tax" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="53">The point of collection of tax</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="55">Per the interpretation of TCS on sales of goods under section 206C (1H), tax should be collected &quot;at the time of receipt.&quot; The law clarifies that TCS on sales of goods will be collected when actual payment is received by the seller.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="57">However, to collect TCS on sales of goods, the seller must increase the amount of the sales invoice, including the amount of TCS. The seller must also account for the amount in the books as a TCS liability, even though it isn't payable. Although the TCS amount is debited to the buyer, the liability under section 206C (1H) doesn't arise until the amount is collected. To accommodate this requirement, a new <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="57">Tax liability on payment</strong> option is added for the withholding tax group.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="59">When this option is selected, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="59">Interim account</strong> field for the withholding tax code becomes available. When a sale of goods is posted, the tax amount on the invoice is posted to the interim TCS payable account and debited to the customer account. When the user receives payment from the buyer, the system posts an invoice transaction to accrue the TCS liability on the payment.</p>
+<h2 id="tcs-on-advance-receipt-of-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="62">TCS on advance receipt of payment</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="64">Under section 206C(1H), sellers must deduct TCS every time that they receive payment against a sale consideration, or every time that they receive an advance payment. However, aa difficulty arises in the calculation when the amount of the payment that is received crosses the threshold that is set up in the system for transaction values. In this case, you must manually adjust the TCS amount that is calculated on customer payment transactions.</p>
+<h2 id="changes-that-have-been-incorporated-based-on-the-cbdt-press-release" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="66">Changes that have been incorporated based on the CBDT press release</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="68">Initially, experts interpreted the new TCS provision in the following way:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="70">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="70">Tax must be collected when both the amount of the sale and the amount that was received as a sale consideration exceed 50 lakh rupees (INR 5,00,000) during the previous year.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="71">Tax must be collected when the amount of the sale exceeds INR 50,00,000, regardless of the amount of the sale consideration that was received during the previous year.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="72">Tax must be collected when the amount that was received as a sale consideration exceeds INR 50,00,000, regardless of the amount of the sale that was made during the previous year.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="74">Based on this initial interpretation Finance and Operations apps provided functionality for the first option. However, some scenarios didn't comply with the intended law.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="76">To clarify the applicability of the new TCS provisions, the CBDT issued circular no. 17, dated September 30, 2020. According to this circular, the third option is a more convenient, realistic, and reasonable way to get the expected result.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="78">To make the solution comply with the new interpretation, the following changes have been incorporated into the existing feature:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="80">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="80"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="80">Initial achieved threshold value</strong>: The CBDT clarification states, &quot;It may be noted that this TCS shall be applicable only on the amount received on or after 1st October 2020. However the threshold is based on the yearly receipt, it may be noted that only for calculation of this threshold of Rs. 50 lakh, the receipt from the beginning of the financial year i.e. from 1st April 2020 shall be taken into account. For example, a seller who has received Rs. 1 crore before 1st October 2020 from a particular buyer and receives Rs. 5 lakh after 1st October 2020 would be required to collect tax on Rs. 5 lakh only and not on Rs. 55 lakh [i.e Rs.1.05 crore - Rs. 50 lakh (threshold)] but for threshold calculation amount received before 1st October will also be considered. To meet this change we introduced an initial threshold value concept.&quot;</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="81"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="81">TCS when payment is collected from the customer against a sale consideration</strong>: The CBDT clarification states, &quot;It may be noted that this TCS applies only in cases where the receipt of sale consideration exceeds Rs. 50 lakh in a financial year. For example, a seller who has made sales of Rs. 1 crore before 1st October 2020 from a particular buyer and receives only Rs. 10 lakh after 1st October 2020 would not be required to collect tax on 10 lakh as the payment amount has not crossed the threshold value of Rs. 50.&quot;</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="83">Based on this statement, you can use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="83">Feature management</strong> workspace to enable TCS deduction when payment is collected from a customer against a sales consideration.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="85">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="85"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="85">Direct voucher posting of the TCS amount on payment and invoice transactions</strong>: In the initial solution that was provided for TCS deduction, posting was done through related vouchers. The redesigned solution lets you post the TCS amount directly in the ledger. You don't have to post it through a related voucher.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="86"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="86">When TCS on sales is applied on Accounts payable transactions, the tax amount is posted to a recoverable account</strong>: When you apply TCS on sales on a purchase transaction, the TCS amount is posted directly to the TCS recoverable account. You must then match the TCS ledger with Form 26AS to determine the TCS amount for a claim against the tax liability.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="87"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="87">The credit note reverses the TCS transaction without affecting the accumulated value for the threshold</strong>: The tax must be calculated on the sale consideration that is received from the buyer. Therefore, when the credit note that is issued adjusts the buyer's ledger, the adjustment has no effect on the tax that must be collected. The posting will remain the same if the seller repays some of the sale consideration to the buyer after the tax is collected. In this situation, the amount of the sale consideration that the seller receives isn't reduced by the amount that is refunded for the calculation of TCS.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="88"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="88">TCS groups can automatically be entered from the invoice account</strong>: In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="88">Feature management</strong> workspace, you can enable the TCS group to automatically be entered on a sales transaction from the invoice account instead of the customer account. This functionality lets you address scenarios that involve third-party invoices.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="89"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="89">TCS groups can automatically be entered from the vendor account on a purchase transaction</strong>: In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="89">Feature management</strong> workspace, you can enable the TCS group to automatically be entered on a purchase transaction if the TCS withholding group is attached to the vendor account.</li>
+</ul>
+<h2 id="key-scenarios-covered" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="91">Key scenarios covered</h2>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="93">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="93">Tax rates that have three decimal places</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="94">Sales orders</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="95">Free text invoices</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="96">Customer payment journals</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="97">Project invoices</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="98">General journals</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="99">Multi-line journals</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="100">TCS through invoice accounts</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="101">PAN-based accumulation of thresholds</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="102">Credit notes</li>
+</ul>
+<h2 id="out-of-scope-scenarios" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="104">Out-of-scope scenarios</h2>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="106">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="106">Intercompany transactions</li>
+</ul>
+<h2 id="feature-support" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="108">Feature support</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="110">The feature is supported in following versions of Microsoft Dynamics 365 Finance, or later versions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="112">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="112">10.0.14</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="113">10.0.15</li>
+</ul>
+<h2 id="set-up-tcs-on-sales-of-goods-on-a-collection-of-payment-basis" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="115">Set up TCS on sales of goods on a collection-of-payment basis</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="117">To enable TCS on sales of goods on a collection-of-payment basis, you must complete three tasks.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="119">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="119"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="119">Turn on the feature through Feature management</strong>. Section 206C(1H) states that tax must be collected when the amount is received as consideration for the sale of goods. In other words, tax must be collected if the amount is received on or after October 1, 2020.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="121">To turn on the feature, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="121">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="121">Feature management</strong>, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="121">Enable TCS calculation on payment collection from customer basis</strong> feature, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="121">Enable now</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="123">You can also turn on the following features if they are required for your:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="125">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="125">Third- business party Invoice Scenario: Enable TDS/TCS information through invoice account</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="126">TCS on Purchase transactions: Enable &quot;TDS/TCS withholding tax group&quot; defaulting from the master form without differentiating the nature of the transaction</li>
+</ul>
+<ol start="2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="128">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="128"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="128"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="128">Enable the threshold hierarchy</strong>. To apply the TCS rate, based on whether a customer has a PAN, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="128">Enable threshold hierarchy</strong> check box in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="128">TCS on sales tax</strong> code.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="129"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="129"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="129">Enable liability on payment</strong>. To deduct TCS when payment is collected, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="129">Liability on payment</strong> check box.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="131">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="132">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="132">Liability on the payment</strong> check box is cleared, the system creates TCS liability on the Invoice. If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="132">Enable TCS calculation on payment collection from customer basis</strong> feature isn't turned on, the system considers both the invoice and the payment amount for threshold determination.</p>
+</div>
+</li>
+</ol>
+<h2 id="initial-threshold-achieved-value" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="134">Initial threshold achieved value</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="135">TCS is applicable from October 1, 2020. However, for threshold determination, transaction accumulation occurs from April 1 of every financial year.
+The following example shows how the accumulated value is determined for TCS calculation:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="138">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="138">The threshold value is INR 50,00,000.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="139">TCS is applicable from October 1, 2020.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="140">The transaction is run as shown in the following table.</li>
+</ul>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="142">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="142">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="142">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="142">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="142">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="144">1-Aug-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="144">INV-001</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="144">20,00,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="145">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="145">15-Aug-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="145">INV-002</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="145">10,00,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="146">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="146">28-Aug-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="146">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="146">15,00,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="147">1-Sep-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="147">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="147">5,00,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="148">15-Sep-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="148">INV-003</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="148">50,00,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="149">25-Sep-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="149">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="149">20,00,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="150">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="150">10-Oct-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="150">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="150">12,00,000</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="152">The initial accumulated value is determined by adding the payments that are received between April 1 and September 30, 2020: 15,00,000 + 5,00,000 + 20,00,000 = 40,00,000. The first payment value after October 10, 2020 is 12,00,000. Therefore, the total accumulated value is 40,00,000 + 12,00,000 = 52,00,000.
+In this case, TCS is calculated as (52,00,000 – 50,00,000) × 0.1 percent = 20.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="155">To calculate the initial accumulated value, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="157">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="157">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="157">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="157">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="157">Withholding tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="157">Initial threshold achieved values</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="158">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="158">From date</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="158">To date</strong> fields to define the date range from April 1 through September 30, 2020.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="159">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="159">Initialize</strong>. The payment transaction that is run in the defined date range is automatically considered to determine the initial threshold achieved value for each customer. After you select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="159">Initialize</strong>, and the initialization process is run, the button is no longer available and can't be selected again.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="161">You can edit the system-generated initial threshold value for any customer. When you save the changes, the new value is recorded for the customer. You can also manually add new customers. For example, a new customer might be created in the system after the initialization process is run. However, initial threshold value must be manually updated.</p>
+<h2 id="create-a-new-withholding-tax-code-for-sales-of-goods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="163">Create a new withholding tax code for sales of goods</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="165">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="165">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="165">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="165">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="165">Withholding tax code</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="166">In the left pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="166">Sale of Goods</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="168">When you attach a withholding tax component of the TCS type, the new <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="168">Interim account</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="168">General</strong> FastTab becomes available.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="170">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="171">Don't select an interim account yet. You will select it after you set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="171">Tax liability on payment</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="171">Yes</strong> for the withholding tax group in the next procedure.</p>
+</div>
+<ol start="3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="173">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="173">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="173">Enable threshold hierarchy</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="173">Yes</strong>. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="173">PAN based accumulation</strong> option becomes available.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="174">If multiple customers have the same PAN, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="174">PAN based accumulation</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="174">Yes</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="176"><img src="media/TCS-on-Sale-of-Goods-002.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="176" alt="Withholding tax codes page."></p>
+<h2 id="create-a-new-withholding-tax-group-for-sales-of-goods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="178">Create a new withholding tax group for sales of goods</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="180">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="180"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="180">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="180">Tax &gt; Setup &gt; Withholding tax group</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="181"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="181">In the left pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="181">Sale of Goods</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="182"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="182">Create a withholding tax group that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="182">TCS</strong> tax type, and set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="182">Tax liability on payment</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="182">Yes</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="183"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="183">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="183">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="183">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="183">Withholding tax code</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="184"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="184">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="184">Withholding tax codes</strong> page, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="184">Interim account</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="184">Interim TCS payable account</strong>. This account was created in the chart of accounts and has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="184">India withholding tax (TCS)</strong> posting type.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="185"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="185">Return to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="185">Withholding tax groups</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="186"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="186">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="186">Include GST tax component for TDS or TCS calculation</strong> field, include the GST tax component if it's part of the calculation of the TCS base amount.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="187"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="187">If charges aren't part of the TCS calculation, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="187">Exclude charges for TDS or TCS calculation</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="187">Yes</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="188"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="188">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="188">Designer</strong>, and define the formula for TCS calculation.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="190"><img src="media/TCS-on-Sale-of-goods-003.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="190" alt="Withholding tax groups page."></p>
+</li>
+</ol>
+<h2 id="define-threshold-definitions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="192">Define threshold definitions</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="194">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="194"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="194">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="194">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="194">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="194">Threshold definitions</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="195"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="195">Define a threshold definition for sales of goods.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="196"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="196">Define two threshold slabs:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="198">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="198">0-Max</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="199">Max-0</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="201"><img src="media/TCS-on-Sale-of-Goods-004.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="201" alt="Design two threshold slabs on Threshold designer page ."></p>
+</li>
+</ol>
+<h2 id="set-up-the-tcs-threshold-for-sales-of-goods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="203">Set up the TCS threshold for sales of goods</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="205">TCS on sales of goods applies to a single customer or multiple customers that have the same PAN.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="207">If the customer PAN isn't available, a higher tax rate is applied after the exempted turnover amount is passed. If the customer PAN is available, the lower tax rate is applied.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="209">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="209"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="209">Define threshold references for customers.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="211"><img src="media/TCS-on-Sale-of-goods-005.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="211" alt="Threshold references page."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="213"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="213">In the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="213">Threshold designer</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="214"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="214">Define two threshold slabs that have the following options:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="216">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="216">With PAN number</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="217">Without PAN number</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="219"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="219">Define a separate TCS rate for each option.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="220"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="220">Define the calculation basis for each slab:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="222">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="222"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="222">For the exempted slab, set the following values:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="224">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="224"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="224"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="224">Calculate tax:</strong> No</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="226">Alternatively, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="226">Calculate tax</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="226">Yes</strong>, and set the value to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="226">0</strong> (zero).</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="228"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="228"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="228">Calculate previous non-tax transactions:</strong> No</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="229"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="229"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="229">Include in turnover base:</strong> Yes</p>
+</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="231"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="231">For the taxable slab, set the following values:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="233">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="233"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="233">Calculate tax:</strong> Yes</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="234"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="234">Calculate previous non-tax transactions:</strong> No</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="235"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="235">Include in turnover base:</strong> Yes</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="237"><img src="media/TCS-on-Sale-of-Goods-006.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="237" alt="Threshold designer page."></p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="239">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="240">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="240">Threshold designer</strong> page, you must define the date for each slab from April 1, 2020, through March 31, 2021. The system verifies that the threshold date range includes the initial amount date range. If it does, the system adopts the defined initial amount as part of the turnover and doesn't consider the transactions during the initial amount date range, because the turnover during the date range has been defined as the initial amount. In the previous example, the threshold date range (April 1, 2020, through March 31, 2021) includes the date range April 1 through September 30, 2020. Therefore, the initial threshold amount is included as part of the turnover. Then the payments of the date range October 1, 2020, through March 31, 2021, are cumulated as another part of the turnover. Finally, the total turnover is the initial threshold amount plus the cumulative amount of October 1, 2020, through March 31, 2021.</p>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="activate-the-calculation-of-tcs-for-customers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="242">Activate the calculation of TCS for customers</h2>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="244">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="244"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="244">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="244">Accounts receivable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="244">Customers</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="244">All customers</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="246"><img src="media/TCS-on-Sale-of-Goods-007.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="246" alt="All customer page."></p>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="248">When an invoice and payment transactions are posted, the following values are used to calculate TCS:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="250">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="250">Threshold limit: 50,00,000</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="251">TCS rate: 0.0750 percent</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="253">The following table shows the transaction details.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="255">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="255">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="255">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="255">Payment received</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="255">Accumulated threshold</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="255">TCS applicable</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="255">Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="257">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="257">5-Apr-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="257">20,00,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="257">20,00,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="257">No</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="257">TCS is applicable from October   1, 2020.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="258">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="258">10-May-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="258">15,00,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="258">35,00,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="258">No</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="258">TCS is applicable from October   1, 2020.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="259">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="259">10-Aug-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="259">10,00,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="259">45,00,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="259">No</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="259">TCS is applicable from October   1, 2020</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="260">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="260">1-Sep-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="260">8,00,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="260">53,00,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="260">No</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="260">Transaction accumulation will   start from April 1, 2020.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="261">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="261">1-Oct-20</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="261">2,00,150</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="261">2,00,150</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="261">Yes</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="261">The threshold of INR 50,00,000   was already crossed before October 1,2020. TCS will apply on (2,00,150 ÷   1.0750) × 0.0750 percent.</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="263">When you initialize the initial threshold achieved value, the system calculates and shows INR 53,00,000.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="265">When you post a payment of 2,00,150 that is received from the customer, the following accounting entry is posted.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="267">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="267">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="267">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="267">DR</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="267">CR</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="269">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="269">Bank   A/C</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="269">2,00,150</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="269"> </td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="270">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="270">Customer   A/C</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="270"> </td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="270">2,00,150</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="271">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="271">TCS   Interim payable account</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="271">150</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="271"> </td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="272">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="272">TCS   Payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="272"> </td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="272">150</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="274">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="275">The first time that the system crosses the threshold amount, you must manually adjust the calculated TCS amount. The amount to adjust should be minor. The variation in the calculation occurs because the current algorithms work differently. This difference will be corrected in the future.
+When an invoice is posted against the last payment transaction, the following entry is posted.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="278">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="278">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="278">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="278">DR</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="278">CR</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="280">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="280">Customer   A/C</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="280">2,00,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="280"> </td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="281">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="281">To Sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="281"> </td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="281">2,00,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="282">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="282">Customer</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="282">150</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="282"> </td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="283">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="283">Interim   TCS payable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="283"> </td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="283">150</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="tcs-that-vendors-deduct-on-purchases-of-goods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="285">TCS that vendors deduct on purchases of goods</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="287">If the selling vendor deducts TCS against the organization, you can apply the same <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="287">TCS on sales of goods</strong> withholding tax group. The threshold won't apply on the purchase transaction. When you post the purchase order, the TCS amount that the vendor deducted is posted directly to the TCS recoverable account. To match the recoverable amount before you make your claim, you must download Form 26AS from the appropriate government website.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="289">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="289">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="289">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="289">DR</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="289">CR</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="291">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="291">Purchase</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="291">2,00,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="291"> </td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="292">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="292">Vendor   A/C</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="292"> </td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="292">2,00,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="293">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="293">TCS   Recoverable A/C</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="293">150</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="293"> </td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="294">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="294">Vendor   A/C</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="294"> </td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="294">150</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="296">Every organization will claim a credit for TCS deduction after it reconciles the deduction with Form 26AS.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="298">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="298"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="298">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="298">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="298">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="298">TDS/TCS inquiry</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="299"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="299">Select the required column fields to generate the report.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="301"><img src="media/TCS-on-Sale-of-Goods-008.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md" sourcestartlinenumber="301" alt="Tax transaction inquiry page."></p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

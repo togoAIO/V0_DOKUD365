@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Create payments for a customer who have direct debit mandates | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Create payments for a customer who have direct debit mandates | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="create-payments-for-a-customer-who-have-direct-debit-mandates" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="26">Create payments for a customer who have direct debit mandates</h1>
+
+[!include[banner](../../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="30">This procedure shows how to generate an ISO20022 direct debit payment file for a customer who has direct debit configured and an invoice to be paid. Creating and posting an invoice is optional. Instead of having an invoice to be paid you can select a mandate in a journal prior to generating a payment file, to support a customer prepayment scenario.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="34">The demo data company used to create this procedure is DEMF.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="38">This is the fifth of five procedures that demonstrate the customer payment process using electronic reporting configurations. Before you can complete this task, you must complete the earlier tasks. You must first import customer payment electronic reporting configurations, configure method of payments, and set up your company and customer information.</p>
+<h2 id="post-a-free-text-invoice-with-direct-debit-information" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="41">Post a free text invoice with direct debit information</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="42">Go to Accounts receivable &gt; Invoices &gt; All free text invoices.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="43">Click New.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="44">In the Customer account field, enter or select a value.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="45">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="45">For example, select DE-010.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="46">In the Method of payment field, enter or select a value.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="47">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="47">For example. select Electronic.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="48">In the Direct debit mandate ID field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="49">Click Add line.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="50">In the Description field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="51">In the Main account field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="52">In the Unit price field, enter a number.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="53">Click Post.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="54">Click OK.</li>
+</ol>
+<h2 id="create-a-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="56">Create a payment</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="57">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="57">Go to Accounts receivable &gt; Payments &gt; Payment journal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="58">Click New.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="59">In the Name field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="60">Click Lines.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="61">Click Payment proposal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="62">Click Create payment proposal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="63">Expand the Records to include section.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="64">Click Filter.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="65">In the list, select the row for the Customer transactions table and the Method of payment field.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="66">You can apply any criteria for selecting customer transactions to pay. For this example, use Electronic as a method of payment to filter transactions.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="67">In the Criteria field, enter or select a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="68">Click OK.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="69">Click OK.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/tasks/create-payments-customers-who-have-direct-debit-mandates.md" sourcestartlinenumber="70">Click Create payments.</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

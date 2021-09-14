@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Fixed assets roll forward report | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Fixed assets roll forward report | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="fixed-assets-roll-forward-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="29">Fixed assets roll forward report</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="33">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="33">Fixed assets roll forward</strong> report provides, in an easy-to-read Microsoft Excel format, the detailed fixed asset data that you require for period closing, financial statements, and tax reporting. The report includes start and end balances for fixed assets, together with valuation movements for the period, and any new asset acquisitions and disposals that occurred during the period. Data is reported for individual fixed assets, and values are also summarized for fixed asset groups and the legal entity.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="35">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="35">Fixed assets roll forward</strong> report uses the Electronic reporting (ER) framework. Before you can run the report, the Fixed assets model and Fixed asset roll-forward configurations must be imported from Microsoft Dynamics Lifecycle Services (LCS). For instructions, see <a href="/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="35">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="37">This report is available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, or as a hotfix for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). Three hotfixes must be applied to environments that have the July 2017 release:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="39">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="39"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="39">KB 4041754:</strong> Electronic reporting (ER) configuration can't be downloaded from LCS as not applicable for the current version after applying the platform update package</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="40"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="40">KB 4056107:</strong> Electronic reporting (GER) cumulative update 5</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="41"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="41">KB 4056353:</strong> Fixed assets Statement and Notes reports don't meet the requirements in GAAP and IFRS</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="43">The following table describes the fields that are available on the report.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="46">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="46">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="46">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="46">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="48">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="48">Balances: Opening</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="48">The fixed asset net book value as of the &quot;from&quot; date that is specified on the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="49">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="49">Balances: Closing</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="49">The fixed asset net book value as of the &quot;to&quot; date that is specified on the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="50">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="50">Acquisitions: Opening value</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="50">The sum of all transactions of the <strong>Acquisition</strong> and <strong>Acquisition adjustment</strong> types up to the &quot;from&quot; date that is specified on the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="51">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="51">Acquisitions: Period acquisitions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="51">The sum of all transactions of the <strong>Acquisition</strong> and <strong>Acquisition adjustment</strong> types that were posted during the date range for the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="52">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="52">Acquisitions: Period disposals</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="52">The sum of all acquisition reversals that were posted that had a disposal transaction during the date range for the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="53">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="53">Acquisitions: Closing value</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="53">The sum of all transactions of the <strong>Acquisition</strong> and <strong>Acquisition adjustment</strong> types up to the &quot;to&quot; date that is specified on the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="54">Depreciations: Opening value</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="54">The sum of all transactions of the <strong>Depreciation</strong>, <strong>Depreciation adjustment</strong>, <strong>Special depreciation allowance</strong>, and <strong>Extraordinary depreciation</strong> types up to the &quot;from&quot; date that is specified on the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="55">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="55">Depreciations: Period depreciations</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="55">The sum of all transactions of the <strong>Depreciation</strong>, <strong>Depreciation adjustment</strong>, and <strong>Extraordinary depreciation</strong> types that were posted during the date range for the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="56">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="56">Depreciations: Period special depreciations</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="56">The sum of all transactions of the <strong>Special depreciation allowance</strong> type that were posted during the date range for the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="57">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="57">Depreciations: Period disposals</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="57">The sum of all depreciation reversals that were posted that had a disposal transaction during the date range for the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="58">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="58">Depreciations: Closing value</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="58">The sum of all transactions of the <strong>Depreciation</strong>, <strong>Depreciation adjustment</strong>, <strong>Special depreciation allowance</strong>, and <strong>Extraordinary depreciation</strong> types up to the &quot;to&quot; date that is specified on the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="59">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="59">Write-ups/Write downs: Opening value</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="59">The sum of all transactions of the <strong>Write up adjustment</strong>, <strong>Write down adjustment</strong>, and <strong>Revaluation</strong> types up to the &quot;from&quot; date that is specified on the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="60">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="60">Write-ups/Write downs: Period write ups</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="60">The sum of all transactions of the <strong>Write up adjustment</strong> type that were posted during the date range for the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="61">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="61">Write-ups/Write downs: Period write downs</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="61">The sum of all transactions of the <strong>Write down adjustment</strong> type that were posted during the date range for the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="62">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="62">Write-ups/Write downs: Period revaluations</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="62">The sum of all transactions of the <strong>Revaluation</strong> type that were posted during the date range for the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="63">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="63">Write-ups/Write downs: Period disposals</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="63">The sum of all write-up, write-down, and revaluation reversals that were posted that had a disposal transaction during the date range for the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="64">Write-ups/Write downs: Closing value</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="64">The sum of all transactions of the <strong>Write up adjustment</strong>, <strong>Write down adjustment</strong>, and <strong>Revaluation</strong> types up to the &quot;to&quot; date that is specified on the report.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="65">Disposals: Disposal date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="65">The disposal date for the fixed asset book.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="66">Disposals: Net book value at disposal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="66">The net book value of the fixed asset book at the time of disposal.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="67">Disposals: Sale value</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="67">The sales value for the fixed asset book with a disposal – sale transaction.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="68">Disposals: Scrap value</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="68">The scrap value for the fixed asset book with a disposal – scrap transaction.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="69">Disposals: Profit/Loss</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/fixed-assets/Fixed-asset-roll-forward-report.md" sourcestartlinenumber="69">The profit or loss value that is calculated as part of the disposal transaction for the fixed asset book.</td>
+</tr>
+</tbody>
+</table>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

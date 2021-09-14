@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Modelcode Basic PVG | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Modelcode Basic PVG | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="modelcode-basic-pvg" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="1">Modelcode Basic PVG</h1>
+
+<h2 id="introduction" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="3">Introduction</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="5"><img src="../../media/Modelcode/Basic_PVG/Prozess.png" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="5" alt="process overview" title="process overview">
+ </p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="8">For trainees new to the Modelcode &amp; PVG-Code, this introduction is intended to provide a brief overview of these tools and how they can be used. Understanding thes fundamental points is required in order to use the Modelcode &amp; PVG-Code correctly.
+The Modelcode is a product configurator (user selections generate a code-string to represent a specific product). It creates a universal language that can be understood and used by the entire WIKA world and all of its customers. Subsidiaries can access the Modelcode directly from Dynamics and some customers can access it through the Customer Portal.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="11">With the Modelcode, a product can be configured by first selecting a product model from a list of available models and then selecting the desired options from a list of available options. Each option is assigned an alpha-numerical code so that when a product is configured, a code-string is generated which serves as a representation of the requested product.
+The Modelcode can also be used to guide customers to the selection of specific products. For many models, a wide variety of production options may exist but it is not always desirable to present these options to customers. Also, different subsidiaries may offer the same product with different options but only the standard options (defined by the product CoE) are used in the Modelcode. If additional product options are available, a free-text field can be added to the Modelcode which allows the manual entry of customer requirements by sales. When this option is used, another tool may be used for own produced products to complete the coding for the free-text. This is when the PVG (Product Variant Generator) is used. The PVG Code is not used by sales but only by work preparation department.
+The PVG is similar to the Modelcode but it includes subsidiary-specific options that are missing from the Modelcode. The PVG is used, when needed, to generate a PVG-Code to complete a product configuration for a customer requirement. It also contains the structure required to link selections from the Modelcode and PVG-Code with BOM components and sub-operations in order to build the required BOM´s and Routes. All PVG details will be provided in this document.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="15">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="16">The PVG code cannot generate item texts or prices shown to the customer. The PVG is only used to have the possibility for automatic BOM and ROUTE Generation for own produced products. PVG has no use for purchased products.</p>
+</div>
+<h2 id="options-for-the-creation-of-a-pvg-code" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="18">Options for the creation of a PVG-Code</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="20">When setting up the Modelcode and PVG Code, there are three combination options (Modelcode, PVG Code, and Modelcode + PVG Code). The information below illustrates these combinations and provides an example of where each option might be used along with pros and cons of each option.</p>
+<h3 id="pvg-code-without-structure---version-1" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="22">PVG-Code without Structure - Version 1</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="24"><img src="../../media/Modelcode/Basic_PVG/PVGCode_Version1.PNG" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="24" alt="PVG-Code without Structure - Version 1" title="PVG-Code without Structure - Version 1">
+ </p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="27">In this version, there is no structure in the PVG-Code. All of the options for the BOM and Route are pulled only from the Modelcode.
+This setup works well for simple or standard configurations where non-standard options don´t exist.</p>
+<div class="WARNING" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="30">
+<h5>Warning</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="31">This version limits the BOM &amp; Route for the product.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="33">That means if a product could be produced with different items and operations, this could not be possible due the Modelcode do not display such non-standard options and Criterias.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="35">Example: Non-standard connection thread 7/16-20 UNF for model 23x.50</p>
+</div>
+<h3 id="pvg-code-with-structure---version-2" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="37">PVG-Code with Structure - Version 2</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="39"><img src="../../media/Modelcode/Basic_PVG/PVGCode_Version2.PNG" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="39" alt="PVG-Code with Structure - Version 2" title="PVG-Code with Structure - Version 2">
+ </p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="42">This version presents a solution to the problem described in version 1.
+Only the criteria groups which include the missing options have been created in the PVG-Code. This is ideal when there is a low number of options not covered by the Modelcode</p>
+<h3 id="pvg-code-with-structure---version-3" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="45">PVG-Code with Structure - Version 3</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="47"><img src="../../media/Modelcode/Basic_PVG/PVGCode_Version3.PNG" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="47" alt="PVG-Code with Structure - Version 3" title="PVG-Code with Structure - Version 3">
+ </p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="50">In this version, all criteria groups and options are created in the PVG-Code. All BOM and Route options come from the PVG-Code. This scenario is ideal when there is a large number of options not covered by the Modelcode.
+That means, more options for BOM’s and routes can be selected from the PVG-Code than the Modelcode. It is possible to code free-text selections from the Modelcode in order to better prepare the item for production readiness. So, the options of each criterion in the Model code will automatically be transferred to the same criterion in the PVG-codes.</p>
+<div class="WARNING" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="53">
+<h5>Warning</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="54">In this version, the structure must again be partially or completely rebuilt in the PVG-Code. With modifications to features or criteria in the Modelcode, the PVG-Code must also be updated</p>
+</div>
+<h2 id="considerations-before-starting" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="56">CONSIDERATIONS BEFORE STARTING</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="57">Follow these steps to simplify the start-up process for developing a new PVG-Code.</p>
+<h3 id="training" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="59">Training</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="60">Before starting to build up / work with PVG make sure to get an official training in modelcoding an PVG from
+IT-PR.</p>
+<h3 id="assessment" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="63">Assessment</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="64">Before a PVG-Code is created, it is necessary to create an assessment of all items that have ever been ordered which are to be included in the PVG-Code.</p>
+<h3 id="pareto" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="66">Pareto</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="67">From this assessment, a Pareto-analysis must be performed in order to determine which products to include in the PVG-Code. The most frequently ordered items should be included. With this analysis, the standard products and a majority of orders will be covered and the process can be started quickly.</p>
+<h3 id="standard-goods" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="69">Standard Goods</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="70">The goods (components or finished goods) required for the standard process (MTO) must be communicated to the dispatchers/planners. They must then mark the required flags in the ERP system to ensure that a sufficient quantity of these items is always available in stock.</p>
+<h3 id="same-main-positions" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="72">Same Main Positions</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="73">In the case of the same or similar PVG-Structures, it is important to ensure that the most important items (i.e. sockets, cases, rings, etc.) are in the same primary position in each PVG-Code.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="75">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="76">Criteria which are created only for the PVG will always begin with “AV-“ and will therefore be differentiated from the criteria for the Modelcode</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="78">New criteria / options and attributes / attribute values are only allowed to be created in Klingenberg D365 and not in any local system.</p>
+</div>
+<div class="IMPORTANT" sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="80">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_10_ModelcodeGuideline/Modelcode_Basic_PVG.md" sourcestartlinenumber="81">Requests for new options, which will only be used in the Modelcode, must first be coordinated with the Modelcode representative in the CoE.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

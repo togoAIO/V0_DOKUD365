@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Expense and income codes | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Expense and income codes | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="expense-and-income-codes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="27">Expense and income codes</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="30">Expense and income codes are created on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="30">Expense and income codes</strong> page. The hierarchical structure lets you group income and expenses according to the lines of the profit tax declaration. Therefore, the list of expense and income codes contains all the income and expense codes that are used in tax reporting. Turnovers on parent income and expense codes consist of the turnovers on child income and expense codes. The list of expense and income codes is synced with the list of financial dimensions selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="30">Tax dimension</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="30">Profit tax</strong> tab of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="30">General ledger parameters</strong> page. This mechanism is used to calculate the profit tax declaration. For more information, see <a href="rus-profit-tax-declaration.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="30">Profit tax declaration</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="32">You should set the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="32">ExpenseAndIncomeCode</strong> field in the following places:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="34">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="34">In primary documents such as purchase orders, sales orders, advance reports, and inventory journals, and in master records such as main accounts and fixed assets.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="35">In vendor, customer, ledger, and inventory transactions.</li>
+</ul>
+<h2 id="create-an-expense-or-income-code" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="37">Create an expense or income code</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="39">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="39"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="39">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="39">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="39">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="39">Profit tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="39">Expense codes</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="41"><img src="media/1_Expense_codes.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="41" alt="Expense codes page."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="43"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="43">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="43">Tree view</strong> to view expense and income codes as a tree, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="43">New</strong> to create a code.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="44">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="44">Expense code</strong> field, enter the expense or income code. The code should be unique.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="46">Typically, when codes are numbered, you should adhere to a hierarchical principle. For example, if you create a child code for code <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="46">90100000</strong>, it should start with <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="46">901</strong>, such as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="46">901010000</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="46">901020000</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="48"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="48">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="48">Name</strong> field, enter a detailed description of the expense or income code.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="49"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="49">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="49">General</strong> FastTab, set the following fields:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="51">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="51">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="51">Short description</strong> field, enter the short name of the expense or income code.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="52">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="52">Code type</strong> field, select the type of code: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="52">Income</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="52">Issue</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="52">Unknown</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="53">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="53">Dimension</strong> section, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="53">Locked</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="53">Yes</strong> to stop synchronization of the selected expense or income code.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="54">Optional: In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="54">Parent code</strong> section, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="54">Parent code</strong> field, select a parent code to create a hierarchical structure.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="55">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="55">Income tax</strong> section, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="55">Sales tax code</strong> field, select the sales tax code that should be used to calculate the amount of tax assets and tax liabilities for the expense or income code.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="57">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="57">Set up</strong> FastTab, you can select the registers that will be used to calculate the amounts and totals for expense or income codes.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="59">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="60">You can select registers only for codes that aren't parent codes.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="62">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="62">Available registers</strong> section, select the registers, and then select the right arrow button to move them to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="62">Selected registers</strong> section.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="64">Alternatively, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="64">Default &gt; Default</strong>. In this case, the system automatically suggests registers and moves them to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="64">Selected registers</strong> section. A register will be suggested for an income or expense code in the following situations:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="66">The income or expense code, or its parent code, was selected in the register settings.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="67">The income or expense code, or its parent code, was used in the sequence of calculation for rated expense register settings.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="68">The register is preconfigured so that it's used by default when totals are calculated for the expense or income code. You can find an example list of expense and income codes in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="68">RUMF</strong> legal entity.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="70">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="70">Ledger account setup</strong> to select the ledger accounts that transactions will be assigned to for the income or expense code.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="72">For example, amounts for ledger transactions <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="72">Debit 62.110</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="72">Credit 90.110</strong>, where the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="72">ExpenseAndIncomeCode</strong> financial dimension is either set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="72">901010200</strong> or left blank, will be assigned to income code <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="72">901010200</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="72">Revenue from sales of goods</strong>).</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="74"><img src="media/2_Expense_code_and_ledger_relation.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="74" alt="Expense code and ledger relation page, Financial dimensions FastTab."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="76"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="76">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="76">Expense code and ledger relation</strong> page, in the header, set the following values:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="78">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="78"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="78">In each of the two <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="78">Valid for</strong> fields, select one of the following values:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="80">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="80"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="80">Table</strong> – The setting applies to a separate account.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="81"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="81">Group</strong> – The setting applies to an account interval group.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="82"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="82">All</strong> – The setting applies to all accounts.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="84"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="84">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="84">Debit account</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="84">Credit account</strong> fields, based on the value of the corresponding <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="84">Valid for</strong> field:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="86">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="86">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="86">Valid for</strong> field is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="86">Table</strong>, select a ledger account.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="87">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="87">Valid for</strong> field is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="87">Group</strong>, select the code for an account interval group.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="88">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="88">Valid for</strong> field is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="88">All</strong>, leave the field blank.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="90"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="90">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="90">Financial dimensions</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="90">Default financial dimensions</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="90">Offset dimensions</strong> sections, you can specify financial dimension codes that account entries will be used for when totals are calculated on the expense or income code, in addition to the setup of ledger accounts that you selected earlier.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="92">For example, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="92">Agreement</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="92">ExpenseAndIncomeCode</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="92">Worker</strong> fields, select the dimensions for the account and the offset account.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="94">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="95">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="95">ExpenseAndIncomeCode</strong> dimension is selected as the dimension for expense and income codes on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="95">General ledger parameters</strong> page. It can’t be changed. If you set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="95">Empty dimension using</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="95">Yes</strong>, the expense or income code will also include transactions that have the same ledger accounts, but the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-expense-and-income-codes.md" sourcestartlinenumber="95">ExpenseAndIncomeCode</strong> field is blank.</p>
+</div>
+</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

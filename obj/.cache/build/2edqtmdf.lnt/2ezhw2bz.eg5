@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Create and work with custom fields | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Create and work with custom fields | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="create-and-work-with-custom-fields" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="27">Create and work with custom fields</h1>
+
+<div class="IMPORTANT" sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="1">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="2">Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
+</div>
+
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="31">While there is an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. While programmers can be used to add those fields as extensions in the developer tools, the custom fields feature allows fields to be added directly from the user interface, thereby allowing you to tailor the application to fit your business using your web browser.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="33"><em sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="33">Only users with special permissions have access to this feature.</em></p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="35">This video shows how easy it is to add a custom field to a page: <a href="https://www.youtube.com/watch?v=gWSGZI9Vtnc" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="35">Adding custom fields</a>.</p>
+<h2 id="creating-custom-fields" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="37">Creating custom fields</h2>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="39">After you've identified additional information that you would like to track in the application, you can create the custom field on the appropriate table and expose that new field on a page.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="41">The following steps describe the process for creating a custom field and placing that field on a form.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="43">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="43"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="43">Navigate to the form where the new field is needed.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="44">Because the end goal is to expose the custom field on a form, the entry point for creating custom fields exists inside the personalization experience. Open the personalization toolbar by selecting <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="44">Options</strong>, and then <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="44">Personalize this form</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="45"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="45">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="45">Insert</strong> and then <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="45">Field</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="46"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="46">Select the region of the form where you want to expose the new field. After selection, the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="46">Insert fields</strong> dialog box will display a list of existing fields that can be inserted into the selected region of the form.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="47"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="47">Ensure that the field you are interested in does not already exist in the list. If it does, you can simply select that field in the list and click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="47">Insert</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="48"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="48">Click the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="48">Create new field</strong> button above the list to initiate the process of creating a custom field. This will open the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="48">Create new field</strong> dialog box.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="50">If you do not see the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="50">Create new field</strong> button, you do not have the necessary permissions to use this feature.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="52">In the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="52">Create new field</strong> dialog box, enter the following information.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="54">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="54"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="54">Select the database table where this field should be added. Note that only tables that support custom fields will appear in the drop-down list. See the section below for technical details on supported tables.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="56"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="56">Select the data type for the new field. The available data types are checkbox, date, date time, decimal, number, picklist, and text.</p>
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="58">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="58">If you choose the text data type, you can also specify the maximum length of the text that can be entered in this field.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="59">If you choose the picklist data type, you can also select the set of valid values for the field.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="61"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="61">Provide a name, label, and help text for the field. The name corresponds to the physical field name in the database, whereas the label and help text are the text used to represent this field in the user interface.</p>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="63"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="63">If this is the only field that you need to create for this form, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="63">Save</strong>. If you need to create additional fields, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="63">Save and new</strong> and go back to step 7. Note that there is currently a limit of <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="63">20 custom fields per table</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="64"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="64">Leaving the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="64">Create new field</strong> dialog box will return you to the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="64">Insert fields</strong> dialog box. Any custom fields that were just added will be automatically marked in the field list to be inserted into the form.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="65"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="65">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="65">Insert</strong> to insert the marked fields into the selected region of the form.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="66"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="66"><strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="66">Optional:</strong> Enable <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="66">Move</strong> mode from the personalization toolbar to move the new fields to their desired location in the selected region. See <a href="personalize-user-experience.html" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="66">Personalize the user experience</a> for more information about how to use the various personalization capabilities to optimize a form for your personal usage.</p>
+</li>
+</ol>
+<div class="WARNING" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="68">
+<h5>Warning</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="69">The ability to enter values in a custom field added to a page is dependent on whether the table associated with the custom field is editable or read only. When the associated table is read only, all fields linked to that table, including any custom fields, will also be read only.</p>
+</div>
+<h2 id="sharing-custom-fields-with-other-users" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="72">Sharing custom fields with other users</h2>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="74">After you have created a custom field and exposed it on a page, you might want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:</p>
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="76">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="76">The recommended route is to <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="76">publish a <a href="saved-views.html" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="76">saved view</a></strong> with the custom field added to the page to the appropriate set of users. If the saved views feature is not enabled, the system administrator can apply the personalization to the desired users from the Personalization form. For more information, see <a href="personalize-user-experience.html" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="76">Personalize the user experience</a>.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="77">Alternatively, you can export your changes (called <em sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="77">personalizations</em>), send them to one or more users, and have each of those users import your changes. The <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="77">Manage</strong> option on the personalization toolbar enables you to export and import personalizations.</li>
+</ul>
+<h2 id="managing-custom-fields" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="79">Managing custom fields</h2>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="81">Management of all the custom fields in the system can be accomplished through the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="81">Custom fields</strong> page in the System administration module. This page allows users access to many capabilities, including:</p>
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="83">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="83">Viewing a list of all custom fields in the system.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="84">Limited editing of existing custom fields.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="85">Deleting custom fields.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="86">Exposing custom fields on data entities.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="87">Providing translations of custom field labels and help text.</li>
+</ul>
+<h3 id="viewing-all-custom-fields" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="89">Viewing all custom fields</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="91">The <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="91">Custom fields</strong> page provides visibility to all the custom fields that have been defined in the system. Simply select the table that you are interested in, and the page will update to show a list of the custom fields associated with that table. Choosing a custom field from the list will allow you to view all the details about the field.</p>
+<h3 id="editing-custom-fields" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="93">Editing custom fields</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="95">After a custom field has been created, only certain pieces of information about the custom field can be modified on the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="95">Custom fields</strong> page.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="97">You <em sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="97">can</em> modify these attributes:</p>
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="99">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="99">Label</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="100">Help text</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="101">Length, for Text fields</li>
+</ul>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="103">You <em sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="103">cannot</em> edit the following attributes:</p>
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="105">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="105">Field name</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="106">Data type</li>
+</ul>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="108">Additionally, for picklist fields, the set of valid values for the custom field can be reordered, and new values can be added; however, existing values for the picklist field cannot be removed. Remember to click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="108">Apply changes</strong> when you are done editing fields for a particular table so the changes are saved.</p>
+<h3 id="exposing-custom-fields-on-data-entities" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="110">Exposing custom fields on data entities</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="112">It may also be important to allow custom fields to be visible on data entities. Data entities are utilized in the <a href="https://docs.microsoft.com/en-gb/dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="112">Office integration overview (This is an external link)</a> feature, as well as for data import/export scenarios.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="114">Follow these steps to expose a custom field on a data entity:</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="116">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="116">Select the custom field on the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="116">Custom fields</strong> form.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="117">Expand the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="117">Entities</strong> section to view the set of relevant entities.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="118">Click the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="118">Edit</strong> button.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="119">Modify the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="119">Enabled</strong> field to be selected for each entity that should expose this field.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="120">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="120">Apply changes</strong> to save your selections.</li>
+</ol>
+<h3 id="allowing-custom-fields-to-be-displayed-in-other-languages" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="122">Allowing custom fields to be displayed in other languages</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="124">Because custom fields may need to be accessed by users in a variety of languages, the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="124">Custom fields</strong> page provides a mechanism to allow the label and help text for a custom field to be translated into other languages.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="126">The following steps describe the process for translating custom fields in other languages:</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="128">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="128"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="128">Select the custom field on the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="128">Custom fields</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="129"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="129">Select the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="129">Translations</strong> button in the Action Pane. This will open a drop-down menu with existing translations for this field.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="130"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="130">The <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="130">Language</strong> drop-down menu shows the set of languages for which translations have already been provided.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="132">If you want to edit an existing translation, select the desired language from the menu and modify the values for the label and help text.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="134">Otherwise, click the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="134">Add language</strong> button, select the desired language from the menu, and then provide translated values for the label and help text.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="136"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="136">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="136">OK</strong> when you are finished.</p>
+</li>
+</ol>
+<h3 id="deleting-custom-fields" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="138">Deleting custom fields</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="140">In some rare cases, you may decide that a custom field is no longer needed. When this occurs, a system administrator can choose to delete the field from the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="140">Custom fields</strong> page. To do this, ensure the correct field is selected, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="140">Delete</strong>, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="140">Yes</strong> to confirm the deletion, and finally click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="140">Apply changes</strong>.</p>
+<div class="NOTE" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="142">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="143">This action cannot be undone, and will result in the data associated with the field being permanently deleted from the database.</p>
+</div>
+<h2 id="appendix" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="145">Appendix</h2>
+<h3 id="why-cant-i-enter-a-value-in-my-custom-field" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="147">Why can't I enter a value in my custom field?</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="149">If you can't type a value into the custom field when the page is in Edit mode, this may be because the table that the field was added to is currently read only. All fields in a table become read only if the backing table is currently configured as read only on the page.</p>
+<h3 id="who-can-create-custom-fields" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="151">Who can create custom fields?</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="153">As a safeguard to the system, only system administrators are able to create custom fields by default. However, those power users whom the organization deems necessary can be given rights to create custom fields by a system administrator using the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="153">Runtime customization power user</strong> security role. Users without this security role will not be able to create custom fields, but will still be able to see and interact with custom fields added by other users in the system.</p>
+<h3 id="what-tables-support-custom-fields" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="155">What tables support custom fields?</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="157">For performance and technical reasons, only tables that meet the following conditions currently allow custom fields to be added.</p>
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="159">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="159"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="159">The table must be tagged as one of these groups:</p>
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="161">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="161">Group</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="162">WorksheetHeader</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="163">Main</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="164">Miscellaneous</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="165">Parameter</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="166">Reference</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="167">TransactionHeader</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="169"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="169">The table cannot extend another table.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="170"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="170">The table cannot be marked as a system table.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="171"><p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="171">The table cannot be a temporary table.</p>
+</li>
+</ul>
+<h3 id="can-i-reference-custom-fields-from-the-developer-tools" sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="173">Can I reference custom fields from the developer tools?</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/get-started/user-defined-fields.md" sourcestartlinenumber="175">Custom fields can only be managed through the user interface and cannot be referenced by code.</p>
+<!---
+title: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
+description: In diesem Thema wird gezeigt, wie Sie benutzerdefinierte Felder über die Benutzerschnittstelle erstellen, um die Anwendung für ihre geschäftlichen Bedürfnisse anzupassen.
+author: jasongre
+manager: AnnBe
+ms.date: 03/09/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+ms.search.form: SysCustomFieldManageFields
+audience: Application User
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: jasongre
+ms.search.validFrom: 2018-1-31
+ms.dyn365.ops.version: Platform update 13
+ms.openlocfilehash: 5f74397bcdd59a1fe24f5b6046081cbd2bed461b
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693544"
+---
+# <a name="create-and-work-with-custom-fields"></a>Erstellen von und Arbeiten mit benutzerdefinierten Feldern
+
+[!include [banner](../includes/banner.md)]
+
+Während es einen umfangreichen Satz von vorkonfigurierten Feldern gibt, um eine große Bandbreite von Geschäftsprozessen zu verwalten, besteht manchmal für ein Unternehmen der Bedarf, zusätzliche Informationen im System nachzuverfolgen. Während Programmierer verwendet werden können, um diese Felder als Erweiterungen in den Entwicklertools hinzuzufügen, können mit der Funktion für benutzerdefinierte Felder Felder direkt über die Benutzeroberfläche hinzugefügt werden, sodass Sie die Anwendung mithilfe Ihres Webbrowsers an Ihr Unternehmen anpassen können.
+
+Die Möglichkeit, benutzerdefinierte Felder hinzuzufügen, ist in Plattformupdate 13 und höher verfügbar. Nur Benutzer mit speziellen Berechtigungen haben Zugriff auf diese Funktion.
+
+Dieses Video zeigt, wie einfach es ist, ein benutzerdefiniertes Feld einer Seite hinzuzufügen: [Hinzufügen von benutzerdefinierten Feldern](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
+
+## <a name="creating-custom-fields"></a>Erstellen benutzerdefinierter Felder
+
+Nachdem Sie zusätzliche Informationen identifiziert haben, die Sie in der Anwendung nachverfolgen möchten, können Sie ein benutzerdefiniertes Feld in der entsprechenden Tabelle erstellen und dieses Feld auf einer Seite verfügbar machen.
+
+In den folgenden Schritten wird der Prozess zum Erstellen eines benutzerdefinierten Felds und der Platzierung dieses Felds in einem Formular beschrieben.
+
+1. Navigieren Sie zum Formular, in dem das neue Feld benötigt wird.
+2. Da es das Endziel ist, das benutzerdefinierte Feld in einem Formular verfügbar zu machen, befindet sich der Einstiegspunkt zur Erstellung benutzerdefinierter Felder innerhalb der Personalisierungsoberfläche. Öffnen Sie die Personalisierungssymbolleiste, indem Sie **Optionen** auswählen und dann **Dieses Formular personalisieren**
+3. Klicken Sie auf **Einfügen** und dann auf **Feld**.
+4. Wählen Sie im Formular die Region aus, in der Sie das neue Feld verfügbar machen möchten. Nach der Auswahl wird das Dialogfeld **Felder einfügen** eine Liste vorhandener Feldern anzeigen, die in die ausgewählte Region im Formular eingefügt werden können.
+5. Stellen Sie sicher, dass das Feld, das Sie interessiert sind, nicht bereits in der Liste vorhanden ist. Wenn dies der Fall ist, können Sie einfach dieses Feld in der Liste auswählen und auf **Einfügen** klicken.
+6. Klicken Sie auf die Schaltfläche **Neues Feld erstellen** über der Liste, um den Prozess der Erstellung eines benutzerdefinierten Felds zu initiieren. Dadurch wird das Dialogfeld **Neues Feld erstellen** geöffnet.
+
+    Wenn Sie die Schaltfläche **Neues Feld erstellen** nicht sehen, haben Sie nicht die notwendigen Berechtigungen, um diese Funktion zu verwenden.
+
+7. Geben Sie im Dialogfeld **Neues Feld erstellen** die folgenden Informationen ein.
+
+    1. Wählen Sie die Datenbanktabelle aus, in der dieses Feld hinzugefügt werden soll. Beachten Sie, dass in der Dropdownliste nur Tabellen angezeigt werden, die benutzerdefinierte Felder unterstützen. Sehen Sie den Abschnitt unten für technische Details zu unterstützen Tabellen.
+    2. Wählen Sie den Datentyp für das neue Feld aus. Die verfügbaren Datentypen sind Kontrollkästchen, Datum, Datum/Uhrzeit, Dezimal, Zahl, Auswahlliste und Text.
+
+        - Wenn Sie den Textdatentyp auswählen, können Sie auch die maximale Länge des Texts angeben, der in diesem Feld eingegeben werden kann.
+        - Wenn Sie den Auswahllisten-Datentyp auswählen, können Sie auch die Gruppe mit gültigen Werte für das Feld auswählen.
+
+    3. Geben Sie einen Namen, eine Beschriftung und einen Hilfetext für das Feld an. Der Name entspricht dem physischen Feldnamen in der Datenbank, wohingegen die Beschriftung und der Hilfetext der Text sind, der zur Darstellung dieses Felds in der Benutzeroberfläche verwendet wird.
+
+8. Wenn dies das einzige Feld ist, das Sie für dieses Formular erstellen müssen, klicken Sie auf **Speichern**. Wenn Sie zusätzliche Felder erstellen müssen, klicken Sie auf **Speichern und neu**, und kehren Sie zu Schritt 7 zurück. Beachten Sie, dass es aktuell eine Begrenzung von **20 benutzerdefinierten Feldern pro Tabelle** gibt.
+9. Wenn Sie das Dialogfeld **Neues Feld erstellen** verlassen, kehren Sie zum Dialogfeld **Felder einfügen** zurück. Alle benutzerdefinierten Felder, die gerade erst hinzugefügt wurden, werden automatisch in der Feldliste markiert, um in das Formular eingefügt zu werden.
+10. Klicken Sie auf **Einfügen**, um die markierten Felder in den ausgewählten Bereich des Formulars einzufügen.
+11. **Optional:** Aktivieren Sie den Modus **Verschieben** aus der Personalisierungssymbolleiste, um die neuen Felder an die gewünschte Position im ausgewählten Bereich zu verschieben. Weitere Informationen darüber, wie die verschiedenen Personalisierungsfunktionen verwendet werden, um ein Formular für Ihre persönliche Verwendung zu optimieren, finden Sie unter [Die Benutzeroberfläche personalisieren](personalize-user-experience.md).
+
+## <a name="sharing-custom-fields-with-other-users"></a>Benutzerdefinierte Felder für andere Benutzer freigeben
+
+Nachdem Sie ein benutzerdefiniertes Feld erstellt haben und es auf einem Formular verfügbar gemacht haben, möchten Sie vielleicht diese aktualisierte Seitenansicht bereitstellen, die das neue Feld für andere Benutzer im System enthält. Dies kann auf zwei unterschiedliche Arten mithilfe der Personalisierungsfunktionen des Produkts ausgeführt werden:
+
+- Die empfohlene Vorgehensweise erfolgt über den Systemadministrator, der eine Personalisierung an alle Benutzer oder einer Teilmenge der Benutzer mithilfe von Push übertragen kann. Weitere Informationen finden Sie unter [Personalisieren der Benutzeroberfläche](personalize-user-experience.md).
+- Alternativ können Sie Ihre Änderungen exportieren (genannt *Personalisierungen*), sie an einen oder mehrere Benutzer übermitteln und jeden dieser Benutzer dazu veranlassen, Ihre Änderungen zu importieren. Die Option **Verwalten** in der Personalisierungssymbolleiste ermöglich es Ihnen, Personalisierungen zu exportieren und importieren.
+
+## <a name="managing-custom-fields"></a>Benutzerdefinierte Felder verwalten
+
+Verwaltung aller benutzerdefinierten Felder im System kann über die Seite **Benutzerdefinierte Felder** im Systemverwaltungsmodul erfolgen. Diese Seite ermöglicht Benutzern den Zugriff auf viele Funktionen, einschließlich:
+
+- Anzeigen einer Liste aller benutzerdefinierten Felder im System.
+- Begrenzte Bearbeitung vorhandener benutzerdefinierter Felder.
+- Löschen benutzerdefinierter Felder.
+- Benutzerdefinierte Feldern in Datenentitäten verfügbar machen.
+- Bereitstellen von Übersetzungen benutzerdefinierter Feldbeschriftungen und von Hilfetext.
+
+### <a name="viewing-all-custom-fields"></a>Anzeigen aller benutzerdefinierten Felder
+
+Die Seite **Benutzerdefinierte Felder** bietet Sichtbarkeit für alle benutzerdefinierten Felder, die im System definiert wurden. Wählen Sie einfach die Tabelle aus, an der Sie interessiert sind, und die Seite wird aktualisiert, damit sie eine Liste der benutzerdefinierten Felder anzeigt, die dieser Tabelle zugeordnet sind. Das Auswählen eines benutzerdefinierten Felds aus der Liste ermöglicht es Ihnen, alle Details über das Feld anzuzeigen.
+
+### <a name="editing-custom-fields"></a>Benutzerdefinierter Felder bearbeiten
+
+Nachdem ein benutzerdefiniertes Feld erstellt wurde, können nur bestimmte Informationen über das benutzerdefinierte Feld auf der Seite **Benutzerdefinierte Felder** geändert werden.
+
+Sie *können* diese Attribute ändern:
+
+- Beschriftung
+- Hilfetext
+- Länge, für Textfelder
+
+Sie *können nicht* die folgenden Attribute ändern:
+
+- Feldname
+- Datentyp
+
+Darüber hinaus kann bei Auswahllistenfelder der Satz gültiger Werte für das benutzerdefinierte Feld neu angeordnet werden und neue Werte können hinzugefügt werden. Vorhandene Werte für das Auswahllistenfeld können jedoch nicht entfernt werden. Denken Sie daran, auf **Änderungen anwenden** zu klicken, wenn Sie mit der Bearbeitung von Feldern für eine bestimmte Tabelle fertig sind, damit die Änderungen gespeichert werden.
+
+### <a name="exposing-custom-fields-on-data-entities"></a>Benutzerdefinierte Felder in Datenentitäten verfügbar machen
+
+Gegebenenfalls ist es auch wichtig, zuzulassen, dass benutzerdefinierte Felder in Datenentitäten sichtbar sind. Dateneinheiten werden in der Funktion [Office Integrationsübersicht (This is an external link)](https://docs.microsoft.com/de-de/dynamics365/supply-chain/fin-ops-core/dev-itpro/office-integration/office-integration) sowie für Datenimport/-export-Szenarien verwendet.
+
+Folgen Sie diesen Schritten, um ein benutzerdefiniertes Feld in einer Datenentität verfügbar zu machen:
+
+1. Wählen Sie das benutzerdefinierte Feld im Formular **Benutzerdefinierte Felder** aus.
+2. Erweitern Sie den Bereich **Entitäten**, um den Satz relevanter Entitäten anzuzeigen.
+3. Klicken Sie auf die Schaltfläche **Bearbeiten**.
+4. Ändern Sie das Feld **Aktiviert**, das für jede Entität ausgewählt werden muss, die dieses Feld verfügbar machen soll.
+5. Klicken Sie auf **Änderungen anwenden**, um Ihre Auswahlen zu speichern
+
+### <a name="allowing-custom-fields-to-be-displayed-in-other-languages"></a>Die Anzeige von benutzerdefinierten Feldern in anderen Sprachen zulassen
+
+Da auf benutzerdefinierte Felder möglicherweise von Benutzern in einer Vielzahl von Sprachen zugegriffen werden muss, bietet die Seite **Benutzerdefinierte Felder** einen Mechanismus, der es ermöglicht, dass die Beschriftung und der Hilfetext eines benutzerdefinierten Felds in andere Sprachen übersetzt wird.
+
+In den folgenden Schritten wird der Prozess zum Übersetzen von benutzerdefinierten Felder in andere Sprachen beschrieben:
+
+1. Wählen Sie das benutzerdefinierte Feld auf der Seite **Benutzerdefinierte Felder** aus.
+2. Aktivieren Sie die Schaltfläche **Übersetzungen** im Aktivitätsbereich. Dadurch wird ein Dropdownmenü mit vorhandenen Übersetzungen für dieses Feld geöffnet.
+3. Im Dropdownmenü **Sprache** wird die Gruppe von Sprachen angezeigt, für die bereits Übersetzungen bereitgestellt wurden.
+
+    Wenn Sie eine vorhandene Übersetzung bearbeiten möchten, wählen Sie die gewünschte Sprache im Menü aus und ändern Sie die Werte für die Beschriftung und den Hilfetext.
+
+    Andernfalls klicken Sie auf die Schaltfläche **Sprache hinzufügen**, wählen Sie die gewünschte Sprache im Menü aus, und geben Sie dann übersetzte Werte für die Beschriftung und den Hilfetext an.
+
+4. Klicken Sie auf **OK**, wenn Sie fertig sind.
+
+### <a name="deleting-custom-fields"></a>Benutzerdefinierte Felder löschen
+
+In einigen seltenen Fällen entscheiden Sie sich möglicherweise, dass ein benutzerdefiniertes Feld nicht mehr erforderlich ist. Wenn dies geschieht, kann ein Systemadministrator beschließen, das Feld aus der Seite **Benutzerdefinierte Felder** zu löschen. Stellen Sie dazu sicher, dass das korrekte Feld ausgewählt ist, klicken Sie auf **Löschen**, klicken Sie auf **Ja**, um den Löschvorgang zu bestätigen, und klicken Sie schließlich auf **Änderungen anwenden**.
+
+> [!NOTE]
+> Diese Aktivität kann nicht rückgängig gemacht werden und führt dazu, dass die Daten, die diesem Feld zugeordnet sind, dauerhaft aus der Datenbank gelöscht werden.
+
+## <a name="appendix"></a>Anhang
+
+### <a name="who-can-create-custom-fields"></a>Wer kann benutzerdefinierte Felder erstellen?
+
+Als Schutzvorrichtung für das System, können standardmäßig nur Systemadministratoren benutzerdefinierte Felder erstellen. Allerdings kann denjenigen Powerusern, die die Organisation für notwendig erachtet, Rechte erteilt werden, um benutzerdefinierte Felder durch einen Systemadministrator zu erstellen, indem die Sicherheitsrolle **Laufzeitanpassungs-Poweruser** verwendet wird. Benutzer ohne diese Sicherheitsrolle sind nicht in der Lage, benutzerdefinierte Felder zu erstellen, sie können jedoch trotzdem benutzerdefinierte Felder, die von anderen Benutzern im System hinzugefügt wurden, anzeigen und mit ihnen interagieren.
+
+### <a name="what-tables-support-custom-fields"></a>Welche Tabellen unterstützen benutzerdefinierte Felder?
+
+Aus Gründen der Leistung und technischen Gründen ist es nur bei Tabellen, die die folgenden Bedingungen erfüllen, aktuell zulässig, benutzerdefinierte Felder hinzuzufügen.
+
+- Die Tabelle muss als eine dieser Gruppen markiert sein:
+
+    - Gruppieren
+    - WorksheetHeader
+    - Haupttabelle
+    - Sonstiges
+    - Parameter
+    - Referenz
+    - TransactionHeader
+
+- Die Tabelle kann keine andere Tabelle erweitern.
+- Die Tabelle kann nicht als Systemtabelle markiert werden.
+- Die Tabelle kann keine temporäre Tabelle sein.
+
+### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kann ich in den Entwicklertools auf benutzerdefinierte Felder verweisen?  
+
+Benutzerdefinierte Felder können nur über die Benutzeroberfläche verwaltet und nicht durch Code referenziert werden. 
+--->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

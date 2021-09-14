@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>What's new or changed in Platform update 30 for Finance and Operations apps (November 2019) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="What's new or changed in Platform update 30 for Finance and Operations apps (November 2019) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="whats-new-or-changed-in-platform-update-30-for-finance-and-operations-apps-november-2019" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="29">What's new or changed in Platform update 30 for Finance and Operations apps (November 2019)</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="33">This topic describes features that are new or changed for Platform update 30 for Finance and Operations apps. This version has a build number of 7.0.5407. While the general availability date is in November, the new features are available for early release in September. For more information about Platform update 30, see <a href="whats-new-platform-update-30.html#additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="33">Additional resources</a>.</p>
+<h2 id="readable-date-time-format-for-datetime-fields-in-business-event-payload" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="35">Readable date time format for dateTime fields in business event payload</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="36">When a new business event is coded, a dateTime field can be enabled to output the value in a human readable format in the business event payload. Existing business event can also be modified to include a readable dateTime field in the payload thereby, preserving compatibility. The developer documentation for this is described in <a href="../../dev-itpro/business-events/business-events-dev-doc.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="36">Business events developer documentation</a>.</p>
+<h2 id="hide-fields-much-faster-in-personalization-mode" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="38">Hide fields much faster in personalization mode</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="39">Hiding fields in personalization mode is now <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="39">significantly</strong> faster. Instead of waiting for confirmation from the system that a selected control can be hidden, this check is now being done asynchronously which allows users to hide controls as fast as they can click them. This same optimization has also been applied for skipping controls, locking fields, and adding fields as FastTab summary fields.</p>
+<h2 id="extensibility-enhancements" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="41">Extensibility enhancements</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="42">The following enhanced extensibility capabilities have been added in Platform update 30:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="44">Improve handling of form extension scenarios involving extension field groups that are extended again (Ref# 236593).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="45">Enable Default Action property on FormGridControl to use buttons added via Extension (Ref# 322756).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="46">Add post event handlers for delete events on form datasources into the transaction scope (Ref# 237952).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="47">Encourage customers/partners not to extend &quot;internal&quot; classes by adding a warning (Ref# 338010).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="48">Improve use of the SysPlugin pattern from X++ by adding better support for multiple key values and key values of different types (Ref# 330178).</li>
+</ul>
+<h2 id="feature-class-property-added-into-metamodel-to-support-metadata-association-with-features-defined-for-feature-management" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="50">Feature Class property added into metamodel to support metadata association with features defined for Feature Management</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="51">A <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="51">Feature Class</strong> property has been added into the metamodel and can be seen on multiple types in the Application Explorer in Visual Studio. This property is a lookup that points at features defined for Feature Management. This property has no effect currently, but in the future developers will use this property to ensure that pieces of metadata are only visible to users when the corresponding feature has been enabled in the Feature Management workspace. Currently, if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="51">Feature Class</strong> property is set to a value, it will result in a build warning so the developer is aware that it won't have any effect. The new property is visible on a few types including Menus and MenuItems, but will eventually be visible on Forms, Form Controls, and other types.
+In the future, the first metadata types to get <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="52">Feature Class</strong> property support will be Menus and MenuItems which will allow developers to only have those menu options available when the corresponding feature has been enabled. The runtime support for Menus and MenuItems is scheduled to be delivered in Platform Update 31.
+Currently, the Feature Class property and the FeatureStateProvider API can be used to reference an existing feature in Feature Management, but additional features cannot be defined. That support is likely to be enabled once the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="53">Feature Class</strong> property work is complete.</p>
+<h2 id="new-license-types-support-associating-users-with-a-license" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="55">New license types support associating users with a license</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="56">New license types are being made available to new customers. For customers on those new licenses, users need to be associated with a license. If a license is associated with a new user, the first time they sign in they will be added as a system user. If a license is not associated with a user, then they will recieve a brief warning.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="59">Additional resources</h2>
+<h3 id="platform-update-30-bug-fixes" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="61">Platform update 30 bug fixes</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="62">For information about the bug fixes included in each of the updates that are part of Platform update 30, sign in to Lifecycle Services (LCS) and view this <a href="https://fix.lcs.dynamics.com/Issue/Details?kb=4520346&amp;bugId=369591&amp;dbType=3&amp;qc=a1f7377056b8d98314a62c745da88565f03531d15de24c4a538132d68118059c" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="62">KB article</a>.</p>
+<h3 id="dynamics-365-2019-release-wave-2-plan" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="64">Dynamics 365: 2019 release wave 2 plan</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="65">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="67">Check out the <a href="/dynamics365-release-plan/2019wave2/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="67">Dynamics 365: 2019 release wave 2 plan</a>. We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.</p>
+<h3 id="removed-and-deprecated-features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="69">Removed and deprecated features</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="70">The <a href="../../dev-itpro/migration-upgrade/deprecated-features.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="70">Removed or deprecated features for Finance and Operations</a> topic describes features that have been removed or deprecated.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="72">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="72">A <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="72">removed</em> feature is no longer available in the product.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="73">A <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="73">deprecated</em> feature is not in active development and may be removed in a future update.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="75">Before any feature is removed from the product, the deprecation notice will be announced in the <a href="../../dev-itpro/migration-upgrade/deprecated-features.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="75">Removed or deprecated features for Finance and Operations</a> topic 12 months prior to the removal.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/whats-new-platform-update-30.md" sourcestartlinenumber="77">For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

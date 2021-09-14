@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tax isn't calculated | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tax isn't calculated | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tax-isnt-calculated" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="30">Tax isn't calculated</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="34">If you discover that tax component lines or tax document lines are missing from a tax document, follow the steps in this topic to troubleshoot the issue. The procedures use a purchase order as an example to show the troubleshooting process.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="36">For more information about the Tax engine (also referred to as GTE) or components, see <a href="../general-ledger/tax-engine.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="36">Tax engine overview</a>.</p>
+<h2 id="check-the-tax-applicability-in-the-tax-configuration" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="38">Check the tax applicability in the tax configuration</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="40"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="40">Open the designer for the current tax configuration.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="41"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="41">If there are no tax document lines, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="41">Header</strong> node, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="41">Lookups</strong> tab, verify that the condition is correct.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="43"><a href="media/tax-not-calculated-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="43"><img src="media/tax-not-calculated-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="43" alt="Condition field on the Lookups tab for the Header node on the Tax document page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="45"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="45">If there are no tax component lines, verify that the condition is correct on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="45">Lookups</strong> tab for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="45">Lines</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="45">Tax type</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="45">Tax component</strong> nodes.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="47"><a href="media/tax-not-calculated-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="47"><img src="media/tax-not-calculated-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="47" alt="Condition field on the Lookups tab for the Lines node."></a></p>
+</li>
+</ol>
+<h2 id="compare-transaction-details-with-other-conditions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="49">Compare transaction details with other conditions</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="51">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="51">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="51">Tax document</strong>, and then select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="51">Header</strong> node.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="52">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="52">View tax input</strong> to view the transaction header details.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="53"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="53">Verify that all the fields are correctly set for tax calculation.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="55"><a href="media/tax-not-calculated-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="55"><img src="media/tax-not-calculated-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="55" alt="Purchase order header."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="57">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="57">Line</strong> node, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="57">View tax input</strong> to view the transaction line details.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="58"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="58">Verify that all the fields are correctly set for tax calculation.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="60"><a href="media/tax-not-calculated-Picture4.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="60"><img src="media/tax-not-calculated-Picture4.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="60" alt="Purchase order lines."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="62"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="62">Compare the transaction fields at <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="62">Tax document</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="62">View tax input</strong> with the conditions that you found in the previous section.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="63"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="63">Verify that all the fields match the corresponding conditions or lookups.</p>
+</li>
+</ol>
+<h2 id="determine-whether-customization-exists" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="65">Determine whether customization exists</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="67">If you've completed the steps in the previous sections but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.</p>
+<h2 id="prevent-transactions-from-being-posted-if-gst-hasnt-been-calculated" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="69">Prevent transactions from being posted if GST hasn't been calculated</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="71">To prevent a transaction from being posted if GST hasn't been calculated, follow these steps to turn on and set up the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="71">[India] GTE calculation validation</strong> feature.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="73">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="73">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="73">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="73">Feature management</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="74">Find the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="74">[India] GTE calculation validation</strong> feature, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="74">Enable now</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="76"><a href="media/tax-not-calculated-Picture5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="76"><img src="media/tax-not-calculated-Picture5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="76" alt="Enable now button in the Feature management workspace."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="78"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="78">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="78">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="78">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="78">Tax configuration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="78">Tax setup</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="79">Select the company to enable the validation for, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="79">Parameters</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="81"><a href="media/tax-not-calculated-Picture6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="81"><img src="media/tax-not-calculated-Picture6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="81" alt="Parameters button on the Tax setup page."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="83"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="83">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="83">Tax setup parameters</strong> dialog box, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="83">Validation</strong> section, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="83">Empty tax component</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="83">Zero tax</strong> fields, select one of the following values. Then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="83">OK</strong> to complete the setup.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="85">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="85"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="85">None</strong> – No validation is done.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="86"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="86">Warning</strong> – A warning message is shown, but the posting operation isn't blocked.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="87"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="87">Error</strong> – An error message is shown, and the posting operation is blocked.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="89"><a href="media/tax-not-calculated-Picture7.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="89"><img src="media/tax-not-calculated-Picture7.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="89" alt="Validation section in the Tax setup parameters dialog box."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="91">For this example, both fields are set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="91">Error</strong>. Therefore, if someone tries to post a transaction, but GST hasn't been calculated, one of the following error messages is shown:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="93">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="93"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="93">No tax lines exist:</strong> &quot;No tax document lines are found in tax document. If it is not expected, please contact your system administrator, check the tax configuration, and try again.&quot;</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="94"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="94">No tax component lines exist:</strong> &quot;No tax component is applicable for line %1, please contact your system administrator, check the tax setup, and try again.&quot;</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="95"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="95">The tax amount is 0 (zero):</strong> &quot;The tax amount is 0 for line %1, please contact your system administrator, check the tax setup, and try again.&quot;</li>
+</ul>
+</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="97">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md" sourcestartlinenumber="98">If you enable the validation, some typical scenarios might be blocked, such as exempt or zero-rate scenarios. You must decide how to set up the validation, based on your business.</p>
+</div>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

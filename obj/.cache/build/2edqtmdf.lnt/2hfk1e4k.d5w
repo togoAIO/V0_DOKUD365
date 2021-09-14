@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Settle partial payment before discount date and final payment after discount date | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Settle partial payment before discount date and final payment after discount date | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="30">Settle partial payment before discount date and final payment after discount date</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="34">This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="36">Fabrikam purchases goods from vendor 3057. Fabrikam receives a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. The settlement parameters are located on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="36">Accounts payable parameters</strong> page.</p>
+<h2 id="invoice-on-june-25" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="38">Invoice on June 25</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="39">On June 25, April enters and posts an invoice for 1,000.00 for vendor 3057. April can view this transaction on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="39">Vendor transactions</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="41">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="41">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="41">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="41">Transaction type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="41">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="41">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="41">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="41">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="41">Balance</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="41">Currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="43">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="43">Inv-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="43">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="43">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="43">10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="43"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="43">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="43">-1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="43">USD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="partial-payment-on-july-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="45">Partial payment on July 2</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="46">On July 2, April wants to settle 300.00 of this invoice. The payment is eligible for a discount, because Fabrikam takes discounts on partial payments. Therefore, April pays 297.00 and takes a 3.00 discount. She creates a payment journal and enters a line for vendor 3057. She then opens the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="46">Settle transactions</strong> page, so that she can mark the invoice for settlement.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">Mark</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">Use cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">Due date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">Amount in transaction currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="48">Amount to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">Inv-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">3057</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">-1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="50">-297.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="52">Discount information appears at the bottom of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="52">Settle open transactions</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="54">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="54">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="54">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="54">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="56">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="56">Cash discount date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="56">7/09/2015</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="57">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="57">Cash discount amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="57">-10.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="58">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="58">Use cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="58">Normal</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="59">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="59">Cash discount taken</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="59">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="60">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="60">Cash discount amount to take</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="60">-3.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="62">April then posts the payment. The invoice now has a balance of 700.00. April can view this transaction on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="62">Vendor transactions</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="64">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="64">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="64">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="64">Transaction type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="64">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="64">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="64">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="64">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="64">Balance</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="64">Currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="66">Inv-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="66">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="66">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="66">10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="66"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="66">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="66">-700.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="66">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="67">APP-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="67">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="67">7/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="67"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="67">297.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="67"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="67">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="67">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="68">DISC-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="68">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="68">7/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="68"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="68">3.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="68"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="68">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="68">USD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="remaining-payment-on-july-15-use-cash-discount--normal" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="70">Remaining payment on July 15, Use cash discount = Normal</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="71">April pays the rest of the invoice on July 15, which is after the discount period. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="71">Settle open transactions</strong> page, no discount amount is displayed in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="71">Estimated cash discount</strong> field, and the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="71">Cash discount amount</strong> field is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="71">0.00</strong>. When April pays the remaining 700.00, no additional discount will be taken.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">Mark</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">Use cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">Due date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">Amount in transaction currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="73">Amount to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">Normal</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">Inv-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">3057</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">-700.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="75">-700.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="77">Discount information appears at the bottom of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="77">Settle transactions</strong> page. April can see that she has already taken a 3.00 discount.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="79">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="79">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="79">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="79">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="81">Cash discount date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="81">7/09/2015</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="82">Cash discount amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="82">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="83">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="83">Use cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="83">Normal</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="84">Cash discount taken</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="84">-3.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="85">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="85">Cash discount amount to take</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="85">0.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="87">April then posts the payment. When she opens the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="87">Vendor transactions</strong> page, she sees that the invoice has a balance of 0.00. She also sees that there are two payments. One payment is for 297.00 and has a 3.00 discount, and the other payment is for 700.00.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="89">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="89">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="89">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="89">Transaction type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="89">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="89">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="89">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="89">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="89">Balance</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="89">Currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="91">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="91">Inv-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="91">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="91">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="91">10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="91"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="91">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="91">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="91">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="92">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="92">APP-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="92">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="92">7/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="92"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="92">297.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="92"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="92">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="92">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="93">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="93">DISC-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="93">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="93">7/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="93"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="93">3.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="93"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="93">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="93">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="94">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="94">APP-10021</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="94">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="94">7/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="94"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="94">700.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="94"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="94">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="94">USD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="remaining-payment-on-july-15-use-cash-discount--always" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="96">Remaining payment on July 15, Use cash discount = Always</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="97">If the vendor lets April take a discount even though she is paying after the discount date, she can change the value in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="97">Use cash discount</strong> field to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="97">Always</strong>. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="97">Calculate cash discounts for partial payments</strong> setting is overridden, and the discount is taken. The payment amount is 693.00, and the discount is the remaining 7.00.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Mark</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Use cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Due date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="99">Amount to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">Selected</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">Always</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">Inv-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">3057</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">7/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">700.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="101">-693.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="103">Discount information appears at the bottom of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="103">Settle transactions</strong> page.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="105">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="105">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="105">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="105">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="107">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="107">Cash discount date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="107">7/09/2015</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="108">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="108">Cash discount amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="108">7.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="109">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="109">Use cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="109">Always</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="110">Cash discount taken</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="110">-3.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="111">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="111">Cash discount amount to take</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="111">-7.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="113">April then posts the payment. When she opens the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="113">Vendor transactions</strong> page, she sees that the invoice has a balance of 0.00. She also sees that there are two payments. One payment is for 297.00 and has a 3.00 discount, and the other payment is for 693.00 and has a 7.00 discount.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="115">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="115">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="115">Voucher</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="115">Transaction type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="115">Date</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="115">Invoice</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="115">Amount in transaction currency debit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="115">Amount in transaction currency credit</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="115">Balance</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="115">Currency</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="117">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="117">Inv-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="117">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="117">6/25/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="117">10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="117"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="117">1,000.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="117">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="117">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="118">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="118">APP-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="118">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="118">7/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="118"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="118">297.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="118"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="118">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="118">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="119">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="119">DISC-10020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="119">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="119">7/1/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="119"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="119">3.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="119"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="119">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="119">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="120">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="120">APP-10021</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="120">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="120">7/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="120"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="120">693.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="120"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="120">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="120">USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="121">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="121">DISC-10021</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="121">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="121">7/15/2015</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="121"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="121">7.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="121"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="121">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md" sourcestartlinenumber="121">USD</td>
+</tr>
+</tbody>
+</table>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

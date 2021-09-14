@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure expenditure reviewers | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure expenditure reviewers | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configure-expenditure-reviewers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="19">Configure expenditure reviewers</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="22">You can set up dynamic expenditure reviewers to route expenditures for review, based on either the user who is assigned to a project role or the financial dimension where the expenditure is being charged. The workflow process uses the specified project role or financial dimension owner to determine who the expenditure should be routed to.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="24">You can define one or more expenditure reviewer configurations, and then select a configuration when you create a workflow. You can configure the expenditure reviewer values for each legal entity in your organization. After you define the expenditure reviewer configurations, you assign the configuration. Expenditure reviewers can be assigned to workflow tasks, approvals, and manual decisions.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="26">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="27">Although expenditure reviewers aren't mandatory, they can help simplify the configuration of your workflow. For example, you don't have to create one conditional decision to check for each cost center dimension, and then create another element to assign the approval or task to a specific user or groups of users. Instead, you can configure the owner of the cost center dimension and use an expenditure reviewer to dynamically select the correct user. In this way, when the ownership or assignment of cost centers changes, you just have to update the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="27">Owner</strong> field for the financial dimension.</p>
+</div>
+<h2 id="types-of-expenditure-reviewers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="29">Types of expenditure reviewers</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="31">Not all workflows support the concept of expenditure reviewers. By default, you can configure expenditure reviewers for purchase requisitions, purchase orders, vendor invoices, and expense reports. Each of these workflow types requires that you configure the expenditure reviewers on a separate page that is specific to the feature and module. For each supported document, expenditure reviewers can be used with either header-level workflows or line-level workflows.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="33">The following table shows where you go to configure an expenditure reviewer for each supported document.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="35">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="35">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="35">Document</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="35">Navigation path</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="37">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="37">Expense reports</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="37">Expense management &gt; Setup &gt; Policies &gt; Expenditure reviewers</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="38">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="38">Purchase orders</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="38">Procurement and sourcing &gt; Setup &gt; Policies &gt; Purchase order expenditure reviewers</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="39">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="39">Purchase requisitions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="39">Procurement and sourcing &gt; Setup &gt; Policies &gt; Purchase requisition expenditure reviewers</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="40">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="40">Vendor invoices</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="40">Accounts payable &gt; Policy setup &gt; Vendor invoice expenditure reviewers</td>
+</tr>
+</tbody>
+</table>
+<h2 id="expenditure-reviewer-assignments" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="42">Expenditure reviewer assignments</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="44">Two types of assignment are available for each expenditure reviewer: <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="44">project distributions</em> and <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="44">organization distributions</em>. For a project distribution, you can select between project authorities and financial dimensions. For an organization distribution, you can select financial dimensions.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="46">Project authorities include the project manager, project controller, and project sales manager. You define these authorities directly on your project, by selecting a worker in the appropriate fields.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="48">Financial dimensions are controlled by the account structures in each legal entity. For each legal entity, you can select which financial dimensions will be used with the expenditure reviewer. The dimensions can come from either the project (in this case, you select the dimensions on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="48">Project distributions</strong> tab) or the document (in this case, you select the dimensions on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="48">Organization distributions</strong> tab). In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="48">Owner</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="48">Financial dimensions values</strong> page, you can select the worker for each financial dimension.</p>
+<h2 id="example-1-expenditure-reviewers-based-on-organization-distributions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="50">Example 1: Expenditure reviewers based on organization distributions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="52">You work for Contoso Appliances, and your organization has six departments and 10 cost centers. When a new purchase requisition is submitted, approval must come first from the department manager and then from the cost center manager.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="54">For this example, you configure two <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="54">purchase requisition expenditure reviewers</em>:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="56">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="56">For the first reviewer, you name the department and then select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="56">Department</strong> financial dimension on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="56">Organization distributions</strong> tab.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="57">For the second reviewer, you name the cost center and then select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="57">Cost Center</strong> financial dimension on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="57">Organization distributions</strong> tab.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="59">When you configure the workflow, you create two approval steps. The first is for the department, and the second is for the cost center. For each approval element, you select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="59">Participant</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="59">Assignment type</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="59">Role-based</strong> tab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="59">Expenditure participants</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="59">Type of participant</strong> field, and then select the appropriate participant in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="59">Participant</strong> field.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="61">When the purchase requisition is created, the department and cost center financial dimensions are assigned to the lines of the purchase requisition. When the workflow is submitted, the system first evaluates the department on the purchase requisition and assigns the approval element to the user who is related to the worker that you selected for the department. After the first approval step is completed, the system evaluates the second approval step and assigns the second approval element to the user who is related to the worker that you selected for the cost center.</p>
+<h2 id="example-2-expenditure-reviewers-based-on-project-distributions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="63">Example 2: Expenditure reviewers based on project distributions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="65">You work for the services division of Contoso Appliances. The organization requires that the project manager for each purchase order must approve the expense. In addition, the cost center manager for the project must approve it. The approvals can be done at the same time. In any case, both users must approve the purchase order before the workflow can proceed.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="67">For this example, you create one <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="67">purchase order expenditure reviewer</em> that is named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="67">PM And Cost Center</strong>. You select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="67">Project manager</strong> checkbox and set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="67">Cost center dimension</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="67">Yes</strong> on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="67">Project distributions</strong> tab of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="67">Purchase order expenditure reviewer</strong> page. As a part of the configuration, you must ensure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="67">Project manager</strong> field is set for all projects, and that an owner is specified for all cost centers on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="67">Financial dimension values</strong> page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="69">When you configure the workflow, you need one approval element. You select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="69">Participant</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="69">Assignment type</strong> field. Then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="69">Role-based</strong> tab, you select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="69">Expenditure participants</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="69">Type of participant</strong> field, and select the project manager and cost center in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="69">Participant</strong> field. To ensure that the workflow can't proceed until both the project manager and the cost center owner approve the workflow, you set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="69">Completion policy</strong> field to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="69">All approvers</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="71">When the purchase order is created, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="71">Project</strong> field must be specified. If you don't require a project for all your purchase orders, you should add a conditional decision to your workflow to check for a project before the approval step is run. The system then evaluates the project that is specified for the purchase order and assigns the approval element to the user who is related to the worker in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="71">Project manager</strong> field. Additionally, the system creates a task and assigns it to the user who is related to the worker that you select in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="71">Owner</strong> field for the cost center from the project. Note that this example uses the cost center of the project, not the cost center of the purchase order.</p>
+<h2 id="set-up-expenditure-reviewers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="73">Set up expenditure reviewers</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="75">This example shows how to configure a purchase requisition expenditure reviewer. To configure other types of expenditure reviewers, replace the navigation path in step 1 with the appropriate path from the table in the <a href="configure-expenditure-reviewers.html#types-of-expenditure-reviewers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="75">Types of expenditure reviewers</a> section, earlier this topic.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="77">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="77">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="77">Procurement and sourcing &gt; Setup &gt; Policies &gt; Purchase requisition expenditure reviewers</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="78">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="78">Purchase requisition expenditure reviewers</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="78">New</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="79">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="79">Name</strong> field, enter a name for the expenditure reviewer configuration, such as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="79">cost center</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="80">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="80">Expenditure reviewers by legal entity</strong> FastTab, select the legal entity to configure.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="81">For a project distribution, select the checkbox for each project authority, and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="81">Yes</strong> for each financial dimension that you want to enable.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="82">For an organization distribution, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="82">Organization distributions</strong> tab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="82">Yes</strong> for each financial dimension that you want to enable.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="83">Repeat steps 4 through 6 for each additional legal entity.</li>
+</ol>
+<h2 id="assign-owners-to-financial-dimensions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="85">Assign owners to financial dimensions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="87">To assign an owner to a financial dimension, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="89">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="89">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="89">General ledger &gt; Chart of accounts &gt; Dimensions &gt; Financial dimensions</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="90">In the list, select the financial dimension to assign owners to.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="91">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="91">Dimension values</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="92">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="92">Edit</strong> to make changes to the dimension values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="93">In the list, select the dimension value to assign an owner to.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="94">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="94">Owner</strong> field, select the worker to assign the dimension value to.</li>
+</ol>
+<h2 id="configure-project-distributions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="96">Configure project distributions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="98">To assign project authorities to a project, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="100">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="100">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="100">Project management and accounting &gt; Projects &gt; All projects</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="101">Select the project to assign authorities to.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="102">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="102">Edit</strong> to make changes to the project.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="103">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="103">General</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="103">Responsible</strong> section, select a worker for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="103">Sales manager</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="103">Project manager</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="103">Project controller</strong> fields as required.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="104">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="104">Financial dimensions</strong> FastTab, select the required financial dimensions for your project.</li>
+</ol>
+<h2 id="assign-expenditure-reviewers-to-a-workflow-task" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="106">Assign expenditure reviewers to a workflow task</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="108">This example shows how to configure a purchase requisition workflow so that it uses a purchase requisition expenditure reviewer. To configure other types of workflows, the workflow page that you must open in step 1 might be in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="108">Expense management</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="108">Accounts payable</strong> module instead of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="108">Procurement and sourcing</strong> module.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="110">To assign purchase requisition expenditure reviewers to a workflow task, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="112">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="112">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="112">Procurement and sourcing &gt; Setup &gt; Procurement and sourcing workflows</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="113">Double-tap (or double-click) an existing workflow, or create a new workflow.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="114">In the workflow editor, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="114">Workflow</strong> pane, select the task to assign the expenditure reviewer configuration to. Then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="114">Action Pane</strong>, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="114">Show</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="114">Properties</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="115">In the left pane of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="115">Properties</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="115">Assignment</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="116">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="116">Assignment type</strong> tab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="116">Participant</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="117">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="117">Role-based</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="117">Type of participant</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="117">Expenditure participants</strong>. Then, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/configure-expenditure-reviewers.md" sourcestartlinenumber="117">Participant</strong> field, select the expenditure reviewer configuration to use for the workflow task.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

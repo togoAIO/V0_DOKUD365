@@ -75,15 +75,25 @@
           href: 01_CoreProcesses/01_03_Sales/Guideline.md
         - name: Sales Agreements
           href: 01_CoreProcesses/01_03_Sales/Sales_Agreements.md
+        - name: Sales Order Details
+          href: 01_CoreProcesses/01_03_Sales/Sales_Order_Details.md
     - name: Purchasing
       href: 01_CoreProcesses/01_05_Purchasing/Purchasing.md
       items:
+        - name: Basic Purchase Orders Details
+          href: 01_CoreProcesses/01_05_Purchasing/Basic_Purchase_Orders_Details.md
+        - name: Modular Delivery Times
+          href: 01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md
+        - name: Debit Notes
+          href: 01_CoreProcesses/01_05_Purchasing/Debit_Notes.md
         - name: Purchasing1
           href: 01_CoreProcesses/01_05_Purchasing/Purchasing1.md
         - name: Purchasing1
           href: 01_CoreProcesses/01_05_Purchasing/Purchasing2.md
         - name: Purchase Agreements
           href: 01_CoreProcesses/01_05_Purchasing/Purchase_Agreements.md
+        - name: Markdown Notes
+          href: 01_CoreProcesses/01_05_Purchasing/Markdown_Notes.md
     - name: Production
       href: Production.md
       href: 01_CoreProcesses/01_04_Production/Production.md
@@ -99,6 +109,8 @@
           href: 01_CoreProcesses/01_04_Production/Prod2.md
         - name: Ressoucren
           href: 01_CoreProcesses/01_04_Production/PROD_Ressoucen.md
+        - name: Raw Material Code
+          href: 01_CoreProcesses/01_04_Production/Raw_Material_Code.md
     - name: Warehouse
       href: 01_CoreProcesses/01_06_Warehouse/Warehouse.md
       items: 
@@ -138,6 +150,24 @@
           href: Quality 2.md
         - name: Quality 3
           href: Quality 3.md
+    - name: Certificate
+      href: 01_CoreProcesses/01_11_Certificate/Certificate.md
+      items:
+      - name: Certificate
+        href: 01_CoreProcesses/01_11_Certificate/Certificate.md
+      - name: Setup and Reference List
+        href: 01_CoreProcesses/01_11_Certificate/Setup_and_Reference_List.md
+      - name: Code Changer
+        href: 01_CoreProcesses/01_11_Certificate/Code_Changer.md
+      - name: CAL Setup
+        href: 01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md
+    - name: Internal Request
+      href: 01_CoreProcesses/01_12_InternalRequest/Guidlines.md
+      items:
+      - name: Guidlines
+        href: 01_CoreProcesses/01_12_InternalRequest/Guidlines.md
+      - name: Sending and Clarifying Internal request subs
+        href: 01_CoreProcesses/01_12_InternalRequest/Sending_Clarifying_International_request_subs.md
 - name: Support Processes
   href: 02_SupportProcesses/SupportProcesses_Overview.md
   items:
@@ -281,16 +311,10 @@
             href: 02_SupportProcesses/02_01_Finance/accounts-receivable/tasks/establish-customer-payment-fees.md
           - name: Customer payment insights (preview)
             href: 02_SupportProcesses/02_01_Finance/accounts-receivable/payment-insights-overview.md
-          - name: Customer posting profiles
-            href: 02_SupportProcesses/02_01_Finance/accounts-receivable/customer-posting-profiles.md
           - name: Copy customers by using shared number sequences
             href: 02_SupportProcesses/02_01_Finance/accounts-receivable/copy-customer.md
           - name: Customer workflow
             href: 02_SupportProcesses/02_01_Finance/accounts-receivable/customer-workflow.md
-          - name: Set up and process recurring invoices
-            href: 02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-process-recurring-invoices.md
-          - name: Accounting distributions and subledger journal entries for free text invoices
-            href: 02_SupportProcesses/02_01_Finance/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
           - name: Customer posting profiles
             href: 02_SupportProcesses/02_01_Finance/accounts-receivable/customer-posting-profiles.md
           - name: SEPA direct debit overview
@@ -405,10 +429,6 @@
               href: 02_SupportProcesses/02_01_Finance/accounts-receivable/cm-periodic-tasks.md
             - name: Collections management key concepts
               href: 02_SupportProcesses/02_01_Finance/accounts-receivable/cm-collections-concepts.md
-            - name: Configure Accounts receivables and credit and collections
-              href: 02_SupportProcesses/02_01_Finance/accounts-receivable/accounts-receivables-set-up-overview.md
-            - name: Set up credit and collections
-              href: 02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md
           - name: Set up interest rates for an interest code
             href: 02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-interest-rates-interest-code.md
           - name: Create an interest code with a range
@@ -499,8 +519,6 @@
             href: 02_SupportProcesses/02_01_Finance/cash-bank-management/create-check-with-blank-status.md
           - name: Prepayment invoices vs. prepayments
             href: 02_SupportProcesses/02_01_Finance/accounts-payable/prepayments-invoices-vs-prepayments.md
-          - name: Handling cash discounts for overpayments
-            href: 02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md
           - name: Set up centralized payments
             href: 02_SupportProcesses/02_01_Finance/cash-bank-management/set-up-centralized-payments.md
           - name: Automatic settlement and prioritization
@@ -594,9 +612,9 @@
           - name: Configure cost control workspace parameters
             href: 02_SupportProcesses/02_01_Finance/cost-accounting/tasks/configure-cost-control-workspace-parameters.md
           - name: Understand access list security and RLS in Microsoft Power BI
-            href: 02_SupportProcesses/02_01_Finance/02_SupportProcesses/02_01_Finance/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/finance/toc.json
+            href: 02_SupportProcesses/02_01_Finance/analytics/setup-security-cost-accounting-content-pack.md
           - name: Use content pack for Microsoft Power BI reporting
-            href: 02_SupportProcesses/02_01_Finance/02_SupportProcesses/02_01_Finance/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/finance/toc.json
+            href: 02_SupportProcesses/02_01_Finance/analytics/cost-accounting-analysis-content-pack.md
           - name: Use cost control workspace for mobile application
             href: 02_SupportProcesses/02_01_Finance/cost-accounting/cost-controlling-mobile-workspace.md
         - name: Fixed assets
@@ -1036,15 +1054,15 @@
           - name: Get started with Financial reporting
             href: 02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-getting-started.md
           - name: Financial reporting overview
-            href: 02_SupportProcesses/02_01_Finance/02_SupportProcesses/02_01_Finance/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
+            href: 02_SupportProcesses/02_01_Finance/analytics/financial-reporting-intro.md
           - name: Financial report components
-            href: 02_SupportProcesses/02_01_Finance/02_SupportProcesses/02_01_Finance/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            href: 02_SupportProcesses/02_01_Finance/analytics/financial-report-components.md
           - name: Currency capabilities in financial reporting
             href: 02_SupportProcesses/02_01_Finance/general-ledger/financial-reporting-currency-capability.md        
           - name: Balance sheet financial reports
             href: 02_SupportProcesses/02_01_Finance/general-ledger/balance-sheet-financial-reports.md
           - name: Generate financial reports
-            href: 02_SupportProcesses/02_01_Finance/02_SupportProcesses/02_01_Finance/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
+            href: 02_SupportProcesses/02_01_Finance/analytics/generate-financial-report.md
           - name: Income statement financial report
             href: 02_SupportProcesses/02_01_Finance/general-ledger/income-statement-financial-report.md
           - name: Trial balance financial reports

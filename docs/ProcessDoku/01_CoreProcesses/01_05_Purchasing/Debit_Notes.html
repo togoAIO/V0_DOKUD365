@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Debit Notes | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Debit Notes | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="debit-notes">Debit Notes</h1>
+
+<h2 id="debit-note---for-rework-or-material-costs-no-movement-of-goods">Debit Note - for rework or material costs (no movement of goods)</h2>
+<p>For use with:
+Purchase Orders with order type “returned order”.
+If necessary, enter „1“ as the return number (if delivery terms are not maintained in the vendor master).</p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_general.png" alt="Returned Order" title="returned order"></p>
+<p>Process Steps:</p>
+<ol>
+<li>Create a Returned order for Item number „ZS3000.01“</li>
+<li>Enter the quantity “-1“</li>
+<li>Manually enter the required order value</li>
+<li>Update item text</li>
+<li>Post the invoice for the returned order</li>
+</ol>
+<p><strong>Example step 1 to 3:</strong></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_example_1to3.png" alt="Example step 1 to 3" title="Example step 1 to 3"></p>
+<p><strong>Example step 4:</strong></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_example_4.png" alt="Example step 4 part 1" title="Example step 4 part 1"></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_example_4_2.png" alt="Example step 4 part 2" title="Example step4 part 2"></p>
+<p><strong>Example step 5:</strong></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_example_5.png" alt="Example step 5 part 1" title="Example step 5 part 1"></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_example_1to3.png" alt="Example step 5 part 2" title="Example step 5 part 2"></p>
+<h2 id="incorrect-order-value-charged---value-correction">Incorrect order value charged - Value correction</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Items requiring inspection will have the „Quarantine management“ flag checked in the item master. This flag must be unchecked before executing this process and then re-checked upon completion.</p>
+</div>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_general.png" alt="Example step 5 part 2" title="Example step 5 part 2"></p>
+<p>Example: The company was charged 19,45€ for 10 pcs, but the agreement was for 10 pcs at 17,45€.</p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example.png" alt="Example step 5 part 2" title="Example step 5 part 2"></p>
+<p>Process Steps</p>
+<ol>
+<li>Create a new purchase order</li>
+<li>Enter: Line. 10    Item Number     Correct Quantity        New Value    Main warehouse</li>
+<li>Enter: Line. 20    Item Number     „-„ Correct Quantity    Old Value 	Main warehouse</li>
+<li>Update values &amp; surcharges as needed</li>
+<li>Invoice the order with the corrected value</li>
+</ol>
+<p><strong>Example step 1 to 3:</strong></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example_1to3_1.png" alt="Example step 1 to 3 part 1" title="Example step 1 to 3 part 1"></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example_1to3_2.png" alt="Example step 1 to 3 part 2" title="Example step 1 to 3 part 2"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Values and surcharges in the replacement line must match the originally invoiced amount before the replacement line is submitted for invoicing. To determine the originally invoiced values &amp; surcharges amount, navigate to:
+Original Purchase order (with incorrect value) -&gt; In the header section, click the “Inquiries” button and select “Invoice” -&gt; On the invoice journal, navigate to the Lines tab -&gt; Click the “Misc. charges” button -&gt; View the Misc. charges value field.</p>
+</div>
+<p><strong>Example step 4:</strong></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example_4_1.png" alt="Example step 4" title="Example step 4"></p>
+<p>Enter the correct values/surcharges amount in the “Correction” purchase order.</p>
+<p><strong>Example step 5:</strong>
+<img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example_5_1.png" alt="Example step 5 part 1" title="Example step 5 part 1"></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example_5_2.png" alt="Example step 5 part 2" title="Example step 5 part 2"></p>
+<h2 id="incorrect-quantity-received---quantity-correction">Incorrect Quantity Received - Quantity Correction</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Items requiring inspection will have the „Quarantine management“ flag checked in the item master/register. This flag must be unchecked before execution of this process and then re-checked upon completion.</p>
+</div>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_general.png" alt="Quantity Correction" title="Quantity Correction"></p>
+<p>Example: 100 pcs were ordered and delivered but 110 pcs were systemically received into the main warehouse.</p>
+<ol>
+<li><p>If the affected order has not yet been invoiced, then the receipt must be reversed and re-received for the correct quantity. These steps are <strong>NOT</strong> detailed below.</p>
+</li>
+<li><p>If the affected order has been invoiced, then:</p>
+</li>
+</ol>
+<p>Process Steps</p>
+<ol>
+<li>Create a new purchase order</li>
+<li>Enter: Line. 10 	Item Number	Correct Quantity	Value	 Main warehouse</li>
+<li>Enter: Line. 20	Item Number	“-“ Incorrect Quantity 	Value 	 Main warehouse</li>
+<li>Post the delivery note to receive the corrected quantity</li>
+<li>Submit the order for invoicing</li>
+</ol>
+<p>Example:</p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_example1.png" alt="Quantity Correction Example part 1" title="Quantity Correction example part 1"></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_example2.png" alt="Quantity Correction Example part 2" title="Quantity Correction example part 2"></p>
+<p><strong>Example step 1 to 3:</strong></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_example_1to3.png" alt="Quantity Correction Example step 1 to 3" title="Quantity Correction example step 1 to 3"></p>
+<p><strong>Example step 4:</strong></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_example_4_1.png" alt="Quantity Correction Example step 4 part 1" title="Quantity Correction example step 4part 1"></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_example_4_2.png" alt="Quantity Correction Example step 4 part 2" title="Quantity Correction example step 4 part 2"></p>
+<p>Step 5 - Upon completion, the new purchase order must be invoiced through Financial Accounting.</p>
+<h2 id="return-delivery-from-blocked-inventory">Return delivery from blocked inventory</h2>
+<p>(where rewort (replacement order) is performed for &quot;0&quot;€.)</p>
+<p>Create a Debit Note (Function -&gt; Return Order) with value – Order booking (Invoice), Do <strong>NOT</strong> send – Block Debit Note from Payment</p>
+<p>Steps</p>
+<ol>
+<li>Create debit note (Function -&gt; Return order)</li>
+<li>Create replacement order with value</li>
+<li>Enter receiving warehouse on Delivery note</li>
+<li>Invoice the order</li>
+<li>Block the applied debit note and advise the finance dept.</li>
+</ol>
+<p><strong>Example step 1:</strong></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_blocked_inventory_example_1.png" alt="Return delivery from blocked inventory step 1" title="Return delivery from blocked inventory step 1"></p>
+<p><strong>Example step 2 and 3:</strong> Return Delivery and Create Replacement Order</p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_blocked_inventory_example_2to3.png" alt="Return delivery from blocked inventory step 2 to 3" title="Return delivery from blocked inventory step 2 to 3"></p>
+<p><strong>Example step 4:</strong></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_blocked_inventory_example_4_1.png" alt="Return delivery from blocked inventory step 4 part 1" title="Return delivery from blocked inventory step 4 part 1"></p>
+<p><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_blocked_inventory_example_4_2.png" alt="Return delivery from blocked inventory step 4 part 2" title="Return delivery from blocked inventory step 4 part 2"></p>
+<p><strong>Example step 5:</strong> Block Debit Note</p>
+<p><img src="./../../media/Purchasing/Debit_Notes/Debit_Notes_blocked_inventory_example_5_1.png" alt="Return delivery from blocked inventory step 5 part 1" title="Return delivery from blocked inventory step 5 part 1"></p>
+<p><img src="./../../media/Purchasing/Debit_Notes/Debit_Notes_blocked_inventory_example_5_2.png" alt="Return delivery from blocked inventory step 5 part 2" title="Return delivery from blocked inventory step 5 part 2"></p>
+<p><img src="./../../media/Purchasing/Debit_Notes/Debit_Notes_blocked_inventory_example_5_3.png" alt="Return delivery from blocked inventory step 5 part 3" title="Return delivery from blocked inventory step 5 part 3"></p>
+<p><img src="./../../media/Purchasing/Debit_Notes/Debit_Notes_blocked_inventory_example_5_4.png" alt="Return delivery from blocked inventory step 5 part 4" title="Return delivery from blocked inventory step 5 part 4"></p>
+<p>When “Release for payment” is not checked, the invoice is blocked for payment.</p>
+<p>Provide the invoice number to the Finance group.</p>
+<h2 id="debit-note-of-value-and-order-of-value">Debit Note of Value and Order of Value</h2>
+<p>Refer to standard process for vendor return.</p>
+<h1 id="index">Index</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Index</th>
+<th>Status</th>
+<th style="text-align: center;">Date</th>
+<th>Author</th>
+<th>Reason for change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">01</td>
+<td>Released</td>
+<td style="text-align: center;">TBD</td>
+<td>Simon Berberich</td>
+<td>Publication</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

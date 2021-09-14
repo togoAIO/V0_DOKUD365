@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure automated tasks in a workflow | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure automated tasks in a workflow | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configure-automated-tasks-in-a-workflow" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="30">Configure automated tasks in a workflow</h1>
+
+<div class="IMPORTANT" sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="1">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="2">Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
+</div>
+
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="34">This topic explains how to configure the properties for an automated task.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="36">To configure an automated task in the workflow editor, right-click the task, and then click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="36">Properties</strong> to open the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="36">Properties</strong> page. Then use the following procedures to configure the properties for the automated task.</p>
+<h2 id="name-the-task" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="38">Name the task</h2>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="40">Follow these steps to enter a name for the automated task.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="42">In the left pane, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="42">Basic Settings</strong>.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="43">In the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="43">Name</strong> field, enter a unique name for the task.</li>
+</ol>
+<h2 id="specify-when-notifications-are-sent" sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="45">Specify when notifications are sent</h2>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="47">You can send notifications to people when an automated task has been run or canceled. Follow these steps to specify when notifications are sent, and who they are sent to.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="49">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="49"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="49">In the left pane, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="49">Notifications</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="50">Select the check box next to the events to send notifications for:</p>
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="52">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="52"><strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="52">Execution</strong> – Notifications are sent when the task has been run.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="53"><strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="53">Canceled</strong> – Notifications are sent when the task has been canceled.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="55"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="55">Select the row for an event that you selected in step 2.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="56"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="56">On the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="56">Notification text</strong> tab, in the text box, enter the text of the notification.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="57">To personalize the notification, you can insert placeholders. Placeholders are replaced with appropriate data when the notification is shown to users. Follow these steps to insert a placeholder:</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="59">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="59">In the text box, click where the placeholder should appear.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="60">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="60">Insert placeholder</strong>.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="61">In the list that appears, select the placeholder to insert.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="62">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="62">Insert</strong>.</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="64"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="64">To add translations of the notification, follow these steps:</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="66">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="66">Translations</strong>.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="67">On the page that appears, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="67">Add</strong>.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="68">In the list that appears, select the language that you're entering the text in.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="69">In the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="69">Translated text</strong> field, enter the text.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="70">To personalize the text, you can insert placeholders as described in step 5.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="71">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="71">Close</strong>.</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="73">On the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="73">Recipient</strong> tab, specify who the notifications are sent to. Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.</p>
+ <table>
+ <thead>
+ <tr>
+ <th>Option</th>
+ <th>Notification recipients</th>
+ <th>Additional steps</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Participant</td>
+ <td>Users who are assigned to a specific group or role</td>
+ <td>
+ <ol>
+ <li>After you select <strong>Participant</strong>, on the <strong>Role based</strong> tab, in the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</li>
+ <li>In the <strong>Participant</strong> list, select the group or role to send notifications to.</li>
+ </ol>
+ </td>
+ </tr>
+ <tr>
+ <td>Workflow user</td>
+ <td>Users who participate in the current workflow</td>
+ <td>
+ <ul>
+ <li>After you select <strong>Workflow user</strong>, on the <strong>Workflow user</strong> tab, in the <strong>Workflow user</strong> list, select a user who participates in the workflow.</li>
+ </ul>
+ </td>
+ </tr>
+ <tr>
+ <td>User</td>
+ <td>Specific users</td>
+ <td>
+ <ol>
+ <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
+ <li>The <strong>Available users</strong> list includes all users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
+ </ol>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="116"><p sourcefile="ProcessDoku/00_Basics/MS_Content/organization-administration/configure-automated-task-workflow.md" sourcestartlinenumber="116">Repeat steps 3 through 7 for each event that you selected in step 2.</p>
+</li>
+</ol>
+<!---
+title: Konfigurieren von automatisierten Aufgaben in einem Workflow
+description: Dieses Thema erläutert, wie Sie die Eigenschaften einer automatisierten Aufgabe konfigurieren können.
+author: ChrisGarty
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, IT Pro
+ms.reviewer: sericks
+ms.custom: 192061
+ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
+ms.search.region: Global
+ms.author: cgarty
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 664a70ed7c93c88e1a9cd020029bac285dbaa1f8
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694025"
+---
+# <a name="configure-automated-tasks-in-a-workflow"></a>Konfigurieren von automatisierten Aufgaben in einem Workflow
+
+[!include [banner](../includes/banner.md)]
+
+Dieses Thema erläutert, wie Sie die Eigenschaften einer automatisierten Aufgabe konfigurieren können.
+
+Klicken Sie zum Konfigurieren einer automatisierten Aufgabe im Workflow-Editor mit der rechten Maustaste auf die Aufgabe, und klicken Sie dann auf **Eigenschaften**, umdie Seite **Eigenschaften** zu öffnen. Verwenden Sie dann die folgenden Verfahren, um die Eigenschaften der automatisierten Aufgabe zu konfigurieren.
+
+## <a name="name-the-task"></a>Benennen der Aufgabe
+
+Gehen Sie folgendermaßen vor, um einen Namen für die automatisierte Aufgabe einzugeben.
+
+1. Klicken Sie im linken Bereich auf **Grundeinstellungen**.
+2. Geben Sie im Feld **Name** einen eindeutigen Namen für die Aufgabe ein.
+
+## <a name="specify-when-notifications-are-sent"></a>Angeben, wann Benachrichtigungen gesendet werden
+
+Sie können Benachrichtigungen an Personen senden, wenn eine automatisierte Aufgabe ausgeführt oder abgebrochen wurde. Gehen Sie folgendermaßen vor, um anzugeben, wann und an wen Benachrichtigungen gesendet werden.
+
+1. Klicken Sie im linken Bereich auf **Benachrichtigungen**.
+2. Aktivieren Sie das Kontrollkästchen neben den Ereignissen, für die Benachrichtigungen gesendet werden sollen.
+
+    - **Ausführung** – Benachrichtigungen werden gesendet, wenn die Aufgabe ausgeführt wurde.
+    - **Abgebrochen** – Benachrichtigungen werden gesendet, wenn die Aufgabe abgebrochen wurde.
+
+3. Wählen Sie eine Zeile für ein in Schritt 2 ausgewähltes Ereignis aus.
+4. Geben Sie im Textfeld auf der Registerkarte **Benachrichtigungstext** den Text der Benachrichtigung ein.
+5. Zum Personalisieren der Benachrichtigung können Sie Platzhalter einfügen. Platzhalter werden durch die entsprechenden Daten ersetzt, wenn die Benachrichtigung Benutzern angezeigt wird. Führen Sie folgende Schritte aus, um einen Platzhalter einzufügen:
+
+    1. Klicken Sie im Textfeld die Position des Platzhalters an.
+    2. Klicken Sie auf **Platzhalter einfügen**.
+    3. Wählen Sie in der angezeigten Liste den einzufügenden Platzhalter aus.
+    4. Klicken Sie auf **Einfügen**.
+
+6. Führen Sie die folgenden Schritte aus, um Übersetzungen von Benachrichtigungen hinzuzufügen:
+
+    1. Klicken Sie auf **Übersetzungen**.
+    2. Klicken Sie auf der nun angezeigten Seite auf **Hinzufügen**.
+    3. Wählen Sie in der angezeigten Liste die Sprache aus, in der Sie den Text eingeben.
+    4. Geben Sie den Text im Feld **Übersetzter Text** ein.
+    5. Um den Text zu personalisieren, können Platzhalter, wie in Schritt 5 beschrieben, eingefügt werden.
+    6. Klicken Sie auf **Schließen**.
+
+7. Auf der Registerkarte **Empfänger** geben Sie an, an wen die Benachrichtigungen gesendet werden. Wählen Sie eine der Optionen in der folgenden Tabelle aus, und führen Sie dann die zusätzlichen Schritte für diese Option aus, bevor Sie mit Schritt 8 fortfahren.
+
+    <table>
+    <thead>
+    <tr>
+    <th>Mit der folgenden Option...</th>
+    <th>Empfänger der Benachrichtigung</th>
+    <th>Zusätzliche Schritte</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Teilnehmer</td>
+    <td>Benutzer, die einer bestimmten Gruppe oder Rolle zugewiesen sind</td>
+    <td>
+    <ol>
+    <li>Nachdem Sie <strong>Teilnehmer</strong> auf der Registerkarte <strong>Rollenbasiert</strong> in der Liste <strong>Art von Teilnehmer</strong> ausgewählt haben, wählen Sie den Typ der Gruppe oder der Rolle aus, dem die Benachrichtigung gesendet werden soll.</li>
+    <li>Wählen Sie in der Liste <strong>Teilnehmer</strong> die Gruppe oder Rolle aus, an die Benachrichtigungen gesendet werden sollen.</li>
+    </ol>
+    </td>
+    </tr>
+    <tr>
+    <td>Workflowbenutzer</td>
+    <td>Benutzer, die am aktuellen Workflow teilnehmen</td>
+    <td>
+    <ul>
+    <li>Nachdem Sie, <strong>Workflowbenutzer</strong> auf der Registerkarte <strong>Workflowbenutzer</strong>, in der Liste <strong>Workflowbenutzer</strong> ausgewählt haben, wählen Sie einen Benutzer aus, der am Workflow teilnimmt.</li>
+    </ul>
+    </td>
+    </tr>
+    <tr>
+    <td>Benutzer</td>
+    <td>Bestimmte Benutzer</td>
+    <td>
+    <ol>
+    <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
+    <li>Die Liste <strong>Verfügbare Benutzer</strong> enthält alle Benutzer. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    </ol>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+8. Wiederholen Sie die Schritte 3 bis 7 für jedes in Schritt 2 ausgewählte Ereignis.
+---->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

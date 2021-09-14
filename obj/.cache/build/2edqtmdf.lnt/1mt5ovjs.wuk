@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>View vendor invoice automation results (preview) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="View vendor invoice automation results (preview) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="view-vendor-invoice-automation-results" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="28">View vendor invoice automation results</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="32">This topic explains how to view the status of vendor invoices that are in the automated submit-to-workflow process. Details of the automation history are maintained for each imported vendor invoice. Depending on the business processes that you've automated, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="32">Pending vendor invoices</strong> page shows <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="32">Automated receipt match status</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="32">Automated submit to workflow status</strong> values. You can view the details and make a plan to focus on the invoices that failed an automated step. Then, after you correct the issue, you can resume the automated process for the imported invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="34">Before you can edit an invoice that has been submitted, you must pause the automated processing. If an invoice in the automated submit-to-workflow process must be paused, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="34">Include in Automated processing</strong> field to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="34">No</strong> on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="34">Vendor invoices</strong> page. Automation then won't run until <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="34">Include in Automated processing</strong> is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="34">Yes</strong>. An invoice can be paused from further automation if it isn't yet in the workflow system and isn't used by the automated process.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="36">If an imported invoice is subject to the submit-to-workflow process, you can view its <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="36">Automation status</strong> value on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="36">Vendor invoices</strong> page. The following statuses are tracked:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="38"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="38">Included</strong> – The automated processes that are defined on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="38">Accounts payable parameters</strong> page are running correctly but haven't yet been completed.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="39"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="39">Paused</strong> – The automated processes that are defined on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="39">Accounts payable parameters</strong> page have run, but at least one step in the process failed. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="39">Paused</strong> status is also applied if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="39">Include in automated processing</strong> field is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="39">No</strong>. You can view the failures by selecting <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="39">View most recent results</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="40"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="40">In workflow</strong> – The imported invoice has been submitted to the workflow system, either by the automated submit-to-workflow process or manually.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="41"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/view-automated-vendor-invoice.md" sourcestartlinenumber="41">Workflow complete</strong> – The workflow process has been completed for the imported invoice.</li>
+</ul>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

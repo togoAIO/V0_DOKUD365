@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Embed third-party apps | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Embed third-party apps | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="embed-third-party-apps" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="28">Embed third-party apps</h1>
+
+[!include[banner](../includes/banner.md)][!include[banner](../includes/preview-banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="33">Many customers use a range of applications to run their business. Some of those applications are third-party web apps that work in conjunction with Finance and Operations apps. To provide a more seamless user experience, you can use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="33">(Preview) Full page apps</strong> feature to embed those third-party apps directly into your Finance and Operations apps (provided that the third-party apps allow themselves to be embedded). In this way, users can access the websites and apps that they require without having to switch tabs or windows.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="35">Before you can embed third-party apps into the product, you must turn on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="35">(Preview) Full page apps</strong> feature in Feature management. You can then use one of the following methods to embed a third-party app or website. These methods are analogous to the methods that are used to embed canvas apps from Microsoft Power Apps into Finance and Operations apps.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="37">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="37">Embed the app or website on an existing page as a new tab page (pivot tab, FastTab, blade, or workspace section).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="38">Create a new full-page experience for the app or website from the dashboard.</li>
+</ul>
+<h2 id="embed-a-website-on-an-existing-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="40">Embed a website on an existing page</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="42">Use this procedure if you want to supplement an existing page in the system with an embedded app.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="44">Open the page where you want to embed the app.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="45"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="45">Open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="45">Add an app</strong> pane:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="47">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="47">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="47">Settings</strong> and then <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="47">Personalize</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="47">Personalization</strong> toolbar.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="48">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="48">More &gt; Add an app</strong>.</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="50">Select the region of the page where you want to add the app. This region must be a <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="50">tab container</em> for a pivot tab, FastTab, blade, or workspace section.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="51">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="51">Website</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="52">Configure the embedded app:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="54">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="54"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="54">Name</strong> – Enter the text that should be shown for the tab that contains the embedded app. Often, you will want this text to be the name of the app.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="55"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="55">URL</strong> – Specify the location of the app.</li>
+</ul>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="57">
+<h5>Important</h5>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="58">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="58">For security reasons, the URL must use Hypertext Transfer Protocol Secure (HTTPS).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="59">The app or website must be configured to allow itself to be embedded.</li>
+</ul>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="61"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="61">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="61">Save</strong> to embed the app on the page. The app is added as the last tab or section in the group.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="62"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="62">Confirm that the app appears as expected. If the app isn't rendered, see the <a href="#troubleshooting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="62">Troubleshooting</a> section later in this topic.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="63"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="63">Open the view selector, and select either <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="63">Save</strong> (if the app should be associated with the current view) or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="63">Save as</strong> (to save the app to a different view).</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="65">If the page doesn't have a view selector (for example, if the page is a dialog box or a workspace), you can skip this step.</p>
+</li>
+</ol>
+<h2 id="embed-a-website-as-a-full-page-experience-from-the-dashboard" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="67">Embed a website as a full-page experience from the dashboard</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="69">Use this procedure if the app that you want to embed isn't related to an existing page, or if you just want a full-page experience for the app inside the Finance and Operations app.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="71">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="71"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="71">Open the dashboard.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="72"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="72">Select and hold (or right-click) the page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="72">Personalize</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="72">Add a page</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="73">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="73">Add a page</strong> pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="73">Website</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="74">Configure the embedded app:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="76">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="76"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="76">Name</strong> – Enter the text that should be shown on the tile that is added for the embedded app on the dashboard. Often, you will want this text to be the name of the app.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="77"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="77">URL</strong> – Specify the location of the app.</li>
+</ul>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="79">
+<h5>Important</h5>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="80">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="80">For security reasons, the URL must use HTTPS.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="81">The app or website must be configured to allow itself to be embedded.</li>
+</ul>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="83"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="83">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="83">Save</strong> to add the app to the dashboard as a new tile.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="84"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="84">Select the new tile on the dashboard, and confirm that the app appears as expected. If the app isn't rendered, see the <a href="#troubleshooting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="84">Troubleshooting</a> section later in this topic.</p>
+</li>
+</ol>
+<h2 id="sharing-embedded-apps" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="86">Sharing embedded apps</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="88">After you've embedded an app by using one of the methods that are described in the previous sections, you might want to share the view with other users in the system. To share an embedded app, use one of the following methods:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="90">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="90"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="90"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="90">Publish the view (Recommended):</strong> If the embedded app has been saved to a view, the recommended and preferred way to share it is to publish the view to users who have the appropriate security roles. Then, all users who have the security roles that are targeted by the published view will see the app in Finance and Operations apps. For more information about how to publish a view, see <a href="saved-views.html#publishing-views" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="90">Publishing views</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="92">You can also publish an app that has been embedded as a full-page experience from the dashboard. On the dashboard, select and hold (or right-click) the tile that is associated with the app, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="92">Personalize</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="92">Publish page</strong>. Currently, you can publish only to security roles. However, the capability to publish to legal entities will be added before the feature becomes generally available.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="94"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="94"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="94">Copy the personalization:</strong> For pages that don't support views (for example, dialog boxes or workspaces), or for the full-page app experience, you can copy the personalization to the appropriate users. For more information, see <a href="personalize-user-experience.html#sharing-personalizations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="94">Sharing personalizations</a>.</p>
+</li>
+</ul>
+<h2 id="viewing-embedded-apps" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="96">Viewing embedded apps</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="98">To view an embedded app on a page in Finance and Operations apps, open the page that has the embedded app. Remember that, on some pages, embedded apps can be accessed by using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="98">Power Apps</strong> button on the standard Action Pane. Alternatively, they might appear directly on the page as a new tab, FastTab, or blade, or as a new section in a workspace.</p>
+<h2 id="editing-or-removing-embedded-apps" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="100">Editing or removing embedded apps</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="102">After an app has been embedded on a page, you might have to edit its configuration (for example, by changing the section label or the URL). Alternatively, you might have to remove it from the page. Use one of the following procedures to edit the configuration of an embedded app or remove it completely.</p>
+<h3 id="apps-that-are-embedded-on-existing-pages" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="104">Apps that are embedded on existing pages</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="106">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="106"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="106">Open the page where the app is embedded.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="107"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="107">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="107">Settings</strong> and then <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="107">Personalize</strong> to open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="107">Personalization</strong> toolbar.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="108"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="108">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="108">Select</strong> tool, and then select the embedded app.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="109"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="109">To edit the app, make the required changes to its configuration, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="109">Save</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="111">Alternatively, to remove the app, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="111">Delete</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="113"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="113">Re-save or republish the view. Note that if you leave the page without explicitly saving the view, none of the actions that you performed in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="113">Edit website</strong> pane will be maintained.</p>
+</li>
+</ol>
+<h3 id="apps-that-are-embedded-from-the-dashboard" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="115">Apps that are embedded from the dashboard</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="117">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="117"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="117">Open the dashboard.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="118"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="118">Select and hold (or right-click) the tile that is associated with the embedded app, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="118">Personalize</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="119"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="119">To edit the app, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="119">Edit page</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="119">Edit website</strong> pane, make the required changes to the app configuration, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="119">Save</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="121">Alternatively, to remove the app, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="121">Remove page</strong>.</p>
+</li>
+</ol>
+<h2 id="appendix" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="123">Appendix</h2>
+<h3 id="troubleshooting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="125">Troubleshooting</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="127">If a website isn't rendered correctly after it's embedded in a Finance and Operation app, or if you receive an error message that states that the URL was denied a connection, the website is probably configured to prevent itself from being embedded in an iframe. Follow these steps to determine whether the website can be embedded.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="129">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="129">Open the developer tools for the browser that you're using.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="130">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="130">Network</strong> tab, find and select the response from the embedded site.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="131">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="131">Headers</strong> tab, under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="131">Response Headers</strong>, look for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="131">x-frame-options</strong>. If <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="131">x-frame-options</strong> exists in the response headers, and has a value of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="131">DENY</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="131">SAMEORIGIN</strong>, the website can't currently be embedded. You will have to work with the owner of the app to enable it to be safely embedded.</li>
+</ol>
+<h3 id="developer-modeling-a-website-on-a-form" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="133">[Developer] Modeling a website on a form</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="135">Although this topic is focused on embedding third-party apps or websites through personalization, developers can also embed them in a form by using the Visual Studio development experience. Just add a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/embed-website.md" sourcestartlinenumber="135">WebsiteHostControl</strong> control to the form. The metadata properties that are available for the control provide the same capabilities as the personalization experience.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Electronic reporting sample vendor checks | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Electronic reporting sample vendor checks | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="electronic-reporting-sample-vendor-checks" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="29">Electronic reporting sample vendor checks</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="33">You can use Electronic reporting (ER) to format vendor checks. Many bank-specific and check provider–specific check formats are available on the market. Sample check formats have been included in the Payment check model in the ER tool repository. These sample checks are labeled <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="33">Check in the middle (US)</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="33">Check on top stub below (US)</strong>.</p>
+<h2 id="what-check-formats-are-currently-supported" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="35">What check formats are currently supported?</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="37">You should always go to the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS) and view the current list of available files that have an asset type of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="37">GER configuration</strong>. The next section, “What do I have to set up?,” includes a link to a topic that explains how to create an LCS repository so that you can review available configurations and import selected configurations.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="39">Microsoft Dynamics 365 Finance includes a sample format where the check is on top, followed by two remittance sections. It also includes a sample format where the check is in the middle, between two remittance sections. These sample formats correspond to Deluxe business checks formats.</p>
+<h2 id="what-do-i-have-to-set-up" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="41">What do I have to set up?</h2>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="43">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="43">Before you can print checks by using ER, at least one active check configuration must be imported into your ER configurations. For instructions, see <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="43">Download Electronic reporting configurations from Lifecycle Services</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="44">When you configure Cash and bank management checks for the bank account, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="44">Generic electronic Export format</strong> check box, and then select the appropriate check format as an export format configuration.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="45">You must also specify the number of slip lines that will be printed on the remittance. Be sure to include the header rows when you calculate this number. For the two sample check formats, the recommended number of slip lines is 17. However, this number will vary, depending on your check stock and your printer drivers.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="46">We recommend that you print a test check to validate the check layout. To print a test check, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="46">Print test</strong> option. The sample check formats work best when <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="46">Margins</strong> is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="46">None</strong> in the advanced printer properties for Microsoft Excel. After the test check has been generated, enable editing of the Excel output, and configure the page layout so that all margins are set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="46">0</strong> (zero). Compare the test copy of the checks to your check stock, and adjust the settings until you're satisfied with the alignment.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="47">When you generate payments for the configured bank account in the payment journal, the checks will be printed by using the specified format.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="49">For more information, see <a href="../../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/electronic-reporting-sample-vendor-checks.md" sourcestartlinenumber="49">Modify an Electronic reporting format</a>.</p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

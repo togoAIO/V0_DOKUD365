@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tax branch dimensions | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tax branch dimensions | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tax-branch-dimensions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="28">Tax branch dimensions</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="32">A tax branch is used to record inventory movement and track the value-added tax (VAT) liability of a legal entity branch. The branches of a Thai legal entity are referred to as tax branches. Each tax branch is assigned the same tax registration number as its head office. All tax transactions that are performed for the legal entity must contain a tax branch, and they must be reported to the government.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="34">The number of tax branches that a legal entity has depends on the number of offices in different locations of the company. For example, if the legal entity has only one office, there is only one tax branch. This tax branch is referred to as the head office. If the legal entity has three offices, there is one head office, and a unique code is assigned to the other two offices.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="36">Specify a default tax branch for vendors and customers. When you post a purchase invoice or sales invoice, the default tax branch code on the purchase order lines or sales order lines is used as the tax branch code for that transaction.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="38">You can create a financial dimension to add tax branch as a dimension. You can then use the tax branch dimension as account segments for shared charts of accounts.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="40">You can view the tax branch code on the following pages:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="42"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="42"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="42">Posted sales tax</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="42">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="42">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="42">Sales tax inquiries</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="42">Posted sales tax</strong>): The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="42">Tax branch code</strong> field is updated with the tax branch code that is specified on the purchase order headers and sales order headers, and in the invoice journals, general journals, payment journals, and free text invoices.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="44"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="44">Posted withholding tax</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="44">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="44">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="44">Withholding tax inquiries</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="44">Posted withholding tax</strong>): The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="44">Tax branch code</strong> field is updated with the tax branch code that is specified in the general journals and payment journals.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46">Transaction details</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46">Inventory management</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46">Transactions</strong>, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46">Transaction details</strong>): The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46">Taxbranch</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46">Financial dimensions – financial</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46">Financial dimensions – physical</strong> FastTabs is updated with the tax branch code that is assigned to each site on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="46">Sites</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="48"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="48"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="48">Voucher transactions</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="48">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="48">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="48">Voucher transactions</strong>): The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="48">Tax branch code</strong> field is updated with the tax branch code that is specified on the purchase order headers and sales order headers, and in the invoice journals, general journals, payment journals, and free text invoices.</p>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="50">You can add tax branch as a dimension to track stock transfers between sites. When you transfer items from one site to another, the tax branch codes are updated for the transferred items.</p>
+<h2 id="set-up-tax-branches" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="52">Set up tax branches</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="54">Before you can set up tax branches, you must set up tax registration numbers for the legal entity on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="54">Legal entities</strong> page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="56">For more information, see <a href="../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="56">Create a legal entity</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="58">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="58">Tax branch</strong> page is available only if you turn on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="58">Use tax branch</strong> option on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="58">General ledger parameters</strong> page.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="60">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="60"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="60">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="60">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="60">Ledger setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="60">General ledger parameters</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="62"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="62">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="62">Sales tax</strong> tab, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="62">Tax options</strong> FastTab, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="62">Use tax branch</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="62">Yes</strong>.</p>
+</li>
+</ol>
+<h3 id="create-a-tax-branch" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="64">Create a tax branch</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="66">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="66">Tax branch</strong> page to create tax branches for a legal entity. VAT-registered legal entities must provide the tax branch code that is used for VAT, withholding tax transactions, and inventory movement between branches in the legal entity. You can select a branch as the head office and then update the tax branch code in the transactions by using tax branch as one of the financial dimensions for all financial postings. If a legal entity has many branches, the head office and all the tax branches will use the same tax registration number to report the transactions.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="68">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="68"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="68">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="68">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="68">Indirect taxes</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="68">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="68">Tax branch</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="70">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="70">New</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="72"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="72">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="72">Code</strong> field, enter a unique tax branch code.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="74">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="74">Name</strong> field, enter a name for the tax branch.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="76"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="76">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="76">Head office</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="76">Yes</strong> to indicate that the tax branch is the head office. Specify at least one tax branch as the head office.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="78"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="78">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="78">Address</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="78">Select address</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="80">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="80">Address selection</strong> dialog box, select a company or site address for the tax branch. You must specify a unique address for each tax branch.</p>
+</li>
+</ol>
+<h2 id="set-up-a-tax-branch-for-a-legal-entity" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="82">Set up a tax branch for a legal entity</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="84">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="84">Financial dimensions</strong> page to set up a tax branch for a legal entity. After you set up a tax branch for a legal entity, you must add the tax branch to the active account structures to make the tax branch dimension value available on all pages that include a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="84">Financial dimensions</strong> tab. You only have to add the tax branch to an account structure one time.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="86">After you've added the tax branch financial dimension to an account structure, the dimension is available on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="86">Financial dimensions</strong> FastTab on all the journal headers in Accounts payable, Accounts receivable, and General ledger. The tax branch dimension value is also available on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="86">Sales orders</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="86">Purchase orders</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="86">Free text invoices</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="86">Inventory journal lines</strong> pages.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="88">For more information, see <a href="../general-ledger/financial-dimensions.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="88">Financial dimensions</a> and <a href="../general-ledger/configure-account-structures.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="88">Configure account structures</a>.</p>
+<h2 id="set-up-a-tax-branch-for-a-vendor-or-a-customer" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="90">Set up a tax branch for a vendor or a customer</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="92">Create a record of the vendor and customer transactions that are performed at tax branches. Therefore, you must assign a tax branch to each vendor and customer. The tax branch that you specify for a vendor or customer is then used as the default tax branch for all vendor or customer transactions. Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="92">All vendors</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="92">All customers</strong> pages to specify a tax branch for vendors and customers.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="94">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="94"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="94">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="94">Accounts payable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="94">Vendors</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="94">All vendors</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="94">Accounts receivable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="94">Customers</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="94">All customers</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="96"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="96">Open an existing vendor or customer account or create a new vendor or customer account.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="98"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="98">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="98">Edit</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="100"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="100">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="100">Financial dimensions</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="100">Taxbranch</strong> field, select a tax branch dimension.</p>
+</li>
+</ol>
+<h2 id="assign-a-tax-branch-to-a-site" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="102">Assign a tax branch to a site</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="104">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="104">Sites</strong> page to create one or more sites, and to assign a tax branch to a site to track the inventory movement at that tax branch.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="106">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="106"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="106">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="106">Inventory management</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="106">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="106">Inventory breakdown</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="106">Sites</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="108"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="108">Create a site.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="110"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="110">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="110">Site</strong> field, enter a unique identifier.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="112"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="112">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="112">Name</strong> field, enter a unique name for the site.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="114"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="114">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="114">Tax branch</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="114">Tax branch</strong> field, select the tax branch code.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="116"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="116">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="116">Addresses</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="116">Add</strong>, and then, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/apac-tha-tax-branch-dimensions.md" sourcestartlinenumber="116">New address</strong> dialog box, enter the address details.</p>
+</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

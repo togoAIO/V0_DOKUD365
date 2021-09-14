@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Process collection letters example | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Process collection letters example | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="process-collection-letters-example" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="28">Process collection letters example</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="32">This topic goes through an example that shows the process of creating, printing, and posting collection letters. The example is based on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="32">Ignore payments and credit memos when calculating collection letter code</strong> option in Credit and collections. It uses data in the USMF demo company and a new customer, US-045.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="34">To begin, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="34">Accounts receivable &gt; Customers &gt; All customers</strong>, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="34">New</strong>, and then enter the required information to create customer US-045.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="36">When you've finished, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="38">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="38">Credit and collections &gt; Collection letter &gt; Setup collection letter sequence</strong>, and set up the collection letter sequence as shown in the following table that is assigned to the customer posting profile.</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="40">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="40">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="40">Collection   letter code</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="40">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="40">Currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="40">Main   account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="40">Fee   in currency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="40">Minimum   over</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="40">Days   Block</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="42">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="42">Collection   letter 1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="42">Second   notification with fee</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="42">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="42"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="42">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="42">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="42">2</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="43">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="43">Collection   letter 2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="43">Second   notification with fee</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="43">USC</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="43">403150</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="43">20.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="43">10.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="43">3</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="44">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="44">Collection</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="44">Final   notification with fee</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="44">USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="44">403150</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="44">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="44">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="44">15</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="46">The following illustration shows the information that's in the table as it would appear on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="46">Collection letters</strong> page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="48"><a href="media/Ignore-payments-creditmemos-1.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="48"><img src="media/Ignore-payments-creditmemos-1.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="48" alt="Setting up a collection letter sequence."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="50">You must now set the two parameters that are required for this example.</p>
+<ol start="2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="52">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="52">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="52">Credit and collections &gt; Setup &gt; Accounts receivable parameters</strong>, and follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="54">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="54">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="54">Collections</strong> tab, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="54">Ignore payments and credit memos when calculating collection letter code</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="54">Yes</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="55">Make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="55">Create collection letter per</strong> field is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="55">Customer</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="57"><a href="media/Ignore-payments-creditmemos-2.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="57"><img src="media/Ignore-payments-creditmemos-2.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="57" alt="Setting Accounts receivable parameters for Credit collections."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="59"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="59">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="59">Accounts receivable &gt; Invoices &gt; All free text invoices</strong>, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="59">New</strong>, and then follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="61">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="61">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="61">Customer account</strong> field select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="61">US-045</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="62">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="62">Invoice date</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="62">1/15/2021</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="63">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="63">Due date</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="63">1/16/2021</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="64">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="64">Invoice lines</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="64">Main account</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="64">401100</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="65">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="65">Unit price</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="65">500.00</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="66">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="66">Post</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="68">You must now enter two credit notes for the customer.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="70">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="70">New</strong>, and then follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="72">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="72">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="72">Customer account</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="72">US-045</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="73">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="73">Invoice date</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="73">1/15/2021</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="74">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="74">Due date</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="74">1/16/2021</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="75">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="75">Invoice lines</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="75">Main account</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="75">401100</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="76">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="76">Unit price</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="76">-100.00</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="77">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="77">Post</strong>.</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="79">Repeat step 4, but enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="79">-200.00</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="79">Unit price</strong> field.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="80">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="80">Accounts receivable &gt; Customers &gt; All customers</strong>, and select customer <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="80">US-045</strong>. Then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="80">Transactions &gt; Transactions</strong> to review the customer transactions that you posted earlier.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="82"><a href="media/Ignore-payments-creditmemos-3.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="82"><img src="media/Ignore-payments-creditmemos-3.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="82" alt="Reviewing the posted customer transactions."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="84">You must now create collection letters for customer US-045.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="86"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="86">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="86">Credit and collections &gt; Collection letter &gt; Create collection letters</strong>, and follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="88">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="88"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="88">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="88">Invoice</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="88">Credit note</strong> options to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="88">Yes</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="90">By default, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="90">Collection letter</strong> field should be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="90">Collection per customer</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="92"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="92">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="92">Collection letter date</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="92">1/19/2021</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="93"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="93">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="93">Records to include</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="93">Filter</strong>, and then, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="93">Customer account</strong> field, add customer <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="93">US-045</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="94"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="94">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="94">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="95"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="95">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="95">OK</strong> to create collection letters.</p>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="97"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="97">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="97">Credit and collections &gt; Collection letter &gt; Review and process collection letters</strong>, and follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="99">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="99">Notice that the collection letter code on both the header and the transaction lines is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="99">Collection letter 1</strong>, because this collection letter is the first collection letter in the sequence. (To view the transaction lines, you might have to select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="99">Transactions</strong> FastTab.)</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="101"><a href="media/Ignore-payments-creditmemos-4.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="101"><img src="media/Ignore-payments-creditmemos-4.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="101" alt="Verifying that the same collection letter code appears on the header and the lines."></a></p>
+<ol start="2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="103">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="103">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="103">Post</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="104">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="104">Posting date</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="104">1/19/2021</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="106">You must now create collection letters again for customer US-045.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="108"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="108">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="108">Credit and collections &gt; Collection letter &gt; Create collection letters</strong>, and follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="110">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="110"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="110">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="110">Invoice</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="110">Credit note</strong> options to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="110">Yes</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="112">By default, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="112">Collection letter</strong> field should be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="112">Collection per customer</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="114"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="114">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="114">Collection letter date</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="114">1/23/2021</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="115"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="115">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="115">Records to include</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="115">Filter</strong>, and then, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="115">Customer account</strong> field, add customer <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="115">US-045</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="116"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="116">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="116">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="117"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="117">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="117">OK</strong> to create collection letters.</p>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="119"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="119">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="119">Credit and collections &gt; Collection letter &gt; Review and process collection letters</strong>, and follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="121">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="121">Notice that the collection letter code on the header is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="121">Collection letter 1</strong>. However, the code on the transaction lines is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="121">Collection letter 2</strong>.</li>
+</ol>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="123"><a href="media/Ignore-payments-creditmemos-5.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="123"><img src="media/Ignore-payments-creditmemos-5.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="123" alt="Verifies that different collection letter codes appear on the header and the lines."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="125">The codes differ because the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="125">Ignore payments and credit memos when calculating collection letter code</strong> option is to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="125">Yes</strong>.</p>
+<ol start="2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="127">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="127"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="127">Don't post this collection letter.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="129"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="129">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="129">Credit and collections &gt; Setup &gt; Accounts receivable parameters</strong>, and then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="129">Collections</strong> tab, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="129">Ignore payments and credit memos when calculating collection letter code</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="129">No</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="131"><a href="media/Ignore-payments-creditmemos-6.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="131"><img src="media/Ignore-payments-creditmemos-6.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="131" alt="Setting the Ignore payments and credit memos when calculating collection letter code option to No."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="133">You must now create collection letters again for customer US-045.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="135"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="135">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="135">Credit and collections &gt; Collection letter &gt; Create collection letters</strong>, and follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="137">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="137"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="137">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="137">Invoice</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="137">Credit note</strong> options to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="137">Yes</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="139">By default, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="139">Collection letter</strong> field should be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="139">Collection per customer</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="141"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="141">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="141">Collection letter date</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="141">1/23/2021</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="142"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="142">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="142">Records to include</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="142">Filter</strong>, and then, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="142">Customer account</strong> field, add customer <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="142">US-045</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="143"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="143">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="143">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="144"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="144">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="144">OK</strong> to create collection letters.</p>
+</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="146"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="146">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="146">Credit and collections &gt; Collection letter &gt; Review and process collection letters</strong>, and notice that the collection letter code on both the header and the transaction lines is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="146">Collection letter 2</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="148"><a href="media/Ignore-payments-creditmemos-7.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="148"><img src="media/Ignore-payments-creditmemos-7.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="148" alt="Showing again that the same collection letter code appears on the header and the lines."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="150">The same code appears in both places because the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="150">Ignore payments and credit memos when calculating collection letter code</strong> option is now set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/process-collection-letters-example.md" sourcestartlinenumber="150">No</strong>.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

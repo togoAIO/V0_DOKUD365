@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Set up pay cycles and pay periods | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Set up pay cycles and pay periods | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="set-up-pay-cycles-and-pay-periods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="30">Set up pay cycles and pay periods</h1>
+
+[!include[banner](../../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="34">Pay cycles determine the intervals that workers are paid in. This topic explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="36">A pay cycle determines how often payroll is run and the specific days that workers are paid on. For example, a pay cycle is monthly, and employees are paid on the last day of the month. Alternatively, a pay cycle is weekly, and employees are paid on the Tuesday after the end of the pay period.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="38">Pay cycles are assigned to positions to help control when workers in those positions are paid. Pay cycles are also assigned to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or recurring earnings.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="40">After you create pay cycles, you can generate pay periods for each cycle. Each pay period includes a default payment date that is based on information that you provide. However, you can modify the default payment date in a pay period to handle exceptions, such as a payment date that occurs on a holiday. The following illustration shows the basic steps for setting up pay cycles and pay periods.</p>
+<h2 id="set-up-pay-cycles" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="42">Set up pay cycles</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="44">You use pay cycles to specify the frequency of pay periods and the pay dates for positions. Before you set up pay cycles, determine how many unique combinations of pay cycle frequencies and pay dates your organization has. Each unique combination requires a separate pay cycle. For example, your organization has the following pay cycle frequencies and pay dates.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="46">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="46">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="46">Position type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="46">Pay cycle frequency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="46">Pay dates</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="48">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="48">Management</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="48">Semimonthly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="48">The first day and the fifteenth day of the month</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="49">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="49">Salary, non-management</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="49">Weekly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="49">The last day of the pay period</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="50">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="50">Hourly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="50">Weekly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="50">The Friday after the last day of the pay period</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="52">In this case, your organization requires three pay cycles. One of the three pay cycles is then assigned to every position. To create a new pay cycle, you must specify a name and description for the pay cycle. You must also specify one of the following pay cycle frequencies:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="54">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="54">Daily</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="55">Weekly</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="56">Biweekly</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="57">Semimonthly</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="58">Monthly</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="59">Quarterly</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="60">Semiannually</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="61">Annually</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="63">Different groups of positions that have the same pay cycle frequency might have different pay dates. For example, both hourly and salaried positions are paid biweekly. If all positions are paid on the Friday after the last working day of the pay period, you can use the same pay cycle for both hourly and salaried positions. However, if salaried positions are paid on the last working day of the pay period, but hourly positions are paid on the Friday after the last working day of the pay period, you must have one biweekly pay cycle for hourly positions and another biweekly pay cycle for salaried positions.</p>
+<div class="TIP" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="65">
+<h5>Tip</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="66">You can't change the pay cycle frequency after you save the pay cycle. Instead, you must create a new pay cycle that has the correct pay cycle frequency. When you've finished creating all the pay cycles that your organization requires, close the page, or continue to the next section, &quot;Generate pay periods.&quot;</p>
+</div>
+<h2 id="generate-pay-periods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="68">Generate pay periods</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="70">You can generate any number of pay periods for each pay cycle. Most organizations generate pay periods for one year at a time.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="72">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="73">Pay can be processed only for pay periods that are in the system. You should plan to generate new pay periods before you've used all the existing pay periods. Many organizations generate new pay periods when they prepare for a new fiscal year.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="75">There can't be a gap of any number of days between the end date of one pay period and the start date of the next pay period. Therefore, you can delete only pay periods that are at the start or the end of the list of pay periods.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="77">The following table shows the number of pay periods that you enter to generate pay periods for one year or five years for typical pay cycle frequencies. This information will help you set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="77">Number of periods</strong> field.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="79">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="79">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="79">Pay cycle frequency</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="79">Pay periods in one year</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="79">Pay periods in five years</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="81">Monthly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="81">12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="81">60</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="82">Semimonthly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="82">24</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="82">120</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="83">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="83">Biweekly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="83">26</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="83">130</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="84">Weekly</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="84">52</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="84">260</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="86">If you don't want to modify default payment dates at this point, the pay cycles are ready for you to use. You can assign the pay cycles to positions to control when workers in those positions are paid. For more information, see &quot;Assign pay cycles to positions.&quot; later in this topic.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="88">You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or recurring earnings. For more information, see &quot;Assign pay periods to payroll calculation frequencies&quot; in <a href="noam-usa-pay-cycle-pay-period-tasks-sample.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="88">Set up pay cycles and pay periods</a>.</p>
+<h2 id="optional-modify-the-payment-dates-and-statuses-of-pay-periods" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="90">Optional: Modify the payment dates and statuses of pay periods</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="92">When you generate pay periods, the pay period status is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="92">Open</strong>, and a default payment date is set for every pay period. After you generate pay periods, you can set the pay period status according to your organization's practices. Additionally, you can change any default payment dates that are bank holidays or other days when pay can't be issued.</p>
+<div class="TIP" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="94">
+<h5>Tip</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="95">You might find it helpful to have a list of weekend and holiday dates before you start this task.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="97">You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or taxes. For more information, see &quot;Assign pay periods to payroll calculation frequencies&quot; in <a href="noam-usa-pay-cycle-pay-period-tasks-sample.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="97">Set up pay cycles and pay periods</a>.</p>
+<h2 id="assign-pay-cycles-to-positions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="99">Assign pay cycles to positions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="101">Typically, pay cycles are assigned to positions when the positions are set up for payroll. For more information, see <a href="noam-usa-worker-position-payroll-tasks.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="101">Set up payroll for workers</a>. You assign the pay cycles to positions on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="101">Payroll</strong> tab.</p>
+<h2 id="next-step" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="103">Next step</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="105">If you must control the specific pay periods that various payroll elements are processed in, the next step is to set up payroll calculation frequencies. For more information, see <a href="noam-usa-payroll-calculation-frequencies-tasks.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="105">Set up payroll calculation frequencies</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="107">If you decide not to set up payroll calculation frequencies, the next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see <a href="noam-usa-work-cycle-work-period-tasks.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md" sourcestartlinenumber="107">Set up work cycles and work periods</a>.</p>
+[!include[footer-include](../../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Set up lease approval workflows | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Set up lease approval workflows | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="set-up-lease-approval-workflows" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="30">Set up lease approval workflows</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="34">The topic explains how to set up an approval workflow that will run when a new lease is created. For information about how to use the workflow, see <a href="use-create-lease-wrkflw.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="34">Use lease approval workflows</a>.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="36">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="36"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="36">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="36">Asset leasing &gt; Setup &gt; Lease workflow</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="37"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="37">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="37">Lease workflow</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="37">New</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="38"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="38">In the dialog box that appears, under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="38">Workflow type</strong>, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="38">Lease workflow</strong> link.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="40">The application is opened. After it runs, sign in to Azure Active Directory (Azure AD) to be redirected to the workflow application.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="42"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="42">Drag the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="42">Lease workflow approval</strong> element onto the workflow.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="43"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="43">Connect one node from <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="43">Start</strong> to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="43">Lease workflow approval</strong>. Then connect <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="43">Lease workflow approval</strong> to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="43">End</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="44">Double-click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="44">Lease workflow approval</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="45"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="45">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="45">Properties</strong>, and then, under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="45">Basic settings</strong>, enter a name for the workflow.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="47">On this page, you can also set more parameters for the workflow. If you've turned on <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="47">Automatic actions</strong>, the system will automatically take a specific action. Notifications can be sent if they are specified on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="47">Notifications</strong> tab. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="47">Advanced settings</strong> tab, you can specify a final approver, set a time limit, and designate specific actions that must be completed.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="49"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="49">When you've finished setting the workflow parameters, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="49">Close</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="50">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="50">Step 1</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="50">Properties</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="51">Under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="51">Basic settings</strong>, enter a name for the step, create a subject line for the approval, and specify instructions for the approval.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="52">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="52">Assignment</strong> page, select the assignment type.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="53"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="53">To assign specific users to the approval, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="53">User</strong>, select the users who approve leases, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="53">Close</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="54"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="54">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="54">Save and close</strong> to create the workflow. Then, when you're prompted, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="54">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="55"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="55">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="55">Create workflow</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="55">Close</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="56"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="56">Select the new workflow, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="56">Versions</strong>. Then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="56">Make active</strong> to ensure that the workflow is active.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="57">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/set-up-lease-wrkflw.md" sourcestartlinenumber="57">Close</strong>. The new active version appears.</p>
+</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

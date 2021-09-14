@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Dimension Expression Builder subpattern | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Dimension Expression Builder subpattern | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="dimension-expression-builder-subpattern" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="30">Dimension Expression Builder subpattern</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="34">This article describes the Dimension Expression Builder subpattern, which is applied to container controls that use the Dimension Expression Builder control.</p>
+<h2 id="usage" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="36">Usage</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="38">The Dimension Expression Builder pattern is used when you have a group or tab page that uses the Dimension Expression Builder control.</p>
+<h2 id="wireframe" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="40">Wireframe</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="42"><a href="media/dimensionexpressionbuilderwireframe.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="42"><img src="media/dimensionexpressionbuilderwireframe.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="42" alt="Wireframe for container."></a></p>
+<h2 id="model" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="44">Model</h2>
+<h3 id="high-level-structure" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="45">High-level structure</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="47">TabPage | Group</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="49"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="49">TopFieldGroup (Group) [Optional]</em> – <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="49">Note:</strong> A field subpattern is used.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="51"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="51">DEBGroup (Group) [0..N]</em></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="53">Dimension Expression Builder</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="55"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="55">Dimension Expression Builder [0..N]</em></p>
+<h3 id="core-components" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="57">Core components</h3>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="59">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="59">Apply the Dimension Expression Builder subpattern to the TabPage or Group control.</li>
+</ul>
+<h2 id="ux-guidelines" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="61">UX guidelines</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="62">None</p>
+<h2 id="examples" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="64">Examples</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="65">Form: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="65">BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="65">Budgeting</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="65">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="65">Budget control</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="65">Budget control configuration</strong>) <a href="media/dimensionexpressionbuilderexample.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="65"><img src="media/dimensionexpressionbuilderexample.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="65" alt="Example of form."></a></p>
+<h2 id="appendix" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="67">Appendix</h2>
+<h3 id="frequently-asked-questions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="68">Frequently asked questions</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="70">This section will have answers to frequently asked questions that are related to this guideline/pattern.</p>
+<h3 id="open-issues" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="72">Open issues</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimension-expression-builder-subpattern.md" sourcestartlinenumber="74">None</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

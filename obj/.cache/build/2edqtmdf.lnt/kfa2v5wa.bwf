@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Prepare for go-live | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Prepare for go-live | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="prepare-for-go-live" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="27">Prepare for go-live</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="31">This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="33">Production and Sandbox can only be deployed in two different <a href="../../dev-itpro/deployment/cloud-deployment-overview.md#customer-lifecycle-subscriptions-and-environment-types" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="33">types of environments</a>: Microsoft Managed or Self-Service. Both follow the same preparation for go-live, but the service level agreements (SLA) and some of the process steps are different.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="35">This graphic and the following table list the phases of the go-live process, the environment type to which each phase applies with the expected duration, and who is responsible to take the action.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="37"><img src="media/go-live-process.PNG" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="37" alt="Go-live process."></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="40">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="40">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="40">Phase</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="40">Action</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="40">Environment type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="40">Duration/When</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="40">Who</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="40">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="42">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="42">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="42">Update Go-live date in LCS</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="42">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="42">At the latest 2-3 months in advance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="42">Customer/Partner</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="42">The milestone dates should be kept up to date on an ongoing basis.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="43">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="43">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="43">Complete and send pre go-live checklist</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="43">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="43">After user acceptance testing (UAT) complete</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="43">Customer/Partner</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="43">Follow the instructions provided in the &quot;FastTrack Go-live Assessment&quot; section later in this topic.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="44">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="44">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="44">Project Go-Live assessment (FastTrack Essentials)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="44">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="44">3-business days for initial report, plus additional time for mitigation, if required</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="44">Microsoft-FastTrack Solution Architect</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="44">Solution Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="45">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="45"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="45">Go-live Assessment workshop (FastTrack)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="45">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="45">To coordinate with architect assigned</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="45">Microsoft-FastTrack Solution Architect</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="45"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="46">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="46">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="46">Release for production deployment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="46">Microsoft Managed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="46">Immediate upon successfully completed assessment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="46">Microsoft-FastTrack Solution Architect</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="46">Do not submit production request until the assessment is successfully completed.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="47">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="47"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="47"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="47">Self-Service</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="47">Immediate upon successfully completed assessment and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="47">Configure</strong> button is enabled</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="47">Microsoft-FastTrack Solution Architect</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="47">For Self-Service deployment, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="47">Configure</strong> button remains disabled until the assessment is complete.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="48">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="48">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="48">Production deployment request</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="48">Microsoft Managed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="48">Self-service</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="48">Customer/Partner</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="48">The production deployment request should only be submitted after the FastTrack Architect has finished the assessment.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="49">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="49"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="49"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="49">Self-Service</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="49">Self-service</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="49">Customer/Partner</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="49">After the assessment is complete, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="49">Configure</strong> button will be enabled and customer will be able to request the production deployment.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="50">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="50"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="50">Sizing</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="50">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="50">Immediate in case of automatic sizing. Could require further clarifications of the subscription estimate.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="50">Microsoft-Dynamic Service Engineering (DSE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="50">Automatic sizing based on subscription estimate by default, manual sizing by exception.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="51">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="51"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="51">Deployment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="51">Microsoft Managed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="51">48 hours</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="51">Microsoft-Dynamic Service Engineering (DSE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="51">Status in LCS reflects the deployment progress. If there are any questions about your request, they will be posted as Comments on the service request.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="52">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="52"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="52"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="52">Self-Service</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="52">An average of 30 minutes</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="52">Microsoft-FastTrack Solution Architect</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="52">The deployment could take an average of 30 minutes after the assessment has completed and the production environment has been requested. For more information, see <a href="../../dev-itpro/deployment/deployenvironment-newinfrastructure.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="52">Deploy a new environment</a>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="53">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="53">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="53">Deployable package installation request</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="53">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="53">Self-service</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="53">Customer/Partner</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="53">Follow the instructions in <a href="../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#apply-updates" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="53">Apply updates</a>. The packages must contain all the models and binaries consolidated in an <a href="../../dev-itpro/dev-tools/aio-deployable-packages.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="53">All-in-one</a> deployable package.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="54"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="54">Package installation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="54">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="54">Minimum 5 hours lead time and 4 hours downtime</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="54">Microsoft-Dynamic Service Engineering (DSE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="54">Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="55">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="55">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="55">Database copy from Sandbox request (if applicable)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="55">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="55">Self-service</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="55">Customer/Partner</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="55">Follow the instructions <a href="../../dev-itpro/database/database-refresh.md#self-service-database-refresh" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="55">Self-service database refresh</a>. If you have a golden configuration you can review <a href="../../dev-itpro/database/dbmovement-scenario-goldenconfig.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="55">Golden configuration promotion</a>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="56">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="56"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="56">Copy database</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="56">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="56">Five hours lead time and four hours downtime</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="56">Microsoft-Dynamic Service Engineering (DSE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="56">Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of four hours in case a rollback is required for any reason.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="57">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="57">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="57">Production ready</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="57">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="57">After all previous steps have been completed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="57">Customer/Partner</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="57">Customer can take control of the production environment.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="58">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="58"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="58">Cutover activities</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="58">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="58">Depends on the project</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="58">Customer/Partner</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="58"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="59">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="59">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="59">Go live</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="59">Both</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="59">Depends on the project</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="59">Customer/Partner</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="59"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="completing-the-lcs-methodology" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="61">Completing the LCS methodology</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="63">A major milestone in each implementation project is the cutover to the production environment.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="65">To ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="65">Operate</strong> phase, after the required activities in the LCS methodology are complete. For more information about the environments in your subscription, see the <a href="https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="65">Licensing guide</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="67">Customers must complete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="67">Analysis</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="67">Design and Develop</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="67">Test</strong> phases in the LCS methodology before the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="67">Configure</strong> button that is used to request the production environment becomes available.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="69">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="70">For Self-Service environments, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="70">Configure</strong> button will only become available after the Solution Architect has signed off on the assessment.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="72">To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see <a href="../../dev-itpro/lifecycle-services/lcs-works-lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="72">Lifecycle Services (LCS) for Finance and Operations apps customers</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="74">The process of completing a step has two parts:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="76">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="76">Do the actual work, such as a fit-gap analysis or user acceptance testing (UAT).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="77">Mark the corresponding step in the LCS methodology as completed.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="79">It's good practice to complete the steps in the methodology as you make progress with the implementation. Don't wait until the last minute. Don't just click through all the steps so that you can get a production environment. It's in the customer's best interest to have a solid implementation.</p>
+<h2 id="uat-completion-and-solution-sign-off" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="81">UAT completion and solution sign off</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="83">During the UAT phase, you must test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox, or Standard Acceptance Test, environment in the implementation project. To help ensure a successful go-live, you should consider the following as you complete the UAT phase:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="85">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="85">Test cases cover the entire scope of requirements.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="86">Test by using migrated data. This data should include master data and opening balances, even if they aren't yet final.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="87">Test by using the correct security roles (default roles and custom roles) that are assigned to users.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="88">Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="89">Run the <a href="../../dev-itpro/dev-tools/customization-analysis-report.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="89">Customization Analysis Report (CAR)</a> and resolve critical issues.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="90">Complete performance testing.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="91">Document all features, and obtain approval and sign-off from the customer.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="93">Regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD), testing can't be considered complete when you test only in an environment that is a developer or demo topology. Here are the reasons:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="95">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="95">The topology of the Tier-1 environments differs from the topology of your production environment. It's important that you test all functionality on a Tier-2 or higher sandbox environment in the Microsoft-managed subscription. It's especially important that you test integrations, printing functionality, workflow functionality, and warehouse and commerce devices in the sandbox environment.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="96">System performance can't be measured when you do the UAT on local virtual machines (VMs) or VMs that are privately hosted.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="97">To prevent delays during the cutover process, it's important that the team experience the servicing in LCS during the implementation. This servicing includes the processes of applying deployable packages, creating service requests, and moving database between environments.</li>
+</ul>
+<h2 id="fasttrack-go-live-assessment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="99">FastTrack Go-live assessment</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="101">All customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your production environment. If you aren't familiar with Microsoft FastTrack, see <a href="/dynamics365/fasttrack/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="101">FastTrack for Dynamics 365 home page</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="103">About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="105">You can download the checklist from <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="105">Dynamics 365 Community</strong> on the <a href="https://aka.ms/FastTrackPreGoLiveChecklist" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="105">Go-live Planning TechTalk</a> page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="107">The project manager or a key project member must complete the go-live checklist during the pre-go-live phase of the project. Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="109">When you've completed the go-live checklist, email it to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="109">Dynamics 365 FO Go-Live</strong> d365fogl@microsoft.com. Always include a key stakeholder from the customer and the implementation partner on the email.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="111">After the checklist is submitted, a Microsoft solution architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, the solution architect might highlight risk factors and ask for a mitigation plan. When the assessment is completed, the solution architect will indicate that you're ready to request the production environment in LCS.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="113">For Microsoft Managed environments, if you request the production environment before the assessment is completed, the deployment will remain in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="113">Queued</strong> state until the assessment is successfully completed. For Self-Service environments, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="113">Configure</strong> button to request production will be only enabled after the assessment is completed.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="115">You can cancel an environment deployment request while it is in a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="115">Queued</strong> state by following these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="117">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="117">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="117">Queued</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="118">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="118">Customer sign-off</strong> tab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="118">Clear sign-off</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="120">This will set the environment back into a state of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="120">Configure</strong> and allow you to make changes to the configuration, such as selecting a different data center or environment topology.</p>
+<h2 id="requesting-the-production-environment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="122">Requesting the production environment</h2>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="124">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="125">The production environment is used exclusively for running your business operations and shouldn't be used for testing. You will be able to perform the cutover, and if planned, to mock the cutover in production. To test the solution, you must use a UAT environment, which is designed with the necessary elements and services for testing.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="127">After you've completed the analysis, design and develop, and test phases in the LCS methodology, and the go-live assessment has concluded that the project is ready, you can request your production environment.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="129">We recommend that you select a service account, for example a generic user account, as the Admin user of the environments that you deploy. If you use a named user account, you might not be able to access an environment if that user isn't available. Here are some scenarios where the Admin user must access an environment:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="131">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="131"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="131">First sign-in to any environment after initial deployment</strong> – In this case, the Admin user is the only user who can access the environment.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="132"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="132">First sign-in to a sandbox environment after a database refresh from the production environment</strong> – In this case, all user accounts except the Admin account are unable to sign in.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="134">Your production environment should be deployed to the same datacenter where your sandbox environments are deployed.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="136">After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you. For <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="136">Microsoft Managed</strong> environments, the Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours. The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information. For <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="136">Self-Service</strong> environments, the deployment will take around 30 minutes after the production request has been submitted. You can view the progress of the deployment in LCS. Typically, the status of the production environment request remains <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="136">Queued</strong> for a few hours before it's changed to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="136">Deploying</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="138">When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team is automatically created. You can view this service request in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/imp-lifecycle/prepare-go-live.md" sourcestartlinenumber="138">Service requests</strong> list in LCS. If the DSE team has questions that prevent them from deploying the production environment, they will add a comment to the service request. For example, the DSE team might ask that you update the subscription estimate or change the datacenter. In some cases, you might have to clear the sign-off from the production deployment request to make changes.</p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

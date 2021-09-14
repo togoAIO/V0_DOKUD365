@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tax calculation performance affects transactions | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tax calculation performance affects transactions | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tax-calculation-performance-affects-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="28">Tax calculation performance affects transactions</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="32">Sometimes, a transaction is affected by performance issues that tax calculation is having. To troubleshoot this issue, follow the steps in the following sections as required.</p>
+<h2 id="review-the-transaction-line-count" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="34">Review the transaction line count</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="36">Determine whether the transaction has a large number of lines (for example, more than several hundred). If it doesn't, move on to the next section. If the transaction does have several hundred lines, delay the tax calculation. For more information, see <a href="enable-delayed-tax-calculation.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="36">Enable delayed tax calculation on journals</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="38">Next, you can determine whether any of the following conditions are met:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="40"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="40">There are import transactions from large files.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="41"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="41">Multiple sessions process the same transaction tax calculation at the same time.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="42"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="42">The transaction has multiple lines, and the views are updated in real time. For example, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="42">Calculated sales tax amount</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="42">General journal</strong> page is updated in real time when a line's fields are changed.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="44"><a href="media/tax-calculation-bad-performance-impacts-transaction-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="44"><img src="media/tax-calculation-bad-performance-impacts-transaction-Picture1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="44" alt="Calculated sales tax amount field on the Jounal voucher page."></a></p>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="46">If any of these conditions are met, delay the tax calculation.</p>
+<h2 id="review-the-call-stack" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="48">Review the call stack</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="50">Review the call stack to determine whether tax calculation is called multiple times. If it isn't, move on to the next section. If the call stack is called multiple times, follow these steps to help reduce the tax calculation times.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="52">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="52">If the journal has considered the transaction, delay the tax calculation. For more information, see <a href="enable-delayed-tax-calculation.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="52">Enable delayed tax calculation on journals</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="53">If the transaction is a purchase order, and the application version is later than 10.0.15, you can delay the tax calculation until the final calculation by enabling the flighting for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="53">PurchTableChangeMgmtDistributionUpdateOnToggle_KillSwitch</strong>.</li>
+</ol>
+<h2 id="review-the-call-stack-timeline" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="55">Review the call stack timeline</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="57">Review the call stack timeline to determine whether the following issues exist. If they do, enable the flighting for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="57">TaxUncommittedDoIsolateScopeFlighting</strong> to fix the issue.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="59">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="59"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="59">The transaction causes the system to stop responding until the session ends. Therefore, the transaction can't calculate the tax result. The following illustration shows the &quot;Session ended&quot; message box that you receive.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="61"><a href="media/tax-calculation-bad-performance-impacts-transaction-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="61"><img src="media/tax-calculation-bad-performance-impacts-transaction-Picture2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="61" alt="Session ended message."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="63"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="63">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="63">TaxUncommitted</strong> methods take more time than other methods. For example, in the following illustration, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="63">TaxUncommitted::updateTaxUncommitted()</strong> method takes 43,347.42 seconds, but other methods take 0.09 seconds.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="65"><a href="media/tax-calculation-bad-performance-impacts-transaction-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="65"><img src="media/tax-calculation-bad-performance-impacts-transaction-Picture3.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="65" alt="Method durations."></a></p>
+</li>
+</ul>
+<h2 id="customizing-and-calling-tax-calculation" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="67">Customizing and calling tax calculation</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="69">When you customize, don't call tax calculation at the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="69">insert()</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="69">update()</strong> method for each line. Tax calculation should be called at the transaction level.</p>
+<h2 id="determine-whether-customization-exists" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="71">Determine whether customization exists</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md" sourcestartlinenumber="73">If you've completed the steps in the previous sections but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.</p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

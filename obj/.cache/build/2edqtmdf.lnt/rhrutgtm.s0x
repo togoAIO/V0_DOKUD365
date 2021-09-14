@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cash discounts for overpayments | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Cash discounts for overpayments | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cash-discounts-for-overpayments" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="30">Cash discounts for overpayments</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="34">This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="36">An invoice is considered overpaid when the payment amount is more than the invoice amount minus the cash discount. To specify how an obtainable cash discount difference is handled when an invoice is overpaid, use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="36">Cash discount administration</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="36">Maximum overpayment or underpayment</strong> fields on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="36">Accounts receivable parameters</strong> page. In the following example, the customer has overpaid the invoice by 0.50.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="38">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="38">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="38">Invoice total</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="38">Cash discount available</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="38">Amount to be paid, which includes the cash discount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="38">Amount the customer actually pays</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="40">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="40">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="40">10.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="40">94.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="40">95.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cash-discount-administration--specific" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="42">Cash discount administration = Specific</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="43">When <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="43">Specific</strong> is selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="43">Cash discount administration</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="43">Accounts for automatic transactions</strong> page, the full cash discount is taken. The overpayment amount either is posted to a cash discount difference ledger account or remains a balance on the customer’s account. The behavior depends on whether the overpayment amount is between 0.00 and the amount that is entered in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="43">Maximum overpayment or underpayment</strong> field, or whether the overpayment amount is more than the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="43">Maximum overpayment or underpayment</strong> amount.</p>
+<h3 id="scenario-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="45">Scenario 1</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="47">In this scenario, the overpayment amount is between 0.00 and the maximum overpayment or underpayment. An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="49">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="49">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="49">Invoice total</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="49">Cash discount available</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="49">Amount to be paid, which includes the cash discount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="51">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="51">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="51">10.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="51">94.50</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="53">The customer submits a payment for 95.00 within the cash discount period. The payment is settled against the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="55">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="55">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="55">Transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="55">Amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="55">Balance</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="57">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="57">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="57">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="57">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="58">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="58">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="58">-95.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="58">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="59">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="59">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="59">-10.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="59">0.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="61">The following accounting entries are generated for the payment and the settlement. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="61">Payment</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="63">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="63">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="63">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="63">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="63">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="65">Cash</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="65">95.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="65"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="66">Accounts receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="66"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="66">95.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="68"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="68">Settlement</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="70">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="70">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="70">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="70">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="70">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="72">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="72">Cash discount (the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="72">Main account for customer discounts</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="72">Cash discounts</strong> page)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="72">10.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="72"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="73">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="73">Accounts receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="73"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="73">10.50</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="74">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="74">Customer cash discount (the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="74">Customer cash discount</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="74">Account for automatic transactions</strong> page)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="74"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="74">0.50</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="75">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="75">Accounts receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="75">0.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="75"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="scenario-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="77">Scenario 2</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="79">In this scenario, the overpayment amount exceeds the maximum overpayment or underpayment amount. An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="81">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="81">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="81">Invoice total</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="81">Cash discount available</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="81">Amount to be paid, which includes the cash discount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="83">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="83">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="83">10.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="83">94.50</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="85">The customer submits a payment for 95.00 within the cash discount period. The payment is settled against the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="87">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="87">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="87">Transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="87">Amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="87">Balance</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="89">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="89">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="89">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="89">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="90">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="90">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="90">-95.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="90">-0.50</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="91">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="91">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="91">-10.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="91">0.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="93">The overpayment amount of 0.50 will remain as an open balance on the payment and can be settled against another invoice. The following accounting entries are generated for the payment and the settlement. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="93">Payment</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="95">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="95">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="95">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="95">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="95">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="97">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="97">Cash</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="97">95.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="97"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="98">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="98">Accounts receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="98"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="98">95.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="100"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="100">Settlement</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="102">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="102">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="102">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="102">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="102">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="104">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="104">Cash discount (the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="104">Main account for customer discounts</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="104">Cash discounts</strong> page)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="104">10.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="104"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="105">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="105">Accounts receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="105"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="105">10.50</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cash-discount-administration--unspecific" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="107">Cash discount administration = Unspecific</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="108">When <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="108">Unspecific</strong> is selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="108">Cash discount administration</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="108">Accounts for automatic transactions</strong> page, the cash discount amount is reduced by the overpayment amount. This behavior always applies, regardless of whether the overpayment amount is over or under the amount that is entered in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="108">Maximum overpayment or underpayment</strong> field.</p>
+<h3 id="scenario-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="110">Scenario 3</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="112">In this scenario, an invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="114">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="114">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="114">Invoice total</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="114">Cash discount available</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="114">Amount to be paid, which includes the cash discount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="116">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="116">10.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="116">94.50</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="118">The customer submits a payment for 95.00 within the cash discount date. The payment is settled against the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="120">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="120">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="120">Transaction</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="120">Amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="120">Balance</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="122">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="122">Invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="122">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="122">0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="123">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="123">Payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="123">-95.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="123">-0.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="124">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="124">Cash discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="124">-10.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="124">0.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="126">The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice are considered settled. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="126">Payment</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="128">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="128">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="128">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="128">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="128">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="130">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="130">Cash</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="130">95.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="130"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="131">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="131">Accounts receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="131"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="131">95.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="133"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="133">Settlement</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="135">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="135">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="135">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="135">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="135">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="137">Cash discount (the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="137">Main account for customer discounts</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="137">Cash discounts</strong> page)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="137">10.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="137"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="138">Accounts receivable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="138"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/cash-discount-handling-overpayments.md" sourcestartlinenumber="138">10.50</td>
+</tr>
+</tbody>
+</table>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

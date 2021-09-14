@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Set up and run processing to call a simple exporting ER format to generate an Excel report | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Set up and run processing to call a simple exporting ER format to generate an Excel report | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="set-up-and-run-processing-to-call-a-simple-exporting-er-format-to-generate-an-excel-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="29">Set up and run processing to call a simple exporting ER format to generate an Excel report</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="33">After you've created your ER format, mapped it to data sources, and completed it, you can run it from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="33">Electronic reporting</strong> workspace. After the report is generated, you can save it locally.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="35">To control the following aspects of the reporting process, set up electronic message processing:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="37">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="37">Log information about who generated the report.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="38">Log information about when the report was generated.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="39">Save the reports that were generated for previous periods.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="41">The following example shows how you can set up electronic messaging to generate a report that is based on an exporting ER format for Microsoft Excel. If you want to follow this example, the exporting ER format for Excel must already be created, mapped to data sources, and completed. Additionally, a number sequence must already be set up for electronic messages.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="43">When you build processing, it's helpful if you first define the processing actions and statuses that will be set up. The following illustration shows the processing for this example.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="45"><img src="media/processing-scheme.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="45" alt="Processing scheme"></p>
+<h2 id="create-message-statuses" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="47">Create message statuses</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="49">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="49"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="49">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="49">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="49">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="49">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="49">Message statuses</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="50">Create the following message statuses:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="52">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="52">New</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="53">Prepared</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="54">Generated</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="56"><img src="media/message-statuses.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="56" alt="Message statuses"></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="58"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="58">On the line for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="58">New</strong> status, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="58">Allow delete</strong> checkbox to let users delete messages that have this status.</p>
+</li>
+</ol>
+<h2 id="create-additional-fields" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="60">Create additional fields</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="62">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="62">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="62">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="62">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="62">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="62">Additional fields</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="63">Add an additional field and its values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="64">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="64">User edit</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="64">Yes</strong> to let users edit the field.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="66"><img src="media/additional-fields.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="66" alt="Additional fields"></p>
+<h2 id="create-message-processing-actions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="68">Create message processing actions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="70">For this example, you will create the following message processing actions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="72">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="72"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="72">Create message</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="73"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="73">Update to Prepared</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="74"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="74">Generate report</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="75"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="75">Update to initial status</strong> (optional)</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="77">Follow these steps to create the actions.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="79">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="79">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="79">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="79">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="79">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="79">Message processing actions</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="80">Create an action that is named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="80">Create message</strong>. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="80">General</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="80">Action type</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="80">Create message</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="81"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="81">Create an action that is named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="81">Update to Prepared</strong>, and set the following fields:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="83">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="83">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="83">General</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="83">Action type</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="83">Message level user processing</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="84">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="84">Initial statuses</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="84">Message status</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="84">New</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="85">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="85">Result statuses</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="85">Message status</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="85">Prepared</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="85">Response type</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="85">Successfully executed</strong>.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="87"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="87">Create an action that is named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="87">Generate report</strong>, and set the following fields:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">General</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">Action type</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">Electronic reporting export</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">Format mapping</strong> field, select the exporting ER format. The options are <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">Excel</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">XML</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">JSON</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">Text</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="89">Other</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="90">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="90">Initial statuses</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="90">Message status</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="90">Prepared</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="91">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="91">Result statuses</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="91">Message status</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="91">Generated</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="91">Response type</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="91">Successfully executed</strong>.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="93"><img src="media/generate-report-action.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="93" alt="Generate report action"></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="95"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="95">Optional: To let users regenerate a report several times, create an action that is named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="95">Update to initial status</strong>, and set the following fields:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="97">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="97">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="97">General</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="97">Action type</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="97">Message level user processing</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="98">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="98">Initial statuses</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="98">Message status</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="98">Generated</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="99">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="99">Result statuses</strong> FastTab, add a separate line for each of the two message statuses (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="99">Prepared</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="99">New</strong>). For both lines, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="99">Response type</strong> field to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="99">Successfully executed</strong>.</li>
+</ul>
+</li>
+</ol>
+<h2 id="electronic-message-processing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="101">Electronic message processing</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="103">For this example, all the actions should be set up so that they run separately. The assumption is that the user will initialize every action.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="105">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="105"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="105">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="105">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="105">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="105">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="105">Electronic message processing</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="106"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="106">Add a record for your processing, and add all previously defined actions and an additional field.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="107"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="107">Optional: On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="107">Security roles</strong> FastTab, define security roles for your processing to limit access to specific reporting.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="108"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="108">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="108">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="108">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="108">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="108">Electronic messages</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="109"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="109">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="109">New</strong> to create a message. At this point, you can add dates and a description. You can also update the value of the additional field as you require.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="111"><img src="media/create-electronic-message.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="111" alt="Creating an electronic message"></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="113">The grid on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="113">Action log</strong> FastTab is automatically filled in with a log of all actions that are performed on the message.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="115">You can now delete or update the message status.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="117"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="117">To update the message status, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="117">Update status</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="117">New status</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="117">Prepared</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="117">OK</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="119"><img src="media/update-status.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="119" alt="Updating the message status"></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="121">The message status is updated to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="121">Prepared</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="123"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="123">Generate the report by selecting <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="123">Generate report</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="125">The report is generated, and the message status and action log are updated.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="127"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="127">To view the generated report, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/electronic-messaging-example.md" sourcestartlinenumber="127">Attachment</strong> button (paper clip symbol) in the upper-right corner of the page.</p>
+</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>required metadata | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="required metadata | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<hr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="2">
+<h1 id="required-metadata" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="3">required metadata</h1>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="5">title: Manage leave of absence
+description: This procedure walks through the creation of employee leave records.
+author: andreabichsel
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod:<br>
+ms.technology:</p>
+<h1 id="optional-metadata" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="13">optional metadata</h1>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="15">ms.search.form: HcmWorker, HcmEmploymentLeave<br>
+audience: Application User</p>
+<h1 id="msdevlang" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="17">ms.devlang:</h1>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="18">ms.reviewer: anbichse</p>
+<h1 id="mstgt_pltfrm" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="19">ms.tgt_pltfrm:</h1>
+<h1 id="mscustom" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="20">ms.custom:</h1>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="21">ms.search.region: Global</p>
+<h1 id="mssearchindustry" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="22">ms.search.industry:</h1>
+<h2 id="msauthor-anbichsemssearchvalidfrom-2016-06-30msdyn365opsversion-version-700" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="26">ms.author: anbichse
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0</h2>
+<h1 id="manage-leave-of-absence" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="27">Manage leave of absence</h1>
+<div class="IMPORTANT" sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="1">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="2">Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
+</div>
+
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="31">This procedure walks through the creation of employee leave records. You can track leave time for reasons that include medical, educational, or parental activities. The demo data company used to create this procedure is USMF.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="33">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="33">Go to Human resources &gt; Workers &gt; Employees.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="34">In the list, select an employee.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="35">Display detailed information for the selected employee by selecting the employee's name.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="36">Click the Employment tab.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="37">Click Leave.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="38">Click New.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="39">In the Leave type field, click the drop-down button to open the lookup.
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="40">You can associate a leave type to an earning code in the Leave types form. If a leave type is associated with an earning code, an earning line will be generated with the associated earning code during the leave period that you enter.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="41">In the list, select a leave type.
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="42">For example: Adoption</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="43">Enter the date that the leave will start. Example: '2015-10-26'
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="44">For example:  2015-10-26</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="45">Enter the date that the leave will start.
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="46">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="46">For example:  2015-11-20</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="47">In the note field, enter a description.
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="48">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="48">For example: Leave for adoption</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/tasks/manage-leave-absence.md" sourcestartlinenumber="49">Click Save.</li>
+</ol>
+<!---
+title: Beurlaubung verwalten
+description: Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung von Sonderurlaubs-Datensätzen für Mitarbeiter.
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: HcmWorker, HcmEmploymentLeave
+audience: Application User
+ms.reviewer: anbichse
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 61729d384b1a403f14ce1bcf227074aa28ab369a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693015"
+---
+# <a name="manage-leave-of-absence"></a>Beurlaubung verwalten
+
+[!include [banner](../../includes/banner.md)]
+
+Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung von Sonderurlaubs-Datensätzen für Mitarbeiter. Sie können Abwesenheitszeit nach Ursachen nachverfolgen. Dazu gehören medizinischen, pädagogischen oder elterliche Aktivitäten. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
+
+1. Wechseln Sie zu "Personalverwaltung" > "Arbeitskräfte" > "Mitarbeiter".
+2. Wählen Sie in der Liste einen Mitarbeiter aus.
+3. Zeigen Sie detaillierte Informationen für den ausgewählten Mitarbeiter an, indem Sie den Namen des Mitarbeiters auswählen.
+4. Klicken Sie auf die Registerkarte "Anstellung".
+5. Klicken Sie auf "Sonderurlaub".
+6. Klicken Sie auf "Neu".
+7. Klicken Sie im Feld "Sonderurlaubstyp" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+    * Sie können einen Sonderurlaubstyp einem Einkommenscode im Formular "Sonderurlaubstypen" zuordnen. Wenn ein Sonderurlaubstyp einem Einkommenscode zugeordnet ist, wird eine Einkommensposition mit dem zugeordneten Einkommenscode während der Sonderurlaubsperiode, die Sie eingeben, generiert.  
+8. Wählen Sie in der Liste einen Sonderurlaubstyp aus. 
+    * Beispiel: Annahme  
+9. Geben Sie das Datum ein, an dem der Sonderurlaub beginnen soll. Beispiel: "26.10.2015"
+    * Beispiel: 26.10.2015  
+10. Geben Sie das Datum ein, an dem der Sonderurlaub beginnen soll. 
+    * Beispiel: 20.11.2015  
+11. Geben Sie im Hinweisfeld eine Beschreibung ein.
+    * Beispiel: Sonderurlaub zur Annahme  
+12. Klicken Sie auf "Speichern".
+
+--->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

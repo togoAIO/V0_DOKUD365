@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Financial dimension activation | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Financial dimension activation | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="financial-dimension-activation" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="30">Financial dimension activation</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="34">This topic contains information about the activating financial dimension process.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="36">When a new financial dimension is added to the system, users are prompted with a message stating that the financial dimension is not consumable until Dimension activation is run. When Dimension activation is run, a database schema change occurs in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="36">DimensionAttributeValueCombination</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="36">DimensionAttributeValueSet</strong> tables. The schema change adds a new column to the table for each financial dimension. During this process, a schema lock is placed on the two tables by Microsoft SQL Server so that the table can be updated. When the process is complete, the tables are no longer locked. If this process is attempted when a journal is open, then a deadlock may occur. If a deadlock occurs, the user could potentially receive a metadata error from the server. Users can refresh the session to get the updated metadata. The message the user receives states:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="38">You will not be able to consume the financial dimension anywhere until the process is run. This includes adding it to account structures.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="39">A schema change occurs, therefore a special privilege, the Dimension activation privilege is required to run activation.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="40">You should perform this during scheduled maintenance or downtime.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="42">Adding a financial dimension is typically a deliberate business process. If there is a multi-user environment, such as a user acceptance testing or training environment, only one person should attempt this process. A second option is available when you choose the Activate option, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="42">Rebuild financial dimensions</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="44"><a href="media/actwiki2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="44"><img src="media/actwiki2.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="44" alt="Activate financial dimensions."></a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="46">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="46">Rebuild financial dimensions</strong> option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="46">No</strong> by default, as it is a process that should only be run if unexpected results occur during the initial activation process. Rebuilding will drop and readd all financial dimensions and values to the tables.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="48">Additional resources</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="50"><a href="../../../finance/general-ledger/tasks/define-financial-dimensions.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="50">Define financial dimensions</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="52"><a href="../sysadmin/maintenance-mode.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/activate-financial-dimensions.md" sourcestartlinenumber="52">Maintenance mode</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

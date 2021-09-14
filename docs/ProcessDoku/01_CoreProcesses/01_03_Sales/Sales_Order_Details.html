@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Create Sales Order | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Create Sales Order | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="create-sales-order">Create Sales Order</h1>
+
+<p>Sales ledger -&gt; common forms -&gt; sales order details</p>
+<h2 id="create-head">Create Head</h2>
+<p>Make sure you are on the header of the sales order table and click <strong>New</strong> or <strong>CTRL + N</strong></p>
+<p>Fill in the customer account number. If a customer is stopped, this is shown by the red cross in the column <strong>Stopped</strong>.</p>
+<p>It is not possible to create a sales order for a stopped customer, that is stopped for ALL. If a customer is stopped an infolog popup will be shown.</p>
+<p>The popup also shows for what the customer ist stopped. This setup is made in the customer master, General ledger -&gt; Administration -&gt; Stoped.</p>
+<p>If a customer is stopped for Sales-/Purchase order it is still possible to create a quotation or a sales order but it is not possible to ship.</p>
+<p>All the defaults from the customer details will be filled in, when the customer is selected. Each set up can be adjusted for special agreements for the sales order. Also the fields can be changed in the sales order itself again.</p>
+<p>Fill in:</p>
+<ul>
+<li>Contact:  choose from the customer master or enter manually.</li>
+<li>Customer's preferred date: Important in combination with the fields <strong>Complete, Deliver at once, Keep default appointment, Penalty clause and Manual days</strong>. This will be the base for the sales scheduling.</li>
+<li>Date of order: date from purchase order from the customer.</li>
+<li>Date of order receipt: date, when the order reached the company.</li>
+<li>Customer requisition: purchase order from customer.</li>
+<li>Reference: further reference from customer (e.g. project no)</li>
+</ul>
+<p>Click OK</p>
+<h2 id="create-line">Create Line</h2>
+<h3 id="create-line-with-item-number">Create line with item number</h3>
+<p>Click into the field item number and enter the item number and quantity.
+If the item number has a modelcode the price will be calculated automatically according to the guideline (special net price or discounts). Also misc. chargeds will be claculated if the modelcode has a reference to them.
+Price can be overwritten/entered also manually.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>If a valid sales contract exists for the customer and item number entered on the sales order, a message will pop up that reads &quot;Delete line and create a new one with the contract?&quot;.
+If yes is clicked the sales contracts will be shown and a release order can be generated.
+If no is clicked the sales order (without the contract) will be created.</p>
+</div>
+<h3 id="create-line-with-modelcode">Create line with modelcode</h3>
+<p>Click in the field item number and press ENTER, then the modelcoding form is opening. Default is model 111.20.
+Enter required model code and press enter.
+Double click on the criterias to choose the code.
+If you have an assembly code, fill in the type (e.g. the diaphrame seal) and the model will appear in the Assembly box. Click on the Assembly box to fill in the code.</p>
+<p>Click Select item to check if there is a item number available.</p>
+<p>Click Select Item.
+Click Apply again.
+And the modelcode will be transferred into the sales order.</p>
+<p>The price will be calculated automatically according to the guideline (special net price or discounts). Also misc. charges will be calculated if the modelcode has to reference to them.
+Price can be overwritten/entered also manually.</p>
+<h2 id="sales-scheduling">Sales scheduling</h2>
+<p>As soon as the datas in the sales order line and header are completely filled in and all relevant datas are checked the sales order scheduling has to run and the order has to be released. This step has to be done in every sales order. Then the references to the sales order will be generated.</p>
+<p>With the sales order scheduling the leadtime will be calculated. Either on base of the lead time table in the
+modelcode or the ATP check.
+Details see LINK LINK LINK LINK LINK LINK LINK LINK</p>
+<p>The date in the field confirmed ship date is base for the production order, picking list or purchase order.
+There are a few combination possible:</p>
+<h3 id="stock-item">Stock item</h3>
+<p>Stock item:
+Green mark, customer´s preferred date can be met according to confirmed ship date -&gt; release order</p>
+<h3 id="finish-good-out-of-lead-time">Finish good out of lead time</h3>
+<p>Green mark, customer´s preferred date can be met according to confirmed ship date -&gt; release order
+Details see on the Tab Full History, reference will be generated.</p>
+<h3 id="finish-good-within-lead-time">Finish good within lead time</h3>
+<p>Red Stop sign, customer´s preferred date can´t be met, according to sales scheduling confirmed ship date will be
+calculated -&gt; if ok, release order
+Details see on the Tab Full History, reference will be generated.</p>
+<h3 id="finish-good-within-lead-time-not-accepted">Finish good within lead time not accepted</h3>
+<p>Red Stop sign, customer´s preferred date can´t be met, according to sales scheduling confirmed ship date will be
+calculated -&gt; if not ok, check keep default appointment, run sales scheduling again and release the order.
+Details see on the Tab Full History, reference will be generated.</p>
+<h1 id="sales-order-scheduling">Sales Order Scheduling</h1>
+<h2 id="order-type-journal">Order type Journal</h2>
+<p><img src="../../media/Sales/Sales_Order_Details/otj_before_Release_order.png" alt="order type Journal (before Release order)" title="order type Journal (before Release order)"></p>
+<h2 id="order-type-sales-order">Order Type Sales Order</h2>
+<p><strong>Sales Scheduling: Release order from Journal into Sales order</strong></p>
+<p><img src="../../media/Sales/Sales_Order_Details/Release_order_from_Journal_into_Sales_order.png" alt="Release order from Journal into Sales order" title="Release order from Journal into Sales order"></p>
+<h1 id="implementation-of-project-orders-in-excel">Implementation of project orders in excel</h1>
+<h2 id="template-generation">Template Generation</h2>
+<p>Access: Sales order details -&gt; on Sales order line -&gt; Functions -&gt; Import sales lines from excel</p>
+<p>In the now opening form click on <em>template generation</em></p>
+<p>Specify a data name and select a destination folder. Then start coding by clicking on Configure code.
+When the configurator is opend, code your type as known. After finishing press the button <em>Apply</em></p>
+<p>On the following form click on <em>next</em>.
+Now it is possible to define the variable parameters by setting a flag for this Criterion.
+Then press the button <em>Next</em>.</p>
+<p>Now an excel file is created with htese information.</p>
+<p><img src="../../media/Sales/Sales_Order_Details/excel_file.png" alt="Excel file" title="Excel file"></p>
+<p>Now all free cells can be filed with the shoer information of the type code.
+For example <strong>not &quot;10 bar&quot;</strong> but <strong>&quot;BG410&quot;</strong>.</p>
+<p>The cells Tag number, Price and Tag design have always to be filled.</p>
+<p><img src="../../media/Sales/Sales_Order_Details/excel_file_2.png" alt="cells that have to be filled" title="cells that have to be filled"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<ul>
+<li>Parameters will be implemented according to Typecode</li>
+<li>&quot;new items&quot; must be introduced for each changing parameter</li>
+<li>items must be separated with one free line</li>
+</ul>
+</div>
+<h2 id="excel-import-into-d365">Excel import into D365</h2>
+<p>Create a sales order and delete the first item. Now use the function import Saleslines from excel.</p>
+<p>Now select the created excel file by clicking on the file symbol and press OK.</p>
+<p>Then the automatical import starts. The data will be imported in the background of D365. During the import it is possible to proceed working.
+After the import, the lines are shown in the sales order.</p>
+<h1 id="direct-delivery">Direct Delivery</h1>
+<h2 id="direct-delivery-customers">Direct Delivery Customers</h2>
+<p>In the vendor master it is possible to define direct delivery customers for a vendor.</p>
+<p>Access: Vendor details -&gt; Setup -&gt; Direct delivery customers</p>
+<p>If direct delivery is not allowed, the direct delivery flag will be removed automatically.</p>
+<p><strong>Scenario 1:</strong> DD should always be allowed for this vendor
+-&gt; leave the customer account column empty and select ALL in the first line</p>
+<p><strong>Scenario 2:</strong> DD should never be allowed for this vendor
+-&gt; leave the customer account column empty and select NOT in the first line</p>
+<p><strong>Scenario 3:</strong> DD should never be allowed for this vendor, except for one or more
+customers<br>-&gt; create a line where Customer account is <em>empty</em> and the Account code is <em>Not</em><br><strong>and</strong><br>-&gt; create a line where Customer account is <em>Customer123</em> and the Account code is <em>Table</em></p>
+<h2 id="combination-direct-delivery-and-complete-with-two-different-vendor-duns">Combination direct delivery and complete with two different vendor DUNS</h2>
+<p>The combination of direct delivery and setting all lines to complete in a sales order with two different vendor DUNS
+numbers is impossible.
+If the flag “switch all lines to complete” is set an infolog message pops up.</p>
+<h1 id="index">Index</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Index</th>
+<th>Status</th>
+<th style="text-align: center;">Date</th>
+<th>Author</th>
+<th>Reason for change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">01</td>
+<td>Released</td>
+<td style="text-align: center;">TBD</td>
+<td>Simon Berberich</td>
+<td>Publication</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Asset leasing conventions | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Asset leasing conventions | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="asset-leasing-conventions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="33">Asset leasing conventions</h1>
+
+[!include[banner](../includes/banner.md)][!include[preview banner](../includes/preview-banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="38">This topic describes conventions for leased assets. Leasing conventions are used to determine the commencement date of a lease book. If the leasing convention is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="38">None</strong>, the commencement date is the same as the start date for the lease (that is, the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="38">Lease start date</strong> field). If the leasing convention is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="38">Full month</strong>, the commencement date is the first day of the month that the lease's start date falls in.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="40">The commencement date determines the start date of the period for the liability amortization and asset depreciation schedules. Interest expenses and depreciation expenses are posted on the period end date of the corresponding schedules. The initial recognition and adjustment journal entry are posted on the commencement date.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="42">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="43">The feature for leasing conventions must be turned on through Feature Management. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="43">Feature management</strong> workspace, find and select the feature that is named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="43">Leasing convention for asset leasing</strong> feature, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="43">Enable now</strong>.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="45">Leasing conventions are assigned to the setup for a lease asset book.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="47">To view or assign the leasing convention, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="49">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="49"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="49">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="49">Asset leasing &gt; Setup &gt; Lease books</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="50">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="50">Leasing convention</strong> field, select one of the following values.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="52">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="52">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="52">Leasing convention</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="52">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="54">None</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="54">The liability amortization and asset depreciation schedules start on the lease's start date, because the commencement date equals the lease's start date. The end date is one month later. This leasing convention doesn't guarantee that the interest will be posted on the last day of each month.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="55">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="55">Full month</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="55">For leases that have a start date that occurs at any time during the month, the liability amortization and asset depreciation schedules start to accrue expenses on the first day of that month. This leasing convention ensures that interest is accrued on the last day of each month for the whole month.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="57">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="57">Save</strong>.</p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/asset-leasing/asset-leasing-convention.md" sourcestartlinenumber="59">When a lease is created, the commencement date of each book is automatically entered based on the start date that is entered for the lease and the leasing convention that is specified for the book.</p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

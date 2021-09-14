@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Help system | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Help system | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="help-system" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="30">Help system</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="34">Users of the following apps can access context-sensitive Help and other content that is based on the same Help system:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="36">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="36">Dynamics 365 Commerce</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="37">Dynamics 365 Finance</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="38">Dynamics 365 Human Resources</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="39">Dynamics 365 Supply Chain Management</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="41">In all these apps, you can access product-specific Help from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="41">Help</strong> pane.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="43"><img src="media/help-pane-ops-help.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="43" alt="Help pane."></p>
+<h2 id="help-on-docsmicrosoftcom" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="45">Help on docs.microsoft.com</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="47">The docs.microsoft.com site (<a href="/dynamics365/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="47">docs.microsoft.com/dynamics365</a>) is the default source for product documentation for the previously listed apps. This site offers the following features:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="49">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="49"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="49">Access to the most up-to-date content</strong> – The site gives Microsoft a faster and more flexible way to create, deliver, and update product documentation. Therefore, you have easy access to the latest technical information.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="50"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="50">Content that is written by experts</strong> – Content on the site is open to contributions by community members both inside and outside Microsoft.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="52">You can find content on docs.microsoft.com by using any search engine. For the best results, we recommend that you use a site search, such as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="52">site:docs.microsoft.com dynamics 365 &quot;search term&quot;</strong>.</p>
+<h2 id="get-notified-about-changes-through-an-rss-feed" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="54">Get notified about changes through an RSS feed</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="56">To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="58"><a href="/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&amp;locale=en-us" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="58">RSS feed</a></p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="60">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="61">The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="63">Alternatively, you can subscribe to an RSS feed by app:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="65">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="65"><a href="/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&amp;locale=en-us" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="65">Commerce</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="66"><a href="/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&amp;locale=en-us" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="66">Finance</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="67"><a href="/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&amp;locale=en-us" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="67">Human Resources</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="68"><a href="/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&amp;locale=en-us" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="68">Supply Chain</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="69"><a href="/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&amp;locale=en-us" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="69">Talent</a></li>
+</ul>
+<h3 id="leave-us-feedback" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="71">Leave us feedback</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="73">If you have feedback or questions about a topic, leave us a comment at the bottom of the page.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="75">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="75"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="75">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="75">Feedback</strong> to get to the comments at the bottom of the page. Then, select either <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="75">Product feedback</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="75">Sign in to give documentation feedback</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="77"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="77">Start typing your comments, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="77">Submit feedback</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="79"><img src="media/feedback.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="79" alt="Post comment."></p>
+</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="81">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="82">If you want to submit documentation feedback, you must sign in by using a GitHub account. For more information, see <a href="https://help.github.com/github/setting-up-and-managing-your-github-profile" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="82">Setting up and managing your GitHub profile</a>.</p>
+</div>
+<h2 id="contribute-to-the-documentation" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="84">Contribute to the documentation</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="86">You can contribute and make edits to the documentation. To get started, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="86">Edit</strong> button (pencil symbol) on a topic. The following video shows how you can contribute to our documentation.</p>
+<div class="embeddedvideo" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="88"><iframe src="https://www.microsoft.com/videoplayer/embed/RE36liB" frameborder="0" allowfullscreen="true"></iframe></div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="90">The <a href="https://youtu.be/m5djioozRbg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="90">How to contribute to the Microsoft Dynamics 365 documentation</a> video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="92">For more information, see the <a href="/contribute" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="92">Docs contributor guide</a>, which is published by the team that built the docs.microsoft.com site.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="94">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="95">We only accept contributions to our English content at this time.</p>
+</div>
+<h2 id="task-guides" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="97">Task guides</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="99">A task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a task guide from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="99">Help</strong> pane. When you first select a task guide, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="99">Help</strong> pane will show the step-by-step instructions for the task. Localized task guides are available.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="101">Microsoft released task guide libraries for product versions through the December 2017 release of Dynamics 365 for Finance and Operations. The <a href="#accessing-task-guides-from-the-help-pane" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="101">Accessing task guides from the Help pane</a> section of this topic explains how to find the correct task guides for your product.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="103"><img src="media/task-guide-ops.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="103" alt="Task guide reading view."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="105">To begin the guided, interactive experience, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="105">Start task guide</strong> at the bottom of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="105">Help</strong> pane. A black pointer shows you where to go first. Follow the instructions that appear in the user interface (UI), and enter data as directed.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="107"><img src="media/task-guide-step-1-ops.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="107" alt="Task guide step instruction."></p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="109">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="110">The data that you enter when you play a task guide is real. If you're in a production environment, the data will be entered in the company that you're currently using.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="112">You can use Task recorder to create your own custom task guides. For more information, see <a href="../../dev-itpro/user-interface/task-recorder-training-docs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="112">Create documentation or training with Task Recorder</a>.</p>
+<h2 id="in-product-help" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="114">In-product Help</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="116">Some fields have field descriptions to help users get unblocked when they are uncertain about the data that the field contains, for example. Additionally, the in-product <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="116">Help</strong> pane provides context-sensitive access to content that can help users get started, get unblocked, and learn more.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="118">To access Help content, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="118">Help</strong> button (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="118">?</strong>), and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="118">Help</strong>. Alternatively, press <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="118">Ctrl+Shift+?</strong>. In both cases, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="118">Help</strong> pane appears. From the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="118">Help</strong> pane, you can access conceptual topics or task guides that are relevant to the area of the product that you're currently in.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="120"><img src="media/help-pane-ops-help.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="120" alt="Help pane."></p>
+<h3 id="accessing-help-topics-from-the-help-pane" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="122">Accessing Help topics from the Help pane</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="124">From the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="124">Help</strong> pane, you can access topics that apply to the client. When you first open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="124">Help</strong> pane, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="124">Help</strong> tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select a topic in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="124">Help</strong> pane, it's opened on a new tab in your browser.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="126">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="127">This section does not apply to Dynamics 365 Human Resources. The Help system for Human Resources is automatically connected to task guides for the product. Also, you cannot create custom task guides for Human Resources.</p>
+</div>
+<h3 id="accessing-task-guides-from-the-help-pane" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="129">Accessing task guides from the Help pane</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="131">Before you can access task guides from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="131">Help</strong> pane, a system admin must configure some settings on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="131">System parameters</strong> page in Finance, Supply Chain Management, or Commerce. For more information, see <a href="help-connect.html#adding-task-guides" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="131">Adding task guides</a>.</p>
+<!-- > [!NOTE]
+> - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
+> - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
+
+![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)
+
+On the **System parameters** page, follow these steps:
+
+1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
+
+    ![Connect to LCS.](./media/connect-to-lcs-crop-1024x365.png)
+
+2. Select the Lifecycle Services project to connect to.
+3. Select BPM libraries (within the selected project) to retrieve task recordings from.
+4. Set the display order of the BPM libraries. This setting determines the order in which task recordings from the libraries will appear in the Help pane.-->
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="149">After a System administrator has completed these steps, you can open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="149">Help</strong> pane and select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="149">Task guides</strong> tab. You'll now see the task guides that apply to the page that you're currently on. If no task guides are found, you can enter keywords to refine your search. After you select a task guide in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="149">Help</strong> pane, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="149">Help</strong> pane shows the step-by-step instructions, and you can play the task guide.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="151"><img src="media/task-guide-ops.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="151" alt="Task guide reading view."></p>
+<h3 id="where-are-the-translated-task-guides-for-microsoft-libraries" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="153">Where are the translated task guides for Microsoft libraries?</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="155">Translated task guides are released in libraries that have &quot;All languages&quot; in the title. To view localized task guide Help, make sure that you're connected to an appropriate library. Each user can change the language that a task guide appears in by changing the language settings under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="155">Options</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="155">Preferences</strong>.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="157">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="157">If a task guide has been translated, when you open that task guide all the text of the task guide will appear in your selected language.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="158">If a task guide has not yet been translated, when you open it, only the text of the controls will appear in your chosen language.</li>
+</ul>
+<h2 id="creating-custom-help" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="160">Creating custom Help</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="162">You can create Help for your users by creating custom task guides or connecting your own website to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="162">Help</strong> pane. For more information, see the following topics:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="164">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="164"><a href="../../dev-itpro/user-interface/task-recorder.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="164">Task recorder resources</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="165"><a href="../../dev-itpro/help/custom-help-overview.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="165">Custom Help overview</a></li>
+</ul>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="167">Additional resources</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="169">The following table lists our websites. Sites that have an asterisk (*) next to the name require that you sign in by using an account that is associated with a service plan.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="171">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="171">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="171">Site</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="171">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="173">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="173"><a href="/dynamics365/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="173">Docs.microsoft.com</a></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="173">This site hosts or links to all product documentation for Dynamics 365.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="174">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="174"><a href="/learn/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="174">Microsoft Learn</a></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="174">This site is the free Microsoft eLearning site.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="175">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="175"><a href="https://lcs.dynamics.com/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="175">Microsoft Dynamics Lifecycle Services (LCS)</a>*</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="175">This site provides a cloud-based collaborative workspace that customers and partners can use to manage projects from pre-sales to implementation and operations. It's useful in all phases of an implementation.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="176">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="176"><a href="https://aka.ms/AXSupportBlog" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="176">Support blog</a></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="176">This site provides tips and tricks that are posted by the Support team.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="177">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="177"><a href="/previous-versions/dynamics/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="177">Docs.microsoft.com/previous versions</a></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="177">This site hosts content from previous releases.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="178">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="178"><a href="https://community.dynamics.com/" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="178">Dynamics Community</a></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="178">This site hosts blogs, forums, and videos.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="179">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="179"><a href="https://www.microsoft.com/dynamics365/home" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="179">Microsoft.com/dynamics365</a></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/get-started/help-overview.md" sourcestartlinenumber="179">This site provides evaluation and sales information.</td>
+</tr>
+</tbody>
+</table>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

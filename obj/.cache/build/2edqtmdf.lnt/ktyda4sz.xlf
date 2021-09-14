@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Accounts payable invoice matching overview | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Accounts payable invoice matching overview | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="accounts-payable-invoice-matching-overview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="30">Accounts payable invoice matching overview</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="34">Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="36">When matching documents, differences among these documents are called matching discrepancies. Matching discrepancies are compared with the tolerances that are specified. If a matching discrepancy exceeds the tolerance percentage or amount, match variance icons are displayed on the Vendor invoice page and on the Invoice history and matching details page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="38">For example, you enter a purchase order with one line item for 1,000 batteries at a price of 1.00 each. The purchase order is approved and submitted to the vendor. The vendor ships 1,000 batteries, and you enter a product receipt for 1,000 batteries at a price of 1.00 each. The inventory cost for the batteries is updated with this price.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="40">An invoice arrives for 1,000 batteries at a price of 1.10 each. Your legal entity policy allows a 5 percent net unit price tolerance for this category of item. A price of 1.05 would be acceptable, but 1.10 is not. When you enter the invoice information, a price matching discrepancy is identified and you can save the invoice until the discrepancy is resolved.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="42">You can use the following types of Accounts payable invoice matching:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="44">Invoice totals matching – Match the total amounts on the invoice to the total amounts on the purchase order. This type of invoice matching includes the least amount of detail, so you can use this option to set up controls that minimize the staff time that is required to review invoice matching information.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="45">Two-way matching – Match the price information on the invoice to the price information on the purchase order.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="46">Three-way matching – Match the price information on the invoice to the price information on the purchase order. Also match the quantity information on the invoice to the quantity information on the product receipts that are selected for the invoice.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="47">Charges matching – Match the charges information (amounts) on the invoice to the charges information (amounts) on the purchase order.</li>
+</ul>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="49">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="50">Other forms of invoice validation can be done using vendor invoice policies.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="52">Two-way matching and three-way matching always match price information by the unit price. You can also configure these matching policies to match price information by the price total.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="53">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="53">Net unit price matching – Match price information for two-way matching or three-way matching by comparing the net unit price for each line on the invoice with the corresponding net unit price on the purchase order. The net unit price is determined by the following formula: Net amount of the line / Quantity of the line</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="54">Price totals matching – Match price information for two-way matching or three-way matching by comparing the net amount (price total) for each line on the invoice with the corresponding net amount on the purchase order. The net amount is determined by the following formula: <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="54">(Unit price * Line quantity) + Line charges - Line discounts</em>. When matching price totals by percentage, the system compares values using the transaction currency. When matching price totals by amount, the system compares the values using the accounting currency. When you partially invoice a purchase order line, the validation of price-total matching occurs on the last invoice for that line.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="56">Typically, invoice matching calculations are automatically performed when you edit vendor invoices on the Vendor invoice page. Alternatively, invoice matching can be performed on demand, as needed. Invoice matching on demand is controlled for the legal entity by the Automatically update invoice header status To on the Accounts payable parameters page on the Invoice validation tab. Invoice matching can also be performed as part of an invoice review process. You can view the results of invoice matching on the Vendor invoice page and related invoice matching pages.</p>
+<h2 id="invoice-totals-matching" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="58">Invoice totals matching</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="59">You can use invoice totals matching to help make sure that total invoice amounts do not deviate from expected amounts by more than an acceptable variance. Six totals are compared on the Invoice totals matching details page, as shown in the following table. If the allowable tolerance for invoice totals matching is 20%, the 100% variance percentage for the total discount amount is considered a matching discrepancy.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="61">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="61">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="61">Total field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="61">Actual invoice total</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="61">Expected invoice total</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="61">Variance percentage</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="61">Match status</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="63">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="63">Balance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="63">495.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="63">495.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="63">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="63">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="64">Total discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="64">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="64">9.90</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="64">100%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="64">Failed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="65">Charges</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="65">64.90</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="65">64.90</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="65">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="65">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="66">Sales tax</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="66">139.98</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="66">137.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="66">2%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="66">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="67">Round-off</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="67">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="67">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="67">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="67">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="68">Invoice amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="68">699.88</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="68">687.50</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="68">2%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="68">Passed</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="70">Invoice totals matching is controlled for the legal entity by the Match invoice totals toggle on the Accounts payable parameters page. Matching is performed on the expected invoice totals and the actual invoice totals. The expected invoice totals are calculated based on the prices, charges, and sales tax information from the purchase order and the quantities from the invoice.</p>
+<h2 id="two-way-price-totals-matching" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="72">Two-way, price totals matching</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="73">Use two-way matching to help make sure that the variance between the price information on the purchase order and the invoice is within acceptable tolerances. You can compare price information for the net amount of each line on the invoice, and all pending and previously posted invoice lines, with the net amount of the corresponding purchase order line. This is called price totals matching.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="75">Price totals matching can be based on a percentage, an amount, or a percentage and amount.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="77">If a purchase price total tolerance percentage is specified, five fields are compared, as shown in the following table. Because the purchase price total tolerance percentage is 10%, the price total variance percentage of 50% represents a matching discrepancy.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="79">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="79">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="79">Match status</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="79">Invoice net amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="79">Expected net amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="79">Unmatched purchase price total (variance amount)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="79">Unmatched purchase price total percentage (variance percentage)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="79">Purchase price total tolerance percent</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="81">Passed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="81">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="81">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="81">5.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="81">5%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="81">10%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="82">Failed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="82">150.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="82">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="82">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="82">50%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="82">10%</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="84">If a purchase price total tolerance amount is specified, five fields are compared, as shown in the following table. Because the purchase price total tolerance amount is 100.00, the price total variance amount of 105.00 represents a matching discrepancy.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="86">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="86">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="86">Match status</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="86">Invoice net amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="86">Expected net amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="86">Unmatched purchase price total (variance amount)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="86">Unmatched purchase price total in accounting currency (variance amount)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="86">Purchase price total tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="88">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="88">Passed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="88">150.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="88">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="88">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="88">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="88">100.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="89">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="89">Failed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="89">205.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="89">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="89">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="89">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="89">100.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="91">If price totals matching is set up with a percentage tolerance and a tolerance amount, sometimes referred to as a not-to-exceed amount, both tolerances are considered when evaluating whether a line has a matching discrepancy. If either the percentage or the amount exceeds the tolerance, as shown in the 150.00 and 205.00 lines in the following table, the line has a matching discrepancy.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="93">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="93">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="93">Match status</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="93">Invoice net amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="93">Expected net amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="93">Unmatched purchase price total percentage (variance percentage)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="93">Purchase price total tolerance percent</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="93">Unmatched purchase price total in accounting currency (variance amount)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="93">Purchase price total tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="95">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="95">Passed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="95">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="95">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="95">5%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="95">10%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="95">5.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="95">100.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="96">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="96">Failed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="96">150.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="96">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="96">50%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="96">10%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="96">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="96">100.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="97">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="97">Failed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="97">205.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="97">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="97">105%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="97">10%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="97">105.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="97">100.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="99">Two-way matching is controlled for the legal entity by the Line matching policy field on the Accounts payable parameters page. Depending on the selection in the Allow matching policy override field, you can select two-way matching for a specific vendor, item, or item and vendor combination on the Matching policy page, and for a specific purchase order on the Purchase order page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="101">Price totals matching is controlled for the legal entity by the Match price totals field on the Accounts payable parameters page. The purchase price total tolerance percentage and tolerance amount (not-to-exceed amount) are also specified on that page.</p>
+<h2 id="two-way-net-unit-price-matching" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="103">Two-way, net unit price matching</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="104">Use two-way matching to help make sure that the variance between the price information on the purchase order and the invoice is within acceptable tolerances. You can compare price information for the net unit price of each item on the invoice. This is called net unit price matching.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="106">Nine line amounts are compared on the Invoice matching details page, as shown in the following table. If the allowable price tolerance for net unit price matching is 10%, the 22.61% variance for the net unit price is considered a matching discrepancy.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="108">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="108">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="108">Line field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="108">Invoice value</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="108">Purchase order value</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="108">Variance percentage</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="108">Match status</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="110">Unit price</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="110">55.40</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="110">55.38</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="110">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="110">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="111">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="111">Price unit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="111">1.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="111">1.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="111">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="111">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="112">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="112">Charges on purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="112">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="112">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="112">100%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="112">Failed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="113">Discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="113">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="113">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="113">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="113">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="114">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="114">Discount percent</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="114">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="114">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="114">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="114">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="115">Multiline discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="115">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="115">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="115">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="115">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="116">Multiline discount percentage</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="116">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="116">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="116">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="116">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="117">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="117">Net amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="117">271.60</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="117">221.52</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="117">22.61%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="117">Failed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="118">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="118">Net unit price</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="118">67.9000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="118">55.3800</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="118">22.61%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="118">Failed</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="120">Two-way matching is controlled for the legal entity by the Line matching policy field on the Accounts payable parameters page. Depending on the selection in the Allow matching policy override field, you can select two-way matching for a specific vendor, item, or item and vendor combination on the Matching policy page, and for a specific purchase order on the Purchase order page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="122">Net unit price matching is controlled for the legal entity by the Enable invoice matching validation field on the Accounts payable parameters page. The net unit price tolerance percentages can be configured for items, item groups, vendors, vendor groups, item and vendor combinations, or legal entity by using the Price tolerances page.</p>
+<h2 id="two-way-price-totals-matching-and-net-unit-price-matching" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="124">Two-way, price totals matching and net unit price matching</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="125">You can use price totals matching and net unit price matching together. This example assumes the following configuration:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="127">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="127">The net unit price tolerance for the USB Drive item is 10%.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="128">The price totals matching tolerance for the legal entity is 15% or 500.00.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="130">The purchase order contains the following line.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="132">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="132">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="132">Item number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="132">Quantity</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="132">Unit price</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="132">Net amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="134">USB Drive</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="134">1,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="134">10.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="134">10,000.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="136">Three invoices are entered, as shown in the following table. There is an invoice matching discrepancy for Invoice 3 because the variance of 1,880.00 exceeds the purchase price total tolerance amount of 500.00. For price totals matching, the invoice net amount includes all previously posted invoices in addition to the invoice that you are currently working with.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="138">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="138">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="138">Item number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="138">Quantity</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="138">Unit price</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="138">Net amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="138">Price match</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="138">Price total match</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="140">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="140">Invoice 1: USB Drive</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="140">800</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="140">10.80</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="140">8,640.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="140">Passed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="140">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="141">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="141">Invoice 2: USB Drive</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="141">100</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="141">10.80</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="141">1,080.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="141">Passed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="141">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="142">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="142">Invoice 3: USB Drive</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="142">200</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="142">10.80</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="142">2,160.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="142">Passed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="142">Failed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="143">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="143">Total</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="143"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="143"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="143">11,880.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="143"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="143"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="three-way-matching" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="145">Three-way matching</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="147">Use three-way matching to help make sure that the variance between the price information on the purchase order and the invoice is within acceptable tolerances, and to make sure that the quantity on the invoice matches the quantity on the corresponding product receipts.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="149">The same line amounts are compared on the Invoice matching details page as for two-way matching. In addition, the quantity on the invoice is matched to product receipt quantities that have been received. If the invoice quantity differs from the matched product receipt quantity, a quantity matching error exists.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="151">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="151">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="151">Line field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="151">Invoice value</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="151">Purchase order value</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="151">Variance percentage</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="151">Match status</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="153">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="153">Unit price</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="153">55.40</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="153">55.38</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="153">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="153">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="154">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="154">Price unit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="154">1.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="154">1.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="154">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="154">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="155">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="155">Charges on purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="155">50.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="155">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="155">100%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="155">Failed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="156">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="156">Discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="156">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="156">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="156">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="156">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="157">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="157">Discount percent</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="157">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="157">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="157">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="157">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="158">Multiline discount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="158">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="158">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="158">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="158">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="159">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="159">Multiline discount percentage</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="159">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="159">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="159">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="159">Passed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="160">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="160">Net amount</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="160">271.60</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="160">221.52</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="160">22.61%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="160">Failed</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="161">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="161">Net unit price</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="161">67.9000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="161">55.3800</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="161">22.61%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="161">Failed</td>
+</tr>
+</tbody>
+</table>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="163">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="163">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="163">Line field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="163">Invoice value</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="163">Match status</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="165">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="165">Invoice quantity</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="165">4.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="165"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="166">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="166">Total product receipts matched</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="166">0.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="166">Failed</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="168">Three-way matching is controlled for the legal entity by the Line matching policy field on the Accounts payable parameters page. Depending on the selection in the Allow matching policy override field, you can select three-way matching for a specific vendor, item, or item and vendor combination on the Matching policy page, and for a specific purchase order on the Purchase order page.</p>
+<h2 id="charges-matching" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="170">Charges matching</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="171">You can use charges matching to help make sure that charges amounts do not deviate from expected amounts by more than an acceptable variance percentage. The total amounts for each charges code that applies to the invoice and purchase order are compared in the Compare charges values - Invoice: page, as shown in the following table. If the allowable tolerance for the charges code is 25%, the 99,999,999,999.99% variance percentage for the License charges code is considered a matching discrepancy.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="173">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="174">A variance percentage of 99,999,999,999.99% means that the expected amount based on the purchase order is zero and the actual amount on the invoice is a positive value.</p>
+</div>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="176">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="176">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="176">Charges match status</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="176">Invoice charges code</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="176">Actual total calculated value</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="176">Expected total calculated value</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="176">Variance amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="176">Variance percentage</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="176">Tolerance percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="178">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="178">Failed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="178">License</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="178">25</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="178">0</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="178">25</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="178">99,999,999,999.99%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="178">25%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="179">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="179">Passed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="179">Freight</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="179">200</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="179">200</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="179">0</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="179">0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="179">25%</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="180">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="180">Failed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="180">Expedite</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="180">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="180">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="180">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="180">100%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="180">25%</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="182">Charges matching is controlled for the legal entity by the Match charges toggle on the Accounts payable parameters page. You can set up variance tolerance percentages for charges on the Charges tolerances page.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="184">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="185">Charges matching is performed only on charges codes for which the Compare purchase order and invoice values toggle is selected on the Charges code page.</p>
+</div>
+<h2 id="related-functionality" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="187">Related functionality</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="188">Vendor invoices are often based on product receipts that represent actual shipments, instead of on purchase orders. Sometimes the invoiced amounts do not match the purchase order amounts, and sometimes the shipped quantities do not match the invoiced quantities. You can help manage this information in the following ways:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="189">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="189">Create a vendor invoice based on product receipts. Product receipts are automatically suggested for invoices, and you can select which product receipts to use. You can also select specific product receipt line items from multiple purchase orders, if you have to.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="190">View and approve quantity differences between the invoiced quantity on the invoice and the received quantity on the product receipt. If there is a difference, you can save the invoice and later match it to a different product receipt, or change the invoiced quantity to match the received quantity.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="191">Enter invoice amounts that were not included on the original purchase order, so that the invoice information matches the invoice that you received from the vendor. You can compare the charges for purchase orders with the charges for invoices. If necessary, you can add charges to invoices and allocate them to invoice lines.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="192">View and approve price match discrepancies between the invoice net unit price and the purchase order net unit price. You can set up price tolerance percentages for legal entities, vendors, and items. If the vendor invoice line price is not in the acceptable price tolerance, you can save the invoice until it is approved for posting, or until you receive a correction from the vendor.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="194">For more information, see <a href="three-way-matching-policies.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="194">Three-way matching policies</a> and <a href="tasks/set-up-accounts-payable-invoice-matching-validation.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/accounts-payable-invoice-matching.md" sourcestartlinenumber="194">Set up Accounts payable invoice matching validation</a>.</p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

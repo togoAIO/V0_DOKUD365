@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Export ledger transactions | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Export ledger transactions | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="export-ledger-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="28">Export ledger transactions</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="32">The feature described in this topic is used to export the total balance of each ledger account for a specific period to a plain text (ASCII) file in CED format. You can then import the generated file into third-party software to create an accounting report according to country/region-specific requirements.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="34">This functionality is available for legal entities that have their primary address in Belgium.</p>
+<h2 id="prerequisites" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="36">Prerequisites</h2>
+<h3 id="create-posting-journals" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="38">Create posting journals</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="40">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="40">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="40">Journal setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="40">Posting journals</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="41">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="41">Journal setup</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="41">Create</strong>. Posting journals and corresponding number sequences are automatically created.</li>
+</ol>
+<h2 id="export-ledger-transactions-to-a-plain-text-file-in-ced-format" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="43">Export ledger transactions to a plain text file in CED format</h2>
+<h3 id="setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="45">Setup</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="47">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="47"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="47">From the <a href="../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="47">Microsoft global repository</a>, import the latest versions of the Electronic reporting (ER) configurations for the following report format.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="49">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="49">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="49"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="49">Dynamics 365 Finance version</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="49"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="49">Configuration name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="51">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="51">Before 10.0.16</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="51"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="51">Ledger transaction export format (BE)</strong> under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="51">Ledger accounting reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="51">Ledger transaction export (BE)</strong> model.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="52">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="52">Starting from 10.0.16</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="52"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="52">General ledger data export (BE)</strong> under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="52">Standard Audit File (SAF-T)</strong> model.</td>
+</tr>
+</tbody>
+</table>
+<blockquote sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="54">
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="54"><img src="media/be-audit-er-configs.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="54" alt="ER configurations."></p>
+</blockquote>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="56"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="56">After import, you must have the following or later versions of ER configurations.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="58">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="58">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="58"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="58">ER configuration name</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="58"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="58">Type</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="58"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="58">Version</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="58"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="58">Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="60">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="60">Standard Audit File (SAF-T)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="60">Model</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="60">82</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="60">The common ER model for Standard Audit Files.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="61">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="61">General ledger data model mapping</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="61">Model mapping</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="61">82.13</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="61">The model mapping that defines data sources for General ledger data.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="62">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="62">General ledger data export (BE)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="62">Format (exporting)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="62">82.8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="62">The text format representing General ledger data that can be imported into third-party software.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="64">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="65">After all the ER configurations from the preceding table are imported, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="65">Default for model mapping</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="65">Yes</strong> for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="65">General ledger data model mapping</strong> configuration on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="65">Configurations</strong> page.</p>
+</div>
+<blockquote sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="67">
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="67"><img src="media/be-audit-default-mm.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="67" alt="Default for model mapping option."></p>
+</blockquote>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="69">Starting in version 10.0.16, to use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="69">General ledger data export (BE)</strong> format, define the ER configuration name in a new General ledger parameter. Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="69">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="69">Ledger setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="69">General ledger parameters</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="70">Expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="70">Electronic reporting</strong> FastTab and then select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="70">Ledger</strong> tab.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="71"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="71">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="71">Ledger transactions export</strong> group, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="71">Ledger transactions export</strong> field, select the format <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="71">General ledger data export (BE)</strong>, and then save the new setting.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="73"><img src="media/be-audit-gl-parameter.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="73" alt="GL parameter."></p>
+</li>
+</ol>
+<h3 id="generate-the-export-ledger-transactions-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="75">Generate the Export ledger transactions report</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="77">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="77"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="77">In Finance, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="77">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="77">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="77">Export ledger transactions</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="78"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="78">If your Finance version is lower than 10.0.16, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="78">Export ledger transactions to an ASCII file in CED format</strong> dialog box, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="78">Format mapping</strong> field, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="78">Ledger transaction export format (BE)</strong> format that you downloaded, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="78">OK</strong>. Starting in version 10.0.16, specify the ER format in the General ledger parameters. When the ER format is defined in the General ledger parameters, the system uses it to generate reports.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="79">Specify the reporting period in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="79">From date</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="79">To date</strong> fields in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="79">Electronic report parameters</strong> dialog box.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="80">If the accounting currency of your legal entity isn't EURO, and you want to generate the report in EURO, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="80">Recalculate to Euro</strong> in the dialog box.
+When the accounting currency isn't EURO but the reporting currency is, and you select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="81">Recalculate to Euro</strong>, a report is generated with the amounts stored in the general ledger in the reporting currency.
+When neither the accounting or reporting currencies are EURO, and you select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="82">Recalculate to Euro</strong>, the report automatically recalculates the amounts in the accounting currency to EURO by using the exchange rate stored in the system on the date of each transaction in general ledger. Generating the report may take longer than a report that is generated without any recalculation.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="83"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="83">When you generate the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="83">Export ledger transactions</strong> report for a longer period, run it in batch. To run the report in batch, expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="83">Run in the background</strong> FastTab in the dialog box, mark the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="83">Batch processing</strong> parameter, and specify other parameters of the batch as needed. Follow up the report generation on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="83">Electronic reporting jobs</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="84"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="84">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="84">OK</strong> to generate and download the .txt file.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="86">For example, you post the following ledger transactions in the DEMF company.</p>
+</li>
+</ol>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88">Date</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88">Transaction type</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88">Main account</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88">Offset account</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88">Amount net</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88">VAT amount</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="88">Sales tax code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="90">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="90">January 1, 2020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="90">Customer invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="90">110110 – Bank account USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="90"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="90">1,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="90">190</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="90">VAT19</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="91">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="91">January 1, 2020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="91">Vendor invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="91"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="91">110120 – Bank account CNY</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="91">1,095</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="91">76.65</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="91">EU7</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="92">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="92">January 1, 2020</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="92">Customer invoice</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="92">110115 – Bank account CAD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="92"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="92">800</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="92">0</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="92">EUS</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="94">In this case, the file that is generated contains the following data.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="96"><img src="media/1_Export_ledger_transactions.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="96" alt="Ledger transactions data."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="98">Here is an explanation of the columns in this file:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="100">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="100">The first column shows the ledger account code.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="101">The second column shows the debit balance on the ledger account.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="102">The third column shows the credit balance on the ledger account.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="103">The fourth column shows the name of the ledger account.</li>
+</ul>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="105">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="106">To post ledger transactions for customer invoices, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="106">Accounts receivable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="106">Invoices</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="106">All free text invoices</strong>. For vendor invoices, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="106">Accounts payable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="106">Invoices</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bel-export-ledger-transactions.md" sourcestartlinenumber="106">Invoice journal</strong>.</p>
+</div>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Debit Notes | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Debit Notes | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="debit-notes" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="1">Debit Notes</h1>
+
+<h2 id="debit-note---for-rework-or-material-costs-no-movement-of-goods" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="2">Debit Note - for rework or material costs (no movement of goods)</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="3">For use with:
+Purchase Orders with order type “returned order”.
+If necessary, enter „1“ as the return number (if delivery terms are not maintained in the vendor master).</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="7"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_general.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="7" alt="Returned Order" title="returned order"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="9">Process Steps:</p>
+<ol sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="10">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="10">Create a Returned order for Item number „ZS3000.01“</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="11">Enter the quantity “-1“</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="12">Manually enter the required order value</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="13">Update item text</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="14">Post the invoice for the returned order</li>
+</ol>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="16"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="16">Example step 1 to 3:</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="18"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_example_1to3.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="18" alt="Example step 1 to 3" title="Example step 1 to 3"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="20"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="20">Example step 4:</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="22"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_example_4.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="22" alt="Example step 4 part 1" title="Example step 4 part 1"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="24"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_example_4_2.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="24" alt="Example step 4 part 2" title="Example step4 part 2"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="26"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="26">Example step 5:</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="28"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_example_5.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="28" alt="Example step 5 part 1" title="Example step 5 part 1"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="30"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_rework_or_material_costs_example_1to3.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="30" alt="Example step 5 part 2" title="Example step 5 part 2"></p>
+<h2 id="incorrect-order-value-charged---value-correction" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="32">Incorrect order value charged - Value correction</h2>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="34">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="35">Items requiring inspection will have the „Quarantine management“ flag checked in the item master. This flag must be unchecked before executing this process and then re-checked upon completion.</p>
+</div>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="37"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_general.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="37" alt="Example step 5 part 2" title="Example step 5 part 2"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="39">Example: The company was charged 19,45€ for 10 pcs, but the agreement was for 10 pcs at 17,45€.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="41"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="41" alt="Example step 5 part 2" title="Example step 5 part 2"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="43">Process Steps</p>
+<ol sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="44">Create a new purchase order</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="45">Enter: Line. 10    Item Number     Correct Quantity        New Value    Main warehouse</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="46">Enter: Line. 20    Item Number     „-„ Correct Quantity    Old Value 	Main warehouse</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="47">Update values &amp; surcharges as needed</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="48">Invoice the order with the corrected value</li>
+</ol>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="50"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="50">Example step 1 to 3:</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="52"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example_1to3_1.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="52" alt="Example step 1 to 3 part 1" title="Example step 1 to 3 part 1"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="54"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example_1to3_2.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="54" alt="Example step 1 to 3 part 2" title="Example step 1 to 3 part 2"></p>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="56">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="57">Values and surcharges in the replacement line must match the originally invoiced amount before the replacement line is submitted for invoicing. To determine the originally invoiced values &amp; surcharges amount, navigate to:
+Original Purchase order (with incorrect value) -&gt; In the header section, click the “Inquiries” button and select “Invoice” -&gt; On the invoice journal, navigate to the Lines tab -&gt; Click the “Misc. charges” button -&gt; View the Misc. charges value field.</p>
+</div>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="60"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="60">Example step 4:</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="62"><img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example_4_1.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="62" alt="Example step 4" title="Example step 4"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="64">Enter the correct values/surcharges amount in the “Correction” purchase order.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="66"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="66">Example step 5:</strong>
+<img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example_5_1.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="67" alt="Example step 5 part 1" title="Example step 5 part 1">
+<img src="../../media/Purchasing/Debit_Notes/Debit_Notes_Value_correction_example_5_2.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="68" alt="Example step 5 part 2" title="Example step 5 part 2"></p>
+<h2 id="incorrect-quantity-received---quantity-correction" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="70">Incorrect Quantity Received - Quantity Correction</h2>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="72">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="73">Items requiring inspection will have the „Quarantine management“ flag checked in the item master/register. This flag must be unchecked before execution of this process and then re-checked upon completion.</p>
+</div>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="75"><img src="./../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_general.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="75" alt="Quantity Correction" title="Quantity Correction"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="77">Example: 100 pcs were ordered and delivered but 110 pcs were systemically received into the main warehouse.</p>
+<ol sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="79">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="79">If the affected order has not yet been invoiced, then the receipt must be reversed and re-received for the correct quantity. These steps are <strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="79">NOT</strong> detailed below.</p>
+</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="81"><p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="81">If the affected order has been invoiced, then:</p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="83">Process Steps</p>
+<ol sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="84">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="84">Create a new purchase order</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="85">Enter: Line. 10 	Item Number	Correct Quantity	Value	 Main warehouse</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="86">Enter: Line. 20	Item Number	“-“ Incorrect Quantity 	Value 	 Main warehouse</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="87">Post the delivery note to receive the corrected quantity</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="88">Submit the order for invoicing</li>
+</ol>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="90">Example:</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="92"><img src="./../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_example1.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="92" alt="Quantity Correction Example part 1" title="Quantity Correction example part 1"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="94"><img src="./../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_example2.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="94" alt="Quantity Correction Example part 2" title="Quantity Correction example part 2"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="96"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="96">Example step 1 to 3:</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="98"><img src="./../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_example_1to3.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="98" alt="Quantity Correction Example step 1 to 3" title="Quantity Correction example step 1 to 3"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="100"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="100">Example step 4:</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="102"><img src="./../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_example_4_1.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="102" alt="Quantity Correction Example step 4 part 1" title="Quantity Correction example step 4part 1"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="104"><img src="./../../media/Purchasing/Debit_Notes/Debit_Notes_Quantity_Correction_example_4_2.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="104" alt="Quantity Correction Example step 4 part 2" title="Quantity Correction example step 4 part 2"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Debit_Notes.md" sourcestartlinenumber="106">Step 5 - Upon completion, the new purchase order must be invoiced through Financial Accounting.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

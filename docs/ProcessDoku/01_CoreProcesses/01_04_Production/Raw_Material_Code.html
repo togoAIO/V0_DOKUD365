@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creating a new Code | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Creating a new Code | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="creating-a-new-code">Creating a new Code</h1>
+
+<p>When a new product is received, user should open the form “Material Code” (Stock Management -&gt; MaterialCode -&gt; Material Code) and click button <strong>New Code</strong>
+Insert a Material Code Group and Item number</p>
+<p><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_1.png" alt="Creating a new Code" title="Creating a new Code"></p>
+<p>In the example, the Material code group is “D” and for it, the last used combination is A. That means system will create a new entry for the selected item number with “Material Code 1” as XXXDA and “Material Code 2” as 1.</p>
+<p><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_1_1.png" alt="Example" title="Example"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The XXX part of “Material Code 1” represents the company number and it is configured under:<br>Production -&gt; Certificate -&gt; Setup -&gt; Parameters
+<img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_1_1.png" alt="configure company number" title="configure company number"></p>
+</div>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The certificates should be saved on SER System.</p>
+</div>
+<h2 id="creating-a-new-record">Creating a new record</h2>
+<p>When a product is received and it belongs to same batch used in a previous shipment, user should open the form “Material Code” (Stock Management -&gt; MaterialCode -&gt; Material Code), select the previous register in grid and click button <strong>New Record</strong>
+System will create a new entry with same data as the selected register and increases the “Material Code Part 2”</p>
+<p><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_2.png" alt="Example of a new Record" title="Example of a new Record"></p>
+<h2 id="assign-a-material-code-to-a-work-order">Assign a material code to a Work Order</h2>
+<h3 id="swap-out-material-form">Swap out material form</h3>
+<p>When user opens the Swap out Material form, D365 will pre-select a material code based on item number.</p>
+<p><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_31.png" alt="swap out material form" title="swap out material form"></p>
+<p><a name="3312"></a></p>
+<h4 id="possibility-1">Possibility 1</h4>
+<p>If the requested quantity is within on Material Code only, user might select the Material Code parts 1 &amp; 2 direct in the grid as showed in above picture</p>
+<p><a name="3313"></a></p>
+<h4 id="possibility-2">Possibility 2</h4>
+<p>If the requested quantity need more than one Material Code, user should click button <strong>Material Used in Works Order</strong> and individually assign the Material Codes for the Work Order</p>
+<h4 id="possibility-3">Possibility 3</h4>
+<p>Assign the Material Code individually per serial number
+click button <strong>Material Used in Works Order</strong> and individually assign the Material Codes for the Work Order.
+Select one material code and click tab <strong>Assignment Serial No to Material Code</strong></p>
+<p><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_31.png" alt="Assignment Serial No to Material Code" title="Assignmet Serial No to Material Code"></p>
+<p>Assign the serial number by double click them in “Serial Number” area</p>
+<p><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_31.png" alt="Assigned Serial numbers" title="Assigned Serial numbers"></p>
+<h2 id="work-order-detail-form">Work Order Detail Form</h2>
+<p>To access the Material Used in Work Order form, user should click button <strong>Inquiries -&gt; Material Used in Work Order</strong></p>
+<p>Follow process described in <a href="#3312">Possiblity 2</a> and <a href="#3313">Possibility 3</a>.</p>
+<h2 id="stock-management-area">Stock Management Area</h2>
+<p>User could access directly the Material Used in Work Order form in
+Stock Management -&gt; MaterialCode -&gt; Material Used in Works Order</p>
+<h1 id="assign-a-material-code-to-sales-order">Assign a Material Code to Sales Order</h1>
+<p>Stock Management -&gt; MaterialCode -&gt; Material Used in Sales Order</p>
+<p>User should insert manually all data regarding: Sales Order, Sales Order Line, Item Number and the Raw material code</p>
+<h1 id="index">Index</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Index</th>
+<th>Status</th>
+<th style="text-align: center;">Date</th>
+<th>Author</th>
+<th>Reason for change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">01</td>
+<td>Released</td>
+<td style="text-align: center;">TBD</td>
+<td>Simon Berberich</td>
+<td>Publication</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

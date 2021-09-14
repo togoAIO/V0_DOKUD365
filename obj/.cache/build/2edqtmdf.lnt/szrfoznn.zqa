@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>VAT declaration with registers (JPK-V7M, VDEK) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="VAT declaration with registers (JPK-V7M, VDEK) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="vat-declaration-with-registers-jpk-v7m-vdek" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="25">VAT declaration with registers (JPK-V7M, VDEK)</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="29">This topic provides information about the value-added tax (VAT) declaration with registers (also known as a JPK-V7M, VDEK) in Poland.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="31">As of October 1, 2020, businesses in Poland are responsible for reporting VAT in an electronic document that consists of a Jednolity Plik Kontrolny VAT (JPK_VAT) together with the declaration (Jednolity Plik Kontrolny VDEK). The requested electronic document includes the following information:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="33">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="33">Both VAT records (a set of information about purchases and sales that is produced from the entrepreneur's VAT records for a given period)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="34">A VAT declaration (VAT-7 declaration)</li>
+</ul>
+<h2 id="prerequisites" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="36">Prerequisites</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="38">Before you can prepare Microsoft Dynamics 365 Finance to report a JPK_V7M, your business processes and the system must meet the following conditions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="40">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="40">Sales tax authorities</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="40">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="40">Indirect tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="40">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="40">Sales tax authorities</strong>), for the tax authority that is associated with tax codes that are used in tax transactions that must be considered by the JPK_V7M report, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="40">Report layout</strong> field must be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="40">Default</strong>. For more information about how to set up sales tax authorities, see <a href="../general-ledger/tasks/set-up-sales-tax-authorities.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="40">Set up sales tax authorities</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="41">When tax transactions that must be considered by the JPK_V7M report are posted, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="41">Date of VAT register</strong> field must be set.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="42">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="42">Sales tax codes</strong> page (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="42">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="42">Indirect tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="42">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="42">Sales tax codes</strong>), for the sales tax codes that are used in tax transactions that must be considered by the JPK_V7M report, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="42">Type of tax</strong> field must be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="42">Standard VAT</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="42">Reduced VAT</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="43">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-pol-vdek.md" sourcestartlinenumber="43">Sales tax codes</strong> page, for the sales tax codes that are used in tax transactions that must be considered by the JPK_V7M report, the sales tax reporting codes that are used in the Electronic reporting (ER) format of the report must be appropriately defined.</li>
+</ul>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

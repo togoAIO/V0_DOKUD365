@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Structure of Dynamics 365 Finance data sources for the FEC | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Structure of Dynamics 365 Finance data sources for the FEC | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="structure-of-dynamics-365-finance-data-sources-for-the-fec" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="25">Structure of Dynamics 365 Finance data sources for the FEC</h1>
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="27">In Microsoft Dynamics 365 Finance, you can generate the Fichier des écritures comptables (FEC) main file or the following annexes:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="29">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="29">Customers fiscal year opening balances annex</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="30">Vendors fiscal year opening balances annex</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="31">Customers transactions annex for a specified period</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="32">Vendors transactions annex for a specified period</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="34">An FEC that includes customer and vendor fiscal year opening balances can also be generated. Use this option for companies that have only a few records during the reporting period. The reporting period must include the beginning of the fiscal year.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="36">The following sections list the data sources that are used in the FEC main file and annexes.</p>
+<h2 id="main-fec-file-for-the-period-specified" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="38">Main FEC file for the period specified</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="40">The following table shows the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="40">Main FEC file for the period specified</strong> data structure definitions ($GeneralJournalView_FR).</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="42">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="42">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="42">Number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="42">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="42">Type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="42">Description (FR)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="42">Description (EN)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="42">Electronic reporting (ER) data source</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="44">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="44">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="44">JournalCode</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="44">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="44">Le code journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="44">The journal code of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="44">$GeneralJournalView_FR/$JournalCodeText</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="45">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="45">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="45">JournalLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="45">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="45">Le libellé journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="45">The journal caption of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="45">$GeneralJournalView_FR/getGeneralJournalEntry()/deJournalLib_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="46">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="46">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="46">EcritureNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="46">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="46">Le numéro sur une séquence continue de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="46">The number in a continuous sequence for the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="46">$GeneralJournalView_FR/GeneralJournalEntrySubledgerVoucher</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="47">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="47">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="47">EcritureDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="47">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="47">La date de comptabilisation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="47">The posting date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="47">$GeneralJournalView_FR/GeneralJournalEntryAccountingDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="48">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="48">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="48">CompteNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="48">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="48">Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="48">The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. Information on multiple customers or vendors transactions can be found in respective annexes.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="48">$GeneralJournalView_FR/$MainAccountId</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="49">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="49">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="49">CompteLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="49">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="49">Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="49">The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="49">$GeneralJournalView_FR/getGeneralJournalAccountEntry()/getMainAccountName()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="50">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="50">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="50">CompAuxNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="50">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="50">Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="50">The auxiliary account number. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="50">$GeneralJournalView_FR/getGeneralJournalAccountEntry()/deCompteAuxNum_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="51">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="51">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="51">CompAuxLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="51">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="51">Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="51">The auxiliary account description. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="51">$GeneralJournalView_FR/getGeneralJournalAccountEntry()/deCompteAuxLib_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="52">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="52">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="52">PieceRef</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="52">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="52">La référence de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="52">The reference of the supporting document. If reference of the supporting document can't be found, this field is populated with EcritureNum.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="52">$GeneralJournalView_FR/getGeneralJournalEntry()/dePieceNum_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="53">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="53">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="53">PieceDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="53">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="53">La date de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="53">The date of the supporting document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="53">$GeneralJournalView_FR/getGeneralJournalEntry()/dePieceDate_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="54">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="54">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="54">EcritureLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="54">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="54">Le libellé de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="54">The wording of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="54">$GeneralJournalView_FR/$ReplaceIntoDeEcritureLib_FR</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="55">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="55">12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="55">Montant</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="55">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="55">Le montant au débit/ au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="55">The debit/credit amount.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="55">$GeneralJournalView_FR/$AbsAmount</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="56">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="56">13</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="56">Sens</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="56">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="56">Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="56">The direction: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="56">D</strong> = debit, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="56">C</strong> = credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="56">$GeneralJournalView_FR/$Direction</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="57">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="57">14</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="57">EcritureLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="57">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="57">Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="57">The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="57">$GeneralJournalView_FR/$deEcritureLet</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="58">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="58">15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="58">DateLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="58">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="58">La date de lettrage (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="58">The lettering date. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="58">$GeneralJournalView_FR/$deDateLet</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="59">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="59">16</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="59">ValidDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="59">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="59">La date de validation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="59">The validation date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="59">$GeneralJournalView_FR/GeneralJournalEntryAccountingDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="60">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="60">17</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="60">Montantdevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="60">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="60">Le montant en devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="60">The amount in currency. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="60">$GeneralJournalView_FR/GeneralJournalAccountEntryTransactionCurrencyAmount</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="61">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="61">18</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="61">Idevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="61">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="61">L'identifiant de la devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="61">The currency identifier. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="61">$GeneralJournalView_FR/GeneralJournalAccountEntryTransactionCurrencyCode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="customers-fiscal-year-opening-balances-annex" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="63">Customers fiscal year opening balances annex</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="65">Customers fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by customers, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="65">Customers fiscal year opening balances annex</strong> is implemented. This annex collects the amounts of opening balances by customers at the beginning of the fiscal year and provides this information together with the opening transaction voucher from the general ledger.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="67">The following table shows the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="67">Customers fiscal year opening balances annex</strong> data structure definitions ($CustLedgerBalance).</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="69">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="69">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="69">Number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="69">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="69">Type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="69">Description (FR)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="69">Description (EN)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="69">ER data source</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="71">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="71">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="71">JournalCode</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="71">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="71">Le code journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="71">The journal code of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="71">CustTransGroupedByLedgerAccount/$JournalCodeText</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="72">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="72">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="72">JournalLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="72">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="72">Le libellé journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="72">The journal caption of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="72">CustTransGroupedByLedgerAccount/$JournalLibText</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="73">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="73">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="73">EcritureNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="73">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="73">Le numéro sur une séquence continue de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="73">The number in a continuous sequence for the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="73">CustTransGroupedByLedgerAccount/$Voucher</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="74">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="74">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="74">EcritureDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="74">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="74">La date de comptabilisation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="74">The posting date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="74">CustTransGroupedByLedgerAccount/$Date</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="75">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="75">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="75">CompteNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="75">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="75">Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="75">The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="75">CustTransGroupedByLedgerAccount/grouped/$LedgerAccount</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="76">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="76">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="76">CompteLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="76">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="76">Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="76">The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="76">CustTransGroupedByLedgerAccount/$LedgerAccountName</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="77">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="77">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="77">CompAuxNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="77">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="77">Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="77">The auxiliary account number. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="77">CustTransGroupedByLedgerAccount/grouped/AccountNum</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="78">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="78">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="78">CompAuxLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="78">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="78">Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="78">The auxiliary account description. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="78">CustTransGroupedByLedgerAccount/$PartyName</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="79">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="79">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="79">PieceRef</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="79">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="79">La référence de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="79">The reference of the supporting document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="79">CustTransGroupedByLedgerAccount/$PieceNum</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="80">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="80">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="80">PieceDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="80">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="80">La date de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="80">The date of the supporting document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="80">CustTransGroupedByLedgerAccount/$PieceDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="81">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="81">EcritureLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="81">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="81">Le libellé de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="81">The wording of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="81">CustTransGroupedByLedgerAccount/$EcritureLib</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="82">12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="82">Montant</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="82">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="82">Le montant au débit/ au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="82">The debit/credit amount.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="82">CustTransGroupedByLedgerAccount/$AbsAmount</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="83">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="83">13</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="83">Sens</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="83">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="83">Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="83">The direction: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="83">D</strong> = debit, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="83">C</strong> = credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="83">CustTransGroupedByLedgerAccount/$Direction</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="84">14</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="84">EcritureLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="84">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="84">Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="84">The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="84">$deEmpty</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="85">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="85">15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="85">DateLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="85">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="85">La date de lettrage (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="85">The lettering date. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="85">$deDateNull</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="86">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="86">16</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="86">ValidDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="86">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="86">La date de validation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="86">The validation date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="86">CustTransGroupedByLedgerAccount/$ValidDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="87">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="87">17</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="87">Montantdevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="87">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="87">Le montant en devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="87">The amount in currency. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="87">CustTransGroupedByLedgerAccount/aggregated/AmountCur</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="88">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="88">18</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="88">Idevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="88">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="88">L'identifiant de la devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="88">The currency identifier. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="88">CustTransGroupedByLedgerAccount/grouped/CurrencyCode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vendors-fiscal-year-opening-balances-annex" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="90">Vendors fiscal year opening balances annex</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="92">Vendors fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by vendors, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="92">Vendors fiscal year opening balances annex</strong> is implemented. This annex collects amounts of opening balances by vendors on the beginning of the fiscal year and represents this information in combination with opening transaction voucher from general ledger.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="94">The following table shows the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="94">Vendors fiscal year opening balances annex</strong> data structure definitions.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="96">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="96">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="96">Number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="96">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="96">Type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="96">Description (FR)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="96">Description (EN)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="96">ER data source</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="98">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="98">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="98">JournalCode</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="98">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="98">Le code journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="98">The journal code of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="98">Not included</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="99">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="99">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="99">JournalLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="99">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="99">Le libellé journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="99">The journal caption of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="99">VendTransGroupedByLedgerAccount/$JournalLibText</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="100">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="100">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="100">EcritureNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="100">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="100">Le numéro sur une séquence continue de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="100">The number in a continuous sequence for the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="100">VendTransGroupedByLedgerAccount/$Voucher</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="101">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="101">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="101">EcritureDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="101">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="101">La date de comptabilisation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="101">The posting date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="101">VendTransGroupedByLedgerAccount/$Date</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="102">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="102">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="102">CompteNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="102">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="102">Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="102">The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="102">VendTransGroupedByLedgerAccount/grouped/$LedgerAccount</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="103">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="103">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="103">CompteLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="103">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="103">Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="103">The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="103">VendTransGroupedByLedgerAccount/$LedgerAccountName</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="104">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="104">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="104">CompAuxNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="104">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="104">Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="104">The auxiliary account number. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="104">VendTransGroupedByLedgerAccount/grouped/AccountNum</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="105">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="105">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="105">CompAuxLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="105">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="105">Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="105">The auxiliary account description. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="105">VendTransGroupedByLedgerAccount/$PartyName</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="106">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="106">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="106">PieceRef</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="106">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="106">La référence de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="106">The reference of the supporting document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="106">VendTransGroupedByLedgerAccount/$PieceNum</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="107">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="107">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="107">PieceDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="107">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="107">La date de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="107">The date of the supporting document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="107">VendTransGroupedByLedgerAccount/$PieceDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="108">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="108">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="108">EcritureLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="108">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="108">Le libellé de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="108">The wording of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="108">VendTransGroupedByLedgerAccount/$EcritureLib</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="109">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="109">12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="109">Montant</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="109">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="109">Le montant au débit/ au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="109">The debit/credit amount.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="109">VendTransGroupedByLedgerAccount/$AbsAmount</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="110">13</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="110">Sens</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="110">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="110">Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="110">The direction: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="110">D</strong> = debit, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="110">C</strong> = credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="110">VendTransGroupedByLedgerAccount/$Direction</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="111">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="111">14</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="111">EcritureLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="111">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="111">Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="111">The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="111">$deEmpty</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="112">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="112">15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="112">DateLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="112">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="112">La date de lettrage (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="112">The lettering date. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="112">$deDateNull</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="113">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="113">16</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="113">ValidDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="113">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="113">La date de validation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="113">The validation date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="113">VendTransGroupedByLedgerAccount/$ValidDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="114">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="114">17</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="114">Montantdevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="114">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="114">Le montant en devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="114">The amount in currency. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="114">VendTransGroupedByLedgerAccount/aggregated/AmountCur</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="115">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="115">18</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="115">Idevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="115">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="115">L'identifiant de la devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="115">The currency identifier. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="115">VendTransGroupedByLedgerAccount/grouped/CurrencyCode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="customers-transactions-annex-for-the-period-specified" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="117">Customers transactions annex for the period specified</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="119"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="119">Customers transactions annex for the period specified</strong> annex can be requested to provide additional details on customers transactions. For example, in case a company uses <a href="../../finance/general-ledger/one-voucher.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="119">Allow multiple transactions within one voucher</a> parameter on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="119">General</strong> tab of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="119">General ledger parameters</strong> page, one voucher can be assigned to multiple customers transactions. To provide detailed infomration by customers accounts for such scenario, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="119">Customers transactions annex for the period specified</strong> annex is implemented.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="121">The following table shows the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="121">Customers transactions annex for the period specified</strong> data structure definitions.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="123">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="123">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="123">Number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="123">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="123">Type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="123">Description (FR)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="123">Description (EN)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="123">ER data source</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="125">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="125">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="125">JournalCode</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="125">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="125">Le code journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="125">The journal code of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="125">$CustTrans/$JournalCodeText</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="126">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="126">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="126">JournalLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="126">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="126">Le libellé journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="126">The journal caption of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="126">$CustTrans/$JournalLibText</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="127">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="127">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="127">EcritureNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="127">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="127">Le numéro sur une séquence continue de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="127">The number in a continuous sequence for the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="127">$CustTrans/Voucher</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="128">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="128">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="128">EcritureDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="128">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="128">La date de comptabilisation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="128">The posting date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="128">$CustTrans/TransDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="129">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="129">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="129">CompteNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="129">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="129">Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="129">The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="129">$CustTrans/deLedgerAccount_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="130">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="130">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="130">CompteLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="130">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="130">Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="130">The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="130">$CustTrans/deLedgerAccountName_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="131">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="131">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="131">CompAuxNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="131">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="131">Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="131">The auxiliary account number. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="131">$CustTrans/AccountNum</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="132">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="132">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="132">CompAuxLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="132">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="132">Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="132">The auxiliary account description. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="132">$CustTrans/custTableName()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="133">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="133">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="133">PieceRef</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="133">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="133">La référence de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="133">The reference of the supporting document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="133">$CustTrans/$PieceNum</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="134">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="134">PieceDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="134">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="134">La date de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="134">The date of the supporting document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="134">$CustTrans/$PieceDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="135">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="135">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="135">EcritureLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="135">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="135">Le libellé de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="135">The wording of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="135">$CustTrans/deEcritureLib_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="136">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="136">12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="136">Montant</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="136">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="136">Le montant au débit/ au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="136">The debit/credit amount.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="136">$CustTrans/$AbsAmount</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="137">13</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="137">Sens</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="137">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="137">Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="137">The direction: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="137">D</strong> = debit, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="137">C</strong> = credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="137">$CustTrans/$Direction</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="138">14</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="138">EcritureLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="138">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="138">Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="138">The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="138">$CustTrans/LastSettleVoucher</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="139">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="139">15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="139">DateLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="139">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="139">La date de lettrage (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="139">The lettering date. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="139">$CustTrans/LastSettleDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="140">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="140">16</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="140">ValidDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="140">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="140">La date de validation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="140">The validation date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="140">$CustTrans/createdDateTime</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="141">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="141">17</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="141">Montantdevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="141">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="141">Le montant en devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="141">The amount in currency. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="141">$CustTrans/AmountCur</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="142">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="142">18</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="142">Idevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="142">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="142">L'identifiant de la devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="142">The currency identifier. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="142">$CustTrans/CurrencyCode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vendors-transactions-annex-for-the-period-specified" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="144">Vendors transactions annex for the period specified</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="146"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="146">Vendors transactions annex for the period specified</strong> annex can be requested to provide additional details on vendors transactions. For example, in case a company uses <a href="../../finance/general-ledger/one-voucher.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="146">Allow multiple transactions within one voucher</a> parameter on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="146">General</strong> tab of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="146">General ledger parameters</strong> page, one voucher can be assigned to multiple vendors transactions. To provide detailed infomration by vendors accounts for such scenario, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="146">Vendors transactions annex for the period specified</strong> annex is implemented.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="148">The following table shows the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="148">Vendors transactions annex for the period specified</strong> data structure definitions.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="150">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="150">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="150">Number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="150">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="150">Type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="150">Description (FR)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="150">Description (EN)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="150">ER data source</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="152">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="152">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="152">JournalCode</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="152">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="152">Le code journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="152">The journal code of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="152">$VendTrans/$JournalCodeText</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="153">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="153">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="153">JournalLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="153">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="153">Le libellé journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="153">The journal caption of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="153">$VendTrans/$JournalLibText</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="154">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="154">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="154">EcritureNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="154">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="154">Le numéro sur une séquence continue de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="154">The number in a continuous sequence for the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="154">$VendTrans/Voucher</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="155">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="155">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="155">EcritureDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="155">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="155">La date de comptabilisation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="155">The posting date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="155">$VendTrans/TransDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="156">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="156">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="156">CompteNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="156">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="156">Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="156">The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="156">$VendTrans/deLedgerAccount_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="157">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="157">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="157">CompteLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="157">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="157">Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="157">The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="157">$VendTrans/deLedgerAccountName_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="158">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="158">CompAuxNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="158">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="158">Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="158">The auxiliary account number. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="158">$VendTrans/AccountNum</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="159">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="159">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="159">CompAuxLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="159">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="159">Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="159">The auxiliary account description. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="159">$VendTrans/custTableName()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="160">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="160">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="160">PieceRef</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="160">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="160">La référence de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="160">The reference of the supporting document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="160">$VendTrans/$PieceNum</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="161">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="161">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="161">PieceDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="161">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="161">La date de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="161">The date of the supporting document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="161">$VendTrans/$PieceDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="162">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="162">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="162">EcritureLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="162">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="162">Le libellé de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="162">The wording of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="162">$VendTrans/deEcritureLib_FR()</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="163">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="163">12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="163">Montant</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="163">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="163">Le montant au débit/ au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="163">The debit/credit amount.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="163">$VendTrans/$AbsAmount</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="164">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="164">13</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="164">Sens</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="164">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="164">Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="164">The direction: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="164">D</strong> = debit, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="164">C</strong> = credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="164">$VendTrans/$Direction</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="165">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="165">14</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="165">EcritureLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="165">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="165">Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="165">The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="165">$VendTrans/LastSettleVoucher</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="166">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="166">15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="166">DateLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="166">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="166">La date de lettrage (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="166">The lettering date. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="166">$VendTrans/LastSettleDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="167">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="167">16</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="167">ValidDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="167">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="167">La date de validation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="167">The validation date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="167">$VendTrans/createdDateTime</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="168">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="168">17</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="168">Montantdevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="168">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="168">Le montant en devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="168">The amount in currency. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="168">$VendTrans/AmountCur</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="169">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="169">18</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="169">Idevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="169">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="169">L'identifiant de la devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="169">The currency identifier. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="169">$VendTrans/CurrencyCode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fec-main-file-including-fiscal-year-opening-balances-details-for-customers-and-vendors" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="171">FEC main file including fiscal year opening balances details for customers and vendors</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="173">The following table shows the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="173">FEC main file including fiscal year opening balances details for customers and vendors</strong> data structure definitions.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="175">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="175">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="175">Number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="175">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="175">Type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="175">Description (FR)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="175">Description (EN)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="175">ER data source</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="177">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="177">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="177">JournalCode</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="177">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="177">Le code journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="177">The journal code of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="177">$FECExtendedAggregation/$JournalCodeText</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="178">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="178">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="178">JournalLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="178">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="178">Le libellé journal de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="178">The journal caption of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="178">$FECExtendedAggregation/$JournalLibText</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="179">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="179">3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="179">EcritureNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="179">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="179">Le numéro sur une séquence continue de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="179">The number in a continuous sequence for the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="179">$FECExtendedAggregation/$Voucher</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="180">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="180">4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="180">EcritureDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="180">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="180">La date de comptabilisation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="180">The posting date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="180">$FECExtendedAggregation/$Date</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="181">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="181">5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="181">CompteNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="181">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="181">Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="181">The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. Information on multiple customers or vendors transactions can be found in respective annexes.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="181">$FECExtendedAggregation/$LedgerAccount</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="182">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="182">6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="182">CompteLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="182">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="182">Le libellé de compte, conformément à la nomenclature du plan comptable français</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="182">The account name in accordance with the nomenclature of the French chart of accounts.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="182">$FECExtendedAggregation/$LedgerAccountName</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="183">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="183">7</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="183">CompAuxNum</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="183">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="183">Le numéro de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="183">The auxiliary account number. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="183">$FECExtendedAggregation/$AccountNum</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="184">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="184">8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="184">CompAuxLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="184">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="184">Le libellé de compte auxiliaire (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="184">The auxiliary account description. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="184">$FECExtendedAggregation/$PartyName</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="185">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="185">9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="185">PieceRef</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="185">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="185">La référence de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="185">The reference of the supporting document. If reference of the supporting document cannot be found, this field is populated with EcritureNum.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="185">$FECExtendedAggregation/$PieceNum</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="186">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="186">10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="186">PieceDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="186">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="186">La date de la pièce justificative</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="186">The date of the supporting document.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="186">$FECExtendedAggregation/$PieceDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="187">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="187">11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="187">EcritureLib</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="187">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="187">Le libellé de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="187">The wording of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="187">$FECExtendedAggregation/$EcritureLib</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="188">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="188">12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="188">Montant</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="188">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="188">Le montant au débit/ au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="188">The debit/credit amount.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="188">$FECExtendedAggregation/$AbsAmount</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="189">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="189">13</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="189">Sens</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="189">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="189">Le sens: &quot;D&quot; au débit; &quot;C&quot; au crédit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="189">The direction: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="189">D</strong> = debit, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="189">C</strong> = credit</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="189">$FECExtendedAggregation/$Direction</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="190">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="190">14</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="190">EcritureLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="190">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="190">Le lettrage de l'écriture comptable (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="190">The lettering of the accounting entry. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="190">$FECExtendedAggregation/$LastSettleVoucher</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="191">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="191">15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="191">DateLet</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="191">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="191">La date de lettrage (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="191">The lettering date. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="191">$FECExtendedAggregation/$LastSettleDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="192">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="192">16</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="192">ValidDate</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="192">Date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="192">La date de validation de l'écriture comptable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="192">The validation date of the accounting entry.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="192">$FECExtendedAggregation/$ValidDate</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="193">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="193">17</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="193">Montantdevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="193">Numérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="193">Le montant en devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="193">The amount in currency. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="193">$FECExtendedAggregation/$AmountCur</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="194">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="194">18</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="194">Idevise</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="194">Alphanumérique</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="194">L'identifiant de la devise (à blanc si non utilisé)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="194">The currency identifier. This field is blank if it isn't used.</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-fra-fec-audit-file-structure.md" sourcestartlinenumber="194">$FECExtendedAggregation/$CurrencyCode</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

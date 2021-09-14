@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Model management lifecycle (preview) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Model management lifecycle (preview) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="model-management-lifecycle-preview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/model-manage-lifecycle.md" sourcestartlinenumber="30">Model management lifecycle (preview)</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/model-manage-lifecycle.md" sourcestartlinenumber="34">This topic describes ways to maintain your organization's machine learning models to optimize the predictions that they generate.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/model-manage-lifecycle.md" sourcestartlinenumber="36">We recommend that you train the AI model in a sandbox environment and then use managed solutions to deploy it to a production environment. This approach helps ensure that the correct controls are in place for managing the model lifecycle.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/model-manage-lifecycle.md" sourcestartlinenumber="38">Because the AI model is based on the available invoice and customer data, it's important that the sandbox environment have a recent copy of the production data. You can begin to train your model by following the steps in <a href="use-customer-payment-predictions.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/model-manage-lifecycle.md" sourcestartlinenumber="38">Use Customer payment predictions</a>. After the model has been retrained, evaluate the results as described in <a href="evaluate-payment-prediction.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/model-manage-lifecycle.md" sourcestartlinenumber="38">Evaluate the initial customer payment prediction model</a>. Use the information in <a href="improve-model.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/model-manage-lifecycle.md" sourcestartlinenumber="38">Improve the prediction model</a> to experiment with feature and filter combinations that can help improve the model.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/model-manage-lifecycle.md" sourcestartlinenumber="40">When you're satisfied with the training results, follow the steps in <a href="https://docs.microsoft.com/ai-builder/distribute-model" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/model-manage-lifecycle.md" sourcestartlinenumber="40">Distribute your AI model</a> to transition the model to your production environment.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

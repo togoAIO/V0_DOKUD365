@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sales / Production | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Sales / Production | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sales--production" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="1">Sales / Production</h1>
+
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="2"><a name="CAL_Setup_31"></a>
+Create a Sales Order with item which has a certificate.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="5"><img src="../../media/Certificate/CAL_Setup/CAL_Setup_3.png" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="5" alt="General" title="General"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="7">If necessary, TAG and Serial numbers could be added to the sales order line.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="9"><img src="../../media/Certificate/CAL_Setup/CAL_Setup_3_2.png" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="9" alt="sales order line" title="sales order line"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="11">A Work Order will be generated based on this Sales Order Line</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="13"><img src="../../media/Certificate/CAL_Setup/CAL_Setup_3_3.png" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="13" alt="Base for Work Order" title="Base for Work Order"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="15">And this WO should be set to have Serial Numbers</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="17"><img src="../../media/Certificate/CAL_Setup/CAL_Setup_3_4.png" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="17" alt="Work Order" title="Work Order"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="19">After the WO is started / printed, Internal Serial Numbers will be generated</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="21">And a new line into Certificate will be added</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="23"><img src="../../media/Certificate/CAL_Setup/CAL_Setup_3_7.png" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="23" alt="Certificate" title="Certificate"></p>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="25">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="26">For Modelcoded items, the automatic certificate line creation into Certificate Cockpit depends on setup done on:
+<img src="../../media/Certificate/CAL_Setup/CAL_Setup_3_8.png" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="27" alt="Menu" title="Menu"></p>
+</div>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="29">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="30">For more information about Certificate creation and processes, please read:<br><a href="Certificate.html" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="30">Certificate</a></p>
+</div>
+<h2 id="wika-cal" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="32">WIKA Cal</h2>
+<ol sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="34">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="34">Select <a href="#CAL_Setup_31" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="34">Sales / Production</a></li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="35">Enter the Work Order number and WIKA Cal will connect to D365 via BC4P and get information</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="36">Inform Model, Class, Scale Range and the Reference</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="37">Click on measurement table and inform Number of Series and Measuring Points</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="38">Click on table and start the Calibration Process</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="39">If necessary, include remarks</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="40">Save the Certificate</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="41">The Certificate data will be populated in WIKA XML Transfer Tool. If results are correct, accept it</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="42">Close to XML Transfer Tool</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="43">After close, the XML files will be copied to the Temp Folder</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="45">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="46">The Certificate folder structure are:</p>
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="47">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="47">A - Cancelled</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="48">E - Error</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="49">Log - Log</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="50">V - Completed</li>
+</ul>
+</div>
+<h2 id="batch-job--certificate-cockpit" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="52">Batch Job / Certificate Cockpit</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="54">After the batch job runs, the xml will be moved to Completed folder and it will be imported to Certificate
+Now, user can preview the generated certificate</p>
+<h1 id="index" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="57">Index</h1>
+<table sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="59">
+<thead>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="59">
+<th style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="59">Index</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="59">Status</th>
+<th style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="59">Date</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="59">Author</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="59">Reason for change</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="61">
+<td style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="61">01</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="61">Released</td>
+<td style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="61">TBD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="61">Simon Berberich</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_11_Certificate/Internal_WIKA_CAL_Setup.md" sourcestartlinenumber="61">Publication</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

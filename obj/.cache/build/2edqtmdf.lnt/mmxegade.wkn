@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cash flow management (Russia) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Cash flow management (Russia) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cash-flow-management-russia" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="28">Cash flow management (Russia)</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="32">In a centralized payment organization, there are many legal entities for operations, and each operating legal entity manages information for its own invoices. Payments for all the operating legal entities are generated from a single legal entity, which is sometimes referred to as the Treasury legal entity or Treasury company.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="34">A Treasury company is responsible for monitoring the flow of cash and liquidity movement across companies and cash positions (shortage and surplus), and for preventing corporate cash shortage in a timely manner.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="36">Here are the main goals of a Treasury company:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="38">Get an accurate liquidity/cash flow forecast, and do analysis for the medium-term/short-term horizon.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="39">Manage payments daily by using payment schedule journals.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="40">Control the company's cash position.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="41">Maintain the company's cash flows through centralized control.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="43">This topic provides a step-by-step example that shows the settings and user activities for cash flow management.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="45">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="46">The data set that is used in this topic is for demo purposes only. The codes that you use for ledger accounts, value-added tax (VAT), rates, and so on, should comply with the rules that are accepted in your company.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="48">In this example, Contoso Retail RUS (RURT) is a subsidiary of an industrial holding company and does business as an operating legal entity. Contoso Entertainment Systems Russia (RUMF) is an internal bank of an industrial holding company and handles all payments.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="50">The following table shows the stages of payment that a treasurer deals with during payment processing.</p>
+<table>
+<thead>
+<tr>
+<th>Business scenario</th>
+<th>Payment cause</th>
+<th>Payment stage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The company requests and confirms delivery of goods (that is, a purchase order that has a delivery schedule that is confirmed). A treasurer includes information about the expected payments (inflow or outflow) in the cash flow forecast by creating payment schedule journal of type "payment plan".
+</td>
+<td>
+<ul>
+<li>Purchase order</li>
+<li>Sales order</li>
+<li>Free text invoice</li>
+</ul>
+</td>
+<td>Planned payment</td>
+</tr>
+<tr>
+<td>The company receives the payment request (prepayment request, invoice, and so on) from a seller. The manager creates a payment request, which should be approved by the manager lead and a treasurer. The treasurer includes information about the expected and approved payments (inflow or outflow) in the cash flow forecast.
+<blockquote><strong>Important:</strong> The Payment request and the associated functionality are available only if the <strong>Payment request</strong> license configuration key is turned on.</blockquote>
+</td>
+<td>
+<ul>
+<li>Vendor invoice</li>
+<li>Prepayment invoice</li>
+<li>Planned payment for confirmed purchase order</li>
+<li>Customer return invoice</li>
+</ul>
+</td>
+<td>Payment request</td>
+</tr>
+<tr>
+<td>A treasurer generates and confirms the payment schedule journal (payment register). In this way, the company defines the list of payments that should be made by the bank/cash account.</td>
+<td>Payment schedule journal (of the <strong>Payment register</strong> type)</td>
+<td>Payment order</td>
+</tr>
+<tr>
+<td>The company receives the statement from a bank. This statement includes the authorized transactions (completed payments).</td>
+<td>Bank statement</td>
+<td>Completed payment</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="100">After you complete the example that is provided in this topic, you will be able to perform the following tasks:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="102">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="102">Configure parameters for cash flow management to support the new functionality.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="103">Process planned payments. Forecast transactions of incoming and outgoing payments are automatically created and updated based on purchase orders, sales orders, and free text invoices.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="104">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="104">Payment request</strong> license configuration key is turned on, process payment requests based on indebtedness to vendors, customers, and workers, and prepayment requirements from vendors. (The processing includes the creation, update, and approval of payment requests.)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="105">Process payment schedule journals for medium-term liquidity planning (payment plan) and daily payment management (payment register). Analyze cash deficit and surplus through payment schedule sheet balancing (the simulation function).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="106">Generate payments, based on an approved payment register, which is a type of payment schedule journal.</li>
+</ul>
+<h2 id="setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="108">Setup</h2>
+<h3 id="set-up-the-license-configuration" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="110">Set up the license configuration</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="112">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="112">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="112">System administration &gt; Setup &gt; License configuration</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="113">Under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="113">Country/Regional specific features &gt; Russia</strong>, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="113">Cash flow management</strong> check box.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="114">If the organization plans to use payment requests, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="114">Payment requests</strong> check box.</li>
+</ol>
+<h3 id="optional-set-up-an-organization-hierarchy-for-centralized-payments" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="116">Optional: Set up an organization hierarchy for centralized payments</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="118">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="118"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="118">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="118">Organization administration &gt; Organizations &gt; Organization hierarchies</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="119"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="119">In the left pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="119">Centralized Payments</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="121"><img src="media/rus-org-hierarchy.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="121" alt="Organization hierarchy for centralized payments."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="123"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="123">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="123">View</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="124"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="124">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="124">Hierarchy designer</strong> page, create a hierarchy where <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="124">Contoso Entertainment Systems Russia</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="124">RUMF</strong>) is the legal entity of the payment and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="124">Contoso Retail RUS</strong> (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="124">RURT</strong>) is the operating legal entity.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="126"><img src="media/rus-org-hierarchy-designer.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="126" alt="Organization hierarchy designer."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="128"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="128">Publish the new hierarchy.</p>
+</li>
+</ol>
+<h3 id="set-up-a-workflow-for-cash-flow-management" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="130">Set up a workflow for cash flow management</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="132">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="132"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="132">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="132">Cash and bank management &gt; Setup &gt; Cash and bank management workflows</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="133"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="133">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="133">New</strong> to create a record.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="134"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="134">Select the required workflow type: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="134">Workflow type for payment requests approval</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="134">Payment schedule journal approval workflow</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="135"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="135">Set up the new workflow by using the new <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="135">Approve the payment request</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="135">Approve payment schedule journal</strong> workflow element.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="137"><img src="media/rus-cash-flow-workflow.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="137" alt="Workflow elements."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="139"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="139">Activate the new workflow.</p>
+</li>
+</ol>
+<h3 id="set-up-a-payment-priority" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="141">Set up a payment priority</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="143">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="143">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="143">Cash and bank management &gt; Setup &gt; Cash flow management &gt; Payment priority</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="144">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="144">New</strong> to create a record.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="145">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="145">Manage priority</strong> FastTab, use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="145">Up</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="145">Down</strong> buttons to arrange the priority list.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="146">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="146">Accounts payable &gt; Vendors &gt; All vendors</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="147">Select the vendor, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="147">Edit</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="148">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="148">Payment priority</strong> field, specify a priority code for the associated party. You can also complete this operation on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="148">Party</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="148">Customer</strong> pages.</li>
+</ol>
+<h3 id="set-up-a-payment-request-type" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="150">Set up a payment request type</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="152">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="152"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="152">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="152">Cash and bank management &gt; Setup &gt; Cash flow management &gt; Payment request type</strong>.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="154">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="155">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="155">Payment request type</strong> page is available only if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="155">Payment request</strong> license configuration key is turned on.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="157"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="157">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="157">New</strong> to create a record.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="158"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="158">Specify the payment priority.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="160">If a payment priority isn't specified for a payment request type, the lowest payment priority will be used for payment requests of that type. The payment priority for a payment request will be the higher of the payment priority of the party and the payment priority of the payment request type.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="162"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="162">Specify the cash flow direction: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="162">Cash inflow</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="162">Cash outflow</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="163"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="163">Specify the workflow that is associated with payment request approval, if the approval procedure should be applied to payment requests of this type.</p>
+</li>
+</ol>
+<h3 id="specify-cash-flow-management-parameters" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="165">Specify cash flow management parameters</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="167">This setup should be completed for a Treasury company.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="169">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="169"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="169">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="169">Cash and bank management &gt; Setup &gt; Cash and bank management parameters</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="170"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="170">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="170">Cash flow management</strong> tab, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="170">Financial dimensions</strong> FastTab, specify the dimension set. This step lets an organization determine which dimensions in the account structures that are associated with the chart of accounts (for legal entities in a centralized payment hierarchy) are available for cash flow management processing. For example, combinations of departments that have cost centers can be used for liquidity/cash flow forecast analysis.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="171"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="171">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="171">Default exchange rate type for forecast</strong> FastTab, specify the default exchange rate type for forecasts. This value is used in payment plans when the currency of a payment source differs from the payment currency.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="173">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="174">Complete the steps 4-7 if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="174">Payment request</strong> license configuration key is turned on.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="176"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="176">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="176">Payment request types</strong> FastTab, specify payment request types for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="176">Indebtedness to vendor</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="176">Vendor prepayment</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="176">Indebtedness to customer</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="176">Indebtedness to worker</strong>. These payment request types are used during automatic creation of payment requests.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="177"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="177">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="177">Payments</strong> FastTab, specify the vendor payment journal and customer payment journal that are used to post payments that are generated by the payment register.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="178"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="178">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="178">Payment request re-approval</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="178">Amount to pay change</strong> field, specify the system behavior if the amount to pay for a payment request is changed. You can specify that the system should always initialize a payment request reapproval through a workflow, that the system should initialize a payment request reapproval only if the amount to pay has increased, or that reapproval is never required.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="179"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="179">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="179">Number sequences</strong> tab, specify number sequence codes for the following references:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="181">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="181">Payment request</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="182">Payment schedule journal</li>
+</ul>
+</li>
+</ol>
+<h3 id="set-up-terms-of-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="184">Set up terms of payment</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="186">This setup is available only if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="186">Payment request</strong> license configuration key is turned on.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="188">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="188">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="188">Accounts payable &gt; Payment setup &gt; Terms of payment</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="189">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="189">Edit</strong>, and specify the payment request types for payments and prepayments, if specific payment request types should be used in these scenarios.</li>
+</ol>
+<h3 id="set-up-payment-schedules" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="191">Set up payment schedules</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="193">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="193">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="193">Accounts payable &gt; Payment setup &gt; Payment schedules</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="194">Create a payment schedule.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="195">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="195">Allocation</strong> field, set the allocation method to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="195">Specified</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="196">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="196">Payment lines</strong> FastTab, create payment lines. Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="196">Prepayment</strong> check box for a line if a payment request should be created for prepayment amount.</li>
+</ol>
+<h3 id="set-up-the-remittance-en-route-account" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="198">Set up the remittance en route account</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="200">This setup should be completed for a Treasury company.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="202">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="202">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="202">Cash and bank management &gt; Cash flow forecasting &gt; Cash flow forecast setup</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="203">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="203">General ledger</strong> tab, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="203">Liquidity accounts</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="203">Add</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="204">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="204">Main account</strong> field, select the ledger account.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="205">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="205">Remittance en route</strong> check box.</li>
+</ol>
+<h3 id="set-up-the-minimum-cash-balance-for-bank-accounts" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="207">Set up the minimum cash balance for bank accounts</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="209">This setup should be completed for a Treasury company.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="211">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="211">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="211">Cash and bank management &gt; Bank accounts &gt; Bank accounts</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="212">Select a bank account, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="212">Edit</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="213">Specify the minimum cash balance. If the estimated balance amount of the bank account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.</li>
+</ol>
+<h3 id="set-up-the-minimum-cash-balance-for-cash-accounts" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="215">Set up the minimum cash balance for cash accounts</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="217">This setup should be completed for a Treasury company.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="219">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="219">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="219">Cash and bank management &gt; Bank accounts &gt; Cash accounts</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="220">Select the cash account, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="220">Edit</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="221">Specify the minimum cash balance. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.</li>
+</ol>
+<h3 id="set-up-default-payment-order-requisites-for-purchase-agreements" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="223">Set up default payment order requisites for purchase agreements</h3>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="225">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="226">Setup procedure is similar for both purchase agreements and sales agreements</p>
+</div>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="228">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="228">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="228">Accounts payable &gt; Purchase orders &gt; Purchase agreements</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="229">Select a purchase agreement that has a method of payment that is associated with a payment order in Russian rubles (RUB).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="230">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="230">Purchase agreement</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="230">Setup</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="230">Payment order</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="231">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="231">Edit</strong>, and specify default payment order requisites. Payment order requisites for a payment request or a payment journal line that is associated with this purchase agreement will be initialized from the purchase agreement.</li>
+</ol>
+<h2 id="planned-payment-processing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="233">Planned payment processing</h2>
+<h3 id="planned-payments-on-purchase-orders" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="235">Planned payments on purchase orders</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="237">A planned payment contains details about future payments: the amount, method of payment, payment account, payment priority, and cash discount amount.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="239">The due date is calculated based on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="239">Confirmed delivery date</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="239">Delivery date</strong> if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="239">Confirmed delivery date</strong> isn't specified.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="241">If a user posts an invoice, planned payments are recalculated. If a purchase order is fully invoiced, the purchase order won't have any planned payments.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="243">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="243">Payment request</strong> license configuration key is turned on, a planned payment is created based on the financial dimensions from the purchase order lines. Otherwise, the planned payment is based on the financial dimensions from the purchase order header.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="245">Planned payments are generated for a purchase order if a payment schedule is calculated, or if a user selects the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="245">Planned payments</strong> button.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="247">This procedure should be completed in a subsidiary company.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="249">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="249">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="249">Accounts payable &gt; Purchase orders &gt; All purchase orders</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="250">Create a purchase order. On the purchase order header, specify the terms of payments, payment schedule, method of payment, cash discount, and financial dimensions.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="251">Create purchase order lines, and specify the sales tax group, item sales tax group, and financial dimensions. Distribute the amount of a line if distribution is required.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="252">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="252">Invoice</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="252">Bill</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="252">Planned payments</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="253">Review the planned payments that have been created based on the due dates, financial dimension values, sales tax group, and item sales tax group.</li>
+</ol>
+<h3 id="planned-payments-on-sales-orders" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="255">Planned payments on sales orders</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="257">A planned payment contains details about future payments: the value, method of payment, payment account, payment priority, and cash discount amount.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="259">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="259">Payment request</strong> license configuration key is turned on, a planned payment is created based on the financial dimensions from the sales order lines. Otherwise, the planned payment is based on the financial dimensions from the sales order header.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="261">Planned payments are generated for a sales order if a payment schedule is calculated, or if a user selects the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="261">Planned payments</strong> button.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="263">This step should be completed in a subsidiary company.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="265">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="265">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="265">Accounts receivable &gt; Orders &gt; All sales orders</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="266">Create a sales order. On the sales order header, specify the terms of payments, payment schedule, method of payment, cash discount, and financial dimensions.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="267">Create sales order lines, and specify the sales tax group, item sales tax group, and financial dimensions.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="268">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="268">Invoice</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="268">Bill</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="268">Planned payments</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="269">Review the planned payments that have been created based on the due dates, dimension values, sales tax group, and item sales tax group.</li>
+</ol>
+<h3 id="planned-payments-on-free-text-invoices" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="271">Planned payments on free text invoices</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="273">A planned payment contains details about future payments: the value, method of payment, payment account, payment priority, and cash discount amount.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="275">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="275">Payment request</strong> license configuration key is turned on, a planned payment is created based on the financial dimensions from the free text invoice lines. Otherwise, the planned payment is based on the financial dimensions from the free text invoice header.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="277">Planned payments are generated for a free text invoice if a payment schedule is calculated, or if a user selects the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="277">Planned payments</strong> button.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="279">This step should be completed in a subsidiary company.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="281">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="281">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="281">Accounts receivable &gt; Invoices &gt; All free text invoices</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="282">Create a free text invoice. On the free text invoice header, specify the terms of payments, payment schedule, method of payment, cash discount, and financial dimensions.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="283">Create free text invoice lines, and specify the sales tax group, item sales tax group, and financial dimensions. Distribute the amount of a line if distribution is required.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="284">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="284">Invoice</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="284">Details</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="284">Planned payments</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="285">Review the planned payments that have been created based on the due dates, dimension values, sales tax group, and item sales tax group.</li>
+</ol>
+<h3 id="periodic-creation-of-planned-payments" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="287">Periodic creation of planned payments</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="289">This step should be completed for a Treasury company.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="291">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="291"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="291">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="291">Cash and bank management &gt; Periodic tasks &gt; Cash flow management &gt; Calculate planned payments</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="292"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="292">Set the following parameters.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="294">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="294">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="294">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="294">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="296">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="296">From date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="296">Specify the start of the date range for the planned payment sources.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="297">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="297">To date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="297">Specify the end of the date range for the planned payment sources.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="298">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="298">Planned payment source</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="298">Select a planned payment source.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="299">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="299">Legal entities</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="299">Select legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="300">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="300">Recalculate all</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="300">Set this option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="300">Yes</strong> if all planned payments should be recalculated. If this option is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="300">No</strong>, only new planned payment will be created.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="payment-request-processing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="302">Payment request processing</h2>
+<h3 id="create-a-manual-payment-request" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="304">Create a manual payment request</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="306">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="306"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="306">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="306">Cash and bank management &gt; Cash flow management &gt; All payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="307"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="307">Create a payment request.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="308"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="308">Specify the payment request type, currency of the payment request, account type (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="308">Vendor</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="308">Customer</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="308">Worker</strong>), account, invoice account, agreement registration number, payment currency, due date, and method of payment.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="310">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="310">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="310">Payment request type</strong> field defines the cash flow direction and the workflow.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="311">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="311">Method of payment</strong> field defines the payment account type and payment account.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="312">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="312">Payment request priority</strong> value is defined by properties of the payment account type and party.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="313">The centralized payment hierarchy defines the Treasury company. A payment request company is a company where a payment request is created.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="315"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="315">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="315">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="316"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="316">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="316">Header</strong> view, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="316">General</strong> FastTab, set the required payment request parameters. You can change the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="316">Payment date</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="316">Payment currency</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="316">Payment priority</strong>, and other parameters as you require.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="317"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="317">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="317">Payment</strong> FastTab, set the required payment request parameters. You can change the value of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="317">Posting profile</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="317">Payment account type</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="317">Payment account</strong>, and other parameters as you require.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="318"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="318">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="318">Payment order</strong> FastTab, specify the required payment order requisites. By default, these requisites are initialized from a purchase agreement or sales agreement. This FastTab is available only if the method of payment is associated with a payment order in RUB.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="319"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="319">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="319">History</strong> FastTab, review the details about payment request processing. You can change the payment request initiator as you require.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="320"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="320">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="320">Financial dimensions</strong> FastTab, specify the financial dimensions of the payment request.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="321"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="321">Switch to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="321">Lines</strong> view.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="322"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="322">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="322">Add line</strong> to create a record.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="323"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="323">Specify the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="323">Sales tax group</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="323">Item sales tax group</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="323">Original amount</strong> dimension values. By default, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="323">Amount to pay</strong> field is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="323">Original amount</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="324"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="324">Repeat steps 11 through 12 to create more lines, as you require.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="325"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="325">Save the record.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="326"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="326">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="326">General</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="326">Bill</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="326">Cash discount</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="327"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="327">Create a record, and specify the cash discount date and cash discount amount.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="328"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="328">Repeat step 16 to create more lines, as you require. Then close the page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="329"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="329">If all the data is filled in, and workflow approval can start, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="329">Payment request</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="329">Generate</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="329">Confirmation</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="330"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="330">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="330">Workflow &gt; Submit</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="332"><img src="media/rus-workflow-submit.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="332" alt="Submitting a payment request for workflow approval."></p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="334">The status of a payment request is automatically updated. The following table describes all the payment request statuses.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="336">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="336">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="336">Payment request status</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="336">System event</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="338">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="338">Opened</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="338">A user creates a manual payment request.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="339">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="339">Confirmed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="339">A user confirms a manual payment request, or the system creates a payment request that is based on a source (vendor invoice, customer invoice, or prepayment planned payment).</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="340">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="340">Scheduled</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="340">A payment schedule journal of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="340">Payment plan</strong> type (which includes a payment request) is posted.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="341">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="341">Accepted</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="341">A payment schedule journal of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="341">Payment register</strong> type (which includes a payment request) is posted.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="342">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="342">Completed</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="342">A payment journal (which includes a payment request) is posted.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="343">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="343">Canceled</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="343">A user cancels a payment request.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cancel-a-payment-request" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="345">Cancel a payment request</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="347">You can cancel a payment request only if its status is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="347">Opened</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="347">Confirmed</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="347">Scheduled</strong>.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="349">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="349">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="349">Cash and bank management &gt; Cash flow management &gt; All payment requests</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="350">Select a payment request.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="351">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="351">Payment request</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="351">Maintain</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="351">Cancel</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="352">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="352">OK</strong>.</li>
+</ol>
+<h3 id="put-a-payment-request-on-hold" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="354">Put a payment request on hold</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="356">You can put a payment request on hold only if its status is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="356">Opened</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="356">Confirmed</strong>, or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="356">Scheduled</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="358">A payment request that is on hold isn't included in payment schedule journals.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="360">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="360">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="360">Cash and bank management &gt; Cash flow management &gt; All payment requests</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="361">Select a payment request.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="362">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="362">Payment request</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="362">Maintain</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="362">On hold</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="363">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="363">On hold</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="363">Yes</strong>, and specify a reason code.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="364">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="364">OK</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="366">To remove the hold from a payment request, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="366">Payment request</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="366">Maintain</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="366">On hold</strong>. Then set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="366">On hold</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="366">No</strong>.</p>
+<h3 id="split-a-payment-request" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="368">Split a payment request</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="370">You can split a payment request only if the following conditions are met:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="372">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="372">The status of the payment request is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="372">Confirmed</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="372">Scheduled</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="373">The payment request isn't included in an unposted payment schedule journal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="374">The workflow status isn't <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="374">Submitted</strong>.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="376">The system will create a payment request by copying all the main requisites from the original payment request. The amount and amount to pay of the original payment request will be reduced. If the status of the original payment is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="376">Scheduled</strong>, but the new payment request is out of range for the associated payment schedule journal, the status of the new payment request will be <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="376">Confirmed</strong>.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="378">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="378">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="378">Cash and bank management &gt; Cash flow management &gt; All payment requests</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="379">Select a payment request.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="380">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="380">Payment request</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="380">Generate</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="380">Split request</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="381">Specify the amount to pay and the payment date for the new payment request.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="382">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="382">OK</strong>.</li>
+</ol>
+<h3 id="copy-a-payment-request" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="384">Copy a payment request</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="386">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="386">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="386">Cash and bank management &gt; Cash flow management &gt; All payment requests</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="387">Select a payment request.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="388">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="388">Payment request</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="388">New</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="388">Copy</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="389">Specify the due date for the new payment request.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="390">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="390">OK</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="391">Select the payment request created on step 3.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="392">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="392">Payment request</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="392">New</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="392">Edit</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="393">Change the values of the payment request parameters as you require.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="394">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="394">OK</strong>.</li>
+</ol>
+<h3 id="create-a-payment-request-for-a-vendor-invoice" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="396">Create a payment request for a vendor invoice</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="398">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="398"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="398">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="398">Accounts payable &gt; Purchase orders &gt; All purchase orders</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="399"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="399">Create a purchase order. On the purchase order header, specify the terms of payments, payment schedules, method of payment, cash discount, and financial dimensions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="400"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="400">Create purchase order lines, and specify the sales tax group, item sales tax group, and financial dimensions. Distribute the amount of a line.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="401"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="401">Generate and post an invoice.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="402"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="402">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="402">Purchase</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="402">Generate</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="402">Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="403"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="403">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="403">Purchase</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="403">Journals</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="403">Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="404"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="404">Review the payment requests that have been created.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="405"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="405">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="405">All vendors</strong> page, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="405">Vendor</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="405">Transactions</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="405">Transactions</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="406"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="406">Select the vendor transaction.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="407"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="407">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="407">Inquiry &gt; Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="408"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="408">Review the associated payment requests.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="409"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="409">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="409">General</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="409">Related information</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="409">Request origin</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="410"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="410">Verify that the vendor transaction is a source for the payment request.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="412"><img src="media/rus-vendor-transactions.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="412" alt="Vendor transactions."></p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="414">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="415">You can't change the payment requisites (method of payment, due date, vendor bank account, and so on) on an open vendor transaction if a payment request exists for that transaction. Instead, you should change the payment requisites in the payment request. They will then be automatically synced on the open vendor transaction.</p>
+</div>
+</li>
+</ol>
+<h3 id="create-a-payment-request-for-a-prepayment-to-a-vendor" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="417">Create a payment request for a prepayment to a vendor</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="419">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="419"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="419">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="419">Accounts payable &gt; Purchase orders &gt; All purchase orders</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="420"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="420">Create a purchase order. On the purchase order header, specify the terms of payments, payment schedules, method of payment, cash discount, and financial dimensions.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="422">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="423">One or more payment schedules lines should be marked as prepayments.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="425"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="425">Create purchase order lines, and specify the sales tax group, item sales tax group, and financial dimensions. Distribute the amount of a line.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="426"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="426">Confirm the purchase order.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="427"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="427">Calculate planned payments by using the periodic operation. Alternatively, on the purchase order, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="427">Invoice</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="427">Bill</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="427">Planned payments</strong>. Close the page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="428"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="428">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="428">Purchase</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="428">Generate</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="428">Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="429"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="429">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="429">Purchase</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="429">Journals</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="429">Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="430"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="430">Review the payment requests that have been created.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="431"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="431">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="431">Payment request</strong> page, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="431">General</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="431">Related information</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="431">Request origin</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="432"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="432">Verify that the purchase order is a source for the payment request.</p>
+</li>
+</ol>
+<h3 id="create-a-payment-request-for-a-customer-invoice-return" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="434">Create a payment request for a customer invoice return</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="436">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="436"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="436">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="436">Accounts receivable &gt; Orders &gt; All sales orders</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="437"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="437">Create a return sales order. On the sales order header, specify the terms of payments, method of payment, and financial dimensions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="438"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="438">Create sales order lines, and specify the sales tax group, item sales tax group, and financial dimensions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="439"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="439">Generate and post an invoice.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="440"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="440">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="440">Sell</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="440">Generate</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="440">Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="441"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="441">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="441">Close</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="442"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="442">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="442">Sell</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="442">Journals</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="442">Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="443"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="443">Review the payment requests that have been created.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="444"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="444">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="444">All customers</strong> page, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="444">Customer</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="444">Transactions</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="444">Transactions</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="445"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="445">Select the last customer transaction.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="446"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="446">Select the ellipsis button (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="446">...</strong>), and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="446">Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="447"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="447">Review the associated payment requests.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="448"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="448">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="448">Payment request</strong> page, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="448">General</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="448">Related information</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="448">Request origin</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="449"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="449">Verify that the customer transaction is a source for the payment request.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="451">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="452">You can't change the payment requisites (method of payment, due date, customer bank account, and so on) on an open customer transaction if a payment request exists for that transaction. Instead, you should change the payment requisites in the payment request. They will then be automatically synced on the open customer transaction.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="454"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="454">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="454">Accounts receivable &gt; Invoices &gt; All free text invoices</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="455"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="455">Create a return free text invoice. On free text invoice header, specify the terms of payments, method of payment, and financial dimensions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="456"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="456">Create free text invoice lines, and specify the sales tax group, item sales tax group, and financial dimensions.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="457"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="457">Generate and post an invoice.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="458"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="458">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="458">Invoice</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="458">Details</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="458">Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="459"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="459">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="459">Close</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="460"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="460">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="460">Invoice</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="460">Related information</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="460">Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="461"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="461">Review the payment requests that have been created.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="462"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="462">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="462">All customers</strong> page, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="462">Customer</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="462">Transactions</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="462">Transactions</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="463"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="463">Select the last customer transaction.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="464"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="464">Select the ellipsis button (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="464">...</strong>), and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="464">Payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="465"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="465">Review the associated payment requests.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="466"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="466">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="466">Payment request</strong> page, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="466">General</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="466">Related information</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="466">Request origin</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="467"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="467">Verify that the customer transaction is a source for the payment request.</p>
+</li>
+</ol>
+<h3 id="periodic-creation-of-payment-requests" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="469">Periodic creation of payment requests</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="471">This procedure should be completed for a Treasury company.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="473">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="473"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="473">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="473">Cash and bank management &gt; Periodic tasks &gt; Cash flow management &gt; Create payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="474"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="474">Set the following parameters</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="476">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="476">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="476">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="476">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="478">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="478">From date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="478">Specify the start of the date range for the payment request sources.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="479">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="479">To date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="479">Specify the end of the date range for the payment request sources.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="480">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="480">Request sources</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="480">Select the sources of the payment request.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="481">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="481">Legal entities</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="481">Select legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="482">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="482">Number of batch threads</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="482">Enter the number of parallel tasks for payment request creation.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h3 id="update-a-payment-request" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="484">Update a payment request</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="486">When you update a payment request, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="486">Amount to pay</strong> value is changed on payment request lines and in the cash discount details.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="488">Reapproval of payment requests can be required and is controlled by the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="488">Amount to pay change</strong> parameter on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="488">Cash and bank management parameters</strong> page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="490">You can update a payment request only if the following conditions are met:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="492">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="492">The status of the payment request is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="492">Confirmed</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="492">Scheduled</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="493">The payment request isn't included in an unposted payment schedule journal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="494">The workflow status isn't <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="494">Submitted</strong>.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="496">Follow these steps to update a payment request.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="498">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="498"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="498">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="498">Cash and bank management &gt; Cash flow management &gt; All payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="499"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="499">Select a payment request that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="499">Outdated</strong> check box is selected for.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="501"><img src="media/rus-outdated-check-box.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="501" alt="Outdated check box on payment requests."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="503">The system automatically selects this check box if the original source of a payment request has been changed through settlement or unsettlement. A selected check box indicates that the amount to pay of the payment request differs from the amount of the open vendor or customer transaction.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="505"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="505">On the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="505">Payment request</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="505">Generate</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="505">Request update</strong>.</p>
+</li>
+</ol>
+<h3 id="periodic-update-of-payment-requests" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="507">Periodic update of payment requests</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="509">This step should be completed for a Treasury company.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="511">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="511"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="511">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="511">Cash and bank management &gt; Periodic tasks &gt; Cash flow management &gt; Update payment requests</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="512"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="512">Set the following parameters</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="514">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="514">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="514">Field</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="514">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="516">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="516">From date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="516">Specify the start of the date range for the payment requests.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="517">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="517">To date</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="517">Specify the end of the date range for the payment requests.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="518">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="518">Request sources</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="518">Specify the sources of the payment request.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="519">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="519">Legal entities</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="519">Specify legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="payment-schedule-journal-processing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="521">Payment schedule journal processing</h2>
+<h3 id="set-up-a-payment-schedule-journal" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="523">Set up a payment schedule journal</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="525">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="525"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="525">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="525">Cash and bank management &gt; Setup &gt; Cash flow management &gt; Payment schedule journal names</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="526"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="526">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="526">New</strong> to create a record, and specify a name and description for the journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="527"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="527">Select the journal type:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="529">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="529"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="529">Payment plan</strong> – This journal type is intended for payment forecasts that have a medium-term/short-term horizon.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="530"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="530">Payment register</strong> – This journal type is intended for payment statement generation.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="532"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="532">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="532">General</strong> FastTab, set the following parameters:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="534">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="534">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="534">Payment on cash discount date</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="534">Yes</strong> if the payment date in the payment schedule should be used as the cash discount date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="535">If you selected <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="535">Payment plan</strong> as the journal type, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="535">Overdue payments</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="535">Yes</strong> if the payment schedule should include outstanding payments.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="536">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="536">Active</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="536">Yes</strong> if this journal should use the workflow procedure.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="537">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="537">Workflow ID</strong> field, select the workflow that should be applied.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="539"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="539">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="539">Dimensions</strong> FastTab defines how the lines of the payment schedule journal are aggregated. The analytic report of the payment schedule journal also uses these dimensions. Use the arrow buttons to move dimensions to or from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="539">Selected dimensions</strong> list.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="541"><img src="media/rus-journal-names-dimensions.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="541" alt="Dimensions for payment schedule journals."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="543"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="543">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="543">Legal entities</strong> FastTab defines the legal entities that are used to generate payment schedule journals. Use the arrow buttons to move legal entities to or from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="543">Selected sources</strong> list.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="544"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="544">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="544">Journal data sources</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="544">Add line</strong> to create a record.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="545"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="545">Specify the data source and source direction for the payment schedule journal.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="547">The following table lists the possible sources.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="549">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="549">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="549">Journal data source (direction)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="549">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="551">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="551">Bank account balance (inflow)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="551">The current balance of bank accounts.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="552">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="552">Cash account balance (inflow)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="552">The current balance of cash accounts.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="553">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="553">Remittance en route balance (inflow)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="553">The current balance of general ledger (GL) accounts that are marked <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="553">Remittance en route</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="554">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="554">Open payment journals (inflow/outflow)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="554">Payments that are included in open payment journals.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="555">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="555">Open slip journals (inflow/outflow)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="555">Payments that are included in open cash slip journals.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="556">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="556">Planned payment (inflow/outflow)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="556">Planned payments.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="557">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="557">Payment request (inflow/outflow)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="557">Payment requests.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="558">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="558">Accounts payable (inflow/outflow)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="558">Open vendor transactions that aren't linked to a payment request.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="559">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="559">Accounts receivable (inflow/outflow)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="559">Open customer transactions that aren't linked to a payment request.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="561"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="561">Repeat steps 7 through 8 to create other lines that have the required journal data sources.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="562"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="562">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="562">Payment accounts</strong> FastTab, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="562">Include transactions with no specified bank account</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="562">Yes</strong> if the payment schedule journal should include planned payments and payment requests that a payment account isn't specified for.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="563"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="563">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="563">Add line</strong> to create a record.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="564"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="564">Specify the payment account type and account number. The payment schedule journal will include only sources that are associated with the specified payment accounts.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="565"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="565">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="565">Cash balance control</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="565">Add line</strong>, and then specify the currency and minimum cash balance. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.</p>
+</li>
+</ol>
+<h3 id="payment-plan-processing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="567">Payment plan processing</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="569">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="569"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="569">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="569">Cash and bank management &gt; Cash flow management &gt; Payment schedule journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="570"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="570">Create a payment schedule journal. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="570">Name</strong> field, select a payment schedule journal of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="570">Payment plan</strong> type.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="571"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="571">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="571">From date</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="571">To date</strong> fields to specify an effective date range.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="572"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="572">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="572">General</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="572">Dimensions</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="572">Legal entities</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="572">Journal data sources</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="572">Payment accounts</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="572">Cash balance control</strong> tabs, change the attributes of the payment schedule journal as you require.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="573"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="573">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="573">Calculate</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="574"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="574">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="574">Lines</strong> to validate the payment schedule journal lines.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="575"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="575">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="575">Edit beginning balance</strong> to change the beginning balance of this journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="576"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="576">For lines that have <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="576">Payment request</strong> as the journal data source, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="576">Payment request lines</strong> to review the payment request lines that are included on the current journal line.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="577"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="577">Close the page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="578"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="578">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="578">Payment schedule journal</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="578">Payment schedule</strong> to review the payment schedule sheet. If a cash shortage or surplus is detected and should be prevented, you can make changes.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="580"><img src="media/rus-payment-schedule-sheet.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="580" alt="Payment schedule sheet."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="582"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="582">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="582">Show totals per payment accounts</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="582">Yes</strong> if the payment schedule sheet should be calculated based on payment accounts.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="583"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="583">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="583">Show totals per method of payments</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="583">Yes</strong> if the payment schedule sheet should be calculated based on methods of payments.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="584"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="584">Use the right arrow button (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="584">&gt;</strong>) to select an aggregation parameter for the payment schedule sheet.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="585"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="585">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="585">Show results</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="587">If the minimum cash balance for a currency or a payment account is exceeded, the payment schedule sheet highlights the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="587">Estimated balance</strong> amounts in yellow.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="589"><img src="media/rus-payment-schedule-sheet-overview.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="589" alt="Payment schedule sheet overview."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="591"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="591">If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="591">Payment request</strong> license configuration key is turned on, select the amount for a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="591">Payment request</strong> journal data source. If the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="591">Payment request</strong> license configuration key isn't turned on, select an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="591">Accounts payable</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="591">Accounts receivable</strong> journal data source. Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="591">Show origin</strong> to open the sources of that amount.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="592"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="592">Select the amount for a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="592">Payment request</strong> journal data source, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="592">Change payment sources</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="594"><img src="media/rus-change-payment-sources.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="594" alt="Change payment sources button on a payment schedule sheet."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="596"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="596">Select payment sources that should be moved to another date, or that should be paid by using another method of payment or payment account.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="598"><img src="media/rus-payment-schedule-balancing.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="598" alt="Payment schedule balancing."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="600"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="600">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="600">Multiple change</strong>, specify the new payment details in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="600">Modify payment attributes</strong> dialog box, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="600">OK</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="602">Alternatively, you can specify new payment attributes for a specific line.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="604"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="604">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="604">Update payment schedule</strong>. The system updates the payment schedule sheet and creates uncommitted payment schedule journal lines for payment sources correction.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="605"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="605">Make any other required changes to the payment schedule sheet.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="606"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="606">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="606">Payment schedule journal</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="606">Functions &gt; Apply changes</strong> to apply your changes or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="606">Functions &gt; Revert changes</strong> to reject them.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="607"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="607">If changes to the journal setup are required, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="607">Functions &gt; Delete journal lines</strong>, and calculate the journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="608"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="608">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="608">Validate</strong> to validate the journal. The system notifies you if canceled, on-hold, or incomplete workflow payment requests are included in this journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="609"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="609">If all the data is correct, and workflow approval of the payment plan can start, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="609">Workflow &gt; Submit</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="611">Approvers might see the following actions during the approval workflow: <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="611">Approve</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="611">Reject</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="611">Request change</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="611">Delegate</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="611">Recall</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="611">View history</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="613"><img src="media/rus-workflow-actions.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="613" alt="Workflow actions."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="615"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="615">If the payment plan is approved, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="615">Confirm</strong>. The status of the payment requests that are included is changed to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="615">Scheduled</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="616"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="616">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="616">Payment request</strong> page, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="616">General</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="616">Related information</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="616">Payment schedule journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="617"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="617">Review the payment schedule journal that is associated with the payment request.</p>
+</li>
+</ol>
+<h3 id="payment-register-processing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="619">Payment register processing</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="621">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="621"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="621">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="621">Cash and bank management &gt; Cash flow management &gt; Payment schedule journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="622"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="622">Create a payment schedule journal. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="622">Name</strong> field, select a payment schedule journal of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="622">Payment register</strong> type.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="623"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="623">Use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="623">From date</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="623">To date</strong> fields to specify an effective date range.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="624"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="624">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="624">General</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="624">Dimensions</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="624">Legal entities</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="624">Journal data sources</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="624">Payment accounts</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="624">Cash balance control</strong> tabs, change the attributes of the payment schedule journal as you require.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="625"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="625">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="625">Calculate</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="626"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="626">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="626">Lines</strong> to validate the payment schedule journal lines.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="627"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="627">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="627">Edit beginning balance</strong> to change the beginning balance of this journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="628"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="628">For lines that have <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="628">Payment request</strong> as the journal data source, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="628">Payment request lines</strong> to review the payment request lines that are included on the current journal line.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="629"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="629">Close the page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="630"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="630">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="630">Payment schedule journal</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="630">Payment schedule</strong> to review the payment register. If a cash shortage or surplus is detected, you can make changes.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="631"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="631">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="631">Validate</strong> to validate the journal. The system notifies you if canceled or on-hold payment requests are included in this journal.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="632"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="632">If all the data is correct, and workflow approval of the payment plan can start, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="632">Workflow &gt; Submit</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="633"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="633">If the payment plan is approved, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="633">Confirm</strong>. The status of the payment requests that are included is changed to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="633">Accepted</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="634"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="634">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="634">Payment request</strong> page, on the Action Pane, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="634">General</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="634">Related information</strong> group, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="634">Payment schedule journal</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="635"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="635">Review the payment schedule journal that is associated with the payment request.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="637">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="638">Complete the steps 16-20 if the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="638">Payment request</strong> license configuration key is turned on.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="640"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="640">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="640">Payment schedule journal</strong> page, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="640">Functions &gt; Generate payments</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="641"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="641">Set the parameters for payment journal generation.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="643"><img src="media/rus-payments-payment-schedule-journal.jpg" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="643" alt="Parameters for payment journal generation."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="645"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="645">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="645">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="646"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="646">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="646">Accounts payable &gt; Payments &gt; Vendor payment journal</strong> to validate and process the vendor payment journal that is created.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="647"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="647">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="647">Accounts receivable &gt; Payments &gt; Customer payment journal</strong> to validate and process the customer payment journal that is created.</p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="649">Standard payment proposal functionality will process open transactions that are linked to a payment request that has <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="649">Accepted</strong> status.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="651">The payment proposal algorithm includes additional changes that are applied when payment requests are used. The system considers the posting profile, the setting of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/rus-cash-flow.md" sourcestartlinenumber="651">Prepayment</strong> parameter, and the payment order requisites that are filled in on payment requests.</p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

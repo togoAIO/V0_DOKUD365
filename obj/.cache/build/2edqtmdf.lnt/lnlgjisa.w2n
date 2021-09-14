@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Supported standards for electronic invoicing in Europe | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Supported standards for electronic invoicing in Europe | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="supported-standards-for-electronic-invoicing-in-europe" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="28">Supported standards for electronic invoicing in Europe</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="32">This topic explains the level of coverage that exists for electronic invoicing for Europe.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="34">Implementation and adoption of European Union-wide electronic invoicing is regulated <a href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="34">Council Directive 2010/45/EU</a>, which affects all EU member states. Companies that want to benefit from electronic invoicing must submit sales order invoices, free text invoices, project invoices, sales order credit notes, and project invoice credit notes as .xml files to the government or other trading parties that mandate use of electronic invoicing. These .xml files must comply with certain standards. The country-specific requirements and their implementation may differ across EU member states but commonly they are using Universal Business Language (<a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="34">UBL</a>) in different versions with customizations as well as <a href="https://www.peppol.eu" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="34">PEPPOL</a> specifications and access points for validation and transportation. The primary advantage of UBL is that business documents can be standardized for different purposes. Because UBL is a flexible, international standard that supports many business requirements, these business documents can be exchanged across national borders.</p>
+<h2 id="electronic-invoice-formats-currently-available-in-dynamics-365-finance" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="36">Electronic invoice formats currently available in Dynamics 365 Finance</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="38">The following country-specific formats of electronic invoices are available:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="40">OIOUBL v.2.02 for Denmark</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="41">EHF v.3.0 for Norway</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="42">PEPPOL BIS v.2 for Austria, France, and Belgium</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="43">UBL-OHNL 1.9 for the Netherlands</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="44">FacturaE v.3.2.1 for Spain</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="45">FatturaPA v.1.2 for Italy</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="46">xRechnung v.1.2 for Germany</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="47">Open PEPPOL BIS Billing v.3.0 for European Union</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="48">Estonian specific format version 1.2</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="49">Finvoice 3.0 for Finland</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="51">Electronic invoicing is based on <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="51">Electronic reporting (ER)</a>. An <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="51">Invoice model</strong> data model, invoice model mapping, and several country/region-specific ER format configurations have been created for the following countries/regions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="53">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="53">Austria (AT)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="54">Denmark (DK)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="55">Italy (IT)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="56">Norway (NO)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="57">Spain (ES)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="58">France (FR)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="59">Belgium (BE)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="60">The Netherlands (NL)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="61">Germany (DE)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="62">Estonia (EE)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="63">Finland (FI)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="64">The European Union (EU)</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="66">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="66">Invoice model</strong> data model, invoice model mapping, and country/region-specific ER format configurations include:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="68">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="68">OIOUBL Sales invoice - for AT, DK, and NO</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="69">OIOUBL Sales credit note - for AT, DK, and NO</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="70">OIOUBL Project invoice - for AT, DK, and NO</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="71">OIOUBL Project credit note - for AT, DK, and NO</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="72">UBL Sales Invoice FR</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="73">UBL Sales Credit Note FR</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="74">UBL Project Invoice FR</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="75">UBL Project Credit Note FR</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="76">UBL Sales Invoice BE</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="77">UBL Sales Credit Note BE</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="78">UBL Project Invoice BE</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="79">UBL Project Credit Note BE</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="80">UBL Sales Invoice NL</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="81">UBL Sales Credit Note NL</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="82">UBL Project Invoice NL</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="83">UBL Project Credit Note NL</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="84">Sales invoice (ES)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="85">Sales invoice (IT)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="86">Project invoice (ES)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="87">Project invoice (IT)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="88">Sales Invoice DE</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="89">Project Invoice DE</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="90">Peppol Sales Invoice - for EU</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="91">Peppol Sales Credit Note - for EU</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="92">Peppol Project Invoice - for EU</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="93">Peppol Project Credit Note - for EU</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="94">Sales invoice (EE)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="95">Project invoice (EE)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="96">Sales invoice (FI)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="97">Project invoice (FI)</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="99">The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. Because the requirements, as well as supported countries and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle Services (LCS) and view the most up-to-date list of available files that have an asset type of <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="99">GER configuration</strong>.</p>
+<h2 id="electronic-invoice-configuration" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="101">Electronic invoice configuration</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="102">The setup and specifics of electronic invoices depend on the country/region that it's implemented for. For more information about how to set up and use customer electronic invoices, see the related country-specific topics:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="104">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="104"><a href="emea-ita-e-invoices.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="104">Italy</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="105"><a href="emea-nor-e-invoices.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="105">Norway</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="106"><a href="emea-deu-e-invoices.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="106">Germany</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="107"><a href="https://support.microsoft.com/help/4559937" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="107">Finland</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="108"><a href="https://support.microsoft.com/help/4552679" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="108">Estonia</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="109"><a href="https://support.microsoft.com/help/4490320" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="109">PEPPOL</a></li>
+</ul>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="111">Additional resources</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="112">For more details about how to set up electronic invoices, you can play the following <a href="../../fin-ops-core/fin-ops/get-started/help-overview.md#task-guides" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="112">Task guides</a> in the Help pane:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="114">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="114">Set up OIOUBL electronic invoicing</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="115">Import OIOUBL electronic invoicing configurations</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="116">Set up customer accounts for OIOUBL electronic invoicing</li>
+</ul>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="118">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="119">Although these Task guides were created for Danish-specific e-invoice format <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-oioubl-standards-electronic-invoicing.md" sourcestartlinenumber="119">OIOUBL</em>, they are applicable for other supported countries/regions with minor deviations.</p>
+</div>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

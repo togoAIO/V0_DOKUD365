@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>VAT declaration (Netherlands) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="VAT declaration (Netherlands) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="vat-declaration-for-netherlands" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="28">VAT declaration for Netherlands</h1>
+
+[!include[banner](../includes/banner.md)][!include[banner](../includes/preview-banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="34">To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="34">Set up application parameters for declaration fields</em> later in this topic.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="36">In the following table, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="36">Lookup result</strong> column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then associate that with the row of the VAT declaration. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="36">Tax base (XML element) / Tax (XML element)</strong> column list the names of the corresponding XML elements in VAT declaration XML (NL) format.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="38">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="39">If you configure sales tax codes to post incoming reverse charge VAT by using use tax, associate your sales tax codes with the lookup result that contains <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="39">UseTax</strong> in the name. For example, for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="39">Row 2a Supplies/services for which the VAT has been reverse-charged to you</strong>, configure the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="39">SuppliesServicesByWhichVATTaxationIsTransferredUseTax</strong> lookup result for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="39">Use tax</strong> sales tax codes, or configure the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="39">SuppliesServicesByWhichVATTaxationIsTransferred</strong> lookup result for sales tax codes that have a reverse charge. For more information about how to configure reverse charge VAT, see <a href="emea-reverse-charge.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="39">Reverse charges</a>.</p>
+</div>
+<h3 id="vat-declaration-overview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="41"><a name="vat-declaration-overview">VAT declaration overview</a></h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="43">The VAT declaration format in Netherlands contains the following information.</p>
+<table width="520">
+<tbody>
+<tr>
+<td width="47">
+<p><strong>Box</strong></p>
+</td>
+<td width="265">
+<p><strong>Description</strong></p>
+</td>
+<td width="104">
+<p><strong>Lookup result</strong></p>
+</td>
+<td width="104">
+<p><strong>Tax base (XML element) / Tax (XML element)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>1</strong></p>
+</td>
+<td width="265">
+<p><strong>Goods or services in the Netherlands</strong></p>
+</td>
+<td width="104">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="104">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1a</p>
+</td>
+<td width="265">
+<p>Supplies/services taxed at the general rate</p>
+</td>
+<td width="104">
+<p>SuppliesServicesGeneralTariff</p>
+</td>
+<td width="104">
+<p>TaxedTurnoverSuppliesServicesGeneralTariff / ValueAddedTaxSuppliesServicesGeneralTariff</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1b</p>
+</td>
+<td width="265">
+<p>Supplies/services taxed at the reduced rate</p>
+</td>
+<td width="104">
+<p>SuppliesServicesReducedTariff</p>
+</td>
+<td width="104">
+<p>TaxedTurnoverSuppliesServicesReducedTariff / ValueAddedTaxSuppliesServicesReducedTariff</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1c</p>
+</td>
+<td width="265">
+<p>Supplies/services taxed at other rates, except 0%</p>
+</td>
+<td width="104">
+<p>SuppliesServicesOtherRates</p>
+</td>
+<td width="104">
+<p>TaxedTurnoverSuppliesServicesOtherRates / ValueAddedTaxSuppliesServicesOtherRates</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1d</p>
+</td>
+<td width="265">
+<p>Private use</p>
+</td>
+<td width="104">
+<p>PrivateUse</p>
+</td>
+<td width="104">
+<p>TaxedTurnoverPrivateUse / ValueAddedTaxPrivateUse</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1e</p>
+</td>
+<td width="265">
+<p>Supplies/services taxed at 0% or not taxed at your level</p>
+</td>
+<td width="104">
+<p>SuppliesServicesNotTaxed</p>
+</td>
+<td width="104">
+<p>SuppliesServicesNotTaxed / x</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>2</strong></p>
+</td>
+<td width="265">
+<p><strong>Domestic reverse-charge mechanisms</strong></p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>2a</p>
+</td>
+<td width="265">
+<p>Supplies/services for which the VAT has been reverse-charged to you</p>
+</td>
+<td width="104">
+<p>SuppliesServicesByWhichVATTaxationIsTransferred</p>
+<p>&nbsp;</p>
+<p><em>SuppliesServicesByWhichVATTaxationIsTransferredUseTax</em></p>
+</td>
+<td width="104">
+<p>TurnoverSuppliesServicesByWhichVATTaxationIsTransferred / ValueAddedTaxSuppliesServicesByWhichVATTaxationIsTransferred</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>3</strong></p>
+</td>
+<td width="265">
+<p><strong>Goods and services to/in foreign countries</strong></p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>3a</p>
+</td>
+<td width="265">
+<p>Supplies to non-EU countries (export)</p>
+</td>
+<td width="104">
+<p>SuppliesToCountriesOutsideTheEC</p>
+</td>
+<td width="104">
+<p>SuppliesToCountriesOutsideTheEC / x</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>3b</p>
+</td>
+<td width="265">
+<p>Supplies/services to EU countries</p>
+</td>
+<td width="104">
+<p>SuppliesToCountriesWithinTheEC</p>
+</td>
+<td width="104">
+<p>SuppliesToCountriesWithinTheEC / x</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>3c</p>
+</td>
+<td width="265">
+<p>Installation/distance sales within the EU</p>
+</td>
+<td width="104">
+<p>InstallationDistanceSalesWithinTheEC</p>
+</td>
+<td width="104">
+<p>InstallationDistanceSalesWithinTheEC / x</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>4</strong></p>
+</td>
+<td width="265">
+<p><strong>Goods and services supplied to you from abroad</strong></p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>4a</p>
+</td>
+<td width="265">
+<p>Supplies/services from non-EU countries</p>
+</td>
+<td width="104">
+<p>SuppliesFromCountriesOutsideTheEC</p>
+<p>&nbsp;</p>
+<p><em>SuppliesFromCountriesOutsideTheECUseTax</em></p>
+</td>
+<td width="104">
+<p>TurnoverFromTaxedSuppliesFromCountriesOutsideTheEC / ValueAddedTaxOnSuppliesFromCountriesOutsideTheEC</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>4b</p>
+</td>
+<td width="265">
+<p>Supplies/services from EU countries</p>
+</td>
+<td width="104">
+<p>SuppliesFromCountriesWithinTheEC</p>
+<p>&nbsp;</p>
+<p>SuppliesFromCountriesWithinTheECUseTax</p>
+</td>
+<td width="104">
+<p>TurnoverFromTaxedSuppliesFromCountriesWithinTheEC / ValueAddedTaxOnSuppliesFromCountriesWithinTheEC</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>5</strong></p>
+</td>
+<td width="265">
+<p><strong>Input tax and grand total</strong></p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><em>5a</em></p>
+</td>
+<td width="265">
+<p><em>Sales tax payable</em></p>
+</td>
+<td width="104">
+<p>1a + 1b + 1c +1d + 2a + 4a + 4b</p>
+</td>
+<td width="104">
+<p>X / ValueAddedTaxOwed</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>5b</p>
+</td>
+<td width="265">
+<p>Input tax</p>
+</td>
+<td width="104">
+<p>ValueAddedTaxOnInput</p>
+<p>&nbsp;</p>
+<p><em>SuppliesServicesByWhichVATTaxationIsTransferredUseTax</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>SuppliesFromCountriesOutsideTheECUseTax</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>SuppliesFromCountriesWithinTheECUseTax</em></p>
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>x / ValueAddedTaxOnInput</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><em>5c</em></p>
+</td>
+<td width="265">
+<p><em>Subtotal</em></p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>5d</p>
+</td>
+<td width="265">
+<p>Tax relief under the small businesses scheme</p>
+</td>
+<td width="104">
+<p>SmallEntrepreneurProvisionReduction</p>
+</td>
+<td width="104">
+<p>x / SmallEntrepreneurProvisionReduction</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>5g</strong></p>
+</td>
+<td width="265">
+<p><strong>Net VAT amount that will be paid to the tax authorities or reclaimed</strong></p>
+</td>
+<td width="104">
+<p>5a + 5b + 5d</p>
+</td>
+<td width="104">
+<p>x / ValueAddedTaxOwedToBePaidBack</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="set-up-vat-declaration-for-netherlands" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="372">Set up VAT declaration for Netherlands</h2>
+<h3 id="import-electronic-reporting-configurations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="374">Import electronic reporting configurations</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="376">To import Electronic reporting (ER) configurations, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="376">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="376">Electronic reporting</strong>, and import the following or higher versions of electronic reporting formats:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="378">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="378">Tax declaration model.version.85</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="379">Tax declaration model mapping.version.85.138</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="380">VAT Declaration XML (NL).version.85.14</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="381">VAT Declaration Excel (NL).version.85.14.17</li>
+</ul>
+<h3 id="set-up-application-specific-parameters-for-vat-declaration-fields" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="383">Set up application specific parameters for VAT declaration fields</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="385">To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. To set up report fields, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="387">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="387">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="387">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="387">Electronic reporting</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="387">Reporting configurations</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="388">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="388">VAT declaration XML (NL)</strong> configuration, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="388">Configurations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="388">Application specific parameters setup</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="389">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="389">Lookups</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="389">$ReportFieldLookup</strong> .</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="390">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="390">Conditions</strong> FastTab, associate the sales tax codes and report fields.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<td width="150">
+<p><strong>Column</strong></p>
+</td>
+<td width="700">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="150">
+<p>Lookup result</p>
+</td>
+<td width="700">
+<p>Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the section, [VAT declaration overview](#vat-declaration) in this topic.</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p>Tax code</p>
+</td>
+<td width="700">
+<p>Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code are collected in the appropriate report field.</p>
+<p>Separate the sales tax codes so that one sales tax code generates amounts in only one report field.</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p>Transaction classifier</p>
+</td>
+<td width="700">
+<p>If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one report field, set up a transaction classifier. The following transaction classifiers are available:</p>
+<p>o&nbsp;&nbsp; <strong>Purchase</strong></p>
+<p>o&nbsp;&nbsp; <strong>PurchaseExempt</strong>&nbsp;(tax-exempt purchase)</p>
+<p>o&nbsp;&nbsp; <strong>PurchaseReverseCharge</strong>&nbsp;(tax receivable from a purchase reverse charge)</p>
+<p>o&nbsp;&nbsp; <strong>Sales</strong></p>
+<p>o&nbsp;&nbsp; <strong>SalesExempt</strong>&nbsp;(tax-exempt sale)</p>
+<p>o&nbsp;&nbsp; <strong>SalesReverseCharge</strong>&nbsp;(tax payable from a purchase reverse charge or a sales reverse charge)</p>
+<p>o&nbsp;&nbsp; <strong>Use tax</strong></p>
+<p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is&nbsp;<strong>PurchaseCreditNote</strong>&nbsp;(purchase credit note).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="440"><img src="media/App-parameters-VAT-XML-1.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="440" alt="Application-parameters."></p>
+<h4 id="set-up-xsd-schema-and-namespaces" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="443">Set up XSD schema and namespaces</h4>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="445">To set up XSD schema and namespaces, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="447">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="447"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="447">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="447">Lookups</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="447">XMLNamespacesLookup</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="448"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="448">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="448">Conditions</strong> FastTab, define the path to the XSD schema under XSDSchema name and the path to the schema instance data under SchemaInstanceData.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="450">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="450">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="450"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="450">Name</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="450"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="450">Lookup result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="452">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="452">XSDSchema</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="452"><a href="http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-ob-aangifte-2021.xsd" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="452">http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-ob-aangifte-2021.xsd</a></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="453">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="453">SchemaInstanceData</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="453"><a href="http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="453">http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data</a></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="456">For information about how to get these values from official documentation, see <a href="emea-nl-eu-sales-list.html#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="456">How-to get XSD schema and namespaces for the Dutch taxonomy</a>.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="458">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="459">If you don’t set up transmission of VAT declaration to Digipoort, you can configure any value in the lookup result.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="461"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="461">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="461">State</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="461">Completed</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="462"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="462">On the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="462">Export</strong> to export the parameters to an XML file.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="463"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="463">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="463">VAT declaration Excel (NL</strong>) configuration, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="463">Import</strong> to import the parameters that you configured for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="463">VAT declaration XML (NL)</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="464"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="464">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="464">State</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="464">Completed</strong>.</p>
+</li>
+</ol>
+<h3 id="set-up-vat-reporting-format" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="466">Set up VAT reporting format</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="468">To set up VAT reporting format, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="470">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="470">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="470">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="470">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="470">General ledger parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="471">If you configure VAT declaration for multiple VAT registrations, on the tab <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="471">Sales tax</strong>, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="471">Electronic reporting for countries/regions</strong> FastTab, for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="471">NLD country/region</strong> line, select the ER format, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="471">VAT Declaration Excel (NL)</strong>.</li>
+</ol>
+<h2 id="preview-vat-declaration-in-excel" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="473">Preview VAT declaration in Excel</h2>
+<h3 id="preview-vat-declaration-in-excel-from-the-periodic-task-report-sales-tax-for-settlement-period" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="475">Preview VAT declaration in Excel from the periodic task, Report sales tax for settlement period</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="477">To preview VAT declaration in Excel, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="479">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="479">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="479">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="479">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="479">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="479">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="479">Report sales tax for settlement period</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="480">Enter the following information.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Settlement period</p>
+</td>
+<td>
+<p>Select the settlement period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sales tax payment version</p>
+</td>
+<td>
+<p>Select one of the following values:</p>
+<p>o <strong>Original</strong>: Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</p>
+<p>o <strong>Corrections</strong>: Generate a report for sales tax transactions of all the subsequent sales tax payments for the period. The&nbsp;<strong>Sales tax payment version</strong>&nbsp;field is set to&nbsp;<strong>Latest corrections</strong>.</p>
+<p>o <strong>Total list</strong>: Generate a report for all sales tax transactions for the period, including the original and all corrections.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From date</p>
+</td>
+<td>
+<p>Select the first date of the reporting period.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="524">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="524">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="524">OK</strong> and review the Excel file that is generated.</li>
+</ol>
+<h3 id="settle-and-post-sales-tax" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="526">Settle and post sales tax</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="528">To settle and post sales tax, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="530">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="530">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="530">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="530">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="530">Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="530">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="530">Settle and post sales tax</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="531">Enter the following information.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Settlement period</p>
+</td>
+<td>
+<p>Select the settlement period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sales tax payment version</p>
+</td>
+<td>
+<p>Select one of the following values:</p>
+<p>o <strong>Original</strong>: Generate the original sales tax payment for the settlement period.</p>
+<p>o <strong>Latest corrections</strong>: Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From date</p>
+</td>
+<td>
+<p>Select the first date of the reporting period.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="574">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="574">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="574">OK</strong>.</li>
+</ol>
+<h3 id="preview-vat-declaration-in-excel-from-a-sales-tax-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="576">Preview VAT declaration in Excel from a sales tax payment</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="578">To preview VAT declaration in Excel from a sales tax payment, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="580">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="580"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="580">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="580">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="580">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="580">Sales tax inquiries</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="580">Sales tax payments</strong> and select a sales tax payment line.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="581"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="581">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="581">Print report</strong> and review the Excel file that’s generated for the selected sales tax payment line.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="583">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="584">The report is generated only for the selected line of Sales tax payment. If you need to generate a corrective declaration that contains all corrections for the period, or a replacement declaration that contains the original data and all corrections, use the periodic task, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="584">Report sales tax for settlement period</strong>.</p>
+</div>
+</li>
+</ol>
+<h2 id="configure-electronic-messages-for-generating-vat-declaration-in-xml" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="586">Configure electronic messages for generating VAT declaration in XML</h2>
+<h3 id="enable-the-feature" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="588">Enable the feature</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="590">To enable the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="590">Configure electronic messages for generating VAT declaration in XML</strong> feature, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="590">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="590">Feature management</strong> and enable the feature, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="590">[EM] Executable class action type.</strong></p>
+<h3 id="modify-target-mapping" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="592">Modify target mapping</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="594">To modify target mapping, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="596">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="596"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="596">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="596">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="596">Data management,</strong> and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="596">Target entities</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="597"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="597">Select the data entity <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="597">Action class settings</strong> and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="597">Modify target mapping</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="598"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="598">Make sure that the staging field <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="598">Action type</strong> is mapped to the target.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="600"><img src="media/map-staging.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="600" alt="Map staging to target."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="602"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="602">You can map to the target manually, or on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="602">Mapping details</strong> tab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="602">Generate mapping &gt; Yes</strong>.</p>
+</li>
+</ol>
+<h3 id="upload-the-electronic-messages-data-package" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="604">Upload the electronic messages data package</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="606">To upload the electronic messages data package, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="608">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="608"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="608">In the Lifecycle Services (LCS) shared asset library, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="608">Data packages</strong> tab, download the latest version of data package, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="608">NL VAT declaration EM package</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="609"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="609">In Dynamics 365 Finance, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="609">Data management</strong> workspace, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="609">Import</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="610"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="610">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="610">Job details</strong> section, set the following values:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="612">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="612"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="612">Name</strong>: Enter a name for the job: <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="612">NL VAT declaration</em>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="613"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="613">Data source format</strong>: Select select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="613">Package</strong>.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="615"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="615">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="615">Upload data file</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="615">Upload</strong>, and then select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="615">NL VAT declaration EM package.zip</strong> file.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="616"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="616">After the data entities are uploaded, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="616">Import</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="617"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="617">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="617">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="617">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="617">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="617">Electronic messages</strong> and validate the electronic message processing that you imported.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="619">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="619">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="619"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="619">Processing</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="619"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="619">Name</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="619"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="619">Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="621">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="621">NL VAT declaration</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="621">Omzetbelasting aangifte</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="621">VAT declaration in the Netherlands</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="623"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="623">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="623">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="623">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="623">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="623">Executable class settings</strong>. Verify the following :</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="625">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="625">The executable class <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="625">NLOBGetStatusFromDidgipoort</strong> has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="625">Electronic reporting import</strong> action type.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="626">The executable class <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="626">NLOBSendToDigipoort</strong> has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="626">Web service</strong> action type.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="628"><img src="media/electronic-messages-NL.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="628" alt="Executable class settings page."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="630"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="630">For each line, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="630">Parameters</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="630">NLOB Request ID</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="630">Request ID</strong> field.</p>
+</li>
+</ol>
+<h3 id="configure-electronic-messages" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="632">Configure electronic messages</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="634">To configure electronic messages, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="636">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="636">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="636">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="636">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="636">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="636">Populate records actions</strong>, select the line, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="636">Edit query</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="637">Use the filter to specify the settlement periods to include in the report.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="638">If you must report tax transactions from other settlement periods in a different declaration, create a new <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="638">Populate records</strong> action, and select the appropriate settlement periods.</li>
+</ol>
+<h2 id="set-up-electronic-transmission-of-tax-declarations-to-digipoort" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="640">Set up electronic transmission of tax declarations to Digipoort</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="642">Digipoort is the service that is used to transmit declarations to the Dutch government. Digipoort works as an electronic post office: it receives a message, checks the message, and then confirms receipt of the message.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="644">For more information, see <a href="emea-nl-eu-sales-list.html#set-up-electronic-transmission-of-tax-declarations-to-digipoort" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="644">Set up electronic transmission of tax declarations to Digipoort</a>.</p>
+<h2 id="generate-vat-declaration-in-xml-for-netherlands-and-send-to-digipoort" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="646">Generate VAT declaration in XML for Netherlands and send to Digipoort</h2>
+<h3 id="generate-a-vat-declaration-from-electronic-messages-and-send-to-digipoort" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="648">Generate a VAT declaration from electronic messages and send to Digipoort</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="650">The following steps are applicable to the example electronic message processing that you imported.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="652">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="652"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="652">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="652">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="652">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="652">Electronic messages</strong> &gt; Electronic messages**.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="653"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="653">In the left pane, select the report format to generate. For example, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="653">NL VAT declaration</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="654"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="654">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="654">Messages</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="654">New</strong>, and then, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="654">Run processing</strong> dialog box, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="654">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="655"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="655">Select the message line that is created, enter a description, and then specify the start and end dates for the declaration.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="657">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="658">Steps 5-7 are optional.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="660"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="660">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="660">Messages</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="660">Collect data</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="660">OK</strong>. As a result, sales tax payments that were generated earlier are added to the message. For more information, see <a href="#settle-and-post-sales-tax" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="660">Settle and post sales tax</a>. If you skip this step, you can still generate a VAT declaration by using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="660">Tax declaration version</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="660">Declaration</strong> dialog box.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="661"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="661">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="661">Message items</strong> FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="662"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="662">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="662">Original document</strong> to review the sales tax payments, or select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="662">Delete</strong> to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="662">Tax declaration version</strong> field in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="662">Declaration</strong> dialog box.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="663"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="663">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="663">Messages</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="663">Update status</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="663">Update status</strong> dialog box, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="663">Ready to generate</strong> action, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="663">OK</strong>. Validate that the message status is changed to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="663">Ready to generate</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="664"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="664">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="664">Generate report</strong>. To preview the VAT declaration amounts, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="664">Run processing</strong> dialog box, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="664">Preview report</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="664">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="665"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="665">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="665">Electronic reporting parameters</strong> dialog box, enter the parameters of the VAT declaration, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="665">OK</strong>. For information about the parameters that are available, see the following table.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="666"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="666">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="666">Attachments</strong> in the upper-right corner of the page, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="666">Open</strong> to open the file. Review the amounts that are in the Excel document.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="667"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="667">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="667">Messages</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="667">Generate report</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="667">Run processing</strong> dialog box, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="667">Generate report</strong> to generate an XML file, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="667">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="668"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="668">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="668">Electronic reporting parameters</strong> dialog box, enter the following information.</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<td width="250">
+<p><strong>Field</strong></p>
+</td>
+<td width="900">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="250">
+<p>Settlement period</p>
+</td>
+<td width="900">
+<p>Select the settlement period.</p>
+<p>If you selected&nbsp;<strong>Collect data</strong>&nbsp;in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>Tax declaration version</p>
+</td>
+<td width="900">
+<p>Select one of the following values:</p>
+<p>o&nbsp;&nbsp; <strong>Original</strong>: Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</p>
+<p>o&nbsp;&nbsp; <strong>Corrections</strong>: Generate a report for sales tax transactions of all the subsequent sales tax payments for the period. The&nbsp;<strong>Sales tax payment version</strong>&nbsp;field is set to&nbsp;<strong>Latest corrections</strong>.</p>
+<p>o&nbsp;&nbsp; <strong>Total list</strong>: Generate a report for all sales tax transactions for the period, including the original and all corrections.</p>
+<p>&nbsp;</p>
+<p>If you selected&nbsp;<strong>Collect data</strong>&nbsp;in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>Tax jurisdiction</p>
+</td>
+<td width="900">
+<p>Select&nbsp;<strong>Default to use information about the tax representative and the contact person from the fields below.</strong></p>
+<p><strong>Select Netherlands to use information about the tax representative and the contact person from the Electronic tax declaration parameters page.</strong></p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>Tax representative</p>
+</td>
+<td width="900">
+<p>If declaration is provided by the tax representative, select <strong>Tax consultant</strong> from the list of parties.</p>
+<p>Registration ID, first name, middle name, last name, personal title, and contact information of type <strong>Phone</strong> must be specified for the selected party and will be exported to the XML file.</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>Contact person</p>
+</td>
+<td width="900">
+<p>Select the employee who created the report. The first name, last name, and telephone number of the employee must be specified and will be exported to the XML file.</p>
+</td>
+</tr>
+</tbody>
+</table>
+  
+   If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.
+<ol start="14" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="735">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="735">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="735">OK</strong>. When the declaration in XML format has been generated, the status of the message is changed to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="735">Report generated</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="737">If an error occurs while the report is being generated, the status of the message is changed to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="737">Report generation error</strong>.</p>
+<ol start="15" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="739">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="739">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="739">Attachments</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="739">Open</strong> to open the file. Review the file, and if it is correct, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="739">Send report</strong> to send the report to Digipoort. The report will be sent to Digipoort and status of the message will be changed to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="739">Report sent</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="741">If an error occurred during sending of the report, the status of the message is changed to:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="743">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="743"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="743">Report sending error (technical)</strong>: If an error occurs on the Finance side and the file didn’t reach Digipoort.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="744"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="744">Report sending error (business)</strong>: If an error occurred on the Digipoortside after reaching Digipoort.</li>
+</ul>
+<ol start="16" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="746">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="746">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="746">Import response</strong> to get a response from the Digipoort on the sent message. The response from Digipoort will be imported and status of the message will be changed to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="746">Report acknowledged</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="748">If an error occurred during receiving of the status, the status of the message is changed to:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="750">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="750"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="750">Report getting status error (business)</strong>: If Digipoort didn’t acknowledge the report. In this case, the Infolog shows a list of errors received from Digipoort. To review list of errors later, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="750">Action log</strong> FastTab, select a line with <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="750">Get report status</strong>, and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="750">Attachments</strong>. Review the list of errors in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="750">Notes</strong> field.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="751"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="751">Report getting status error (technical)</strong>: If a technical error occurred when importing the response from Digipoort.</li>
+</ul>
+<h2 id="run-a-vat-declaration-for-several-legal-entities" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="753">Run a VAT declaration for several legal entities</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="755">To use the formats to report the VAT declaration for a group of several legal entities, first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.</p>
+<h3 id="set-up-electronic-messages-to-collect-data-from-several-legal-entities" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="757">Set up electronic messages to collect data from several legal entities</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="759">To set up electronic messages to collect data from several legal entities, follow these steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="761">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="761"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="761">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="761">Workspaces</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="761">Feature management</strong>, find <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="761">Cross-company queries for the populate records actions</strong> in the list, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="761">Enable now</strong> to turn on the feature.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="762"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="762">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="762">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="762">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="762">Electronic messages</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="762">Populate records actions</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="763"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="763">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="763">Populate records action</strong> page, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="763">Datasources setup</strong> grid, a new <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="763">Company</strong> field is available. For existing records, this field shows the identifier of the current legal entity.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="764"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="764">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="764">Datasources setup</strong> grid, add a line for each additional legal entity that must be included in reporting, and enter the following information.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="766">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="766">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="766"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="766">Field</strong></th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="766"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="766">Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="768">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="768">Name</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="768">Enter a value that will help you understand where this record comes from. For example, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="768">VAT payment of Subsidiary 1</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="769">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="769">Message item type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="769">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="769">VAT return</strong>. This is the only value that is available for all the records.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="770">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="770">Account type</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="770">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="770">All</strong>.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="771">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="771">Master table name</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="771">Specify <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="771">TaxReportVoucher</strong> for all the records.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="772">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="772">Document number field</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="772">Specify <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="772">Voucher</strong> for all the records.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="773">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="773">Document date field</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="773">Specify <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="773">TransDate</strong> for all the records.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="774">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="774">Document account field</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="774">Specify <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="774">TaxPeriod</strong> for all the records.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="775">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="775">Company</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="775">Select the ID of the legal entity.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="776">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="776">User query</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="776">The check box is automatically selected when you define criteria by selecting <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="776">Edit query</strong>.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="778"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="778">For each new line, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="778">Edit query</strong>, and specify a related settlement period for the legal entity that is specified in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="778">Company</strong> field on the line.</p>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="780">When setup is complete, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="780">Collect data</strong> function on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-vat-declaration-netherlands.md" sourcestartlinenumber="780">Electronic messages</strong> page will collect sales tax payments from all legal entities that you define here.</p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

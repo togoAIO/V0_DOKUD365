@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Security roles in the public sector | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Security roles in the public sector | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="security-roles-in-the-public-sector" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="30">Security roles in the public sector</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="34">This article describes the functionality for public sector security roles. This functionality includes the Project manager and Purchasing agent roles for the public sector.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="36">All users must be assigned to at least one security role to have access to Dynamics 365 Finance. Security roles determine which duties users can perform and which parts of the user interface they can view.</p>
+<h2 id="what-are-the-prerequisites-for-assigning-security-roles-in-the-public-sector" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="38">What are the prerequisites for assigning security roles in the public sector?</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="39">Users must exist in Finance before you can assign them to roles. Even if you use automatic role assignment, users themselves aren't automatically added.</p>
+<h2 id="which-roles-do-i-have-to-assign" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="41">Which roles do I have to assign?</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="42">After users are in the system, there are two roles that you might have to set up for public sector organizations:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="44">Project manager</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="45">Purchasing agent</li>
+</ul>
+<h3 id="what-is-the-project-manager---public-sector-role" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="47">What is the Project manager - Public sector role?</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="49">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="49">Project manager - Public Sector</strong> security role supports the public sector extensions for Project management. Assign this role in addition to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="49">Project manager</strong> role to give project managers access to project management functionality. By default, this security role is assigned the following duties.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="51">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="51">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="51">Duty name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="51">Duty AOT name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="51">Duty description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="53">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="53">Inquire into purchase order to invoice progress for public sector</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="53">PurchOrderToInvoiceProgressInquire_PSN</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="53">Respond to inquiries about the status of the purchase order–to–invoice process.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-is-the-purchasing-agent---public-sector-role" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="55">What is the Purchasing agent - Public sector role?</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="57">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="57">Purchasing agent - Public Sector</strong> security role supports the public sector extensions for Project management. Assign this role in addition to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="57">Purchasing agent</strong> role to give purchasing agents access to purchasing functionality. By default, this security role is assigned the following duties.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="59">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="59">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="59">Duty name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="59">Duty AOT name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="59">Duty description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="61">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="61">Maintain purchase agreement master</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="61">AgreementPurchaseAgreementMasterMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="61">Maintain the details of purchase agreements.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="62">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="62">Configure AIF synchronization</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="62">AifSyncConfigure</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="62">Specify filters on ports.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="63">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="63">Inquire into purchasing case progress</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="63">CasePurchasingCaseProgressInquire</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="63">Respond to inquiries about the status of purchasing cases.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="64">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="64">Maintain catalogs</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="64">CatProcurementCatalogMasterMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="64">Maintain all types of catalogs.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="65">Maintain all category hierarchy details</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="65">EcoResCategoryMasterMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="65">Maintain categories.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="66">Inquire into products definition master</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="66">EcoResProductDefinitionMasterInquire</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="66">Respond to inquiries about master data for product definitions.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="67">Inquire into product builder configuration data</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="67">PBAProductBuilderConfigStatusInquire</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="67">Open and review product builder configurations.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="68">Maintain product builder configuration</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="68">PBAProductBuilderConfigurationMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="68">Edit and update product builder configurations.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="69">Maintain product configuration</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="69">PCProductConfigConfigurationMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="69">Maintain a constraint-based configuration for product configuration models.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="70">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="70">Inquire into product configuration</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="70">PCProductConfigConfigurationStatInquir</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="70">Respond to inquiries about configuration master data for constraint-based product configuration models.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="71">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="71">Maintain purchase setup print management settings</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="71">PrintMgmtPurchaseSettingsMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="71">Maintain print management settings for purchase setups.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="72">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="72">Maintain purchase document print management settings</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="72">PrintMgmtPurchDocumentSettingsMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="72">Maintain print management settings for purchase documents.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="73">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="73">Inquire into purchasing policies</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="73">ProcPurchasingProcessInquire</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="73">Respond to inquiries about policies that govern the purchasing process.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="74">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="74">Inquire into purchasing policies for public sector</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="74">ProcPurchasingProcessInquire_PSN</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="74">Respond to inquiries about public sector policies that govern the purchasing process.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="75">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="75">Approve purchase agreement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="75">PurchaseAgreementWFMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="75">Review and approve purchase agreements in a workflow.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="76">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="76">Maintain purchase orders</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="76">PurchOrderMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="76">Document and record purchase orders.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="77">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="77">Maintain purchase requisition consolidation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="77">PurchReqConsolidationMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="77">Maintain the purchase requisition consolidation process.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="78">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="78">Maintain creation of purchase orders from purchase requisitions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="78">PurchReqOrderFromRequisitionMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="78">Release purchase orders from purchase requisitions.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="79">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="79">Approve purchase requisitions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="79">PurchReqPurchaseRequisitionApprove</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="79">Approve and authorize purchase requisitions.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="80">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="80">Maintain all purchase requisitions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="80">PurchReqPurchaseRequisitionMaintainAll</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="80">Edit and update purchase requisitions.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="81">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="81">View purchase requisitions on hold</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="81">PurchReqTableView</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="81">Open and review purchase requisitions that are on hold.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="82">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="82">Maintain request for quotation questionnaire</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="82">PurchRFQQuestionnaireMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="82">Edit and update request for quotation (RFQ) questionnaires.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="83">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="83">Maintain request for quotation</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="83">PurchRFQRequestForQuoteMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="83">Edit and update RFQs.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="84">Maintain request for quotation replies</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="84">PurchRFQRequestForQuoteReplyMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="84">Edit and update RFQ replies.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="85">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="85">Maintain sealed bids</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="85">PurchRFQSealedBids</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="85">Edit and update sealed bids.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="86">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="86">Inquire about payment status for vendor invoices</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="86">VendInvoice4paymentStatusInquire_RU</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="86">Respond to inquiries about the payment status for vendor invoices.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="87">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="87">Maintain vendor invoices for payment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="87">VendInvoice4PaymMaintain_RU</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="87">Edit and update vendor invoices for payment.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="88">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="88">Maintain prospective vendor master</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="88">VendProspectiveVendorMasterMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="88">Edit and update the prospective vendor master.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="89">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="89">Maintain employee-initiated vendor requests</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="89">VendRequestEmployeeVendorRequestMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="89">Document and record employee-initiated vendor requests.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="90">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="90">Inquire into vendor-initiated request status</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="90">VendRequestVendorInitiateRequestInquire</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="90">Respond to inquiries about the status on vendor-initiated requests.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="91">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="91">Inquire into unsolicited vendor master</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="91">VendUnsolicitedVendorMasterInquire</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="91">Respond to inquiries about unsolicited vendor master data.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="92">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="92">Maintain vendor user requests</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="92">VendUserRequestMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="92">Maintain and submit vendor user requests.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="93">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="93">Maintain vendor master</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="93">VendVendorMasterMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="93">Edit and update the vendor master.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="94">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="94">Maintain vendor questionnaires</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="94">VendVendorQuestionnaireMaintain</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="94">Create and update vendor questionnaire information.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="95">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="95">Inquire into workflow performance</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="95">WorkflowViewWorkflowPerf</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="95">View reports about the performance of workflows.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-do-i-do-next" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="97">What do I do next?</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="98">After the users are created, you assign them to roles on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="98">Assign users to roles</strong> page.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="100">Additional resources</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="102"><a href="../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/public-sector/security-roles-public-sector.md" sourcestartlinenumber="102">Role-based security</a></p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

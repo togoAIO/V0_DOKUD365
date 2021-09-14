@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Add dimensions to Excel templates | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Add dimensions to Excel templates | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="add-dimensions-to-excel-templates" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="30">Add dimensions to Excel templates</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="34">This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="36">The only value that is present on Microsoft Excel templates after installation is the MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates you need to complete the following steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="38">Add dimensions to the DimensionCombinationEntity or the DimensionSet entity.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="39">Add the dimensions to each template where you want dimensions in separate columns. For more information, see <a href="../office-integration/office-integration-edit-excel.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="39">Create Open in Excel experiences</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="40">Add the <a href="add-dimensions-excel-templates.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="40">capability to look up financial dimension values in Excel</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="41">Publish the template.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="43">This topic shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel. The same steps can be used to modify the DimensionSet entity.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="45">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="46">This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.</p>
+</div>
+<h2 id="add-dimensions-to-dynamics-365-finance" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="48">Add dimensions to Dynamics 365 Finance</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="50">With the November 2016 release, modifying the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="50">DimensionCombinationEntity</strong> has been greatly simplified with the release of the Add financial dimensions for OData Addin in Visual Studio.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="52">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="52"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="52">In Microsoft Visual Studio, click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="52">Dynamics 365 &gt; Addins &gt; Add financial dimensions for Odata.</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="53"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="53">Type the name of the Financial dimension in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="53">Dimension name</strong> column. This should be the exact name of the financial dimension. Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="53">Model</strong> that has your extensions. It should be above the AppSuite layer. Click <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="53">Apply</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="55"><img src="media/financial-dimensions-odata.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="55" alt="financial dimensions for odata.">.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="57">Compile the project, and then synchronize it with the database.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="59">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="60">You must keep the extension name &quot;DimensionIntegration&quot; for the project to work properly.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="62"><img src="media/8-300x260.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="62" alt="Menu options to build and synchronize."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="64"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="64">Your customization is now completed. You can test it in SQL using the following statement.</p>
+<pre><code class="lang-sql" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="66">select * from DIMENSIONCOMBINATIONENTITY 
+</code></pre>
+</li>
+</ol>
+<h2 id="add-dimensions--before-dynamics-365-for-finance-and-operations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="70">Add dimensions  before Dynamics 365 for Finance and Operations</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="71">To support interactions with dimensions as columns, for example, in the Microsoft Excel integration, you must first create the dimension columns through a customization.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="73">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="73"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="73">Open the Application Explorer in Visual Studio (<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="73">View</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="73">Application Explorer</strong>).</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="74">Navigate to DimensionCombinationEntity <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="74">(AOT</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="74">Data Model</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="74">Data Entities</strong>).</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="75"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="75">Right-click on the entity and choose <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="75">Customize</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="77"><a href="media/5.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="77"><img src="media/5-300x187.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="77" alt="5."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="79"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="79">Open the designer for the entity that you want to modify, in this example <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="79">DimensionCombinationEntity</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="80">Create a new private static method that returns a str named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="80">departmentValue</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="81"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="81">In this method, you must get the dimension's value from <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="81">DimensionAttributeValueCombination</strong>. The final method will look something like this.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="83">/// &lt;summary&gt;
+/// This method returns the value of Department.
+/// &lt;/summary&gt;
+private static str departmentValue()
+{     
+    Name dimensionName = 'Department';
+    str sqlStatement;
+
+    DimensionAttribute dimensionAttribute = DimensionAttribute::findByName(dimensionName);
+
+    if (!dimensionAttribute)
+    {
+        sqlStatement = SysComputedColumn::returnLiteral('');
+    }
+    else
+    {
+        sqlStatement = strFmt('SELECT TOP 1 T1.%1 ', dimensionAttribute.DimensionValueColumnName);
+    }
+
+    return sqlStatement;
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="107"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="107">Create a new &quot;string unmapped field&quot; on the entity:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="109">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="109"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="109">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="109">Name</strong> property to the dimension name, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="109">Department</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="110"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="110">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="110">Extended Data Type</strong> property to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="110">DimensionValue</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="111"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="111">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="111">DataEntityView Method</strong> property to the method that you created earlier (for example, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="111">departmentValue</strong>).</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="112"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="112">Set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="112">Label</strong> property to the dimension name <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="112">Department</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="114"><a href="media/6.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="114"><img src="media/6-300x64.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="114" alt="6."></a></p>
+</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="116"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="116">Repeat steps 5-7 for each dimension that you want to add, changing the dimension name to the appropriate dimension.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="117"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="117">Compile the project, and then synchronize it with the database.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="119"><a href="media/8.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="119"><img src="media/8-300x260.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="119" alt="8."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="121"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="121">Your customization is now complete. You can test it in SQL using the following statement.</p>
+<pre><code class="lang-sql" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="123">select * from DIMENSIONCOMBINATIONENTITY
+</code></pre>
+</li>
+</ol>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="128">Additional resources</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="130"><a href="dimension-entry-control-migration.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="130">Migrate default dimensions controls to Dimension Entry controls</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="132"><a href="dimension-entry-control-uptake.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="132">Uptake of Dimension Entry controls</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="134"><a href="../extensibility/extensibility-home-page.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/dimensions-overview.md" sourcestartlinenumber="134">Extensibility home page</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Multiple VAT registration numbers (Preview) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Multiple VAT registration numbers (Preview) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="multiple-vat-registration-numbers-preview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="29">Multiple VAT registration numbers (Preview)</h1>
+
+[!include[banner](../includes/banner.md)][!include[banner](../includes/preview-banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="35">This topic provides information about the functionality for multiple value-added tax (VAT) registration numbers. This functionality lets users set up the tax registration numbers of a legal entity and its customers and vendors in different European Union (EU) member states, and then post and settle taxes according to registration in the appropriate member state.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="37">Here are the main steps to configure and use this functionality:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="39">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="39">Assign the registration type for VAT registration to the VAT ID registration category.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="40">Set up the legal entity's, customers and vendors VAT registration numbers on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="40">Registration ID</strong> FastTab on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="40">Manage addresses</strong> page.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="41">Specify the legal entity's VAT registration number for the sales tax authority, and specify the settlement period. The sales tax codes that are assigned to the settlement period will identify the legal entity's VAT registration.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="43">The customer and vendor VAT registration numbers for transactions can be identified by the tax calculation service. The identified tax registration numbers are available in the sales tax transactions.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="45">The sales tax settlement procedure uses the country/region code of the registration ID.</p>
+<h2 id="enable-the-feature" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="47">Enable the feature</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="49">First, enable the following flighting:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="51">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="51">TaxIntegrationFlight</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="52">TaxMultipleVATIDFlighting</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="53">TaxMultipleVATIDFeature</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="55">Then follow these steps to enable the feature.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="57">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="57">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="57">Feature management</strong> workspace, turn on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="57">Support multiple VAT registration numbers</strong> feature.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="58">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="58">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="58">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="58">Tax service parameters</strong>, and turn on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="58">Enable tax service</strong> option.</li>
+</ol>
+<h2 id="set-up-a-vat-id-for-a-legal-entity-customers-and-vendors" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="60">Set up a VAT ID for a legal entity, customers, and vendors</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="62">To set up the VAT registration numbers for a legal entity and its customers and vendors, you must use the registration ID framework to create these registration numbers. For more information, see <a href="emea-registration-ids.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="62">Registration IDs</a>.</p>
+<h3 id="set-up-registration-types-and-categories" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="64">Set up registration types and categories</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="66">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="66"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="66">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="66">Organization administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="66">Global address book</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="66">Registration types</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="66">Registration types</strong>, and create a new registration type, such as <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="66">VATID</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="68"><img src="media/Tax-Service-MultVATID-Registration-type-01.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="68" alt="Enter registration type details dialog box."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="70">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="70">Applicable countries/regions, uses, and validation rules</strong> FastTab, create a registration type line for each country or region where the legal entity, customers, and vendors have registrations</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="72"><img src="media/Tax-Service-MultVATID-Registration-type-02.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="72" alt="Registration type lines on the Registration types page."></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="74"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="74">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="74">Organization administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="74">Global address book</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="74">Registration types</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="74">Registration categories</strong>, and assign the registration types that you just created to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="74">VAT ID</strong> registration category.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="76"><img src="media/Tax-Service-MultVATID-Registration-categories-03.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="76" alt="Registration types assigned to the VAT ID registration category on the Registration categories page."></p>
+</li>
+</ol>
+<h3 id="create-vat-registration-numbers-for-a-legal-entity-customers-and-vendors" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="78">Create VAT registration numbers for a legal entity, customers, and vendors</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="80">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="80"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="80">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="80">Organization administration</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="80">Organizations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="80">Legal entities</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="81"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="81">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="81">Registration IDs</strong>, and assign VAT ID registration to each address where the legal entity has VAT registrations.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="83"><img src="media/Tax-Service-MultVATID-Registration-Legal-entity-04.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="83" alt="Assigning VAT ID registration to addresses on the Legal entities page."></p>
+</li>
+</ol>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="85">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="86">To automatically identify customer and vendor VAT registration numbers for sales tax transactions, sales documents, and purchase documents, create the numbers in the tax calculation service on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="86">Customer tax registration number applicability</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="86">Vendor tax registration number applicability</strong> tabs.</p>
+</div>
+<h3 id="set-up-number-sequences-for-a-legal-entitys-registration-numbers" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="88">Set up number sequences for a legal entity's registration numbers</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="90">To generate separate number sequences for documents such as packing slips and invoices, create a number sequence group. Then, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="90">Manage addresses</strong> page, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="90">Registration ID</strong> FastTab, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="90">General</strong> tab, assign the number sequence group to the VAT ID of the legal entity.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="92"><img src="media/Tax-Service-MultVATID-Number-sequence-group-05.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="92" alt="Assigning a number sequence group to the VAT ID of a legal entity on the Manage addresses page."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="94">Next, on the  <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="94">Number sequence groups</strong> page, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="94">Reference</strong> section, set up the required number sequences codes for the supported references.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="96">The code for the number sequence group is then entered by default on the sales order or purchase order header after the legal entity's tax registration is determined. The documents are numbered according to the number sequences that are assigned to the references.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="98"><img src="media/Tax-Service-MultVATID-Number-sequence-group-06.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="98" alt="Number sequence codes on the Number sequence groups page."></p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="100">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="101">Currently, the default logic supports only sales orders and purchase orders.</p>
+</div>
+<h3 id="set-up-tax-authorities" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="103">Set up tax authorities</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="105">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="105">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="105">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="105">Indirect taxes</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="105">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="105">Sales tax authorities</strong>, and create all the tax authorities that the legal entity must report to.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="106">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="106">Tax registration</strong> FastTab, add the appropriate VAT registration number.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="108"><img src="media/Tax-Service-MultVATID-Sales-tax-authorities-07.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="108" alt="VAT registration number added on the Sales tax authorities page."></p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="110">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="111">The lookup for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="111">Tax registration number</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="111">Tax registration</strong> FastTab contains only the registration numbers of the legal entity that have a VAT ID registration category. The list of registration IDs is available for the corresponding country or region of the tax authority.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="113">Date effectivity isn't supported for assigned registration numbers. If the the registration number of the legal entity is changed or expired, you must manually update the tax registration in the setup of the tax authority and sales tax settlemet period.</p>
+</div>
+<h3 id="set-up-the-sales-tax-settlement-period" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="115">Set up the sales tax settlement period</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="117">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="117">Sales tax settlement periods</strong> page, create sales tax settlement periods. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="117">Tax registration number</strong> field, verify that the corresponding legal entity's VAT registration number is assigned.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="119"><img src="media/Tax-Service-MultVATID-Sales-tax-settlement-periods-08.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="119" alt="VAT ID assigned on the Sales tax settlement periods page."></p>
+<h3 id="set-up-customer-and-vendor-tax-registration-numbers-in-the-tax-feature-setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="121">Set up customer and vendor tax registration numbers in the Tax feature setup</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="123">In Regulatory Configuration Service (RCS), go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="123">Globalization Features</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="123">Tax</strong>. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="123">Customer Tax Registration Number Applicability</strong> tab, verify that the registration IDs for customers are defined. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="123">Vendor Tax Registration Number Applicability</strong> tab, verify that the registration IDs for vendors are defined.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="125"><img src="media/Tax-Service-MultVATID-Tax-feature-setup-09.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="125" alt="Customer and vendor registration IDs on the Tax feature setup page."></p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="127">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="128">During sales tax calculation and document posting, the tax service returns the customer's or vendor's tax registration number to Dynamics 365 Finance and updates the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="128">Tax exempt number</strong> field on the sales order or purchase order. If the corresponding value isn't set up on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="128">Registration ID</strong> FastTab on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="128">Manage addresses</strong> page for the customer or vendor, the registration ID is left blank, and you receive the following message: &quot;Customer tax registration 'xxx' is not found in the customer's Registration IDs setup. To add customer tax registration to sales tax transactions and posted documents, make sure the registration is defined in the Registration IDs setup.&quot;</p>
+</div>
+<h2 id="sales-order-and-purchase-order-processing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="130">Sales order and purchase order processing</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="132">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="132">Tax service parameters</strong> page, make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="132">Enable tax service</strong> option is turned on, and that <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="132">Sales</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="132">Purchase</strong> are selected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="132">Business process</strong> field.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="134">If the sales tax codes on lines that are created for a sales order or purchase order are assigned to different sales tax settlement periods and tax registrations, there are multiple registration numbers for the order. To control the system behavior in this scenario, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="134">Check Tax registration number in document lines</strong> option has been added on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="134">Accounts receivable parameters</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="134">Accounts payable parameters</strong> pages.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="136">Currently, the scenario where sales tax codes are assigned to different registration numbers on a sales order or purchase order isn't supported. During sales tax calculation and document posting, you receive an error message and can't continue the process. For information about the item ID, sales tax codes, settlement periods, and tax registration numbers that are identified for the order lines, view the message details.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="138"><img src="media/Tax-Service-MultVATID-Order-processing-10.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="138" alt="Error message about different tax registration numbers on document lines."></p>
+<h3 id="temporary-sales-tax-and-posted-sales-tax" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="140">Temporary sales tax and posted sales tax</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="142">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="142">Temporary sales tax</strong> page, you can preview the identified VAT registration numbers of the legal entity, customers, and vendors. The following new fields have been added to the page:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="144">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="144"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="144">Tax registration number</strong> – The VAT registration number of the legal entity.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="145"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="145">Customer tax registration number</strong> – The VAT registration number of the customer. This field is available only for sales orders.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="146"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="146">Vendor tax registration number</strong> – The VAT registration number of the vendor. This field is available only for purchase orders.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="148">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="148">Posted sales tax</strong> page, the following new fields have been added. You can sort and filter sales tax transactions by these fields.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="150">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="150"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="150">Tax registration number</strong> – The VAT registration number of the legal entity.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="151"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="151">Counterparty tax registration number</strong> – The VAT registration number of the counterparty.</li>
+</ul>
+<h3 id="sales-tax-settlement-procedure-updates" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="153">Sales tax settlement procedure updates</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="155">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="155">Settle and post sales tax</strong> periodic task has been updated so that it uses the country/region code of the legal entity's tax registration.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="157">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="158">If the tax registration number isn't set for a tax period, you receive the following error message: &quot;Tax registration number is not set up for the tax settlement period xxx&quot; and settlement process is stopped.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="160">After the settlement process is completed, no sales tax payment report is printed. Instead, you receive the following message: &quot;The sales tax settlement and posting is completed. The voucher 'xxxx, m/d/yyyy' has been posted.&quot;</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="162">You can still manually run the sales tax payment report by going to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="162">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="162">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="162">Sales tax inquiries</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="162">Sales tax payments</strong>.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="164">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="165">Even if the feature isn't enabled on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-multiple-vat-registration-numbers.md" sourcestartlinenumber="165">Tax service parameters</strong> page, the tax registration ID will be copied from the original sales tax transactions to the offset sales tax transactions.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

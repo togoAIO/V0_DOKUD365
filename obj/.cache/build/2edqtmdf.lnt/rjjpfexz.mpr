@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Export letter of credit | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Export letter of credit | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="export-letter-of-credit" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="26">Export letter of credit</h1>
+
+[!include[banner](../../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="30">This procedure walks through the process of the Export letter of credit.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="32">A letter of credit is an agreement that is issued by a bank, in which the bank agrees to ensure payment on behalf of the buyer, if the terms of the agreement between the buyer and seller are met.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="36">Run the 'Set up bank facilities and posting profiles' procedure and the 'Letter of Credit_Create a bank facility agreement' procedure prior to this procedure. The USMF demo company must be selected in order to run this procedure successfully.</p>
+<h2 id="create-sales-order-for-export-letter-of-credit" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="41">Create Sales Order for Export letter of credit</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="42">Go to Accounts receivable &gt; Orders &gt; All sales orders.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="43">Click New.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="44">In the Customer account field, click the drop-down button to open the lookup.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="45">In the list, find and select the desired record.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="46">In the list, click the link in the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="47">Expand or collapse the General section.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="48">In the Site field, click the drop-down button to open the lookup.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="49">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="49">Select the Site where the item to be issued is stocked.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="50">In the list, click the link in the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="51">In the Warehouse field, click the drop-down button to open the lookup.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="52">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="52">Select the Warehouse where item to be issued is stocked.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="53">In the list, click the link in the selected row.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="54">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="54">Note: The Bank document type field should be selected with the value 'Letter of credit'.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="55">In the Bank document type field, select 'Letter of credit'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="56">Expand or collapse the Delivery section.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="57">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="57">Select Delivery date control = None.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="58">In the Requested receipt date field, enter a date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="59">Click OK.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="60">In the Item number field, click the drop-down button to open the lookup.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="61">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="61">Select the required item to be Issued/Sold.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="62">In the list, find and select the desired record.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="63">In the list, click the link in the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="64">In the Unit price field, enter a number.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="65">Expand or collapse the Line details section.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="66">Click the Delivery tab.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="67">In the Requested ship date field, enter a date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="68">In the Confirmed ship date field, enter a date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="69">On the Action Pane, click Manage.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="70">Click Letter of credit.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="71">In the Bank document number field, type a value.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="72">In the Expiration date field, enter a date and time.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="73">Expand or collapse the Bank details section.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="74">In the Issuing bank field, click the drop-down button to open the lookup.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="75">In the list, click the link in the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="76">In the Advising bank field, click the drop-down button to open the lookup.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="77">In the list, find and select the desired record.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="78">In the list, click the link in the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="79">Click Fetch sales order shipments.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="80">Click Issue bank document.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="81">Close the page.</li>
+</ol>
+<h2 id="post-packing-slip" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="83">Post Packing slip</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="84">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="84">On the Action Pane, click Pick and pack.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="85">Click Post packing slip.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="86">Expand or collapse the Parameters section.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="87">In the Quantity field, select 'All'.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="88">Expand or collapse the Setup section.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="89">In the Packing slip date field, enter a date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="90">Select the Shipment number.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="91">In the list, click the link in the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="92">Click OK.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="93">Click OK.</li>
+</ol>
+<h2 id="post-sales-invoice" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="95">Post sales invoice</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="96">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="96">On the Action Pane, click Invoice.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="97">Click Invoice.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="98">Expand or collapse the Overview section.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="99">Select the Shipment number.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="100">In the list, click the link in the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="101">Expand or collapse the Setup section.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="102">In the Invoice date field, enter a date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="103">Click OK.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="104">Click OK.</li>
+</ol>
+<h2 id="shipment-document-submitted-status" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="106">Shipment document submitted status</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="107">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="107">On the Action Pane, click Manage.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="108">Click Letter of credit.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="109">Expand or collapse the Lines section.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="110">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="110">Note: The 'Document submitted' field should be set to 'Yes'.</li>
+</ul>
+</li>
+</ol>
+<h2 id="verify-export-letter-of-credit" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="112">Verify Export letter of credit</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="113">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="113">Go to Cash and bank management &gt; Letters of credit &gt; Export letter of credit and import collection.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="114">In the list, find and select the desired record.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="115">In the list, click the link in the selected row.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="116">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="116">Verify that the Export letter of credit has a Shipment status of 'Invoiced'.</li>
+</ul>
+</li>
+</ol>
+<h2 id="customer-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="118">Customer payment</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="119">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="119">Go to Accounts receivable &gt; Payments &gt; Payment journal.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="120">Click New.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="121">In the list, mark the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="122">In the Name field, click the drop-down button to open the lookup.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="123">In the list, click the link in the selected row.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="124">Click Lines.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="125">In the Date field, enter a date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="126">In the Account field, specify the desired values.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="127">Click Settlement.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="128">Select the check box on the header of Totals.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="129">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="129">Note: Set the Show field to 'Letter of credit'.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="130">In the list, find and select the desired record.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="131">Select or clear the Mark check box.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="132">Click OK.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="133">Click the Payment tab.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="134">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="134">Verify Bank document number and Shipment number details</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="135">Click Post.</li>
+</ol>
+<h2 id="verify-export-letter-of-credit-after-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="137">Verify Export letter of credit after payment</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="138">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="138">Go to Cash and bank management &gt; Letters of credit &gt; Export letter of credit and import collection.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="139">In the list, find and select the desired record.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="140">In the list, click the link in the selected row.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="141">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/cash-bank-management/tasks/export-letter-credit.md" sourcestartlinenumber="141">Verify Shipment status = Payment received and balance amount = 0.00.</li>
+</ul>
+</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

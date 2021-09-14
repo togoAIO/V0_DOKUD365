@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cash flow forecast (preview) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Cash flow forecast (preview) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cash-flow-forecast-preview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="30">Cash flow forecast (preview)</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="34">Cash flow is critical to any business. Even profitable companies can face insolvency if they don't maintain the cash flow to meet immediate needs. The cash flow forecasting capability in Finance insights can help companies monitor and manage their cash balances effectively. This feature uses machine learning to help businesses forecast cash flows more accurately than they have previously. It can also help managers make decisions that optimize opportunities in the context of their current cash position.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="36">For most companies, managing cash flow and running cash flow forecasting is a tedious, repetitive, and manual process. Most companies rely on Microsoft Excel solutions that have varying degrees of complexity. The challenges of accurately forecasting cash flow include the following:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="38">Data isn't available to decision makers because it's scattered in multiple places, including:
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="39">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="39">The accounting or enterprise resource planning system</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="40">Financial planning software</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="41">Excel</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="42">Additional software applications</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="43">Forecasting is based on internal knowledge that resides in &quot;silos&quot; within each domain or department.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="44">Measuring the accuracy of cash flow forecasting after the financials have been realized is uncertain and difficult.</li>
+</ul>
+<h2 id="details-of-the-cash-flow-forecasts-capability" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="46">Details of the Cash flow forecasts capability</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="47">The Cash flow forecasts feature includes the following functionality.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="49">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="49"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="49">Makes it easy to integrate cash flow data from external systems to Dynamics 365 Finance. Cash flow forecasts can also use the data import-export framework. This framework makes it easy to integrate with Excel OData. You can also combine data from multiple sources to create a comprehensive cash flow solution.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="51">Introduces intelligent cash position. Cash position is created  based on customer’s payment behavior to predict when a company can expect cash to arrive in their accounts. It also analyzes the historical patterns of paying vendors, to predict when future invoices and orders are likely to be paid.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="53"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="53">Introduces intelligent cash flow forecasting for long-term forecasting, using time series forecasting through automated integration with AI Builder.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="55"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="55">Provides the ability to save specific cash flow position or forecasts, edit them, and then easily compare and measure the forecast performance to the actual financials.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="57">Enables what-if analysis through snapshot comparison. For example, you can create multiple snapshots that represent optimistic, pessimistic, and the most realistic views of your cash flow, and then compare and view the differences.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="59"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="59">Provides the ability to view the cash flow forecast in multiple currencies, across legal entities, and filter and view cash flow related to a bank account.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="61"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="61">Lets you filter and view bank accounts that are related to financial dimensions.</p>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="63">The cash flow forecasting functionality in Dynamics 365 Finance will empower your organization to transform tedious, complex, yet repetitive cash flow projection to a simple, automated process. Automating the most tedious aspects of cash flow forecasting lets you focus on critical decision making to drive desired business outcomes.</p>
+<h2 id="setting-up-dimensions-for-cash-flow-forecasting" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="65">Setting up Dimensions for Cash flow forecasting</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="66">A new tab on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="66">Cash flow forecasting setup</strong> page lets you control what financial dimensions to use for filtering in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="66">Cash flow forecasting</strong> workspace. This tab will only appear when the Cash flow forecasts feature is enabled.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="68">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/finance-insights/cash-flow-forecast-intro.md" sourcestartlinenumber="68">Dimensions</strong> tab, choose from the list of dimensions to use for filtering, and use the arrow keys to move them to the right-hand column. Only two dimensions can be selected for filtering cash flow forecast data.</p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

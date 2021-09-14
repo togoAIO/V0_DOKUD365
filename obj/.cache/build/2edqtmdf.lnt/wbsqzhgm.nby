@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Set up collections | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Set up collections | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="set-up-collections" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="30">Set up collections</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="34">This article explains how to set up the collections functionality. You must complete some setup steps when using collections capability. There are also some optional capabilities, including customer pools and collections teams.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="36">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="36">Aging period definitions</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="37">Aging snapshots</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="38">Journal names</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="39">Reason code for writeoff transactions</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="40">Collections agents</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="41">Writeoff account</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="42">NSF (not sufficient funds) information</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="43">Outlook settings for those who use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="43">Collections</strong> page</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="44">Email addresses</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="46">These points are discussed in more detail throughout the rest of this topic.</p>
+<h2 id="set-up-aging-period-definitions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="48">Set up aging period definitions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="50">Set up an aging period definition. An aging period definition defines the columns that appear on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="50">Aged balances</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="50">Collections activities</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="50">Collections cases</strong> list pages. It also defines the periods that appear on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="50">Collections</strong> page. If a customer pool is set up, the aging period definition for the pool is used. If no pools are set up, the default aging period definition that is specified on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="50">Accounts receivable parameters</strong> page is used. If no default aging period definition is specified, the first aging period definition on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="50">Aging period definitions</strong> page is used.</p>
+<h2 id="create-an-aging-snapshot" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="52">Create an aging snapshot</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="53">Create aging snapshot records for all customers or for the customers in a customer pool. Aging snapshot information appears on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="53">Aged balances</strong> list page and on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="53">Collections</strong> page. You must create an aging snapshot before you can use the list page. The list page shows information only for customers that an aging snapshot has been created for.</p>
+<h2 id="optional-set-up-customer-pools" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="55">Optional: Set up customer pools</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="56">You can set up customer pools to represent groups of customers. You can use customer pools as filters for the customer information that appears on <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="56">Collections</strong> list pages, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="56">Collections</strong> page, or when you create aging snapshots.</p>
+<h2 id="optional-create-a-collections-team" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="58">Optional: Create a collections team</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="59">If multiple people in your organization do collections work, you can set up a collections team. You can select the team on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="59">Accounts receivable parameters</strong> page. If you don't create a collections team, a team is created automatically when you set up collections agents on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="59">Collections agent</strong> page.</p>
+<h2 id="set-up-a-collections-case-category" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="61">Set up a collections case category</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="62">To use cases to organize your collections work, set up a case category that has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="62">Collections</strong> category type. This is required only if you want to use the case functionality on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="62">Collections</strong> page.</p>
+<h2 id="set-up-journal-names-settlement-writeoff-and-nsf" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="64">Set up journal names (settlement, writeoff, and NSF)</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="65">Set up the journal names that are used when transactions are processed on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="65">Collections</strong> page. This processing includes settling a transaction, writing off of a transaction, and processing a not sufficient funds (NSF) payment.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="67">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="67">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="67">Description</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="67">Journal type</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="69">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="69">Settlement</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="69">Customer payment</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="70">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="70">Write-off</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="70">Daily</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="71">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="71">NSF</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="71">Customer payment</td>
+</tr>
+</tbody>
+</table>
+<h2 id="set-up-a-reason-code-for-writeoff-transactions" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="73">Set up a reason code for writeoff transactions</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="74">Set up the default reason code that is used when transactions are written off on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="74">Collections</strong> page. You can change the code during the write-off process.</p>
+<h2 id="set-up-a-folder-for-email-attachments-and-create-email-templates" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="76">Set up a folder for email attachments and create email templates</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="77">If you will send email messages from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="77">Collections</strong> page that have Microsoft Excel attachments, you can create optional email templates for those messages.</p>
+<h2 id="set-up-accounts-receivable-parameters-for-collections" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="79">Set up accounts receivable parameters for collections</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="80">Set up the accounts receivable parameters that appear on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="80">Collections</strong> tab.</p>
+<h2 id="optional-set-up-collections-agents" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="82">Optional: Set up collections agents</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="83">If multiple people in your organization do collections work, you can set up collections agents. A collections agent is a worker who is set up as a user on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="83">User relations</strong> page. You can assign customer pools (customer queries) to collections agents to help the agents organize their work. The collections agents are added to the team that is selected on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="83">Accounts receivable parameters</strong> page. If a team isn't selected on that page, a new team that is named <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="83">Collections</strong> is automatically created, and the collections agents are added to that team.</p>
+<h2 id="set-up-a-writeoff-account" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="85">Set up a writeoff account</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="86">Set up the write-off account that is used for the general ledger write-off entry when a transaction is written off. This account is stored on the customer posting profile.</p>
+<h2 id="set-up-nsf-information-for-bank-accounts" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="88">Set up NSF information for bank accounts</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="89">Update bank accounts so that they have the correct journal when NSF payments are identified on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="89">Collections</strong> page. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="89">Currency management</strong> tab,  in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="89">NSF payment journal</strong> field, select a payment journal.</p>
+<h2 id="set-up-outlook-settings-for-users-of-the-collections-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="91">Set up Outlook settings for users of the Collections page</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="92">Before workers can create activities or send email messages by using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="92">Collections</strong> page, you must verify that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="92">Microsoft Outlook synchronization</strong> configuration key is selected, and that Outlook synchronization is set up for those workers.</p>
+<h2 id="set-up-email-and-addresses" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="94">Set up email and addresses</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="95">You can use email to communicate with both customers and salespeople about collections issues to send email messages from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="95">Collections</strong> page.</p>
+<h3 id="set-up-email-and-address-settings-for-collections-customer-contacts" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="97">Set up email and address settings for collections customer contacts</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="98">Set up email addresses for customer contacts to send email messages to those contacts from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="98">Collections</strong> page. The collections contact is used as the default contact on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="98">Collections</strong> page. You can set up a statement address for a customer if statements should use an address other than the primary address.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="100">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="100">Credit and Collections</strong> FastTab for a customer, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="100">Collections contact</strong> field, select the person in the customer organization who works with your collections agent. This person is used as the default contact on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="100">Collections</strong> page, and email messages are sent to them.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="102">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="103">If a collections contact isn't specified for a customer, the primary contact for the customer is used. If a primary contact isn't specified, email messages are sent to the first address that is listed on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="103">Contacts</strong> page.</p>
+</div>
+<h3 id="set-up-email-settings-for-salespeople" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="105">Set up email settings for salespeople</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="106">Set up email addresses for salespeople to send email messages to salespeople from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="106">Collections</strong> page. Set up an email address for each sales representative in each commission sales group. The sales representative who has the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="106">Contact</strong> option selected is the default salesperson that email messages are sent to.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="108">If a sales representative isn't specified, the primary salesperson for the customer organization is used. If a primary salesperson isn't specified, email messages are sent to the first salesperson who is listed on the page.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="111">For more information, see the following topics:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="113">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="113"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="113"><a href="tasks/create-collection-letter-sequence.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="113">Create a collection letter sequence</a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="115"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="115"><a href="tasks/process-collection-letters.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="115">Process collection letters</a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="117"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="117"><a href="tasks/review-collections-information.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/set-up-collections.md" sourcestartlinenumber="117">Review collections information</a></p>
+</li>
+</ul>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

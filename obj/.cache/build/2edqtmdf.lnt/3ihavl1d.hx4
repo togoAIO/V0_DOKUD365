@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Invoice automation for scanned documents | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Invoice automation for scanned documents | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="invoice-automation-for-scanned-documents" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="26">Invoice automation for scanned documents</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="30">This topic explains the data entities that are available for end-to-end automation of vendor invoices, including invoices with attachments.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="32">Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient. In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider. They then receive machine-readable invoice metadata together with a scanned image of each invoice. To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system. Now this “last mile” automation is enabled out of the box, through an invoice automation solution.</p>
+<h2 id="solution-context" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="34">Solution context</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="36">The invoice automation solution enables a standard interface that can accept invoice metadata for the invoice header and invoice lines, and also attachments that are applicable to the invoice. Any external system that can generate artifacts that comply with this interface will be able to send the feed for automatic processing of invoices and attachments.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="38">The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing. Contoso’s vendors send invoices to the service provider by email. Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice. An integration layer then transforms these artifacts so that they can be consumed.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="40"><img src="media/vendor_invoice_automation_01.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="40" alt="Sample integration scenario."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="42">Several variations of the preceding scenario are possible if invoice integration is required. Data migration is another use case where this interface can be used to create invoices and attachments.</p>
+<h3 id="solution-components" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="44">Solution components</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="46">The solution footprint consists of the following components:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="48">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="48">Data entities for the invoice header, invoice lines, and invoice attachments</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="49">Exception processing for invoices</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="50">A side-by-side attachment viewer in invoices</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="52">The rest of this topic provides detailed descriptions of these solution components.</p>
+<h2 id="data-entities" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="54">Data entities</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="56">A data package is the unit of work that must be sent so that invoice headers, invoice lines, and invoice attachments can be created. The following data entities are used for the artifacts that make up the data package:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="58">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="58">Vendor invoice header</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="59">Vendor invoice line</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="60">Vendor invoice document attachment</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="62">Vendor invoice document attachment is a new data entity that is introduced as part of this feature. The Vendor invoice header entity has been modified so that it supports attachments. The Vendor invoice line entity hasn’t been modified for this feature.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="64">For detailed information about data packages, see <a href="../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="64">Data management overview</a>. For information about how to create data packages using the data management workspace, see <a href="../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="64">Process and consume data packages in Dynamics 365 Finance and Operations apps solution</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="66">To quickly generate test data that includes invoices and attachments, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="68">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="68"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="68">Sign in to your instance.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="69">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="69">Accounts payables</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="69">Invoices</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="69">Pending vendor invoices</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="70"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="70">Create invoices that have lines and attachments.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="72">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="73">The attachments must be header attachments. Currently, the Vendor invoice document attachment entity doesn’t support line attachments.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="75"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="75">Open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="75">Data management</strong> workspace.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="76"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="76">Create an export job that includes the Vendor invoice header, Vendor invoice line, and Vendor invoice document attachment entities.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="77"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="77">Export the data.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="78"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="78">Download the exported data as a package. You can now use the package to import data into target instances for testing purposes.</p>
+</li>
+</ol>
+<h3 id="determining-the-legal-entity-for-an-invoice" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="80">Determining the legal entity for an invoice</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="82">Invoices that are imported via data packages can be associated with the legal entity that they belong to in two ways:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="84">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="84">The import job that processes the invoice imports it into the same company in which the job was scheduled in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="84">Data management</strong> workspace. In other words, the company of the job determines the company that the invoice belongs to.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="85">When the data package that contains invoices is sent to Finance, the caller (that is, the integration application that runs outside of Finance) can explicitly mention the company ID in the HTTP request. In this case, the company context in which the processing job runs in Finance is overridden, and the invoices are imported into the company that was passed via the HTTP request.</li>
+</ul>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="87">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="88">This behavior is standard data management behavior. It’s explained here, in the context of invoices, just for the sake of completeness.</p>
+</div>
+<h2 id="exception-processing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="90">Exception processing</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="92">In scenarios where vendor invoices come into Finance and Operations via integration, there must be an easy way for an Accounts payable team member to process exceptions or failed invoices, and to create pending invoices out of failed invoices. This exception processing for vendor invoices is now part of Finance and Operations.</p>
+<h3 id="vendor-invoices-that-failed-to-import-list-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="94">Vendor invoices that failed to import list page</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="96">The new list page for invoice exceptions is available at <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="96">Accounts payable</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="96">Invoices</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="96">Import failures</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="96">Vendor invoices that failed to import</strong>. This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity. Note that you can view the same records from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="96">Data management</strong> workspace. You can also perform the same actions that are provided in the exception handling feature from the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="96">Data management</strong> workspace. The exception handling feature has been optimized for a functional user, which makes it easier to use.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="98"><img src="media/vendor_invoice_automation_02.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="98" alt="Exceptions list page."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="100">This list page includes the following fields that come in via the feed:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="102">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="102"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="102"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="102">Company</strong> – The company that the invoice belongs to</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="103"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="103"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="103">Error message</strong> – The error message that the data management framework issues to explain why the invoice could not be created</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="104"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="104"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="104">Number</strong> – The invoice number</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="105"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="105"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="105">Invoice account</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="106"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="106"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="106">Name</strong> – The vendor’s name</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="107"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="107"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="107">Vendor account</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="108"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="108"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="108">Purchase order</strong> – The purchase order (PO) number for the invoice</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="109"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="109"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="109">Posting date</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="110"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="110"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="110">Invoice date</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="111"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="111"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="111">Invoice description</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="112"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="112"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="112">Currency</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="113"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="113"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="113">Log</strong></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="114"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="114"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="114">Line reference</strong> – The identifier that comes from the external system</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="116">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="117">The line reference isn’t the invoice ID.</p>
+</div>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="119">This list page also has a preview pane that you can used in the following ways:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="121">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="121">View the whole error message, so that you don’t have to expand the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="121">Error message</strong> column in the grid.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="123">The list page supports the following actions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="125">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="125"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="125">Edit</strong> – Open the exception record in edit mode, so that you can fix the issues.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="126"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="126">Options</strong> – Access the standard options that are available on list pages. You can use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="126">Add to workspace</strong> option to pin the exceptions list page to your workspace as a list or tile.</li>
+</ul>
+<h3 id="vendor-invoices-that-failed-to-import-details-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="128">Vendor invoices that failed to import details page</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="130">When you start edit mode, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="130">Vendor invoices that failed to import details</strong> page for the invoice that has issues will open. If there are issues with an invoice that has an attachment, the attachment won't be displayed. The attachment must be re-attached to the invoice.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="132">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="132">Vendor invoices that failed to import details</strong> page lets you create a pending invoice. After you’ve fixed the issues on an invoice as part of processing an exception, select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="132">Create pending invoice</strong> button to create the pending invoice. The pending invoice will be created in the background.</p>
+<h3 id="shared-service-vs-organization-based-exception-processing" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="134">Shared service vs. organization-based exception processing</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="136">The exceptions list page supports the standard security constructs that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="136">Data management</strong> workspace supports for the processing of staging records. The invoice import job can be secured in the following ways:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="138">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="138">By user role</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="139">By user</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="140">By legal entity</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="142"><img src="media/vendor_invoice_automation_04.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="142" alt="Import job that is secured by user role and legal entity."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="144">If security is configured for the invoice import job, the exceptions list page honors those settings. Users will be able to see only the invoice exception records that this setup allows them to see.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="146">For example, Contoso has decided to process invoice exceptions by legal entity. Therefore, security is configured on the invoice import job in such a way that a user in legal entity A can see only invoice exceptions in legal entity A, whereas a user in legal entity B can see only invoice exceptions in legal entity B. This setup enables segregation of duties for the management of invoice exceptions.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="148">Contoso could also decide not to enforce any security, so that the same users can process invoice exceptions for all legal entities. This setup enables a shared services scenario for the management of invoice exceptions.</p>
+<h2 id="side-by-side-attachment-viewer" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="150">Side-by-side attachment viewer</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="152">To help you easily view the attachments for vendor invoices, the following pages that are used in the invoicing process now provide an attachment viewer:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="154">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="154"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="154">Exception handling</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="155"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="155">Pending vendor invoices</strong> page (also available in the invoice review process)</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="156"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="156">Invoice journal</strong> inquiry page (for posted invoices)</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="158">Here is the main functionality that the attachment viewer provides:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="160">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="160">View all attachment types that Document management supports (files, images, URLs, and notes).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="161">View multi-page TIFF files.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="162">Perform the following actions on image files:
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="163">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="163">Highlight parts of the image.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="164">Block parts of the image.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="165">Add annotations to the image.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="166">Zoom in and out on the image.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="167">Pan the image.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="168">Undo and redo actions.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="169">Fit the image to size.</li>
+</ul>
+</li>
+</ul>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="171">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="172">These actions are available only for image files (JPEG, TIFF, PNG, and so on). Any changes that you make to an image by using these actions are saved to the image file. Currently, the attachment viewer doesn’t include versioning or auditing capabilities.</p>
+</div>
+<h3 id="default-attachment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="174">Default attachment</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="176">If a vendor invoice has more than one attachment, you can set one of the documents as the default attachment on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="176">Attachments</strong> page. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="176">Is default attachment</strong> option is a new option that was added as part of this feature. This option is also exposed in the Vendor invoice document attachment data entity. Therefore, the default attachment can be set through integrations.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="178">Only one document can be set as the default attachment. After you set a document as the default attachment, it’s automatically shown in the attachment viewer when the invoice is opened. If you don’t set any document as the default attachment, the viewer doesn’t automatically show any attachment when the invoice is opened.</p>
+<h3 id="showhide-invoice-attachments" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="180">Show/hide invoice attachments</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="182">A new button that is available on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="182">Exception processing</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="182">Pending invoice</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="182">Invoice journal</strong> inquiry pages lets you show or hide the attachment viewer.</p>
+<h2 id="security" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="184">Security</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="186">The following actions in the attachment viewer are controlled via role-based security:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="188">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="188">Highlighting</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="189">Block</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="190">Annotation</li>
+</ul>
+<h3 id="pending-vendor-invoices-page" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="192">Pending vendor invoices page</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="194">The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="196">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="196"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="196">Maintain vendor invoice image</strong> – This privilege provides read/write access.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="197"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="197">View vendor invoice image</strong> – This privilege provides read-only access.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="199">The following duties provide read-only access or read/write access to the attachment viewer for those actions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="201">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="201"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="201">Maintain vendor invoices</strong> – The Maintain vendor invoice image privilege is assigned to this duty.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="202"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="202">Inquire into vendor invoice status</strong> – The View vendor invoice image privilege is assigned to this duty.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="204">The following roles provide read-only access or read/write access to the attachment viewer for those actions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="206">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="206"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="206">Accounts payable clerk</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="206">Accounts payable manager</strong> – The Maintain vendor invoices duty is assigned to these roles.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="207"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="207">Accounts payable clerk</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="207">Accounts payable manager</strong>, <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="207">Accounts payable centralized payments clerk</strong>, and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="207">Accounts payable payments clerk</strong> – The Inquire into vendor invoice status duty is assigned to these roles.</li>
+</ul>
+<h3 id="vendor-invoice-attachment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="209">Vendor invoice attachment</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="211">The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions.</p>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="213">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="214">Out of the box, the roles that are mentioned in this section provide read-only access to the invoice images in the attachment viewer. If a role must also have write access to the images, you can grant write access to that role by using the privilege and duty that are described here.</p>
+</div>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="216">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="216"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="216">Maintain vendor invoice header entity image</strong> – This privilege provides read/write access to the invoice images in the attachment viewer.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="217"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="217">View vendor invoice header entity image</strong> – This privilege provides read-only view to the invoice image in the attachment viewer.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="219">The following duties provide read-only access to the attachment viewer for those actions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="221">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="221"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="221">Maintain vendor invoices</strong> – The Maintain vendor invoice header entity image privilege is assigned to this duty.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="223">The following roles provide read-only access to the attachment viewer for those actions:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="225">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="225"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="225">Accounts payable clerk</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="225">Accounts payable manager</strong> – The Maintain vendor invoices duty is assigned to these roles.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-payable/vendor-invoice-automation.md" sourcestartlinenumber="227">By default, if the user role provides edit rights on any page, the user will also have edit rights on the attachments viewer for the highlighting, block, and annotation actions. However, if there are scenarios where a specific role should have edit rights on the page but not on the attachment viewer, the appropriate privileges from the preceding list can be used to satisfy the use case.</p>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

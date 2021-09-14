@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Audit file (XML Auditfile Financieel, XAF) | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Audit file (XML Auditfile Financieel, XAF) | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="audit-file-xml-auditfile-financieel-xaf" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="26">Audit file (XML Auditfile Financieel, XAF)</h1>
+
+
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="30">This functionality is available for legal entities whose primary address is in the Netherlands.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="32">This topic explains how to import Electronic reporting (ER) configurations for the Audit file and then generate the Audit file for legal entities in the Netherlands.</p>
+<h2 id="import-and-set-up-er-configurations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="34">Import and set up ER configurations</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="36">To prepare Microsoft Dynamics 365 Finance to generate the Audit file, you must import the following ER configurations.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="38">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="38">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="38">Number</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="38">ER configuration name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="38">Type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="38">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="40">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="40">1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="40">Audit file model</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="40">Model</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="40">A model for the Audit file for Netherlands.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="41">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="41">2</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="41">Audit file (NL)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="41">Format (exporting)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="41">ER format for XML Auditfile Financieel, XAF.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="generate-the-audit-file" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="43">Generate the Audit file</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="45">The steps in this procedure walk you through using the Audit file.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="47">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="47">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="47">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="47">Periodic tasks</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="47">Audit file</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="48">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="48">From date</strong> field, enter a date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="49">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="49">To date</strong> field, enter a date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="50">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="50">Format mapping</strong> field, enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="50">Audit file (NL)</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="51">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-nl-audit-file.md" sourcestartlinenumber="51">OK</strong>.</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
