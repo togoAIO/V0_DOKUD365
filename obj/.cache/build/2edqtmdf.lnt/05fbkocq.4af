@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Add financial dimensions to the CFO workspace | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Add financial dimensions to the CFO workspace | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="add-financial-dimensions-to-the-cfo-workspace" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="30">Add financial dimensions to the CFO workspace</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="34">This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports. The CFO workspace has an <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="34">Overview</strong> tab and a <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="34">Financial</strong> tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure. There is a relation between those two measures and the DimensionCombinationEntity entity. Therefore, you can select dimensions.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="36">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="36"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="36">In Finance, on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="36">Entity Store</strong> page, update the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="36">LedgerActivityMeasure</strong> and the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="36">BudgetActivityMeasure</strong> measures.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="37"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="37">In Microsoft Visual Studio, open Application Explorer, and search for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="37">LedgerCFO</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="38"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="38">Under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="38">Resources</strong>, open <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="38">LedgerCFOWorkspacePBIX</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="39"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="39">When the resource opens in Microsoft Power BI desktop, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="39">Get Data</strong>, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="39">SQL Server database</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="39">Connect</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="40"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="40">Enter the server name, and enter <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="40">AxDW</strong> as the database. Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="40">DirectQuery</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="40">OK</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="41"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="41">Search for and select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="41">LedgerActivityMeasure_DimensionCombination</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="41">Load</strong>.</p>
+<div class="TIP" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="43">
+<h5>Tip</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="44">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="44">Fields</strong> list, rename the table <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="44">Financial dimensions</strong>, so that it's easy to identify.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="46"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="46">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="46">Manage Relationships</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="46">New</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="47"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="47">In the first field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="47">General Ledger Activities</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="47">LedgerDimension</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="48"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="48">In the second field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="48">LedgerActivityMeasure_DimensionCombination</strong> (or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="48">Financial dimensions</strong> if you renamed the table). Select the  <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="48">DimensionCombinationRECID</strong> header.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="49"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="49">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="49">Cardinality</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="49">Many to One</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="50"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="50">Change the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="50">Cross filter direction</strong> value to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="50">Single</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="51"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="51">Select both <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="51">Make this relationship active</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="51">Assume referential integrity</strong>, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="51">OK</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="51">Close</strong>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="53"><a href="media/Create-relationship.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="53"><img src="media/Create-relationship.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="53" alt="Create a relationship."></a></p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="55"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="55">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="55">Fields</strong> list, you should see the table and the available financial dimensions. Drag the financial dimensions that you want to the report-level filters.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="56"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="56">Save your changes.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="57"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="57">In the Application Object Tree (AOT), right-click your project, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="57">Synchronize</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="58"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="58">Build your project, and then open the application to view the results.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="60"><a href="media/workspace.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="60"><img src="media/workspace.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md" sourcestartlinenumber="60" alt="Completed workspace."></a></p>
+</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/general-ledger/CFO-workspace.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

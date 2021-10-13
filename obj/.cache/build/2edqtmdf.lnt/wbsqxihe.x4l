@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Migrate Segmented Entry controls | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Migrate Segmented Entry controls | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="migrate-segmented-entry-controls" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="30">Migrate Segmented Entry controls</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="34">This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).</p>
+<h2 id="simple-migration-scenario--smaserviceordertable-form" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="36">Simple migration scenario – SMAServiceOrderTable form</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="38"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="38">Search for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="38">SMAServiceOrderTable</strong> form in Application Explorer.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="39"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="39">Add the form to the current project.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="40"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="40">Open the form in the form design view and the code editor view.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="41"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="41">In the form design view, find the Segmented Entry control (SEC), either by manually walking the control tree or by searching for “SegmentedEntry” in the search bar below the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="41">File</strong> tab.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="42"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="42">Select the SEC, and verify the following information:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="43">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="43">The type for the control, as specified in parenthesis next to the control, is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="43">SegmentedEntryControl</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="44">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="44">Controller class</strong> property is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="44">DimensionDynamicAccountController</strong>. This property indicates the type of controller that this instance of the SEC will use. The type of controller, in turn, determines the behavior of the control.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="46"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="46">Switch to the code editor view, and search for all occurrences of “TODO: (Code Upgrade) [Segmented entry control]” in the form source code.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="47"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="47">In the search results, ignore the first result, which points to the controller variable declaration. You must fix this TODO last, after you've removed all references to the controller variable.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="48"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="48">Go through each of the remaining TODO comments, as described in the following subsections.</p>
+</li>
+</ol>
+<h3 id="ledgerdimension-data-field" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="50">LedgerDimension data field</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="52">(<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="52">Form</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="52">Data sources</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="52">SMAServiceOrderLine</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="52">Fields</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="52">LedgerDimension</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="52">Methods</strong>)</p>
+<h5 id="dynamics-ax-2012" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="54">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="56">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    ExpenseCost_LedgerDimension.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="64">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="66">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="66">jumpRef()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h3 id="expensecost_ledgerdimension-control" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="68">ExpenseCost_LedgerDimension control</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="70">(Search for &quot;ExpenseCost_LedgerDimension&quot; in the search bar below the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="70">Form</strong> tab.)</p>
+<h4 id="step-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="72">Step 1</h4>
+<h5 id="dynamics-ax-2012-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="74">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="76">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    ExpenseCost_LedgerDimension.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="84">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="86">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="86">jumpRef()</strong> method on the control and doesn't performing any additional processing, you can delete it.</p>
+<h4 id="step-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="88">Step 2</h4>
+<h5 id="dynamics-ax-2012-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="90">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="92">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimDynamicAccountController.loadSegments();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="102">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="104">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="104">loadSegments()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h4 id="step-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="106">Step 3</h4>
+<h5 id="dynamics-ax-2012-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="108">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="110">/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    switch (smaServiceOrderLine.OffsetAccountTypeExpense)
+    {
+        case LedgerJournalACType::Bank:
+            BankAccountTable::lookupBankAccount(this);
+            break;
+        case LedgerJournalACType::Cust:
+            CustTable::lookupCustomer(this);
+            break;
+        case LedgerJournalACType::FixedAssets:
+            AssetTable::lookupAccountNum(this);
+            break;
+        case LedgerJournalACType::Project:
+            ProjTable::lookupProjId(this, smaServiceOrderLine);
+            break;
+        case LedgerJournalACType::Vend:
+            VendTable::lookupVendor(this);
+            break;
+        default:
+            super();
+            break;
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="138">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="140">This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="140">checkUseCustomLookup</strong> method. Here is an example.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="142">public boolean checkUseCustomLookup(int _accountTypeEnumValue, int _secondaryAccountTypeEnumValue)
+{
+    boolean ret;
+    switch(_accountTypeEnumValue)
+    {
+        case LedgerJournalACType::Bank:
+        case LedgerJournalACType::Cust:
+        case LedgerJournalACType::FixedAssets:
+        case LedgerJournalACType::Project:
+        case LedgerJournalACType::Vend:
+            ret = true;
+            break;
+        default:
+            ret = false;
+    }
+    return ret;
+}
+</code></pre>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="162">Additionally, make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="162">closeSelectRecord</strong> method on the custom lookup form is overridden. For an example, see the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="162">CustTableLookup</strong> form.</p>
+<h4 id="step-4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="164">Step 4</h4>
+<h5 id="dynamics-ax-2012-4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="166">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="168">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimDynamicAccountController.segmentValueChanged(_e);
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="178">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="180">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="180">segmentValueChanged()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h4 id="step-5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="182">Step 5</h4>
+<h5 id="dynamics-ax-2012-5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="184">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="186">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimDynamicAccountController.validate() &amp;&amp; isValid;
+    return isValid;
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="198">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="200">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="200">validate()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h3 id="controller-variable-declarations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="202">Controller variable declarations</h3>
+<h5 id="dynamics-ax-2012-6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="204">Dynamics AX 2012</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="206">Finally, go back to the first TODO, for the controller variable declaration.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="208">/* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+/* 'dimDynamicAccountController' controller object is used with 'ExpenseCost_LedgerDimension' segmented entry controls.*/
+DimensionDynamicAccountController dimDynamicAccountController;
+</code></pre>
+<h5 id="dynamics-ax-for-operations-6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="214">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="216">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="216">dimDynamicAccountController</strong> variable is no longer used on the form. Therefore, you can now delete it.</p>
+<h2 id="complex-migration-scenario--ledgerjournaltransdaily-form" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="218">Complex migration scenario – LedgerJournalTransDaily form</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="219">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="219"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="219">Search for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="219">LedgerJournalTransDaily</strong> form in Application Explorer.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="220"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="220">Add the form to the current project.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="221"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="221">Open the form in the form design view and the code editor view.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="222"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="222">In the form design view, find the SEC, either by manually walking the control tree or by searching for “SegmentedEntry” in the search bar below the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="222">File</strong> tab.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="223"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="223">Select the SEC, and verify the following information:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="224">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="224">The type for the control, as specified in parenthesis next to the control, is <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="224">SegmentedEntryControl</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="225">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="225">Controller class</strong> property is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="225">DimensionDynamicAccountController</strong>. This property indicates the type of controller that this instance of the SEC will use. The type of controller, in turn, determines the behavior of the control.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="227"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="227">Switch to the code editor view, and search for all occurrences of “TODO: (Code Upgrade) [Segmented entry control]” in the form source code.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="228"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="228">In the search results, the first three results are for the controller variable declarations. Look at the comments that accompany the TODOs, and make a note of the mapping that shows which SEC instance uses which controller instance. You will need this mapping when you replace method calls on the controller with method calls on the control. Here is what the controller-to-control mapping looks like:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="229">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="229"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="229">dimAccountController</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="230">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="230">LedgerJournalTrans_AccountNum</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="231">LedgerJournalTrans_AccountNum1</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="232">Group4_AccountNum</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="234"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="234">dimOffsetAccountController</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="235">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="235">GridOffsetAccount</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="236">LedgerJournalTrans_OffsetAccount1</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="237">Group4_OffsetAccount</li>
+</ol>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="239"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="239">dimPaymentFeeAccountController</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="240">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="240">CustPaymJournalFee_CustAccount</li>
+</ol>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="242">You will fix these three TODO comments at the end, after you've removed all references to the controller variables.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="243"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="243">Go through each of the remaining TODO comments, as described in the following subsections.</p>
+</li>
+</ol>
+<h3 id="ledgerdimension-data-field-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="245">LedgerDimension data field</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="247">(<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="247">Form</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="247">Data sources</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="247">LedgerJournalTrans</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="247">Fields</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="247">LedgerDimension</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="247">Methods</strong>)</p>
+<h5 id="dynamics-ax-2012-7" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="249">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="251">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+// &lt;/GEEPL&gt;
+public void jumpRef()
+{
+    LedgerJournalTrans_AccountNum.jumpRef();
+    LedgerJournalTrans_AccountNum1.jumpRef();
+    Group4_AccountNum.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-7" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="262">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="264">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="264">jumpRef()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h3 id="offsetledgerdimension-data-field" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="266">OffsetLedgerDimension data field</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="268">(<strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="268">Form</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="268">Data sources</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="268">LedgerJournalTrans</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="268">Fields</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="268">OffsetLedgerDimension</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="268">Methods</strong>)</p>
+<h5 id="dynamics-ax-2012-8" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="270">Dynamics AX 2012</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="272">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="272">OffsetLedgerDimension</strong> field’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="272">jumpRef()</strong> method:</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="274">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    GridOffsetAccount.jumpRef();
+    LedgerJournalTrans_OffsetAccount1.jumpRef();
+    Group4_OffsetAccount.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-8" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="284">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="286">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="286">jumpRef()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h3 id="ledgerjournaltrans_accountnum-control" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="288">LedgerJournalTrans_AccountNum control</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="290">(Search for &quot;LedgerJournalTrans_AccountNum&quot; in the search bar below the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="290">Form</strong> tab.)</p>
+<h4 id="step-1-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="292">Step 1</h4>
+<h5 id="dynamics-ax-2012-9" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="294">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="296">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    LedgerJournalTrans_AccountNum.jumpRef();
+    LedgerJournalTrans_AccountNum1.jumpRef();
+    Group4_AccountNum.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-9" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="306">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="308">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="308">jumpRef()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h4 id="step-2-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="310">Step 2</h4>
+<h5 id="dynamics-ax-2012-10" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="312">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="314">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.loadSegments();
+    currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-10" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="338">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="340">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="340"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="340">Update the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="340">initLedger()</strong> method.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="342">void initLedger()
+{
+    TransDate   dateFrom   = dateNull();
+    TransDate   dateTo     = systemDateGet();
+    if (element.args().dataset() == tableNum(LedgerJournalTable))
+    {
+        ledgerJournalTable = element.args().record();
+        journalNum         = ledgerJournalTable.JournalNum;
+        LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+        LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
+        Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+. . .
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="357"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="357">Update the code in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="357">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="357">active()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="357">Note:</strong> The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="357">getValue()</strong> method should be called only if the account type is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="357">Ledger</strong>. Otherwise, a call to this method will cause an invalid function call.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="359">. . .
+LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
+Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+if (ledgerJournalTrans.AccountType == LedgerJournalACType::Ledger)
+{
+    currentMainAccountId = LedgerJournalTrans_AccountNum.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+else
+{
+    currentMainAccountId = 0;
+}
+return ret;
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="381"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="381">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="381">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="381">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="381">CurrencyCode</strong> field.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="383">LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="389"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="389">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="389">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="389">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="389">Company</strong> field.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="391">LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="397"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="397">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="397">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="397">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="397">TransDate</strong> field.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="399">LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
+Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="405"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="405">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="405">loadSegments()</strong> method.</p>
+</li>
+</ol>
+<h4 id="step-3-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="407">Step 3</h4>
+<h5 id="dynamics-ax-2012-11" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="409">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="411">/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    // Polish sale disposal may require to filter asset that are not
+    // marked for sale. lookupAccountNum method needs the ledgerJournalTrans_Asset.TransType
+    // value to filter appropriately the assets. Thus, ledgerJournalTrans_Asset is
+    // passed to accountNumLookup metho jumpRef d.
+    // &lt;GEEPL&gt;
+    if (!ledgerJournalEngine.accountNumLookup(ledgerJournalTrans_AccountNum,
+        ledgerJournalTrans,
+        ledgerJournalTrans.OffsetAccountType,
+        ledgerJournalTrans.parmOffsetAccount(),
+        ledgerJournalTrans_Asset))
+    {
+        super();
+    }
+    // &lt;/GEEPL&gt;
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-11" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="432">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="434">This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="434">checkUseCustomLookup</strong> method. Additionally, make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="434">closeSelectRecord</strong> method on the custom lookup form is overridden. For an example, see the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="434">CustTableLookup</strong> form.</p>
+<h4 id="step-4-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="436">Step 4</h4>
+<h5 id="dynamics-ax-2012-12" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="438">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="440">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    // &lt;GIN&gt;
+    if (TaxWithholdParameters_IN::checkTaxParameters()
+        &amp;&amp; ledgerJournalTrans.TaxWithholdCode_IN != '')
+    {
+        if (Box::okCancel(&quot;@GLS222698&quot;,
+            DialogButton::Cancel) == DialogButton::Cancel)
+        {
+            return;
+        }
+    }
+    // &lt;/GIN&gt;
+    super(_e);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.segmentValueChanged(_e);
+    currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-12" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="463">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="465">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="465"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="465">Override the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="465">onSegmentChanged()</strong> method on the control, and add the following code to it.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="467">/// &lt;summary&gt;
+/// Event handler for the segment changed event.
+/// &lt;/summary&gt;
+/// &lt;param name = &quot;_segment&quot;&gt;The segment that has been changed.&lt;/param&gt;
+public void onSegmentChanged(DimensionControlSegment _segment)
+{
+    super(_segment);
+
+    // &lt;GIN&gt;
+    if (TaxWithholdParameters_IN::checkTaxParameters()
+        &amp;&amp; ledgerJournalTrans.TaxWithholdCode_IN != '')
+    {
+        if (Box::okCancel(&quot;@GLS222698&quot;,
+            DialogButton::Cancel) == DialogButton::Cancel)
+        {
+            return;
+        }
+    }
+
+    // &lt;/GIN&gt;
+    if (_segment.parmName() == mainAccountDimAttrName)
+    {
+        previousMainAccountId = currentMainAccountId;
+    }
+    currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(LedgerJournalTrans_AccountNum, currentMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="496"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="496">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="496">segmentValueChanged()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="496">Note:</strong> The preceding code for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="496">onSegmentChanged()</strong> method will not compile, because the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="496">onPrimaryAccountSegmentChanged()</strong> method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.</p>
+</li>
+</ol>
+<h4 id="step-5-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="498">Step 5</h4>
+<h5 id="dynamics-ax-2012-13" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="500">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="502">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
+
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimAccountController.validate() &amp;&amp; isValid;
+    return isValid;
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-13" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="515">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="517">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="517">validate()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h3 id="gridoffsetaccount-control" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="519">GridOffsetAccount control</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="521">(Search for &quot;GridOffsetAccount&quot; in the search bar below the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="521">Form</strong> tab.)</p>
+<h4 id="step-1-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="523">Step 1</h4>
+<h5 id="dynamics-ax-2012-14" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="525">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="527">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+void gotFocus()
+{
+    super();
+    if (ledgerJournalTable.FixedOffsetAccount)
+    {
+        gridOffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+    }
+    else if (!gridOffsetAccount.allowEdit())
+    {
+        gridOffsetAccount.allowEdit(true);
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-14" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="543">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="545">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="545"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="545">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="545">initLedger()</strong> method, after the code that updates the ledgerJournalTable buffer.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="547">. . .
+if (element.args().dataset() == tableNum(LedgerJournalTable))
+{
+    ledgerJournalTable = element.args().record();
+    journalNum         = ledgerJournalTable.JournalNum;
+    LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    if (ledgerJournalTable.FixedOffsetAccount)
+    {               
+        gridOffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+    }
+    else if (!gridOffsetAccount.allowEdit())
+    {
+        gridOffsetAccount.allowEdit(true);
+    }
+. . .
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="567"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="567">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="567">gotFocus()</strong> method.</p>
+</li>
+</ol>
+<h4 id="step-2-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="569">Step 2</h4>
+<h5 id="dynamics-ax-2012-15" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="571">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="573">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    GridOffsetAccount.jumpRef();
+    LedgerJournalTrans_OffsetAccount1.jumpRef();
+    Group4_OffsetAccount.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-15" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="583">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="585">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="585">jumpRef()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h4 id="step-3-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="587">Step 3</h4>
+<h5 id="dynamics-ax-2012-16" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="589">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="591">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.loadSegments();
+    currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+
+    // Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-16" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="623">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="625">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="625"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="625">Update the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="625">initLedger()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="625">Note:</strong> The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="625">getValue()</strong> method should be called only if the account type is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="625">Ledger</strong>. Otherwise, a call to this method will cause an invalid function call.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="627">void initLedger()
+{
+    TransDate   dateFrom   = dateNull();
+    TransDate   dateTo     = systemDateGet();
+    if (element.args().dataset() == tableNum(LedgerJournalTable))
+    {
+        ledgerJournalTable = element.args().record();
+        journalNum         = ledgerJournalTable.JournalNum;
+        GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+        LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
+        Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+        {
+            currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+        }
+        else
+        {
+            currentOffsetMainAccountId = 0;
+        }
+
+        // Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+        {
+            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        }
+. . .
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="656"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="656">Update the code in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="656">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="656">active()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="656">Note:</strong> The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="656">getValue()</strong> method should be called only if the account type is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="656">Ledger</strong>. Otherwise, a call to this method will cause an invalid function call.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="658">. . .
+GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
+Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    currentOffsetMainAccountId = GridOffsetAccount.getValue( DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+else
+{
+    currentOffsetMainAccountId = 0;
+}
+
+// Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{ 
+    GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+}
+return ret;
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="686"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="686">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="686">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="686">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="686">CurrencyCode</strong> field.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="688">GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="694"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="694">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="694">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="694">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="694">OffsetCompany</strong> field.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="696">GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="702"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="702">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="702">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="702">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="702">TransDate</strong> field.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="704">GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
+Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="710"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="710">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="710">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="710">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="710">OffsetAccountType</strong> field. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="710">Note:</strong> The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="710">getValue()</strong> method should be called only if the account type is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="710">Ledger</strong>. Otherwise, a call to this method cause an invalid function call.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="712">if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    currentOffsetMainAccountId = GridOffsetAccount.getValue( DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+else
+{
+    currentOffsetMainAccountId = 0;
+}
+
+// Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="729"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="729">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="729">loadSegments()</strong> method.</p>
+</li>
+</ol>
+<h4 id="step-4-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="731">Step 4</h4>
+<h5 id="dynamics-ax-2012-17" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="733">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="735">/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    // Find the current segment index value
+    int currentSegmentIndex = dimOffsetAccountController.parmControl().currentSegmentIndex();
+    if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger &amp;&amp;
+        dimOffsetAccountController.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) ||
+        !ledgerJournalEngine.offsetAccountNumLookUp(gridOffsetAccount, ledgerJournalTrans))
+    {
+        super();
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-17" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="750">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="752">This method implements a custom lookup for the control. Therefore, keep the method, but replace the controller with the control instance. In this case, because the method is overridden on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="752">GridOffsetAccount</strong> control, even though <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="752">dimOffsetAccountController</strong> was used for three different SEC instances (based on the mapping that is shown in the TODOs on controller variable declarations), we must replace the controller with only one SEC instance. Therefore, the code will look like this.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="754">public void lookup()
+{
+    // Find the current segment index value
+    int currentSegmentIndex = GridOffsetAccount.getCurrentSegmentIndex();
+    if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger &amp;&amp; GridOffsetAccount.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) || !ledgerJournalEngine.offsetAccountNumLookUp(gridOffsetAccount, ledgerJournalTrans))
+    {
+        super();
+    }
+}
+</code></pre>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="766">To hook up custom lookups, you must override the SEC’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="766">checkUseCustomLookup</strong> method. Additionally, make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="766">closeSelectRecord</strong> method on the custom lookup form is overridden. For an example, see the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="766">CustTableLookup</strong> form.</p>
+<h4 id="step-5-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="768">Step 5</h4>
+<h5 id="dynamics-ax-2012-18" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="770">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="772">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.segmentValueChanged(_e);
+    currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-18" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="783">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="785">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="785"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="785">Override the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="785">onSegmentChanged()</strong> method on the control, and add the following code to it.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="787">/// &lt;summary&gt;
+/// Event handler for the segment changed event.
+/// &lt;/summary&gt;
+/// &lt;param name = &quot;_segment&quot;&gt;The segment that was modified.&lt;/param&gt;
+public void onSegmentChanged(DimensionControlSegment _segment)
+{
+    super(_segment);
+    currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(
+    GridOffsetAccount, currentOffsetMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="800"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="800">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="800">segmentValueChanged()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="800">Note:</strong> The preceding code for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="800">onSegmentChanged()</strong> method will not compile, because the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="800">onOffsetAccountSegmentChanged()</strong> method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.</p>
+</li>
+</ol>
+<h4 id="step-6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="802">Step 6</h4>
+<h5 id="dynamics-ax-2012-19" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="804">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="806">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
+
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimOffsetAccountController.validate() &amp;&amp; isValid;
+    return isValid;
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-19" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="819">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="821">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="821">validate()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h3 id="ledgerjournaltrans_accountnum1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="823">LedgerJournalTrans_AccountNum1</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="825">(Search for &quot;LedgerJournalTrans_AccountNum1&quot; in the search bar below the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="825">Form</strong> tab.)</p>
+<h4 id="step-1-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="827">Step 1</h4>
+<h5 id="dynamics-ax-2012-20" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="829">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="831">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    LedgerJournalTrans_AccountNum.jumpRef();
+    LedgerJournalTrans_AccountNum1.jumpRef();
+    Group4_AccountNum.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-20" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="841">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="843">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="843">jumpRef()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h4 id="step-2-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="845">Step 2</h4>
+<h5 id="dynamics-ax-2012-21" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="847">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="849">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.loadSegments();
+    currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-21" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="873">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="875">The steps for migrating this method are the same as the steps for migrating the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="875">LedgerJournalTrans_AccountNum.loadSegments()</strong> method. Therefore, no additional steps are required. Delete this method.</p>
+<h4 id="step-3-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="877">Step 3</h4>
+<h5 id="dynamics-ax-2012-22" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="879">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="881">/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    if (!ledgerJournalEngine.accountNumLookup(ledgerJournalTrans_AccountNum1, ledgerJournalTrans))
+    {
+        super();
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-22" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="892">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="894">This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="894">checkUseCustomLookup</strong> method. Additionally, make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="894">closeSelectRecord</strong> method on the custom lookup is overridden. For an example, see the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="894">CustTableLookup</strong> form.</p>
+<h4 id="step-4-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="896">Step 4</h4>
+<h5 id="dynamics-ax-2012-23" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="898">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="900">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.segmentValueChanged(_e);
+    currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-23" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="911">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="913">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="913"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="913">Override the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="913">onSegmentChanged()</strong> method on the control, and add the following code to it.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="915">/// &lt;summary&gt;
+/// The event handler when a segment is modified.
+/// &lt;/summary&gt;
+/// &lt;param name = &quot;_segment&quot;&gt;The segment that was modified.&lt;/param&gt;
+public void onSegmentChanged(DimensionControlSegment _segment)
+{
+    super(_segment);
+    currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(
+    LedgerJournalTrans_AccountNum1, currentMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="928"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="928">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="928">segmentValueChanged()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="928">Note:</strong> The preceding code for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="928">onSegmentChanged()</strong> method will not compile, because the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="928">onPrimaryAccountSegmentChanged()</strong> method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all of those calls. Alternatively, you can add a new method that follows this guidance.</p>
+</li>
+</ol>
+<h4 id="step-5-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="930">Step 5</h4>
+<h5 id="dynamics-ax-2012-24" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="932">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="934">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimAccountController.validate() &amp;&amp; isValid;
+    return isValid;
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-24" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="946">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="948">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="948">validate()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h3 id="ledgerjournaltrans_offsetaccount1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="950">LedgerJournalTrans_OffsetAccount1</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="952">(Search for &quot;LedgerJournalTrans_OffsetAccount1&quot; in the search bar below the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="952">Form</strong> tab.)</p>
+<h4 id="step-1-4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="954">Step 1</h4>
+<h5 id="dynamics-ax-2012-25" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="956">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="958">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    GridOffsetAccount.jumpRef();
+    LedgerJournalTrans_OffsetAccount1.jumpRef();
+    Group4_OffsetAccount.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-25" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="968">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="970">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="970">jumpRef()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h4 id="step-2-4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="972">Step 2</h4>
+<h5 id="dynamics-ax-2012-26" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="974">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="976">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.loadSegments();
+    currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    // Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-26" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1007">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1009">The migration steps for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1009">GridOffsetAccount.loadSegments()</strong> method already made most of the changes that are required for this method. However, you must still make the following changes.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1011">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1011"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1011">Add a line of code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1011">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1011">active</strong> method.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1013">if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    currentOffsetMainAccountId = GridOffsetAccount.getValue(
+    DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+else
+{
+    currentOffsetMainAccountId = 0;
+}
+
+// Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1032"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1032">Make the same change in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1032">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1032">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1032">OffsetAccountType</strong> field.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1034">if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+else
+{
+    currentOffsetMainAccountId = 0;
+}
+
+// Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1052"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1052">Make the same change in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1052">initLedger()</strong> method.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1054">if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    currentOffsetMainAccountId = GridOffsetAccount.getValue( DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+else
+{
+    currentOffsetMainAccountId = 0;
+}
+
+// Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1072"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1072">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1072">loadSegments()</strong> method.</p>
+</li>
+</ol>
+<h4 id="step-3-4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1074">Step 3</h4>
+<h5 id="dynamics-ax-2012-27" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1076">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1078">/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    // Find the current segment index value
+    int currentSegmentIndex = dimOffsetAccountController.parmControl().currentSegmentIndex();
+    if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger &amp;&amp;
+        dimOffsetAccountController.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) ||
+        !ledgerJournalEngine.offsetAccountNumLookUp(ledgerJournalTrans_OffsetAccount1, ledgerJournalTrans))
+    {
+        super();
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-27" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1093">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1095">This method implements a custom lookup for the control. Therefore, keep the method, but replace the controller with the control instance. In this case, because the method is overridden on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1095">LedgerJournalTrans_OffsetAccount1</strong> control, even though <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1095">dimOffsetAccountController</strong> was used for three different SEC instances (based on the mapping that is shown in the TODOs on controller variable declarations), we must replace the controller with only one SEC instance. Therefore, the code will look like this.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1097">public void lookup()
+{
+    // Find the current segment index value
+    int currentSegmentIndex = LedgerJournalTrans_OffsetAccount1.getCurrentSegmentIndex();
+    if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger &amp;&amp; LedgerJournalTrans_OffsetAccount1.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) || !ledgerJournalEngine.offsetAccountNumLookUp(ledgerJournalTrans_OffsetAccount1, ledgerJournalTrans))
+    {
+        super();
+    }
+}
+</code></pre>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1109">To hook up custom lookups, you must override the SEC’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1109">checkUseCustomLookup</strong> method. Additionally, make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1109">closeSelectRecord</strong> method on the custom lookup form is overridden. For an example, see the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1109">CustTableLookup</strong> form.</p>
+<h4 id="step-4-4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1111">Step 4</h4>
+<h5 id="dynamics-ax-2012-28" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1113">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1115">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.segmentValueChanged(_e);
+    currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-28" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1127">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1129">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1129"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1129">Override the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1129">onSegmentChanged()</strong> method on the control, and add the following code to it.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1131">/// &lt;summary&gt;
+/// The event handler when a segment is modified.
+/// &lt;/summary&gt;
+/// &lt;param name = &quot;_segment&quot;&gt;The segment that was modified.&lt;/param&gt;
+public void onSegmentChanged(DimensionControlSegment _segment)
+{
+    super(_segment);
+    currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(
+    LedgerJournalTrans_OffsetAccount1, currentOffsetMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1144"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1144">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1144">segmentValueChanged()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1144">Note:</strong> The preceding code for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1144">onSegmentChanged()</strong> method will not compile, because the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1144">onOffsetAccountSegmentChanged()</strong> method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.</p>
+</li>
+</ol>
+<h4 id="step-5-4" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1146">Step 5</h4>
+<h5 id="dynamics-ax-2012-29" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1148">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1150">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
+
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimOffsetAccountController.validate() &amp;&amp; isValid;
+    return isValid;
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-29" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1163">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1165">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1165">validate()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h3 id="custpaymjournalfee_custaccount" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1167">CustPaymJournalFee_CustAccount</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1169">(Search for &quot;CustPaymJournalFee_CustAccount&quot; in the search bar below the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1169">Form</strong> tab.)</p>
+<h4 id="step-1-5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1171">Step 1</h4>
+<h5 id="dynamics-ax-2012-30" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1173">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1175">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    CustPaymJournalFee_CustAccount.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-30" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1183">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1185">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1185">jumpRef()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h4 id="step-2-5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1187">Step 2</h4>
+<h5 id="dynamics-ax-2012-31" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1189">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1191">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    CustPaymJournalFee_CustAccount.parmJournalName(ledgerJournalTable.JournalName);
+    CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
+    CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimPaymentFeeAccountController.loadSegments();
+    currentPaymentFeeMainAccountId = dimPaymentFeeAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-31" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1206">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1208">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1208"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1208">Update the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1208">initLedger()</strong> method.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1210">ledgerJournalTable = element.args().record();
+journalNum = ledgerJournalTable.JournalNum;
+LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName); Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName); CustPaymJournalFee_CustAccount.parmJournalName(ledgerJournalTable.JournalName);
+. . .
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1218"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1218">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1218">CustVendPaymJournalFee</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1218">active()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1218">Note:</strong> The method doesn't exist, so you must override it.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1220">CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1224"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1224">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1224">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1224">CustVendPaymJournalFee</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1224">FeeCurrency</strong> field. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1224">Note:</strong> The method doesn't exist, so you must override it.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1226">CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1230"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1230">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1230">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1230">active()</strong> method.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1232">CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1236"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1236">Add the following code to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1236">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1236">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1236">TransDate</strong> field.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1238">CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1242"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1242">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1242">loadSegments()</strong> method.</p>
+</li>
+</ol>
+<h4 id="step-3-5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1244">Step 3</h4>
+<h5 id="dynamics-ax-2012-32" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1246">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1248">/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    if (custVendPaymJournalFee.Module == ModuleCustVend::Cust)
+    {
+        if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Cust)
+        {
+            CustTable::lookupCustomer(this, ledgerJournalTrans.Company);
+        }
+        else if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Ledger)
+        {
+            super();
+        }
+    }
+    else if (custVendPaymJournalFee.Module == ModuleCustVend::Vend)
+    {
+        if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Vend)
+        {
+            VendTable::lookupVendor(this, ledgerJournalTrans.Company);
+        }
+        else if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Ledger)
+        {
+            super();
+        }
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-32" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1277">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1279">This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1279">checkUseCustomLookup</strong> method. Here is an example.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1281">public boolean checkUseCustomLookup(int _accountTypeEnumValue, int _secondaryAccountTypeEnumValue)
+{
+    boolean ret;
+    switch(_accountTypeEnumValue)
+    {
+        case LedgerJournalACType::Bank:
+        case LedgerJournalACType::Cust:
+        case LedgerJournalACType::FixedAssets:
+        case LedgerJournalACType::Project:
+        case LedgerJournalACType::Vend:
+            ret = true;
+            break;
+        default:
+            ret = false;
+    }
+    return ret;
+}
+</code></pre>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1301">Additionally, make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1301">closeSelectRecord</strong> method on the custom lookup form is overridden. For an example, see the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1301">CustTableLookup</strong> form.</p>
+<h4 id="step-4-5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1303">Step 4</h4>
+<h5 id="dynamics-ax-2012-33" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1305">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1307">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimPaymentFeeAccountController.segmentValueChanged(_e);
+    currentPaymentFeeMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimPaymentFeeAccountController, currentPaymentFeeMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-33" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1319">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1321">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1321"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1321">Override the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1321">onSegmentChanged()</strong> method on the control, and add the following code to it.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1323">/// &lt;summary&gt;
+/// The event handler when a segment is modified.
+/// &lt;/summary&gt;
+/// &lt;param name = &quot;_segment&quot;&gt;The segment that was modified.&lt;/param&gt;
+public void onSegmentChanged(DimensionControlSegment _segment)
+{
+    super(_segment);
+    currentPaymentFeeMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(
+    CustPaymJournalFee_CustAccount, currentPaymentFeeMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1336"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1336">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1336">segmentValueChanged()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1336">Note:</strong> The preceding code for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1336">onSegmentChanged()</strong> method will not compile, because the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1336">onPrimaryAccountSegmentChanged()</strong> method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that can follow this guidance.</p>
+</li>
+</ol>
+<h4 id="step-5-5" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1338">Step 5</h4>
+<h5 id="dynamics-ax-2012-34" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1340">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1342">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
+
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimPaymentFeeAccountController.validate() &amp;&amp; isValid;
+    return isValid;
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-34" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1355">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1357">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1357">validate()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h3 id="group4_accountnum" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1359">Group4_AccountNum</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1361">(Search for &quot;Group4_AccountNum&quot; in the search bar below the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1361">Form</strong> tab.)</p>
+<h4 id="step-1-6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1363">Step 1</h4>
+<h5 id="dynamics-ax-2012-35" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1365">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1367">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    LedgerJournalTrans_AccountNum.jumpRef();
+    LedgerJournalTrans_AccountNum1.jumpRef();
+    Group4_AccountNum.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-35" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1377">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1379">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1379">jumpRef()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h4 id="step-2-6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1381">Step 2</h4>
+<h5 id="dynamics-ax-2012-36" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1383">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1385">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.loadSegments();
+    currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-36" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1409">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1411">The steps for migrating this method are the same as the steps for migrating the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1411">LedgerJournalTrans_AccountNum.loadSegments()</strong> method. Therefore, no additional steps are required. Delete this method.</p>
+<h4 id="step-3-6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1413">Step 3</h4>
+<h5 id="dynamics-ax-2012-37" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1415">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1417">/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    if (!ledgerJournalEngine.accountNumLookup(group4_AccountNum, ledgerJournalTrans))
+    {
+        super();
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-37" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1428">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1430">This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1430">checkUseCustomLookup</strong> method. Additionally, make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1430">closeSelectRecord</strong> method on the custom lookup form is overridden. For an example, see the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1430">CustTableLookup</strong> form.</p>
+<h4 id="step-4-6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1432">Step 4</h4>
+<h5 id="dynamics-ax-2012-38" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1434">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1436">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.segmentValueChanged(_e);
+    currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-38" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1448">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1450">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1450"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1450">Override the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1450">onSegmentChanged()</strong> method on the control, and add the following code to it.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1452">/// &lt;summary&gt;
+/// The event handler for the segment change event.
+/// &lt;/summary&gt;
+/// &lt;param name = &quot;_segment&quot;&gt;The segment that was modified.&lt;/param&gt;
+public void onSegmentChanged(DimensionControlSegment _segment)
+{
+    super(_segment);
+    if (_segment.parmName() == mainAccountDimAttrName)
+    {
+        previousMainAccountId = currentMainAccountId;
+    }
+    currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(Group4_AccountNum, currentMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1468"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1468">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1468">segmentValueChanged()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1468">Note:</strong> The preceding code for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1468">onSegmentChanged()</strong> method will not compile, because the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1468">onPrimaryAccountSegmentChanged()</strong> method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.</p>
+</li>
+</ol>
+<h4 id="step-5-6" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1470">Step 5</h4>
+<h5 id="dynamics-ax-2012-39" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1472">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1474">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
+
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimAccountController.validate() &amp;&amp; isValid;
+    return isValid;
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-39" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1487">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1489">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1489">validate()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h3 id="group4_offsetaccount" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1491">Group4_OffsetAccount</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1493">(Search for &quot;Group4_OffsetAccount&quot; in the search bar below the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1493">Form</strong> tab.)</p>
+<h4 id="step-1-7" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1495">Step 1</h4>
+<h5 id="dynamics-ax-2012-40" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1497">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1499">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+void gotFocus()
+{
+    super();
+    if (ledgerJournalTable.FixedOffsetAccount)
+    {
+        group4_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+    }
+    else if (!group4_OffsetAccount.allowEdit())
+    {
+        group4_OffsetAccount.allowEdit(true);
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-40" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1515">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1517">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1517"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1517">Update the code in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1517">initLedger()</strong> method, after the code that updates the ledgerJournalTable buffer.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1519">. . .
+if (ledgerJournalTable.FixedOffsetAccount)
+{
+    gridOffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger); group4_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+}
+else if (!gridOffsetAccount.allowEdit())
+{
+    gridOffsetAccount.allowEdit(true);
+    group4_OffsetAccount.allowEdit(true);
+}
+. . .
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1533"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1533">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1533">gotFocus()</strong> method.</p>
+</li>
+</ol>
+<h4 id="step-2-7" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1535">Step 2</h4>
+<h5 id="dynamics-ax-2012-41" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1537">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1539">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    GridOffsetAccount.jumpRef();
+    LedgerJournalTrans_OffsetAccount1.jumpRef();
+    Group4_OffsetAccount.jumpRef();
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-41" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1549">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1551">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1551">jumpRef()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h4 id="step-3-7" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1553">Step 3</h4>
+<h5 id="dynamics-ax-2012-42" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1555">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1557">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.loadSegments();
+    currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+
+    // Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-42" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1589">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1591">The migration steps for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1591">GridOffsetAccount.loadSegments()</strong> method already made most of the changes that are required for this method. However, you must still make the following changes.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1593">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1593"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1593">Update the code in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1593">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1593">active</strong> method.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1595">if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+else
+{
+    currentOffsetMainAccountId = 0;
+}
+
+// Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1614"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1614">Make the same change in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1614">modified()</strong> method of the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1614">LedgerJournalTrans</strong> data source’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1614">OffsetAccountType</strong> field.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1616">if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+else
+{
+    currentOffsetMainAccountId = 0;
+}
+// Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1634"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1634">Make the same change in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1634">initLedger()</strong> method.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1636">if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+else
+{
+    currentOffsetMainAccountId = 0;
+}
+// Lock the main account segment if &quot;Fixed offset account&quot; is selected in Journal Names
+if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+{
+    GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1654"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1654">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1654">loadSegments()</strong> method.</p>
+</li>
+</ol>
+<h4 id="step-4-7" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1656">Step 4</h4>
+<h5 id="dynamics-ax-2012-43" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1658">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1660">/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    if (!ledgerJournalEngine.offsetAccountNumLookUp(group4_OffsetAccount, ledgerJournalTrans))
+    {
+        super();
+    }
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-43" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1671">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1673">This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1673">checkUseCustomLookup</strong> method. Additionally, make sure that the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1673">closeSelectRecord</strong> method on the custom lookup form is overridden. For an example, see the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1673">CustTableLookup</strong> form.</p>
+<h4 id="step-5-7" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1675">Step 5</h4>
+<h5 id="dynamics-ax-2012-44" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1677">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1679">/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.segmentValueChanged(_e);
+    currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-44" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1691">Dynamics AX for Operations</h5>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1693">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1693"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1693">Override the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1693">onSegmentChanged()</strong> method on the control, and add the following code to it.</p>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1695">/// &lt;summary&gt;
+/// The event handler for the segment change event.
+/// &lt;/summary&gt;
+/// &lt;param name = &quot;_segment&quot;&gt;The segment that was modified.&lt;/param&gt;
+public void onSegmentChanged(DimensionControlSegment _segment)
+{
+    super(_segment);
+    currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(
+    Group4_OffsetAccount, currentOffsetMainAccountId, ledgerJournalTrans);
+}
+</code></pre>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1708"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1708">Delete the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1708">segmentValueChanged()</strong> method. <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1708">Note:</strong> The preceding code for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1708">onSegmentChanged()</strong> method will not compile, because the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1708">onOffsetAccountSegmentChanged()</strong> method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.</p>
+</li>
+</ol>
+<h4 id="step-6-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1710">Step 6</h4>
+<h5 id="dynamics-ax-2012-45" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1712">Dynamics AX 2012</h5>
+<pre><code class="lang-xpp" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1714">/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
+
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimOffsetAccountController.validate() &amp;&amp; isValid;
+    return isValid;
+}
+</code></pre>
+<h5 id="dynamics-ax-for-operations-45" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1727">Dynamics AX for Operations</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1729">Because this method only calls the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1729">validate()</strong> method on the control and doesn't perform any additional processing, you can delete it.</p>
+<h2 id="additional-resources" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1731">Additional resources</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1733"><a href="segmented-entry-control-dialog-support.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1733">Support for Segmented Entry controls on dialogs</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1735"><a href="segmented-entry-control-metadata-specification.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1735">Design-time metadata for Segmented Entry controls</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1737"><a href="segmented-entry-control-parm-method-specification.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1737">Parm methods for Segmented Entry controls</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1739"><a href="segmented-entry-control-migration-guidance.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md" sourcestartlinenumber="1739">Migration guidance for Segmented Entry controls</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/financial/segmented-entry-control-conversion.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Workflow type checklist | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Workflow type checklist | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="workflow-type-checklist" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="30">Workflow type checklist</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="34">This topic describes the steps that are required to create a new workflow type. Workflow types are used to create configurations for a workflow.</p>
+<h2 id="workflow-type-checklist-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="36">Workflow type checklist</h2>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="38">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="38">If an existing category isn't appropriate, create a new workflow category to use for the workflow type. For more information, see <a href="workflow-type-category.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="38">Create a workflow category</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="39">Create a query that accesses the document that the new workflow type is being created for. For more information, see <a href="workflow-type-query.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="39">Create a query for a workflow type</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="40">Create a workflow type in Application Explorer. Typically, you complete this step by using the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="40">Workflow</strong> wizard. For more information, see <a href="workflow-type-create-new.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="40">Create a new workflow type</a>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="42">We recommend that you use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="42">Workflow</strong> wizard to create a workflow type. The wizard performs the following tasks. In some cases, you must add more code for your workflow type. Links are provided so that you can see the details of the actions that the wizard performs and the additional steps that you must perform to complete your workflow type.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="44">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="44">Create a workflow document class, and then bind the query that is used for the workflow to the class. For more information, see <a href="workflow-type-document-create.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="44">Create a workflow document class</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="45">Bind the workflow document class to the workflow type. For more information, see <a href="workflow-type-associate-document.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="45">Associate a workflow document class with a workflow type</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="46">Create workflow event handlers for started, completed, configuration change, and canceled events, and then bind event handlers to the workflow type. For more information, see <a href="/dynamicsax-2012/developer/how-to-create-a-workflow-event-handler" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="46">Create a workflow event handler</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="47">Create a class for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="47">SubmitToWorkflowMenuItem</strong>. Optionally create a class for <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="47">CancelMenuItem</strong>. Bind the classes to the action menu items that you will create in the next step. For more information, see <a href="../../dev-itpro/dev-ref/xpp-classes-methods.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="47">Classes and methods</a>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="48">Create an action menu item for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="48">SubmitToWorkflowMenuItem</strong> workflow property. Optionally create an action menu item for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="48">CancelMenuItem</strong> property. Bind the actions to the workflow type. For more information, see <a href="workflow-type-create-new.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="48">Create a new workflow type</a>.</li>
+</ol>
+<h2 id="next-steps" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="50">Next steps</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="52">After you create a workflow type, you can add tasks, automated tasks, and approvals.</p>
+<h2 id="see-also" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="54">See also</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="56"><a href="configure-workflow-properties.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="56">Configure workflow properties</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="58"><a href="configure-manual-task-workflow.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="58">Configure manual tasks in a workflow</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="60"><a href="configure-automated-task-workflow.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="60">Configure automated tasks in a workflow</a></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="62"><a href="configure-approval-process-workflow.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md" sourcestartlinenumber="62">Configure approval processes in a workflow</a></p>
+[!include[footer-include](../../../includes/footer-banner.md)]</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/organization-administration/workflow-type-checklist.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

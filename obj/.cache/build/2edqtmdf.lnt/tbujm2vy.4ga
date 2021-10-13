@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Centralized payments for Accounts receivable | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Centralized payments for Accounts receivable | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="centralized-payments-for-accounts-receivable" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="30">Centralized payments for Accounts receivable</h1>
+
+[!include[banner](../includes/banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="34">Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same transaction doesn't have to be entered in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="36">Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments. Therefore, the same transaction doesn't have to be entered in multiple legal entities. Additionally, the organization saves time, because the processes for payment proposals, settlements, and editing open and closed transactions for centralized payments are streamlined.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="38">In a centralized payment organization, there are many legal entities for operations, and each operating legal entity manages its own invoices receivable information. Payments for all the operating legal entities are received by a single legal entity, which is known as the legal entity of the payment. During the settlement process, the applicable due-to and due-from transactions are generated. You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a centralized payment are handled. On the centralized payment journal line, the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="38">Account type</strong> should be set to Customer. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="38">Offset account type</strong> should be set to Bank or Ledger. The bank account should be in the current company.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="40">The following examples illustrate how posting is handled in various scenarios. The following configuration is assumed for all these examples:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="42">The legal entities are Fabrikam, Fabrikam East, and Fabrikam West. Customer payments are entered into Fabrikam.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="43">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="43">Post cash discount</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="43">Intercompany accounting</strong> page is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="43">Legal entity of the invoice</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="44">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="44">Post currency exchange gain or loss</strong> field on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="44">Intercompany accounting</strong> page is set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="44">Legal entity of the payment</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="45">Customer Northwind Traders is set up as a customer in each legal entity. The customers from the various legal entities are identified as the same customer because they share the same global address book ID.</li>
+</ul>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="47">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="47">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="47">Address book ID</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="47">Customer account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="47">Name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="47">Legal entity</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="49">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="49">4050</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="49">4000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="49">Northwind Traders</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="49">Fabrikam</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="50">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="50">4050</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="50">4000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="50">Northwind Traders</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="50">Fabrikam East</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="51">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="51">4050</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="51">10000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="51">Northwind Traders</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="51">Fabrikam West</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-1-customer-payment-of-invoice-from-another-legal-entity" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="53">Example 1: Customer payment of invoice from another legal entity</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="54">Fabrikam receives a payment of 600.00 for Fabrikam customer account 4000, Northwind Traders. The payment is settled with an open invoice for customer account 4000 in Fabrikam East.</p>
+<h3 id="invoice-is-posted-in-fabrikam-east-for-customer-4000" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="56">Invoice is posted in Fabrikam East for customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="58">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="58">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="58">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="58">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="58">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="60">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="60">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="60">600.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="60"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="61">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="61">Sales (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="61"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="61">600.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="payment-is-received-and-posted-in-fabrikam-for-customer-4000" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="63">Payment is received and posted in Fabrikam for customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="65">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="65">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="65">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="65">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="65">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="67">Cash (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="67">600.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="67"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="68">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="68">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="68"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="68">600.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fabrikam-payment-is-settled-with-fabrikam-east-invoice" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="70">Fabrikam payment is settled with Fabrikam East invoice</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="72"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="72">Fabrikam posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="74">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="74">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="74">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="74">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="74">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="76">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="76">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="76">600.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="76"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="77">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="77">Due to Fabrikam East (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="77"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="77">600.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="79"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="79">Fabrikam East posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="81">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="81">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="81">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="81">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="81">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="83">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="83">Due from Fabrikam (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="83">600.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="83"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="84">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="84">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="84"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="84">600.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="86">Example 2: Customer payment of invoice from another legal entity with cash discount</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="87">Fabrikam receives a payment of 580.00 for Fabrikam customer 4000, Northwind Traders. Fabrikam East has an open invoice for customer 4000. The invoice has a 20.00 cash discount available. The payment is settled with the open Fabrikam East invoices. The cash discount is posted to the legal entity of the invoice, Fabrikam East.</p>
+<h3 id="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="89">Invoice is posted in Fabrikam East for Fabrikam East customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="91">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="91">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="91">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="91">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="91">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="93">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="93">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="93">580.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="93"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="94">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="94">Sales (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="94"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="94">580.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="96">Payment is received and posted in Fabrikam for Fabrikam customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="98">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="98">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="98">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="98">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="98">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="100">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="100">Cash (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="100">600.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="100"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="101">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="101">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="101"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="101">600.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fabrikam-payment-is-settled-with-fabrikam-east-invoice-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="103">Fabrikam payment is settled with Fabrikam East invoice</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="105"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="105">Fabrikam posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="107">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="107">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="107">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="107">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="107">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="109">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="109">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="109">580.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="109"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="110">Due to Fabrikam East (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="110"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="110">580.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="112"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="112">Fabrikam East posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="114">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="114">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="114">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="114">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="114">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="116">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="116">Due from Fabrikam (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="116">580.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="116"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="117">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="117">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="117"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="117">580.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="118">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="118">Cash discount (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="118">20.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="118"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="119">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="119">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="119"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="119">20.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-3-customer-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-gain" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="121">Example 3: Customer payment of invoice from another legal entity with realized exchange rate gain</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="122">Fabrikam receives a payment of 600.00 euros (EUR) for Fabrikam customer 4000, Northwind Traders. The payment is settled with an open invoice for customer 4000 in Fabrikam East. A currency exchange gain transaction is generated during the settlement process.</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="124">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="124">Exchange rate for EUR to U.S. dollars (USD) as of the invoice date: 1.2062</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="125">Exchange rate for EUR to USD as of the payment date: 1.2277</li>
+</ul>
+<h3 id="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="127">Invoice is posted in Fabrikam East for Fabrikam East customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="129">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="129">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="129">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="129">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="129">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="131">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="131">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="131">600.00 EUR / 723.72 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="131"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="132">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="132">Sales (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="132"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="132">600.00 EUR / 723.72 USD</td>
+</tr>
+</tbody>
+</table>
+<h3 id="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="134">Payment is received and posted in Fabrikam for Fabrikam customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="136">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="136">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="136">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="136">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="136">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="138">Cash (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="138">600.00 EUR / 736.62 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="138"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="139">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="139">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="139"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="139">600.00 EUR / 736.62 USD</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fabrikam-payment-is-settled-with-fabrikam-east-invoice-2" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="141">Fabrikam payment is settled with Fabrikam East invoice</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="143"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="143">Fabrikam posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="145">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="145">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="145">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="145">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="145">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="147">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="147">600.00 EUR / 736.62 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="147"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="148">Due to Fabrikam East (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="148"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="148">600.00 EUR / 736.62 USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="149">Due to Fabrikam East (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="149">0.00 EUR / 12.90 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="149"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="150">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="150">Realized gain (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="150"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="150">0.00 EUR / 12.90 USD</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="152"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="152">Fabrikam East posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="154">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="154">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="154">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="154">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="154">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="156">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="156">Due from Fabrikam (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="156">600.00 EUR / 736.62 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="156"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="157">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="157">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="157"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="157">600.00 EUR / 736.62 USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="158">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="158">0.00 EUR / 12.90 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="158"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="159">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="159">Due from Fabrikam (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="159"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="159">0.00 EUR / 12.90 USD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-4-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-gain" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="161">Example 4: Customer payment of invoice from another legal entity with cash discount and realized exchange rate gain</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="162">Fabrikam posts a payment for Fabrikam customer 4000, Northwind Traders, for an open invoice in Fabrikam East. The invoice has a cash discount available, and a sales tax transaction is generated. The payment is settled with the open Fabrikam East invoice. A currency exchange gain transaction is generated during the settlement process. The cash discount is posted to the legal entity of the invoice (Fabrikam East), and the currency exchange gain is posted to the legal entity of the payment (Fabrikam).</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="164">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="164">Exchange rate for EUR to USD as of the invoice date: 1.2062</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="165">Exchange rate for EUR to USD as of the payment date: 1.2277</li>
+</ul>
+<h3 id="free-text-invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-customer-4000" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="167">Free text invoice is posted and a tax transaction is generated in Fabrikam East for customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="169">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="169">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="169">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="169">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="169">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="171">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="171">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="171">638.22 EUR / 769.82 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="171"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="172">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="172">Sales (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="172"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="172">600.00 EUR / 723.72 USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="173">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="173">Sales tax (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="173"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="173">38.22 EUR / 46.10 USD</td>
+</tr>
+</tbody>
+</table>
+<h3 id="payment-is-received-and-posted-in-fabrikam-for-customer-4000-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="175">Payment is received and posted in Fabrikam for customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="177">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="177">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="177">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="177">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="177">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="179">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="179">Cash (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="179">626.22 EUR / 768.81 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="179"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="180">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="180">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="180"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="180">626.22 EUR / 768.81 USD</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fabrikam-payment-is-settled-with-fabrikam-east-invoice-3" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="182">Fabrikam payment is settled with Fabrikam East invoice</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="184"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="184">Fabrikam posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="186">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="186">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="186">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="186">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="186">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="188">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="188">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="188">626.22 EUR / 768.81 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="188"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="189">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="189">Due to Fabrikam East (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="189"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="189">626.22 EUR / 768.81 USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="190">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="190">Due to Fabrikam East (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="190">0.00 EUR / 13.46 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="190"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="191">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="191">Realized gain (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="191"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="191">0.00 EUR / 13.46 USD</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="193"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="193">Fabrikam East posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="195">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="195">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="195">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="195">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="195">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="197">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="197">Due from Fabrikam (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="197">626.22 EUR / 768.81 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="197"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="198">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="198">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="198"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="198">626.22 EUR / 768.81 USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="199">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="199">Accounts receivable (Fabrikam East</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="199">0.00 EUR / 13.46 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="199"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="200">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="200">Due from Fabrikam (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="200"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="200">0.00 EUR / 13.46 USD</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="201">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="201">Cash discount (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="201">12.00 EUR / 14.47 USD</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="201"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="202">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="202">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="202"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="202">12.00 EUR / 14.47 USD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-5-customer-credit-note-with-primary-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="204">Example 5: Customer credit note with primary payment</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="205">Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders. The payment is settled with an open invoice for Fabrikam West customer 10000 and an open credit note for Fabrikam East customer 4000. The payment is selected as the primary payment on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="205">Settle transactions</strong> page.</p>
+<h3 id="invoice-is-posted-to-fabrikam-west-for-customer-10000" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="207">Invoice is posted to Fabrikam West for customer 10000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="209">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="209">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="209">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="209">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="209">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="211">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="211">Accounts receivable (Fabrikam West)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="211">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="211"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="212">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="212">Sales (Fabrikam West)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="212"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="212">100.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="credit-note-is-posted-to-fabrikam-east-for-customer-4000" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="214">Credit note is posted to Fabrikam East for customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="216">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="216">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="216">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="216">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="216">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="218">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="218">Sales returns (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="218">25.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="218"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="219">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="219">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="219"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="219">25.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="payment-is-posted-to-fabrikam-for-customer-4000" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="221">Payment is posted to Fabrikam for customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="223">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="223">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="223">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="223">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="223">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="225">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="225">Cash (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="225">75.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="225"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="226">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="226">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="226"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="226">75.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="228">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="230"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="230">Fabrikam posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="232">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="232">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="232">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="232">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="232">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="234">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="234">Due from Fabrikam East (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="234">25.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="234"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="235">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="235">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="235"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="235">25.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="236">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="236">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="236">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="236"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="237">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="237">Due to Fabrikam West (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="237"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="237">100.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="239"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="239">Fabrikam East posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="241">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="241">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="241">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="241">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="241">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="243">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="243">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="243">25.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="243"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="244">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="244">Due to Fabrikam (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="244"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="244">25.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="246"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="246">Fabrikam West posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="248">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="248">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="248">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="248">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="248">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="250">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="250">Due from Fabrikam (Fabrikam West)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="250">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="250"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="251">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="251">Accounts receivable (Fabrikam West)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="251"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="251">100.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-6-customer-credit-note-without-primary-payment" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="253">Example 6: Customer credit note without primary payment</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="254">Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders. The payment is settled with an open invoice for Fabrikam West customer 10000 and an open credit note for Fabrikam East customer 4000. The payment isn't selected as the primary payment on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="254">Settle transactions</strong> page.</p>
+<h3 id="invoice-is-posted-to-fabrikam-west-for-customer-10000-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="256">Invoice is posted to Fabrikam West for customer 10000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="258">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="258">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="258">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="258">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="258">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="260">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="260">Accounts receivable (Fabrikam West)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="260">100.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="260"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="261">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="261">Sales (Fabrikam West)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="261"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="261">100.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="credit-note-is-posted-to-fabrikam-east-for-customer-4000-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="263">Credit note is posted to Fabrikam East for customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="265">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="265">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="265">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="265">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="265">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="267">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="267">Sales returns (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="267">25.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="267"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="268">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="268">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="268"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="268">25.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="payment-is-posted-to-fabrikam-for-customer-4000-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="270">Payment is posted to Fabrikam for customer 4000</h3>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="272">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="272">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="272">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="272">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="272">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="274">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="274">Cash (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="274">75.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="274"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="275">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="275">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="275"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="275">75.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note-1" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="277">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="279"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="279">Fabrikam posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="281">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="281">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="281">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="281">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="281">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="283">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="283">Accounts receivable (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="283">75.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="283"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="284">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="284">Due to Fabrikam West (Fabrikam)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="284"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="284">75.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="286"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="286">Fabrikam East posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="288">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="288">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="288">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="288">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="288">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="290">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="290">Accounts receivable (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="290">25.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="290"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="291">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="291">Due to Fabrikam West (Fabrikam East)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="291"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="291">25.00</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="293"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="293">Fabrikam West posting</strong></p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="295">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="295">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="295">Account</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="295">Debit amount</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="295">Credit amount</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="297">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="297">Due from Fabrikam (Fabrikam West)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="297">75.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="297"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="298">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="298">Accounts receivable (Fabrikam West)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="298"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="298">75.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="299">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="299">Due from Fabrikam East (Fabrikam West)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="299">25.00</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="299"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="300">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="300">Accounts receivable (Fabrikam West)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="300"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md" sourcestartlinenumber="300">25.00</td>
+</tr>
+</tbody>
+</table>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/accounts-receivable/centralized-payments-accounts-receivable.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

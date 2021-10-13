@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Standard Audit File for Tax (SAF-T) for Lithuania | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Standard Audit File for Tax (SAF-T) for Lithuania | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="standard-audit-file-for-tax-saf-t-for-lithuania" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="28">Standard Audit File for Tax (SAF-T) for Lithuania</h1>
+
+[!include[banner](../includes/banner.md)][!include[banner](../includes/preview-banner.md)]
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="34">According to Article 16 of the Law on Accounting of the Republic of Lithuania, companies in Lithuania are legally required to provide a report in Standard Audit File for Tax (SAF-T) format. This topic describes how Microsoft Dynamics 365 Finance supports the SAF-T requirements and explains how to prepare Finance to work with the SAF-T report for Lithuania.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="36">For more information, see <a href="https://www.vmi.lt/evmi/en/home" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="36">SAF-T - VMI</a>.</p>
+<h2 id="setup" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="38">Setup</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="40">To start to work with the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="40">Lithuania SAF-T</strong> report, complete the following steps:</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="42">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="42"><a href="#import" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="42">Import Electronic reporting configurations.</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="43"><a href="#application" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="43">Set up application-specific parameters for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="43">SAF-T Format (LT)</strong> configuration.</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="44"><a href="#satt" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="44">Select the SAT-T format in General ledger parameters.</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="45"><a href="#features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="45">Turn on features in Feature management.</a></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="46"><a href="#contact" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="46">Create a contact person for your company.</a></li>
+</ol>
+<h3 id="import" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="48">Import Electronic reporting configurations</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="50">In Finance, import the following versions or later of these Electronic reporting (ER) configurations from the Global repository.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="52">For more information about how to download ER configurations, see <a href="../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="52">Download ER configurations from the Global repository</a>.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="54">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="54">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="54">ER configuration name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="54">Type</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="54">Version</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="54">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="56">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="56">Standard Audit File (SAF-T)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="56">Model</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="56">128</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="56">The common data model for different audit reports.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="57">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="57">SAF-T General model mapping</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="57">Model mapping</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="57">128.251</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="57">The model mapping that provides general data source mapping.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="58">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="58">SAF-T Format (LT)</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="58">Format</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="58">128.198</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="58">The XML format that represents the SAF-T report in accordance with the requirements for Lithuania.</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="60"><img src="media/lt-saf-t-ger-configurations.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="60" alt="SAF-T general model mapping configuration for Lithuania."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="62">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="62">SAF-T General model mapping</strong> configuration provides general data source mapping for the following master data:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="64">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="64"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="64">GeneralLedgerAccounts</strong> – General ledger.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="65"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="65">Customers</strong> – Purchasers and other debtors.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="66"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="66">Suppliers</strong> – Suppliers and other creditors.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="67"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="67">TaxTable</strong> – Tax type tables that are used in the legal entity's accounting system. Examples include value-added tax (VAT), corporate income tax, and excise taxes.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="68"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="68">UOMTable</strong> – Table for units of measurement.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="69"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="69">AnalysisTypeTable</strong> – Data tables for analytical accounting. This data is used to provide details of transaction data. Examples include unit costs, additional costs, a cost center, or a project.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="70"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="70">MovementTypeTable</strong> – Stock movement types.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="71"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="71">Products</strong> – Products and services.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="72"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="72">PhysicalStock</strong> – Data about the stock that is contained in the file.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="74">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="74">SAF-T General model mapping</strong> configuration also provides general data source mapping for the following transactional data:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="76">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="76"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="76">GeneralLedgerEntries</strong> – General ledger entries.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="77"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="77">Sales invoices</strong> – Initial sales documents.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="78"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="78">PurchaseInvoices</strong> – Accounting documents for purchases and acquisitions.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="79"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="79">Payments</strong> – Payments.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="80"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="80">MovementOfGoods</strong> – Information about the movement of goods. For example, movement occurs when goods are recorded, when goods are written off after they are sold or used in production, and when finished products, determined loss, and defective goods are recorded.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="81"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="81">AssetTransactions</strong> – Economic transactions or events for tangible or intangible economic assets, and for financial assets.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="83">Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="85">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="86">After all the ER configurations from the previous table are imported, set the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="86">Default for model mapping</strong> option to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="86">Yes</strong> for the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="86">SAF-T General model mapping</strong> configuration.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="88"><img src="media/lt-saf-t-default-model-mapping.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="88" alt="Default for model mapping option set to Yes for the SAF-T General model mapping configuration."></p>
+</div>
+<h3 id="application" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="90">Set up application-specific parameters for the SAF-T Format (LT) configuration</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="92">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="92"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="92">In Electronic reporting, open the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="92">Configurations</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="93"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="93">In the configuration tree, under <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="93">Standard Audit File (SAF-T)</strong>, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="93">SAF-T Format (LT)</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="94"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="94">Make sure that you're working in the company that you want to set up the application-specific parameters for.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="95"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="95">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="95">Configurations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="95">Application-specific parameters</strong>, and then, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="95">Setup</strong>.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="96"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="96">In the list on the left, select the last version of the configuration.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="97"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="97">Provide the mapping for all the lookup fields:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="99">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="99"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="99">StandardAnalysisType_LOOKUP</strong> – Define the mapping between the dimensions that are used by the company and the standard analysis types of Lithuania. Select the value <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="99">APA-100</strong> as the last condition in the list. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="99">Analysis ID</strong> column must be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="99">*Not blank*</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="99">Line</strong> column, verify that <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="99">APA-100</strong> is the last condition in the table. At least one line that has <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="99">*Not blank*</strong> values must be set up.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="100"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="100">ReportTaxCodes_LOOKUP</strong> – Define the mapping between the sales tax codes that are used by the company and the standard tax codes of Lithuania. Select the value <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="100">PVM100</strong> as the last condition in the list. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="100">Tax Code</strong> column must be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="100">*Not blank*</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="100">Line</strong> column, verify that <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="100">PVM100</strong> is the last condition in the table. At least one line that has <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="100">*Not blank*</strong> values must be set up.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="101"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="101">AddressType_LOOKUP</strong> – Define the mapping between the address types that are used by the company and the address types that are used in the SAF-T report for Lithuania. Select the value <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="101">KT</strong> as the last condition in the list. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="101">Purpose Name</strong> column must be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="101">*Not blank*</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="101">Line</strong> column, verify that <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="101">KT</strong> is the last condition in the table. At least one line that has <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="101">*Not blank*</strong> values must be set up.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="102"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="102">StandardMainAccount_Lookup</strong> – Define the mapping between the main accounts that are used by the company and the standard main accounts of Lithuania. Select the value <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="102">7</strong> as the last condition in the list. The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="102">Analysis ID</strong> column must be set to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="102">*Not blank*</strong>. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="102">Line</strong> column, verify that <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="102">7</strong> is the last condition in the table. At least one line that has <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="102">*Not blank*</strong> values must be set up.</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="104"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="104">When you've finished setting up the lookup fields, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="104">State</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="104">Completed</strong>. Then save the configuration.</p>
+</li>
+</ol>
+<h3 id="satt" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="106">Select the SAT-T format in General ledger parameters</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="108">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="108">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="108">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="108">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="108">General ledger parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="109">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="109">Standard Audit File for Tax</strong> FastTab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="109">Standard Audit File for Tax (SAF-T)</strong> field, set up the SAF-T format.</li>
+</ol>
+<h3 id="features" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="111">Turn on features in Feature management</h3>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="113">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="113"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="113">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="113">Feature management</strong>, and select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="113">All</strong> tab.</p>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="114"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="114">In the feature list, find and select the following features:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="116">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="116">Optimization of query data source creation time during execution of ER reports</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="117">Optimize datasets memory consumption at ER reports runtime</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="119"><p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="119">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="119">Enable now</strong>.</p>
+</li>
+</ol>
+<h3 id="contact" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="121">Create a contact person for your company</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="123">The <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="123">Company</strong> node of the SAF-T report must include information for a contact. This node is located under the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="123">Header</strong> node. To set up contact information that will be reported to SAF-T, follow these steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="125">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="125">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="125">Sales and marketing</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="125">Relationships</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="125">Contacts</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="125">All contacts</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="126">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="126">New</strong> to create a new contact for your legal entity. Be sure to select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="126">Legal entity</strong> in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="126">Contact for</strong> field.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="127">Check by <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="127">Party ID</strong> value to make sure that you select the legal entity that SAF-T will be reported from.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="129"><img src="media/lt-saf-t-contact-person.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="129" alt="ER configurations for the SAF-T report for Lithuania."></p>
+<h2 id="generate-the-saf-t-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="131">Generate the SAF-T report</h2>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="133">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="133">To generate the SAF-T report, go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="133">General ledger</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="133">Inquiries and reports</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="133">Standard Audit File for Tax (SAF-T)</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="133">Standard Audit File for Tax (SAF-T)</strong>.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="135">The following table describes the fields in the report dialog box.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="137">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="137">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="137">Field name</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="137">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139">SAF-T File type</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139"><p>The SAF-T supports the following file types:</p><ul><li><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139">F</strong> – A full SAF-T file. This type of SAF-T file can be split by period.</li><li><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139">GL</strong> – General ledger records. This part of the SAF-T file can be split by entities, periods, or parts. </li><li><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139">PI</strong> – Purchase data. This part of the SAF-T file can be split by entities, periods, or parts.</li><li><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139">PA</strong> – Payment data. This part of the SAF-T file can be split by entities, periods, or parts.</li><li><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139">SI</strong> – Sales data. This part of the SAF-T file can be split by entities, periods, or parts.</li><li><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139">MG</strong> – The movement of goods. This part of the SAF-T file can be split by entities, periods, or parts.</li><li><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="139">AS</strong> – The movement of fixed assets. This part of the SAF-T file can be split by entities, periods, or parts.</li><ul></ul></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140">Reporting period from</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140">Reporting period to</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140">Define the start and end dates of the period that the SAF-T is requested for. The start date is reflected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140">Header</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140">SelectionCriteria</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140">SelectionStartDate</strong> node of the SAF-T, and the end date is reflected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140">Header</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140">SelectionCriteria</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="140">SelectionEndDate</strong> node.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141">From date</strong> and <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141">To date</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141">Specify the start and end dates of the period that the report should include data for. The start date is reflected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141">Header</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141">SelectionCriteria</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141">PeriodStart</strong> node of the SAF-T. The end date is reflected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141">Header</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141">SelectionCriteria</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="141">PeriodEnd</strong> node. The period for one file or one part of a file can't be shorter than one month and longer than a reporting period.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="142">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="142"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="142">Number of parts</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="142">Specify the number of parts to generate the SAF-T in. This value is reflected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="142">Header</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="142">NumberOfParts</strong> node of the SAF-T.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="143">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="143"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="143">Part number</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="143">Specify the number of the part to generate in the current SAF-T. This value is reflected in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="143">Header</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="143">PartNumber</strong> node of the SAF-T.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="144"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="144">Print zero balance</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="144">This check box affects the data that is reported in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="144">MasterFiles</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="144">GeneralLedgerAccounts</strong> node of the SAF-T. Select this check box to include all the main accounts of your company, even main accounts that have a zero balance during the specified period. Clear the check box to include only main accounts that have a non-zero balance or transactions during the specified period.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="145">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="145"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="145">Export all Customers</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="145">This check box affects the data that is reported in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="145">MasterFiles</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="145">Customers</strong> node of the SAF-T. Select this check box to include all the customers of your company, even customers that have a zero balance during the specified period. Clear the check box to include only customers that have a non-zero balance or transactions during the specified period.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="146">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="146"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="146">Export all Suppliers</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="146">This check box affects the data that is reported in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="146">MasterFiles</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="146">Suppliers</strong> node of the SAF-T. Select this check box to include all the suppliers of your company, even suppliers that have a zero balance during the specified period. Clear the check box to include only suppliers that have a non-zero balance or transactions during the specified period.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="147"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="147">Export all Analysis types</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="147">This check box affects the data that is reported in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="147">MasterFiles</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="147">AnalysisTypeTable</strong> node of the SAF-T. Select this check box to include all the dimensions of your company. Clear the check box to include only dimensions that are used in transactions that are reported during the specified period.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="148"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="148">Export all Products</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="148">This check box affects the data that is reported in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="148">MasterFiles</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="148">Products</strong> node of the SAF-T. Select this check box to include all the products of your company, even products that have zero physical stock during the specified period. Clear the check box to include only products that have non-zero physical stock or transactions during the specified period.</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="149"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="149">Export all Sales tax codes</strong></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="149">This check box affects the data that is reported in the  <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="149">MasterFiles</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="149">TaxTable</strong> node of the SAF-T. Select this check box to include all the sales tax codes of your company. Clear the check box to include only sales tax codes that are used in transactions that are reported during the specified period.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="saf-t-content" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="151">SAF-T content</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="153">According to the SAFT-T technical documentation, different types of SAF-T include different content, as shown in the following table.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">SAF-T file part</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">Group of elements</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">F</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">GL</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">MG</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">SI</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">PI</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">PA</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="155">AS</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="157">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="157">Header  </td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="157"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="157"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="157"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="157"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="157"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="157"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="157"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="157"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="158"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="158">Header</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="158">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="158">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="158">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="158">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="158">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="158">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="158">X</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="159">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="159">Master files</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="159"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="159"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="159"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="159"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="159"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="159"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="159"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="159"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="160">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="160"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="160">GeneralLedgerAccounts</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="160">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="160">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="160"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="160"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="160"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="160"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="160"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="161">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="161"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="161">Customers</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="161">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="161">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="161">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="161">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="161">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="161">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="161"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="162">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="162"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="162">Suppliers</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="162">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="162">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="162">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="162">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="162">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="162">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="162">X</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="163">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="163"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="163">TaxTable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="163">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="163">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="163">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="163">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="163">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="163"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="163"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="164">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="164"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="164">UOMTable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="164">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="164"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="164">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="164">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="164">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="164"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="164"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="165">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="165"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="165">AnalysisTypeTable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="165">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="165">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="165"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="165">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="165">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="165">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="165"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="166">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="166"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="166">MovementTypeTable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="166">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="166"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="166">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="166"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="166"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="166"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="166"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="167">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="167"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="167">Products</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="167">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="167"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="167">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="167">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="167">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="167"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="167"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="168">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="168"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="168">PhysicalStock</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="168">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="168"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="168">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="168">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="168">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="168"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="168"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="169">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="169"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="169">Assets</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="169">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="169"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="169"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="169"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="169"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="169"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="169">X</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="170">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="170">General ledger entries</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="170"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="170"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="170"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="170"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="170"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="170"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="170"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="170"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="171">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="171"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="171">GeneralLedgerEntries</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="171">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="171">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="171"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="171"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="171"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="171"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="171"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="172">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="172">Source documents</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="172"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="172"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="172"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="172"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="172"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="172"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="172"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="172"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="173">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="173"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="173">Sales invoices</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="173">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="173"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="173"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="173">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="173"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="173"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="173"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="174">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="174"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="174">PurchaseInvoices</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="174">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="174"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="174"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="174"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="174">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="174"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="174"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="175">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="175"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="175">Payments</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="175">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="175"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="175"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="175"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="175"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="175">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="175"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="176">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="176"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="176">MovementOfGoods</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="176">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="176"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="176">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="176"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="176"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="176"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="176"></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="177">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="177"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="177">AssetTransactions</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="177">X</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="177"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="177"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="177"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="177"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="177"></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md" sourcestartlinenumber="177">X</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-ltu-saf-t.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creating a new Code | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Creating a new Code | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="creating-a-new-code" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="1">Creating a new Code</h1>
+
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="3">When a new product is received, user should open the form “Material Code” (Stock Management -&gt; MaterialCode -&gt; Material Code) and click button <strong sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="3">New Code</strong>
+Insert a Material Code Group and Item number</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="6"><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_1.png" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="6" alt="Creating a new Code" title="Creating a new Code"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="8">In the example, the Material code group is “D” and for it, the last used combination is A. That means system will create a new entry for the selected item number with “Material Code 1” as XXXDA and “Material Code 2” as 1.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="10"><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_1_1.png" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="10" alt="Example" title="Example"></p>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="12">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="13">The XXX part of “Material Code 1” represents the company number and it is configured under:<br>Production -&gt; Certificate -&gt; Setup -&gt; Parameters
+<img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_1_1.png" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="14" alt="configure company number" title="configure company number"></p>
+</div>
+<div class="IMPORTANT" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="16">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="17">The certificates should be saved on SER System.</p>
+</div>
+<h2 id="creating-a-new-record" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="19">Creating a new record</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="21">When a product is received and it belongs to same batch used in a previous shipment, user should open the form “Material Code” (Stock Management -&gt; MaterialCode -&gt; Material Code), select the previous register in grid and click button <strong sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="21">New Record</strong>
+System will create a new entry with same data as the selected register and increases the “Material Code Part 2”</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="24"><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_2.png" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="24" alt="Example of a new Record" title="Example of a new Record"></p>
+<h2 id="assign-a-material-code-to-a-work-order" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="26">Assign a material code to a Work Order</h2>
+<h3 id="swap-out-material-form" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="28">Swap out material form</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="30">When user opens the Swap out Material form, D365 will pre-select a material code based on item number.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="32"><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_31.png" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="32" alt="swap out material form" title="swap out material form"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="34"><a name="3312"></a></p>
+<h4 id="possibility-1" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="36">Possibility 1</h4>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="38">If the requested quantity is within on Material Code only, user might select the Material Code parts 1 &amp; 2 direct in the grid as showed in above picture</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="40"><a name="3313"></a></p>
+<h4 id="possibility-2" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="42">Possibility 2</h4>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="44">If the requested quantity need more than one Material Code, user should click button <strong sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="44">Material Used in Works Order</strong> and individually assign the Material Codes for the Work Order</p>
+<h4 id="possibility-3" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="46">Possibility 3</h4>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="48">Assign the Material Code individually per serial number
+click button <strong sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="49">Material Used in Works Order</strong> and individually assign the Material Codes for the Work Order.
+Select one material code and click tab <strong sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="50">Assignment Serial No to Material Code</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="52"><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_31.png" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="52" alt="Assignment Serial No to Material Code" title="Assignmet Serial No to Material Code"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="54">Assign the serial number by double click them in “Serial Number” area</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="56"><img src="../../media/Production/Raw_Material_Code/Raw_Material_Code_31.png" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="56" alt="Assigned Serial numbers" title="Assigned Serial numbers"></p>
+<h2 id="work-order-detail-form" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="58">Work Order Detail Form</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="60">To access the Material Used in Work Order form, user should click button <strong sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="60">Inquiries -&gt; Material Used in Work Order</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="62">Follow process described in <a href="#3312" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="62">Possiblity 2</a> and <a href="#3313" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="62">Possibility 3</a>.</p>
+<h2 id="stock-management-area" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="64">Stock Management Area</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="66">User could access directly the Material Used in Work Order form in
+Stock Management -&gt; MaterialCode -&gt; Material Used in Works Order</p>
+<h1 id="assign-a-material-code-to-sales-order" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="69">Assign a Material Code to Sales Order</h1>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="71">Stock Management -&gt; MaterialCode -&gt; Material Used in Sales Order</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="73">User should insert manually all data regarding: Sales Order, Sales Order Line, Item Number and the Raw material code</p>
+<h1 id="index" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="75">Index</h1>
+<table sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="77">
+<thead>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="77">
+<th style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="77">Index</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="77">Status</th>
+<th style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="77">Date</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="77">Author</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="77">Reason for change</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="79">
+<td style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="79">01</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="79">Released</td>
+<td style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="79">TBD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="79">Simon Berberich</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md" sourcestartlinenumber="79">Publication</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/01_CoreProcesses/01_04_Production/Raw_Material_Code.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

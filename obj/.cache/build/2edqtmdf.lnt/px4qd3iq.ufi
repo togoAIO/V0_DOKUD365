@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Global parameters of the modular lead times | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Global parameters of the modular lead times | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="global-parameters-of-the-modular-lead-times" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="1">Global parameters of the modular lead times</h1>
+
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="2">In order to accurately account for the total time required for the delivery of an order line, from the supplier to the main stockroom, the Modular Lead Time setup is used.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="4"><img src="../../media/Purchasing/Modular_Lead_Time.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="4" alt="Modular Lead Time" title="Modular Lead Time"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="6">The Modular Lead Time setup allows for the consideration of the external transport time, the internal handling days for arrival and the internal handling days for quality. These values facilitate an accurate calculation of the availability date for a purchased good in the main stockroom.</p>
+<h2 id="time-module" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="8">Time Module</h2>
+<h3 id="external-transport-time" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="9">External Transport Time</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="11">The external transport time is necessary for the calculation of the availability date of an item when the supplier confirms the delivery date as the date when the order leaves his location.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="13"><img src="../../media/Purchasing/External_Transport_Time.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="13" alt="External Transport Time" title="External Transport Time"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="15">The external transport time is defined by the distance from the supplier to the receiving facility and the MOD (mode of delivery).</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="17">In D365, the base delivery times are maintained by the logistics department in the transport table.</p>
+<h4 id="detail-levels-of-the-transport-lead-times" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="19">Detail Levels of the Transport Lead Times</h4>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="20">The Transport Lead Times have a few different detail levels:</p>
+<ol sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="22">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="22">Base Lead Time
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="23">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="23">Supplier Country -&gt; Receiving Facility
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="24">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="24">General lead times can be entered for the transport from a country to the receiving facility.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="25">Detailed Lead Times
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="26">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="26">Supplier Zip Code -&gt; Receiving Facility
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="27">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="27">Zip code specific lead times can be entered in D365. D365 will use these lead times when the zip code in the vendor details table matches a zip code in the transport table.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="28"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="28">MOD</strong> Dependent Lead Times
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="29">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="29">Supplier Country -&gt; Receiving Facility</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="30">Supplier Zip Code -&gt; Receiving Facility
+<ul sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="31">
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="31">MOD dependent lead times can be used for lead times based on supplier country or supplier zip code.</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="32">These will be used when either the zip code or country <strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="32">and</strong> either the supplier or the individual purchase order MOD match an entry in the transport table.</li>
+<li sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="33">If the MOD is not listed in the transport table, the standard transport time, based only on the zip code or country, will be used.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="fallback-logic-for-transport-lead-time-determination" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="35">Fallback-Logic for Transport Lead Time Determination</h4>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="36">D365 uses a fallback-logic for determining transport lead times. It begins by searching for the most detailed information to base a lead time on. For example, it searches for MOD and zip code in the vendor  or purchase order details. If it does not find a combination matching an entry in the transport table, it will search for something simpler, such as country and MOD, and if that is not found, it will search only for the zip code and then for the country.</p>
+<h3 id="handling-days-for-arrival" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="38">Handling days for arrival</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="39">“Handling days for arrival” represents the internal time required for the receiving process as well as the transport time from the receiving department to the main stockroom or quality inspection department.
+This time will be entered in the „Handling days for arrival“ field in the Purchase ledger parameters module.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="42"><img src="../../media/Purchasing/Handling_Days_for_Arrival.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="42" alt="Handling Days for Arrival" title="Handling Days for Arrival"></p>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="44">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="45">The Handling days for arrival will be 1 day for all vendors. It is a global parameter and cannot be adjusted for individual vendors</p>
+</div>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="47">The Handling days for arrival applies to all purchased items and will automatically be considered.</p>
+<h3 id="handling-days-for-quality" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="49">Handling days for quality</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="50">For „quarantine required“ items, the time for which the item is in quality inspection, and therefore not available, must be considered.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="52"><img src="../../media/Purchasing/Handling_Days_for_Quality.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="52" alt="Handling Days for Quality" title="Handling Days for Quality"></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="54">Like the Handling days for arrival, the Handling days for quality are entered in the Purchase ledger parameters module. The Handling days for quality field is set to 2 day, which then applies to all vendors.
+The Handling days for quality are only considered when a purchased item is flagged as „Quarantine required.“ If an item is not flagged as „Quarantine required,“ the purchase order Handling days for quality will bet set to 0.</p>
+<h2 id="confirmation-type" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="57">Confirmation Type</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="58">There are two confirmation types considered by D365. Each one results in a different consideration of the lead time factors that are considered in the calculation of the availability date and the order proposal date.</p>
+<h3 id="confirmation-type-arrival" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="60">Confirmation type &quot;Arrival&quot;</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="62"><img src="../../media/Purchasing/Lead_time_factors_confirmation_arrival.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="62" alt="Lead time factors for confirmation type &quot;Arrival&quot;" title="Lead time factors for confirmation type &quot;Arrival&quot;">
+The confirmation type „Arrival“ is selected when the delivery date provided by the supplier represents the date that it will <strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="63">arrive</strong> at the receiving facility. Thus, the external transport time must not be considered.</p>
+<h3 id="confirmation-type-outgoing-supplier" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="65">Confirmation type &quot;Outgoing supplier&quot;</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="67"><img src="../../media/Purchasing/Lead_time_factors_confirmation_outgoing_supplier.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="67" alt="Lead time factors for confirmation type &quot;Outgoing supplier&quot;" title="Lead time factors for confirmation type &quot;Arrival&quot;">
+The confirmation type „Outgoing supplier“ is selected when the delivery date provided by the supplier represents the date on which the order leaves the supplier’s facility. The external transport time must then be considered.</p>
+<h2 id="global-parameters-to-be-maintained" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="70">Global Parameters to be maintained</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="71">The following master data must be maintained in order to guarantee the proper consideration of the modular lead times in all relevant D365 processes:</p>
+<table sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="74">
+<thead>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="1">
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="1"></th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="1"></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="75">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="75"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="75">Transport Table</strong></td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="75"><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="75">Stock management -&gt; Setup -&gt; Distribution -&gt; Transport</em><br>In order to avoid a calculation of 0 days, there must be at least an external transport time on the country level in the transport table.</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="76">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="76"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="76">Purchase ledger parameters</strong></td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="76"><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="76">Purchase ledger -&gt; Settings -&gt; Parameter</em><br>The Handling days for arrival and quality, used for all suppliers, are entered on the Purchase ledger parameters screen.</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="77">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="77"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="77">Confirmation type</strong></td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="77"><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="77">Purchase ledger -&gt; Common forms -&gt; Vendor details -&gt; Purchase order tab</em><br>The confirmaton type must be defined and maintained individually for each vendor.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="process-logic-of-the-modular-lead-times" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="79">Process logic of the modular lead times</h1>
+<h2 id="manual" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="80">Manual</h2>
+<div class="NOTE" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="81">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="82">For more information, please read <a href="Basic_Purchase_Orders_Details.html" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="82">Purchasing Basic Purchase Orders Details</a></p>
+</div>
+<h3 id="selection-of-the-confirmation-type" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="84">Selection of the Confirmation Type</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="85">When manually creating a purchase order, the confirmation type in the „Create purchase order“ screen will automatically be populated with the confirmation type selected in the Vendors screen.
+Upon closing the “Create purchase order” dialog box, a new purchase order header will be created. The confirmation type can be edited either in the “Create purchase order” dialog box or on the purchase order header (“General” tab -&gt; „Job control“ area).</p>
+<h3 id="available-date-determination" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="88">Available date determination</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="89">The following fields in the “Appointment overview” tab of a purchase order line are not editable and are automatically filled by D365.</p>
+<table sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="92">
+<thead>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="1">
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="1"></th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="1"></th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="93">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="93"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="93">Confirmation type</strong></td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="93">The confirmation type in the purchase order line is populated from the confirmation type in the purchase order header.</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="94">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="94"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="94">External transport days</strong></td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="94">The external transport days are populated from the transport table whenever the confirmation type is set to “Outgoing supplier” and the transport table is maintained for the country/zip code of the supplier.</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="95">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="95"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="95">Arriving delivery date</strong></td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="95"><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="95">Automatically calculated</em><br>If confirmation date has <em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="95">not</em> been entered, then the following will apply:<br>Delivery date<br><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="95">+ external transport days</em><br>= Arriving delivery date<br>Otherwise:<br>Confirmation date<br><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="95">+ external transport days</em><br>= Arriving delivery date</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="96">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="96"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="96">Handling days for arrival</strong></td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="96">The Handling days for arrival will be populated from the Purchase ledger parameters after the purchase order line is created.</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="97">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="97"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="97">Handling days for quality</strong></td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="97">If the purchased item is flagged as “Quarantine required,” the Handling days for quality will be populated from the Purchase ledger parameters after the purchase order line is created.</td>
+</tr>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="98">
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="98"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="98">Available date</strong></td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="98"><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="98">Automatically calculated</em><br>Arriving delivery date<br>+ Handling days for arrival<br><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="98">+ Handling days for quality</em><br>= Available date</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="102"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="102">Example 1:</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="104"><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="104">Available date calculated with:</em> Confirmation type „Arriving“ and no confirmed date.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="106"><img src="../../media/Purchasing/example_1.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="106" alt="Example 1" title="Example 1"></p>
+<br>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="110"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="110">Example 2:</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="112"><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="112">Available date calculated with:</em> Confirmation type „Outgoing supplier“ and no confirmed date.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="114"><img src="../../media/Purchasing/example_2.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="114" alt="Example 2" title="Example 2"></p>
+<br>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="118"><strong sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="118">Example 3:</strong></p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="120"><em sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="120">Available date calculated with:</em> Confirmation type „Outgoing supplier“ and confirmed date (item will arrive earlier than delivery date).</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="122"><img src="../../media/Purchasing/example_3.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="122" alt="Example 3" title="Example 3"></p>
+<h3 id="automatic-update-after-a-change-in-the-order" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="124">Automatic Update After a Change in the Order</h3>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="125">When the delivery or confirmation date is changed, the “Arriving delivery date” and “Available date” fields are automatically recalculated.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="127">If changes are made to the address or the MOD (for example from sea to air) in a sales order line, the “External transport days” will be recalculated. When the external transport days are changed, the “Arriving delivery date” and “Available date” are also recalculated. When such an update is made, an infolog will be generated with the details of the change.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="129">Changes to the item number which have an impact on the Handling days for quality can only be executed before the first save of the order line. If the purchase order line has already been saved, the automatic update to the Handling days for quality will not be made.</p>
+<div class="WARNING" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="131">
+<h5>Warning</h5>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="132">In order to prevent calculation errors, the item number in the purchase order line cannot be changed.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="134">If an item number must be changed, the line must be deleted and a new line must be created</p>
+</div>
+<h2 id="planned-purchase-order-generation-through-mrp" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="136">Planned purchase order generation through MRP</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="137">D365 considers the modular lead times when generating planned purchase orders through MRP. The standard item lead time will no longer be the only factor used in determining a purchase order lead time. D365 will now also consider the confirmation type used by the supplier and will add the external transport days if the „Outgoing supplier“ confirmation type is used. Likewise, the system will also consider the quarantine status of the item. If „Quarantine required“ if flagged on the item number, the Handling days for quality will be added to the purchase order lead time. And the Handling time for arrival will be added to the lead time for ALL purchase orders.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="139">The consideration of the modular lead times does NOT delay the requirement date of an item. Rather, it moves the planned purchase order generation to an earlier date. The planned purchase order generation dates will be earlier with the modular lead time process then they were with the original process. Also, the delivery dates for the purchase orders will be earlier since the handling days for arrival and quality will be considered.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="141"><img src="../../media/Purchasing/Original_vs_Modular_Lead_Times.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="141" alt="Original vs Modular Lead Times" title="Original vs Modular Lead Times"></p>
+<h2 id="consideration-of-modular-lead-times-for-customer-order-scheduling" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="143">Consideration of modular lead times for customer order scheduling</h2>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="144">If a sales order results in a direct requirement for a purchased or dual sourced item, the modular lead times are used in the journal mode (for planned purchase orders), as long as a vendor is listed for the item.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="146">The handling and transport days required for the order will be added separately to the lead time of the item. Thus, a sales order line is released for the earliest date on which the required item, including its transport and handling days, is available for the order.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="148">The sales order scheduling history shows the sum of the lead times (standard lead time + modular lead time) for requirement items, as well as items that are not available and need to be ordered to satisfy the demand.</p>
+<p sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="150"><img src="../../media/Purchasing/sales_order_scheduling_history.png" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="150" alt="sales order scheduling history" title="sales order scheduling history"></p>
+<h1 id="index" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="152">Index</h1>
+<table sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="154">
+<thead>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="154">
+<th style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="154">Index</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="154">Status</th>
+<th style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="154">Date</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="154">Author</th>
+<th sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="154">Reason for change</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="156">
+<td style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="156">01</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="156">Released</td>
+<td style="text-align: center;" sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="156">TBD</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="156">Simon Berberich</td>
+<td sourcefile="ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md" sourcestartlinenumber="156">Publication</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/01_CoreProcesses/01_05_Purchasing/Modular_Delivery_Times.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

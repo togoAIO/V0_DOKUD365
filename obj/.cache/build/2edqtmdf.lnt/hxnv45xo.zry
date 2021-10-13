@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enter payroll beginning balances | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enter payroll beginning balances | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="enter-payroll-beginning-balances" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="30">Enter payroll beginning balances</h1>
+
+<div class="IMPORTANT" sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="1">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/includes/banner.md" sourcestartlinenumber="2">Diese Dokumentation ist teilweise von Microsoft verfasst und wurde nicht auf Vollständigkeit geprüft. Wenn informationen fehlen oder ein weiteres Kapitel hinzugefügt werden soll bitte eine Mail an das <a href="mailto:tobias.goldhammer@wika.com">Dokumentations Team</a> schreiben.</p>
+</div>
+
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="34">The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for partners who transfer data for a new Payroll implementation from another system. To prepare to enter beginning payroll balances, we verify the following information:</p>
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="36">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="36"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="36">Employee records are entered and available in the system</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="37"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="37">The following data is set up and assigned to employees:</p>
+<ul sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="39">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="39">Pay cycles and pay periods</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="40">Earning codes</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="41">Taxes</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="42">Benefits and deductions</li>
+</ul>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="44"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="44">The company should have chosen a date where payroll beginning balances can be set.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="45"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="45">Information was gathered on all earnings, benefits/deductions, benefit contributions, employee taxes, and employer taxes and their YTD amounts from the legacy system.</p>
+</li>
+</ul>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="47">As you plan to enter beginning balances, consider how detailed the data needs to be. Most businesses enter a single, consolidated year-to-date amount. However if more detailed information is needed, balances can be entered in quarterly increments. Deciding the level of detail that's needed determines how many manual pay statements must be created for each worker. For a single year-to-date amount, only one manual statement is needed for each employee. To do this, use year-to-date amounts from the final pay statement from the previous system as the amount entered in the new payroll system.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="49">The following example shows how you can enter employee payroll beginning balances, including earning codes, benefits/deductions, and taxes. In a real-world example you would have a line item for each earning code, benefit deduction, benefit contribution, employee tax and employer tax with the amount entered being the year-to-date amount. Using that list of codes and amounts, follow the steps for creating a manual earning and pay statement with accounting disabled to bring over beginning balances for payroll purposes. You disable accounting because you won't want to post this beginning balance pay statement to your general ledger. That was done in the legacy system and will come over to the new system when you set beginning balances in General ledger.</p>
+<h3 id="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="51">A. How to set up earnings codes to be used on payroll beginning balances</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="53">When you enter payroll beginning balances, be sure the earning codes that you will be using are configured with the &quot;Allow editing of earning statement rates&quot; option enabled. This will allow you to manually key the amount from the legacy system.</p>
+<h3 id="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="55">B. Create earnings statement for an employee to have a beginning balance</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="57">This step manually creates an earnings statement for each worker for the last pay period of the legacy system, which creates the earning statement lines in the new payroll system. Enter one line per earning code and the YTD amount and hours. The sample steps are as follows:</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="59">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="59"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="59">Open the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="59">All earnings statements</strong> page and click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="59">New</strong>.</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="61">Enter the following:</p>
+<table sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="63">
+<thead>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="63">
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="63">Field</th>
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="63">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="65">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="65">Worker</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="65">Michael Redmond</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="66">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="66">Pay cycle</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="66">sm</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="67">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="67">Pay period</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="67">6/16/2017 - 6/30/2017</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="69"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="69">In the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="69">Earnings statement line</strong> tab, enter the following:</p>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="71">Line 1: <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="71">Earning statement line</strong> tab</p>
+<table sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="73">
+<thead>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="73">
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="73">Field</th>
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="73">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="75">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="75">Earnings code</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="75">Regular pay</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="76">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="76">Quantity</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="76">1.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="77">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="77">Rate</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="77">30,000</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="78">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="78">Line details tab</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="78"></td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="79">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="79">Manual</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="79">(marked)</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="81">Line 2: <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="81">Earning statement line</strong> tab</p>
+<table sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="83">
+<thead>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="83">
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="83">Field</th>
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="83">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="85">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="85">Earnings code</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="85">Bonus</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="86">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="86">Quantity</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="86">1.0000</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="87">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="87">Rate</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="87">4250.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="88">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="88">Line details tab</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="88"></td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="89">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="89">Manual</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="89">(marked)</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="91">Line 3: <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="91">Earning statement line</strong> tab</p>
+<table sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="93">
+<thead>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="93">
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="93">Field</th>
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="93">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="95">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="95">Earnings code</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="95">Commission</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="96">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="96">Quantity</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="96">1.0000</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="97">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="97">Rate</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="97">!,299.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="98">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="98">Rate</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="98">1,299.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="99">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="99">Line detail tab</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="99"></td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="100">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="100">Manual</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="100">(Marked)</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="102">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="103">Setting the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="103">Manual</strong> slider to <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="103">Yes</strong> in the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="103">Line Details</strong> tab for each earnings statement line is key to have payroll beginning balances entered for each worker.</p>
+</div>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="105"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="105">On the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="105">Action</strong> pane, click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="105">Release earnings statement</strong> USA-FED-ER-FICA.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="106"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="106">On the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="106">Action</strong> pane click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="106">Pay statement</strong> to open the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="106">Generate pay statements</strong> page and set the following:</p>
+<table sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="108">
+<thead>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="108">
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="108">Field</th>
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="108">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="110">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="110">Payment date</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="110">6/30/2017</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="111">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="111">Payment run type</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="111">Manual</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="112">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="112">Disable accounting</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="112">Yes</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="114">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="115">This is only available when the payment run type is manual and wherein the user want to disable accounting on the pay run.</p>
+</div>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="117">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="117">OK</strong> and close the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="117">Infolog</strong>.</p>
+</li>
+</ol>
+<h4 id="why-the-disable-accounting-slider-needs-to-set-to-yes-when-generating-pay-statements" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="119">Why the Disable Accounting slider needs to set to Yes when generating pay statements?</h4>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="121">Setting the slider to <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="121">Yes</strong> prevents lines in the pay statement from being distributed to General ledger. General ledger amounts were updating earlier when account balances from the legacy system were entered. Entering beginning balances for Payroll lets you generate reports that include information from prior years, as well as for identifying limits for benefit and tax purposes.</p>
+<h3 id="c-create-pay-statements-for-employees" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="123">C. Create pay statements for employees</h3>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="125">After you generate pay statements that have beginning balances, you must verify that the pay statements accurately reflect payroll data. You must also manually update the benefit and taxes information to match the values in the previous payroll system. After you verify that the amounts from the previous payroll system match the amounts on the current pay statements, you must finalize the pay statements.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="127">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="127"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="127">Open the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="127">All pay statements</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="128"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="128">Highlight the last generated pay statement for Michael Redmond</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="129"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="129">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="129">Edit</strong> to open the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="129">Pay statement</strong> page.</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="130"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="130">Open the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="130">Benefit deductions</strong> tab and enter the following:</p>
+<table sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="132">
+<thead>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="132">
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="132">Field</th>
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="132">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="134">Benefit</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="134">Deduction amount</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="135">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="135">401K</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="135">Participate</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="136">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="136">Dental</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="136">SubSp</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="137">Dep care spending</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="137">Participate</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="138">Vision</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="138">SupSp</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="140"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="140">In the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="140">Benefit contributions</strong> tab and enter the following:</p>
+<table sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="142">
+<thead>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="142">
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="142">Field</th>
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="142">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="144">Benefit</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="144">Contribution amount</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="145">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="145">401K</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="145">Participate</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="146">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="146">Dental</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="146">SubSp</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="147">Vision</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="147">SubSp</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="149"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="149">In the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="149">Tax deductions</strong> tab, enter the following:</p>
+<table sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="151">
+<thead>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="151">
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="151">Field</th>
+<th sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="151">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="153">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="153">Tax code</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="153">Deduction amount</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="154">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="154">USA-FED-ER-FICA</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="154">1600.00</td>
+</tr>
+<tr sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="155">
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="155">USA-FED-ER-MEDI</td>
+<td sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="155">825.75</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="157"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="157">In the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="157">Tax contributions</strong> tab enter the following:</p>
+</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="158"><p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="158">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="158">Calculate</strong>.</p>
+<div class="IMPORTANT" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="160">
+<h5>Important</h5>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="161">Validate the totals of the pay statement that they match the YTD of the legacy system for the worker. You may want to hold off on finalizing in the next step to do some overall validating of all pay statements in aggregate. Once validated run through all the pay statements and finalize them.</p>
+</div>
+</li>
+</ol>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="163">The same process can be done in quarter increments if necessary for all prior quarters in each year. This is only needed if the customer needs to see the data by quarter without going back to the legacy system.</p>
+<h2 id="if-you-make-a-mistake-entering-beginning-balances-for-an-employee" sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="165">If you make a mistake Entering Beginning Balances for an Employee</h2>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="167">It is possible to reverse and reenter transactions. To reverse the transaction, all you have to do is to complete the follow steps on the <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="167">All pay statements</strong> page.</p>
+<ol sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="169">
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="169">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="169">Reverse</strong>.</li>
+<li sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="170">Click <strong sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="170">Yes</strong> when the message &quot;When you reverse this pay statement, a reversing pay statement will be created to offset this pay statement. Neither pay statement can be edited. Do you want to reverse this pay statement?&quot; displays.</li>
+</ol>
+<p sourcefile="ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md" sourcestartlinenumber="172">After you reverse the pay statement, you can generate a new pay statement for the worker from the earnings statement that you created previously. Be sure to fix any incorrect lines on the earnings statement before you generate the new pay statement, and then generate new pay statements with the correct amounts.</p>
+<!---
+title: Eingeben von Lohnanfangssalden
+description: In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben. Diese Informationen sind für Partner hilfreich, um Daten für eine neue Lohnimplementierung von einem anderen System zu migrieren oder transferieren.
+author: andreabichsel
+manager: AnnBe
+ms.date: 11/20/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.custom: 20931
+ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2017-07-01
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: 
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693401"
+---
+# <a name="enter-payroll-beginning-balances"></a>Eingeben von Lohnanfangssalden
+
+[!include [banner](../../includes/banner.md)]
+
+In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben. Diese Informationen sind für Partner hilfreich, die Daten für eine neue Lohnimplementierung von einem anderen System transferieren. Zur Vorbereitung auf die Eingabe anfänglicher Lohnsalden werden folgende Informationen überprüft:
+
+- Mitarbeiterdatensätze wurden eingegeben und sind im System verfügbar
+- Die folgenden Daten wurden eingerichtet und den Mitarbeitern zugewiesen:
+
+    - Lohnzyklen und Lohnperioden
+    - Einkommenscodes
+    - Steuern
+    - Vergütungen und Abzüge
+
+- Das Unternehmen sollte ein Datum ausgewählt haben, an dem die Anfangssalden für Löhne festgelegt werden.
+- Informationen wurden zu allen Einnahmen, Vergütungen/Abzüge, Vorteilsbeiträge, Mitarbeitersteuern und Arbeitgebersteuern und deren Beträge seit Jahresbeginn aus dem alten System erfasst.
+
+Wenn Sie planen, Anfangssalden einzugeben, überlegen Sie, wie genau die Daten sein müssen. Die meisten Unternehmen geben einen einzelnen, konsolidierten Betrag seit Jahresbeginn ein. Wenn detailliertere Informationen erforderlich sein, können Salden in vierteljährliche Stufen eingegeben werden. Die festgelegte benötigte Detailebene gibt vor, wie viele manuelle Zahlungsaufstellungen für jede Arbeitskraft erstellt werden müssen. Für einen einzelnen Betrag seit Jahresbeginn ist nur eine manuelle Aufstellung pro Mitarbeiter erforderlich. Verwenden Sie dazu die Beträge seit Jahresbeginn von der letzten Zahlungsaufstellung aus dem alten System, und geben Sie diesen Betrag in das neue Lohnsystem ein.
+
+Das folgende Beispiel zeigt, wie Sie Lohnanfangssalden von Mitarbeitern einschließlich Einkommenscodes, Vergütungen(Vorteile)/Abzüge und Steuern eingeben. In der Realität hätten Sie eine Position für jeden Einkommenscode, Vergütungsabzug, Vergütungsbeitrag, für die Mitarbeitersteuer und die Arbeitgebersteuer, wobei der eingegebene Betrag der Betrag seit Jahresbeginn wäre. Führen Sie mit dieser Liste von Codes und Beträgen die Schritte zum Erstellen einer manuellen Lohnabrechnung und Zahlungsaufstellung, bei der die Buchhaltung deaktiviert ist, um Anfangssalden für Lohnzwecke zu übertragen, aus. Sie deaktivieren die Buchhaltung, da Sie diese Zahlungsaufstellung der Anfangssalden nicht im Hauptbuch buchen möchten. Dies wurde im vorherigen System ausgeführt und wird ins neue System übertragen, wenn Sie die Anfangssalden im Hauptbuch einrichten.
+
+### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a>A. Einrichten von Einkommenscodes für Lohnanfangssalden
+
+Wenn Sie Lohnanfangssalden eingeben, müssen Sie sich vergewissern, dass die Einkommenscodes, die Sie verwenden, bei aktivierter Option „Die Bearbeitung von Lohnabrechnungssätzen zulassen“ konfiguriert werden. Dadurch können Sie den Betrag manuell aus dem vorherigen System erfassen. 
+
+### <a name="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance"></a>B. Erstellen einer Lohnabrechnung für einen Mitarbeiter, damit ein Anfangssaldo vorhanden ist.
+
+Dieser Schritt erstellt manuell eine Lohnabrechnung für jede einzelne Arbeitskraft für die letzte Lohnperiode des alten System, welches die Lohnabrechnungspositionen im neuen Lohnsystem erstellt. Geben Sie eine Position pro Einkommenscode, den Betrag seit Jahresbeginn und die Stunden ein. Die Beispielschritte sind nachfolgend aufgeführt.
+
+1. Öffnen Sie die Seite **Alle Lohnabrechnungen** und klicken Sie **Neu**.
+
+    Geben Sie den Folgendes ein: 
+
+    | Feld      | Wert                 |
+    |------------|-----------------------|
+    | Arbeitskraft     | Michael Redmond       |
+    | Lohnzyklus  | sm                    |
+    | Lohnperiode | 6/16/2017 - 6/30/2017 |
+
+2. Geben Sie auf der Registerkarte **Lohnabrechnungsposition** Folgendes ein:
+
+    Position 1: **Lohnabrechnungsposition**-Registerkarte
+
+    | Feld            | Wert       |
+    |------------------|-------------|
+    | Einkommenscode    | Regulärer Lohn |
+    | Leistung         | 1.00        |
+    | Satz             | 30,000      |
+    | Positionsdetails-Registerkarte |             |
+    | Manuell           | (markiert)    |
+
+    Position 2: **Lohnabrechnungsposition**-Registerkarte
+
+    | Feld            | Wert    |
+    |------------------|----------|
+    | Einkommenscode    | Bonus    |
+    | Leistung         | 1.0000   |
+    | Satz             | 4250.00  |
+    | Positionsdetails-Registerkarte |          |
+    | Manuell           | (markiert) |
+
+    Position 3: **Lohnabrechnungsposition**-Registerkarte
+
+    | Feld           | Wert      |
+    |-----------------|------------|
+    | Einkommenscode   | Provision |
+    | Leistung        | 1.0000     |
+    | Satz            | !,299,00   |
+    | Satz            | 1,299.00   |
+    | Positionsdetails-Registerkarte |            |
+    | Manuell          | (markiert)   |
+
+    > [!NOTE]
+    > Damit die Gehaltsanfangssalden für jeden Mitarbeiter eingegeben werden können, muss für jede Lohnabrechnungsposition der Schieberegler **Manuell** auf der Registerkarte **Positionsdetails** auf **Ja** gestellt werden.
+
+3. Wählen Sie im Bereich **Aktivität** **Lohnabrechnung freigeben** aus USA-FED-ER-FICA.
+4. Klicken Sie im Bereich **Aktivität** auf **Zahlungsaufstellung**, um die Seite **Zahlungsaufstellungen generieren** zu öffnen und Folgendes festzulegen:
+
+    | Feld              | Wert     |
+    |--------------------|-----------|
+    | Zahlungsdatum       | 6/30/2017 |
+    | Zahlungslauftyp   | Manuell    |
+    | Buchhaltung deaktivieren |   Ja     |
+
+    > [!NOTE] 
+    > Dies ist nur verfügbar, wenn der Zahlungslauftyp manuell ist und wenn der Benutzer die Buchhaltung für die Zahlungsausführung deaktivieren möchte.
+
+    Klicken Sie auf **OK**, und schließen Sie **Infolog**.
+
+#### <a name="why-the-disable-accounting-slider-needs-to-set-to-yes-when-generating-pay-statements"></a>Warum muss der Schieberegler "Buchhaltung deaktivieren" auf "Ja" gesetzt werden, wenn Zahlungsaufstellungen erstellt werden?
+
+Wenn der Schieberegler auf **Ja** gesetzt ist, wird verhindert, dass Positionen der Zahlungsaufstellung an das Hauptbuch weitergegeben werden. Die Sachkontenbeträge wurden zuvor aktualisiert, als die Kontensalden aus dem alten System eingegeben wurden. Durch die Eingabe von Anfangssalden für die Gehaltsabrechnung können Sie Berichte erstellen, die Informationen aus Vorjahren enthalten, ebenso wie für die Identifizierung von Limits für Zulagen- und Steuerzwecke.
+
+### <a name="c-create-pay-statements-for-employees"></a>C. Erstellen von Zahlungsaufstellungen für Mitarbeiter
+
+Nachdem Sie Zahlungsaufstellungen generiert haben, die Anfangssalden haben, müssen Sie überprüfen, ob die Zahlungsaufstellungen die Lohndaten korrekt widerspiegeln. Sie müssen zudem die Vergütungen und Steuerinformationen manuell aktualisieren, damit sie mit den Werten aus dem alten Lohnsystem übereinstimmen. Wenn Sie sich vergewissert haben, dass die Beträge aus dem vorherigen Lohnsystem mit den Beträgen der aktuellen Zahlungsaufstellungen übereinstimmen, müssen Sie die Zahlungsaufstellungen abschließen.
+
+1. Öffnen Sie die Seite **Alle Zahlungsaufstellungen**.
+2. Markieren der letzten Zahlungsaufstellung für Michael Redmond
+3. Klicken Sie auf **Bearbeiten**, um die Seite **Zahlungsaufstellung** zu öffnen.
+4. Öffnen Sie die Registerkarte **Vergütungsabzüge** und geben Sie Folgendes ein:
+
+    | Feld             | Wert            |
+    |-------------------|------------------|
+    | Vergütung           | Abzugsbetrag |
+    | 401K              | Teilnehmen      |
+    | Zahnbehandlungs-Zusatzversicherung            | SubSp            |
+    | Dep. Pflegeausgaben/// | Teilnehmen      |
+    | Vision            | SupSp            |
+
+5. Geben Sie auf der Registerkarte **Vergütungsbeiträge** Folgendes ein:
+
+    | Feld   | Wert               |
+    |---------|---------------------|
+    | Vergütung | Beitragsbetrag |
+    | 401K    | Teilnehmen         |
+    | Zahnbehandlungs-Zusatzversicherung  | SubSp               |
+    | Vision  | SubSp               |
+
+6. Geben Sie auf der Registerkarte **Steuerabzüge** Folgendes ein:
+
+    | Feld           | Wert            |
+    |-----------------|------------------|
+    | Steuercode        | Abzugsbetrag |
+    | USA-FED-ER-FICA | 1600.00          |
+    | USA-FED-ER-MEDI | 825.75           |
+
+7. Geben Sie auf der Registerkarte **Steuerbeiträge** Folgendes ein:
+8. Klicken Sie auf **Berechnen**.
+
+    > [!IMPORTANT] 
+    > Stellen Sie sicher, dass die Summen der Zahlungsaufstellung mit dem Betrag seit Jahresanfang des alten Systems für die Arbeitskraft übereinstimmen. Sie möchten im nächsten Schritt möglicherweise das Abschließen aufschieben, um eine allgemeine Validierung der Zahlungsaufstellungen im Aggregat durchzuführen. Gehen Sie nach der Validierung die einzelnen Zahlungsaufstellungen durch, und schließen Sie sie ab.
+
+Der gleiche Vorgang kann in den Viertelschritten für alle vorherigen Quartale in den einzelnen Jahren durchgeführt werden. Dies ist nur erforderlich, wenn der Debitor die Daten nach Quartal anzeigen muss, ohne auf das alte System zurückzugreifen.
+
+## <a name="if-you-make-a-mistake-entering-beginning-balances-for-an-employee"></a>Fehler bei der Eingabe von Anfangssalden für einen Mitarbeiter
+
+Es ist möglich, Buchungen zu stornieren und erneut eingeben. Um die Buchung zu stornieren, müssen Sie die folgenden Schritte auf der Seite **Alle Zahlungsaufstellungen** abschließen.
+
+1. Klicken Sie auf **Stornieren**.
+2. Klicken Sie auf **Ja**, wenn die Nachricht „Wenn Sie diese Zahlungsaufstellung zurücksetzen, wird eine Rückbuchungszahlungsaufstellung zum Ausgleichen dieser Zahlungsaufstellung erstellt. Keine der Zahlungsaufstellungen kann bearbeitet werden. Möchten Sie diese Zahlungsaufstellung zurücksetzen?“ angezeigt wird. 
+
+Nachdem Sie die Zahlungsaufstellung rückgängig gemacht haben, können Sie eine neue Zahlungsaufstellung für den Mitarbeiter aus der zuvor erstellten Lohnabrechnung erstellen. Achten Sie darauf, dass alle fehlerhaften Positionen der Zahlungsaufstellung korrigiert werden, bevor Sie die neue Zahlungsaufstellung erzeugen, und erzeugen Sie dann die neuen Zahlungsaufstellungen mit den richtigen Beträgen. 
+--->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/00_Basics/MS_Content/hr/localizations/noam-usa-enter-beginning-balances.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

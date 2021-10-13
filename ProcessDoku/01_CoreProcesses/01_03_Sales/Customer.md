@@ -1,5 +1,5 @@
 ---
-uid: Customer
+uid: Core_Sales_Customer
 ---
 
 # Customer

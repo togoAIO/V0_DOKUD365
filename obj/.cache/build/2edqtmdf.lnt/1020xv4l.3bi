@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>VAT declaration for Bahrain | WIKA Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="VAT declaration for Bahrain | WIKA Documentation ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="vat-declaration-for-bahrain-bh-00002" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="28">VAT declaration for Bahrain (BH-00002)</h1>
+
+[!include[banner](../includes/banner.md)]<h2 id="overview" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="32">Overview</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="34">This topic explains how to set up and generate the VAT return form for legal entities in Bahrain.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="36">The VAT return form for Bahrain is the official document that summarizes the total output VAT tax amount due, the total input VAT tax amount recoverable, and the related VAT tax amount  liability. The form is used for all types of taxpayers and should be completed manually through the tax authority portal. The VAT return form is commonly referred to as <em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="36">VAT return filing</em>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="38">The VAT return form in Dynamics 365 Finance includes the following reports:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="40">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="40">VAT return form, which provides a breakdown of amounts, adjustments, and VAT amount per line item in the VAT return form as is described in the legislation.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="41">Sales transactions details grouped by box classification from Box1 to Box6.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="42">Purchase transaction details grouped by box classification from Box8 to Box12.</li>
+</ul>
+<h2 id="prerequisites" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="45">Prerequisites</h2>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="47">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="47">The primary address of the legal entity must be in Bahrain.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="49">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="49">Feature management</strong> workspace, enable the following features:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="50">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="50">(Bahrain) Category hierarchy for Sales and purchase tax report.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="52">For more information about how to enable features, see <a href="../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="52">Feature management overview</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="54">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="54">Electronic reporting</strong> workspace, import the following Electronic Reporting formats from the repository:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="56">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="56">VAT declaration Excel (BH)</li>
+</ul>
+<div class="NOTE" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="58">
+<h5>Note</h5>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="59">The formats above are based on <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="59">Tax declaration model</strong> and use <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="59">Tax declaration model mapping</strong>. These additional configurations will be automatically imported.</p>
+</div>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="61">For more information about how to import Electronic Reporting configurations, see <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="61">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+<h2 id="download-electronic-reporting-configurations" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="63">Download Electronic reporting configurations</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="65">The implementation of the VAT return form for Bahrain is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see <a href="../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="65">Electronic reporting</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="67">For production and user acceptance testing (UAT) environments, follow the instructions <a href="../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="67">Download Electronic reporting configurations from Lifecycle Services</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="69">To generate the VAT return form and related reports in a Bahrain legal entity, you need to upload the following configurations:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="70">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="70">Tax declaration model.version.64.xml</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="71">Tax declaration model mapping.version.64.90.xml</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="72">VAT Declaration Excel (BH).version.64.6 or a later version</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="74">After you've finished downloading the ER configurations from Lifecycle Services (LCS) or the global repository, complete the following steps.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="76">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="76">Go to the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="76">Electronic reporting workspace</strong>. Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="76">Reporting configurations</strong> tile.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="77">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="77">Configurations</strong> page, on the Action Pane, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="77">Exchange</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="77">Load from XML file</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="78">Upload all the files in the order in which they are listed in the previous bullets. After all the configurations are uploaded, the configuration tree should be present in Finance.</li>
+</ol>
+<h3 id="set-up-application-specific-parameters" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="80">Set up application-specific parameters</h3>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="82">The VAT declaration form includes a set of boxes (lines) that correspond to specific parts of the VAT return process. Each box should include information about the base, adjustment, and VAT amounts. To include the requirements established by the form, you must configure each box with the information that is automatically provided from the sales tax transactions generated from sales, purchases, or other operations where VAT tax is posted through the sales tax code configuration.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="84"><img src="media/emea-bhr-vat-Declaration-Form.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="84" alt="Declaration form."></p>
+<h4 id="example" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="86">Example</h4>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="88"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="88">Line/Box1 - Standard rated sales:</strong>  Per legal definition, this box includes the total amount of standard rated goods and services (excluding collected VAT) sold during the current period in The Kingdom of Bahrain, and the VAT that was collected on the sale or adjustments to similar sales made in the previous reporting periods. Examples of adjustments include:</p>
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="90">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="90">The return of goods and services by customers on which you have declared/paid VAT to NBR (National Bureau for Revenue).</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="91">Sales made to tourists under a VAT refunds for tourist scheme and refunded to the refund operator.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="92">Bad debt write-off on standard-rated receivables.</li>
+</ul>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="94">In Finance, you can have a specific sales tax code implemented that represents and calculates the operations at a standard sales rate. In this example, it is necessary to configure <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="94">Box1</strong> as follows.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="96">The Application-specific parameters option let the users to establish the criteria of how the tax transactions will be collected and calculated in each box (line) of the declaration form when the report is generated depending on the configuration of sales tax code.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="98">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="98">In the Electronic reporting workspace, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="98">Configurations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="98">Setup</strong> to set up the rules to identify the tax transaction into the related box of the VAT return form.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="99">Select the current version. On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="99">Lookups</strong> FastTab, select the lookup name <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="99">ReportFieldLookup</strong>. This lookup identifies the list of boxes (lines) in the VAT form required by tax authority.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="100">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="100">Conditions</strong> FastTab, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="100">Add</strong>, and in the new line in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="100">Lookup result</strong> column, select the related line of VAT return form.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="101">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="101">Tax code (Code)</strong> column, select the sales tax code that is used to calculate the related line of VAT return form.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="102">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="102">Name</strong> column, select the tax transaction classification where the sales tax code is used.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="103">Repeat steps 3-5 for all VAT return form boxes (lines) and the combination of sales tax code and tax transaction types configured in your legal entity.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="104">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="104">Add</strong> again, and then follow these steps to include the final record line:
+a. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="105">Lookup result</strong> column, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="105">NA</strong>.
+b. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="106">Tax code (Code)</strong> column, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="106">Not blank</strong>.
+c. In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="107">Name column</strong>, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="107">Not blank</strong>.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="109">By adding this last record (NA), you define the following rule: When the tax code and name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the VAT return form. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.</p>
+<ol start="8" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="111">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="111">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="111">State</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="111">Completed</strong>, and then select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="111">Save</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="112">Close the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="112">Application specific parameters</strong> page.</li>
+</ol>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="115"><img src="media/emea-bhr-vat-Format-Setup.png" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="115" alt="Set up specific parameters."></p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="118">The following table represent an example of how the user needs to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented in Finance.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="120">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="120">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="120">Lookup result</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="120">Label</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="120">Tax code (Code)</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="120">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="122">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="122">Box1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="122">Standard rated   sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="122">VAT_ST</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="122">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="123">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="123">Box1Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="123">Standard rated   sales adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="123">VAT_STA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="123">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="124">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="124">Box1</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="124">Standard rated   sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="124">VAT_ST</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="124">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="125">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="125">Box1Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="125">Standard rated   sales adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="125">VAT_STA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="125">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="126">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="126">Box3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="126">Sales   subject to domestic reverse charge mechanism</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="126">VAT_RV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="126">SalesReverseCharge</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="127">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="127">Box3Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="127">Sales   subject to domestic reverse charge mechanism adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="127">VAT_RVA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="127">SalesReverseCharge</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="128">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="128">Box3</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="128">Sales   subject to domestic reverse charge mechanism</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="128">VAT_RV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="128">SalesReverseChargeCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="129">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="129">Box3Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="129">Sales   subject to domestic reverse charge mechanism adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="129">VAT_RVA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="129">SalesReverseChargeCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="130">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="130">Box4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="130">Zero-rated   domestic sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="130">VAT_0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="130">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="131">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="131">Box4Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="131">Zero-rated   domestic sales adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="131">VAT_0%A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="131">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="132">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="132">Box4</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="132">Zero-rated   domestic sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="132">VAT_0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="132">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="133">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="133">Box4Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="133">Zero-rated   domestic sales adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="133">VAT_0%A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="133">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="134">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="134">Box5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="134">Export</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="134">VAT_EXP</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="134">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="135">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="135">Box5Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="135">Export   adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="135">VAT_EXPA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="135">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="136">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="136">Box5</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="136">Export</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="136">VAT_EXP</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="136">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="137">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="137">Box5Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="137">Export   adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="137">VAT_EXPA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="137">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="138">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="138">Box6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="138">Exempt   Sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="138">VAT_EXE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="138">SaleExempt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="139">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="139">Box6Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="139">Exempt   Sales Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="139">VAT_EXE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="139">SaleExempt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="140">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="140">Box6</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="140">Exempt   Sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="140">VAT_EXE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="140">SaleExemptCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="141">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="141">Box6Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="141">Exempt   Sales Adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="141">VAT_EXE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="141">SalesExemptCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="142">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="142">Box8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="142">Standard rated   domestic purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="142">VAT_ST</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="142">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="143">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="143">Box8adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="143">Standard rated   domestic purchases adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="143">VAT_ST</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="143">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="144">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="144">Box8</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="144">Standard rated   domestic purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="144">VAT_ST</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="144">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="145">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="145">Box8adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="145">Standard rated   domestic purchases adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="145">VAT_ST</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="145">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="146">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="146">Box9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="146">Imports subject to   VAT either paid at customs or deferred</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="146">VAT_IMP</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="146">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="147">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="147">Box9Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="147">Imports subject to   VAT either paid at customs or deferred adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="147">VAT_IMPA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="147">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="148">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="148">Box9</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="148">Imports subject to   VAT either paid at customs or deferred</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="148">VAT_IMP</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="148">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="149">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="149">Box9Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="149">Imports subject to   VAT either paid at customs or deferred adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="149">VAT_IMPA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="149">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="150">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="150">Box10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="150">Imports subject to   VAT accounted for through reverse charge mechanism</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="150">VAT_IRV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="150">PurchaseReverseCharge</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="151">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="151">Box10Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="151">Imports subject to   VAT accounted for through reverse charge mechanism adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="151">VAT_IRVA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="151">PurchaseReverseCharge</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="152">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="152">Box10</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="152">Imports subject to   VAT accounted for through reverse charge mechanism</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="152">VAT_IRV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="152">PurchaseReverseChargeCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="153">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="153">Box10Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="153">Imports subject to   VAT accounted for through reverse charge mechanism adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="153">VAT_IRVA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="153">PurchaseReverseChargeCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="154">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="154">Box11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="154">Purchases subject   to domestic reverse charge mechanism</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="154">VAT_PRV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="154">PurchaseReverseCharge</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="155">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="155">Box11Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="155">Purchases subject   to domestic reverse charge mechanism adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="155">VAT_PRVA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="155">PurchaseReverseCharge</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="156">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="156">Box11</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="156">Purchases subject   to domestic reverse charge mechanism</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="156">VAT_PRV</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="156">PurchaseReverseChargeCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="157">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="157">Box11Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="157">Purchases subject   to domestic reverse charge mechanism adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="157">VAT_PRVA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="157">PurchaseReverseChargeCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="158">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="158">Box12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="158">Purchases from   non-registered suppliers, zero-rated/exempt purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="158">VAT_0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="158">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="159">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="159">Box12Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="159">Purchases from   non-registered suppliers, zero-rated/exempt purchases adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="159">VAT_0%A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="159">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="160">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="160">Box12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="160">Purchases from   non-registered suppliers, zero-rated/exempt purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="160">VAT_0%</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="160">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="161">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="161">Box12Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="161">Purchases from   non-registered suppliers, zero-rated/exempt purchases adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="161">VAT_0%A</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="161">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="162">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="162">Box12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="162">Purchases from   non-registered suppliers, zero-rated/exempt purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="162">VAT_EXE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="162">PurchaseExempt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="163">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="163">Box12Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="163">Purchases from   non-registered suppliers, zero-rated/exempt purchases adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="163">VAT_EXEA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="163">PurchaseExempt</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="164">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="164">Box12</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="164">Purchases from   non-registered suppliers, zero-rated/exempt purchases</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="164">VAT_EXE</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="164">PurchaseExemptCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="165">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="165">Box12Adj</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="165">Purchases from   non-registered suppliers, zero-rated/exempt purchases adjustment</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="165">VAT_EXEA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="165">PurchaseExemptCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="166">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="166">Box15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="166">Corrections from   previous period (between BHD (+/-) 5,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="166">VAT_COR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="166">Sales</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="167">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="167">Box15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="167">Corrections from   previous period (between BHD (+/-) 5,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="167">VAT_COR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="167">SalesCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="168">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="168">Box15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="168">Corrections from   previous period (between BHD (+/-) 5,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="168">VAT_COR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="168">Purchase</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="169">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="169">Box15</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="169">Corrections from   previous period (between BHD (+/-) 5,000</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="169">VAT_COR</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="169">PurchaseCreditNote</td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="170">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="170">NA</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="170">Not applicable</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="170"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="170">Not blank</em></td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="170"><em sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="170">Not blank</em></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="172">Box2 and Box2Ajd represent the total amount of sales to GCC states and all adjustments to sales to registered customers in GCC states will be treated as exports (Box5 and Box5Adj) until integrated GCC customs system goes live. After the tax authority enables this option, then the configuration should be changed to achieve the original requirement.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="174">To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line has SalesCreditNote as the name of the operation is omitted in this configuration, and tax transactions are posted by using sales tax code VAT_ST, you will encounter issues when the report is generated. We recommend that you use the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="174">Tax &gt; Inquire &gt; Posted sales tax</strong> menu to review all posted sales tax codes and those that are not included in this mapping of the configuration.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="176">The following table provides the available values in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="176">Name</strong> column. This information will help you understand how the tax transactions are classified and assigned to the related sales tax code.</p>
+<table sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="178">
+<thead>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="178">
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="178">Classifier value</th>
+<th sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="178">Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="180">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="180">PurchaseCreditNote</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="180"><ul><li>Credit note</li><li>Tax direction = Sales tax receivable</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="181">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="181">Purchase</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="181"><ul><li>Not credit note</li><li>Tax direction = Sales tax receivable</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="182">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="182">SalesCreditNote</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="182"><ul><li>Credit note</li><li>Tax direction = Sales tax payable</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="183">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="183">Sales</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="183"><ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="184">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="184">PurchaseExemptCreditNote</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="184"><ul><li>Credit note</li><li>Tax direction = Tax-free purchase</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="185">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="185">PurchaseExempt</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="185"><ul><li>Not credit note</li><li>Tax direction = Tax-free purchase</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="186">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="186">SalesExemptCreditNote</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="186"><ul><li>Credit note</li><li>Tax direction = Tax-free sales</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="187">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="187">SaleExempt</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="187"><ul><li>Not credit note</li><li>Tax direction = Tax-free sales</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="188">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="188">UseTaxCreditNote</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="188"><ul><li>Credit note</li><li>Tax direction = Use tax</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="189">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="189">UseTax</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="189"><ul><li>Not credit note</li><li>Tax direction = Use tax</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="190">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="190">PurchaseReverseChargeCreditNote</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="190"><ul><li>Credit note</li><li>Tax direction = Sales tax receivable</li><li>ReverseCharge_W = Yes</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="191">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="191">PurchaseReverseCharge</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="191"><ul><li>Not credit note</li><li>Tax direction = Sales tax receivable</li><li>ReverseCharge_W = Yes</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="192">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="192">SalesReverseChargeCreditNote</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="192"><ul><li>Credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge_W = Yes</li></ul></td>
+</tr>
+<tr sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="193">
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="193">SalesReverseCharge</td>
+<td sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="193"><ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge_W = Yes</li></ul></td>
+</tr>
+</tbody>
+</table>
+<h2 id="set-up-general-ledger-parameters" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="196">Set up General ledger parameters</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="198">To generate the VAT return form report in Microsoft Excel format, you must define an ER format on the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="198">General ledger parameters</strong> page.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="200">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="200">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="200">Tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="200">Setup</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="200">General ledger parameters</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="201">On the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="201">Sales tax</strong> tab, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="201">Tax options</strong> section, in the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="201">VAT statement format mapping</strong> field, select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="201">VAT Declaration Excel (BH)</strong>. If you leave the field blank, the standard sales tax report will be generated in SSRS format.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="202">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="202">Category hierarchy</strong>. This category enables the C\commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports.</li>
+</ol>
+<h2 id="generate-a-vat-return-report" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="204">Generate a VAT return report</h2>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="205">The process of preparing and submitting a VAT return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see <a href="../general-ledger/indirect-taxes-overview.html" sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="205">Sales tax overview</a>.</p>
+<p sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="207">Complete the following steps to generate the tax declaration report.</p>
+<ol sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="209">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="209">Go to <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="209">Tax &gt; Declarations</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="209">Sales tax</strong> &gt; <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="209">Report sales tax for settlement period</strong> or <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="209">Settle and post sales tax</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="210">Select the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="210">Settlement period</strong>.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="211">Select the from date.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="212">Select the sales tax payment version.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="213">Select <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="213">OK</strong> to confirm the above steps.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="214">Enter the amount of credit from the previous period, if applicable, or leave the amount as zero.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="215">In the <strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="215">Generate details</strong> field, select one of the following available options. The VAT return form is always generated in this process.
+<ul sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="216">
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="216"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="216">All</strong> - Generate sales and purchase tax transactions details reports.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="217"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="217">None</strong> - Generate only the VAT declaration return form.</li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="218"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="218">Purchase transactions</strong></li>
+<li sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="219"><strong sourcefile="ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md" sourcestartlinenumber="219">Sales transactions</strong></li>
+</ul>
+</li>
+</ol>
+<section class="row" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="1">
+<div class="column" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="2">
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<p sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Submit your requests to the <a href="mailto:tobias.goldhammer@wika.com" sourcefile="ProcessDoku/02_SupportProcesses/includes/footer-banner.md" sourcestartlinenumber="5">Documentation Team</a></p>
+</div>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/togoAIO/V0_DOKUD365/blob/master/ProcessDoku/02_SupportProcesses/02_01_Finance/localizations/emea-bhr-vat-declaration.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Customized Footer</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
