@@ -25,6 +25,8 @@ Open the Work Orders BOM form and manually insert the BOM components for the Wor
 > [!NOTE]
 > User could use the function < Copy > to assist creating BOM based on a different Item number, BOM or Work Order.
 
+[Bill of Material](xref:BOM)
+
 #### Invalid Items at BOM line
 If there is any BOM invalid component, AX will not be able to proceed the Operation Scheduling process.
 Open the BOM form and check for invalid components marked as red lines.
@@ -38,6 +40,8 @@ Open the Work Orders Route form and manually insert the operations for the Work 
 > [!NOTE]
 > User could use the function < Copy Route > to assist creating ROUTE based on a different Route number.
 > On the Copy form, select the desired route number and hit < OK >
+
+[Route](xref:Route)
 
 ### Inactive sub-operations
 If there is any inactivated sub-operation in Route, AX will not be able to proceed the Operation Scheduling process.

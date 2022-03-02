@@ -29,6 +29,8 @@ System will create a new entry with same data as the selected register and incre
 
 When user opens the Swap out Material form, D365 will pre-select a material code based on item number.
 
+[Swap Out Material](xref:Swap_Out)
+
 ![swap out material form](./../../media/Production/Raw_Material_Code/Raw_Material_Code_31.png "swap out material form")
 
 <a name="3312"></a>
