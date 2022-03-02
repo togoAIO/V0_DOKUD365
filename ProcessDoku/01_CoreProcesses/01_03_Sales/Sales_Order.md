@@ -93,12 +93,11 @@ The Setup can be don on the Customer on Setup-> Direct delivery customers
 If direct delivery is not allowed, the direct delivery flag will be removed automatically. 
 
 Scenario 1: DD should always be allowed for this vendor
--> leave the customer account column empty and select ALL in the first line 
- Scenario 2: DD should never be allowed for this vendor
--> leave the customer account column empty and select NOT in the first line 
- Scenario 3: DD should never be allowed for this vendor, except for one or more 
-customers
--> create a line [empty/NOT] and [Customer123/Table]
+ - leave the customer account column empty and select ALL in the first line 
+Scenario 2: DD should never be allowed for this vendor
+ - leave the customer account column empty and select NOT in the first line 
+Scenario 3: DD should never be allowed for this vendor, except for one or more customers
+ - create a line [empty/NOT] and [Customer123/Table]
  
 ##	COMBINATION DIRECT DELIVERY AND COMPLETE WITH TWO DIFFERENT VENDOR DUNS
 The combination of direct delivery and setting all lines to complete in a sales order with two different vendor DUNS numbers is impossible.
@@ -107,54 +106,26 @@ If the flag “switch all lines to complete” is set an infolog message pops up
 6.	IMPLEMENTATION OF PROJECT ORDERS IN EXCEL
 6.1.	TEMPLATE GENERATION
 
-
 Access: Sales order details-> on Sales order line-> Functions-> Import sales lines from excel
 
  
-
-
-
 The following form is opened.
- 
-
-
 
 Click at template generation
-
- 
-
 Specify a data name and select a destination folder. Then start coding by clicking on Configure code.
 
 When the configurator is opened, code your type as known. After finishing press the button Apply.
 
- 
 
 Then the following form is opened.
  
-
-
 Click on <next>.
 Now it is possible to define the variable parameters by setting a flag for this Criterion.
 
- 
 
 Then press the button <Next>
 
 Now an excel file is created with these information.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Now all free cells can be filed with the shoer information of the type code.
 For example not “10 bar” but “BG410”
@@ -162,26 +133,10 @@ For example not “10 bar” but “BG410”
 The cells Tag number, Price and Tag design have always to be filled.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 	ATTENTION
-	•	Parameters will be implemented according to Typecode
-•	„new items“ must be introduced for each changing parameter
-•	items must be separated with one free line
+>[!NOTE] 
+>•	Parameters will be implemented according to Typecode
+>•	„new items“ must be introduced for each changing parameter
+>•	items must be separated with one free line
 
 
 6.2.	EXCEL IMPORT INTO AX
@@ -190,28 +145,18 @@ Create a sales order, and delete the first item. Now use the function import sal
 
  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Now select the created excel file by clicking on the file symbol and press OK.
 
 Then the automatical import starts. The data will be imported in the background of AX. During the import it is possible to proceed working.
-
- 
 
 
 
 After the import the lines were shown in the sales order.
 
  
+# Further Links/Information
+
+[Sales Order Details](xref:SalesOrder_details)
+
+[Customer](xref:Customer)
 

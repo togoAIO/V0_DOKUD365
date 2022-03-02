@@ -1,5 +1,5 @@
 ---
-uid: Core_Sales_Customer
+uid: Customer
 ---
 
 # Customer
@@ -7,7 +7,7 @@ In addition to the prospect details the customer details has all the financial, 
 The base to create a new customer is to convert a prospect.
 
 > [!NOTE]
-> The Customers can be found in Module **Sales and Marketing >> Customers > All customers**.
+> The Customers can be found in Module **Navigation pane > Modules > Sales and Marketing > Customers > All customers**.
 
 ## Functions in the Customer Form
 
@@ -36,29 +36,15 @@ Text function for texts set up, which will be printed on every sales order of th
 
 ![Texts](./../../media/Sales/01_03_Sales_Customer_Texts.png "Texts")
 
-| German | English |
-|:---:|--------|
-|General | General text, printed on every printout|
-|Auftrag | Sales Order|
-|Lieferschein | Delivery note|
-|Rechnung | Invoice |
-|Fertigung | Production order |
-|Packplatz | not used |
-|Leitstand | not used |
-|Bemerkung | Notes, will not be printed anywhere, just note |
-|Versandbüro | not used |
-|Automatik | based on customer not used (for text from model code) |
-|Pos. | defines the position of the text
-Head: printed above the lines
-Footer: printed below the lines |
+
 
 # Create a new Customer
 In according to the rules to the company who is authorized to create a customer and who is responsible for correct customer and also finance settings, the recommended way to create a customer is to convert a prospect.
 Then the references from the customer to a prospect is connected.
 
-## Convert a prospct in a customer
+## Convert a prospect in a customer
 
-`Sales and Marketing >> Relations >> Prospects >> All prospects`
+**Sales and Marketing > Relations > Prospects > All prospects**
 Button Functions/convert to a customer and fill in the necessary fields on the customer details
 
 ![Create a customer](./../../media/Sales/01_03_Sales_Customer_CreateACustomer.png "Create a Customer")
@@ -75,3 +61,8 @@ To create a customer or also a prospect you can create a template according to a
 3. Name the template
 e.g. for a local customer, international customer, customer of the WIKA group, etc.
 ![Create Customer Template](./../../media/Sales/01_03_Sales_Customer_CreateACustTemplate2.png "Create Customer Template")
+
+
+# Further Links/Information
+
+[Sales Order](xref:SalesOrder)
