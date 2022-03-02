@@ -3,6 +3,8 @@
 
 > [!NOTE]
 > Um sich anmelden zu können müssen Sie zunächst als User angelegt werden. Diesse Registrierung kann mittels des WIKA Ticketsystems beantragt werden.
+> [Serviceportal]
+> (https://serviceportal.corp.root.int/SPS/Portal/Pages/HomepageQuickStart.aspx)
 
 Sie benötigen zum Anmelden Ihre E-Mail Adresse und ihr Windows Passwort.
 
@@ -13,8 +15,5 @@ Sie benötigen zum Anmelden Ihre E-Mail Adresse und ihr Windows Passwort.
 |  Angemeldet bleiben?  | Bitte klicken Sie die Checkbox "Angemeldet bleiben" an und bestätigen Sie mit dem "blauen Button"  |
 
 # Schritt für Schritt Anleitung
-
-![Kitten](..\images\img1.jpg "A cute kitten")
-![Example Picture](..\images\picture1.png "Example Picture")
 
 Wenn Sie nun angemeldet sind, können Sie <a href="Grundlagen_Overview.md"> die Benutzoberfläche im nächsten Kapitel kennenlernen</a> 
