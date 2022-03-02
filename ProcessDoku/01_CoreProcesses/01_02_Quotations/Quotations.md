@@ -83,3 +83,14 @@ Automatically generates a decline or clarification letter for this quotation. Th
 2. On the **Action Pane**, click **Quotation**.
 3. Click **Generate letter**.
 1. Choose the value you want in the drop down.
+
+
+
+# Further Links/Information
+
+[Sales Order](xref:SalesOrder)
+
+[Mass Create Quotations](xref:Mass_create_quotations)
+
+[Price Simulation](xref:Price_simulation)
+
