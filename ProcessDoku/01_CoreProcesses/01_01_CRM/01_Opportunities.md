@@ -240,5 +240,5 @@ The opportunity is then given the status Confirmed, Lost or Canceled.
 * Quotation Process (@UId: Core_CRM)
 * Sales Process (@UId: Core_Sales)
 
-[Quotation Process](xref:Core_Quotation)
+[Quotation Process](xref:Quotation)
 [Sales Process](xref:Core_Sales)
