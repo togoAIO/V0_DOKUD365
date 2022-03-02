@@ -26,6 +26,16 @@
         "files": [
           "ProcessDoku/**.md",
           "ProcessDoku/**/toc.yml",
+          "ProcessDoku/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      },
+      {
+        "files": [
+          "CE/**.md",
+          "CE/**/toc.yml",
+          "CE/toc.yml",
           "toc.yml",
           "*.md"
         ]
@@ -79,8 +89,8 @@
 
     "globalMetadata": {
       "_appTitle": "WIKA Documentation",
-      "_enableSearch": "true",
-      "_appFooter": "<span>Customized Footer</span>"
+      "_enableSearch": "false",
+      "_appFooter": "<span>WIKA Alexander Wiegand SE & Co. KG</span>"
 
       
     
@@ -93,6 +103,6 @@
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": false,
-    "disableGitFeatures": false
+    "disableGitFeatures": true
   }
 }
